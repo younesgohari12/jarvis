@@ -1,0 +1,117 @@
+{
+  "version": 4,
+  "apps": [
+    {
+      "id": "chrome",
+      "name": "Google Chrome",
+      "aliases": ["google chrome", "chrome", "گوگل کروم", "کروم"],
+      "windows": ["chrome.exe", "chrome"],
+      "linux": ["google-chrome", "chromium", "chromium-browser"],
+      "darwin": ["Google Chrome"]
+    },
+    {
+      "id": "edge",
+      "name": "Microsoft Edge",
+      "aliases": ["microsoft edge", "edge", "ms edge", "مایکروسافت اج", "مایکروسافت edge", "مرورگر اج", "اج"],
+      "windows": ["msedge.exe", "msedge"],
+      "linux": ["microsoft-edge", "microsoft-edge-stable"],
+      "darwin": ["Microsoft Edge"]
+    },
+    {
+      "id": "firefox",
+      "name": "Mozilla Firefox",
+      "aliases": ["mozilla firefox", "firefox", "موزیلا فایرفاکس", "فایرفاکس"],
+      "windows": ["firefox.exe", "firefox"],
+      "linux": ["firefox"],
+      "darwin": ["Firefox"]
+    },
+    {
+      "id": "steam",
+      "name": "Steam",
+      "aliases": ["steam", "استیم", "استم"],
+      "windows": ["steam.exe", "steam"],
+      "linux": ["steam"],
+      "darwin": ["Steam"]
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "aliases": ["discord", "دیسکورد", "دیس کورد"],
+      "windows": ["Discord.exe"],
+      "linux": ["discord"],
+      "darwin": ["Discord"]
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram",
+      "aliases": ["telegram", "telegram desktop", "تلگرام", "تلگرام دسکتاپ"],
+      "windows": ["Telegram.exe"],
+      "linux": ["telegram-desktop"],
+      "darwin": ["Telegram"]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "aliases": ["spotify", "اسپاتیفای", "اسپاتی فای"],
+      "windows": ["Spotify.exe"],
+      "linux": ["spotify"],
+      "darwin": ["Spotify"]
+    },
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "aliases": ["visual studio code", "vs code", "vscode", "ویژوال استودیو کد", "وی اس کد", "کد ادیتور"],
+      "windows": ["code.cmd", "code.exe", "code"],
+      "linux": ["code", "codium"],
+      "darwin": ["Visual Studio Code"]
+    },
+    {
+      "id": "notepad",
+      "name": "Notepad",
+      "aliases": ["notepad", "نوت پد", "نوت‌پد", "یادداشت ویندوز"],
+      "windows": ["notepad.exe"],
+      "linux": ["gedit", "mousepad", "xed"],
+      "darwin": ["TextEdit"]
+    },
+    {
+      "id": "calculator",
+      "name": "Calculator",
+      "aliases": ["calculator", "calc", "ماشین حساب", "ماشین‌حساب"],
+      "windows": ["calc.exe"],
+      "linux": ["gnome-calculator", "kcalc", "galculator"],
+      "darwin": ["Calculator"]
+    },
+    {
+      "id": "explorer",
+      "name": "File Explorer",
+      "aliases": ["file explorer", "explorer", "فایل اکسپلورر", "اکسپلورر", "مدیریت فایل"],
+      "windows": ["explorer.exe"],
+      "linux": ["nautilus", "dolphin", "thunar"],
+      "darwin": ["Finder"]
+    },
+    {
+      "id": "cmd",
+      "name": "Command Prompt",
+      "aliases": ["command prompt", "cmd", "سی ام دی", "کامند پرامپت"],
+      "windows": ["cmd.exe"],
+      "linux": ["x-terminal-emulator"],
+      "darwin": ["Terminal"]
+    },
+    {
+      "id": "powershell",
+      "name": "PowerShell",
+      "aliases": ["powershell", "power shell", "پاورشل", "پاور شل"],
+      "windows": ["powershell.exe", "pwsh.exe"],
+      "linux": ["pwsh"],
+      "darwin": ["PowerShell"]
+    },
+    {
+      "id": "paint",
+      "name": "Paint",
+      "aliases": ["paint", "mspaint", "پینت", "نقاشی ویندوز"],
+      "windows": ["mspaint.exe"],
+      "linux": ["pinta", "kolourpaint"],
+      "darwin": ["Preview"]
+    }
+  ]
+}

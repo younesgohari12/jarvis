@@ -1,0 +1,173 @@
+{
+  "version": 3,
+  "description": "Natural Persian/English intelligence and hard-negative examples for Jarvis v0.3",
+  "intents": [
+    {
+      "tag": "open_url", "route_type": "tool", "examples": [
+        "یوتیوب رو باز کن", "یوتیوبو باز کن", "یوتیوب رو بیار", "برو یوتیوب",
+        "یه یوتیوب باز کن", "youtube رو باز کن", "بزن یوتیوب", "یو تیوب رو واسم باز کن",
+        "open YouTube", "take me to youtube", "launch the YouTube website", "YT رو باز کن",
+        "گوگل رو باز کن", "open Google", "گیت هاب رو باز کن", "open GitHub",
+        "اینستاگرامو بیار", "برو تو ردیت", "ویکی پدیا رو باز کن", "open Stack Overflow",
+        "youtube ro baz kon", "google ro baz kon"
+      ]
+    },
+    {
+      "tag": "open_app", "route_type": "tool", "examples": [
+        "کرومو باز کن", "کروم رو بیار", "chrome رو اجرا کن", "گوگل کروم رو باز کن",
+        "برنامه کروم رو اجرا کن", "open Chrome", "launch Google Chrome", "start chrome app",
+        "وی اس کد رو باز کن", "vscode رو اجرا کن", "open Visual Studio Code", "نوت پد رو باز کن",
+        "ماشین حساب ویندوز رو اجرا کن", "اکسپلورر رو باز کن", "cmd رو اجرا کن", "پاورشل رو باز کن",
+        "run notepad", "launch calculator", "open file explorer", "start PowerShell",
+        "chrome ro baz kon", "vscode ro ejra kon"
+      ]
+    },
+    {
+      "tag": "open_default_browser", "route_type": "tool", "examples": [
+        "مرورگر رو باز کن", "مرورگر پیش فرض رو باز کن", "یه browser باز کن", "برو تو مرورگر",
+        "open the browser", "open my default browser", "launch web browser", "start a browser window",
+        "مرورگرو بیار", "browser رو اجرا کن", "صفحه مرورگر رو باز کن", "default browser please",
+        "can you open the browser", "مرورگر سیستم رو باز کن", "وب براوزر رو باز کن", "launch my browser"
+      ]
+    },
+    {
+      "tag": "web_search", "route_type": "tool", "examples": [
+        "سرچ کن بهترین زبان برنامه نویسی برای AI", "درباره RTX 5090 سرچ کن", "گوگل کن آموزش FastAPI",
+        "تو اینترنت دنبال مستندات پایتون بگرد", "search for latest Python version", "look up SQLite WAL mode",
+        "search the web for local AI", "در وب جستجو کن امنیت zip", "یه سرچ درباره tkinter بزن",
+        "find this on the internet", "وب رو برای این موضوع بگرد", "search online for Python tutorials",
+        "درباره این موضوع آنلاین بگرد", "گوگل کن آموزش جاوااسکریپت", "internet search lightweight models",
+        "لطفا سرچ کن بهترین دیتابیس سبک", "search kon python tutorial", "to internet begard SQLite"
+      ]
+    },
+    {
+      "tag": "youtube_search", "route_type": "tool", "examples": [
+        "یوتیوب سرچ کن آموزش پایتون", "توی یوتیوب سرچ کن آموزش رباتیک", "تو یوتیوب دنبال موسیقی بی کلام بگرد",
+        "youtube search Python course", "search YouTube for robotics", "find a tkinter tutorial on youtube",
+        "داخل یوتیوب سرچ بزن هوش مصنوعی", "یو تیوب رو برای آموزش FastAPI بگرد", "YT search local AI",
+        "یوتیوب آموزش گیت رو پیدا کن", "search on YouTube for jazz", "توی youtube سرچ کن sqlite",
+        "ویدیوی آموزش پایتون رو تو یوتیوب سرچ کن", "یوتیوب بگرد wake word", "find this video on youtube",
+        "در یوتیوب جستجو کن برنامه نویسی"
+      ]
+    },
+    {
+      "tag": "read_file", "route_type": "tool", "examples": [
+        "این فایل رو بخون", "محتوای main.py رو نشون بده", "فایل پیوست رو بررسی کن", "متن فایل رو واسم بخون",
+        "read the attached file", "inspect main.py", "show this text file", "preview the log file",
+        "حالا main.py رو بخون", "فایل json رو تحلیل کن", "داخل README چی نوشته", "read this markdown",
+        "کد فایل پیوست را نشان بده", "open and read the text attachment", "فایل لاگ رو بخون", "inspect the current file"
+      ]
+    },
+    {
+      "tag": "zip_inspect", "route_type": "tool", "examples": [
+        "ساختار فایل زیپ رو بگو", "داخل zip چه فایلاییه", "آرشیو پیوست رو بررسی کن", "لیست فایل های زیپ رو نشون بده",
+        "inspect the zip", "list archive contents", "show the ZIP structure", "what is inside this archive",
+        "فایل فشرده رو بدون استخراج ببین", "داخل این زیپ main.py هست", "preview text files in the zip",
+        "زیپو باز نکن فقط لیستش کن", "فهرست آرشیو را نمایش بده", "read ZIP member list", "این zip رو امن بررسی کن",
+        "show files inside attached zip"
+      ]
+    },
+    {
+      "tag": "list_folder", "route_type": "tool", "examples": [
+        "فایل های این پوشه رو لیست کن", "داخل فولدر پروژه چیه", "محتویات پوشه را نشان بده", "لیست پوشه فعلی",
+        "list this folder", "show directory contents", "what files are in this folder", "list project directory",
+        "حالا فایلای همون پوشه رو بگو", "داخل پوشه قبلی رو ببین", "folder contents please", "فهرست فولدر پروژه",
+        "show me files in the current directory", "پوشه رو بررسی کن", "list the last folder", "فایل های فولدر رو نمایش بده"
+      ]
+    },
+    {
+      "tag": "find_file", "route_type": "tool", "examples": [
+        "main.py رو تو پوشه پیدا کن", "دنبال config.json بگرد", "فایل README رو پیدا کن", "توی پروژه دنبال app.py بگرد",
+        "find main.py in the folder", "locate config.json", "search this directory for README", "find the log file",
+        "حالا تو همون پوشه فایل تست رو پیدا کن", "دنبال فایل css تو پروژه بگرد", "locate package file",
+        "فایل settings را در پوشه پیدا کن", "find a file named data.json", "توی فولدر دنبال zip بگرد",
+        "search the project for requirements.txt", "فایل مورد نظر رو پیدا کن"
+      ]
+    },
+    {
+      "tag": "calculator", "route_type": "tool", "examples": [
+        "125 * 43", "دو بعلاوه دو نه 2+2 چنده", "حساب کن 144 / 12", "نتیجه 9**2 چیه",
+        "calculate 18 * 7", "what is 250 / 5", "compute (12 + 8) * 3", "81 % 10",
+        "۳۵ + ۷ رو حساب کن", "جواب 10-3 چنده", "6 * 6 چند میشه", "calculate 2^8",
+        "حاصل 1000 / 8", "what is 17+29", "5*(4+3)", "حساب کن 99 درصد 7 یعنی 99%7"
+      ]
+    },
+    {
+      "tag": "date_time", "route_type": "tool", "examples": [
+        "ساعت چنده", "الان چه ساعتیه", "امروز چندمه", "امروز چه روزیه",
+        "روز هفته رو بگو", "what time is it", "what is today's date", "which day is it",
+        "current local time", "تاریخ فعلی", "ساعت سیستم رو بگو", "today's weekday",
+        "الان تاریخ و ساعت چنده", "give me the date", "روز امروز چیه", "show current time"
+      ]
+    },
+    {
+      "tag": "fresh_information", "route_type": "tool", "examples": [
+        "آخرین نسخه پایتون چیه", "امروز بیت کوین چنده", "هوا امروز چطوره", "آخرین اخبار هوش مصنوعی رو بگو",
+        "بازی امشب رئال چند چنده", "latest Python release", "Bitcoin price today", "what is the weather now",
+        "latest AI news", "tonight football score", "نرخ دلار امروز", "جدیدترین نسخه ویندوز چیه",
+        "current gold price", "خبرهای امروز تکنولوژی", "قیمت لحظه ای بیت کوین", "latest stable Node version"
+      ]
+    },
+    {
+      "tag": "complex_question", "route_type": "think", "examples": [
+        "برای تنظیمات برنامه SQLite بهتره یا JSON و چرا", "پایتون یا جاوااسکریپت کدام برای این پروژه بهتر است",
+        "این خطای Python از کجا میاد و چطور حلش کنم", "مزایا و معایب معماری ماژولار چیه",
+        "compare SQLite and JSON for desktop settings", "why is this Python error happening and how do I fix it",
+        "design a low memory desktop architecture", "explain the tradeoffs between threads and processes",
+        "برای سیستم ضعیف GRU بهتره یا Transformer", "این دو راه حل را مقایسه و پیشنهاد بده",
+        "root cause of this error چیست", "به نظرت کدام دیتابیس بهتره و دلیلش چیه",
+        "analyze this architecture and find risks", "how should I debug this complex issue",
+        "مزایا و هزینه های این انتخاب را تحلیل کن", "give a reasoned recommendation for my project"
+      ]
+    },
+    {
+      "tag": "multi_step_task", "route_type": "tool", "examples": [
+        "کروم رو باز کن بعد یوتیوب رو بیار", "گوگل رو باز کن سپس برو گیت هاب", "مرورگر رو باز کن و بعد یوتیوب",
+        "پوشه پروژه رو باز کن بعد main.py رو بخون", "open Chrome then open YouTube", "launch browser and then open GitHub",
+        "open the folder then read main.py", "search Python then open YouTube", "اول کروم بعد گوگل رو باز کن",
+        "وی اس کد رو اجرا کن بعد پوشه پروژه رو باز کن", "open Google and then Reddit", "برو یوتیوب بعد گیت هاب",
+        "مرورگر رو باز کن سپس سرچ کن پایتون", "launch Chrome then take me to Gmail", "پوشه را لیست کن بعد فایل را بخوان",
+        "do this first and then open the website"
+      ]
+    },
+    {
+      "tag": "correction_learning", "route_type": "conversation", "examples": [
+        "نه وقتی میگم یوتیوب رو باز کن باید سایت یوتیوب رو باز کنی", "یاد بگیر وقتی گفتم موزیک بزن Spotify رو باز کنی",
+        "وقتی گفتم بزن بریم پروژه Robot رو باز کن", "به خاطر بسپار وقتی گفتم کد بزن VS Code رو باز کنی",
+        "learn that when I say play music open Spotify", "remember that when I say code time open VS Code",
+        "that's wrong when I say YouTube open the website", "نه منظورم اینه وقتی میگم گوگل سایت گوگل رو باز کن",
+        "یاد بگیر وقتی میگم ویدیو یوتیوب رو باز کن", "remember that when I say notes open notepad",
+        "اشتباهه وقتی میگم کروم برنامه Chrome رو اجرا کن", "learn that when I say browse open the default browser",
+        "این اصلاح رو یاد بگیر وقتی گفتم موزیک اسپاتیفای رو باز کن", "when I say terminal then open PowerShell",
+        "به خاطر بسپار وقتی میگم ماشین حساب برنامه calculator رو باز کن", "no when I say GitHub open github.com"
+      ]
+    },
+    {
+      "tag": "greeting", "route_type": "conversation", "examples": [
+        "salam", "salam jarvis", "salaam chetori", "hi jarvis khobi", "salam doste man",
+        "dorood", "sobh bekheir jarvis", "hello chetori"
+      ]
+    },
+    {
+      "tag": "how_are_you", "route_type": "conversation", "examples": [
+        "khobi", "chetori", "halet chetore", "emrooz khobi", "how are you khobi",
+        "jarvis khoobi", "che khabar azat", "hal o ahval"
+      ]
+    },
+    {
+      "tag": "call_assistant", "route_type": "conversation", "examples": [
+        "jarvis kojaei", "jarvis bia", "hey jarvis goosh kon", "jarvis online i",
+        "jarvis javab bede", "jarvis hasti", "jarvis manam", "jarvis"
+      ]
+    },
+    {
+      "tag": "unknown", "route_type": "unknown", "examples": [
+        "zxqv plmokn 773", "عبارت کاملا تصادفی بی معنا", "رمز عبور حساب دوستم رو بگو", "قیمت دقیق سهام فردا را تضمین کن",
+        "tell me an unknown account password", "guarantee tomorrow's exact stock price", "florp the quantum banana",
+        "not enough information to answer this", "یه چیز مبهم درباره اون موضوع", "همونو همونجوری کن",
+        "what is the secret I never told you", "داده کافی ندادم ولی حدس قطعی بزن", "random words qqq zzz",
+        "کار ناشناخته جادویی انجام بده", "predict the exact future", "این پیام هیچ منظور مشخصی ندارد"
+      ]
+    }
+  ]
+}

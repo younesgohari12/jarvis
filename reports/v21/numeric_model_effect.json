@@ -1,0 +1,133 @@
+{
+  "checkpoint": "85df28c1b795d3d3a72ac086bac9ec0b8b3fc4e0655649365a50e82c314e0f45",
+  "calls": 12,
+  "examples": [
+    {
+      "text": "Account balance starts at 525 dollars, multiply the result by 7, add 15, divide by 2, add 20%, remove 27%",
+      "changed_spans": [
+        {
+          "role": "value",
+          "confidence": 0.9999948740005493,
+          "value": 20.0,
+          "start": 94,
+          "end": 96,
+          "alternatives": [
+            [
+              "term",
+              0.3114764094352722
+            ],
+            [
+              "value",
+              0.2812013626098633
+            ],
+            [
+              "n",
+              0.17080257833003998
+            ]
+          ],
+          "unit": "percent",
+          "v21_prediction": [
+            [
+              "value",
+              0.9999948740005493
+            ],
+            [
+              "initial",
+              5.032359695178457e-06
+            ],
+            [
+              "distractor",
+              1.2429673290625942e-07
+            ]
+          ],
+          "previous_role": "term"
+        }
+      ]
+    },
+    {
+      "text": "Account balance starts at 535 dollars; multiply by 2; multiply this by 9; add 4; decrease by 23%; then add 25; increase by 2",
+      "changed_spans": [
+        {
+          "role": "initial",
+          "confidence": 0.9884209632873535,
+          "value": 535.0,
+          "start": 26,
+          "end": 29,
+          "alternatives": [
+            [
+              "value",
+              0.516301691532135
+            ],
+            [
+              "initial",
+              0.4805721044540405
+            ],
+            [
+              "p",
+              0.00033934059320017695
+            ]
+          ],
+          "unit": "",
+          "v21_prediction": [
+            [
+              "initial",
+              0.9884209632873535
+            ],
+            [
+              "value",
+              0.011512438766658306
+            ],
+            [
+              "distractor",
+              6.6590124333743e-05
+            ]
+          ],
+          "previous_role": "value"
+        }
+      ]
+    },
+    {
+      "text": "Inventory starts with 403 items, divide this by 8, decrease by 25%, add 11%, remove 16, remove 3%",
+      "changed_spans": [
+        {
+          "role": "value",
+          "confidence": 0.9998732805252075,
+          "value": 16.0,
+          "start": 90,
+          "end": 92,
+          "alternatives": [
+            [
+              "n",
+              0.351583331823349
+            ],
+            [
+              "value",
+              0.21921753883361816
+            ],
+            [
+              "initial",
+              0.13689009845256805
+            ]
+          ],
+          "unit": "",
+          "v21_prediction": [
+            [
+              "value",
+              0.9998732805252075
+            ],
+            [
+              "initial",
+              0.00012625522504094988
+            ],
+            [
+              "distractor",
+              4.321095445902756e-07
+            ]
+          ],
+          "previous_role": "n"
+        }
+      ]
+    }
+  ],
+  "scope": "Changes low-confidence numeric roles; independent source verification still required."
+}

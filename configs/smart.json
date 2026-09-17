@@ -1,0 +1,29 @@
+{
+  "name": "Jarvis Smart",
+  "profile": "smart",
+  "format": "jarvis-transformer-v1",
+  "architecture": "decoder_only_transformer",
+  "vocab_size": 1024,
+  "d_model": 1024,
+  "n_layers": 20,
+  "n_heads": 16,
+  "n_kv_heads": 4,
+  "ffn_hidden": 2816,
+  "max_seq_len": 1024,
+  "rope_theta": 10000.0,
+  "rms_epsilon": 0.00001,
+  "tie_embeddings": true,
+  "initializer_std": 0.02,
+  "seed": 5052026,
+  "training": {
+    "sequence_length": 512,
+    "micro_batch_size": 1,
+    "gradient_accumulation": 64,
+    "learning_rate": 0.0002,
+    "minimum_learning_rate": 0.00002,
+    "weight_decay": 0.1,
+    "gradient_clip": 1.0,
+    "warmup_steps": 500,
+    "steps_per_stage": 10000
+  }
+}

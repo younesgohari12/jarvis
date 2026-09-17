@@ -1,0 +1,250 @@
+{"text": "candidate check: ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_3b9d88f09929c92b6a85", "split": "train"}
+{"text": "failed invariant ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_396780184408d5924e7c", "split": "train"}
+{"text": "verification detected ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_0d8f086ae3f7efa9c77b", "split": "train"}
+{"text": "failure reason ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_3a5699b0b4a7b93b0df9", "split": "validation"}
+{"text": "repair required after ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_f6aeb0c3c18739dd1be4", "split": "train"}
+{"text": "answer rejected: ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_a59b78b65f073324ebac", "split": "train"}
+{"text": "independent verifier reports ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_05e068a13d2b96e602db", "split": "test"}
+{"text": "cannot accept: ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_e5c3b41d5d454db10caf", "split": "train"}
+{"text": "check result false for ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_062ea428b9d67e101bba", "split": "train"}
+{"text": "invalid candidate because ratio_sum", "label": "execution", "concept_group": "repair_ratio_sum", "template_id": "aux_a9293be0933988045f09", "split": "validation"}
+{"text": "candidate check: ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_5f6768f7b2c91140ac94", "split": "test"}
+{"text": "failed invariant ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_e3916351bec97e6ce450", "split": "validation"}
+{"text": "verification detected ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_daa57dc91f6c0eee166b", "split": "test"}
+{"text": "failure reason ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_dbe2507dff1b36661298", "split": "train"}
+{"text": "repair required after ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_b4d596d11dbf9defb4f6", "split": "validation"}
+{"text": "answer rejected: ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_6b741dedd0d00d438285", "split": "test"}
+{"text": "independent verifier reports ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_2507476c2919b9601642", "split": "validation"}
+{"text": "cannot accept: ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_5e8cfb664d7812ffba06", "split": "train"}
+{"text": "check result false for ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_6209d666ff093baa616f", "split": "validation"}
+{"text": "invalid candidate because ratio_proportion", "label": "execution", "concept_group": "repair_ratio_proportion", "template_id": "aux_d05850bad501680089bf", "split": "train"}
+{"text": "candidate check: probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_0c233cb2fde950f926da", "split": "train"}
+{"text": "failed invariant probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_f40a6646250da522c267", "split": "train"}
+{"text": "verification detected probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_9b379aa2d1daa7ee5cb5", "split": "train"}
+{"text": "failure reason probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_23fd8e08bb1e0103200e", "split": "validation"}
+{"text": "repair required after probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_21dd342ad4daf13c109c", "split": "validation"}
+{"text": "answer rejected: probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_a61c517839755d938a8d", "split": "train"}
+{"text": "independent verifier reports probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_dab598a5a68100ebdc56", "split": "train"}
+{"text": "cannot accept: probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_60669bc9f95938899b9f", "split": "test"}
+{"text": "check result false for probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_42bcfd9459d54d9f04ce", "split": "train"}
+{"text": "invalid candidate because probability_recompute", "label": "execution", "concept_group": "repair_probability_recompute", "template_id": "aux_823b827031da48a54561", "split": "train"}
+{"text": "candidate check: inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_8d5e608bcc862208fbdf", "split": "train"}
+{"text": "failed invariant inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_5122cb2d784b2a3015fc", "split": "train"}
+{"text": "verification detected inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_60190a2b98d1dd263161", "split": "test"}
+{"text": "failure reason inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_75f8481fb681c7470da8", "split": "train"}
+{"text": "repair required after inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_6a206825ce0c30c6e033", "split": "test"}
+{"text": "answer rejected: inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_596f2255d567b0e9326e", "split": "test"}
+{"text": "independent verifier reports inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_fd2da49b50fa93a73ad9", "split": "validation"}
+{"text": "cannot accept: inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_865329d995e2f3548214", "split": "train"}
+{"text": "check result false for inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_c1b7f1f4b1574cb7ab64", "split": "train"}
+{"text": "invalid candidate because inventory_conservation", "label": "execution", "concept_group": "repair_inventory_conservation", "template_id": "aux_097f5a1e049553f19a43", "split": "train"}
+{"text": "candidate check: balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_e9100af5841cabc9588b", "split": "test"}
+{"text": "failed invariant balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_1be03629afaf94324275", "split": "train"}
+{"text": "verification detected balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_6b83555be62a8be4faca", "split": "test"}
+{"text": "failure reason balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_728ab33377bbf77acc4b", "split": "validation"}
+{"text": "repair required after balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_c2af8e61b54a51a8296d", "split": "train"}
+{"text": "answer rejected: balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_e41c2c63747565d4dcd8", "split": "test"}
+{"text": "independent verifier reports balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_bd3063f41c76d0f552af", "split": "train"}
+{"text": "cannot accept: balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_a0621fc1bff82932f960", "split": "validation"}
+{"text": "check result false for balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_5a0c8c3e0984ba75c166", "split": "train"}
+{"text": "invalid candidate because balance_conservation", "label": "execution", "concept_group": "repair_balance_conservation", "template_id": "aux_4ec5134402fafa121f22", "split": "train"}
+{"text": "candidate check: productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_1d89960d1bb8819e2562", "split": "test"}
+{"text": "failed invariant productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_2b8988c26ce609e22205", "split": "train"}
+{"text": "verification detected productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_49f25a2ec06455748a5f", "split": "train"}
+{"text": "failure reason productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_eea0ba5c02f25a45247c", "split": "train"}
+{"text": "repair required after productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_8b85f99d0e6b46bd40d9", "split": "train"}
+{"text": "answer rejected: productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_f9f64dc122d00057d77e", "split": "train"}
+{"text": "independent verifier reports productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_60f0ec38fa31d395b090", "split": "validation"}
+{"text": "cannot accept: productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_1d16e8aecfb50bdd1e0e", "split": "train"}
+{"text": "check result false for productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_fa976af9fdc5b290fc0a", "split": "train"}
+{"text": "invalid candidate because productivity_conservation", "label": "execution", "concept_group": "repair_productivity_conservation", "template_id": "aux_d771cfe730b4c5460cfe", "split": "train"}
+{"text": "candidate check: timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_9ac0944207abe0650912", "split": "train"}
+{"text": "failed invariant timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_f9870c40da2dd829a355", "split": "train"}
+{"text": "verification detected timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_6dac9a61eade5f0e81f6", "split": "validation"}
+{"text": "failure reason timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_d07c41eb8e18029c8cce", "split": "validation"}
+{"text": "repair required after timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_5ca5680890f8e891ce7e", "split": "train"}
+{"text": "answer rejected: timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_5eb6febbda009d3bc5f0", "split": "validation"}
+{"text": "independent verifier reports timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_4bfa3ff10c334bb1aec4", "split": "test"}
+{"text": "cannot accept: timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_f44b0648e931e56ecf49", "split": "train"}
+{"text": "check result false for timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_f827b3ab41c06d682af8", "split": "validation"}
+{"text": "invalid candidate because timeline_consistency", "label": "execution", "concept_group": "repair_timeline_consistency", "template_id": "aux_440942581d839db1bbc0", "split": "train"}
+{"text": "candidate check: sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_b9f3affe1c295697008c", "split": "train"}
+{"text": "failed invariant sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_beadbcc8b3b671835e20", "split": "train"}
+{"text": "verification detected sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_0d593d20c15a919f5c62", "split": "train"}
+{"text": "failure reason sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_c3b7612b3440d1694e8d", "split": "train"}
+{"text": "repair required after sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_f521e817d671c66c7976", "split": "train"}
+{"text": "answer rejected: sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_a804be6783ef91939fca", "split": "train"}
+{"text": "independent verifier reports sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_f9cd352aeef7b3a85f54", "split": "train"}
+{"text": "cannot accept: sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_e8f17736c8a231cc7dd0", "split": "train"}
+{"text": "check result false for sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_fa67d26b471f7ffb6e85", "split": "train"}
+{"text": "invalid candidate because sequence_nth", "label": "execution", "concept_group": "repair_sequence_nth", "template_id": "aux_c065a8430edac20e2e7c", "split": "train"}
+{"text": "candidate check: independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_5fcd84d3446a1b128a23", "split": "train"}
+{"text": "failed invariant independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_a2bc01d7c0f6bcb7dcde", "split": "train"}
+{"text": "verification detected independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_a82702bd94a04b437cf6", "split": "train"}
+{"text": "failure reason independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_d37d21f2ea7ef57cdf88", "split": "train"}
+{"text": "repair required after independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_d3872d15803f6e4078c1", "split": "validation"}
+{"text": "answer rejected: independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_127f54654f6af116b002", "split": "train"}
+{"text": "independent verifier reports independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_765ba4c0dcd95d87510a", "split": "train"}
+{"text": "cannot accept: independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_08c0641e76fac6cb9d1f", "split": "train"}
+{"text": "check result false for independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_31b2bfd927ecea7c5965", "split": "train"}
+{"text": "invalid candidate because independent_execution", "label": "execution", "concept_group": "repair_independent_execution", "template_id": "aux_2eabf83e23a48a900ee1", "split": "train"}
+{"text": "candidate check: distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_ba5c4d4f7f7453b557b1", "split": "test"}
+{"text": "failed invariant distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_3e0fd5ca8ae574389502", "split": "train"}
+{"text": "verification detected distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_5a34d221a738f4236299", "split": "train"}
+{"text": "failure reason distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_eea53c515030f62af5be", "split": "test"}
+{"text": "repair required after distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_3b314255bcc868b682c2", "split": "test"}
+{"text": "answer rejected: distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_5bfeec06c969b0a3dd57", "split": "train"}
+{"text": "independent verifier reports distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_cdf0a74463a4de56679d", "split": "train"}
+{"text": "cannot accept: distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_129bd1ca3688dc3c2f76", "split": "train"}
+{"text": "check result false for distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_ad52cb2d046c54444d16", "split": "train"}
+{"text": "invalid candidate because distance_conservation", "label": "execution", "concept_group": "repair_distance_conservation", "template_id": "aux_55ad4df468aefbdb7236", "split": "train"}
+{"text": "candidate check: counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_f28f52741037e5b4f7ed", "split": "validation"}
+{"text": "failed invariant counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_0842251b4bedb0588093", "split": "train"}
+{"text": "verification detected counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_8aca5039c1ef85a7cd84", "split": "validation"}
+{"text": "failure reason counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_80a8d4e9fb03f1e9c24a", "split": "train"}
+{"text": "repair required after counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_93706c1c820b3e9e2137", "split": "train"}
+{"text": "answer rejected: counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_2526695d014e611a9cc1", "split": "train"}
+{"text": "independent verifier reports counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_8917897e9eac1565d679", "split": "validation"}
+{"text": "cannot accept: counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_84922c579ddfaf725538", "split": "test"}
+{"text": "check result false for counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_ac51be12ee2f2563fe1e", "split": "train"}
+{"text": "invalid candidate because counting_recompute", "label": "execution", "concept_group": "repair_counting_recompute", "template_id": "aux_613162e5141eb9884097", "split": "train"}
+{"text": "candidate check: dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_83d0e8508e55b7030d31", "split": "train"}
+{"text": "failed invariant dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_e930fc172f4b26011f5a", "split": "train"}
+{"text": "verification detected dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_f4dde0b925a949b1f58b", "split": "test"}
+{"text": "failure reason dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_a722710035c3616bb295", "split": "train"}
+{"text": "repair required after dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_79046d51d7c9693daa0f", "split": "train"}
+{"text": "answer rejected: dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_6941efc29e2f34bf56f2", "split": "validation"}
+{"text": "independent verifier reports dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_d6e365e36c1d36482129", "split": "test"}
+{"text": "cannot accept: dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_04a7314c28e2b4eb656a", "split": "train"}
+{"text": "check result false for dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_52a4277fd3a15e6aea43", "split": "validation"}
+{"text": "invalid candidate because dice_recompute", "label": "execution", "concept_group": "repair_dice_recompute", "template_id": "aux_2e5293ed7131c2b6ceec", "split": "validation"}
+{"text": "candidate check: probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_2a23c52178815cfb0515", "split": "validation"}
+{"text": "failed invariant probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_816a3c6d85d89ee48c42", "split": "test"}
+{"text": "verification detected probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_21fa7cbafb130bda71a7", "split": "validation"}
+{"text": "failure reason probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_a787dc05a3e6df5fda5d", "split": "validation"}
+{"text": "repair required after probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_96d1f3e8d1129d99d953", "split": "train"}
+{"text": "answer rejected: probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_62c6d1417016aa57c133", "split": "train"}
+{"text": "independent verifier reports probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_5695890e241ab6875d0e", "split": "train"}
+{"text": "cannot accept: probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_d5535a426fdaaf9cd884", "split": "train"}
+{"text": "check result false for probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_85089db423df54f24e4d", "split": "validation"}
+{"text": "invalid candidate because probability_domain", "label": "slots", "concept_group": "repair_probability_domain", "template_id": "aux_e3b9f0ef7e601def324d", "split": "train"}
+{"text": "candidate check: invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_5676a2de69f14850514f", "split": "validation"}
+{"text": "failed invariant invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_7ff077a5ec678bcba95f", "split": "train"}
+{"text": "verification detected invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_3a44b53c44a72e2812bb", "split": "train"}
+{"text": "failure reason invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_e90a1a614fd81704cd35", "split": "train"}
+{"text": "repair required after invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_5e134aacf70e7a04c5a9", "split": "train"}
+{"text": "answer rejected: invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_8517da7d5215b8b88a2b", "split": "test"}
+{"text": "independent verifier reports invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_521ac925b8c79a01ea37", "split": "train"}
+{"text": "cannot accept: invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_dc867169fa480bb8452f", "split": "validation"}
+{"text": "check result false for invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_d6e13a588b82183792fd", "split": "train"}
+{"text": "invalid candidate because invalid_slots_or_candidate", "label": "slots", "concept_group": "repair_invalid_slots_or_candidate", "template_id": "aux_c522ec69df17be6dc5e7", "split": "validation"}
+{"text": "candidate check: dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_ec8a73b9dbee0623a9a6", "split": "test"}
+{"text": "failed invariant dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_5f38122dfcf92eccbefa", "split": "test"}
+{"text": "verification detected dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_a2c83954b6c7abf153e0", "split": "validation"}
+{"text": "failure reason dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_2fd1754c9d7a88b62729", "split": "train"}
+{"text": "repair required after dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_1082e18e915c56af682a", "split": "validation"}
+{"text": "answer rejected: dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_5b52c83729ceed81ab79", "split": "train"}
+{"text": "independent verifier reports dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_bf59855e5c452dab9dda", "split": "train"}
+{"text": "cannot accept: dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_51587d5d6cab712bb88d", "split": "validation"}
+{"text": "check result false for dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_418e01bf94313cd72028", "split": "test"}
+{"text": "invalid candidate because dimensional_consistency", "label": "slots", "concept_group": "repair_dimensional_consistency", "template_id": "aux_743b22591a375d61885f", "split": "train"}
+{"text": "candidate check: missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_d53d18cde66892cb896b", "split": "train"}
+{"text": "failed invariant missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_aaf53366d6f637d70b94", "split": "validation"}
+{"text": "verification detected missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_d51b633c3eaf279901cb", "split": "train"}
+{"text": "failure reason missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_b801c970b08c75a718f3", "split": "validation"}
+{"text": "repair required after missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_99c34a84be1fa468a64c", "split": "train"}
+{"text": "answer rejected: missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_4c36b62cf9a9e28b4552", "split": "train"}
+{"text": "independent verifier reports missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_63302058f5d7bbdbd5dc", "split": "train"}
+{"text": "cannot accept: missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_142210d44c3307a1aa76", "split": "train"}
+{"text": "check result false for missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_ae7e984a1a78aa563455", "split": "train"}
+{"text": "invalid candidate because missing_or_ambiguous", "label": "slots", "concept_group": "repair_missing_or_ambiguous", "template_id": "aux_8ad3ab5cc22277f11cab", "split": "train"}
+{"text": "candidate check: division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_f8585c2511abc2e570ce", "split": "train"}
+{"text": "failed invariant division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_33fc30640db6bfaf102e", "split": "train"}
+{"text": "verification detected division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_03348d897e523428c5c8", "split": "train"}
+{"text": "failure reason division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_198799a28a6d91b6f838", "split": "train"}
+{"text": "repair required after division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_e4f2a0972588cd347cc3", "split": "train"}
+{"text": "answer rejected: division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_795efa289b4f2457b1b3", "split": "train"}
+{"text": "independent verifier reports division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_4c3ad908efd4c250219c", "split": "train"}
+{"text": "cannot accept: division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_ec64186f0d096c67d034", "split": "train"}
+{"text": "check result false for division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_3e598e4afeaf287661e3", "split": "train"}
+{"text": "invalid candidate because division_by_zero", "label": "slots", "concept_group": "repair_division_by_zero", "template_id": "aux_07b10f40535ff3ad2333", "split": "validation"}
+{"text": "candidate check: negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_c94fd58ba6d5f5e39f32", "split": "validation"}
+{"text": "failed invariant negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_9124821fa352cf224fb3", "split": "validation"}
+{"text": "verification detected negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_aa5afa148769922cfb4c", "split": "train"}
+{"text": "failure reason negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_c675e2a1552ef52a9ae5", "split": "validation"}
+{"text": "repair required after negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_feac6a39b8367293e554", "split": "test"}
+{"text": "answer rejected: negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_98d13f8530042b1a96f8", "split": "validation"}
+{"text": "independent verifier reports negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_d2fb30f1310bcb70785d", "split": "train"}
+{"text": "cannot accept: negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_b57277dedc3a7af3c943", "split": "train"}
+{"text": "check result false for negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_1a6c5676362dfb9c0afe", "split": "validation"}
+{"text": "invalid candidate because negative_age", "label": "slots", "concept_group": "repair_negative_age", "template_id": "aux_eef4b57df0d6c13a17a4", "split": "train"}
+{"text": "candidate check: work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_961cd6cd5ffc8fca7a80", "split": "validation"}
+{"text": "failed invariant work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_f07e9039f3d9ddf4c534", "split": "validation"}
+{"text": "verification detected work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_b651ae838cd522779e9b", "split": "train"}
+{"text": "failure reason work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_af5abc02e94c924bcdfb", "split": "train"}
+{"text": "repair required after work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_ef56ea945698e0f2c097", "split": "train"}
+{"text": "answer rejected: work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_3572b94d9e971703b520", "split": "test"}
+{"text": "independent verifier reports work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_0c6b8b9855ee1db36254", "split": "train"}
+{"text": "cannot accept: work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_ea1b7dcf66e0c81d940d", "split": "train"}
+{"text": "check result false for work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_996c2b139dcdda704f40", "split": "train"}
+{"text": "invalid candidate because work_domain", "label": "slots", "concept_group": "repair_work_domain", "template_id": "aux_aef9ce2284d9a284791b", "split": "validation"}
+{"text": "candidate check: python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_694a4010802d5a4e6e0d", "split": "train"}
+{"text": "failed invariant python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_ec2e335410f9cc36cedc", "split": "train"}
+{"text": "verification detected python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_e35ace9b53c03ec80256", "split": "train"}
+{"text": "failure reason python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_ee72fd85256a40e6db72", "split": "train"}
+{"text": "repair required after python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_750885f53abd7788acda", "split": "train"}
+{"text": "answer rejected: python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_fa35f84f1f00e60306f1", "split": "train"}
+{"text": "independent verifier reports python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_fcfeda29a13aeb97af3e", "split": "train"}
+{"text": "cannot accept: python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_ee634470f591b41ca72e", "split": "train"}
+{"text": "check result false for python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_12b26814ece198f4c888", "split": "train"}
+{"text": "invalid candidate because python_syntax", "label": "response", "concept_group": "repair_python_syntax", "template_id": "aux_6fc507bd54cd5ded734b", "split": "test"}
+{"text": "candidate check: sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_26d43c224c54b9a3530e", "split": "train"}
+{"text": "failed invariant sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_4c3ef63317d7db598e9f", "split": "train"}
+{"text": "verification detected sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_0408e41293432d70f2ec", "split": "validation"}
+{"text": "failure reason sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_fd6494e1c1f6e4894b5a", "split": "train"}
+{"text": "repair required after sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_9957bc0d96ed40596a8f", "split": "train"}
+{"text": "answer rejected: sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_c8c6f0d2fe28c6848a8c", "split": "validation"}
+{"text": "independent verifier reports sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_6324b6fd7fe0d41b297b", "split": "train"}
+{"text": "cannot accept: sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_3cca6c75af2af1ae4402", "split": "validation"}
+{"text": "check result false for sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_0d1ad21e1bbe99ef68c7", "split": "train"}
+{"text": "invalid candidate because sentence_count", "label": "response", "concept_group": "repair_sentence_count", "template_id": "aux_a64e7dcf8a8d96b15cba", "split": "train"}
+{"text": "candidate check: required", "label": "response", "concept_group": "repair_required", "template_id": "aux_0eb780f9e1531cd5c6d3", "split": "test"}
+{"text": "failed invariant required", "label": "response", "concept_group": "repair_required", "template_id": "aux_1f3478703a597daa854b", "split": "train"}
+{"text": "verification detected required", "label": "response", "concept_group": "repair_required", "template_id": "aux_e2204c2f03736b1647df", "split": "train"}
+{"text": "failure reason required", "label": "response", "concept_group": "repair_required", "template_id": "aux_f85c4c2ec3a012fc5e62", "split": "train"}
+{"text": "repair required after required", "label": "response", "concept_group": "repair_required", "template_id": "aux_05b55fda67477b6158bb", "split": "train"}
+{"text": "answer rejected: required", "label": "response", "concept_group": "repair_required", "template_id": "aux_302461d5f25f539c3f75", "split": "test"}
+{"text": "independent verifier reports required", "label": "response", "concept_group": "repair_required", "template_id": "aux_0c9d9260cbff32c614c5", "split": "train"}
+{"text": "cannot accept: required", "label": "response", "concept_group": "repair_required", "template_id": "aux_d86d4a3d55b5247bc4d7", "split": "train"}
+{"text": "check result false for required", "label": "response", "concept_group": "repair_required", "template_id": "aux_13777d50657991813c82", "split": "validation"}
+{"text": "invalid candidate because required", "label": "response", "concept_group": "repair_required", "template_id": "aux_c6f92da90d2766ef8bfd", "split": "train"}
+{"text": "candidate check: max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_03a3ff103d383e77af7a", "split": "train"}
+{"text": "failed invariant max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_b8d5561063a1fe168c28", "split": "train"}
+{"text": "verification detected max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_cbf5364459868a00aa71", "split": "train"}
+{"text": "failure reason max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_e2d3af949406a0f88de3", "split": "train"}
+{"text": "repair required after max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_1e19618f07f519e46822", "split": "train"}
+{"text": "answer rejected: max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_ff828ffbffa3a5d96cf6", "split": "test"}
+{"text": "independent verifier reports max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_a44aa4b6585a5032c14e", "split": "train"}
+{"text": "cannot accept: max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_0a609ffc3172dcb632c2", "split": "train"}
+{"text": "check result false for max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_8c6d73145832ad0645f1", "split": "train"}
+{"text": "invalid candidate because max_length", "label": "response", "concept_group": "repair_max_length", "template_id": "aux_37cbdb03fba2b87d1205", "split": "train"}
+{"text": "candidate check: forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_93e399c7e705e562bc90", "split": "train"}
+{"text": "failed invariant forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_c02bb4f3518290d3683f", "split": "train"}
+{"text": "verification detected forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_7ec2df0208ce6e5b0bc0", "split": "train"}
+{"text": "failure reason forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_897a3a4b874b4528aab5", "split": "validation"}
+{"text": "repair required after forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_bff8282cf6bac98e69b7", "split": "validation"}
+{"text": "answer rejected: forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_b76298da6337d3ffa018", "split": "train"}
+{"text": "independent verifier reports forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_dd5c28d9c974ef7f9c53", "split": "train"}
+{"text": "cannot accept: forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_02fd0e125a67a122914e", "split": "train"}
+{"text": "check result false for forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_ab79b0afc66185ebad29", "split": "train"}
+{"text": "invalid candidate because forbidden", "label": "response", "concept_group": "repair_forbidden", "template_id": "aux_53bc88a5e5f80623efa7", "split": "validation"}
+{"text": "candidate check: language", "label": "response", "concept_group": "repair_language", "template_id": "aux_3a84e8cc5b8eb38e1885", "split": "train"}
+{"text": "failed invariant language", "label": "response", "concept_group": "repair_language", "template_id": "aux_c1b495fa85417ccb753f", "split": "train"}
+{"text": "verification detected language", "label": "response", "concept_group": "repair_language", "template_id": "aux_42d725a7db443e58cb26", "split": "train"}
+{"text": "failure reason language", "label": "response", "concept_group": "repair_language", "template_id": "aux_cedc2fe434c311de4bc2", "split": "train"}
+{"text": "repair required after language", "label": "response", "concept_group": "repair_language", "template_id": "aux_ce75b122b8e06e8b68fc", "split": "train"}
+{"text": "answer rejected: language", "label": "response", "concept_group": "repair_language", "template_id": "aux_d2cb782aec074755bd21", "split": "train"}
+{"text": "independent verifier reports language", "label": "response", "concept_group": "repair_language", "template_id": "aux_4b4f307fe5c7420b49fa", "split": "test"}
+{"text": "cannot accept: language", "label": "response", "concept_group": "repair_language", "template_id": "aux_43e31c651ecd776fefdf", "split": "train"}
+{"text": "check result false for language", "label": "response", "concept_group": "repair_language", "template_id": "aux_3520861d6ae4a9e5a149", "split": "train"}
+{"text": "invalid candidate because language", "label": "response", "concept_group": "repair_language", "template_id": "aux_8774d66a06dad98d9329", "split": "train"}

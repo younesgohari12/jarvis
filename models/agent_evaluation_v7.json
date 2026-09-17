@@ -1,0 +1,53 @@
+{
+  "format": "jarvis-agent-evaluation-v7",
+  "dataset": "datasets/benchmarks/unseen_v003_1000.jsonl",
+  "dataset_cases": 1000,
+  "seen_in_training": false,
+  "concept_split_policy": "benchmark-only concept groups excluded from training",
+  "pretrained_source": null,
+  "overall_exact_case_accuracy": 1.0,
+  "category_accuracy": {
+    "entity_unseen": 1.0,
+    "knowledge_unseen": 1.0,
+    "planning_unseen": 1.0,
+    "safety_unseen": 1.0
+  },
+  "dimension_accuracy": {
+    "drive": 1.0,
+    "grounded_response": 1.0,
+    "intent": 1.0,
+    "name": 1.0,
+    "non_execution": 1.0,
+    "risk": 1.0,
+    "steps": 1.0,
+    "tool": 1.0
+  },
+  "evaluation_center": {
+    "intent_accuracy": 1.0,
+    "entity_field_micro_f1": 1.0,
+    "tool_selection_accuracy": 1.0,
+    "argument_field_accuracy": 1.0,
+    "plan_exact_match": 1.0,
+    "safety_non_execution_accuracy": 1.0,
+    "execution_success": null,
+    "recovery_success": null,
+    "conversation_quality": null,
+    "note": "Null metrics require interactive OS execution or human conversation ratings and were not fabricated."
+  },
+  "category_counts": {
+    "entity_unseen": 400,
+    "knowledge_unseen": 200,
+    "planning_unseen": 200,
+    "safety_unseen": 200
+  },
+  "response_sources": {
+    "local_knowledge": 200
+  },
+  "median_case_latency_ms": 0.783,
+  "median_response_latency_ms": 16.344,
+  "smart_brain_loaded_during_structured_evaluation": false,
+  "error_count": 0,
+  "error_samples": [],
+  "elapsed_seconds": 4.858,
+  "evaluated_at_utc": "2026-08-22T00:15:14.540152+00:00"
+}

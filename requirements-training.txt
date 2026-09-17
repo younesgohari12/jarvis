@@ -1,0 +1,11 @@
+-r requirements-runtime.txt
+
+# Used only by JARVIS LAB for Core/Pro training and optional CUDA acceleration.
+# No pretrained model package or external vocabulary is installed.
+torch>=2.7,<3
+onnx>=1.17,<2
+
+# Reproducible CPU training for the v20 semantic heads.
+scipy>=1.10,<2
+scikit-learn>=1.4,<2
+pytest>=9,<10

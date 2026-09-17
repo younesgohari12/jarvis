@@ -1,0 +1,21 @@
+{
+ "protocol": "same questions, v21 engine vs v22 engine, direct solve()",
+ "v21": {
+  "n": 220,
+  "p50_ms": 2.2,
+  "p95_ms": 7.41,
+  "mean_ms": 2.94
+ },
+ "v22": {
+  "n": 220,
+  "p50_ms": 3.05,
+  "p95_ms": 11.27,
+  "mean_ms": 4.27
+ },
+ "startup_ms": {
+  "v21": "see v21 reports (equivalent loader)",
+  "v22": 38.5
+ },
+ "peak_rss_mb_v22_process": 74.6,
+ "note": "v22 adds one typed-extraction + role pass per verified answer; budget < 5ms"
+}

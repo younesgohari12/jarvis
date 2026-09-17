@@ -1,0 +1,3 @@
+# Lightweight JARVIS runtime. Tkinter and SQLite ship with normal CPython.
+numpy>=2.1,<3
+customtkinter==6.0.0

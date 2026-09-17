@@ -1,0 +1,92 @@
+{
+  "format": "jarvis-v18-final-release",
+  "release": "v18_final",
+  "dataset_version": "dataset_v009",
+  "dataset": {
+    "total_examples": 41295,
+    "new_examples": 3195,
+    "unique_new_inputs": 3195,
+    "exact_overlap_with_parent": 0,
+    "cross_split_concept_leakage": 0,
+    "split_counts": {
+      "train": 33176,
+      "validation": 3953,
+      "test": 4166
+    },
+    "tokenizer_round_trip_accuracy": 1.0,
+    "unknown_token_rate": 0.0
+  },
+  "models": {
+    "transformer": {
+      "file": "models/jarvis_nano_v18.npz",
+      "parameters": 23077376,
+      "dataset_version": "dataset_v009"
+    },
+    "semantic_router": {
+      "file": "models/semantic_router_v18.npz",
+      "parameters": 3145740,
+      "dataset_version": "dataset_v009"
+    },
+    "semantic_frame": {
+      "file": "models/semantic_frame_v18.npz",
+      "parameters": 1310730,
+      "dataset_version": "dataset_v009"
+    },
+    "numeric_slot_tagger": {
+      "file": "models/numeric_slot_tagger_v18.npz",
+      "parameters": 1179666,
+      "dataset_version": "dataset_v009"
+    },
+    "total_model_oriented_parameters": 28713512
+  },
+  "quality_gate": {
+    "passed": true,
+    "v18_new_ce_improvement_pct": 2.321,
+    "v18_new_token_accuracy_delta_points": 0.145,
+    "v18_fa_ce_improvement_pct": 2.354,
+    "legacy_v008_ce_regression_pct": 0.364,
+    "legacy_v008_token_accuracy_delta_points": -0.388
+  },
+  "semantic_metrics": {
+    "frame_classifier_test_accuracy": 1.0,
+    "numeric_slot_tagger_test_accuracy": 0.957968476357268,
+    "semantic_router_test_accuracy": 1.0,
+    "note": "Structured split metrics; some rare classes are absent from held-out semantic-model splits."
+  },
+  "holdout": {
+    "cases": 50,
+    "passed": 50,
+    "exact_overlap": 0,
+    "web_allowed": false,
+    "tools_allowed": false
+  },
+  "tests": {
+    "base_to_v07": {
+      "passed": 604,
+      "subtests": 64
+    },
+    "v08_to_v13": {
+      "passed": 59,
+      "subtests": 45
+    },
+    "v14_to_v18": {
+      "passed": 23,
+      "subtests": 340
+    },
+    "total_passed": 686,
+    "total_subtests": 449,
+    "failures": 0
+  },
+  "release_notes": "V18_RELEASE_NOTES.md",
+  "sha256": {
+    "models/jarvis_nano_v18.npz": "a28217cd1c967e71c3cd7d4cd8f359bbcc812db853269fc5ac84f5c4414d0fde",
+    "models/semantic_router_v18.npz": "62d47668531a98a460240157546410fd97a1cb9aac886226f851de35fd322d13",
+    "models/semantic_frame_v18.npz": "c6720a5ae4f7ec46bed4ab2385bad96ebb09bb34d25f5bc49ad2003f33c37cd3",
+    "models/numeric_slot_tagger_v18.npz": "55cd917c2efe863b94dfa4551929619aad551d1c5ddb8c6f467f644ca1eeb42a",
+    "models/model_registry_v2.json": "3997b3b234cb19947efc457a838e5d2867786c300e7b14e16ac3c05e4f459b2a",
+    "datasets/manifest_v009.json": "bc32dd8a320d1ae9c34a6cd9c5789d1913cd199b3cd946838050b486566e8189",
+    "datasets/splits/dataset_v009_train.jsonl": "a0a6c14826f6ea10329c001ec2cda6afa3faa3efcaf8c5ff01c29c441aac82d6",
+    "datasets/splits/dataset_v009_validation.jsonl": "4fb5b71e59ff29257e42d323f55ebcf3965fe06b3c93d404f4a85523bdd5737d",
+    "datasets/splits/dataset_v009_test.jsonl": "c6593ea6c4f32c939b5851cd3e2b481325fd740839b85d71fba1e5f41fa78dc4"
+  }
+}

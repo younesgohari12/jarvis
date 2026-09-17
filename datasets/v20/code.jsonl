@@ -1,0 +1,674 @@
+{"text": "تابعی بده که محاسبه مجموع لیست", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_cb86736272bf98b0fed8", "split": "train"}
+{"text": "واسه من کد محاسبه مجموع لیست رو آماده کن", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_cd71de719effe828bd54", "split": "train"}
+{"text": "میخوام تابع محاسبه مجموع لیست داشته باشم", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_d23d405667d93ecd3ac8", "split": "train"}
+{"text": "برام محاسبه مجموع لیست رو پیاده سازی کن", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_f8a9be7993821555b6ab", "split": "train"}
+{"text": "میشه کد محاسبه مجموع لیست رو بدی؟", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_34811f245722c8f8c33e", "split": "validation"}
+{"text": "یک تابع پایتون برای محاسبه مجموع لیست ایجاد کن", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_f5530096cdd1b571f4b8", "split": "validation"}
+{"text": "محاسبه مجموع لیست رو با کد حل کن", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_1aad477379ee1216a93d", "split": "train"}
+{"text": "تابعی بساز واسه محاسبه مجموع لیست", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_36186142cc5a5bc360f6", "split": "train"}
+{"text": "give me code for summing list values", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_476c9042c51640fb1ccd", "split": "train"}
+{"text": "make a function for summing list values", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_2a5a5d0b62bb917dfcda", "split": "train"}
+{"text": "implement summing list values in Python", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_33aa42d282c05a405a98", "split": "train"}
+{"text": "I need a function for summing list values", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_9c578455cba8948d19de", "split": "train"}
+{"text": "write Python code for summing list values", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_e6a7ae77f50087086c55", "split": "train"}
+{"text": "create a routine for summing list values", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_85a37982a20cad88dfe7", "split": "train"}
+{"text": "build an algorithm for summing list values", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_c8f08805317720e807b0", "split": "train"}
+{"text": "can you provide a function for summing list values", "label": "sum_values", "concept_group": "code_generation", "template_id": "aux_177dba5177fe92fa48fe", "split": "train"}
+{"text": "تابعی بده که مرتب سازی صعودی لیست", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_8c735092c2236f5d187d", "split": "train"}
+{"text": "واسه من کد مرتب سازی صعودی لیست رو آماده کن", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_a692c0fb210fbaaab158", "split": "train"}
+{"text": "میخوام تابع مرتب سازی صعودی لیست داشته باشم", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_44620fa6f81dbabe6e73", "split": "train"}
+{"text": "برام مرتب سازی صعودی لیست رو پیاده سازی کن", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_8b6ec62af136f4351165", "split": "train"}
+{"text": "میشه کد مرتب سازی صعودی لیست رو بدی؟", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_921d79d7f38f37a9f619", "split": "train"}
+{"text": "یک تابع پایتون برای مرتب سازی صعودی لیست ایجاد کن", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_9b7a4716eceea6579bcd", "split": "train"}
+{"text": "مرتب سازی صعودی لیست رو با کد حل کن", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_599a8db233714f4054ca", "split": "train"}
+{"text": "تابعی بساز واسه مرتب سازی صعودی لیست", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_675db9625c31a50362b4", "split": "train"}
+{"text": "give me code for sorting a list in ascending order", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_c96af698d971ab529454", "split": "train"}
+{"text": "make a function for sorting a list in ascending order", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_4ca0fbda7945e61813fe", "split": "train"}
+{"text": "implement sorting a list in ascending order in Python", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_cabd45a204d478fd4661", "split": "train"}
+{"text": "I need a function for sorting a list in ascending order", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_200226599a1276337276", "split": "train"}
+{"text": "write Python code for sorting a list in ascending order", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_996817f9360fa60effc2", "split": "test"}
+{"text": "create a routine for sorting a list in ascending order", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_839b2da20a67cad63bf5", "split": "validation"}
+{"text": "build an algorithm for sorting a list in ascending order", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_ee90ecd63f8f12e45ce4", "split": "train"}
+{"text": "can you provide a function for sorting a list in ascending order", "label": "sort_values", "concept_group": "code_generation", "template_id": "aux_a1fe36ab631b8fdab90a", "split": "train"}
+{"text": "تابعی بده که جدا کردن عددهای زوج", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_dec66442ec4a179f57df", "split": "train"}
+{"text": "واسه من کد جدا کردن عددهای زوج رو آماده کن", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_af023f95d2c1e8b43872", "split": "test"}
+{"text": "میخوام تابع جدا کردن عددهای زوج داشته باشم", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_cbaa4911abf4344c592b", "split": "train"}
+{"text": "برام جدا کردن عددهای زوج رو پیاده سازی کن", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_ffa558372dbcc5cb1398", "split": "train"}
+{"text": "میشه کد جدا کردن عددهای زوج رو بدی؟", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_13d60b3c2725b1252ef1", "split": "train"}
+{"text": "یک تابع پایتون برای جدا کردن عددهای زوج ایجاد کن", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_4989d924e26c8944f63d", "split": "validation"}
+{"text": "جدا کردن عددهای زوج رو با کد حل کن", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_519447fc4616f0283094", "split": "train"}
+{"text": "تابعی بساز واسه جدا کردن عددهای زوج", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_b41244fcd45ed1239eeb", "split": "validation"}
+{"text": "give me code for filtering even integers", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_ce9915a9912b91ccaa25", "split": "test"}
+{"text": "make a function for filtering even integers", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_8a310287a0525f8a732f", "split": "test"}
+{"text": "implement filtering even integers in Python", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_2ee9fac768180e89c3f4", "split": "train"}
+{"text": "I need a function for filtering even integers", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_4e42d25ec835727ba5a9", "split": "validation"}
+{"text": "write Python code for filtering even integers", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_2122460e3967d8c38077", "split": "train"}
+{"text": "create a routine for filtering even integers", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_5141249b413529f3c833", "split": "validation"}
+{"text": "build an algorithm for filtering even integers", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_5123293fa315e9dd54a8", "split": "train"}
+{"text": "can you provide a function for filtering even integers", "label": "filter_even", "concept_group": "code_generation", "template_id": "aux_8d72d5579ff8f89ee35f", "split": "train"}
+{"text": "تابعی بده که انتخاب عددهای مثبت", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_83117b7d46b5d37ba455", "split": "train"}
+{"text": "واسه من کد انتخاب عددهای مثبت رو آماده کن", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_20fc259f4469484c5ce3", "split": "train"}
+{"text": "میخوام تابع انتخاب عددهای مثبت داشته باشم", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_fb280c756bd7453c1ea8", "split": "train"}
+{"text": "برام انتخاب عددهای مثبت رو پیاده سازی کن", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_179053968987d4a042bf", "split": "train"}
+{"text": "میشه کد انتخاب عددهای مثبت رو بدی؟", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_f755cbc2dda4ec2f2f5a", "split": "train"}
+{"text": "یک تابع پایتون برای انتخاب عددهای مثبت ایجاد کن", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_0d16237e03bed32cd924", "split": "train"}
+{"text": "انتخاب عددهای مثبت رو با کد حل کن", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_f989181b93492bf731d8", "split": "validation"}
+{"text": "تابعی بساز واسه انتخاب عددهای مثبت", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_f68579bb949bd24c9083", "split": "validation"}
+{"text": "give me code for filtering positive numbers", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_a46fab8e3b2c660abbd1", "split": "validation"}
+{"text": "make a function for filtering positive numbers", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_48a8e47bfe73704ceb1f", "split": "train"}
+{"text": "implement filtering positive numbers in Python", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_70368e4799f6cc7833f6", "split": "test"}
+{"text": "I need a function for filtering positive numbers", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_5e20cccda1aceb204b7b", "split": "train"}
+{"text": "write Python code for filtering positive numbers", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_1e1d217eec5126076900", "split": "validation"}
+{"text": "create a routine for filtering positive numbers", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_13afc5d6fa855d1d82de", "split": "train"}
+{"text": "build an algorithm for filtering positive numbers", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_3b60bea7fff343098095", "split": "validation"}
+{"text": "can you provide a function for filtering positive numbers", "label": "filter_positive", "concept_group": "code_generation", "template_id": "aux_7bb2b038f38c08ed72a7", "split": "validation"}
+{"text": "تابعی بده که پیدا کردن بیشترین مقدار لیست", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_2d2957a2ad5f198ca999", "split": "train"}
+{"text": "واسه من کد پیدا کردن بیشترین مقدار لیست رو آماده کن", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_888fc559dca69664837e", "split": "train"}
+{"text": "میخوام تابع پیدا کردن بیشترین مقدار لیست داشته باشم", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_9115beddf7e8180eee1b", "split": "validation"}
+{"text": "برام پیدا کردن بیشترین مقدار لیست رو پیاده سازی کن", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_eb176c22143148a5dca8", "split": "train"}
+{"text": "میشه کد پیدا کردن بیشترین مقدار لیست رو بدی؟", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_3b9f7d52ab9698fa7118", "split": "train"}
+{"text": "یک تابع پایتون برای پیدا کردن بیشترین مقدار لیست ایجاد کن", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_1886e5a24ad0ad502476", "split": "train"}
+{"text": "پیدا کردن بیشترین مقدار لیست رو با کد حل کن", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_dbece4cd4c714f2ece5b", "split": "train"}
+{"text": "تابعی بساز واسه پیدا کردن بیشترین مقدار لیست", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_0bd04e3afe16ec02745b", "split": "train"}
+{"text": "give me code for finding the maximum list value", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_47b932ba123138eefe13", "split": "train"}
+{"text": "make a function for finding the maximum list value", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_d2e3b370efe7c0c1d5af", "split": "validation"}
+{"text": "implement finding the maximum list value in Python", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_061ab1ad5aee07773f5c", "split": "validation"}
+{"text": "I need a function for finding the maximum list value", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_a851f4ebf7c814b61f2f", "split": "train"}
+{"text": "write Python code for finding the maximum list value", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_1c9906dc232b9b284e63", "split": "train"}
+{"text": "create a routine for finding the maximum list value", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_5ac0cdcdf9c626cf6dfc", "split": "validation"}
+{"text": "build an algorithm for finding the maximum list value", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_496c1587ca213939c996", "split": "validation"}
+{"text": "can you provide a function for finding the maximum list value", "label": "max_value", "concept_group": "code_generation", "template_id": "aux_685dc5f15d5d6f892403", "split": "train"}
+{"text": "تابعی بده که حذف تکراری ها با حفظ ترتیب", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_89297a8db6c579485f05", "split": "train"}
+{"text": "واسه من کد حذف تکراری ها با حفظ ترتیب رو آماده کن", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_4d10a9bd8fe85c5e6aaa", "split": "train"}
+{"text": "میخوام تابع حذف تکراری ها با حفظ ترتیب داشته باشم", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_be48489f30ba915596ee", "split": "train"}
+{"text": "برام حذف تکراری ها با حفظ ترتیب رو پیاده سازی کن", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_b788b654848f4eb3de9e", "split": "train"}
+{"text": "میشه کد حذف تکراری ها با حفظ ترتیب رو بدی؟", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_ac5f757cbe3c1962369e", "split": "validation"}
+{"text": "یک تابع پایتون برای حذف تکراری ها با حفظ ترتیب ایجاد کن", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_06edc2e5c4e5f6cd63c7", "split": "train"}
+{"text": "حذف تکراری ها با حفظ ترتیب رو با کد حل کن", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_edabe37e029d1b29bba3", "split": "train"}
+{"text": "تابعی بساز واسه حذف تکراری ها با حفظ ترتیب", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_18e8e2d0829a8392d15e", "split": "train"}
+{"text": "give me code for removing duplicates preserving order", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_671c5facb740682486d4", "split": "validation"}
+{"text": "make a function for removing duplicates preserving order", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_e55cd455b29c3929491a", "split": "train"}
+{"text": "implement removing duplicates preserving order in Python", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_eaffde2daf92f49dce12", "split": "train"}
+{"text": "I need a function for removing duplicates preserving order", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_0e8059991d7cb064e435", "split": "test"}
+{"text": "write Python code for removing duplicates preserving order", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_3bb3d9a2d464873ed633", "split": "train"}
+{"text": "create a routine for removing duplicates preserving order", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_f66e0d1b69fcb59fd4b5", "split": "train"}
+{"text": "build an algorithm for removing duplicates preserving order", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_4a179b3903934d1843f2", "split": "test"}
+{"text": "can you provide a function for removing duplicates preserving order", "label": "deduplicate", "concept_group": "code_generation", "template_id": "aux_fb02972f0bd5d40afe96", "split": "train"}
+{"text": "تابعی بده که معکوس کردن رشته", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_ae8dfb50b7cb4755fc09", "split": "train"}
+{"text": "واسه من کد معکوس کردن رشته رو آماده کن", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_55dcd5d8a6b0ad9f37cc", "split": "train"}
+{"text": "میخوام تابع معکوس کردن رشته داشته باشم", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_40dfe8c9ed0fd19ff577", "split": "train"}
+{"text": "برام معکوس کردن رشته رو پیاده سازی کن", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_b3e99eaff25bddf7b9c8", "split": "train"}
+{"text": "میشه کد معکوس کردن رشته رو بدی؟", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_d05e5c7b68b969c5d92b", "split": "validation"}
+{"text": "یک تابع پایتون برای معکوس کردن رشته ایجاد کن", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_fe34f9d013b11954ef8c", "split": "validation"}
+{"text": "معکوس کردن رشته رو با کد حل کن", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_2a3b5156dcc7bcc23e93", "split": "validation"}
+{"text": "تابعی بساز واسه معکوس کردن رشته", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_fa10763b27dd15bde7e3", "split": "train"}
+{"text": "give me code for reversing a string", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_4a6cce9e589425907aff", "split": "train"}
+{"text": "make a function for reversing a string", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_46f28055d87ba7f0cd61", "split": "train"}
+{"text": "implement reversing a string in Python", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_f5dffde223963218e716", "split": "train"}
+{"text": "I need a function for reversing a string", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_f461fad5afaf153b6629", "split": "test"}
+{"text": "write Python code for reversing a string", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_02a4fdf13bc81e284e8f", "split": "train"}
+{"text": "create a routine for reversing a string", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_2a7b6b41d66e0e53620a", "split": "validation"}
+{"text": "build an algorithm for reversing a string", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_e63759b7741c7cf6b018", "split": "validation"}
+{"text": "can you provide a function for reversing a string", "label": "reverse_string", "concept_group": "code_generation", "template_id": "aux_6bcdfda856b1ea45d9db", "split": "validation"}
+{"text": "تابعی بده که تشخیص رشته پالیندروم", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_a70279a3685add1b3ce3", "split": "train"}
+{"text": "واسه من کد تشخیص رشته پالیندروم رو آماده کن", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_b19382c67fefea94708a", "split": "train"}
+{"text": "میخوام تابع تشخیص رشته پالیندروم داشته باشم", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_75deb4626f1f2d9896ef", "split": "train"}
+{"text": "برام تشخیص رشته پالیندروم رو پیاده سازی کن", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_59314fb8223172aea47b", "split": "train"}
+{"text": "میشه کد تشخیص رشته پالیندروم رو بدی؟", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_f92f69cf2405ad504af9", "split": "train"}
+{"text": "یک تابع پایتون برای تشخیص رشته پالیندروم ایجاد کن", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_f35d889e396d410bcd47", "split": "train"}
+{"text": "تشخیص رشته پالیندروم رو با کد حل کن", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_f929b046785f5e977c06", "split": "train"}
+{"text": "تابعی بساز واسه تشخیص رشته پالیندروم", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_3919c21315158fa59e54", "split": "train"}
+{"text": "give me code for checking whether text is a palindrome", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_d98501f100852252850b", "split": "validation"}
+{"text": "make a function for checking whether text is a palindrome", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_f58f6db94a62bac1eaf9", "split": "validation"}
+{"text": "implement checking whether text is a palindrome in Python", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_1c189f6617b4c0d610ea", "split": "validation"}
+{"text": "I need a function for checking whether text is a palindrome", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_2c79932369e8cf456653", "split": "validation"}
+{"text": "write Python code for checking whether text is a palindrome", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_d2efcf19ab09c2e5d783", "split": "train"}
+{"text": "create a routine for checking whether text is a palindrome", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_ea59721b05860c28371c", "split": "test"}
+{"text": "build an algorithm for checking whether text is a palindrome", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_5e42bc6c5f936f058e92", "split": "train"}
+{"text": "can you provide a function for checking whether text is a palindrome", "label": "palindrome", "concept_group": "code_generation", "template_id": "aux_3a711a2d951b4a91b0bc", "split": "validation"}
+{"text": "تابعی بده که محاسبه فاکتوریل عدد", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_70311a4b315e31c2e4c2", "split": "validation"}
+{"text": "واسه من کد محاسبه فاکتوریل عدد رو آماده کن", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_4064f57a8a29b53bd4da", "split": "train"}
+{"text": "میخوام تابع محاسبه فاکتوریل عدد داشته باشم", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_7f049e477bceca2c6051", "split": "train"}
+{"text": "برام محاسبه فاکتوریل عدد رو پیاده سازی کن", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_d0d5d31e6cb018cffe4a", "split": "train"}
+{"text": "میشه کد محاسبه فاکتوریل عدد رو بدی؟", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_87ed08f9915b5f4a65a9", "split": "test"}
+{"text": "یک تابع پایتون برای محاسبه فاکتوریل عدد ایجاد کن", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_d7f914b5cb9028e0143b", "split": "train"}
+{"text": "محاسبه فاکتوریل عدد رو با کد حل کن", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_aad5cc755524393baec9", "split": "test"}
+{"text": "تابعی بساز واسه محاسبه فاکتوریل عدد", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_90b0ca44a9d1e68e3442", "split": "train"}
+{"text": "give me code for computing the factorial of a number", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_6bfe3213e11fbcfc3384", "split": "train"}
+{"text": "make a function for computing the factorial of a number", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_91f9c40a515e3b27cb37", "split": "train"}
+{"text": "implement computing the factorial of a number in Python", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_7470ee41f8b02321cff2", "split": "train"}
+{"text": "I need a function for computing the factorial of a number", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_7c1c7d5ca4197f418b00", "split": "train"}
+{"text": "write Python code for computing the factorial of a number", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_bcc0dd9feadec4d1f3e2", "split": "train"}
+{"text": "create a routine for computing the factorial of a number", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_8ea4c522fb0b858d8ec9", "split": "train"}
+{"text": "build an algorithm for computing the factorial of a number", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_1417ddd2a90b6ee40088", "split": "train"}
+{"text": "can you provide a function for computing the factorial of a number", "label": "factorial", "concept_group": "code_generation", "template_id": "aux_6ee23aa340a5c7dc1810", "split": "validation"}
+{"text": "تابعی بده که محاسبه میانگین لیست", "label": "average", "concept_group": "code_generation", "template_id": "aux_32796a13f25e4e7133f8", "split": "train"}
+{"text": "واسه من کد محاسبه میانگین لیست رو آماده کن", "label": "average", "concept_group": "code_generation", "template_id": "aux_15ac4f75df14a1623d05", "split": "test"}
+{"text": "میخوام تابع محاسبه میانگین لیست داشته باشم", "label": "average", "concept_group": "code_generation", "template_id": "aux_11eca2c9a78872c24280", "split": "train"}
+{"text": "برام محاسبه میانگین لیست رو پیاده سازی کن", "label": "average", "concept_group": "code_generation", "template_id": "aux_16d4e2761fc69673b69e", "split": "validation"}
+{"text": "میشه کد محاسبه میانگین لیست رو بدی؟", "label": "average", "concept_group": "code_generation", "template_id": "aux_d0852a00c2992208da2d", "split": "validation"}
+{"text": "یک تابع پایتون برای محاسبه میانگین لیست ایجاد کن", "label": "average", "concept_group": "code_generation", "template_id": "aux_901eb740718cf213fbcd", "split": "train"}
+{"text": "محاسبه میانگین لیست رو با کد حل کن", "label": "average", "concept_group": "code_generation", "template_id": "aux_2df89574ac7e0067dc53", "split": "validation"}
+{"text": "تابعی بساز واسه محاسبه میانگین لیست", "label": "average", "concept_group": "code_generation", "template_id": "aux_672278a9645114a80bc8", "split": "train"}
+{"text": "give me code for calculating the average of list values", "label": "average", "concept_group": "code_generation", "template_id": "aux_dde2e9a11c5f717e73b2", "split": "train"}
+{"text": "make a function for calculating the average of list values", "label": "average", "concept_group": "code_generation", "template_id": "aux_4fd5dce99523e7f49c6f", "split": "train"}
+{"text": "implement calculating the average of list values in Python", "label": "average", "concept_group": "code_generation", "template_id": "aux_aff5a6bcb0841125ba8e", "split": "train"}
+{"text": "I need a function for calculating the average of list values", "label": "average", "concept_group": "code_generation", "template_id": "aux_b08d19a177da0102fbfb", "split": "train"}
+{"text": "write Python code for calculating the average of list values", "label": "average", "concept_group": "code_generation", "template_id": "aux_4e26a5eb50b13b724e10", "split": "train"}
+{"text": "create a routine for calculating the average of list values", "label": "average", "concept_group": "code_generation", "template_id": "aux_1cdab4379edb5e12046a", "split": "train"}
+{"text": "build an algorithm for calculating the average of list values", "label": "average", "concept_group": "code_generation", "template_id": "aux_1d4101c522fd290ba4f1", "split": "validation"}
+{"text": "can you provide a function for calculating the average of list values", "label": "average", "concept_group": "code_generation", "template_id": "aux_bc9025c6655d687ff2f2", "split": "train"}
+{"text": "لطفاً کدی بساز که مقادیر زوج رو جدا کنه with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_a9259bd1d1d76d595e5d", "split": "train"}
+{"text": "میخوام از یک لیست فقط عددهای مثبت را با تابع برگردان", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_8bf4a05dac9ee61f012c", "split": "train"}
+{"text": "لطفاً تابعی برای مرتب کردن صعودی لیست بنویس with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_3b373d4782256750182b", "split": "train"}
+{"text": "لطفاً کد مرتب‌سازی صعودی مقادیر را بده فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_b83e4cce809f25885c2d", "split": "validation"}
+{"text": "برام کدی میخوام که ماکزیمم آرایه رو بده", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_39b7b148f15152cbed1d", "split": "train"}
+{"text": "Can you write a function to return even numbers with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_be23d0c32dba11b4b760", "split": "train"}
+{"text": "میخوام تابعی بساز که بیشترین عدد آرایه را پیدا کند with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_25f85dbf85bfd49bf104", "split": "test"}
+{"text": "کدی بساز که مقادیر زوج رو جدا کنه", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_bf4efa56a5994c5fc760", "split": "train"}
+{"text": "واسه من جمع همه عناصر آرایه را حساب کن with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_36e3e14539621d4366ff", "split": "train"}
+{"text": "کدی بنویس که مقادیر مثبت آرایه را جدا کند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_135d888f3625ff9186ba", "split": "train"}
+{"text": "کدی بساز که مقادیر زوج رو جدا کنه with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_98f26ecfd35a51574f5e", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای sort کردن لیست بساز فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_b46592b40006aa81e897", "split": "train"}
+{"text": "واسه من تابعی بنویس که اعداد مثبت لیست را برگرداند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_a294fcc37768a3df7e6f", "split": "validation"}
+{"text": "لطفاً از یک لیست فقط عددهای مثبت را با تابع برگردان لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_eddf1da9f178fa5dddb0", "split": "train"}
+{"text": "جمع همه عناصر آرایه را حساب کن with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_6ced2d724370f6b10edc", "split": "train"}
+{"text": "لطفاً آرایه را از کوچک به بزرگ مرتب کن", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_c368368f443968b0e0b6", "split": "train"}
+{"text": "میخوام آرایه را از کوچک به بزرگ مرتب کن with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_866e07e17d757fc19520", "split": "train"}
+{"text": "لطفاً تابعی بنویس که اعداد زوج لیست را برگرداند", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_7bf0301332887e68ff0c", "split": "train"}
+{"text": "Can you write a function to return even numbers لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_c2c849aaa037bc566c57", "split": "train"}
+{"text": "میخوام بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_5ab5c639cee09ec09b43", "split": "train"}
+{"text": "واسه من کدی بساز که مقادیر زوج رو جدا کنه with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_828ffa41dbe97d8f565d", "split": "train"}
+{"text": "لطفاً تابعی بنویس که اعداد مثبت لیست را برگرداند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_88fd32bb69813d652b87", "split": "train"}
+{"text": "واسه من تابعی بنویس که مجموع اعداد لیست را برگرداند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_061985d34f80363ea717", "split": "train"}
+{"text": "Please write a function to return even numbers with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_04505631e940f77fe9a0", "split": "test"}
+{"text": "واسه من یک تابع پایتون برای sort کردن لیست بساز with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_05f489e5af857de3b8ed", "split": "train"}
+{"text": "تابعی بساز که بیشترین عدد آرایه را پیدا کند", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_5466a2c59724d57e6fc4", "split": "train"}
+{"text": "لطفاً کدی بنویس که مقادیر مثبت آرایه را جدا کند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_2fa648cc456f5169dfcf", "split": "train"}
+{"text": "برام فقط عددهای زوج آرایه را فیلتر کن with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_61adeb4106f3799fe141", "split": "train"}
+{"text": "write a function that sorts a list ascending فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_a4ef8f87a9009043e96e", "split": "train"}
+{"text": "لطفاً کدی بده که مجموع مقادیر را حساب کند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_92025e312bc06cb6ded5", "split": "train"}
+{"text": "Please filter even values from an array in Python لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_033c373af1d87ed33d98", "split": "train"}
+{"text": "Please create Python code to order array values from low to high with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_21913231c938a4a44c0e", "split": "validation"}
+{"text": "میخوام یک تابع پایتون برای maximum لیست بنویس with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_60cb1053e40409c73a66", "split": "train"}
+{"text": "برام یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_146a526d8efe2df1fa33", "split": "validation"}
+{"text": "تابعی برای مرتب کردن صعودی لیست بنویس", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_afaf7012fb2e1de58bdd", "split": "train"}
+{"text": "Can you write a function that returns positive numbers from a list with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_e38316f61a621f55ae05", "split": "train"}
+{"text": "آرایه را از کوچک به بزرگ مرتب کن فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_02b261554d574e1274d3", "split": "validation"}
+{"text": "بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_a15240c8cde60ae84cb4", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_af4627ad602fb15f9131", "split": "validation"}
+{"text": "واسه من تابعی بنویس که اعداد زوج لیست را برگرداند with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_7ad879900ba596101bce", "split": "validation"}
+{"text": "واسه من یک تابع پایتون برای maximum لیست بنویس فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_e997301978b25caf1612", "split": "validation"}
+{"text": "برام آرایه را از کوچک به بزرگ مرتب کن", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_12eaabd5d7214cb60dc3", "split": "train"}
+{"text": "لطفاً کدی میخوام که ماکزیمم آرایه رو بده", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_59ace9715ed092fd7748", "split": "validation"}
+{"text": "Please write a function that sums all list numbers", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_a4803d07124bfeb62cab", "split": "train"}
+{"text": "لطفاً تابعی برای مرتب کردن صعودی لیست بنویس لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_858dc4ceaa3ddff5763b", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای sort کردن لیست بساز", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_5f33f74761b6c6335573", "split": "test"}
+{"text": "برام تابعی برای مرتب کردن صعودی لیست بنویس with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_3d1e79d2ba0ab4cc8cb4", "split": "train"}
+{"text": "برام تابعی برای مرتب کردن صعودی لیست بنویس فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_94132607786f2f9757f0", "split": "validation"}
+{"text": "تابعی بنویس که مجموع اعداد لیست را برگرداند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_65c64fcfbaf96af3e8b5", "split": "train"}
+{"text": "لطفاً جمع همه عناصر آرایه را حساب کن", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_a0234cab1822cd8bff49", "split": "validation"}
+{"text": "واسه من از یک لیست فقط عددهای مثبت را با تابع برگردان", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_bf0902234897ddc2686d", "split": "validation"}
+{"text": "کدی بساز که مقادیر زوج رو جدا کنه فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_b6ed7b53b801500b8f47", "split": "train"}
+{"text": "واسه من تابعی بنویس که اعداد زوج لیست را برگرداند", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_b26ef633540f0160f43c", "split": "train"}
+{"text": "تابعی بنویس که اعداد مثبت لیست را برگرداند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_392b1b7e018227fdaa4f", "split": "validation"}
+{"text": "write a function that returns positive numbers from a list with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_4788e2935f59ba017b9a", "split": "train"}
+{"text": "لطفاً فقط عددهای زوج آرایه را فیلتر کن with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_8b87b0f1af3c8b3e9261", "split": "train"}
+{"text": "میخوام تابعی بساز که بیشترین عدد آرایه را پیدا کند", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_289dcc56fb275353a833", "split": "train"}
+{"text": "Please write a function to return even numbers فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_2ca10e05aa04da8745be", "split": "test"}
+{"text": "برام از یک لیست فقط عددهای مثبت را با تابع برگردان لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_cd1709f40c10b99f27cb", "split": "train"}
+{"text": "برام کدی بده که مجموع مقادیر را حساب کند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_6c6925190b252f7857bf", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای sort کردن لیست بساز لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_f893c9c3ae5d718f4fa2", "split": "train"}
+{"text": "Can you write a function that finds the maximum value in an array لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_3f7bf69841d9fe408168", "split": "train"}
+{"text": "میخوام تابعی بنویس که مجموع اعداد لیست را برگرداند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_3a26b5fa998fbdb89519", "split": "train"}
+{"text": "برام تابعی بساز که بیشترین عدد آرایه را پیدا کند", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_b339b56f76f52144d795", "split": "train"}
+{"text": "Please write a function that returns positive numbers from a list لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_800eb9a2e5f56a43bee8", "split": "train"}
+{"text": "Please filter even values from an array in Python", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_42d016f2dbc3495fcfb5", "split": "validation"}
+{"text": "میخوام یک تابع پایتون برای maximum لیست بنویس لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_5ec33382c0c6e5cfb1fc", "split": "train"}
+{"text": "فقط عددهای زوج آرایه را فیلتر کن لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_f4a061a2101dccb735fb", "split": "validation"}
+{"text": "واسه من یک تابع پایتون برای maximum لیست بنویس with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_0ab8975f31ec5f1fbe2f", "split": "train"}
+{"text": "برام جمع همه عناصر آرایه را حساب کن لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_338eafe7ae174020bb74", "split": "test"}
+{"text": "واسه من از یک لیست فقط عددهای مثبت را با تابع برگردان فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_f9106586422ea0fa0cd6", "split": "train"}
+{"text": "لطفاً فقط عددهای زوج آرایه را فیلتر کن لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_aa1e5ca4c65b80c02666", "split": "train"}
+{"text": "لطفاً تابعی بنویس که اعداد مثبت لیست را برگرداند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_f3ed8919fd34ce750b76", "split": "validation"}
+{"text": "از یک لیست فقط عددهای مثبت را با تابع برگردان فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_d2d0ccc6220725a417c8", "split": "train"}
+{"text": "تابعی برای مرتب کردن صعودی لیست بنویس لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_d61ef31874b2e1257dc6", "split": "train"}
+{"text": "میخوام تابعی برای مرتب کردن صعودی لیست بنویس فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_66ecc64d205c33195ad0", "split": "train"}
+{"text": "برام تابعی بنویس که اعداد مثبت لیست را برگرداند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_f1b2d16330a9f734b071", "split": "validation"}
+{"text": "یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_9d9993abeca258301a9e", "split": "train"}
+{"text": "واسه من بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_b83bcec2e3af0cd31440", "split": "validation"}
+{"text": "write a function that sorts a list ascending لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_d0eac386edee027fa87b", "split": "train"}
+{"text": "برام از یک لیست فقط عددهای مثبت را با تابع برگردان فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_20d8aa3f2caf6bfa251e", "split": "train"}
+{"text": "Please create Python code to total array values لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_785d71f99ad473c48d45", "split": "train"}
+{"text": "Please write a function that returns positive numbers from a list", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_7f18401e3a2244da89a9", "split": "train"}
+{"text": "لطفاً تابعی بنویس که اعداد زوج لیست را برگرداند لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_f9977515d746ec05ae61", "split": "train"}
+{"text": "برام کدی بساز که مقادیر زوج رو جدا کنه لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_430cfe76dcde8737afda", "split": "train"}
+{"text": "لطفاً تابعی بنویس که مجموع اعداد لیست را برگرداند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_e245906f9a9371ae08aa", "split": "train"}
+{"text": "واسه من جمع همه عناصر آرایه را حساب کن لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_9009d3065ed1c568035b", "split": "train"}
+{"text": "لطفاً تابعی بنویس که مجموع اعداد لیست را برگرداند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_3083857d39127a9297d9", "split": "validation"}
+{"text": "لطفاً تابع پایتون برای even filter بساز لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_bef5ea55ccbbdb3caf10", "split": "test"}
+{"text": "برام جمع همه عناصر آرایه را حساب کن with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_3478a55acbf21b7c4d84", "split": "train"}
+{"text": "برام تابعی بنویس که اعداد زوج لیست را برگرداند", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_4f5d58986b8aa967ff2f", "split": "train"}
+{"text": "واسه من کدی بساز که مقادیر زوج رو جدا کنه فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_bdf8f204da706d92b25e", "split": "validation"}
+{"text": "برام آرایه را از کوچک به بزرگ مرتب کن فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_23a07c06a8c73efbb19f", "split": "train"}
+{"text": "Please create Python code to order array values from low to high لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_a1ffba89e80ba0b9808e", "split": "test"}
+{"text": "از یک لیست فقط عددهای مثبت را با تابع برگردان", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_73e1fe8288b2f67f6568", "split": "train"}
+{"text": "Please write a function to return even numbers لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_cabeff844df385fbcd88", "split": "train"}
+{"text": "Please write a function that sums all list numbers فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_602b9f73efd2beb0003c", "split": "train"}
+{"text": "برام تابعی بنویس که مجموع اعداد لیست را برگرداند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_0d28c46159e18316ff91", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای sum لیست بساز لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_00b31a2718329d105c64", "split": "test"}
+{"text": "برام کد مرتب‌سازی صعودی مقادیر را بده with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_6265d258fab79c7d8757", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_a433495f5864226de350", "split": "train"}
+{"text": "write a function that returns positive numbers from a list فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_e25719b1606681011e91", "split": "train"}
+{"text": "برام بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_03543dba3e1c83930109", "split": "train"}
+{"text": "میخوام کدی بده که مجموع مقادیر را حساب کند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_1aa78f21d2b492a885ce", "split": "test"}
+{"text": "واسه من کد مرتب‌سازی صعودی مقادیر را بده لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_d73bd8ae88a12256e1cb", "split": "train"}
+{"text": "میخوام تابعی بساز که بیشترین عدد آرایه را پیدا کند فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_a126f2a2807627689a95", "split": "validation"}
+{"text": "Please create Python code to return the largest list item with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_c78c5e9fa7f2e8124050", "split": "validation"}
+{"text": "یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_07eb1682c3ad250f145c", "split": "train"}
+{"text": "لطفاً تابعی بساز که بیشترین عدد آرایه را پیدا کند لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_3fec646ed30b8b927d0e", "split": "train"}
+{"text": "واسه من تابعی بنویس که اعداد مثبت لیست را برگرداند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_13349743e605c2ab133a", "split": "test"}
+{"text": "میخوام کدی بساز که مقادیر زوج رو جدا کنه لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_775caa63220fd14cc7e7", "split": "train"}
+{"text": "برام کدی بنویس که مقادیر مثبت آرایه را جدا کند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_3def320dec96fe4707c0", "split": "train"}
+{"text": "بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_17ad62530b3bce9ced2f", "split": "validation"}
+{"text": "واسه من کدی میخوام که ماکزیمم آرایه رو بده لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_cd0066e95858965f25c0", "split": "train"}
+{"text": "لطفاً بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_5bd6f481e810ddf7146e", "split": "train"}
+{"text": "واسه من کدی بساز که مقادیر زوج رو جدا کنه", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_a2f001e72af20e60232e", "split": "test"}
+{"text": "I need you to write a function that returns positive numbers from a list لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_67010f15eb36441ae65a", "split": "train"}
+{"text": "از یک لیست فقط عددهای مثبت را با تابع برگردان with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_0649b6d6612c18354f18", "split": "train"}
+{"text": "برام کدی بده که مجموع مقادیر را حساب کند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_d446026221891d2f9a4e", "split": "train"}
+{"text": "برام تابعی بساز که بیشترین عدد آرایه را پیدا کند لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_31dc7097cf218bde0779", "split": "validation"}
+{"text": "یک تابع پایتون برای sum لیست بساز", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_a1a7de47c01368c55d0d", "split": "train"}
+{"text": "برام کدی بساز که مقادیر زوج رو جدا کنه", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_a094b4738469942bf7a1", "split": "train"}
+{"text": "واسه من فقط عددهای زوج آرایه را فیلتر کن لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_359d30bc6f89bad351a5", "split": "train"}
+{"text": "برام جمع همه عناصر آرایه را حساب کن فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_814b782f91dda97942d1", "split": "train"}
+{"text": "از یک لیست فقط عددهای مثبت را با تابع برگردان لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_a089c272484e95759cb8", "split": "train"}
+{"text": "میخوام تابع پایتون برای even filter بساز", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_48668f2037fccfea0dc2", "split": "train"}
+{"text": "برام تابعی برای مرتب کردن صعودی لیست بنویس", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_51e080cf6f60b3ac6ed8", "split": "train"}
+{"text": "میخوام جمع همه عناصر آرایه را حساب کن", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_a4965b44ea3d4eda49af", "split": "validation"}
+{"text": "یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_6b68aa8873e7245ee80f", "split": "train"}
+{"text": "تابعی بساز که بیشترین عدد آرایه را پیدا کند with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_36dfa91179245fe37c24", "split": "train"}
+{"text": "لطفاً کدی بساز که مقادیر زوج رو جدا کنه", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_fc3f31c5efde83c791a0", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای maximum لیست بنویس فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_d08f292683bdf659d8e3", "split": "train"}
+{"text": "Please write a function that returns positive numbers from a list with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_40c99d0d74eb3543ce04", "split": "train"}
+{"text": "یک تابع پایتون برای sum لیست بساز فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_1aa28c736a07d8bef963", "split": "train"}
+{"text": "برام تابعی بنویس که اعداد مثبت لیست را برگرداند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_8c42fc1cfea6be7a347c", "split": "train"}
+{"text": "لطفاً کدی میخوام که ماکزیمم آرایه رو بده لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_e2c967e37b9b22538293", "split": "validation"}
+{"text": "I need you to write a function that returns positive numbers from a list فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_1b79678c3612588f0fc2", "split": "train"}
+{"text": "write a function that finds the maximum value in an array فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_2f4bdafea97342b63ffc", "split": "train"}
+{"text": "برام بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_bd75fd228896b0481cbb", "split": "validation"}
+{"text": "تابعی بنویس که مجموع اعداد لیست را برگرداند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_009f63b754dc3f6674e6", "split": "train"}
+{"text": "برام کد مرتب‌سازی صعودی مقادیر را بده فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_22cb32c4df145c17f380", "split": "validation"}
+{"text": "کدی میخوام که ماکزیمم آرایه رو بده with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_586d49b86a54069a3b7e", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای sum لیست بساز with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_c864e6eee523047daaf1", "split": "validation"}
+{"text": "برام یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_11642fe1977aece6aac4", "split": "test"}
+{"text": "واسه من یک تابع پایتون برای sum لیست بساز with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_37685c05885a86c716c1", "split": "train"}
+{"text": "Please filter even values from an array in Python فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_69c8c9b7cd2e9e39121a", "split": "test"}
+{"text": "واسه من آرایه را از کوچک به بزرگ مرتب کن with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_1b2081d4a95d26d2e8d5", "split": "train"}
+{"text": "برام تابع پایتون برای even filter بساز", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_11a52f55bb5a13e3764c", "split": "test"}
+{"text": "Can you write a function that sorts a list ascending", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_6f34091a60c252cd0ca0", "split": "validation"}
+{"text": "واسه من کدی بده که مجموع مقادیر را حساب کند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_999440f35d4dc43a47b0", "split": "train"}
+{"text": "برام فقط عددهای زوج آرایه را فیلتر کن لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_ce66665a403cb5be5026", "split": "train"}
+{"text": "Can you write a function that sums all list numbers لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_bf074551135cfd737de9", "split": "train"}
+{"text": "I need you to write a function that sums all list numbers with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_345f46486c46ed05f7da", "split": "train"}
+{"text": "میخوام تابعی بنویس که مجموع اعداد لیست را برگرداند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_5fd997771e1fc931312e", "split": "validation"}
+{"text": "میخوام یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_d314c6cb2a5ae0420d2c", "split": "validation"}
+{"text": "Please create Python code to return the largest list item", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_79d59667689ac99101c4", "split": "validation"}
+{"text": "میخوام تابعی بنویس که اعداد مثبت لیست را برگرداند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_5f3ebcf5ec2a008c7d71", "split": "train"}
+{"text": "یک تابع پایتون برای maximum لیست بنویس لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_72ebcd9585e5bbe7ce27", "split": "train"}
+{"text": "برام تابعی برای مرتب کردن صعودی لیست بنویس لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_e175918d1d210982b4c9", "split": "train"}
+{"text": "واسه من تابعی بنویس که مجموع اعداد لیست را برگرداند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_ff09156dd43c55f797fa", "split": "test"}
+{"text": "میخوام تابعی بنویس که مجموع اعداد لیست را برگرداند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_3dada74b9a7aac4b14eb", "split": "train"}
+{"text": "Please create Python code to total array values", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_01de1dfb64b30c55f685", "split": "train"}
+{"text": "فقط عددهای زوج آرایه را فیلتر کن", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_88029b0f1866dc0950ba", "split": "train"}
+{"text": "لطفاً کدی بساز که مقادیر زوج رو جدا کنه لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_fad1cb9ff9b5e7f78bc2", "split": "train"}
+{"text": "Please create Python code to total array values فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_1e5d37218773063f209b", "split": "train"}
+{"text": "برام کدی بنویس که مقادیر مثبت آرایه را جدا کند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_4043491cf23f64187d6e", "split": "train"}
+{"text": "واسه من کد مرتب‌سازی صعودی مقادیر را بده with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_b92d15e68c15416ff07a", "split": "train"}
+{"text": "تابعی بنویس که اعداد زوج لیست را برگرداند لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_2a99a761c7d5089695d9", "split": "test"}
+{"text": "بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_cdf6b32fe0eeff5a0c05", "split": "validation"}
+{"text": "Please write a function that sorts a list ascending لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_91341865121a43e45d06", "split": "validation"}
+{"text": "برام تابعی بنویس که مجموع اعداد لیست را برگرداند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_72c0a40e0bc78658eed1", "split": "train"}
+{"text": "میخوام بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_d67ee6fe847890be5670", "split": "train"}
+{"text": "واسه من جمع همه عناصر آرایه را حساب کن فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_2023d0faa0ce3dca4c57", "split": "train"}
+{"text": "Please write a function that sums all list numbers with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_f73f3956d18626d0d056", "split": "validation"}
+{"text": "برام یک تابع پایتون برای maximum لیست بنویس", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_f1b4540bd99568e4b881", "split": "train"}
+{"text": "برام آرایه را از کوچک به بزرگ مرتب کن لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_0a1356c309a94f8b6f83", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_69dd7a84e3eb75468deb", "split": "train"}
+{"text": "I need you to write a function that finds the maximum value in an array لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_d857170081a038830dfa", "split": "train"}
+{"text": "واسه من جمع همه عناصر آرایه را حساب کن", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_0863cc69fb7389506732", "split": "train"}
+{"text": "میخوام کدی میخوام که ماکزیمم آرایه رو بده", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_24f8d8ca26a0016cceb9", "split": "train"}
+{"text": "Please create Python code to filter values greater than zero لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_672cf2176bdf1122cdf9", "split": "validation"}
+{"text": "واسه من یک تابع پایتون برای maximum لیست بنویس لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_4da067430dd280f84ba1", "split": "validation"}
+{"text": "لطفاً یک تابع پایتون برای sort کردن لیست بساز", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_eb152f3c703439c78e70", "split": "validation"}
+{"text": "لطفاً یک تابع پایتون برای maximum لیست بنویس لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_8b065548d8a8cb179712", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_a7b1a34946331d3ae6c8", "split": "train"}
+{"text": "لطفاً تابعی بنویس که اعداد مثبت لیست را برگرداند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_e4dfae14edd658f069d5", "split": "train"}
+{"text": "لطفاً کدی بنویس که مقادیر مثبت آرایه را جدا کند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_04710b1b6c0aae6df4be", "split": "train"}
+{"text": "لطفاً جمع همه عناصر آرایه را حساب کن with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_2d0729ce2acb36497ff4", "split": "train"}
+{"text": "برام یک تابع پایتون برای maximum لیست بنویس فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_649a967bd78c0297e2ed", "split": "validation"}
+{"text": "Please create Python code to return the largest list item لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_8d694d70bc9af2f5ae9c", "split": "train"}
+{"text": "تابعی بساز که بیشترین عدد آرایه را پیدا کند لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_fc9bb80c7bdf5bfea6f4", "split": "validation"}
+{"text": "برام تابعی بنویس که مجموع اعداد لیست را برگرداند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_56f92bf19c74b187ba38", "split": "test"}
+{"text": "لطفاً تابع پایتون برای even filter بساز", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_33b926a107ded6f79830", "split": "train"}
+{"text": "میخوام فقط عددهای زوج آرایه را فیلتر کن لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_348dbacdba4b5195861c", "split": "test"}
+{"text": "Please create Python code to order array values from low to high فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_468e6fea8bf1d912d1d2", "split": "train"}
+{"text": "واسه من تابع پایتون برای even filter بساز فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_f9c5220b1fb6d2defce1", "split": "train"}
+{"text": "واسه من تابعی برای مرتب کردن صعودی لیست بنویس with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_2714443e6aebb7ad87c4", "split": "train"}
+{"text": "I need you to write a function that finds the maximum value in an array فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_79df630aa25add5cc1db", "split": "validation"}
+{"text": "Can you write a function that returns positive numbers from a list لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_8109a61d44759a022c32", "split": "train"}
+{"text": "جمع همه عناصر آرایه را حساب کن فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_4c57e3edd44d8288be1e", "split": "validation"}
+{"text": "لطفاً کدی بنویس که مقادیر مثبت آرایه را جدا کند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_27419806fc09b23dccbb", "split": "train"}
+{"text": "واسه من تابعی بنویس که اعداد زوج لیست را برگرداند لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_0eb61045fc1eb98aa42a", "split": "train"}
+{"text": "واسه من تابعی برای مرتب کردن صعودی لیست بنویس فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_0674a06669e9bb580a3a", "split": "train"}
+{"text": "میخوام تابعی بنویس که اعداد زوج لیست را برگرداند", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_c04f8916d024ffed17f1", "split": "train"}
+{"text": "برام از یک لیست فقط عددهای مثبت را با تابع برگردان", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_5f7d36896a7143fce34b", "split": "train"}
+{"text": "Please create Python code to filter values greater than zero with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_b03023af68e284835ae3", "split": "test"}
+{"text": "واسه من تابعی بنویس که اعداد زوج لیست را برگرداند فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_77d0c5748245525ac04a", "split": "train"}
+{"text": "write a function to return even numbers", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_10b988873626cfefac45", "split": "validation"}
+{"text": "برام یک تابع پایتون برای maximum لیست بنویس with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_59c2b230ddb7c32f44f5", "split": "train"}
+{"text": "میخوام آرایه را از کوچک به بزرگ مرتب کن", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_45777cc1f407bc52173d", "split": "train"}
+{"text": "برام تابعی بنویس که اعداد زوج لیست را برگرداند with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_47a92d184c4048b1e370", "split": "train"}
+{"text": "I need you to write a function that sorts a list ascending", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_b53c92c678558f1c06a3", "split": "train"}
+{"text": "لطفاً تابعی بساز که بیشترین عدد آرایه را پیدا کند", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_edd1944ae20fdabd40d1", "split": "validation"}
+{"text": "برام فقط عددهای زوج آرایه را فیلتر کن فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_001ded8b1999a45658a3", "split": "train"}
+{"text": "کدی بنویس که مقادیر مثبت آرایه را جدا کند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_916fe99750da8d6b1d1e", "split": "train"}
+{"text": "لطفاً از یک لیست فقط عددهای مثبت را با تابع برگردان with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_e8b33125a2ca4d656a3c", "split": "validation"}
+{"text": "میخوام تابعی بساز که بیشترین عدد آرایه را پیدا کند لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_5f9bd3a38629ae659938", "split": "test"}
+{"text": "Can you write a function that finds the maximum value in an array with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_b545f82980950628e091", "split": "test"}
+{"text": "میخوام بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_f6373adde45464f79ace", "split": "train"}
+{"text": "لطفاً آرایه را از کوچک به بزرگ مرتب کن فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_90648b2589f331a53dee", "split": "train"}
+{"text": "Can you write a function that sorts a list ascending with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_219e660e6552659ece0a", "split": "train"}
+{"text": "میخوام تابع پایتون برای even filter بساز فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_dd114dcae01e29c70963", "split": "train"}
+{"text": "میخوام کدی بنویس که مقادیر مثبت آرایه را جدا کند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_d2435fca8f659a0a85e7", "split": "train"}
+{"text": "write a function that sums all list numbers لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_44f9837be5d5c2cafe08", "split": "train"}
+{"text": "یک تابع پایتون برای sort کردن لیست بساز with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_e4210036f61920506a82", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای sort کردن لیست بساز with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_c663ebebaa8fb2a07895", "split": "validation"}
+{"text": "میخوام جمع همه عناصر آرایه را حساب کن with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_cba33332f9b40f822f87", "split": "train"}
+{"text": "میخوام جمع همه عناصر آرایه را حساب کن فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_da8cb0f2e7d29f2ee115", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای sum لیست بساز فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_1b73385424a60fde0a66", "split": "train"}
+{"text": "میخوام تابعی بنویس که اعداد زوج لیست را برگرداند لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_a2dfc9088696d12de127", "split": "train"}
+{"text": "لطفاً کد مرتب‌سازی صعودی مقادیر را بده with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_2bc0009bc9e3581b52ec", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_460c397fdcc2448c5359", "split": "train"}
+{"text": "یک تابع پایتون برای sum لیست بساز with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_fc8b4147aa3091f91eab", "split": "validation"}
+{"text": "واسه من تابع پایتون برای even filter بساز لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_20aeffb21f9f23dd1b2c", "split": "train"}
+{"text": "Please create Python code to filter values greater than zero فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_75ef504444765776dc85", "split": "train"}
+{"text": "برام یک تابع پایتون برای sort کردن لیست بساز", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_2e0e1336ffbd788b1c1d", "split": "validation"}
+{"text": "write a function that sorts a list ascending with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_6d688f360d3e4d7b20a6", "split": "train"}
+{"text": "لطفاً کد مرتب‌سازی صعودی مقادیر را بده", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_51a9d553539a7b202cb7", "split": "train"}
+{"text": "میخوام کد مرتب‌سازی صعودی مقادیر را بده with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_8d7bd354290d745df0f6", "split": "train"}
+{"text": "میخوام کدی میخوام که ماکزیمم آرایه رو بده لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_5daa8d353503b8932320", "split": "validation"}
+{"text": "Can you write a function that sorts a list ascending لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_41bcf3aa4ab23a114db2", "split": "train"}
+{"text": "لطفاً تابعی بنویس که اعداد زوج لیست را برگرداند فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_8035c78b29a4ce294353", "split": "test"}
+{"text": "واسه من کدی بنویس که مقادیر مثبت آرایه را جدا کند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_51c0222520a6508e9d8b", "split": "test"}
+{"text": "واسه من آرایه را از کوچک به بزرگ مرتب کن لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_04fae06d29b8d55bb849", "split": "validation"}
+{"text": "واسه من تابعی بساز که بیشترین عدد آرایه را پیدا کند", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_6f288dec0728fb01fb0a", "split": "validation"}
+{"text": "واسه من تابعی بساز که بیشترین عدد آرایه را پیدا کند لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_005222673f847e4f2e35", "split": "test"}
+{"text": "برام یک تابع پایتون برای sort کردن لیست بساز with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_321ca2f32795be0fd69c", "split": "train"}
+{"text": "میخوام از یک لیست فقط عددهای مثبت را با تابع برگردان لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_fbac30fc00dfd9db5b8a", "split": "validation"}
+{"text": "Please write a function that sorts a list ascending فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_971ab2d8003e677d57de", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای maximum لیست بنویس فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_a041b6d6512ddf9a0d44", "split": "train"}
+{"text": "برام کدی بنویس که مقادیر مثبت آرایه را جدا کند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_8ccf7e7049ddc95e5e15", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای maximum لیست بنویس", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_87b5c1e34674632322ef", "split": "train"}
+{"text": "آرایه را از کوچک به بزرگ مرتب کن لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_1ef8cc5f9cb4f3ec286c", "split": "validation"}
+{"text": "واسه من تابعی بساز که بیشترین عدد آرایه را پیدا کند فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_69ead4c254df924a9dcc", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_2f6d4b53592ba56e8030", "split": "test"}
+{"text": "میخوام کدی میخوام که ماکزیمم آرایه رو بده with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_9af4288ab9ae7bf5b25c", "split": "train"}
+{"text": "واسه من تابع پایتون برای even filter بساز with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_2cc864f822bd67be2b1d", "split": "train"}
+{"text": "میخوام جمع همه عناصر آرایه را حساب کن لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_d6278da97b5aff0cb927", "split": "train"}
+{"text": "یک تابع پایتون برای sort کردن لیست بساز فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_ea46be16d0b2d5f1530a", "split": "train"}
+{"text": "برام یک تابع پایتون برای sum لیست بساز", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_3c4d95b4bf96e45f3cc1", "split": "train"}
+{"text": "Please write a function that sorts a list ascending with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_c262c0e8e92d51027785", "split": "train"}
+{"text": "کد مرتب‌سازی صعودی مقادیر را بده فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_504a7177899495751b8e", "split": "train"}
+{"text": "برام یک تابع پایتون برای sort کردن لیست بساز لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_27572c8f31652bec3fc2", "split": "train"}
+{"text": "یک تابع پایتون برای sort کردن لیست بساز لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_c8d1b6d7fca46a9ec683", "split": "train"}
+{"text": "میخوام کد مرتب‌سازی صعودی مقادیر را بده لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_6d64f50ceba9d4a2e196", "split": "train"}
+{"text": "برام یک تابع پایتون برای sum لیست بساز فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_ec5d7255f5b9a222c267", "split": "train"}
+{"text": "کدی بنویس که مقادیر مثبت آرایه را جدا کند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_e1fa8bd58b61143508ab", "split": "validation"}
+{"text": "میخوام کدی بساز که مقادیر زوج رو جدا کنه فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_3af5f44ab03841af6e3f", "split": "train"}
+{"text": "آرایه را از کوچک به بزرگ مرتب کن with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_5139d5493c5b583a705f", "split": "test"}
+{"text": "Please create Python code to order array values from low to high", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_e5dbd9d24bf46851d876", "split": "train"}
+{"text": "لطفاً کدی بنویس که مقادیر مثبت آرایه را جدا کند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_ff40347ae010ebd97d81", "split": "validation"}
+{"text": "واسه من کدی بده که مجموع مقادیر را حساب کند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_d6434efdf98ee71070b7", "split": "validation"}
+{"text": "یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_a1aa15c5eeee0773224c", "split": "test"}
+{"text": "لطفاً یک تابع پایتون برای sort کردن لیست بساز with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_95579fd373e4a935c187", "split": "train"}
+{"text": "برام یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_8a278729843c1bd322e9", "split": "train"}
+{"text": "میخوام کدی میخوام که ماکزیمم آرایه رو بده فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_ffc640efbb1603ddbc2b", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای sort کردن لیست بساز فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_36abd743bd183f257457", "split": "validation"}
+{"text": "برام تابعی بنویس که اعداد زوج لیست را برگرداند لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_8904eff5e6b17589f325", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای sort کردن لیست بساز لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_9e1a3f91a959810467ff", "split": "validation"}
+{"text": "برام کدی بنویس که مقادیر مثبت آرایه را جدا کند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_6150beeada47c3e2505e", "split": "train"}
+{"text": "تابعی بنویس که مجموع اعداد لیست را برگرداند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_24b2fa62573348fb8097", "split": "train"}
+{"text": "واسه من فقط عددهای زوج آرایه را فیلتر کن فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_5129dbf5067799058904", "split": "train"}
+{"text": "کد مرتب‌سازی صعودی مقادیر را بده", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_a491295f121a8790cfc7", "split": "train"}
+{"text": "لطفاً بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_73be3d947770867df3c9", "split": "train"}
+{"text": "Please write a function that finds the maximum value in an array with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_12ea1fa542b55f8c62a2", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای maximum لیست بنویس", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_3303d3d1eb0d0c032698", "split": "test"}
+{"text": "میخوام تابعی بنویس که اعداد مثبت لیست را برگرداند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_24ab51767d46afebe9b8", "split": "train"}
+{"text": "واسه من کد مرتب‌سازی صعودی مقادیر را بده", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_653da39c457c10d9dd8e", "split": "train"}
+{"text": "لطفاً تابعی بنویس که اعداد مثبت لیست را برگرداند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_6b563305a721ef0e6239", "split": "test"}
+{"text": "I need you to write a function that sorts a list ascending with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_37f0ee0edc7122c8876f", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای maximum لیست بنویس with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_872df8122750c6b31def", "split": "train"}
+{"text": "I need you to write a function to return even numbers with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_c183cb1e81f8ce124cf1", "split": "train"}
+{"text": "میخوام فقط عددهای زوج آرایه را فیلتر کن", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_df690515dd34c2e744f6", "split": "test"}
+{"text": "کدی بده که مجموع مقادیر را حساب کند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_9b996ea044552a777a43", "split": "validation"}
+{"text": "تابعی بنویس که اعداد مثبت لیست را برگرداند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_ff2b4b614a92ab684c2e", "split": "train"}
+{"text": "یک تابع پایتون برای sort کردن لیست بساز", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_fc070d2e7bdf4ca3fce3", "split": "validation"}
+{"text": "واسه من آرایه را از کوچک به بزرگ مرتب کن فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_1c59936cd9436ac4126a", "split": "train"}
+{"text": "یک تابع پایتون برای maximum لیست بنویس فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_9820afad9fe3cec9518a", "split": "validation"}
+{"text": "Please write a function that finds the maximum value in an array", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_e727e9cab3f31819ecbc", "split": "train"}
+{"text": "Please write a function that finds the maximum value in an array فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_74f665a72657bef0bdd9", "split": "train"}
+{"text": "Can you write a function that finds the maximum value in an array", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_725d0f811a1e778d185d", "split": "train"}
+{"text": "write a function to return even numbers فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_6949e3df8ce0a241457e", "split": "train"}
+{"text": "میخوام کدی بنویس که مقادیر مثبت آرایه را جدا کند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_884d139edfbf6ec051a5", "split": "train"}
+{"text": "میخوام تابعی برای مرتب کردن صعودی لیست بنویس", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_1b10ad413eb613b86421", "split": "train"}
+{"text": "برام بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_8a0992cf952bb389dde5", "split": "train"}
+{"text": "لطفاً جمع همه عناصر آرایه را حساب کن لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_c0df9615e9c27538aea9", "split": "train"}
+{"text": "برام جمع همه عناصر آرایه را حساب کن", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_8c93b0692554568a6cd6", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای sum لیست بساز لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_481db681c6443928f4b3", "split": "validation"}
+{"text": "I need you to write a function that finds the maximum value in an array", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_ac433dea27a16029afd1", "split": "train"}
+{"text": "تابعی بنویس که مجموع اعداد لیست را برگرداند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_b5ba345bf3bc505dad7c", "split": "train"}
+{"text": "لطفاً کدی میخوام که ماکزیمم آرایه رو بده with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_190b5706090c0851384b", "split": "train"}
+{"text": "برام تابع پایتون برای even filter بساز لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_b8192f0102aa57e36cb2", "split": "validation"}
+{"text": "میخوام کد مرتب‌سازی صعودی مقادیر را بده فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_1884d24ea1af6fe15a6d", "split": "train"}
+{"text": "لطفاً کدی میخوام که ماکزیمم آرایه رو بده فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_34de2fff4101e6b2f245", "split": "train"}
+{"text": "Please create Python code to filter values greater than zero", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_9ea6406c3d5c457b3d66", "split": "train"}
+{"text": "میخوام آرایه را از کوچک به بزرگ مرتب کن فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_b902cb53008d8b4d4d8c", "split": "train"}
+{"text": "برام بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_027ca90f5f8d9038b3e7", "split": "train"}
+{"text": "کد مرتب‌سازی صعودی مقادیر را بده لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_9784ffb2da3e1f9913b3", "split": "train"}
+{"text": "میخوام کدی بده که مجموع مقادیر را حساب کند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_b300e834b02424f7f431", "split": "validation"}
+{"text": "Can you write a function to return even numbers", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_74e4a9d29838616f2bf6", "split": "validation"}
+{"text": "I need you to write a function that sorts a list ascending لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_b7e917c277edb7427475", "split": "validation"}
+{"text": "میخوام یک تابع پایتون برای sum لیست بساز", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_4e24b4c124e7cbf88ff2", "split": "validation"}
+{"text": "لطفاً تابعی بساز که بیشترین عدد آرایه را پیدا کند فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_b3579c835a906758ec2a", "split": "train"}
+{"text": "کدی بده که مجموع مقادیر را حساب کند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_1f4a9edcb44f2fccc075", "split": "validation"}
+{"text": "میخوام کد مرتب‌سازی صعودی مقادیر را بده", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_7dec926739436687551b", "split": "train"}
+{"text": "واسه من کدی بنویس که مقادیر مثبت آرایه را جدا کند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_ad4a0d4f162f8f6d098b", "split": "test"}
+{"text": "تابعی بنویس که اعداد مثبت لیست را برگرداند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_218f92f499b9b78901c9", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای sum لیست بساز", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_a21372b8f4108fe298a5", "split": "train"}
+{"text": "لطفاً تابعی بنویس که مجموع اعداد لیست را برگرداند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_ea604f8f4b677a6df2a6", "split": "validation"}
+{"text": "واسه من بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_95e43fd3155976fb7089", "split": "train"}
+{"text": "برام فقط عددهای زوج آرایه را فیلتر کن", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_3053b7e8fe69c52320e6", "split": "train"}
+{"text": "تابع پایتون برای even filter بساز فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_6a7d04358cd9e31f0f5b", "split": "train"}
+{"text": "میخوام تابعی بنویس که اعداد مثبت لیست را برگرداند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_723d62f056c0951a3fe8", "split": "validation"}
+{"text": "I need you to write a function that sorts a list ascending فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_b410d175f68c435c68e6", "split": "validation"}
+{"text": "میخوام کدی بساز که مقادیر زوج رو جدا کنه", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_8aefaa75d211c27cc82f", "split": "test"}
+{"text": "واسه من کدی میخوام که ماکزیمم آرایه رو بده with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_d4d04d364b8e0dafd58a", "split": "train"}
+{"text": "واسه من کدی میخوام که ماکزیمم آرایه رو بده", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_b841627dee578d745e18", "split": "validation"}
+{"text": "برام تابعی بنویس که مجموع اعداد لیست را برگرداند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_e353d353eef65b5c4b4c", "split": "test"}
+{"text": "واسه من از یک لیست فقط عددهای مثبت را با تابع برگردان لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_a57f7660cd56b7e0f2d9", "split": "train"}
+{"text": "میخوام کدی بساز که مقادیر زوج رو جدا کنه with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_f0a9930cfd5c783ffd7f", "split": "validation"}
+{"text": "Can you write a function that sums all list numbers", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_37d6b2c468a687b80cc1", "split": "validation"}
+{"text": "Please write a function to return even numbers", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_3b62cf6295387a372187", "split": "train"}
+{"text": "برام تابعی بنویس که اعداد مثبت لیست را برگرداند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_58ebdb3c357bb800205f", "split": "train"}
+{"text": "برام کدی میخوام که ماکزیمم آرایه رو بده with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_f0ae32413f333e1b44b3", "split": "test"}
+{"text": "Please write a function that sorts a list ascending", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_9c06fca6bece99ccd0ec", "split": "train"}
+{"text": "Can you write a function that sums all list numbers فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_70f59517ea0d498eab68", "split": "test"}
+{"text": "واسه من کدی بده که مجموع مقادیر را حساب کند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_b67eb3727aac94d52bf8", "split": "train"}
+{"text": "write a function that returns positive numbers from a list", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_893211af1e2dd47e02b7", "split": "test"}
+{"text": "واسه من یک تابع پایتون برای sort کردن لیست بساز", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_dd499541ad92a870336b", "split": "train"}
+{"text": "برام کدی بده که مجموع مقادیر را حساب کند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_0a7c6ec3cc1924816ee5", "split": "test"}
+{"text": "میخوام کدی بده که مجموع مقادیر را حساب کند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_1e2652c5f58ee3abda3b", "split": "validation"}
+{"text": "برام کدی بساز که مقادیر زوج رو جدا کنه with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_bd2bd24f1d47b265b017", "split": "train"}
+{"text": "میخوام تابع پایتون برای even filter بساز لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_efecd322cb8c1b37ceae", "split": "train"}
+{"text": "واسه من تابعی بنویس که مجموع اعداد لیست را برگرداند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_1897cb429d105e4424da", "split": "train"}
+{"text": "واسه من تابع پایتون برای even filter بساز", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_dd46401dba70f21b13d7", "split": "test"}
+{"text": "کد مرتب‌سازی صعودی مقادیر را بده with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_8c3dcdcb383f17bd21d8", "split": "test"}
+{"text": "یک تابع پایتون برای maximum لیست بنویس", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_ef51e67e9e679aca215a", "split": "train"}
+{"text": "برام تابعی بنویس که اعداد زوج لیست را برگرداند فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_5c2ec09468f8692f4151", "split": "validation"}
+{"text": "لطفاً تابع پایتون برای even filter بساز with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_5adc6a7cd721ed996ce0", "split": "train"}
+{"text": "میخوام فقط عددهای زوج آرایه را فیلتر کن with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_9546e52d5974c3a9cc05", "split": "train"}
+{"text": "write a function that finds the maximum value in an array", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_b140ebaa1c0d6c4cd8d9", "split": "train"}
+{"text": "Please write a function that sums all list numbers لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_f81f98d888bdd3d2f2d6", "split": "train"}
+{"text": "تابعی بنویس که اعداد زوج لیست را برگرداند فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_1d4b0bacd8dafb0176bb", "split": "train"}
+{"text": "یک تابع پایتون برای maximum لیست بنویس with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_ea5cbf21687d33abdc3d", "split": "train"}
+{"text": "کدی بنویس که مقادیر مثبت آرایه را جدا کند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_c5df0d2e8edf65ea6b4b", "split": "train"}
+{"text": "I need you to write a function that sums all list numbers", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_d07d817b7cb5a6006187", "split": "train"}
+{"text": "Can you write a function that returns positive numbers from a list فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_71d9adfe3c8b7787a68b", "split": "train"}
+{"text": "تابع پایتون برای even filter بساز", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_369de0b6c4c6a937049a", "split": "train"}
+{"text": "I need you to write a function that sums all list numbers فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_e0421be8d63a330f0cbb", "split": "train"}
+{"text": "فقط عددهای زوج آرایه را فیلتر کن with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_3ce21a0b8634925a1293", "split": "train"}
+{"text": "write a function that sums all list numbers with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_72a42573a804b198a18b", "split": "train"}
+{"text": "واسه من تابعی بنویس که اعداد مثبت لیست را برگرداند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_e58b9042d6114fd0f90d", "split": "validation"}
+{"text": "I need you to write a function to return even numbers", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_a9ee01d9fa05737e087e", "split": "train"}
+{"text": "لطفاً تابعی بساز که بیشترین عدد آرایه را پیدا کند with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_85a3fda999c485b826db", "split": "train"}
+{"text": "لطفاً تابعی بنویس که اعداد زوج لیست را برگرداند with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_d9636e4c661c96ebc3a4", "split": "train"}
+{"text": "لطفاً کدی بده که مجموع مقادیر را حساب کند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_2a8ee126eaa5379731c2", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای sort کردن لیست بساز فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_0084f0e9be3e197eb7c1", "split": "train"}
+{"text": "واسه من تابعی برای مرتب کردن صعودی لیست بنویس", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_00590209ebb8e8b82a79", "split": "train"}
+{"text": "Please filter even values from an array in Python with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_e445146048641f255a3a", "split": "validation"}
+{"text": "میخوام تابع پایتون برای even filter بساز with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_f5bf9e7130f1eb37824f", "split": "validation"}
+{"text": "Please write a function that returns positive numbers from a list فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_0666c3f4786bb4de3145", "split": "train"}
+{"text": "برام کدی بده که مجموع مقادیر را حساب کند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_0a94b7afbf554525ad17", "split": "train"}
+{"text": "واسه من تابعی بنویس که اعداد مثبت لیست را برگرداند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_4f31d73e617ea5dc00c5", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای sum لیست بساز فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_3023d4ebbc7a25918236", "split": "train"}
+{"text": "واسه من کدی بده که مجموع مقادیر را حساب کند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_6a1a08406726cf0c98f8", "split": "train"}
+{"text": "برام از یک لیست فقط عددهای مثبت را با تابع برگردان with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_472a4b3382f67031d3c4", "split": "test"}
+{"text": "Please write a function that finds the maximum value in an array لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_86bed33d93666c87772d", "split": "train"}
+{"text": "یک تابع پایتون برای sum لیست بساز لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_63e9f621dbb6af086ed4", "split": "train"}
+{"text": "واسه من بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_fa69082a3a47bbdbd5ec", "split": "train"}
+{"text": "واسه من کدی میخوام که ماکزیمم آرایه رو بده فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_b4e89005ab8acd3b4ce5", "split": "train"}
+{"text": "Can you write a function that sums all list numbers with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_d12c6fdc9a316813d968", "split": "train"}
+{"text": "واسه من تابعی بنویس که مجموع اعداد لیست را برگرداند with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_adfef33c50df08b2d08d", "split": "train"}
+{"text": "واسه من کدی بنویس که مقادیر مثبت آرایه را جدا کند", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_e3a28809e385432d7285", "split": "test"}
+{"text": "لطفاً تابعی برای مرتب کردن صعودی لیست بنویس فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_a44576052c7c71d23d30", "split": "train"}
+{"text": "کدی میخوام که ماکزیمم آرایه رو بده فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_80ea705bde35f6b7956f", "split": "train"}
+{"text": "برام کدی بساز که مقادیر زوج رو جدا کنه فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_1f8f0ba8aae19accfa8c", "split": "validation"}
+{"text": "Can you write a function that returns positive numbers from a list", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_64dc9ed483152d1f39fb", "split": "train"}
+{"text": "کدی میخوام که ماکزیمم آرایه رو بده لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_a42767e720213c26ff51", "split": "validation"}
+{"text": "برام یک تابع پایتون برای maximum لیست بنویس لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_c238cd324a007569b055", "split": "train"}
+{"text": "میخوام تابعی بنویس که اعداد زوج لیست را برگرداند with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_abf048fef157b8cb3174", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای sum لیست بساز", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_23e1301af5e44fb01111", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_846a6426fd9cb7796c6d", "split": "train"}
+{"text": "واسه من فقط عددهای زوج آرایه را فیلتر کن with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_92e84b3968a697c7e89d", "split": "train"}
+{"text": "write a function to return even numbers with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_b877ae06d9fb01f2a636", "split": "validation"}
+{"text": "برام یک تابع پایتون برای sort کردن لیست بساز فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_30a3abf8a9bb809ad24d", "split": "train"}
+{"text": "write a function that finds the maximum value in an array لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_648b1bb21c56b9a5ff53", "split": "train"}
+{"text": "لطفاً از یک لیست فقط عددهای مثبت را با تابع برگردان", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_a7f90e668144283764f2", "split": "train"}
+{"text": "لطفاً از یک لیست فقط عددهای مثبت را با تابع برگردان فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_f5c74d0ef90528937400", "split": "train"}
+{"text": "واسه من بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_33d3494f907156d55b57", "split": "test"}
+{"text": "I need you to write a function to return even numbers لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_06b41d4e68443212b8f4", "split": "validation"}
+{"text": "جمع همه عناصر آرایه را حساب کن لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_cb8a8bdf210431176429", "split": "train"}
+{"text": "I need you to write a function that sums all list numbers لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_7d48c6a1c8385e4ed742", "split": "train"}
+{"text": "لطفاً آرایه را از کوچک به بزرگ مرتب کن with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_9a9636380f0f6fae4992", "split": "train"}
+{"text": "تابعی بنویس که اعداد زوج لیست را برگرداند with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_1022987867a55e5a709a", "split": "train"}
+{"text": "میخوام کدی بنویس که مقادیر مثبت آرایه را جدا کند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_e087d5820fefbe0acc72", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای maximum لیست بنویس", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_975ed75428180e9ae21f", "split": "train"}
+{"text": "واسه من کدی بنویس که مقادیر مثبت آرایه را جدا کند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_99a58b408b57e6abba73", "split": "train"}
+{"text": "واسه من آرایه را از کوچک به بزرگ مرتب کن", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_9d19b547177bc58b5371", "split": "test"}
+{"text": "برام تابعی بنویس که اعداد مثبت لیست را برگرداند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_75a33d2fe9a8e2b21efd", "split": "train"}
+{"text": "write a function that sums all list numbers فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_8c78c06582bf658b6f88", "split": "train"}
+{"text": "تابعی برای مرتب کردن صعودی لیست بنویس with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_b0d50bfd8cdeaad3511f", "split": "train"}
+{"text": "برام تابع پایتون برای even filter بساز with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_418946ec4b72d19de3ef", "split": "validation"}
+{"text": "Can you write a function to return even numbers فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_3c2b29d6cbe93322c0fd", "split": "validation"}
+{"text": "Please create Python code to total array values with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_f23b6ac2fe4a977c1c48", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای sum لیست بساز with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_113347a944a82a463230", "split": "train"}
+{"text": "تابعی بنویس که اعداد زوج لیست را برگرداند", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_badc2aa3010e6e2fb1e0", "split": "train"}
+{"text": "برام کد مرتب‌سازی صعودی مقادیر را بده", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_ec1dfbff123331fe42d7", "split": "train"}
+{"text": "برام کدی میخوام که ماکزیمم آرایه رو بده فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_40281a6ce31fb8e6aaef", "split": "validation"}
+{"text": "میخوام از یک لیست فقط عددهای مثبت را با تابع برگردان with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_c6104b8544686c0a0034", "split": "validation"}
+{"text": "لطفاً فقط عددهای زوج آرایه را فیلتر کن فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_d7f81693d94eb9f2df66", "split": "validation"}
+{"text": "I need you to write a function that finds the maximum value in an array with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_5771ea088b6d1e42cb2d", "split": "train"}
+{"text": "write a function that returns positive numbers from a list لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_bd36fdc6c326c170ef67", "split": "train"}
+{"text": "بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_bfdbddcd421c051a1af5", "split": "train"}
+{"text": "لطفاً کدی بده که مجموع مقادیر را حساب کند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_8e41a5db0497c7da30fb", "split": "train"}
+{"text": "میخوام فقط عددهای زوج آرایه را فیلتر کن فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_e0a65fbc4af64900468d", "split": "validation"}
+{"text": "برام یک تابع پایتون برای sum لیست بساز لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_5023892fde47a6f5e60e", "split": "test"}
+{"text": "write a function that sums all list numbers", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_9a30b1774b15bfae1aff", "split": "train"}
+{"text": "میخوام تابعی بنویس که مجموع اعداد لیست را برگرداند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_8ab0a7ec2768fe1b0ce0", "split": "train"}
+{"text": "I need you to write a function that returns positive numbers from a list with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_5263e6c34fc5a6ccec0e", "split": "train"}
+{"text": "لطفاً یک تابع پایتون برای sum لیست بساز فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_8828083e189256cf422a", "split": "train"}
+{"text": "لطفاً کد مرتب‌سازی صعودی مقادیر را بده لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_fe2a8aa216324ad71be4", "split": "train"}
+{"text": "تابعی بساز که بیشترین عدد آرایه را پیدا کند فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_ce75dcf95cc2e7639d5d", "split": "validation"}
+{"text": "فقط عددهای زوج آرایه را فیلتر کن فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_5fb980b9538d7d33a518", "split": "train"}
+{"text": "I need you to write a function that returns positive numbers from a list", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_73e3803a74234d3fa369", "split": "validation"}
+{"text": "write a function that sorts a list ascending", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_e161217ab2a47b75ce2a", "split": "train"}
+{"text": "واسه من کد مرتب‌سازی صعودی مقادیر را بده فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_66314d7322a196e1c734", "split": "train"}
+{"text": "میخوام از یک لیست فقط عددهای مثبت را با تابع برگردان فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_d0b202343bd5cba05cf5", "split": "train"}
+{"text": "لطفاً جمع همه عناصر آرایه را حساب کن فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_d0f256c395aa9270c4eb", "split": "train"}
+{"text": "لطفاً کدی بده که مجموع مقادیر را حساب کند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_7e882814270c6cf3649e", "split": "train"}
+{"text": "تابع پایتون برای even filter بساز with a clean implementation.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_49083e6704cc54ca0c03", "split": "train"}
+{"text": "واسه من تابعی بساز که بیشترین عدد آرایه را پیدا کند with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_6d449dabbe0c90020b7d", "split": "train"}
+{"text": "تابعی بنویس که اعداد مثبت لیست را برگرداند with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_447d3b3942ca43bc5580", "split": "test"}
+{"text": "میخوام تابعی بنویس که اعداد مثبت لیست را برگرداند لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_91fe3f061ec111571167", "split": "validation"}
+{"text": "واسه من فقط عددهای زوج آرایه را فیلتر کن", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_3aadec60f10ec978d294", "split": "validation"}
+{"text": "I need you to write a function to return even numbers فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_383f9feab3973f82e95b", "split": "train"}
+{"text": "میخوام بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_a5fa6428c4596efe33cc", "split": "train"}
+{"text": "آرایه را از کوچک به بزرگ مرتب کن", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_6bc274258efc8fcf419b", "split": "test"}
+{"text": "لطفاً تابع پایتون برای even filter بساز فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_997496137bea5f8feb06", "split": "train"}
+{"text": "لطفاً فقط عددهای زوج آرایه را فیلتر کن", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_7795dba0eb20c54b92e4", "split": "train"}
+{"text": "میخوام کدی بده که مجموع مقادیر را حساب کند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_ecb4ab4c22685dd326ee", "split": "validation"}
+{"text": "لطفاً بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_d72e6e703f83c1eb5ba4", "split": "validation"}
+{"text": "برام آرایه را از کوچک به بزرگ مرتب کن with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_9325ba8fefa7567cd0d8", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای sort کردن لیست بساز لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_1705c14fb7f743195939", "split": "train"}
+{"text": "واسه من کدی بساز که مقادیر زوج رو جدا کنه لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_7c3ac608e0c45231ccc1", "split": "validation"}
+{"text": "لطفاً کدی بساز که مقادیر زوج رو جدا کنه فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_9c35f69003d280ce1f9f", "split": "train"}
+{"text": "برام تابعی بساز که بیشترین عدد آرایه را پیدا کند فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_7f9cc95aab8016f07b3a", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_21ab026c1215a461a5a7", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای sum لیست بساز لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_4476d45079e9b019bd16", "split": "validation"}
+{"text": "میخوام آرایه را از کوچک به بزرگ مرتب کن لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_9b001d096a7b3256635d", "split": "train"}
+{"text": "میخوام یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_2f4bdad7fbcb0f1703b6", "split": "train"}
+{"text": "لطفاً تابعی بنویس که مجموع اعداد لیست را برگرداند لطفاً.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_a1c36675c2caebfcab5e", "split": "train"}
+{"text": "برام کدی میخوام که ماکزیمم آرایه رو بده لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_7c70af27c85a2e8e59f7", "split": "train"}
+{"text": "واسه من تابعی برای مرتب کردن صعودی لیست بنویس لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_63c0db1dc98090c0fa19", "split": "test"}
+{"text": "Please create Python code to return the largest list item فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_256f070fb1f5d793e8ce", "split": "train"}
+{"text": "تابع پایتون برای even filter بساز لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_61e7ca5c21082cce11c9", "split": "train"}
+{"text": "کدی بساز که مقادیر زوج رو جدا کنه لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_bda6c10d85fdb2f4ac77", "split": "train"}
+{"text": "جمع همه عناصر آرایه را حساب کن", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_85822963dc117823a379", "split": "train"}
+{"text": "برام تابع پایتون برای even filter بساز فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_81ebd36bfcfd650e6dfa", "split": "validation"}
+{"text": "Can you write a function that finds the maximum value in an array فقط خود تابع را بده.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_419ae4a55d5cc8b889e4", "split": "validation"}
+{"text": "Can you write a function that sorts a list ascending فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_34749cadbd814d62ad80", "split": "validation"}
+{"text": "لطفاً بزرگ‌ترین مقدار لیست را با یک تابع پیدا کن لطفاً.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_51b1da577c2bf8917fa6", "split": "train"}
+{"text": "write a function that finds the maximum value in an array with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_cc01485c0b2f45e782b3", "split": "train"}
+{"text": "لطفاً تابعی برای مرتب کردن صعودی لیست بنویس", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_b8a9f139fb4831b2b4b0", "split": "train"}
+{"text": "برام کد مرتب‌سازی صعودی مقادیر را بده لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_a9b00ceba4ce660135a6", "split": "validation"}
+{"text": "write a function to return even numbers لطفاً.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_e3d5e3b7e4ec96c01f95", "split": "train"}
+{"text": "میخوام تابعی برای مرتب کردن صعودی لیست بنویس لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_d92a44cb7f50a6c83638", "split": "train"}
+{"text": "کدی بده که مجموع مقادیر را حساب کند فقط خود تابع را بده.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_be357c548dd980cb84ca", "split": "train"}
+{"text": "میخوام تابعی برای مرتب کردن صعودی لیست بنویس with a clean implementation.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_65287f15c040204e2d8b", "split": "test"}
+{"text": "میخوام کدی بنویس که مقادیر مثبت آرایه را جدا کند فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_ecc31bf16acb1c99ee4d", "split": "test"}
+{"text": "تابعی برای مرتب کردن صعودی لیست بنویس فقط خود تابع را بده.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_8f672b39f4babdb85e70", "split": "train"}
+{"text": "واسه من از یک لیست فقط عددهای مثبت را با تابع برگردان with a clean implementation.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_d93e2afad050316d7df2", "split": "train"}
+{"text": "کدی بده که مجموع مقادیر را حساب کند", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_f3d0683e441c2243d622", "split": "train"}
+{"text": "میخوام تابعی بنویس که اعداد زوج لیست را برگرداند فقط خود تابع را بده.", "label": "filter_even", "concept_group": "code_replay", "template_id": "aux_f157840bca2513ad4d91", "split": "train"}
+{"text": "برام یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_8756208e2df89379faf1", "split": "train"}
+{"text": "کدی میخوام که ماکزیمم آرایه رو بده", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_397c5b1cedd3b04afe46", "split": "train"}
+{"text": "واسه من یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز لطفاً.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_b9f8134b23b509523bb2", "split": "validation"}
+{"text": "برام یک تابع پایتون برای sum لیست بساز with a clean implementation.", "label": "sum_values", "concept_group": "code_replay", "template_id": "aux_9c7ff6cb37ce805d0b47", "split": "validation"}
+{"text": "لطفاً آرایه را از کوچک به بزرگ مرتب کن لطفاً.", "label": "sort_values", "concept_group": "code_replay", "template_id": "aux_401a551d31a765991b90", "split": "test"}
+{"text": "لطفاً یک تابع پایتون برای فیلتر اعداد بزرگ‌تر از صفر بساز فقط خود تابع را بده.", "label": "filter_positive", "concept_group": "code_replay", "template_id": "aux_16dcba1c241f54b6d90f", "split": "train"}
+{"text": "برام تابعی بساز که بیشترین عدد آرایه را پیدا کند with a clean implementation.", "label": "max_value", "concept_group": "code_replay", "template_id": "aux_507a44f27457fd2b6eb4", "split": "train"}
+{"text": "explain why sorting takes time", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_f6ad07722de5380fda17", "split": "train"}
+{"text": "debug my factorial code", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_49558836a48147843926", "split": "validation"}
+{"text": "refactor this palindrome function", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_f11175c8add4b6df722d", "split": "train"}
+{"text": "what is a maximum?", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_ad6b2a32eeaac3c2d43a", "split": "train"}
+{"text": "توضیح بده مرتب سازی چطور کار میکند", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_3fad08d5d3a4d72215f0", "split": "validation"}
+{"text": "باگ کد فاکتوریل را پیدا کن", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_7ae2de9d6a75ef8d8265", "split": "validation"}
+{"text": "این تابع جمع را بازنویسی کن", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_99a5fe9de307f4d07edb", "split": "test"}
+{"text": "میانگین یعنی چی؟", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_a0876df09aee04f8d88f", "split": "train"}
+{"text": "explain the algorithm for deduplication", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_e4db4ddced2ab4178c2c", "split": "train"}
+{"text": "trace this loop", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_91b8df03d9e6e3791f4a", "split": "train"}
+{"text": "شرح کد معکوس رشته", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_39a19bb929c0a8f0a2f0", "split": "train"}
+{"text": "کد زیر چه خروجی دارد؟", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_fc61e45b3cd537e34dfe", "split": "train"}
+{"text": "latest Python documentation", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_daa0a0807b1e0df9a906", "split": "train"}
+{"text": "مستندات جدید پایتون", "label": "other", "concept_group": "code_task_negative", "template_id": "aux_b1acc2d9c76036ce9980", "split": "train"}

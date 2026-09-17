@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "file": "language_adapter_v21.npz",
+  "base_sha256": "a28217cd1c967e71c3cd7d4cd8f359bbcc812db853269fc5ac84f5c4414d0fde",
+  "sha256": "feb2c154e509094641f6566612008dde679ddc08ce644196eb7f0da8d9c752ac",
+  "gate_scope": "teacher-forced token loss; not conversational accuracy or intelligence index"
+}

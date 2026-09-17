@@ -1,0 +1,14 @@
+{
+  "training_texts_scanned": 407399,
+  "cases": 300,
+  "unique_questions": 300,
+  "unique_numeric_masked_templates": 29,
+  "declared_families": 30,
+  "training_overlap": {
+    "exact": [],
+    "normalized": [],
+    "template": []
+  },
+  "prior_benchmark_exact_overlap": [],
+  "limitations": "Diagnostic set contains parameterized shared templates. No claim of unseen template generalization or conceptual independence. No cases removed after evaluation."
+}

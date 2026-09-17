@@ -1,0 +1,95 @@
+{
+  "architecture": "hashed_linear_softmax",
+  "parameters": 49155,
+  "classes": [
+    "distractor",
+    "initial",
+    "value"
+  ],
+  "training_selection": [
+    {
+      "alpha": 1e-05,
+      "validation_accuracy": 1.0
+    },
+    {
+      "alpha": 0.0001,
+      "validation_accuracy": 1.0
+    }
+  ],
+  "metrics": {
+    "train": {
+      "n": 72388,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "loss": 0.014261232141837187,
+      "confusion_matrix": [
+        [
+          2460,
+          0,
+          0
+        ],
+        [
+          0,
+          12770,
+          0
+        ],
+        [
+          0,
+          0,
+          57158
+        ]
+      ]
+    },
+    "validation": {
+      "n": 9103,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "loss": 0.014413998381321241,
+      "confusion_matrix": [
+        [
+          295,
+          0,
+          0
+        ],
+        [
+          0,
+          1586,
+          0
+        ],
+        [
+          0,
+          0,
+          7222
+        ]
+      ]
+    },
+    "test": {
+      "n": 9163,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "loss": 0.014169648969846007,
+      "confusion_matrix": [
+        [
+          245,
+          0,
+          0
+        ],
+        [
+          0,
+          1632,
+          0
+        ],
+        [
+          0,
+          0,
+          7286
+        ]
+      ]
+    }
+  },
+  "training_rows_sha256": "773f0136d8a64362d6580712aea9e870d4e8d94d097c6897eb098631848ebe4d",
+  "sha256": "85df28c1b795d3d3a72ac086bac9ec0b8b3fc4e0655649365a50e82c314e0f45",
+  "parent_programs_used": 15988,
+  "numeric_samples": 90654,
+  "split_group": "normalized local numeric context; duplicate contexts stay together"
+}

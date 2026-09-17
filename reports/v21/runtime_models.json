@@ -1,0 +1,33 @@
+{
+  "numeric_binding": {
+    "parameters": 49155,
+    "test_accuracy": 1.0,
+    "status": "active_low_confidence_numeric_spans",
+    "sha256": "85df28c1b795d3d3a72ac086bac9ec0b8b3fc4e0655649365a50e82c314e0f45"
+  },
+  "code_task": {
+    "parameters": 81925,
+    "test_accuracy": 1.0,
+    "status": "active_code_task_selection",
+    "sha256": "c882f6349a03961ba88768fda0cb80f52d4c198901a532209bc138e9e2c2c59a"
+  },
+  "language_adapter": {
+    "parameters": 73728,
+    "status": "active_neural_generation_path",
+    "sha256": "feb2c154e509094641f6566612008dde679ddc08ce644196eb7f0da8d9c752ac",
+    "test_loss_before": 5.917140483856201,
+    "test_loss_after": 2.1794676780700684
+  },
+  "verification_failure": {
+    "parameters": 65540,
+    "test_accuracy": 0.417910447761194,
+    "status": "diagnostic_log_only_not_verification_authority",
+    "sha256": "5d7f05aadd6959839b875ea5db71868170c538b64c283f03101c4bee99892af6"
+  },
+  "operation_language": {
+    "parameters": 98310,
+    "test_accuracy": 0.5,
+    "status": "not_enabled_due_to_weak_holdout",
+    "sha256": "cb2ab875a3541bd4d9d6900d38d7c089f9e0909c185fecf1320f4eec305964a1"
+  }
+}

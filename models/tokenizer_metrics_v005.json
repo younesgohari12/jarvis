@@ -1,0 +1,18 @@
+{
+  "format": "jarvis-v13-tokenization-report-v1",
+  "dataset_version": "dataset_v005",
+  "tokenizer": "models/jarvis_tokenizer_v003.json",
+  "tokenizer_sha256": "e116174dbcb823714951cfb3e889a852e26461336968f3b965f61d28883c46a9",
+  "vocab_size": 4096,
+  "training_examples": 14074,
+  "mean_sequence_tokens": 58.2413,
+  "median_sequence_tokens": 55.0,
+  "validation_texts": 3642,
+  "validation_tokens_per_utf8_byte": 0.342823,
+  "normalized_round_trip_accuracy": 1.0,
+  "unknown_token_rate": 0.0,
+  "output": "datasets/tokenized/dataset_v005_train.jsonl",
+  "output_sha256": "1f097b97452d91b473ffddd0366c0b288fcb51435f2280240f3645f26913b7ec",
+  "note": "Reuses the release tokenizer to keep v0.8 embedding compatibility during continual training.",
+  "pretrained_source": null
+}

@@ -1,0 +1,11 @@
+{
+  "changed_existing_weight_files": [],
+  "new_models": [
+    "code_intent_v20.npz",
+    "numeric_role_v20.npz",
+    "operation_v20.npz",
+    "semantic_frame_v20.npz",
+    "repair_stage_v20.npz"
+  ],
+  "baseline_archive_sha256": "4190a991719af7f227e31b1f4599ff8ce0bfd0012a1cca62056b36ac27af04f4"
+}

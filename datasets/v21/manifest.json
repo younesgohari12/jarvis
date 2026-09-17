@@ -1,0 +1,49 @@
+{
+  "rows": 20000,
+  "sections": {
+    "semantic_ir": 5000,
+    "world_model": 5000,
+    "adversarial": 3000,
+    "persian": 3000,
+    "verification": 4000
+  },
+  "unique_inputs": 20000,
+  "unique_templates": 19881,
+  "split_counts": {
+    "train": 15974,
+    "validation": 2072,
+    "test": 1954
+  },
+  "max_numeric_variants_per_section_template": 2,
+  "data_kind": "synthetic executable compositional programs, not 20k human-authored questions",
+  "coverage_limitations": [
+    "Most new examples are multi-event arithmetic; domain and language diversity remain narrower than target.",
+    "Persian set focuses on quantitative instructions, not unrestricted dialogue.",
+    "Graph sequences and domains recur conceptually across splits."
+  ],
+  "files": {
+    "semantic_ir.jsonl": "9f067be0b03ced565e1621e4406f21414580748f1d26061f2161a1413176841d",
+    "world_model.jsonl": "d7b75f2d0a28f0e6b9a4bf122fdee06a751205bca66c0fc26b0ae61dc904c31a",
+    "verification.jsonl": "a52ce38011e5fafdc9215b53dcc05806c5e963a9352fed88fccfb790d337a893",
+    "adversarial.jsonl": "3128223112fe5dc24493bb1aeaeb874d8cce9059749abf9ea2e8937492451adf",
+    "persian.jsonl": "d4695452a9abd24d1ce6d35f67dae88417959f6cc48ffe0edf18b5267ba95992"
+  },
+  "split_strategy": "operation-domain-slot-query structure grouped; verification follows source parent",
+  "semantic_program_groups": 9713,
+  "fixed_identity_mutations": [
+    "v21_16346",
+    "v21_16694",
+    "v21_16826",
+    "v21_17142",
+    "v21_17294",
+    "v21_17502",
+    "v21_18094",
+    "v21_18602",
+    "v21_18910",
+    "v21_19054",
+    "v21_19106",
+    "v21_19146",
+    "v21_19166",
+    "v21_19602"
+  ]
+}

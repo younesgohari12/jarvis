@@ -1,0 +1,19 @@
+{
+  "rows": 10000,
+  "tasks": {
+    "generate": 2000,
+    "debug": 2000,
+    "explain": 2000,
+    "refactor": 2000,
+    "test": 2000
+  },
+  "unique_inputs": 10000,
+  "structural_program_groups": 2000,
+  "split_counts": {
+    "train": 8035,
+    "validation": 910,
+    "test": 1055
+  },
+  "sha256": "5fd33ea65d3de3626ddf5c5f22e1c6f1dfd7b00b351506c0f50b0fc493cba173",
+  "limits": "Bounded numeric list transformations and syntax repairs; not a general arbitrary-function corpus."
+}

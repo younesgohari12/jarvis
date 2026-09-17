@@ -1,0 +1,152 @@
+{
+  "format": "jarvis-tokenizer-benchmark-v3",
+  "dataset_version": "dataset_v003",
+  "training_examples": 4583,
+  "training_texts": 9770,
+  "training_tokens": 219435,
+  "candidate_metrics": [
+    {
+      "vocab_size": 2048,
+      "merge_count": 1784,
+      "evaluated_texts": 1106,
+      "mean_tokens": 23.0298,
+      "median_tokens": 11.0,
+      "tokens_per_character": 0.443607,
+      "tokens_per_utf8_byte": 0.355626,
+      "normalized_round_trip_accuracy": 1.0,
+      "unknown_token_rate": 0.0,
+      "nano_embedding_parameters": 1048576,
+      "nano_embedding_int8_bytes": 1048576,
+      "samples": [
+        {
+          "text": "فرق TCP و UDP چیه؟",
+          "tokens": 9
+        },
+        {
+          "text": "داخل درایو D یک فایل به نام تست بساز",
+          "tokens": 18
+        },
+        {
+          "text": "D:\\Projects\\Jarvis\\config\\app.json",
+          "tokens": 13
+        },
+        {
+          "text": "https://example.com/api?q=سلام&limit=20",
+          "tokens": 23
+        },
+        {
+          "text": "{\"tool\":\"create_file\",\"arguments\":{\"path\":\"D:\\\\test.txt\"}}",
+          "tokens": 25
+        },
+        {
+          "text": "def hello(name: str) -> str:\n    return f'Hello {name}'",
+          "tokens": 28
+        },
+        {
+          "text": "عددهای ۱۲۳۴۵ و 98.6 درصد",
+          "tokens": 21
+        }
+      ],
+      "path": "models/tokenizers/jarvis_tokenizer_v003_2048.json",
+      "size_bytes": 94466,
+      "sha256": "c0af0ea5ae0931e876d4c747c8a2ef1aad8587ae35fee4be6a7021dffa614b43"
+    },
+    {
+      "vocab_size": 4096,
+      "merge_count": 3832,
+      "evaluated_texts": 1106,
+      "mean_tokens": 21.7929,
+      "median_tokens": 11.0,
+      "tokens_per_character": 0.419781,
+      "tokens_per_utf8_byte": 0.336526,
+      "normalized_round_trip_accuracy": 1.0,
+      "unknown_token_rate": 0.0,
+      "nano_embedding_parameters": 2097152,
+      "nano_embedding_int8_bytes": 2097152,
+      "samples": [
+        {
+          "text": "فرق TCP و UDP چیه؟",
+          "tokens": 9
+        },
+        {
+          "text": "داخل درایو D یک فایل به نام تست بساز",
+          "tokens": 17
+        },
+        {
+          "text": "D:\\Projects\\Jarvis\\config\\app.json",
+          "tokens": 11
+        },
+        {
+          "text": "https://example.com/api?q=سلام&limit=20",
+          "tokens": 22
+        },
+        {
+          "text": "{\"tool\":\"create_file\",\"arguments\":{\"path\":\"D:\\\\test.txt\"}}",
+          "tokens": 23
+        },
+        {
+          "text": "def hello(name: str) -> str:\n    return f'Hello {name}'",
+          "tokens": 28
+        },
+        {
+          "text": "عددهای ۱۲۳۴۵ و 98.6 درصد",
+          "tokens": 19
+        }
+      ],
+      "path": "models/tokenizers/jarvis_tokenizer_v003_4096.json",
+      "size_bytes": 204851,
+      "sha256": "e116174dbcb823714951cfb3e889a852e26461336968f3b965f61d28883c46a9"
+    },
+    {
+      "vocab_size": 4657,
+      "merge_count": 4393,
+      "evaluated_texts": 1106,
+      "mean_tokens": 21.7215,
+      "median_tokens": 11.0,
+      "tokens_per_character": 0.418405,
+      "tokens_per_utf8_byte": 0.335423,
+      "normalized_round_trip_accuracy": 1.0,
+      "unknown_token_rate": 0.0,
+      "nano_embedding_parameters": 2384384,
+      "nano_embedding_int8_bytes": 2384384,
+      "samples": [
+        {
+          "text": "فرق TCP و UDP چیه؟",
+          "tokens": 9
+        },
+        {
+          "text": "داخل درایو D یک فایل به نام تست بساز",
+          "tokens": 17
+        },
+        {
+          "text": "D:\\Projects\\Jarvis\\config\\app.json",
+          "tokens": 11
+        },
+        {
+          "text": "https://example.com/api?q=سلام&limit=20",
+          "tokens": 22
+        },
+        {
+          "text": "{\"tool\":\"create_file\",\"arguments\":{\"path\":\"D:\\\\test.txt\"}}",
+          "tokens": 23
+        },
+        {
+          "text": "def hello(name: str) -> str:\n    return f'Hello {name}'",
+          "tokens": 28
+        },
+        {
+          "text": "عددهای ۱۲۳۴۵ و 98.6 درصد",
+          "tokens": 17
+        }
+      ],
+      "path": "models/tokenizers/jarvis_tokenizer_v003_4657.json",
+      "size_bytes": 237225,
+      "sha256": "56a713821ba7d78964d385e59526de6b93a6d418453adebb032c6a51a0efb22c"
+    }
+  ],
+  "selected_vocab_size": 4096,
+  "selection_note": "smallest vocabulary within 6% of best validation compression",
+  "tokenizer": "models/jarvis_tokenizer_v003.json",
+  "tokenizer_sha256": "e116174dbcb823714951cfb3e889a852e26461336968f3b965f61d28883c46a9",
+  "pretrained_source": null
+}

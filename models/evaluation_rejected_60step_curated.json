@@ -1,0 +1,45 @@
+{
+  "format": "jarvis-v12-quality-gate-v1",
+  "dataset": "datasets/splits/dataset_v004_test.jsonl",
+  "scope": "curated_v12_holdout_only",
+  "baseline": "models/jarvis_nano_v08.npz",
+  "candidate": "models/jarvis_nano_v12_candidate.npz",
+  "baseline_metrics": {
+    "cases": 105,
+    "cross_entropy": 5.290025,
+    "perplexity": 198.348423,
+    "token_accuracy": 0.305893,
+    "by_language_cross_entropy": {
+      "en": 5.541114,
+      "fa": 5.393488,
+      "mixed": 5.0285
+    },
+    "by_stage_cross_entropy": {
+      "1": 5.280301,
+      "2": 5.533678,
+      "3": 5.066648,
+      "4": 5.056498,
+      "9": 6.021543
+    }
+  },
+  "candidate_metrics": {
+    "cases": 105,
+    "cross_entropy": 5.01487,
+    "perplexity": 150.636616,
+    "token_accuracy": 0.35052,
+    "by_language_cross_entropy": {
+      "en": 5.287148,
+      "fa": 5.095029,
+      "mixed": 4.793404
+    },
+    "by_stage_cross_entropy": {
+      "1": 4.982263,
+      "2": 5.288996,
+      "3": 4.843361,
+      "4": 4.79244,
+      "9": 5.697151
+    }
+  },
+  "cross_entropy_improvement_pct": 5.201,
+  "candidate_improves_curated_holdout": true
+}

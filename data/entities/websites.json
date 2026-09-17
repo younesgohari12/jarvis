@@ -1,0 +1,82 @@
+{
+  "version": 3,
+  "websites": [
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "url": "https://www.youtube.com/",
+      "search_url": "https://www.youtube.com/results?search_query={query}",
+      "aliases": ["youtube", "yt", "یوتیوب", "یو تیوب", "یوتوب", "youtub"]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "url": "https://www.google.com/",
+      "search_url": "https://www.google.com/search?q={query}",
+      "aliases": ["google", "گوگل", "گوگول"]
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com/",
+      "search_url": "https://github.com/search?q={query}",
+      "aliases": ["github", "git hub", "گیت هاب", "گیت‌هاب", "گیتهاب"]
+    },
+    {
+      "id": "stackoverflow",
+      "name": "Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "search_url": "https://stackoverflow.com/search?q={query}",
+      "aliases": ["stack overflow", "stackoverflow", "استک اورفلو", "استک‌اورفلو"]
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/",
+      "search_url": "https://www.reddit.com/search/?q={query}",
+      "aliases": ["reddit", "ردیت", "رِدیت"]
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "url": "https://www.instagram.com/",
+      "search_url": "",
+      "aliases": ["instagram", "insta", "اینستاگرام", "اینستا", "ig"]
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook",
+      "url": "https://www.facebook.com/",
+      "search_url": "https://www.facebook.com/search/top?q={query}",
+      "aliases": ["facebook", "فیس بوک", "فیسبوک", "fb"]
+    },
+    {
+      "id": "twitter",
+      "name": "X / Twitter",
+      "url": "https://x.com/",
+      "search_url": "https://x.com/search?q={query}",
+      "aliases": ["twitter", "x.com", "توییتر", "توئیتر", "ایکس"]
+    },
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "url": "https://mail.google.com/",
+      "search_url": "",
+      "aliases": ["gmail", "جی میل", "جیمیل", "google mail"]
+    },
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "search_url": "https://en.wikipedia.org/w/index.php?search={query}",
+      "aliases": ["wikipedia", "wiki", "ویکی پدیا", "ویکی‌پدیا", "ویکی"]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "url": "https://open.spotify.com/",
+      "search_url": "https://open.spotify.com/search/{query}",
+      "aliases": ["spotify", "اسپاتیفای", "اسپاتی فای"]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "rows": 275,
+  "sha256": "3e06ef94c52b963a2b17aeabf6012373525afc83597671b1dc37788331d56bd4",
+  "frozen_before_evaluation": true,
+  "scoring": "numeric equality; exact route/freshness; required fragments for language/code; explicit constraints",
+  "note": "Contains a separately tagged robustness subset; normalized variants within holdout are intentional."
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Jarvis Nano",
+  "profile": "nano",
+  "format": "jarvis-transformer-v1",
+  "architecture": "decoder_only_transformer",
+  "vocab_size": 1024,
+  "d_model": 400,
+  "n_layers": 6,
+  "n_heads": 8,
+  "n_kv_heads": 8,
+  "ffn_hidden": 800,
+  "max_seq_len": 128,
+  "rope_theta": 10000.0,
+  "rms_epsilon": 0.00001,
+  "tie_embeddings": true,
+  "initializer_std": 0.02,
+  "seed": 5052026,
+  "training": {
+    "sequence_length": 32,
+    "micro_batch_size": 1,
+    "gradient_accumulation": 4,
+    "learning_rate": 0.0008,
+    "minimum_learning_rate": 0.00008,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "warmup_steps": 8,
+    "steps_per_stage": 8
+  }
+}

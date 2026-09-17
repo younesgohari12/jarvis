@@ -1,0 +1,45 @@
+{
+  "format": "jarvis-dataset-manifest-v9",
+  "dataset_version": "dataset_v009",
+  "parent": "dataset_v008",
+  "seed": 18092026,
+  "inherited_examples": 38100,
+  "new_examples": 3195,
+  "total_examples": 41295,
+  "source_dataset_count": 50,
+  "split_counts": {
+    "train": 33176,
+    "validation": 3953,
+    "test": 4166
+  },
+  "added_by_split": {
+    "train": 2545,
+    "validation": 317,
+    "test": 333
+  },
+  "exact_overlap_with_parent": 0,
+  "unique_new_inputs": 3195,
+  "unique_input_ratio": 1.0,
+  "categories": {
+    "binomial_probability": 420,
+    "permutation": 320,
+    "ratio_split": 320,
+    "speed": 320,
+    "age_reasoning": 300,
+    "inventory_multistep": 90,
+    "prime_reasoning": 260,
+    "transitive_logic": 12,
+    "code_generation": 72,
+    "persian_formal_rewrite": 58,
+    "routing": 1023
+  },
+  "cross_split_concept_leakage": 0,
+  "quality_notes": [
+    "role-oriented semantic supervision",
+    "question-polarity supervision",
+    "order-independent numeric roles",
+    "verified deterministic quantitative targets",
+    "Persian morphology and rewrite fidelity",
+    "routing retraining rows balanced across 12 intents"
+  ]
+}

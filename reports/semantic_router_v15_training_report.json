@@ -1,0 +1,137 @@
+{
+  "format": "jarvis-semantic-router-v15-training-report",
+  "feature_size": 262144,
+  "labels": [
+    "coding",
+    "code_trace",
+    "translation",
+    "rewrite",
+    "probability",
+    "logic",
+    "word_problem",
+    "math",
+    "constraint_writing",
+    "fresh_information",
+    "desktop_command",
+    "general_question"
+  ],
+  "parameter_count": 3145740,
+  "model_size_bytes": 161112,
+  "training_examples": 2893,
+  "validation_examples": 354,
+  "test_examples": 353,
+  "temperature": 0.2,
+  "validation_nll": 0.10026714202433688,
+  "validation": {
+    "accuracy": 1.0,
+    "mean_confidence": 0.9050419727961222,
+    "mean_margin": 0.892547456221392,
+    "per_class_accuracy": {
+      "coding": 1.0,
+      "code_trace": 1.0,
+      "translation": 1.0,
+      "rewrite": 1.0,
+      "probability": 1.0,
+      "logic": 1.0,
+      "word_problem": 1.0,
+      "math": 1.0,
+      "constraint_writing": 1.0,
+      "fresh_information": 1.0,
+      "desktop_command": 1.0,
+      "general_question": 1.0
+    }
+  },
+  "test": {
+    "accuracy": 1.0,
+    "mean_confidence": 0.9056374589377016,
+    "mean_margin": 0.8930780153098931,
+    "per_class_accuracy": {
+      "coding": 1.0,
+      "code_trace": 1.0,
+      "translation": 1.0,
+      "rewrite": 1.0,
+      "probability": 1.0,
+      "logic": 1.0,
+      "word_problem": 1.0,
+      "math": 1.0,
+      "constraint_writing": 1.0,
+      "fresh_information": 1.0,
+      "desktop_command": 1.0,
+      "general_question": 1.0
+    }
+  },
+  "serialized_test_accuracy": 1.0,
+  "serialized_acceptance_rate": 1.0,
+  "history": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.38,
+      "updates": 194,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.3220338983050848,
+      "updates": 2,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.27941176470588236,
+      "updates": 0,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.24675324675324675,
+      "updates": 0,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.22093023255813954,
+      "updates": 0,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.2,
+      "updates": 0,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.18269230769230768,
+      "updates": 0,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.168141592920354,
+      "updates": 0,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.1557377049180328,
+      "updates": 0,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.1450381679389313,
+      "updates": 0,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 1.0
+    }
+  ]
+}

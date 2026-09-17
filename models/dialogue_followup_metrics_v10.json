@@ -1,0 +1,80 @@
+{
+  "format": "jarvis-dialogue-followup-metrics-v1",
+  "version": "1.0.0",
+  "dataset_examples": 94,
+  "train_examples": 86,
+  "held_out_examples": 8,
+  "label_counts": {
+    "example": 10,
+    "plural": 12,
+    "recall_fact": 10,
+    "remember_fact": 10,
+    "rewrite_previous": 10,
+    "sentence": 10,
+    "standalone": 20,
+    "summary": 12
+  },
+  "held_out_cases": 8,
+  "classification_accuracy": 1.0,
+  "predictions": [
+    {
+      "prompt": "می‌تونی نمونه ملموس‌تری ارائه کنی؟",
+      "expected": "example",
+      "predicted": "example",
+      "confidence": 0.3756,
+      "margin": 0.1781
+    },
+    {
+      "prompt": "برای تعداد بیشتر، همان لغت را چطور می‌نویسند؟",
+      "expected": "plural",
+      "predicted": "plural",
+      "confidence": 0.3374,
+      "margin": 0.1429
+    },
+    {
+      "prompt": "می‌توانی شماره سفارش شخصی‌ام را یادآوری کنی؟",
+      "expected": "recall_fact",
+      "predicted": "recall_fact",
+      "confidence": 0.2752,
+      "margin": 0.1059
+    },
+    {
+      "prompt": "لطفاً شماره سفارش شخصی من ۷۷۱ را به یاد داشته باش",
+      "expected": "remember_fact",
+      "predicted": "remember_fact",
+      "confidence": 0.2387,
+      "margin": 0.0661
+    },
+    {
+      "prompt": "می‌شود همان عبارت را با لحن حرفه‌ای ارائه کنی؟",
+      "expected": "rewrite_previous",
+      "predicted": "rewrite_previous",
+      "confidence": 0.2767,
+      "margin": 0.0786
+    },
+    {
+      "prompt": "می‌توانی واژهٔ بالا را در جمله به کار ببری؟",
+      "expected": "sentence",
+      "predicted": "sentence",
+      "confidence": 0.2765,
+      "margin": 0.0595
+    },
+    {
+      "prompt": "ترجمهٔ مستقل کلمهٔ کتاب به انگلیسی چیست؟",
+      "expected": "standalone",
+      "predicted": "standalone",
+      "confidence": 0.5093,
+      "margin": 0.1751
+    },
+    {
+      "prompt": "می‌شود نتیجهٔ بالا را مختصر بگویی؟",
+      "expected": "summary",
+      "predicted": "summary",
+      "confidence": 0.3706,
+      "margin": 0.154
+    }
+  ],
+  "minimum_accuracy": 0.875,
+  "accepted_for_release": true,
+  "pretrained_source": null
+}

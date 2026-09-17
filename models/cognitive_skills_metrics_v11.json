@@ -1,0 +1,136 @@
+{
+  "format": "jarvis-cognitive-skills-metrics-v1",
+  "version": "1.1.0",
+  "dataset_examples": 96,
+  "train_examples": 80,
+  "held_out_examples": 16,
+  "label_counts": {
+    "clock_angle": 12,
+    "general": 12,
+    "mislabeled_boxes": 12,
+    "probability": 12,
+    "relative_day": 12,
+    "sequence": 12,
+    "syllogism": 12,
+    "trailing_zeros": 12
+  },
+  "held_out_cases": 16,
+  "classification_accuracy": 0.9375,
+  "predictions": [
+    {
+      "prompt": "زاویه ساعت شمار و دقیقه شمار در 6:35 چند درجه می شود؟",
+      "expected": "clock_angle",
+      "predicted": "clock_angle",
+      "confidence": 0.514,
+      "margin": 0.2827
+    },
+    {
+      "prompt": "How far has the hour hand moved at 4:18 and what is the smaller angle?",
+      "expected": "clock_angle",
+      "predicted": "clock_angle",
+      "confidence": 0.3949,
+      "margin": 0.1945
+    },
+    {
+      "prompt": "Search the web for official Python documentation",
+      "expected": "general",
+      "predicted": "general",
+      "confidence": 0.0636,
+      "margin": 0.0125
+    },
+    {
+      "prompt": "I feel overwhelmed and need someone to talk to",
+      "expected": "general",
+      "predicted": "syllogism",
+      "confidence": 0.0887,
+      "margin": 0.0206
+    },
+    {
+      "prompt": "از ظرفی که مخلوط نام دارد یک مهره برمی داریم؛ ادامه استدلال چیست؟",
+      "expected": "mislabeled_boxes",
+      "predicted": "mislabeled_boxes",
+      "confidence": 0.3431,
+      "margin": 0.1484
+    },
+    {
+      "prompt": "How can one sample identify all three incorrectly labeled fruit crates?",
+      "expected": "mislabeled_boxes",
+      "predicted": "mislabeled_boxes",
+      "confidence": 0.2715,
+      "margin": 0.1324
+    },
+    {
+      "prompt": "احتمال حداقل سه قبولی از پنج نفر با شانس مستقل 70 درصد را مرحله ای حساب کن",
+      "expected": "probability",
+      "predicted": "probability",
+      "confidence": 0.564,
+      "margin": 0.3015
+    },
+    {
+      "prompt": "In eight Bernoulli trials with p=0.25, what is the probability of exactly two successes?",
+      "expected": "probability",
+      "predicted": "probability",
+      "confidence": 0.4955,
+      "margin": 0.2585
+    },
+    {
+      "prompt": "اگر پریروز فردای پنجشنبه بود پس فردا چه روزی است؟",
+      "expected": "relative_day",
+      "predicted": "relative_day",
+      "confidence": 0.806,
+      "margin": 0.46
+    },
+    {
+      "prompt": "Yesterday equaled the day following Sunday; find today's day",
+      "expected": "relative_day",
+      "predicted": "relative_day",
+      "confidence": 0.4645,
+      "margin": 0.2554
+    },
+    {
+      "prompt": "ادامه طبیعی اعداد 10، 21، 43، 87 را پیدا کن",
+      "expected": "sequence",
+      "predicted": "sequence",
+      "confidence": 0.3734,
+      "margin": 0.1836
+    },
+    {
+      "prompt": "Predict the next term of 1, 2, 4, 8 but first state why it is not unique",
+      "expected": "sequence",
+      "predicted": "sequence",
+      "confidence": 0.1792,
+      "margin": 0.071
+    },
+    {
+      "prompt": "همه کلم ها دار هستند و هیچ داری داغ نیست؛ دلیل بیاور که کلم داغ ممکن است یا نه",
+      "expected": "syllogism",
+      "predicted": "syllogism",
+      "confidence": 0.3405,
+      "margin": 0.1529
+    },
+    {
+      "prompt": "All A are B and some B are C. Does it follow that some A are C?",
+      "expected": "syllogism",
+      "predicted": "syllogism",
+      "confidence": 0.2738,
+      "margin": 0.1291
+    },
+    {
+      "prompt": "تعداد عوامل ده در انتهای 2000! چند است؟",
+      "expected": "trailing_zeros",
+      "predicted": "trailing_zeros",
+      "confidence": 0.399,
+      "margin": 0.1934
+    },
+    {
+      "prompt": "Compute the trailing-zero count of 3125 factorial",
+      "expected": "trailing_zeros",
+      "predicted": "trailing_zeros",
+      "confidence": 0.4166,
+      "margin": 0.2193
+    }
+  ],
+  "minimum_accuracy": 0.875,
+  "accepted_for_release": true,
+  "pretrained_source": null
+}

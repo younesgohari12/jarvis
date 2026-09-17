@@ -1,0 +1,55 @@
+{
+  "format": "jarvis-v18-quality-gate",
+  "dataset_version": "dataset_v009",
+  "groups": {
+    "v18_new": {
+      "baseline": {
+        "cases": 180,
+        "cross_entropy": 6.811336,
+        "token_accuracy": 0.104499
+      },
+      "candidate": {
+        "cases": 180,
+        "cross_entropy": 6.653249,
+        "token_accuracy": 0.105951
+      },
+      "ce_delta_pct": -2.321,
+      "token_accuracy_delta_points": 0.145
+    },
+    "v18_fa": {
+      "baseline": {
+        "cases": 103,
+        "cross_entropy": 6.902482,
+        "token_accuracy": 0.11122
+      },
+      "candidate": {
+        "cases": 103,
+        "cross_entropy": 6.740024,
+        "token_accuracy": 0.11122
+      },
+      "ce_delta_pct": -2.354,
+      "token_accuracy_delta_points": 0.0
+    },
+    "legacy_v008": {
+      "baseline": {
+        "cases": 180,
+        "cross_entropy": 3.266825,
+        "token_accuracy": 0.453157
+      },
+      "candidate": {
+        "cases": 180,
+        "cross_entropy": 3.278731,
+        "token_accuracy": 0.449275
+      },
+      "ce_delta_pct": 0.364,
+      "token_accuracy_delta_points": -0.388
+    }
+  },
+  "checks": {
+    "v18_ce_improves": true,
+    "fa_ce_improves": true,
+    "legacy_ce_regression_under_0_5pct": true,
+    "legacy_token_delta_above_minus_0_5pt": true
+  },
+  "passed": true
+}

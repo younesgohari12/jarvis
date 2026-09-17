@@ -1,0 +1,96 @@
+{
+  "format": "jarvis-continual-training-v12-v2",
+  "backend": "torch_cpu_adamw",
+  "source": "models/jarvis_nano_v08.npz",
+  "output": "models/jarvis_nano_v12_candidate.npz",
+  "parameters": 23077376,
+  "dataset_version": "dataset_v004",
+  "focus_stages": [
+    1,
+    2,
+    3,
+    4,
+    11
+  ],
+  "steps_per_stage": 4,
+  "total_steps": 20,
+  "sequence_length": 64,
+  "curated_ratio": 0.58,
+  "learning_rate": 2e-05,
+  "mean_training_loss": 4.54418,
+  "probe_loss_before": {
+    "curated": {
+      "1": 4.954866,
+      "2": 5.199863,
+      "3": 4.521985,
+      "4": 3.912598,
+      "11": 6.558882
+    },
+    "rehearsal": {
+      "1": 4.112643,
+      "2": 4.146876,
+      "3": 4.341373,
+      "4": 2.389651,
+      "11": 3.88523
+    }
+  },
+  "probe_loss_after": {
+    "curated": {
+      "1": 4.971648,
+      "2": 4.998549,
+      "3": 4.456551,
+      "4": 4.216716,
+      "11": 6.515044
+    },
+    "rehearsal": {
+      "1": 4.024951,
+      "2": 4.043223,
+      "3": 4.16407,
+      "4": 2.508022,
+      "11": 3.879222
+    }
+  },
+  "probe_summary": {
+    "curated_mean_before": 5.029639,
+    "curated_mean_after": 5.031702,
+    "curated_improvement_pct": -0.041,
+    "rehearsal_mean_before": 3.775155,
+    "rehearsal_mean_after": 3.723898,
+    "rehearsal_change_pct": -1.358
+  },
+  "stage_metrics": [
+    {
+      "stage": 1,
+      "steps": 4,
+      "mean_loss": 4.894892,
+      "mean_gradient_norm": 52.5385
+    },
+    {
+      "stage": 2,
+      "steps": 4,
+      "mean_loss": 4.875054,
+      "mean_gradient_norm": 30.169896
+    },
+    {
+      "stage": 3,
+      "steps": 4,
+      "mean_loss": 4.820721,
+      "mean_gradient_norm": 17.981296
+    },
+    {
+      "stage": 4,
+      "steps": 4,
+      "mean_loss": 3.57344,
+      "mean_gradient_norm": 21.795012
+    },
+    {
+      "stage": 11,
+      "steps": 4,
+      "mean_loss": 4.556791,
+      "mean_gradient_norm": 40.39278
+    }
+  ],
+  "duration_seconds": 9.055,
+  "promoted_release": "models/jarvis_nano_v12.npz",
+  "quality_gate": "models/release_gate_v12.json"
+}

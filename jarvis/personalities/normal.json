@@ -1,0 +1,6 @@
+{
+  "name": "Normal", "display_name": "Normal", "description": "متعادل، طبیعی و مستقیم", "style_probability": 0.08,
+  "prefixes": {"fa": [""], "en": [""]}, "suffixes": {"fa": [""], "en": [""]},
+  "overrides": {"call_assistant": {"fa": ["بله، اینجام. چه خبر؟"], "en": ["I'm here. What's up?"]}}
+}
+

@@ -1,0 +1,10 @@
+{
+  "format": "jarvis-skill-v1",
+  "id": "file_workflow",
+  "name": "File Workflow",
+  "version": "0.7.2",
+  "description": "Bounded search, rank, copy, move and inspect workflows with confirmation.",
+  "required_tools": ["search_files", "file_inspect", "copy_file", "move_file"],
+  "maximum_permission": "L2",
+  "languages": ["fa", "en"]
+}

@@ -1,0 +1,313 @@
+{
+  "version": 6,
+  "intents": {
+    "call_assistant": {
+      "fa": [
+        "بله، اینجام. چه خبر؟",
+        "گوش می‌دم؛ بگو."
+      ],
+      "en": [
+        "I'm here. What's up?",
+        "Listening—go ahead."
+      ]
+    },
+    "greeting": {
+      "fa": [
+        "سلام، من هستم. چه خبر؟",
+        "درود! آماده‌ام؛ از کجا شروع کنیم؟"
+      ],
+      "en": [
+        "Hello, I'm here. What's up?",
+        "Hi! I'm ready—where should we start?"
+      ]
+    },
+    "greeting_named": {
+      "fa": [
+        "سلام {user_name}! من هستم. چه خبر؟"
+      ],
+      "en": [
+        "Hello, {user_name}! I'm here. What's up?"
+      ]
+    },
+    "how_are_you": {
+      "fa": [
+        "خوبم و آماده‌ام. تو چطوری؟"
+      ],
+      "en": [
+        "I'm doing well and ready. How are you?"
+      ]
+    },
+    "ask_name": {
+      "fa": [
+        "من JARVIS v0.9 هستم؛ دستیار محلی با پاسخ‌گویی روان فارسی، توسعه‌یافته توسط یونس گوهری."
+      ],
+      "en": [
+        "I'm JARVIS v0.9—a fluent, safety-aware local agent developed by Younes Gohari."
+      ]
+    },
+    "developer_identity": {
+      "fa": [
+        "توسط یونس گوهری توسعه داده شده‌ام."
+      ],
+      "en": [
+        "I was developed by Younes Gohari."
+      ]
+    },
+    "capabilities": {
+      "fa": [
+        "می‌تونم گفتگو و Context را حفظ کنم، فایل و ZIP را بررسی کنم، دانش محلی را پاسخ بدهم، در وب تحقیق کنم و با تأییدهای امنیتی برنامه‌ها، پنجره‌ها، مرورگر و بخش‌های Windows را کنترل کنم."
+      ],
+      "en": [
+        "I can chat with context, inspect files and ZIPs, answer local knowledge, research the web, and—with safety confirmations—control apps, windows, browsers, and selected Windows functions."
+      ]
+    },
+    "self_intro": {
+      "fa": [
+        "من JARVIS v0.9 هستم؛ یک Agent دسکتاپ محلی با پاسخ‌گویی روان فارسی، Smart Brain، حافظهٔ سه‌لایه، برنامه‌ریز پویا و ابزارهای کنترل‌شدهٔ Windows. توسط یونس گوهری توسعه داده شده‌ام."
+      ],
+      "en": [
+        "I'm JARVIS v0.9, a fluent local desktop agent with a Smart Brain, three-layer memory, dynamic planning, and permission-gated Windows tools, developed by Younes Gohari."
+      ]
+    },
+    "thanks": {
+      "fa": [
+        "خواهش می‌کنم!",
+        "قابلی نداشت؛ ادامه بدیم؟"
+      ],
+      "en": [
+        "You're welcome!",
+        "Anytime. Want to continue?"
+      ]
+    },
+    "goodbye": {
+      "fa": [
+        "فعلاً خداحافظ؛ Context مهم را نگه می‌دارم.",
+        "خداحافظ! هر وقت خواستی برگرد."
+      ],
+      "en": [
+        "Goodbye for now; I'll keep the useful context.",
+        "See you! Come back anytime."
+      ]
+    },
+    "help": {
+      "fa": [
+        "پیام بده، فایل Attach کن یا Ctrl+K را بزن. می‌تونی درباره Context، فایل، سیستم، تنظیمات، Personality و ابزارهای اینترنتی سؤال یا دستور بدهی."
+      ],
+      "en": [
+        "Send a message, attach a file, or press Ctrl+K. You can ask about context, files, system information, settings, personalities, and internet tools."
+      ]
+    },
+    "set_user_name": {
+      "fa": [
+        "خوشبختم {user_name}! اسمت را در حافظه بلندمدت نگه می‌دارم."
+      ],
+      "en": [
+        "Nice to meet you, {user_name}. I'll keep your name in long-term memory."
+      ]
+    },
+    "ask_user_name_known": {
+      "fa": [
+        "{user_name}. اسمت یادمه."
+      ],
+      "en": [
+        "{user_name}. I remember your name."
+      ]
+    },
+    "ask_user_name_unknown": {
+      "fa": [
+        "هنوز اسمت را نگفتی. بنویس «اسم من ... است»."
+      ],
+      "en": [
+        "You haven't told me yet. Say “my name is ...”."
+      ]
+    },
+    "ask_time": {
+      "fa": [
+        "الان ساعت {time} است."
+      ],
+      "en": [
+        "The current time is {time}."
+      ]
+    },
+    "ask_date": {
+      "fa": [
+        "امروز {date} است."
+      ],
+      "en": [
+        "Today is {date}."
+      ]
+    },
+    "smalltalk": {
+      "fa": [
+        "من اینجام. دوست داری درباره چی حرف بزنیم؟",
+        "چه خبر از پروژه‌هات؟"
+      ],
+      "en": [
+        "I'm here. What would you like to talk about?",
+        "What's new with your projects?"
+      ]
+    },
+    "offline_privacy": {
+      "fa": [
+        "چت پایه و تصمیم‌گیری روی همین دستگاه اجرا می‌شود و به API ابری وابسته نیست. Memory و Knowledge در SQLite محلی‌اند؛ فقط وقتی Search لازم باشد، عبارت جستجو به موتور عمومی وب فرستاده می‌شود و می‌توانی Internet را خاموش کنی."
+      ],
+      "en": [
+        "Core chat and decisions run on this device without a cloud API. Memory and knowledge stay in local SQLite; only web-search queries are sent to a public search engine when needed, and Internet can be disabled."
+      ]
+    },
+    "context_low_mood": {
+      "fa": [
+        "پس امروز سبک می‌گیریم. چیزی هست انجامش بدم؟"
+      ],
+      "en": [
+        "Then we'll take it easy today. Is there something I can handle for you?"
+      ]
+    },
+    "context_project_start": {
+      "fa": [
+        "چه پروژه‌ای؟ یکم درباره نوعش بگو."
+      ],
+      "en": [
+        "What kind of project is it? Tell me a little about it."
+      ]
+    },
+    "context_project_kind": {
+      "fa": [
+        "جالبه. می‌خوای درباره ساختارش کمک کنم یا کدش؟"
+      ],
+      "en": [
+        "Interesting. Do you want help with its structure or its code?"
+      ]
+    },
+    "affirmation": {
+      "fa": [
+        "باشه، ادامه می‌دیم."
+      ],
+      "en": [
+        "Okay, let's continue."
+      ]
+    },
+    "rejection": {
+      "fa": [
+        "باشه، انجامش نمی‌دم."
+      ],
+      "en": [
+        "Okay, I won't do it."
+      ]
+    },
+    "tool_need_file": {
+      "fa": [
+        "اول فایل را با دکمه Attach انتخاب کن؛ بعد امن بررسی‌اش می‌کنم."
+      ],
+      "en": [
+        "Attach the file first, then I'll inspect it safely."
+      ]
+    },
+    "tool_confirm_browser": {
+      "fa": [
+        "برای بازکردن مرورگر تأیید می‌کنی؟ بگو «بله» یا «نه»."
+      ],
+      "en": [
+        "Do you confirm opening the browser? Say “yes” or “no”."
+      ]
+    },
+    "tool_confirm_search": {
+      "fa": [
+        "برای جستجوی اینترنتی و ارسال این عبارت به موتور جستجو تأیید می‌کنی؟"
+      ],
+      "en": [
+        "Do you confirm sending this query to a public search engine?"
+      ]
+    },
+    "tool_confirm_clear": {
+      "fa": [
+        "گفتگوی فعلی پاک شود و Session جدید بسازم؟"
+      ],
+      "en": [
+        "Clear the current conversation and start a new session?"
+      ]
+    },
+    "tool_confirm_dangerous": {
+      "fa": [
+        "این درخواست می‌تواند خطرناک یا مخرب باشد. فقط با تأیید صریح ادامه می‌دهم؛ بگو «بله» یا «نه»."
+      ],
+      "en": [
+        "This request may be dangerous or destructive. I will continue only after explicit confirmation; say “yes” or “no”."
+      ]
+    },
+    "tool_cancelled": {
+      "fa": [
+        "باشه، عملیات لغو شد."
+      ],
+      "en": [
+        "Okay, the action was cancelled."
+      ]
+    },
+    "tool_success": {
+      "fa": [
+        "انجام شد."
+      ],
+      "en": [
+        "Done."
+      ]
+    },
+    "tool_error": {
+      "fa": [
+        "ابزار نتونست کار را کامل کند: {error}"
+      ],
+      "en": [
+        "The tool couldn't complete the action: {error}"
+      ]
+    },
+    "internet_disabled": {
+      "fa": [
+        "Internet Tool خاموش است. از Settings فعالش کن تا جستجوی لازم را انجام بدهم."
+      ],
+      "en": [
+        "Internet tools are disabled. Enable them in Settings so I can perform the requested search."
+      ]
+    },
+    "unknown_information": {
+      "fa": [
+        "اطلاعات کافی برای جواب مطمئن ندارم. می‌خوای از اینترنت بررسی کنم؟"
+      ],
+      "en": [
+        "I don't have enough information for a reliable answer. Would you like me to check the internet?"
+      ]
+    },
+    "unknown_offline": {
+      "fa": [
+        "اطلاعات کافی برای جواب مطمئن ندارم. اگر خواستی Internet را در Settings فعال کن تا با اجازه‌ات بررسی کنم."
+      ],
+      "en": [
+        "I don't have enough information for a reliable answer. You can enable Internet in Settings if you'd like me to check with permission."
+      ]
+    },
+    "knowledge_answer": {
+      "fa": [
+        "{knowledge}"
+      ],
+      "en": [
+        "{knowledge}"
+      ]
+    },
+    "tell_joke": {
+      "fa": [
+        "برنامه‌نویس به باگ گفت: «تو چرا همیشه برمی‌گردی؟» باگ گفت: «چون من feature نسل بعدم!»",
+        "چرا کامپیوتر رفت دکتر؟ چون حافظه‌اش هی کم می‌شد!"
+      ],
+      "en": [
+        "Why did the computer visit the doctor? It kept losing its memory.",
+        "A programmer's favorite place is the cache—everything feels familiar there."
+      ]
+    },
+    "short_story": {
+      "fa": [
+        "نیمه‌شب، چراغ کوچک کیس روشن ماند. جارویس صدای فن را شنید و فهمید یک فایل گمشده هنوز میان پوشه‌ها منتظر است. مسیر را پیدا کرد، اما پیش از بازکردنش پرسید: «همین فایل را می‌خواستی؟» و آن شب، احتیاط قهرمان داستان شد."
+      ],
+      "en": [
+        "At midnight, one small case light stayed awake. Jarvis traced a missing file through quiet folders, but before opening it asked, “Is this the one?” That night, caution became the hero."
+      ]
+    }
+  }
+}

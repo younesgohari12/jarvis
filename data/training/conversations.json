@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "description": "Bilingual base conversations retained and expanded for the Jarvis v0.2 neural brain.",
+  "intents": [
+    {
+      "tag": "call_assistant",
+      "examples": [
+        "جارویس", "هی جارویس", "جارویس هستی", "جارویس گوش میدی", "صدامو میشنوی جارویس", "آهای جارویس", "خودتی جارویس", "هستی اونجا",
+        "jarvis", "hey jarvis", "jarvis are you there", "are you listening jarvis", "yo jarvis", "jarvis wake up", "are you there", "listen jarvis"
+      ]
+    },
+    {
+      "tag": "greeting",
+      "examples": [
+        "سلام", "سلام خوبی", "درود", "سلام رفیق", "صبح بخیر", "عصر بخیر", "شب بخیر جارویس", "چه طوری سلام",
+        "hello", "hi", "hey there", "good morning", "good evening", "hello friend", "hi jarvis", "hey howdy"
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "examples": [
+        "حالت چطوره", "حالت خوبه", "خوبی", "چه طوری", "اوضاعت چطوره", "امروز چطوری", "همه چی مرتبه", "حال شما چطوره",
+        "how are you", "how are you doing", "are you okay", "how do you feel", "you doing well", "how is it going", "are you good", "how have you been"
+      ]
+    },
+    {
+      "tag": "ask_name",
+      "examples": [
+        "اسمت چیه", "اسم تو چیه", "تو چه اسمی داری", "نامت چیست", "چی صدات کنم", "اسم خودت رو بگو", "تو جارویسی", "نام این دستیار چیه",
+        "what is your name", "what's your name", "who should I call you", "tell me your name", "are you jarvis", "your name please", "what are you called", "do you have a name"
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "examples": [
+        "چیکار می تونی بکنی", "چه کارهایی بلدی", "قابلیت هات چیه", "چه کمکی می کنی", "امکاناتت رو بگو", "از دستت چی برمیاد", "چه ابزارهایی داری", "می تونی چه کاری انجام بدی",
+        "what can you do", "what are your capabilities", "how can you help me", "show me your features", "what tools do you have", "what are you able to do", "tell me what you can do", "how are you useful"
+      ]
+    },
+    {
+      "tag": "self_intro",
+      "examples": [
+        "خودتو معرفی کن", "درباره خودت بگو", "تو چی هستی", "کی هستی", "معرفی کوتاه بده", "در مورد جارویس توضیح بده", "بگو چه جور دستیاری هستی", "داستان خودت چیه",
+        "tell me about yourself", "who are you", "introduce yourself", "describe yourself", "what kind of assistant are you", "tell me about jarvis", "give me a short introduction", "what exactly are you"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "examples": [
+        "ممنون", "مرسی", "دمت گرم", "خیلی ممنون", "تشکر", "سپاس", "عالی بود ممنون", "کمک کردی مرسی",
+        "thanks", "thank you", "many thanks", "thanks a lot", "appreciate it", "that helped thanks", "nice thank you", "cheers"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "examples": [
+        "خداحافظ", "فعلا", "می بینمت", "بای", "شب خوش", "تا بعد", "من رفتم", "خدانگهدار جارویس",
+        "goodbye", "bye", "see you later", "talk to you later", "good night", "I'm leaving", "catch you later", "bye jarvis"
+      ]
+    },
+    {
+      "tag": "help",
+      "examples": [
+        "راهنما", "کمک میخوام", "چطور ازت استفاده کنم", "از کجا شروع کنم", "روش کار رو بگو", "راهنمایی کن", "دستورها رو نشون بده", "نمی دونم چیکار کنم",
+        "help", "I need help", "how do I use this", "where do I start", "show instructions", "guide me", "show the commands", "I don't know what to do"
+      ]
+    },
+    {
+      "tag": "set_user_name",
+      "examples": [
+        "اسم من یونس است", "اسمم یونس هست", "من یونس هستم", "منو یونس صدا کن", "نام من علی است", "اسم من سارا هست", "به من رضا بگو", "من را نیما صدا کن",
+        "my name is Younes", "I'm Younes", "call me Younes", "you can call me Alex", "my name is Sara", "I am David", "remember me as Sam", "please call me John"
+      ]
+    },
+    {
+      "tag": "ask_user_name",
+      "examples": [
+        "اسمم چی بود", "اسم من چی بود", "اسم منو یادت هست", "من کی هستم", "منو چی صدا می کنی", "نامم را به خاطر داری", "گفتم اسمم چیه", "اسم من رو بگو",
+        "what is my name", "do you remember my name", "who am I", "what did I say my name was", "tell me my name", "what do you call me", "did you save my name", "remember who I am"
+      ]
+    },
+    {
+      "tag": "ask_time",
+      "examples": [
+        "ساعت چنده", "الان ساعت چنده", "زمان رو بگو", "چه ساعتیه", "وقت فعلی چیه", "ساعت فعلی", "میشه ساعت رو بگی", "الان چه وقتی است",
+        "what time is it", "tell me the time", "current time", "what's the time", "can you show the time", "time now", "give me the current time", "do you know the time"
+      ]
+    },
+    {
+      "tag": "ask_date",
+      "examples": [
+        "امروز چندمه", "تاریخ امروز چیه", "امروز چه روزیه", "تاریخ رو بگو", "امروز چه تاریخی است", "روز فعلی چیه", "تاریخ فعلی", "امروز چندم است",
+        "what is today's date", "what day is it", "tell me the date", "current date", "what date is today", "show today's date", "date please", "which day is today"
+      ]
+    },
+    {
+      "tag": "smalltalk",
+      "examples": [
+        "چه خبر", "چه می کنی", "اوضاع چطوره", "حوصله داری حرف بزنیم", "یه چیزی بگو", "خبر جدید", "بیکارم", "بیا صحبت کنیم",
+        "what's up", "what are you doing", "anything new", "let's chat", "say something", "I'm bored", "want to talk", "how is everything"
+      ]
+    },
+    {
+      "tag": "offline_privacy",
+      "examples": [
+        "آفلاین کار می کنی", "اینترنت لازم داری", "اطلاعاتم کجا میره", "چت خصوصی است", "از api استفاده می کنی", "داده هام محلیه", "بدون اینترنت جواب میدی", "حریم خصوصی چطوره",
+        "do you work offline", "do you need internet", "where is my data stored", "is this chat private", "do you use a cloud api", "is my data local", "can you answer without internet", "what about privacy"
+      ]
+    }
+  ]
+}

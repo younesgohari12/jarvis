@@ -1,0 +1,18 @@
+{
+  "phase_0_audit": {"status":"completed", "evidence":"baseline_audit.json; baseline_pytest.log"},
+  "phase_1_learned_ir": {"status":"implemented_bounded", "evidence":"parser_v20.py; cognitive_ir_v20.py; causal runtime tests", "limit":"Supported mathematical frames; legacy solvers retain their schema; not a universal semantic parser."},
+  "phase_2_numeric_role": {"status":"trained_and_active", "evidence":"numeric_role_v20.npz; training.json", "limit":"Context classifier plus deterministic clause relation binding; not learned coreference."},
+  "phase_3_execution_graph": {"status":"implemented_and_active", "evidence":"execution_v20.py; conditional runtime test", "limit":"At most 64 nodes and branch depth 3; natural-language condition grammar bounded."},
+  "phase_4_world_state": {"status":"implemented_and_active", "evidence":"WorldState.graph and state mutation integration test", "limit":"Task-local arithmetic state, not an open-domain simulator; scheduling is sequential."},
+  "phase_5_verification": {"status":"implemented_and_active", "evidence":"verification_v20.py; 120 adversarial corruption tests", "limit":"Independent arithmetic/constraints; cannot guarantee that a plausible semantic parse matches user intent."},
+  "phase_6_reflection": {"status":"trained_stage_selector_and_active_repair", "evidence":"repair_stage_v20.npz; changed-candidate and changed-slot tests", "limit":"At most two retries; repairs calculation state or reparses slots, not arbitrary self-improvement."},
+  "phase_7_sequence": {"status":"implemented_bounded", "evidence":"arithmetic/geometric/alternating/recurrence tests and fresh benchmark", "limit":"Finite observed sequences are generally non-unique; unsupported patterns abstain; fresh misses remain."},
+  "phase_8_probability": {"status":"implemented_bounded", "evidence":"binomial exact/at-least/at-most; dice; counting; independent probabilities", "limit":"Natural-language coverage remains incomplete."},
+  "phase_9_code": {"status":"partial_upgrade", "evidence":"code_intent_v20.npz; ten verified recipes; retained legacy tracing/debugging", "limit":"No broad new code-generation/refactor/debugging model. Fresh code generation remains weak."},
+  "phase_10_persian": {"status":"partial_upgrade", "evidence":"word-number/morphographic normalization and bilingual supervised corpus", "limit":"No new conversational-language transformer training; translation and rewrite scores did not improve."},
+  "phase_11_rag": {"status":"bounded_retrieval_upgrade", "evidence":"self-contained protection, deduplication, support filtering, 12 bilingual concepts", "limit":"Not broad multilingual dense retrieval; no new large knowledge corpus."},
+  "phase_12_web": {"status":"bounded_evidence_fix", "evidence":"duplicate-mirror corroboration correction; existing multi-source pipeline preserved", "limit":"Live internet quality not measured; only freshness/routing tested offline."},
+  "core_neural_continual_training": {"status":"not_performed", "reason":"CPU-only environment without PyTorch; existing transformer checkpoint preserved. This is optional under the task's hardware condition, not claimed as a neural-core upgrade."},
+  "dataset_volume": {"status":"smaller_quality_corpus", "reason":"60k-120k was a quality-dependent suggestion; no inflated numeric-template expansion is claimed."},
+  "official_index": {"status":"unavailable", "baseline":80.19, "new_score":null, "delta":null, "reason":"The supplied archive does not contain the executable JARVIS-INTELLIGENCE-INDEX-v1 rubric or its weights. Fresh benchmark percentages are not substituted for it."}
+}

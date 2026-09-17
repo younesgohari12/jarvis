@@ -1,0 +1,105 @@
+{
+  "code": {
+    "rows": 674,
+    "unique_inputs": 674,
+    "unique_outputs": 11,
+    "unique_templates": 674,
+    "class_distribution": {
+      "sum_values": 116,
+      "sort_values": 116,
+      "filter_even": 116,
+      "filter_positive": 116,
+      "max_value": 116,
+      "deduplicate": 16,
+      "reverse_string": 16,
+      "palindrome": 16,
+      "factorial": 16,
+      "average": 16,
+      "other": 14
+    },
+    "split_distribution": {
+      "train": 467,
+      "validation": 144,
+      "test": 63
+    },
+    "template_overlap": {
+      "train_validation": 0,
+      "train_test": 0,
+      "validation_test": 0
+    },
+    "near_duplicate_audit": {
+      "metric": "char_3_5gram_tfidf_cosine",
+      "threshold": 0.9,
+      "test_near_train": 46,
+      "max_similarity": 0.9694891656981108
+    },
+    "semantic_duplicates": {
+      "shared_label_concepts": 11,
+      "claim": "Conceptual/semantic disjointness is not claimed; this is classification over repeated concepts."
+    }
+  },
+  "repair": {
+    "rows": 250,
+    "unique_inputs": 250,
+    "unique_outputs": 3,
+    "unique_templates": 250,
+    "class_distribution": {
+      "execution": 120,
+      "slots": 70,
+      "response": 60
+    },
+    "split_distribution": {
+      "train": 168,
+      "validation": 51,
+      "test": 31
+    },
+    "template_overlap": {
+      "train_validation": 0,
+      "train_test": 0,
+      "validation_test": 0
+    },
+    "near_duplicate_audit": {
+      "metric": "char_3_5gram_tfidf_cosine",
+      "threshold": 0.9,
+      "test_near_train": 0,
+      "max_similarity": 0.7955533221197207
+    },
+    "semantic_duplicates": {
+      "shared_label_concepts": 3,
+      "claim": "Conceptual/semantic disjointness is not claimed; this is classification over repeated concepts."
+    }
+  },
+  "verification": {
+    "rows": 70,
+    "usage": "deterministic verifier candidate fixtures; NOT described as supervised training for a truth model",
+    "unique_templates": 70,
+    "split_distribution": {
+      "train": 42,
+      "validation": 14,
+      "test": 14
+    },
+    "domain_distribution": {
+      "ratio": 5,
+      "binomial": 5,
+      "inventory": 5,
+      "finance": 5,
+      "work_rate": 5,
+      "age": 5,
+      "sequence": 5,
+      "speed": 5,
+      "combination": 5,
+      "dice": 5,
+      "independent": 5,
+      "comparison": 5,
+      "scheduling": 5,
+      "graph": 5
+    },
+    "fault_distribution": {
+      "correct": 14,
+      "wrong_total": 14,
+      "wrong_operation": 14,
+      "wrong_sign": 14,
+      "wrong_output_type": 14
+    }
+  }
+}

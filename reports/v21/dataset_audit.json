@@ -1,0 +1,32 @@
+{
+  "total": 30000,
+  "sections": {
+    "semantic_ir": 5000,
+    "world_model": 5000,
+    "verification": 4000,
+    "adversarial": 3000,
+    "persian": 3000,
+    "code": 10000
+  },
+  "unique_inputs": 30000,
+  "unique_template_ids": 21881,
+  "cross_split_concept_groups": 0,
+  "cross_split_template_ids": 0,
+  "verification_parent_or_split_errors": [],
+  "verification_identity_mutations": [],
+  "code_oracle_errors": [],
+  "human_authored_samples": 0,
+  "numerical_parameter_variants": "Limited to two per lexical skeleton for the 20k core; code uses 2000 structural groups across five tasks.",
+  "limitations": [
+    "Synthetic programs dominate; conceptual overlap across splits remains.",
+    "Core dataset does not deliver balanced linguistic coverage of all requested domains.",
+    "The 3000 Persian rows are mostly quantitative instructions, not a broad Persian conversation corpus."
+  ],
+  "near_duplicates": {
+    "metric": "char3-4 TFIDF cosine on numeric-masked inputs truncated to 1400 characters",
+    "test_samples": 3009,
+    "test_near_train_at_0_9": 3006,
+    "max_cosine": 1.000002384185791,
+    "meaning": "Zero exact overlap is not evidence of independent linguistic concepts."
+  }
+}

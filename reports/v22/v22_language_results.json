@@ -1,0 +1,125 @@
+{
+ "scores": {
+  "nlu": 100.0,
+  "nlg": 100.0,
+  "sanitize": 100.0,
+  "clarify": 83.3,
+  "nlg_live_natural": 100.0
+ },
+ "cases": {
+  "nlu": [
+   {
+    "input": "موجودیم چنده با ۵ تا",
+    "output": "موجودیم چند است با 5 تا",
+    "passed": true
+   },
+   {
+    "input": "میخوام حساب کنم",
+    "output": "می‌خواهم حساب کنم",
+    "passed": true
+   },
+   {
+    "input": "١٠ دلار دارم",
+    "output": "10 دلار دارم",
+    "passed": true
+   },
+   {
+    "input": "I wanna check ٣ items",
+    "output": "I wanna check 3 items",
+    "passed": true
+   },
+   {
+    "input": "چند میشه ۷ + ۲",
+    "output": "چند می‌شود 7 + 2",
+    "passed": true
+   },
+   {
+    "input": "موجودى حساب ١٠٠ دلاراست",
+    "output": "موجودى حساب 100 دلاراست",
+    "passed": true
+   }
+  ],
+  "nlg": [
+   {
+    "expected": "موجودی جدید می‌شود 105 دلار.",
+    "got": "موجودی جدید می‌شود 105 دلار.",
+    "passed": true
+   },
+   {
+    "expected": "نتیجه می‌شود 105 کالا.",
+    "got": "نتیجه می‌شود 105 کالا.",
+    "passed": true
+   },
+   {
+    "expected": "نتیجه می‌شود 336 قطعه.",
+    "got": "نتیجه می‌شود 336 قطعه.",
+    "passed": true
+   },
+   {
+    "expected": "The new balance is 105 dollars.",
+    "got": "The new balance is 105 dollars.",
+    "passed": true
+   },
+   {
+    "expected": "سرعت می‌شود 60 کیلومتر بر ساعت.",
+    "got": "سرعت می‌شود 60 کیلومتر بر ساعت.",
+    "passed": true
+   }
+  ],
+  "sanitize": [
+   {
+    "input": "است است است.",
+    "output": "است.",
+    "passed": true
+   },
+   {
+    "input": "بر اساس محاسبات انجام‌شده، پاسخ 5 است.",
+    "output": "پاسخ 5 است.",
+    "passed": true
+   },
+   {
+    "input": "نتیجه نتیجه 42 است",
+    "output": "نتیجه 42 است.",
+    "passed": true
+   }
+  ],
+  "clarify": [
+   {
+    "lang": "fa",
+    "reason": "currency_item",
+    "len": 157,
+    "passed": true
+   },
+   {
+    "lang": "fa",
+    "reason": "currency_mix",
+    "len": 101,
+    "passed": true
+   },
+   {
+    "lang": "fa",
+    "reason": "dimension",
+    "len": 84,
+    "passed": true
+   },
+   {
+    "lang": "en",
+    "reason": "currency_item",
+    "len": 156,
+    "passed": false
+   },
+   {
+    "lang": "en",
+    "reason": "currency_mix",
+    "len": 111,
+    "passed": true
+   },
+   {
+    "lang": "en",
+    "reason": "dimension",
+    "len": 92,
+    "passed": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,94 @@
+{
+  "format": "jarvis-continual-training-v12-v2",
+  "backend": "torch_cpu_adamw",
+  "source": "models/jarvis_nano_v08.npz",
+  "output": "models/jarvis_nano_v12_candidate.npz",
+  "parameters": 23077376,
+  "dataset_version": "dataset_v004",
+  "focus_stages": [
+    1,
+    2,
+    3,
+    4,
+    11
+  ],
+  "steps_per_stage": 12,
+  "total_steps": 60,
+  "sequence_length": 64,
+  "curated_ratio": 0.68,
+  "learning_rate": 6e-05,
+  "mean_training_loss": 4.818077,
+  "probe_loss_before": {
+    "curated": {
+      "1": 4.954866,
+      "2": 5.199863,
+      "3": 4.521985,
+      "4": 3.912598,
+      "11": 6.558882
+    },
+    "rehearsal": {
+      "1": 4.112643,
+      "2": 4.146876,
+      "3": 4.341373,
+      "4": 2.389651,
+      "11": 3.88523
+    }
+  },
+  "probe_loss_after": {
+    "curated": {
+      "1": 4.723334,
+      "2": 4.793551,
+      "3": 4.344835,
+      "4": 4.125655,
+      "11": 6.26117
+    },
+    "rehearsal": {
+      "1": 3.863241,
+      "2": 3.88148,
+      "3": 4.129436,
+      "4": 2.444642,
+      "11": 3.901626
+    }
+  },
+  "probe_summary": {
+    "curated_mean_before": 5.029639,
+    "curated_mean_after": 4.849709,
+    "curated_improvement_pct": 3.577,
+    "rehearsal_mean_before": 3.775155,
+    "rehearsal_mean_after": 3.644085,
+    "rehearsal_change_pct": -3.472
+  },
+  "stage_metrics": [
+    {
+      "stage": 1,
+      "steps": 12,
+      "mean_loss": 4.939263,
+      "mean_gradient_norm": 38.613419
+    },
+    {
+      "stage": 2,
+      "steps": 12,
+      "mean_loss": 4.366935,
+      "mean_gradient_norm": 17.415379
+    },
+    {
+      "stage": 3,
+      "steps": 12,
+      "mean_loss": 5.132216,
+      "mean_gradient_norm": 21.887251
+    },
+    {
+      "stage": 4,
+      "steps": 12,
+      "mean_loss": 4.354437,
+      "mean_gradient_norm": 23.912606
+    },
+    {
+      "stage": 11,
+      "steps": 12,
+      "mean_loss": 5.297535,
+      "mean_gradient_norm": 34.256323
+    }
+  ],
+  "duration_seconds": 17.724
+}

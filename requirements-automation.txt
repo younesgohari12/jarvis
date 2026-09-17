@@ -1,0 +1,5 @@
+-r requirements-runtime.txt
+
+# Optional DOM browser control. JARVIS never embeds or downloads a browser at
+# runtime; Playwright drives an installed Chrome/Edge when explicitly enabled.
+playwright>=1.48,<2

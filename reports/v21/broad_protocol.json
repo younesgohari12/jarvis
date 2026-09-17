@@ -1,0 +1,26 @@
+{
+  "count": 500,
+  "categories": {
+    "Reasoning": 100,
+    "World Model": 100,
+    "Adversarial": 100,
+    "Code": 100,
+    "Persian": 50,
+    "English": 50
+  },
+  "sha256": "810d65156e5bfe0da9f03feaaf38479531f7e4c2949d886804bb9f4fb0b28dd8",
+  "seed": 21500,
+  "frozen_before_evaluation": true,
+  "planned_runs": "v20.1 baseline and v21 candidate, same machine and scoring",
+  "use_for_training": false,
+  "limitations": [
+    "Synthetic numerical variants and repeated language instructions are present; 500 cases do not mean 500 independent templates.",
+    "Translation score uses normalized reference sentences and is strict; valid paraphrases may be underscored.",
+    "No conversion to the user intelligence index."
+  ],
+  "first_candidate_correct": 386,
+  "first_candidate_total": 500,
+  "used_for_debugging_after_first_evaluation": true,
+  "final_evaluation_is_retest": true,
+  "discovered_issue": "Explicit count of operations was mistaken for an extra arithmetic operand."
+}

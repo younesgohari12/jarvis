@@ -1,0 +1,145 @@
+{
+  "format": "jarvis-v13-release-gate-v1",
+  "release_model": "models/jarvis_nano_v13.npz",
+  "release_sha256": "cafc07e12ddd6b00e07885a421348515396a7a58cb7351d78a2da13992220f1d",
+  "release_size_bytes": 15110244,
+  "parameters": 23077376,
+  "dataset_version": "dataset_v005",
+  "new_data": {
+    "generalization_datasets": 100,
+    "generalization_examples": 3600,
+    "reasoning_datasets": 100,
+    "reasoning_examples": 3600,
+    "total_dataset_examples": 17529,
+    "cross_split_concept_leakage": 0
+  },
+  "quality_gate": {
+    "format": "jarvis-v13-quality-gate-v2-torch",
+    "baseline": "models/jarvis_nano_v12.npz",
+    "candidate": "models/jarvis_nano_v13.npz",
+    "dataset": "dataset_v005",
+    "groups": {
+      "generalization": {
+        "baseline": {
+          "cases": 120,
+          "cross_entropy": 4.951934,
+          "perplexity": 141.448322,
+          "token_accuracy": 0.385897,
+          "by_language_token_accuracy": {
+            "en": 0.434783,
+            "mixed": 0.382834
+          },
+          "by_language_cross_entropy": {
+            "en": 4.329755,
+            "mixed": 5.002381
+          }
+        },
+        "candidate": {
+          "cases": 120,
+          "cross_entropy": 4.931792,
+          "perplexity": 138.627697,
+          "token_accuracy": 0.385043,
+          "by_language_token_accuracy": {
+            "en": 0.434783,
+            "mixed": 0.381926
+          },
+          "by_language_cross_entropy": {
+            "en": 4.31591,
+            "mixed": 4.981728
+          }
+        },
+        "cross_entropy_improvement_pct": 0.407,
+        "token_accuracy_delta_points": -0.085
+      },
+      "reasoning": {
+        "baseline": {
+          "cases": 120,
+          "cross_entropy": 6.291364,
+          "perplexity": 539.889022,
+          "token_accuracy": 0.22703,
+          "by_language_token_accuracy": {
+            "fa": 0.233744,
+            "mixed": 0.090909
+          },
+          "by_language_cross_entropy": {
+            "fa": 6.243752,
+            "mixed": 6.957928
+          }
+        },
+        "candidate": {
+          "cases": 120,
+          "cross_entropy": 6.223608,
+          "perplexity": 504.520411,
+          "token_accuracy": 0.229167,
+          "by_language_token_accuracy": {
+            "fa": 0.235987,
+            "mixed": 0.090909
+          },
+          "by_language_cross_entropy": {
+            "fa": 6.180274,
+            "mixed": 6.830282
+          }
+        },
+        "cross_entropy_improvement_pct": 1.077,
+        "token_accuracy_delta_points": 0.214
+      },
+      "v004_regression": {
+        "baseline": {
+          "cases": 120,
+          "cross_entropy": 3.287815,
+          "perplexity": 26.784289,
+          "token_accuracy": 0.450797,
+          "by_language_token_accuracy": {
+            "en": 0.447059,
+            "fa": 0.59955,
+            "mixed": 0.331187
+          },
+          "by_language_cross_entropy": {
+            "en": 3.672454,
+            "fa": 3.003342,
+            "mixed": 3.586507
+          }
+        },
+        "candidate": {
+          "cases": 120,
+          "cross_entropy": 3.28484,
+          "perplexity": 26.704701,
+          "token_accuracy": 0.453909,
+          "by_language_token_accuracy": {
+            "en": 0.447059,
+            "fa": 0.598425,
+            "mixed": 0.339466
+          },
+          "by_language_cross_entropy": {
+            "en": 3.665082,
+            "fa": 3.004912,
+            "mixed": 3.577404
+          }
+        },
+        "cross_entropy_improvement_pct": 0.09,
+        "token_accuracy_delta_points": 0.311
+      }
+    },
+    "checks": {
+      "generalization_ce_improves": true,
+      "reasoning_ce_improves": true,
+      "generalization_token_accuracy_nonworse": true,
+      "reasoning_token_accuracy_nonworse": true,
+      "v004_ce_regression_under_0_5pct": true,
+      "v004_token_accuracy_delta_above_minus_0_5pt": true
+    },
+    "passed": true
+  },
+  "passed": true,
+  "selection": {
+    "strategy": "40% interpolation of trained v13 candidate into stable v12 release",
+    "blend_alpha": 0.4,
+    "reason": "keeps Generalization token accuracy effectively flat while improving Generalization loss, Reasoning loss/accuracy, and prior-data accuracy"
+  },
+  "rejected_candidates": [
+    "unblended 40-step: stronger CE gains but generalization token-accuracy drifted",
+    "24-step gentle candidate: prior-data regression worsened",
+    "extra 12-step candidate: prior-data token regression worsened",
+    "65% blend: generalization token-accuracy drift above strict threshold"
+  ]
+}

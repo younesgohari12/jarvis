@@ -1,0 +1,10 @@
+{
+  "format": "jarvis-skill-v1",
+  "id": "local_research",
+  "name": "Local-first Research",
+  "version": "0.7.2",
+  "description": "Local knowledge and indexed-document retrieval with optional web research.",
+  "required_tools": ["knowledge_index", "knowledge_search", "web_research"],
+  "maximum_permission": "L0",
+  "languages": ["fa", "en"]
+}

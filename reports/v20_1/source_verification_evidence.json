@@ -1,0 +1,607 @@
+{
+  "injected_slots": {
+    "workers_initial": 8,
+    "hours_initial": 4.0,
+    "output_initial": 84.0,
+    "workers_target": 3,
+    "hours_target": 6.0
+  },
+  "arithmetically_consistent_wrong_answer": 47.25,
+  "wrong_verdict": {
+    "passed": false,
+    "failed_checks": [
+      "source_slot:workers_initial",
+      "source_slot:workers_target"
+    ],
+    "repair_hint": "Rebind source slots",
+    "repair_stage": "slots",
+    "checks": [
+      "source_slot:workers_initial",
+      "source_slot:hours_initial",
+      "source_slot:output_initial",
+      "source_slot:workers_target",
+      "source_slot:hours_target",
+      "source_work_coverage",
+      "productivity_conservation",
+      "dimensional_consistency"
+    ]
+  },
+  "repaired_answer": 336.0,
+  "repaired_verdict": {
+    "passed": true,
+    "failed_checks": [],
+    "repair_hint": "Rebuild graph from source world state",
+    "repair_stage": "none",
+    "checks": [
+      "source_slot:workers_initial",
+      "source_slot:hours_initial",
+      "source_slot:output_initial",
+      "source_slot:workers_target",
+      "source_slot:hours_target",
+      "source_work_coverage",
+      "productivity_conservation",
+      "dimensional_consistency"
+    ]
+  },
+  "repair_attempts": [
+    {
+      "attempt": 0,
+      "ir": {
+        "task": "work_rate",
+        "language": "fa",
+        "entities": [
+          {
+            "id": "crew_initial",
+            "type": "workers"
+          },
+          {
+            "id": "crew_target",
+            "type": "workers"
+          }
+        ],
+        "slots": {
+          "workers_initial": 8,
+          "hours_initial": 4.0,
+          "output_initial": 84.0,
+          "workers_target": 3,
+          "hours_target": 6.0
+        },
+        "units": {
+          "time": "hour",
+          "output": "piece"
+        },
+        "relations": [],
+        "constraints": [],
+        "operations": [],
+        "answer_type": "number",
+        "confidence": 0.9867912530899048,
+        "source_text": "با 3 کارگر و 4 ساعت، خروجی 84 قطعه است. با 8 کارگر و 6 ساعت چه خروجی داریم؟",
+        "model_evidence": {
+          "frame": [
+            [
+              "work_rate",
+              0.9867912530899048
+            ],
+            [
+              "scheduling",
+              0.0018145116046071053
+            ],
+            [
+              "graph",
+              0.0015189409023150802
+            ]
+          ],
+          "numbers": [
+            {
+              "role": "workers",
+              "confidence": 0.9828419089317322,
+              "value": 3.0,
+              "start": 3,
+              "end": 4,
+              "alternatives": [
+                [
+                  "workers",
+                  0.9828419089317322
+                ],
+                [
+                  "output",
+                  0.007881060242652893
+                ],
+                [
+                  "hours",
+                  0.005678211338818073
+                ]
+              ],
+              "unit": ""
+            },
+            {
+              "role": "hours",
+              "confidence": 0.9059063792228699,
+              "value": 4.0,
+              "start": 13,
+              "end": 14,
+              "alternatives": [
+                [
+                  "hours",
+                  0.9059063792228699
+                ],
+                [
+                  "output",
+                  0.06926126778125763
+                ],
+                [
+                  "other",
+                  0.005795409437268972
+                ]
+              ],
+              "unit": ""
+            },
+            {
+              "role": "output",
+              "confidence": 0.9417505264282227,
+              "value": 84.0,
+              "start": 28,
+              "end": 30,
+              "alternatives": [
+                [
+                  "output",
+                  0.9417505264282227
+                ],
+                [
+                  "hours",
+                  0.029624424874782562
+                ],
+                [
+                  "workers",
+                  0.01846853271126747
+                ]
+              ],
+              "unit": ""
+            },
+            {
+              "role": "workers",
+              "confidence": 0.9553413987159729,
+              "value": 8.0,
+              "start": 45,
+              "end": 46,
+              "alternatives": [
+                [
+                  "workers",
+                  0.9553413987159729
+                ],
+                [
+                  "output",
+                  0.019416045397520065
+                ],
+                [
+                  "hours",
+                  0.0112825408577919
+                ]
+              ],
+              "unit": ""
+            },
+            {
+              "role": "hours",
+              "confidence": 0.9245181679725647,
+              "value": 6.0,
+              "start": 55,
+              "end": 56,
+              "alternatives": [
+                [
+                  "hours",
+                  0.9245181679725647
+                ],
+                [
+                  "output",
+                  0.038080062717199326
+                ],
+                [
+                  "workers",
+                  0.011639098636806011
+                ]
+              ],
+              "unit": ""
+            }
+          ],
+          "checkpoints": {
+            "frame": "41b6d4ecf5ebd83710bb5b8e1726bda35ec33cea2216b8fbf39a3e9d995ce65e",
+            "numeric": "bfc27cb809b50ca97ba2c47daf10b10d908e008f60cd01962c286338c1d53d8a",
+            "operation": "d91508fbdf64b448101a930a45989285e8f9dfd9aee4de7ff8832e362ff4c013"
+          },
+          "source_bindings": {
+            "workers_initial": {
+              "start": 3,
+              "end": 4,
+              "source_value": 3.0,
+              "scale": 1.0,
+              "observation": "known"
+            },
+            "hours_initial": {
+              "start": 13,
+              "end": 14,
+              "source_value": 4.0,
+              "scale": 1.0,
+              "observation": "known"
+            },
+            "output_initial": {
+              "start": 28,
+              "end": 30,
+              "source_value": 84.0,
+              "scale": 1.0,
+              "observation": "known"
+            },
+            "workers_target": {
+              "start": 45,
+              "end": 46,
+              "source_value": 8.0,
+              "scale": 1.0,
+              "observation": "target"
+            },
+            "hours_target": {
+              "start": 55,
+              "end": 56,
+              "source_value": 6.0,
+              "scale": 1.0,
+              "observation": "target"
+            }
+          }
+        },
+        "schema_version": "jarvis-semantic-ir-v2"
+      },
+      "graph": {
+        "initial": null,
+        "nodes": [
+          {
+            "op": "work_rate",
+            "slots": {
+              "workers_initial": 8,
+              "hours_initial": 4.0,
+              "output_initial": 84.0,
+              "workers_target": 3,
+              "hours_target": 6.0
+            },
+            "units": {
+              "time": "hour",
+              "output": "piece"
+            }
+          }
+        ],
+        "domain": "work_rate"
+      },
+      "answer": 47.25,
+      "verification": {
+        "passed": false,
+        "failed_checks": [
+          "source_slot:workers_initial",
+          "source_slot:workers_target"
+        ],
+        "repair_hint": "Rebind source slots",
+        "repair_stage": "slots",
+        "checks": [
+          "source_slot:workers_initial",
+          "source_slot:hours_initial",
+          "source_slot:output_initial",
+          "source_slot:workers_target",
+          "source_slot:hours_target",
+          "source_work_coverage",
+          "productivity_conservation",
+          "dimensional_consistency"
+        ]
+      },
+      "changed_slots": {},
+      "changed_plan": false,
+      "repair_prediction": [
+        [
+          "execution",
+          0.4003186523914337
+        ],
+        [
+          "slots",
+          0.3860611319541931
+        ],
+        [
+          "response",
+          0.21362021565437317
+        ]
+      ],
+      "repair_stage_constraint": "source_slot_consistency"
+    },
+    {
+      "attempt": 1,
+      "ir": {
+        "task": "work_rate",
+        "language": "fa",
+        "entities": [
+          {
+            "id": "crew_initial",
+            "type": "workers"
+          },
+          {
+            "id": "crew_target",
+            "type": "workers"
+          }
+        ],
+        "slots": {
+          "workers_initial": 3.0,
+          "hours_initial": 4.0,
+          "output_initial": 84.0,
+          "workers_target": 8.0,
+          "hours_target": 6.0
+        },
+        "units": {
+          "time": "hour",
+          "output": "piece"
+        },
+        "relations": [],
+        "constraints": [],
+        "operations": [],
+        "answer_type": "number",
+        "confidence": 0.9867912530899048,
+        "source_text": "با 3 کارگر و 4 ساعت، خروجی 84 قطعه است. با 8 کارگر و 6 ساعت چه خروجی داریم؟",
+        "model_evidence": {
+          "frame": [
+            [
+              "work_rate",
+              0.9867912530899048
+            ],
+            [
+              "scheduling",
+              0.0018145116046071053
+            ],
+            [
+              "graph",
+              0.0015189409023150802
+            ]
+          ],
+          "numbers": [
+            {
+              "role": "workers",
+              "confidence": 0.9828419089317322,
+              "value": 3.0,
+              "start": 3,
+              "end": 4,
+              "alternatives": [
+                [
+                  "workers",
+                  0.9828419089317322
+                ],
+                [
+                  "output",
+                  0.007881060242652893
+                ],
+                [
+                  "hours",
+                  0.005678211338818073
+                ]
+              ],
+              "unit": ""
+            },
+            {
+              "role": "hours",
+              "confidence": 0.9059063792228699,
+              "value": 4.0,
+              "start": 13,
+              "end": 14,
+              "alternatives": [
+                [
+                  "hours",
+                  0.9059063792228699
+                ],
+                [
+                  "output",
+                  0.06926126778125763
+                ],
+                [
+                  "other",
+                  0.005795409437268972
+                ]
+              ],
+              "unit": ""
+            },
+            {
+              "role": "output",
+              "confidence": 0.9417505264282227,
+              "value": 84.0,
+              "start": 28,
+              "end": 30,
+              "alternatives": [
+                [
+                  "output",
+                  0.9417505264282227
+                ],
+                [
+                  "hours",
+                  0.029624424874782562
+                ],
+                [
+                  "workers",
+                  0.01846853271126747
+                ]
+              ],
+              "unit": ""
+            },
+            {
+              "role": "workers",
+              "confidence": 0.9553413987159729,
+              "value": 8.0,
+              "start": 45,
+              "end": 46,
+              "alternatives": [
+                [
+                  "workers",
+                  0.9553413987159729
+                ],
+                [
+                  "output",
+                  0.019416045397520065
+                ],
+                [
+                  "hours",
+                  0.0112825408577919
+                ]
+              ],
+              "unit": ""
+            },
+            {
+              "role": "hours",
+              "confidence": 0.9245181679725647,
+              "value": 6.0,
+              "start": 55,
+              "end": 56,
+              "alternatives": [
+                [
+                  "hours",
+                  0.9245181679725647
+                ],
+                [
+                  "output",
+                  0.038080062717199326
+                ],
+                [
+                  "workers",
+                  0.011639098636806011
+                ]
+              ],
+              "unit": ""
+            }
+          ],
+          "checkpoints": {
+            "frame": "41b6d4ecf5ebd83710bb5b8e1726bda35ec33cea2216b8fbf39a3e9d995ce65e",
+            "numeric": "bfc27cb809b50ca97ba2c47daf10b10d908e008f60cd01962c286338c1d53d8a",
+            "operation": "d91508fbdf64b448101a930a45989285e8f9dfd9aee4de7ff8832e362ff4c013"
+          },
+          "source_bindings": {
+            "workers_initial": {
+              "start": 3,
+              "end": 4,
+              "source_value": 3.0,
+              "scale": 1.0,
+              "observation": "known"
+            },
+            "hours_initial": {
+              "start": 13,
+              "end": 14,
+              "source_value": 4.0,
+              "scale": 1.0,
+              "observation": "known"
+            },
+            "output_initial": {
+              "start": 28,
+              "end": 30,
+              "source_value": 84.0,
+              "scale": 1.0,
+              "observation": "known"
+            },
+            "workers_target": {
+              "start": 45,
+              "end": 46,
+              "source_value": 8.0,
+              "scale": 1.0,
+              "observation": "target"
+            },
+            "hours_target": {
+              "start": 55,
+              "end": 56,
+              "source_value": 6.0,
+              "scale": 1.0,
+              "observation": "target"
+            }
+          }
+        },
+        "schema_version": "jarvis-semantic-ir-v2"
+      },
+      "graph": {
+        "initial": null,
+        "nodes": [
+          {
+            "op": "work_rate",
+            "slots": {
+              "workers_initial": 3.0,
+              "hours_initial": 4.0,
+              "output_initial": 84.0,
+              "workers_target": 8.0,
+              "hours_target": 6.0
+            },
+            "units": {
+              "time": "hour",
+              "output": "piece"
+            }
+          }
+        ],
+        "domain": "work_rate"
+      },
+      "answer": 336.0,
+      "verification": {
+        "passed": true,
+        "failed_checks": [],
+        "repair_hint": "Rebuild graph from source world state",
+        "repair_stage": "none",
+        "checks": [
+          "source_slot:workers_initial",
+          "source_slot:hours_initial",
+          "source_slot:output_initial",
+          "source_slot:workers_target",
+          "source_slot:hours_target",
+          "source_work_coverage",
+          "productivity_conservation",
+          "dimensional_consistency"
+        ]
+      },
+      "changed_slots": {
+        "workers_initial": 3.0,
+        "workers_target": 8.0
+      },
+      "changed_plan": false
+    }
+  ],
+  "actual_runtime": [
+    {
+      "question": "با 3 کارگر و 4 ساعت، خروجی 84 قطعه است. با 8 کارگر و 6 ساعت چه خروجی داریم؟",
+      "answer": "336",
+      "intent": "word_problem_answer",
+      "metadata": {
+        "reasoning_source": "semantic_ir_v20",
+        "confidence": 0.9867912530899048,
+        "self_checks": [
+          "v15_local_intelligence",
+          "v20_learned_ir",
+          "world_consumed",
+          "graph_executed",
+          "source_slot:workers_initial",
+          "source_slot:hours_initial",
+          "source_slot:output_initial",
+          "source_slot:workers_target",
+          "source_slot:hours_target",
+          "source_work_coverage",
+          "productivity_conservation",
+          "dimensional_consistency",
+          "result_verified"
+        ],
+        "web_bypassed": true,
+        "tool_bypassed": true
+      }
+    },
+    {
+      "question": "دنباله 24، 12، 6؛ جمله پنجم چیست؟",
+      "answer": "1.5",
+      "intent": "reasoned_answer",
+      "metadata": {
+        "reasoning_source": "semantic_ir_v20",
+        "confidence": 0.9860249161720276,
+        "self_checks": [
+          "v15_local_intelligence",
+          "v20_learned_ir",
+          "world_consumed",
+          "graph_executed",
+          "source_sequence_terms",
+          "source_sequence_target",
+          "observed_sequence_rule",
+          "sequence_nth",
+          "result_verified"
+        ],
+        "web_bypassed": true,
+        "tool_bypassed": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "training_complete": false,
+  "dataset_version": "dataset_v003",
+  "training_stages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "checkpoint_parent": "stage11_reasoning",
+  "backend": "numpy_cpu_full_gradient",
+  "optimizer": "AdamW",
+  "step": 576,
+  "trained_at_utc": "2026-08-21T23:45:38.126985+00:00",
+  "model_file": null,
+  "size_bytes": 0,
+  "sha256": null
+}

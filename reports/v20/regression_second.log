@@ -1,0 +1,81 @@
+.............................................. [  6%]
+..................................................................... [ 16%]
+........................................................................ [ 26%]
+........................................................................ [ 37%]
+........................................................................ [ 47%]
+........................................................................ [ 57%]
+........................................................................ [ 68%]
+....................................................................................................................... [ 85%]
+.................................. [ 90%]
+..................................................... [ 97%]
+...............                [100%]
+=================================== FAILURES ===================================
+_ BilingualCognitiveResearchV11Tests.test_bilingual_reasoning_generalizes_to_english (prompt='With a 30 percent independent success rate, what is the chance of at least two successes in four trials?') _
+
+self = <tests.test_v11_bilingual_cognitive_research.BilingualCognitiveResearchV11Tests testMethod=test_bilingual_reasoning_generalizes_to_english>
+
+    def test_bilingual_reasoning_generalizes_to_english(self) -> None:
+        cases = (
+            ("All zargs are mips and no mip is blue. Can a zarg be blue?", "cannot overlap"),
+            ("If the day before yesterday was the day after Monday, what day is it today?", "Thursday"),
+            ("With a 30 percent independent success rate, what is the chance of at least two successes in four trials?", "34.83%"),
+        )
+        with TemporaryRuntime() as runtime, mock.patch.object(
+            runtime.tools, "invoke", side_effect=AssertionError("web/tool call was not expected")
+        ):
+            for prompt, expected in cases:
+                with self.subTest(prompt=prompt):
+                    answer = runtime.agent.respond(prompt)
+>                   self.assertEqual(answer.intent, "reasoned_answer")
+E                   AssertionError: 'probability_answer' != 'reasoned_answer'
+E                   - probability_answer
+E                   + reasoned_answer
+
+../baseline/Jarvis_v0.11.0/tests/test_v11_bilingual_cognitive_research.py:135: AssertionError
+_ BilingualCognitiveResearchV11Tests.test_reported_reasoning_failures_are_now_solved_locally (prompt='اگر احتمال موفقیت هر تلاش مستقل ۳۵٪ باشد، احتمال حداقل دو موفقیت در چهار تلاش چقدر است؟') _
+
+self = <tests.test_v11_bilingual_cognitive_research.BilingualCognitiveResearchV11Tests testMethod=test_reported_reasoning_failures_are_now_solved_locally>
+
+    def test_reported_reasoning_failures_are_now_solved_locally(self) -> None:
+        cases = (
+            ("همهٔ وارها تِپ هستند. بعضی تِپ‌ها سردند. آیا حتماً بعضی وارها سردند؟", "مثال نقض"),
+            ("اگر پریروز، فردای دوشنبه بود، امروز چه روزی است؟", "پنجشنبه"),
+            ("اگر احتمال موفقیت هر تلاش مستقل ۳۵٪ باشد، احتمال حداقل دو موفقیت در چهار تلاش چقدر است؟", "43.701875٪"),
+            ("سه جعبه با برچسب‌های قرمز، آبی و مخلوط داریم و هر سه برچسب اشتباه‌اند. فقط با بیرون‌آوردن یک مهره، چطور اصلاح می‌شوند؟", "برچسب «مخلوط»"),
+        )
+        with TemporaryRuntime() as runtime, mock.patch.object(
+            runtime.tools, "invoke", side_effect=AssertionError("web/tool call was not expected")
+        ):
+            for prompt, expected in cases:
+                with self.subTest(prompt=prompt):
+                    route = runtime.agent.router.route(prompt)
+                    answer = runtime.agent.respond(prompt)
+>                   self.assertEqual(answer.intent, "reasoned_answer")
+E                   AssertionError: 'probability_answer' != 'reasoned_answer'
+E                   - probability_answer
+E                   + reasoned_answer
+
+../baseline/Jarvis_v0.11.0/tests/test_v11_bilingual_cognitive_research.py:119: AssertionError
+_ RuntimeIntelligenceV14Tests.test_v14_end_to_end_reasoning_language_and_code_holdout (prompt='میانگین اعداد 12، 18، 24 و 30 چیست؟') _
+
+self = <tests.test_v14_runtime_intelligence.RuntimeIntelligenceV14Tests testMethod=test_v14_end_to_end_reasoning_language_and_code_holdout>
+
+    def test_v14_end_to_end_reasoning_language_and_code_holdout(self) -> None:
+        # One continuous session is intentional: these prompts must keep routing
+        # correctly even after unrelated earlier turns have populated context.
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        lowered = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), lowered)
+E                           AssertionError: '21' not found in '36'
+
+../baseline/Jarvis_v0.11.0/tests/test_v14_runtime_intelligence.py:74: AssertionError
+=========================== short test summary info ============================
+SUBFAILED(prompt='With a 30 percent independent success rate, what is the chance of at least two successes in four trials?') tests/test_v11_bilingual_cognitive_research.py::BilingualCognitiveResearchV11Tests::test_bilingual_reasoning_generalizes_to_english
+SUBFAILED(prompt='اگر احتمال موفقیت هر تلاش مستقل ۳۵٪ باشد، احتمال حداقل دو موفقیت در چهار تلاش چقدر است؟') tests/test_v11_bilingual_cognitive_research.py::BilingualCognitiveResearchV11Tests::test_reported_reasoning_failures_are_now_solved_locally
+SUBFAILED(prompt='میانگین اعداد 12، 18، 24 و 30 چیست؟') tests/test_v14_runtime_intelligence.py::RuntimeIntelligenceV14Tests::test_v14_end_to_end_reasoning_language_and_code_holdout
+3 failed, 696 passed, 582 subtests passed in 29.06s

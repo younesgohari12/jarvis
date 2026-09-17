@@ -1,0 +1,42 @@
+{
+  "format": "jarvis-dataset-manifest-v6",
+  "dataset_version": "dataset_v006",
+  "seed": 14092026,
+  "total_examples": 15329,
+  "inherited_v004_examples": 10329,
+  "generalization_examples_added": 2000,
+  "reasoning_examples_added": 3000,
+  "generalization_source_dataset_count": 100,
+  "reasoning_source_dataset_count": 100,
+  "removed_v13_template_packs": true,
+  "duplicates_removed_during_merge": 0,
+  "split_counts": {
+    "train": 12391,
+    "validation": 1475,
+    "test": 1463
+  },
+  "concept_group_counts": {
+    "train": 5518,
+    "validation": 637,
+    "test": 707
+  },
+  "cross_split_concept_leakage": 0,
+  "languages": {
+    "en": 3368,
+    "fa": 9157,
+    "mixed": 2804
+  },
+  "origins": {
+    "jarvis-authored": 5529,
+    "jarvis-curated-v12": 4800,
+    "jarvis-generalization-v14": 2000,
+    "jarvis-reasoning-v14": 3000
+  },
+  "quality_notes": [
+    "v004 stable base retained",
+    "v13 generalization/reasoning packs are not inherited",
+    "v14 packs pass >=99.5% unique-output gate",
+    "all v14 labels are deterministic/project-authored",
+    "concept groups are atomic across splits"
+  ]
+}

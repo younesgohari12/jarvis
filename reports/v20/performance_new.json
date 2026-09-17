@@ -1,0 +1,20 @@
+{
+  "startup_median_ms": 178.9715500000284,
+  "startup_trials_ms": [
+    222.87452399996255,
+    178.9715500000284,
+    118.11753599999975
+  ],
+  "latency_p50_ms": 1.3081325000143806,
+  "latency_p95_ms": 2.4882029999844235,
+  "latency_max_ms": 3.6494089999905555,
+  "requests": 120,
+  "peak_rss_mb": 134.234375,
+  "cpu_only": true,
+  "gpu_tested": false,
+  "python": "3.12.13",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "blas_threads": "1",
+  "prompt_count": 5,
+  "notes": "Same established local prompts; no external tools; three in-process runtime initializations. Import cold-start excluded and measured separately by the fresh harness."
+}

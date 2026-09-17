@@ -1,0 +1,919 @@
+{
+  "format": "jarvis-intelligence-pack-v13",
+  "kind": "generalization",
+  "version": "generalization_100_v13",
+  "seed": 13092026,
+  "source_dataset_count": 100,
+  "examples": 3600,
+  "unique_input_output_pairs": 3600,
+  "exact_duplicates_detected_and_rewritten": 2062,
+  "sources": [
+    {
+      "id": "g001_g00_v0",
+      "skill": "g00_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g001_g00_v0.jsonl",
+      "sha256": "005012f5527bf73ef20d34b4596e50266f4ed72183c8637801b1bd25117ca304",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g002_g00_v1",
+      "skill": "g00_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g002_g00_v1.jsonl",
+      "sha256": "9236a2423591259f248f33d9763bbaca049d86e5014d9ddde9991e71951c3a45",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g003_g00_v2",
+      "skill": "g00_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g003_g00_v2.jsonl",
+      "sha256": "069429fc6d20c19a5de519eb7b3d52638e6935361f8098ac3221ede00fdc06c1",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g004_g00_v3",
+      "skill": "g00_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g004_g00_v3.jsonl",
+      "sha256": "c33958ce6bc8f21342726959a31b5f95e68bc8240f031c6bd60bfc1667dd8b4b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g005_g00_v4",
+      "skill": "g00_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g005_g00_v4.jsonl",
+      "sha256": "bcd7962c1c810c603bfe65d9de768da008a461d4aae0f1a742e7ba512ff709f5",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g006_g01_v0",
+      "skill": "g01_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g006_g01_v0.jsonl",
+      "sha256": "0db975f9a012d03998b62e32ccddf7c62aaea66ceb79e0f33493f0f4d6b8f32c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g007_g01_v1",
+      "skill": "g01_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g007_g01_v1.jsonl",
+      "sha256": "557465b520faf103446e54298600080b4c98901c5a10479bc092440771ac28b7",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g008_g01_v2",
+      "skill": "g01_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g008_g01_v2.jsonl",
+      "sha256": "14a557738d92f5913ad622cf49c858e7be4bd356abe7ee39de33850157fa6c11",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g009_g01_v3",
+      "skill": "g01_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g009_g01_v3.jsonl",
+      "sha256": "603f1946bf4b80c6e37b635a76d167ac0497878064ccd4f1e3177c1cd1e23f1a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g010_g01_v4",
+      "skill": "g01_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g010_g01_v4.jsonl",
+      "sha256": "62453777ba62e62ae656dacd06b2b51aa5928c17f9c125dc7ca430f49c53120e",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g011_g02_v0",
+      "skill": "g02_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g011_g02_v0.jsonl",
+      "sha256": "647f65e9cc65686d0dc9bfe6ff7cd247bf0c93158bd231086f994e712a7dca38",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g012_g02_v1",
+      "skill": "g02_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g012_g02_v1.jsonl",
+      "sha256": "f1fd202c242ba14c50e87a4291fd7e3673a3c3286302bce0bd7e6d2f8a80892c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g013_g02_v2",
+      "skill": "g02_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g013_g02_v2.jsonl",
+      "sha256": "4865028290eb3c1c5e360ef06cebf385d2fcb25202cb35e15b57c71b152ab404",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g014_g02_v3",
+      "skill": "g02_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g014_g02_v3.jsonl",
+      "sha256": "c027e3ce208aa183df9a2d58f6563fa2a653d57c1ad3a80adbf58d3ad5a80d43",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g015_g02_v4",
+      "skill": "g02_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g015_g02_v4.jsonl",
+      "sha256": "b23d7a85fd9781bdd27fbc22d5dcb4bcc9d41ea52b467de621edab3740ccd2c2",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g016_g03_v0",
+      "skill": "g03_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g016_g03_v0.jsonl",
+      "sha256": "28967b6700204bd0142bca7c598c9c4125ad52fc75cb398d17298b3d4bd32868",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g017_g03_v1",
+      "skill": "g03_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g017_g03_v1.jsonl",
+      "sha256": "56c1d2e0dccff550e773bc71cced711f97e3cfe10be68fb226d67b8b59a6b520",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g018_g03_v2",
+      "skill": "g03_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g018_g03_v2.jsonl",
+      "sha256": "549f19bb25313df84bd75256d42f54457681d970b7cc8ddbd6eb5b553872c498",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g019_g03_v3",
+      "skill": "g03_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g019_g03_v3.jsonl",
+      "sha256": "6eddf299d125a22775e9390fe2cb2669feff37ce42118ecaefde5fee398f9972",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g020_g03_v4",
+      "skill": "g03_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g020_g03_v4.jsonl",
+      "sha256": "2782ddd89165276686acda0adbf7f679e2299c8e3d5a4c89a69d8d7881aa7611",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g021_g04_v0",
+      "skill": "g04_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g021_g04_v0.jsonl",
+      "sha256": "f9d3dc4610a29a535dc7b3ecb4c62c115c499681c316759942e6d3231bed3afc",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g022_g04_v1",
+      "skill": "g04_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g022_g04_v1.jsonl",
+      "sha256": "277628ff94483ab7305c7f32ecc999ba4b103e1e38f8c74ab9554a77e4e8b542",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g023_g04_v2",
+      "skill": "g04_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g023_g04_v2.jsonl",
+      "sha256": "0199c47fbe2266bb7046cb36964a729c21a78c9867144019cd4fba5a4caff09c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g024_g04_v3",
+      "skill": "g04_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g024_g04_v3.jsonl",
+      "sha256": "7143632086f8badb5d9208fc1682145254852b235de2bf0257ec85bd520fa4ea",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g025_g04_v4",
+      "skill": "g04_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g025_g04_v4.jsonl",
+      "sha256": "71ff08e2ff869b8ed87db68193f08af0e9ed0e56fe0ce381de44459724f37164",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g026_g05_v0",
+      "skill": "g05_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g026_g05_v0.jsonl",
+      "sha256": "94ff0def7e61e79c99449c1db15ac86a5707232e6cde15823022ed29077b565b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g027_g05_v1",
+      "skill": "g05_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g027_g05_v1.jsonl",
+      "sha256": "61145068af29a143c7713fe7ca66248c35112e4bc470a9e74f377b8e74e4d09b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g028_g05_v2",
+      "skill": "g05_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g028_g05_v2.jsonl",
+      "sha256": "40c2f704fcab1c7a1431def1effb6e8ba40e66439fccccfb5f709b1cd9ad2800",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g029_g05_v3",
+      "skill": "g05_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g029_g05_v3.jsonl",
+      "sha256": "0b5d032e2d41e91cec5e034ded93b29e2095b691861236ad43e55faf4400d91d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g030_g05_v4",
+      "skill": "g05_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g030_g05_v4.jsonl",
+      "sha256": "5425d6b7a57acf264aede0fd675a2e492a3b39b388b67bf9a2f9115bd50622d2",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g031_g06_v0",
+      "skill": "g06_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g031_g06_v0.jsonl",
+      "sha256": "26891f3b3c73b3bca6ce9d1a4558dcb82a471bbb886d6fcfd416637916707ae1",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g032_g06_v1",
+      "skill": "g06_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g032_g06_v1.jsonl",
+      "sha256": "8b8b1e681ef318bc14c658a8b4c74c0a2ba4e8af563f2e15989a1215b1d86348",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g033_g06_v2",
+      "skill": "g06_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g033_g06_v2.jsonl",
+      "sha256": "a5beb4fefd76a8406ce9159878f3a28e4cb2c8329fa9d5599b04965453a687f8",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g034_g06_v3",
+      "skill": "g06_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g034_g06_v3.jsonl",
+      "sha256": "5f9d7971e3ec1616c967ea85825e07db96c8e30bda0d268a520d7ea9bc168895",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g035_g06_v4",
+      "skill": "g06_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g035_g06_v4.jsonl",
+      "sha256": "10df537378f16f039271f285f3e86ba758ea51cc45c5a5ed13c40bee97aad5e9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g036_g07_v0",
+      "skill": "g07_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g036_g07_v0.jsonl",
+      "sha256": "307c9a1145d6e865536c0e3eb2446aeba200019004f7e5487702d9fdddfe99ca",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g037_g07_v1",
+      "skill": "g07_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g037_g07_v1.jsonl",
+      "sha256": "9872d552980a10cdd572e74dc2779f5131a2ede5c3af6656beb0f3bc86a68268",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g038_g07_v2",
+      "skill": "g07_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g038_g07_v2.jsonl",
+      "sha256": "6d8be86cf07a57e4cdba32fa7e39050a69dc64fa240eacf3d4d3fb6609e2306d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g039_g07_v3",
+      "skill": "g07_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g039_g07_v3.jsonl",
+      "sha256": "92dadfd59825c8463e5aca516c58cfb06a12c1f24d2c797f31bd6003f4bfaabb",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g040_g07_v4",
+      "skill": "g07_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g040_g07_v4.jsonl",
+      "sha256": "b983f955375aab702ff9c8682f65338595efaa662e6332fbb2f65e569f5639a9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g041_g08_v0",
+      "skill": "g08_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g041_g08_v0.jsonl",
+      "sha256": "216cbf7ef0c42cb2e345ef95db53302dc1ccf381a9ebf2b7d9b7763b6a70b550",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g042_g08_v1",
+      "skill": "g08_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g042_g08_v1.jsonl",
+      "sha256": "d0909c23e36b34e608179c160aa02dde97f0b23dd294c8fd97fb6c8491fed508",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g043_g08_v2",
+      "skill": "g08_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g043_g08_v2.jsonl",
+      "sha256": "c9308e7489ff71eec4626878c4521dc78b5af6a704ff95d8b4f10167b1c48dcb",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g044_g08_v3",
+      "skill": "g08_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g044_g08_v3.jsonl",
+      "sha256": "2733c836b7a11391ca12ae99bf3f7b9dbf0464fc1bb44ea76ed8a8590d22da2c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g045_g08_v4",
+      "skill": "g08_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g045_g08_v4.jsonl",
+      "sha256": "574c731bb75ca1a2720c5162aa3f83367e38634dca894fa456ff52697de17f23",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g046_g09_v0",
+      "skill": "g09_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g046_g09_v0.jsonl",
+      "sha256": "e093b4ca733a39ed8bfa5867457e6a9df4bd89cdece18e9e9efc9d96829136d7",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g047_g09_v1",
+      "skill": "g09_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g047_g09_v1.jsonl",
+      "sha256": "6642fea53ff1e1910b01013afdc80503fceb0cc060079d033f02ea1b9e25c5f3",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g048_g09_v2",
+      "skill": "g09_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g048_g09_v2.jsonl",
+      "sha256": "97b1e9b845189a2ce524eeb1b221c5f8c9ea6eab9955977300013662d0d06bc9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g049_g09_v3",
+      "skill": "g09_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g049_g09_v3.jsonl",
+      "sha256": "e6401d58c7bdb4713b9f9bfa2c942bbea9c641344326596ebe239d7fa6e5f709",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g050_g09_v4",
+      "skill": "g09_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g050_g09_v4.jsonl",
+      "sha256": "25690d3f6594dd096aad548c049663b405724df005fe642331fa2161030b8447",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g051_g10_v0",
+      "skill": "g10_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g051_g10_v0.jsonl",
+      "sha256": "205fc234682d83c22e1f59437138d8336910f75e63dce620ef2add835f553c1b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g052_g10_v1",
+      "skill": "g10_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g052_g10_v1.jsonl",
+      "sha256": "90f2330d479e5d6c302776a6c39fe079ce9d8b8e7f2912464fbcc3a2d47bea61",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g053_g10_v2",
+      "skill": "g10_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g053_g10_v2.jsonl",
+      "sha256": "660ffc1cf35fcc41945a9a7f8a5f1769b7ea3165b11d1b8511f76c7624dc6e0e",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g054_g10_v3",
+      "skill": "g10_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g054_g10_v3.jsonl",
+      "sha256": "3b67d6011d8fd9496c09890d61d6c9619f6098ed9f834e7612298ea486770149",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g055_g10_v4",
+      "skill": "g10_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g055_g10_v4.jsonl",
+      "sha256": "aafeb3752d62a089b4db9270226e9de1e525700ed0932750ac9297bb3ce4ead6",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g056_g11_v0",
+      "skill": "g11_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g056_g11_v0.jsonl",
+      "sha256": "e6534d823898022172453bac374e6896a3db017931cb6887f4ecfd3ecbb74cf9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g057_g11_v1",
+      "skill": "g11_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g057_g11_v1.jsonl",
+      "sha256": "8b214d033864318385e77f335b15dc92a8b080466c5b264586b231a861db74d7",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g058_g11_v2",
+      "skill": "g11_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g058_g11_v2.jsonl",
+      "sha256": "d31d7d3d7bf7883b5faf6e5d1384f1d551a18f7f25b4d378b6f65802fad8d815",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g059_g11_v3",
+      "skill": "g11_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g059_g11_v3.jsonl",
+      "sha256": "2e90bcb75f3d47e388e87886716f4b95e7a6bbe366ee5341c77655370601ae72",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g060_g11_v4",
+      "skill": "g11_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g060_g11_v4.jsonl",
+      "sha256": "f4c1abfe8569374501f76917771912c1fd34b9d30be70a7d651bea24540779ad",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g061_g12_v0",
+      "skill": "g12_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g061_g12_v0.jsonl",
+      "sha256": "2bb7b0807a58a107d5240c371ffb82fd1450318618ba03b990d7195681147b8e",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g062_g12_v1",
+      "skill": "g12_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g062_g12_v1.jsonl",
+      "sha256": "386dc3a9a2529fefa787040b83444948c44085e86f14dddfae364debd455503a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g063_g12_v2",
+      "skill": "g12_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g063_g12_v2.jsonl",
+      "sha256": "fc06cb3293061dc0715c7fc14f53b453e4b1652b1cdd48cab433417c07ad26c1",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g064_g12_v3",
+      "skill": "g12_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g064_g12_v3.jsonl",
+      "sha256": "1aa943441c341b8b0f24ba09b83069070793c4f374f379e66a0a26b56e046e19",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g065_g12_v4",
+      "skill": "g12_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g065_g12_v4.jsonl",
+      "sha256": "3aab22f2558c22ec34549f42c6b6a932774ada6c7ce32356d9c8860197149f2d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g066_g13_v0",
+      "skill": "g13_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g066_g13_v0.jsonl",
+      "sha256": "69cba0c5c0b99f16a209a4ed06917f3bc019a13f452d0cf08b43c14472186829",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g067_g13_v1",
+      "skill": "g13_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g067_g13_v1.jsonl",
+      "sha256": "0cedce085419aa1570ee44a24dd815d06c3bee915c5fc2ed33b0f8142344577a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g068_g13_v2",
+      "skill": "g13_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g068_g13_v2.jsonl",
+      "sha256": "a35de4dc874b34d3a62b1451fd3a1fb4279b6cf8c335445f23e06b960407e149",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g069_g13_v3",
+      "skill": "g13_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g069_g13_v3.jsonl",
+      "sha256": "49e39e19ef87e2f0675a34187c790223e58cf88acd54bfdfe5533a33548d6e5a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g070_g13_v4",
+      "skill": "g13_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g070_g13_v4.jsonl",
+      "sha256": "fa54fb4320ddd44302ede1ed178716ffd93c401d518cb47a9dcd9eb79ab97eac",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g071_g14_v0",
+      "skill": "g14_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g071_g14_v0.jsonl",
+      "sha256": "b00f47bc5eff7e617f637c3cb930bfffcaa90cd20071302f8a2a04bc9580ac0a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g072_g14_v1",
+      "skill": "g14_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g072_g14_v1.jsonl",
+      "sha256": "7b8fcb0d0aa92f317be1a1b3ac123b1e0334fc881ab7919058f3dbf0182b8c9d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g073_g14_v2",
+      "skill": "g14_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g073_g14_v2.jsonl",
+      "sha256": "23a88e38a38463c33e25090f948f228dbe42d93d8d369fb80c7a51ee9e916f06",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g074_g14_v3",
+      "skill": "g14_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g074_g14_v3.jsonl",
+      "sha256": "788052c7d971d403b32be5f1eb937493d24aa87fb714c74100d35f2b3984d52c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g075_g14_v4",
+      "skill": "g14_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g075_g14_v4.jsonl",
+      "sha256": "2324789a551c7f8886ed3724d703aeb7c748d62de00c83fcd41a7de58c49dd2c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g076_g15_v0",
+      "skill": "g15_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g076_g15_v0.jsonl",
+      "sha256": "258075d8d93162b0f64e57c52ca44f10449ab065977f38e5d7fb0189d1039643",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g077_g15_v1",
+      "skill": "g15_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g077_g15_v1.jsonl",
+      "sha256": "3d2764b01ee64d8acc11d6214ba921e4fe8ac2bbe44583f0571ac4f743f42086",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g078_g15_v2",
+      "skill": "g15_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g078_g15_v2.jsonl",
+      "sha256": "ead29a4a740baa16126e7ebd523316fd87d66ca7cd28d9f6ec2fe851e348a91f",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g079_g15_v3",
+      "skill": "g15_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g079_g15_v3.jsonl",
+      "sha256": "8c363970d11acd70f51fcca032813afa9ce69ac3964692ada17c8bce541908ac",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g080_g15_v4",
+      "skill": "g15_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g080_g15_v4.jsonl",
+      "sha256": "a9a4f0506cc6a3d2a8cc1094a0e92d8355aaf700b2bb68143088cbd3c83ee9ce",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g081_g16_v0",
+      "skill": "g16_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g081_g16_v0.jsonl",
+      "sha256": "69bf6caac943e6eea156850c4be56160297bf99b5462e42f1e0988cdb92e1093",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g082_g16_v1",
+      "skill": "g16_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g082_g16_v1.jsonl",
+      "sha256": "a823f376bcfba885af8c3f2ab0f79e95860662f9d9db5b5f86536120a41dfe2d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g083_g16_v2",
+      "skill": "g16_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g083_g16_v2.jsonl",
+      "sha256": "f37f3b933ef56ad46e539d78f9c9785cbe66bc011340791c61f3cede418bbb98",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g084_g16_v3",
+      "skill": "g16_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g084_g16_v3.jsonl",
+      "sha256": "39fa66a27bfdfe8993bcafa84c3984d3fe99f162df705f15f0d567b74e45ac60",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g085_g16_v4",
+      "skill": "g16_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g085_g16_v4.jsonl",
+      "sha256": "20686a7e15918e1b48ccae91d16eb9c8f647bc71c5345af57d6fa456c84104e4",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g086_g17_v0",
+      "skill": "g17_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g086_g17_v0.jsonl",
+      "sha256": "b16439c21bd713a9d721782017ca6bb6289843f483a8c246bbb40e13cce52caa",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g087_g17_v1",
+      "skill": "g17_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g087_g17_v1.jsonl",
+      "sha256": "b0abf04f8b47725c89bf8d1bef1e44132dda69550fcaca9295d57d4be0b51cc5",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g088_g17_v2",
+      "skill": "g17_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g088_g17_v2.jsonl",
+      "sha256": "db3908e42804a765878d80574ad186422f1ea266fb3d29dd86c1bcda1b78bf6a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g089_g17_v3",
+      "skill": "g17_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g089_g17_v3.jsonl",
+      "sha256": "e116ead89ae904789b4c2826397ad78eacf1d8db00888df313858d8cabc059c9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g090_g17_v4",
+      "skill": "g17_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g090_g17_v4.jsonl",
+      "sha256": "fa9d522be06d80a8a67e1a41480e8666715128f2f44d3425cd906f24ae63e570",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g091_g18_v0",
+      "skill": "g18_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g091_g18_v0.jsonl",
+      "sha256": "e233d2e1e71722f20fa9ce34f9128b8dadf8f86a7f47ea9cc743b41f86c85605",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g092_g18_v1",
+      "skill": "g18_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g092_g18_v1.jsonl",
+      "sha256": "167641c401bd9a4684b846f53df336c85c3fa7e509b1815ab159e2d0c2b9387d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g093_g18_v2",
+      "skill": "g18_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g093_g18_v2.jsonl",
+      "sha256": "0bc23b96ab56267254199764ecae68c225041b7af1daee39e23ce5b36053185b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g094_g18_v3",
+      "skill": "g18_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g094_g18_v3.jsonl",
+      "sha256": "fa7a89a784d2190cc3345316398e3bc043b75dc5aba881e9e8e8c45a7e41dfef",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g095_g18_v4",
+      "skill": "g18_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g095_g18_v4.jsonl",
+      "sha256": "98e0011f84a913312d4082c29eed45a6b21658b0c66436531603d774b442acae",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g096_g19_v0",
+      "skill": "g19_v0",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g096_g19_v0.jsonl",
+      "sha256": "e4807f1f9e6f334454b7c2e4c10658c8b0eaeacce701592890a7b416eba038e7",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g097_g19_v1",
+      "skill": "g19_v1",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g097_g19_v1.jsonl",
+      "sha256": "9b6ee1193a359b7f12db00128830b28dbd927b268d358b3233706aeee7bde931",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g098_g19_v2",
+      "skill": "g19_v2",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g098_g19_v2.jsonl",
+      "sha256": "e0d3c4c83052b15ed1230c6007c35ac83e33f70764b4e5939948b1a9bcfacfba",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g099_g19_v3",
+      "skill": "g19_v3",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g099_g19_v3.jsonl",
+      "sha256": "d0852627f8168504d1f794e784d4eabe5f5e18c74fd036652b065659acde9acc",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "g100_g19_v4",
+      "skill": "g19_v4",
+      "examples": 36,
+      "file": "datasets/generalization_v13/g100_g19_v4.jsonl",
+      "sha256": "c14101d60165b3e546ae3b5abf5591ac7546c2aefc75104feb1a24eeb2ba8032",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    }
+  ],
+  "quality_policy": [
+    "concept-group split isolation",
+    "deterministic quantitative labels",
+    "editorial semantic labels",
+    "no external model outputs",
+    "no benchmark-test copying"
+  ]
+}

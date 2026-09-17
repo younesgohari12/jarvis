@@ -1,0 +1,119 @@
+{
+  "version": 2,
+  "intents": [
+    {
+      "tag": "user_low_mood",
+      "route_type": "conversation",
+      "examples": [
+        "امروز حوصله ندارم", "حالم گرفته است", "خیلی خسته ام", "امروز روز خوبی نیست", "حوصله هیچ کاری ندارم", "یکم ناراحتم", "انرژی ندارم", "حالم تعریفی نداره",
+        "I'm not in the mood today", "I feel down", "I'm really tired", "today is not a good day", "I have no energy", "I'm feeling sad", "I'm not feeling great", "I feel a bit low"
+      ]
+    },
+    {
+      "tag": "project_context",
+      "route_type": "conversation",
+      "examples": [
+        "دارم روی یه پروژه پایتون کار می کنم", "یک پروژه جدید شروع کردم", "دارم برنامه می سازم", "روی پروژه جاوااسکریپت کار می کنم", "یه ایده نرم افزاری دارم", "می خوام یک اپ بسازم", "مشغول پروژه برنامه نویسی هستم", "دارم یک سیستم طراحی می کنم",
+        "I'm working on a Python project", "I started a new project", "I'm building an application", "I'm working on some JavaScript", "I have a software idea", "I want to build an app", "I'm coding a new system", "I'm designing a program"
+      ]
+    },
+    {
+      "tag": "project_kind",
+      "route_type": "conversation",
+      "examples": [
+        "یه ربات", "یک سایت فروشگاهی", "اپلیکیشن دسکتاپ", "یه ربات تلگرام", "برنامه مدیریت فایل", "یک بازی کوچیک", "پروژه هوش مصنوعی", "ابزار پایتونی",
+        "a bot", "a web store", "a desktop application", "a Telegram bot", "a file manager", "a small game", "an AI project", "a Python tool"
+      ]
+    },
+    {
+      "tag": "file_read",
+      "route_type": "tool",
+      "examples": [
+        "این فایل رو بخون", "محتوای فایل را بگو", "فایل پیوست شده رو بررسی کن", "داخل این فایل چیه", "متن فایل رو نشون بده", "فایل test.txt رو بخون", "کد داخل فایل را نگاه کن", "پیوست را تحلیل کن",
+        "read this file", "show me the file contents", "inspect the attached file", "what is inside this file", "preview the text file", "read test.txt", "look at the code file", "analyze the attachment"
+      ]
+    },
+    {
+      "tag": "zip_list",
+      "route_type": "tool",
+      "examples": [
+        "داخل این زیپ چه فایل هایی هست", "ساختار zip رو بگو", "فایل های آرشیو را لیست کن", "محتویات زیپ را نشان بده", "این zip رو بررسی کن", "لیست پوشه های زیپ", "داخل آرشیو چیه", "ساختار فایل فشرده",
+        "list files in this zip", "show the zip structure", "what files are in the archive", "inspect this zip", "display archive contents", "list zip folders", "what is inside the archive", "show compressed file structure"
+      ]
+    },
+    {
+      "tag": "open_browser",
+      "route_type": "tool",
+      "examples": [
+        "مرورگر رو باز کن", "کروم را باز کن", "یک صفحه مرورگر باز کن", "گوگل رو باز کن", "برو داخل مرورگر", "مرورگر پیش فرض را اجرا کن", "سایت گوگل را باز کن", "وب رو باز کن",
+        "open the browser", "open Chrome", "launch my browser", "open Google", "start the web browser", "run the default browser", "take me to Google", "open a web page"
+      ]
+    },
+    {
+      "tag": "system_info",
+      "route_type": "tool",
+      "examples": [
+        "مشخصات سیستم رو بگو", "چقدر رم دارم", "پردازنده من چیه", "اطلاعات سخت افزار", "سیستم من چند هسته داره", "کارت گرافیک دارم", "وضعیت منابع رو نشان بده", "مشخصات کامپیوتر",
+        "show system information", "how much RAM do I have", "what is my CPU", "show hardware details", "how many cores are there", "do I have a GPU", "show resource information", "computer specifications"
+      ]
+    },
+    {
+      "tag": "open_settings",
+      "route_type": "tool",
+      "examples": [
+        "تنظیمات رو باز کن", "برو به تنظیمات", "تنظیمات جارویس", "صفحه تنظیمات را نشان بده", "می خوام تنظیمات رو عوض کنم", "تنظیم شخصیت کجاست", "پنل تنظیمات", "آپشن ها رو باز کن",
+        "open settings", "go to settings", "Jarvis settings", "show the settings page", "I want to change settings", "where are personality settings", "settings panel", "open options"
+      ]
+    },
+    {
+      "tag": "clear_conversation",
+      "route_type": "tool",
+      "examples": [
+        "گفتگو رو پاک کن", "چت جدید بساز", "تاریخچه این گفتگو را خالی کن", "از اول شروع کنیم", "صفحه چت را پاک کن", "یک مکالمه جدید", "این جلسه رو ببند", "چت فعلی را تمیز کن",
+        "clear the conversation", "start a new chat", "clear this chat history", "let's start over", "wipe the chat screen", "new conversation", "close this session", "reset current chat"
+      ]
+    },
+    {
+      "tag": "internet_search",
+      "route_type": "tool",
+      "examples": [
+        "در اینترنت جستجو کن", "این موضوع رو سرچ کن", "از وب پیدا کن", "آنلاین بررسی کن", "در گوگل دنبالش بگرد", "اطلاعات جدید را جستجو کن", "وب رو برای این سؤال بگرد", "سرچ اینترنتی انجام بده",
+        "search the internet", "search this topic online", "find it on the web", "check online", "look it up on Google", "search for recent information", "search the web for this question", "do a web search"
+      ]
+    },
+    {
+      "tag": "factual_question",
+      "route_type": "information",
+      "examples": [
+        "چرا آسمان آبی است", "پایتخت فرانسه کجاست", "پایتون چیست", "رم کامپیوتر چه کاری می کند", "این مفهوم یعنی چه", "درباره منظومه شمسی بگو", "چرا برگ ها سبز هستند", "هوش مصنوعی چطور کار می کند",
+        "why is the sky blue", "what is the capital of France", "what is Python", "what does computer RAM do", "what does this concept mean", "tell me about the solar system", "why are leaves green", "how does artificial intelligence work"
+      ]
+    },
+    {
+      "tag": "affirmation",
+      "route_type": "conversation",
+      "examples": [
+        "بله", "آره", "حتما", "اوکی انجام بده", "تایید می کنم", "درسته", "باشه", "قبوله",
+        "yes", "yeah", "sure", "okay do it", "I confirm", "that's right", "go ahead", "confirmed"
+      ]
+    },
+    {
+      "tag": "rejection",
+      "route_type": "conversation",
+      "examples": [
+        "نه", "خیر", "انجام نده", "بی خیال", "لغوش کن", "نمی خوام", "نه ممنون", "رد می کنم",
+        "no", "nope", "don't do it", "never mind", "cancel it", "I don't want that", "no thanks", "reject"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "route_type": "unknown",
+      "examples": [
+        "فلان چیز عجیب چیه", "این عبارت نامفهومه", "زرت و پرت ناشناخته", "یک سؤال خیلی تخصصی بدون اطلاعات", "نمیدونم چی میگم", "عبارت تصادفی قژپچ", "این داده کافی نیست", "موضوعی که بلد نیستی",
+        "what is this obscure thing", "an unexplained random phrase", "totally unknown jargon", "a specialized question with no context", "I don't know what I mean", "random words zxqv", "there is not enough information", "something you do not know",
+        "قیمت دقیق فردای یک سهم چنده", "نتیجه قطعی آینده رو بگو", "رمز عبور این اکانت چیه", "فکر منو بدون توضیح بخون", "predict tomorrow's exact stock price", "tell me a guaranteed future result", "what is this account password", "read my mind without context"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,48 @@
+{
+  "rows": 1643,
+  "new_authored_rows": 1166,
+  "unique_inputs": 1643,
+  "unique_outputs": 1124,
+  "unique_templates": 1643,
+  "distribution": {
+    "graph": 903,
+    "inventory": 112,
+    "finance": 112,
+    "ratio": 70,
+    "binomial": 60,
+    "work_rate": 54,
+    "sequence": 16,
+    "age": 37,
+    "speed": 23,
+    "combination": 6,
+    "permutation": 6,
+    "dice": 6,
+    "independent": 4,
+    "scheduling": 4,
+    "comparison": 16,
+    "system": 6,
+    "external": 8,
+    "knowledge": 6,
+    "other": 29,
+    "provided_text": 4,
+    "code": 161
+  },
+  "split_counts": {
+    "validation": 317,
+    "train": 1163,
+    "test": 163
+  },
+  "normalized_template_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "semantic_duplicate_policy": "Concepts recur across splits to measure paraphrase transfer. Semantic-disjointness is NOT claimed.",
+  "augmentation_policy": "At most one row per normalized number-masked input; legacy replay capped at one row per legacy template.",
+  "near_duplicate_audit": {
+    "metric": "character_3_5gram_tfidf_cosine",
+    "threshold": 0.9,
+    "test_near_train": 0,
+    "max_similarity": 0.8952701853000138
+  }
+}

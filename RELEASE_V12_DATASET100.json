@@ -1,0 +1,35 @@
+{
+  "format": "jarvis-v12-dataset100-release-v1",
+  "created_at_utc": "2026-09-03T23:33:27.887211+00:00",
+  "base_version": "Jarvis_v0.11.0_ready",
+  "release_model": "models/jarvis_nano_v12.npz",
+  "release_model_sha256": "6db62f6fb69ae0c02a4166866f2b2c1562c41a067b142792b694d7d3f42e3a4b",
+  "release_model_bytes": 15153934,
+  "parameters": 23077376,
+  "dataset_version": "dataset_v004",
+  "dataset_examples": 10329,
+  "curated_dataset_count": 100,
+  "curated_examples": 4800,
+  "unique_curated_pairs": 4800,
+  "cross_split_concept_leakage": 0,
+  "languages": {
+    "en": 2268,
+    "fa": 5257,
+    "mixed": 2804
+  },
+  "tests": {
+    "passed": 659,
+    "failed": 0,
+    "command": "python -m unittest discover -s tests -q"
+  },
+  "quality_gate_passed": true,
+  "persian_holdout_token_accuracy_before": 0.275162,
+  "persian_holdout_token_accuracy_after": 0.320406,
+  "old_v003_token_accuracy_before": 0.441933,
+  "old_v003_token_accuracy_after": 0.453547,
+  "notes": [
+    "100 curated datasets are project-authored and locally bundled.",
+    "Enabled LAB imports are merged by training/build_dataset_v12.py.",
+    "The 60-step candidate was rejected; the gentle 20-step candidate is the promoted release."
+  ]
+}

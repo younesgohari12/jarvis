@@ -1,0 +1,20 @@
+{
+  "training_complete": false,
+  "dataset_version": "dataset_v003",
+  "training_stages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "checkpoint_parent": "stage5_action_recognition",
+  "backend": "numpy_cpu_full_gradient",
+  "optimizer": "AdamW",
+  "step": 288,
+  "trained_at_utc": "2026-08-21T23:44:22.194096+00:00",
+  "model_file": null,
+  "size_bytes": 0,
+  "sha256": null
+}

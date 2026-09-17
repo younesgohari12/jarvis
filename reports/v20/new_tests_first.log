@@ -1,0 +1,18 @@
+...............................................F........................ [ 42%]
+........................................................................ [ 84%]
+...........................                                              [100%]
+=================================== FAILURES ===================================
+________________________ test_new_code_model_is_causal _________________________
+
+    def test_new_code_model_is_causal():
+        from jarvis.agent.code_intelligence_v20 import CodeIntelligenceV20
+        code=CodeIntelligenceV20()
+        q='give me code for reversing a string'
+>       assert 'text[::-1]' in code.solve(q)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: argument of type 'NoneType' is not iterable
+
+tests/test_v20_cognitive.py:108: TypeError
+=========================== short test summary info ============================
+FAILED tests/test_v20_cognitive.py::test_new_code_model_is_causal - TypeError...
+1 failed, 170 passed in 1.09s

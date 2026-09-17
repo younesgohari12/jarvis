@@ -1,0 +1,34 @@
+.............................................. [  5%]
+..................................................................... [ 12%]
+........................................................................ [ 20%]
+........................................................................ [ 28%]
+........................................................................ [ 36%]
+........................................................................ [ 44%]
+........................................................................ [ 52%]
+....................................................................................................................... [ 66%]
+.................................. [ 69%]
+..................................................... [ 75%]
+.............................. [ 79%]
+........................................................................ [ 87%]
+........................................................................ [ 95%]
+............................................                             [100%]
+=================================== FAILURES ===================================
+_ IntelligenceV16Tests.test_v16_reported_failures_and_variants_without_tools (prompt='How many arrangements of 3 from 7 without repetition?') _
+
+self = <tests.test_v16_intelligence.IntelligenceV16Tests testMethod=test_v16_reported_failures_and_variants_without_tools>
+
+    def test_v16_reported_failures_and_variants_without_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V16_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: 'p(7,3)' not found in '210'
+
+tests/test_v16_intelligence.py:59: AssertionError
+=========================== short test summary info ============================
+SUBFAILED(prompt='How many arrangements of 3 from 7 without repetition?') tests/test_v16_intelligence.py::IntelligenceV16Tests::test_v16_reported_failures_and_variants_without_tools
+1 failed, 899 passed, 584 subtests passed in 31.05s

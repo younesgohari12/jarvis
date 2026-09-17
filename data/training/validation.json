@@ -1,0 +1,511 @@
+{
+  "version": 6,
+  "split": "validation",
+  "seed": 2040,
+  "intents": [
+    {
+      "tag": "affirmation",
+      "route_type": "conversation",
+      "examples": [
+        "تایید می کنم",
+        "بله",
+        "go ahead"
+      ]
+    },
+    {
+      "tag": "ask_name",
+      "route_type": "conversation",
+      "examples": [
+        "your name please",
+        "نامت چیست",
+        "do you have a name"
+      ]
+    },
+    {
+      "tag": "ask_user_name",
+      "route_type": "conversation",
+      "examples": [
+        "tell me my name",
+        "what do you call me",
+        "remember who I am"
+      ]
+    },
+    {
+      "tag": "battery_info",
+      "route_type": "tool",
+      "examples": [
+        "is the battery charging",
+        "آیا لپتاپ شارژ میشه"
+      ]
+    },
+    {
+      "tag": "calculator",
+      "route_type": "tool",
+      "examples": [
+        "calculate 2^8",
+        "نتیجه 9**2 چیه",
+        "6 * 6 چند میشه"
+      ]
+    },
+    {
+      "tag": "call_assistant",
+      "route_type": "conversation",
+      "examples": [
+        "jarvis javab bede",
+        "jarvis manam",
+        "jarvis are you there",
+        "jarvis hasti"
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "route_type": "conversation",
+      "examples": [
+        "امکاناتت رو بگو",
+        "what tools do you have",
+        "قابلیت هات چیه"
+      ]
+    },
+    {
+      "tag": "clear_conversation",
+      "route_type": "tool",
+      "examples": [
+        "از اول شروع کنیم",
+        "wipe the chat screen",
+        "چت جدید بساز"
+      ]
+    },
+    {
+      "tag": "close_app",
+      "route_type": "tool",
+      "examples": [
+        "quit Discord",
+        "دیسکوردو ببند",
+        "مرورگر کرومو ببند",
+        "close Telegram",
+        "استیمو ببند",
+        "نوت پد رو ببند",
+        "edge رو ببند"
+      ]
+    },
+    {
+      "tag": "complex_question",
+      "route_type": "think",
+      "examples": [
+        "analyze this architecture and find risks",
+        "این خطای Python از کجا میاد و چطور حلش کنم",
+        "give a reasoned recommendation for my project"
+      ]
+    },
+    {
+      "tag": "correction_learning",
+      "route_type": "conversation",
+      "examples": [
+        "that's wrong when I say YouTube open the website",
+        "نه وقتی میگم یوتیوب رو باز کن باید سایت یوتیوب رو باز کنی",
+        "به خاطر بسپار وقتی میگم ماشین حساب برنامه calculator رو باز کن"
+      ]
+    },
+    {
+      "tag": "create_file",
+      "route_type": "tool",
+      "examples": [
+        "فایل پایتون بساز",
+        "فایل جدید درست کن"
+      ]
+    },
+    {
+      "tag": "create_folder",
+      "route_type": "tool",
+      "examples": [
+        "پوشه Jarvis Test رو بساز",
+        "پوشه جدید درست کن"
+      ]
+    },
+    {
+      "tag": "date_time",
+      "route_type": "tool",
+      "examples": [
+        "what day is it",
+        "الان چه ساعتیه",
+        "which day is today",
+        "date please",
+        "زمان رو بگو",
+        "current time",
+        "time now",
+        "current date"
+      ]
+    },
+    {
+      "tag": "delete_file",
+      "route_type": "tool",
+      "examples": [
+        "فایل notes.txt رو پاک کن",
+        "پاک کردن فایل"
+      ]
+    },
+    {
+      "tag": "enumerate_windows",
+      "route_type": "tool",
+      "examples": [
+        "پنجره ها رو بشمار",
+        "show open windows"
+      ]
+    },
+    {
+      "tag": "factual_question",
+      "route_type": "information",
+      "examples": [
+        "what does computer RAM do",
+        "what is the capital of France",
+        "درباره منظومه شمسی بگو"
+      ]
+    },
+    {
+      "tag": "find_file",
+      "route_type": "tool",
+      "examples": [
+        "توی پروژه دنبال app.py بگرد",
+        "فایل settings را در پوشه پیدا کن",
+        "حالا تو همون پوشه فایل تست رو پیدا کن"
+      ]
+    },
+    {
+      "tag": "focus_app",
+      "route_type": "tool",
+      "examples": [
+        "focus VS Code",
+        "دیسکورد رو فعال کن",
+        "وی اس کد رو فعال کن",
+        "پاورشل رو فعال کن"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "route_type": "conversation",
+      "examples": [
+        "good night",
+        "بای",
+        "من رفتم"
+      ]
+    },
+    {
+      "tag": "greeting",
+      "route_type": "conversation",
+      "examples": [
+        "صبح بخیر",
+        "hey howdy",
+        "hello chetori",
+        "salaam chetori"
+      ]
+    },
+    {
+      "tag": "help",
+      "route_type": "conversation",
+      "examples": [
+        "چطور ازت استفاده کنم",
+        "show instructions",
+        "help"
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "route_type": "conversation",
+      "examples": [
+        "how have you been",
+        "امروز چطوری",
+        "are you good",
+        "are you okay"
+      ]
+    },
+    {
+      "tag": "is_app_running",
+      "route_type": "tool",
+      "examples": [
+        "is VS Code open",
+        "is Edge open",
+        "فایرفاکس در حال اجراست؟",
+        "is it running"
+      ]
+    },
+    {
+      "tag": "list_folder",
+      "route_type": "tool",
+      "examples": [
+        "what files are in this folder",
+        "پوشه رو بررسی کن",
+        "فایل های این پوشه رو لیست کن"
+      ]
+    },
+    {
+      "tag": "maximize_app",
+      "route_type": "tool",
+      "examples": [
+        "maximize VS Code",
+        "کروم رو تمام صفحه کن"
+      ]
+    },
+    {
+      "tag": "minimize_app",
+      "route_type": "tool",
+      "examples": [
+        "پنجره نوت پد رو کوچک کن",
+        "برنامه رو مینیمایز کن"
+      ]
+    },
+    {
+      "tag": "multi_step_task",
+      "route_type": "tool",
+      "examples": [
+        "open the folder then read main.py",
+        "کروم رو باز کن حالا SQLite رو سرچ کن داخلش",
+        "دسکتاپ رو باز کن سپس پوشه پروژه رو باز کن",
+        "open YouTube and search jazz",
+        "گوگل رو باز کن بعد گیت هاب رو باز کن",
+        "Downloads رو باز کن و فایل zip رو پیدا کن",
+        "open drive C and then open Users",
+        "launch Chrome then take me to Gmail"
+      ]
+    },
+    {
+      "tag": "network_info",
+      "route_type": "tool",
+      "examples": [
+        "وضعیت network",
+        "اطلاعات شبکه رو بگو"
+      ]
+    },
+    {
+      "tag": "offline_privacy",
+      "route_type": "conversation",
+      "examples": [
+        "بدون اینترنت جواب میدی",
+        "is this chat private",
+        "حریم خصوصی چطوره"
+      ]
+    },
+    {
+      "tag": "open_app",
+      "route_type": "tool",
+      "examples": [
+        "open Steam",
+        "vscode رو اجرا کن",
+        "start chrome app",
+        "ماشین حساب ویندوز رو اجرا کن",
+        "اکسپلورر رو بیار",
+        "فایرفاکس رو اجرا کن",
+        "start PowerShell",
+        "open the Blender application"
+      ]
+    },
+    {
+      "tag": "open_default_browser",
+      "route_type": "tool",
+      "examples": [
+        "مرورگر پیش فرض رو باز کن",
+        "برو تو مرورگر",
+        "default browser please"
+      ]
+    },
+    {
+      "tag": "open_folder",
+      "route_type": "tool",
+      "examples": [
+        "این کامپیوتر رو باز کن",
+        "Documents رو باز کن",
+        "یک پوشه باز کن",
+        "برو تو درایو E"
+      ]
+    },
+    {
+      "tag": "open_settings",
+      "route_type": "tool",
+      "examples": [
+        "Jarvis settings",
+        "می خوام تنظیمات رو عوض کنم",
+        "برو به تنظیمات"
+      ]
+    },
+    {
+      "tag": "open_url",
+      "route_type": "tool",
+      "examples": [
+        "برو تو ردیت",
+        "take me to youtube",
+        "بزن یوتیوب",
+        "YT رو باز کن"
+      ]
+    },
+    {
+      "tag": "project_context",
+      "route_type": "conversation",
+      "examples": [
+        "دارم یک سیستم طراحی می کنم",
+        "I'm coding a new system",
+        "I want to build an app"
+      ]
+    },
+    {
+      "tag": "project_kind",
+      "route_type": "conversation",
+      "examples": [
+        "a Telegram bot",
+        "یه ربات",
+        "اپلیکیشن دسکتاپ"
+      ]
+    },
+    {
+      "tag": "read_file",
+      "route_type": "tool",
+      "examples": [
+        "فایل json رو تحلیل کن",
+        "inspect the current file",
+        "show this text file"
+      ]
+    },
+    {
+      "tag": "rejection",
+      "route_type": "conversation",
+      "examples": [
+        "نه ممنون",
+        "I don't want that",
+        "رد می کنم"
+      ]
+    },
+    {
+      "tag": "restart_app",
+      "route_type": "tool",
+      "examples": [
+        "اج رو ریستارت کن",
+        "پینت رو دوباره باز کن",
+        "دیسکورد رو ریستارت کن",
+        "کروم رو دوباره اجرا کن"
+      ]
+    },
+    {
+      "tag": "restore_app",
+      "route_type": "tool",
+      "examples": [
+        "اسپاتیفای رو برگردون",
+        "restore Chrome"
+      ]
+    },
+    {
+      "tag": "run_command",
+      "route_type": "tool",
+      "examples": [
+        "execute git status",
+        "فرمان hostname را اجرا کن"
+      ]
+    },
+    {
+      "tag": "self_intro",
+      "route_type": "conversation",
+      "examples": [
+        "tell me about jarvis",
+        "who are you",
+        "introduce yourself"
+      ]
+    },
+    {
+      "tag": "set_user_name",
+      "route_type": "conversation",
+      "examples": [
+        "remember me as Sam",
+        "من را نیما صدا کن",
+        "I'm Younes"
+      ]
+    },
+    {
+      "tag": "smalltalk",
+      "route_type": "conversation",
+      "examples": [
+        "say something",
+        "حوصله داری حرف بزنیم",
+        "want to talk"
+      ]
+    },
+    {
+      "tag": "system_info",
+      "route_type": "tool",
+      "examples": [
+        "کارت گرافیک دارم",
+        "مشخصات کامپیوتر",
+        "show resource information"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "route_type": "conversation",
+      "examples": [
+        "سپاس",
+        "عالی بود ممنون",
+        "تشکر"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "route_type": "unknown",
+      "examples": [
+        "a specialized question with no context",
+        "فکر منو بدون توضیح بخون",
+        "random words zxqv",
+        "predict the exact future",
+        "zxqv plmokn 773",
+        "این عبارت نامفهومه",
+        "عبارت تصادفی قژپچ"
+      ]
+    },
+    {
+      "tag": "user_low_mood",
+      "route_type": "conversation",
+      "examples": [
+        "حالم تعریفی نداره",
+        "I'm really tired",
+        "یکم ناراحتم"
+      ]
+    },
+    {
+      "tag": "web_research",
+      "route_type": "tool",
+      "examples": [
+        "research from multiple sources",
+        "research the latest Python release"
+      ]
+    },
+    {
+      "tag": "web_search",
+      "route_type": "tool",
+      "examples": [
+        "جدیدترین نسخه ویندوز چیه",
+        "search the web for local AI",
+        "هوای امروز",
+        "نتیجه بازی امشب",
+        "خبرهای امروز",
+        "در وب جستجو کن امنیت zip",
+        "قیمت لحظه ای بیت کوین",
+        "گوگل کن آموزش جاوااسکریپت",
+        "آخرین نسخه پایتون چیه",
+        "امروز بیت کوین چنده"
+      ]
+    },
+    {
+      "tag": "youtube_search",
+      "route_type": "tool",
+      "examples": [
+        "ویدیوی آموزش پایتون رو تو یوتیوب سرچ کن",
+        "search on YouTube for jazz",
+        "یوتیوب بگرد wake word"
+      ]
+    },
+    {
+      "tag": "zip_inspect",
+      "route_type": "tool",
+      "examples": [
+        "ساختار فایل زیپ رو بگو",
+        "این zip رو امن بررسی کن",
+        "inspect the zip"
+      ]
+    }
+  ]
+}

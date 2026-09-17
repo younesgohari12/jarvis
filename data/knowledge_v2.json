@@ -1,0 +1,194 @@
+{
+  "version": 5,
+  "entries": [
+    {
+      "id": "jarvis-v5-identity",
+      "title": "JARVIS v0.5 کی ساختت سازنده developer who developed you Younes Gohari from scratch neural model",
+      "keywords": ["سازنده", "ساختت", "کی", "توسعه دهنده", "یونس گوهری", "developer", "developed", "creator", "who", "you", "who made you", "model", "نسخه"],
+      "answers": {
+        "fa": "من JARVIS v0.5 هستم و توسط یونس گوهری توسعه داده شده‌ام. مدل Transformer من در همین پروژه طراحی، از وزن‌های تصادفی آموزش و ارزیابی شده است؛ هیچ وزن pretrained وارد آن نشده است.",
+        "en": "I'm JARVIS v0.5, developed by Younes Gohari. My Transformer was designed, randomly initialized, trained, and evaluated inside this project; no pretrained weights were imported."
+      }
+    },
+    {
+      "id": "offline-privacy",
+      "title": "Jarvis offline local privacy internet cloud API",
+      "keywords": ["آفلاین", "اینترنت", "حریم خصوصی", "داده محلی", "offline", "privacy", "cloud", "API"],
+      "answers": {
+        "fa": "چت اصلی Jarvis روی همین دستگاه اجرا می‌شود و پیام‌ها را برای API ابری نمی‌فرستد. Memory و Knowledge در SQLite محلی ذخیره می‌شوند.",
+        "en": "Jarvis main chat runs on this device and does not send messages to a cloud API. Memory and knowledge are stored in local SQLite databases."
+      }
+    },
+    {
+      "id": "brain-v4",
+      "title": "Jarvis v0.4 hybrid neural brain architecture parameters",
+      "keywords": ["مدل", "برین", "مغز", "شبکه عصبی", "پارامتر", "brain", "neural", "model", "hybrid"],
+      "answers": {
+        "fa": "Brain v0.4 حدود ۲.۱ میلیون پارامتر quantized دارد: embedding هش‌شده Unicode، لایه پنهان عصبی و Router کالیبره. NLU فعل‌محور، Entity، Context، Knowledge، Search و Planner چندمرحله‌ای نیز در تصمیم نهایی نقش دارند.",
+        "en": "The v0.4 brain has about 2.1 million quantized parameters: hashed Unicode embeddings, a neural hidden layer, and a calibrated router. Verb-first NLU, entities, context, knowledge, search, and multi-step planning also affect decisions."
+      }
+    },
+    {
+      "id": "memory-v2",
+      "title": "Jarvis three level memory short term session long term SQLite",
+      "keywords": ["حافظه", "اسم", "موضوع", "پروژه", "تاریخچه", "memory", "remember", "session", "facts"],
+      "answers": {
+        "fa": "Memory سه سطح دارد: Short-Term در RAM، Session در SQLite و Long-Term برای Factها و تنظیمات. Cleanup اندازه تاریخچه و Sessionها را محدود نگه می‌دارد.",
+        "en": "Memory has three levels: short-term RAM context, SQLite session history, and long-term facts/settings. Cleanup keeps history and session growth bounded."
+      }
+    },
+    {
+      "id": "files",
+      "title": "Jarvis attached file ZIP text safety preview",
+      "keywords": ["فایل", "زیپ", "پیوست", "ساختار", "txt", "zip", "file", "attachment", "preview"],
+      "answers": {
+        "fa": "Jarvis فایل‌های متنی پشتیبانی‌شده را با Preview محدود می‌خواند و ساختار ZIP را بدون Extract فهرست می‌کند. سقف حجم و نسبت فشرده‌سازی از RAM و ZIP bomb محافظت می‌کنند.",
+        "en": "Jarvis reads supported text files with bounded previews and lists ZIP contents without extraction. Size and compression-ratio limits protect RAM and reduce ZIP-bomb risk."
+      }
+    },
+    {
+      "id": "personalities",
+      "title": "Jarvis personality modes Normal Kind Angry Loti Gang Professional Funny",
+      "keywords": ["شخصیت", "مود", "لوتی", "خنده دار", "personality", "kind", "angry", "funny", "professional"],
+      "answers": {
+        "fa": "Personalityهای v0.4 عبارت‌اند از Normal، Kind، Angry، Loti، Gang، Professional و Funny. همه یک Brain و معنای مشترک دارند و فقط لحن به‌صورت Config-based تغییر می‌کند.",
+        "en": "v0.4 personalities are Normal, Kind, Angry, Loti, Gang, Professional, and Funny. They share the same brain and semantics; data-driven profiles change only tone."
+      }
+    },
+    {
+      "id": "performance",
+      "title": "Jarvis GUI performance LOW BALANCED ULTRA CPU idle animation",
+      "keywords": ["پرفورمنس", "انیمیشن", "مصرف CPU", "low", "balanced", "ultra", "performance", "animation"],
+      "answers": {
+        "fa": "GUI سه Profile دارد: LOW، BALANCED و ULTRA. نرخ Animation هنگام Idle کاهش می‌یابد و در حالت Minimize تقریباً متوقف می‌شود تا CPU هدر نرود.",
+        "en": "The GUI has LOW, BALANCED, and ULTRA profiles. Animation slows while idle and nearly pauses when minimized to avoid wasting CPU."
+      }
+    },
+    {
+      "id": "python",
+      "title": "پایتون چیست چیه Python what is programming language lightweight scripting",
+      "keywords": ["پایتون", "چیست", "چیه", "زبان برنامه نویسی", "Python", "what", "programming", "script"],
+      "answers": {
+        "fa": "پایتون چیست؟ پایتون یک زبان برنامه‌نویسی سطح‌بالا و خواناست که برای اسکریپت‌نویسی، وب، تحلیل داده، اتوماسیون و ساخت ابزارهای دسکتاپ استفاده می‌شود.",
+        "en": "What is Python? Python is a readable high-level programming language used for scripting, web work, data analysis, automation, and desktop tools."
+      }
+    },
+    {
+      "id": "ram",
+      "title": "computer RAM working memory purpose",
+      "keywords": ["رم", "حافظه موقت", "RAM", "computer memory"],
+      "answers": {
+        "fa": "RAM حافظه سریع و موقت سیستم است که برنامه‌ها و داده‌های در حال استفاده را نگه می‌دارد. با خاموش‌شدن سیستم محتوای معمول آن از بین می‌رود.",
+        "en": "RAM is fast temporary system memory that holds active programs and data. Its normal contents are lost when the computer powers off."
+      }
+    },
+    {
+      "id": "future-tools",
+      "title": "future STT TTS wake word vision Windows control tools",
+      "keywords": ["صدا", "میکروفون", "ویژن", "کنترل ویندوز", "STT", "TTS", "wake word", "vision"],
+      "answers": {
+        "fa": "Core ماژولار برای اضافه‌شدن STT، TTS، Wake Word، Vision و کنترل تأییدشده Windows آماده است. دکمه میکروفون v0.4 هنوز Placeholder امن است.",
+        "en": "The modular core is ready for future STT, TTS, wake-word, vision, and permission-gated Windows tools. The v0.4 microphone is still a safe placeholder."
+      }
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript programming language browser Node.js",
+      "keywords": ["جاوااسکریپت", "JavaScript", "JS", "Node", "browser", "web"],
+      "answers": {
+        "fa": "JavaScript زبان اصلی برنامه‌نویسی تعاملی وب است و با Node.js خارج از مرورگر هم اجرا می‌شود. برای رابط وب مناسب است؛ برای ابزار دسکتاپ خیلی سبک، Python همراه Tkinter معمولاً dependency کمتری دارد.",
+        "en": "JavaScript is the primary language for interactive web applications and also runs outside browsers through Node.js. It suits web UIs; Python with Tkinter often has fewer dependencies for a very small desktop tool."
+      }
+    },
+    {
+      "id": "windows",
+      "title": "Microsoft Windows desktop operating system applications paths",
+      "keywords": ["ویندوز", "Windows", "desktop", "برنامه", "مسیر", "path"],
+      "answers": {
+        "fa": "Windows یک سیستم‌عامل دسکتاپ است. مسیرهای کاربر بهتر است با pathlib و متغیرهایی مثل LOCALAPPDATA ساخته شوند؛ مسیر ثابت مخصوص یک رایانه قابل حمل نیست.",
+        "en": "Windows is a desktop operating system. User paths should be built with pathlib and locations such as LOCALAPPDATA; machine-specific hard-coded paths are not portable."
+      }
+    },
+    {
+      "id": "artificial-intelligence",
+      "title": "artificial intelligence machine learning neural hybrid systems",
+      "keywords": ["هوش مصنوعی", "یادگیری ماشین", "شبکه عصبی", "AI", "machine learning", "neural"],
+      "answers": {
+        "fa": "هوش مصنوعی مجموعه روش‌هایی برای ادراک، پیش‌بینی و تصمیم‌گیری است. سیستم Hybrid می‌تواند یک مدل عصبی کوچک را با قواعد ایمنی، بازیابی دانش، حافظه و ابزارهای قطعی ترکیب کند تا با منابع کمتر قابل اعتمادتر باشد.",
+        "en": "Artificial intelligence includes methods for perception, prediction, and decision-making. A hybrid system combines a small neural model with safety rules, retrieval, memory, and deterministic tools for reliability at lower resource cost."
+      }
+    },
+    {
+      "id": "internet-web",
+      "title": "Internet World Wide Web URL HTTP browser search",
+      "keywords": ["اینترنت", "وب", "مرورگر", "URL", "HTTP", "Internet", "browser", "search"],
+      "answers": {
+        "fa": "اینترنت شبکهٔ جهانی زیرساخت است و وب یکی از سرویس‌های روی آن است. مرورگر URLهای HTTP/HTTPS را باز می‌کند؛ موتور جستجو صفحات را فهرست و رتبه‌بندی می‌کند.",
+        "en": "The Internet is global network infrastructure, while the Web is one service on it. Browsers open HTTP/HTTPS URLs; search engines index and rank pages."
+      }
+    },
+    {
+      "id": "sqlite",
+      "title": "SQLite embedded transactional database settings history",
+      "keywords": ["SQLite", "دیتابیس", "پایگاه داده", "transaction", "WAL", "history"],
+      "answers": {
+        "fa": "SQLite یک پایگاه‌داده تعبیه‌شده و بدون سرور است. برای داده ساخت‌یافته، جستجو، تاریخچه و ثبت اتمیک مناسب است و همه‌چیز را معمولاً در یک فایل نگه می‌دارد.",
+        "en": "SQLite is an embedded, serverless database. It works well for structured data, queries, history, and atomic writes, typically in one file."
+      }
+    },
+    {
+      "id": "json",
+      "title": "JSON human readable configuration data format",
+      "keywords": ["JSON", "تنظیمات", "config", "configuration", "format"],
+      "answers": {
+        "fa": "JSON قالب متنی خوانا برای داده و تنظیمات کوچک است. کل فایل معمولاً یک‌جا خوانده و نوشته می‌شود؛ برای تاریخچه بزرگ یا نوشتن هم‌زمان، دیتابیس مناسب‌تر است.",
+        "en": "JSON is a human-readable text format for small data and settings. The whole file is commonly loaded and saved together; a database is better for large history or concurrent writes."
+      }
+    },
+    {
+      "id": "computer-hardware",
+      "title": "computer CPU GPU RAM storage cores hardware basics",
+      "keywords": ["کامپیوتر", "سخت افزار", "CPU", "GPU", "RAM", "هسته", "حافظه", "storage"],
+      "answers": {
+        "fa": "CPU دستورهای عمومی را اجرا می‌کند، RAM دادهٔ فعال را نگه می‌دارد و Storage نگهداری پایدار است. GPU برای محاسبات موازی مفید است، اما نرم‌افزار CPU-first باید بدون آن هم کامل کار کند.",
+        "en": "The CPU runs general instructions, RAM holds active data, and storage persists data. A GPU helps parallel workloads, but CPU-first software should remain fully functional without one."
+      }
+    },
+    {
+      "id": "files-folders-zip",
+      "title": "files folders ZIP archive compression paths safety",
+      "keywords": ["فایل", "پوشه", "زیپ", "آرشیو", "file", "folder", "ZIP", "archive"],
+      "answers": {
+        "fa": "فایل داده را نگه می‌دارد و پوشه فایل‌ها را سازمان‌دهی می‌کند. ZIP چند ورودی فشرده دارد؛ فهرست و Preview آن را می‌توان با zipfile و بدون Extract کامل خواند و برای جلوگیری از ZIP bomb سقف حجم گذاشت.",
+        "en": "Files hold data and folders organize files. ZIP archives contain compressed entries; Python's zipfile can list and preview them without full extraction, with limits to reduce ZIP-bomb risk."
+      }
+    },
+    {
+      "id": "threading-gui",
+      "title": "Tkinter GUI threading queue responsive background work",
+      "keywords": ["Tkinter", "thread", "queue", "GUI", "freeze", "رابط", "فریز"],
+      "answers": {
+        "fa": "Tkinter باید در Thread اصلی به‌روزرسانی شود. کار کند مثل Search یا تحلیل فایل را می‌توان در Worker Thread اجرا و نتیجه را با queue و after به UI برگرداند تا پنجره Freeze نشود.",
+        "en": "Tkinter updates belong on the main thread. Slow search or file work can run in a worker thread, returning results through a queue polled with after so the window remains responsive."
+      }
+    },
+    {
+      "id": "security-permissions",
+      "title": "desktop agent permission safety confirmation destructive actions",
+      "keywords": ["امنیت", "مجوز", "تایید", "حذف", "permission", "confirmation", "delete", "security"],
+      "answers": {
+        "fa": "یک Agent دسکتاپ باید خواندن و بازکردن امن را از حذف، Shutdown و Command خطرناک جدا کند. عملیات مخرب نیازمند تأیید صریح‌اند و Command دلخواه نباید مستقیماً به Shell داده شود.",
+        "en": "A desktop agent should separate safe reading/opening from deletion, shutdown, and dangerous commands. Destructive actions require explicit confirmation, and arbitrary text should never be passed directly to a shell."
+      }
+    },
+    {
+      "id": "blue-sky",
+      "title": "why the sky is blue Rayleigh scattering sunlight atmosphere",
+      "keywords": ["چرا آسمون آبیه", "چرا آسمان آبی است", "why is the sky blue", "آسمان", "آسمون", "آبی", "نور", "پراکندگی رایلی", "sky", "blue", "Rayleigh", "light"],
+      "answers": {
+        "fa": "چرا آسمون آبیه؟ آسمان بیشتر آبی دیده می‌شود چون مولکول‌های جو طول موج‌های کوتاه نور خورشید، به‌ویژه آبی، را بسیار بیشتر از طول موج‌های بلند پراکنده می‌کنند. این پدیده پراکندگی رایلی نام دارد.",
+        "en": "Why is the sky blue? The sky usually looks blue because atmospheric molecules scatter shorter wavelengths of sunlight, especially blue, much more strongly than longer wavelengths. This is Rayleigh scattering."
+      }
+    }
+  ]
+}

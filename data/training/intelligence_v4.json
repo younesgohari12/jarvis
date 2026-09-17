@@ -1,0 +1,99 @@
+{
+  "version": 4,
+  "intents": [
+    {
+      "tag": "close_app",
+      "route_type": "tool",
+      "examples": [
+        "کروم رو ببند", "کرومو ببند", "گوگل کروم رو ببند", "مرورگر کرومو ببند", "ببند کروم رو",
+        "اج رو ببند", "مایکروسافت اج رو ببند", "مرورگر Microsoft Edge رو ببند", "edge رو ببند", "اجو ببند",
+        "فایرفاکس رو ببند", "استیمو ببند", "تلگرام رو ببند", "دیسکوردو ببند", "اسپاتیفای رو ببند",
+        "وی اس کد رو ببند", "نوت پد رو ببند", "ماشین حساب رو ببند", "پینت رو ببند", "پاورشل رو ببند",
+        "close Chrome", "close Microsoft Edge", "quit Firefox", "terminate Steam", "close Telegram",
+        "quit Discord", "terminate Spotify", "close VS Code", "exit Notepad", "close the calculator",
+        "همونو ببند", "اون برنامه رو ببند", "همون مرورگر رو ببند", "ببندش", "close it",
+        "quit that app", "close the same browser", "terminate it", "اون مرورگرو ببند", "همون قبلیه رو ببند"
+      ]
+    },
+    {
+      "tag": "focus_app",
+      "route_type": "tool",
+      "examples": [
+        "کروم رو بیار جلو", "اج رو بیار بالا", "تلگرام رو بیار جلو", "برو روی استیم", "وی اس کد رو فعال کن",
+        "focus Chrome", "focus Microsoft Edge", "activate Telegram", "switch to Steam", "focus VS Code",
+        "همونو بیار جلو", "اون برنامه رو فعال کن", "برو روش", "focus it", "switch to that app",
+        "فایرفاکس رو بیار جلو", "دیسکورد رو فعال کن", "نوت پد رو بیار بالا", "پینت رو بیار جلو", "پاورشل رو فعال کن"
+      ]
+    },
+    {
+      "tag": "restart_app",
+      "route_type": "tool",
+      "examples": [
+        "کروم رو دوباره اجرا کن", "اج رو ریستارت کن", "استیم رو دوباره باز کن", "تلگرام رو ریستارت کن", "وی اس کد رو دوباره اجرا کن",
+        "restart Chrome", "relaunch Edge", "restart Steam", "relaunch Telegram", "restart VS Code",
+        "دوباره بازش کن", "همونو ریستارت کن", "اون برنامه رو دوباره اجرا کن", "restart it", "relaunch that app",
+        "فایرفاکس رو دوباره باز کن", "دیسکورد رو ریستارت کن", "اسپاتیفای رو دوباره اجرا کن", "نوت پد رو ریستارت کن", "پینت رو دوباره باز کن"
+      ]
+    },
+    {
+      "tag": "is_app_running",
+      "route_type": "tool",
+      "examples": [
+        "کروم بازه؟", "اج در حال اجراست؟", "استیم فعاله؟", "تلگرام باز هست؟", "وی اس کد اجرا میشه؟",
+        "is Chrome running", "is Edge open", "check if Steam is running", "is Telegram running", "is VS Code open",
+        "همون برنامه بازه؟", "اون مرورگر فعاله؟", "is it running", "check if it is open", "هنوز بازه؟",
+        "فایرفاکس در حال اجراست؟", "دیسکورد بازه؟", "اسپاتیفای فعاله؟", "نوت پد بازه؟", "پینت اجرا میشه؟"
+      ]
+    },
+    {
+      "tag": "open_folder",
+      "route_type": "tool",
+      "examples": [
+        "درایو سی رو باز کن", "درایو c رو باز کن", "برو درایو دی", "C drive رو باز کن", "open drive D",
+        "دسکتاپ رو باز کن", "دانلودها رو بیار", "Documents رو باز کن", "پوشه Pictures رو باز کن", "open Downloads",
+        "این کامپیوتر رو باز کن", "This PC رو باز کن", "پوشه پروژه رو باز کن", "همون پوشه رو باز کن", "بازش کن",
+        "یه فولدر باز کن", "یک پوشه باز کن", "open a folder", "برو تو درایو E", "درایو اف رو بیار",
+        "پوشه Users رو باز کن", "پوشه Jarvis رو باز کن", "open the Desktop folder", "open my Documents", "bring up Downloads"
+      ]
+    },
+    {
+      "tag": "multi_step_task",
+      "route_type": "tool",
+      "examples": [
+        "کروم رو باز کن و یونس گوهری رو سرچ کن داخلش", "اج رو باز کن و OpenAI رو سرچ کن", "فایرفاکس رو باز کن و Python رو سرچ کن توش",
+        "کروم رو باز کن بعد برو یوتیوب", "Edge رو باز کن سپس GitHub رو داخلش باز کن", "یوتیوب رو باز کن و آهنگ بی کلام رو سرچ کن",
+        "درایو C رو باز کن و پوشه Users رو باز کن", "Downloads رو باز کن و فایل zip رو پیدا کن", "open Chrome and search for local AI",
+        "launch Edge then open YouTube", "open Firefox and look up Python docs", "open drive C and then open Users",
+        "تلگرام رو باز کن بعد ببندش", "استیم رو باز کن و بعد بیارش جلو", "کروم رو باز کن بعدش ببندش",
+        "open Steam and then close it", "launch Telegram and focus it", "open Notepad then close it",
+        "گوگل رو باز کن بعد گیت هاب رو باز کن", "مرورگر رو باز کن سپس یوتیوب رو بیار",
+        "کروم رو باز کن حالا SQLite رو سرچ کن داخلش", "Edge رو باز کن and search REST API", "open Chrome و یونس رو سرچ کن توش",
+        "فایرفاکس رو اجرا کن بعد Python 3.13 رو جستجو کن", "دسکتاپ رو باز کن سپس پوشه پروژه رو باز کن",
+        "درایو D رو باز کن بعد پوشه Games رو باز کن", "open YouTube and search jazz", "برو یوتیوب بعد آهنگ X رو سرچ کن",
+        "open GitHub then search for tkinter", "کروم رو باز کن و بعد OpenAI رو داخلش باز کن"
+      ]
+    },
+    {
+      "tag": "web_search",
+      "route_type": "tool",
+      "examples": [
+        "کروم رو باز کن و یونس گوهری رو سرچ کن داخلش", "داخل اج OpenAI رو سرچ کن", "توی فایرفاکس Python رو جستجو کن",
+        "حالا داخلش REST API رو سرچ کن", "توش SQLite WAL رو بگرد", "search for OpenAI in Chrome",
+        "look up Python in Edge", "search local AI in Firefox", "داخل همون مرورگر اخبار امروز رو سرچ کن", "گوگل کن RAM چیست",
+        "قیمت بیت کوین امروز", "آخرین نسخه پایتون", "هوای امروز", "خبرهای امروز", "نتیجه بازی امشب",
+        "current Bitcoin price", "latest Python version", "weather today", "latest technology news", "today's match result"
+      ]
+    },
+    {
+      "tag": "open_app",
+      "route_type": "tool",
+      "examples": [
+        "استیمو باز کن", "برنامه Steam رو باز کن", "دیسکورد رو اجرا کن", "تلگرام دسکتاپ رو بیار", "اسپاتیفای رو باز کن",
+        "مایکروسافت اج رو باز کن", "فایرفاکس رو اجرا کن", "پینت رو باز کن", "اکسپلورر رو بیار", "ماشین حساب رو اجرا کن",
+        "open Steam", "launch Discord", "start Telegram", "open Spotify", "launch Microsoft Edge",
+        "start Firefox", "open Paint", "launch Explorer", "start Calculator", "open PowerShell",
+        "برنامه Blender رو باز کن", "open the Blender application", "برنامه VLC رو اجرا کن", "launch OBS Studio", "برنامه نصب شده Zoom رو باز کن"
+      ]
+    }
+  ]
+}

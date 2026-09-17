@@ -1,0 +1,42 @@
+{
+  "format": "jarvis-quantization-benchmark-v1",
+  "model": "jarvis_nano_v07.npz",
+  "parameters": 23077376,
+  "device": "cpu",
+  "profiles": [
+    {
+      "precision": "fp32",
+      "resident_weight_bytes": 92309504,
+      "resident_weight_mb": 88.033,
+      "load_latency_ms": 171.368,
+      "first_token_latency_ms": 78.173,
+      "tokens_per_second": 58.845,
+      "runtime_quantized": false,
+      "maximum_logit_error_vs_fp32": 0.0
+    },
+    {
+      "precision": "fp16",
+      "resident_weight_bytes": 46154752,
+      "resident_weight_mb": 44.017,
+      "load_latency_ms": 1202.911,
+      "first_token_latency_ms": 2585.74,
+      "tokens_per_second": 1.805,
+      "runtime_quantized": false,
+      "maximum_logit_error_vs_fp32": 0.000303
+    },
+    {
+      "precision": "int8",
+      "resident_weight_bytes": 23086308,
+      "resident_weight_mb": 22.017,
+      "load_latency_ms": 124.514,
+      "first_token_latency_ms": 490.892,
+      "tokens_per_second": 9.835,
+      "runtime_quantized": true,
+      "maximum_logit_error_vs_fp32": 6e-07
+    }
+  ],
+  "selected_runtime": "int8",
+  "selection_reason": "lowest resident weight memory with project loader retaining INT8 matrices",
+  "pretrained_source": null,
+  "benchmarked_at_utc": "2026-08-22T00:16:18.978417+00:00"
+}

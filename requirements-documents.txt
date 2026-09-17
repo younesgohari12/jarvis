@@ -1,0 +1,5 @@
+-r requirements-runtime.txt
+
+# Optional: text extraction from PDF attachments. DOCX/XLSX use bounded
+# standard-library readers and do not need additional packages.
+pypdf>=5.0,<7

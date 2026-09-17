@@ -1,0 +1,56 @@
+{
+  "format": "jarvis-dataset-manifest-v5",
+  "dataset_version": "dataset_v005",
+  "seed": 13092026,
+  "total_examples": 17529,
+  "inherited_v004_examples": 10329,
+  "generalization_source_dataset_count": 100,
+  "reasoning_source_dataset_count": 100,
+  "generalization_examples_added": 3600,
+  "reasoning_examples_added": 3600,
+  "duplicates_removed_during_merge": 0,
+  "split_counts": {
+    "train": 14074,
+    "validation": 1821,
+    "test": 1634
+  },
+  "concept_group_counts": {
+    "train": 2028,
+    "validation": 269,
+    "test": 255
+  },
+  "cross_split_concept_leakage": 0,
+  "languages": {
+    "en": 2340,
+    "fa": 7849,
+    "mixed": 7340
+  },
+  "stages": {
+    "1": 1052,
+    "2": 709,
+    "3": 1888,
+    "4": 2963,
+    "5": 1377,
+    "6": 24,
+    "7": 333,
+    "8": 475,
+    "9": 702,
+    "10": 1055,
+    "11": 6636,
+    "12": 19,
+    "13": 156,
+    "14": 140
+  },
+  "origins": {
+    "jarvis-authored": 5529,
+    "jarvis-curated-v12": 4800,
+    "jarvis-generalization-v13": 3600,
+    "jarvis-reasoning-v13": 3600
+  },
+  "quality_notes": [
+    "v004 holdouts preserved",
+    "v13 concepts split as atomic groups",
+    "exact input/output duplicates removed",
+    "200 new curated source datasets"
+  ]
+}

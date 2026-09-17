@@ -1,0 +1,922 @@
+{
+  "format": "jarvis-intelligence-pack-v14",
+  "kind": "generalization",
+  "version": "generalization_100_v14",
+  "seed": 14092026,
+  "source_dataset_count": 100,
+  "examples": 2000,
+  "unique_inputs": 2000,
+  "unique_outputs": 2000,
+  "unique_input_output_pairs": 2000,
+  "unique_output_ratio": 1.0,
+  "family_count": 20,
+  "template_index_prefixes": 0,
+  "quality_gates": {
+    "minimum_unique_input_ratio": 0.995,
+    "minimum_unique_output_ratio": 0.995,
+    "deterministic_verification": true,
+    "no_web_sourced_labels": true
+  },
+  "sources": [
+    {
+      "id": "g001_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g001_mixed.jsonl",
+      "sha256": "e450f854471159813cbb994a5a37bef2e8395efabfdd7788c312291bc29f195b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g002_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g002_mixed.jsonl",
+      "sha256": "cf905e8dd131645b3490cd5bab1b75816f2775b95c9a12fe9493fa25d711730e",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g003_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g003_mixed.jsonl",
+      "sha256": "98d116221b0eed1597fae9052245e1dc1e1290184a3d7e32c7c2f6fe27390b2a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g004_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g004_mixed.jsonl",
+      "sha256": "4f49f256cb20a1d7577533639616b2386442031f30b61271b88b4a9fa7e415e9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g005_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g005_mixed.jsonl",
+      "sha256": "f09c8ca60af77e486e82e1cabd748e95ce51d63401d534765df9a561053e1772",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g006_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g006_mixed.jsonl",
+      "sha256": "61102ebb3ff8b68a8b159f3a2004dd4ce132de9dcaa034d0403710444cfe46c2",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g007_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g007_mixed.jsonl",
+      "sha256": "7da8f45b46a8f317cd4cd702edd258902d7dbae514c9b592421e58a19682914b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g008_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g008_mixed.jsonl",
+      "sha256": "7bdb206353c33c8a162016f03cf5f474f07e9f74e231d72c8dcd13939f190ae9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g009_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g009_mixed.jsonl",
+      "sha256": "3dfcd5ff72d7044d4a4740b9f2babdd5a46f9294c160d82136d4f5fd161556c9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g010_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g010_mixed.jsonl",
+      "sha256": "a79814d28349749adbbd6afcbe4d885ba74b769de6596f4cf8b8f7346d37f1e8",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g011_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g011_mixed.jsonl",
+      "sha256": "99be021bf28410039c5c42c3037281235b000a629bd2c9bdba3083b73ecfd9dd",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g012_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g012_mixed.jsonl",
+      "sha256": "8420d65c39b8698e6c5de89dfb55a362e6cf3a8603bdf0ded4f3ce8c04597a62",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g013_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g013_mixed.jsonl",
+      "sha256": "e7f372a3b3edcda4b68e27dd4e91ad83394fc0d8bb37d1d0abbde9d19f55db2a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g014_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g014_mixed.jsonl",
+      "sha256": "5fbbf499d80a38dfde6dd04c29b917dd129f0a01187204a88f49f9fb80bf8313",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g015_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g015_mixed.jsonl",
+      "sha256": "1cebf60600b241fc0c7153b25ccf0b622cd57be98a9abb152a5da7abc3d7b8f4",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g016_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g016_mixed.jsonl",
+      "sha256": "b8256efc6508f1f0e0d7b60024413e76eceda51785702d206414b191f08dfc90",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g017_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g017_mixed.jsonl",
+      "sha256": "722aa5eec2dec5ca44d7ac036fe4cdd9c36116fbdddab5f34440e3f393a85a3b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g018_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g018_mixed.jsonl",
+      "sha256": "391a26610e71a611d6b1859e68443af8cf3a431ccd39e647722847b97fb42261",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g019_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g019_mixed.jsonl",
+      "sha256": "3fc071d5afb60b40a4c0d2dc120cd8094d0b28a0e53842d3a2b2af4e2176391c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g020_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g020_mixed.jsonl",
+      "sha256": "063eda0c58593ab8721e532d061b214577b4ee29483890e58c3bdfdc1fa9e302",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g021_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g021_mixed.jsonl",
+      "sha256": "14df56ac1b94e86d71d8a21d1ff07de659792d7c0919338e5d2f86108ffb065b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g022_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g022_mixed.jsonl",
+      "sha256": "157211bc3a22a2865065fbabd7b88bef53a9445f73c9e847d5cab0f63aaf966a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g023_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g023_mixed.jsonl",
+      "sha256": "731714be38a26739e42c187986317d2d667d9c360d9004096c2c216d5fbd7183",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g024_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g024_mixed.jsonl",
+      "sha256": "89588f669e31034d42d2821c25ceaab8a0e54d2601d17ed2adae89af29ca57c4",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g025_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g025_mixed.jsonl",
+      "sha256": "d53ffe8725e85d4cb2ed51da1df959e2bdddeb2b68adc6cd3f3e43b99b17f44e",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g026_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g026_mixed.jsonl",
+      "sha256": "9b1b282abb06cdd27f891bd2ac934db6665ddb03a8f0073663803d85b305528d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g027_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g027_mixed.jsonl",
+      "sha256": "b8621260e6032e0751f3f5ac2ec50b690f7f95c154e7854fc9e3fd9639515a2d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g028_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g028_mixed.jsonl",
+      "sha256": "2e274b3a7fd81e6ab1a201dad95720e48022a684c519c7c90c8e2eb02176caf4",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g029_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g029_mixed.jsonl",
+      "sha256": "044570ea5d5889c2aa20d2d2ae16ae75e755334ea38b7f3a5f72124d0878be15",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g030_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g030_mixed.jsonl",
+      "sha256": "032d42828088975a5bb74751ee5668c01fce61c02bd4c2281968a5621959c925",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g031_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g031_mixed.jsonl",
+      "sha256": "876d1280caf92f14fdd0257e737867451c35e2d7cad0f7ee4f9c5df19dc71259",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g032_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g032_mixed.jsonl",
+      "sha256": "7b5b3bb9b650ffb9622182c71bc67ca15a69ee06248effec1571f417dd832fe9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g033_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g033_mixed.jsonl",
+      "sha256": "6c1ae607db84e483532c40ab5c679e39e7ac0f982e44df59ec110822033c0813",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g034_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g034_mixed.jsonl",
+      "sha256": "aab4cb0a4f009579101ae8a45e72cccedcc6328ab6824e50c76c87c11d92c99f",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g035_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g035_mixed.jsonl",
+      "sha256": "0924fbe78f8b7370633d19980e77b8b3bc66da65ef5188c50e1a0c22249a8450",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g036_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g036_mixed.jsonl",
+      "sha256": "05e85ce9ecbe040b9deaea1a08e4251004f4a0da1234719c1019a6e208789c2c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g037_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g037_mixed.jsonl",
+      "sha256": "1c78cd5dd35c3731af04feee7d9259e3440590e22c7d80363891a024923b706d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g038_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g038_mixed.jsonl",
+      "sha256": "b64b764e541b0f71197ea91ac92957eb447f00f6f35ed80d191b9b72ae001e7a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g039_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g039_mixed.jsonl",
+      "sha256": "820e148449c3e599848029ead2890f18298bcbd80e5b90696eee3641630a7462",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g040_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g040_mixed.jsonl",
+      "sha256": "32fcab69be8312c24ae439323dbd1b7e699ae1928db27183d2ec49842b0d59ba",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g041_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g041_mixed.jsonl",
+      "sha256": "b67da3c33387dae75130e1495735ae8bd67110a11b2b68c6e1f234a57b5c8b1b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g042_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g042_mixed.jsonl",
+      "sha256": "80a851150924c420e5f764425f8a45bc6632894351a5c8479ba36ecb32646165",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g043_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g043_mixed.jsonl",
+      "sha256": "2483e7546db51bdcd9089ec42720ba477a2cf80636e78d8450ca9fdc1b5ccf2c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g044_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g044_mixed.jsonl",
+      "sha256": "82ecd72ecdd05b7596c2b327817dd15a544b90a59004750742992267829d7eba",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g045_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g045_mixed.jsonl",
+      "sha256": "8146df99b4e75fa34a17ab6f5617323939b294c1dc887465aa948dbf6fd4dce3",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g046_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g046_mixed.jsonl",
+      "sha256": "57fa06281e40a75ba2ad91c3b537c07a4328806f5246ebae9d02f6b907995e19",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g047_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g047_mixed.jsonl",
+      "sha256": "0568cee7ad888ef7936962dd259cc3192694af46d20cad9e4cd9d32c0a5859d7",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g048_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g048_mixed.jsonl",
+      "sha256": "1d2b0b3a2015378a2d4994c97a5562ecdfdde9030017a5235f5931abc2ccf2bb",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g049_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g049_mixed.jsonl",
+      "sha256": "d2e3c88794442dc954d0898ffe7890f89d0ece69a10c8e7d7e83ae851f222f16",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g050_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g050_mixed.jsonl",
+      "sha256": "62e14450e8a0a156325333335ab4dec7d3e1cacb4ad25430b6fa73e2266c4276",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g051_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g051_mixed.jsonl",
+      "sha256": "c4e0d325e2c0a9e511970a395ac5a36106f439be04b82b15a7e9381e6873794a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g052_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g052_mixed.jsonl",
+      "sha256": "bb319a9934cfbb5a804526f285db99463e6e9fcc90d656b9197c02f84c96643a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g053_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g053_mixed.jsonl",
+      "sha256": "d9ef1456761ac322545c59ec86c82b348bbe9c9d33361cdb88f559673c958a9a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g054_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g054_mixed.jsonl",
+      "sha256": "2de2f36695f0f83f0f267dbf3b5cbeb39723c82a4c622748df995bd526c60535",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g055_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g055_mixed.jsonl",
+      "sha256": "b0e6889671831be118c56529356e5994698c01aea83cd2ec72a352a1f37de3a3",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g056_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g056_mixed.jsonl",
+      "sha256": "cfcc640ccd7d249679af73839955d8f1c0b084b646bfc3ccb95aa7205fcd0dde",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g057_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g057_mixed.jsonl",
+      "sha256": "af7e459d034ef4bda4d38aaea1d42061c6709b30182785e4cd73b0e613ddd642",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g058_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g058_mixed.jsonl",
+      "sha256": "f95406ccb4df4bd8d26c07483a847dda6a23a917f3358fd7347b833989b30e0d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g059_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g059_mixed.jsonl",
+      "sha256": "106ebf06354dcd6436284d319b4d8aebf4bb3695d4c1abcb359ebe2b6669a0e1",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g060_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g060_mixed.jsonl",
+      "sha256": "77b8ded321ace2c5880a2fd97a542f1ab1d79a3341c02657a485d67ef77f8a06",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g061_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g061_mixed.jsonl",
+      "sha256": "1cebc71ba3c18769ff66868d6d8e66c9837c82cc4daf8d4e0ae828919f43dad3",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g062_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g062_mixed.jsonl",
+      "sha256": "d77b939928b5705ba7a577eab4b5976d5d019860cb761ecf4a625cfd98051759",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g063_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g063_mixed.jsonl",
+      "sha256": "759de3fc9d7bad9b8ee7e1ac9322aadad90b223c916171859f943ff5b223c0d8",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g064_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g064_mixed.jsonl",
+      "sha256": "b9846dba27ccecfd2264a7aa2de57f2c3702a76bb17e8fa85ebf424735480424",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g065_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g065_mixed.jsonl",
+      "sha256": "ab914a6f0a4816be56c20fdf65f681b450c86b3a26704c731cf738cce72d23a7",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g066_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g066_mixed.jsonl",
+      "sha256": "a97da6f1ec53085e95eefefce26bba599043871278d5f2775525ece2681cee57",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g067_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g067_mixed.jsonl",
+      "sha256": "d9983c0c7438ecc6a94fa8f703ced94dbd363ab9e7744a881146430d500fbeae",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g068_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g068_mixed.jsonl",
+      "sha256": "8e5e80b1137dd7c3146bf51928ca6d371cfe2a1861f9bae70f2b5f85cb2d82b3",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g069_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g069_mixed.jsonl",
+      "sha256": "752dc534824bbf32d7ba787aace44cdb573bac071edc014a001fc1c5df70e621",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g070_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g070_mixed.jsonl",
+      "sha256": "1d0a1df5a62918a3cb80e5949b913a9e2b196f4f3cfabe2ec589d221399ab20a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g071_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g071_mixed.jsonl",
+      "sha256": "41b0d42db52ad4cd54b9757c60eae6d716fa16420ea0ce4c342815b4f44a75c0",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g072_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g072_mixed.jsonl",
+      "sha256": "51d52455b759e2e62285496c1c8b742d74a09e7b82ab478c945264381855bdf2",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g073_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g073_mixed.jsonl",
+      "sha256": "c262a68ffaf9240f51ab0bc573e2f288afaac3875ad4b022fd10743ad244e6ec",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g074_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g074_mixed.jsonl",
+      "sha256": "80929471e4a7c411448f72d36f41b8dc5ff31389c12c9aef12d750cbabdfda1b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g075_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g075_mixed.jsonl",
+      "sha256": "1f0e970316d66ff6312fe7cdd6d5ee0a86563f01710fde0c7a29e214021aa43b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g076_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g076_mixed.jsonl",
+      "sha256": "4200d57c3a9a13da78126eb22aff6f7edfa6bf87cb6e5845a1f4aebe9dc4a19d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g077_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g077_mixed.jsonl",
+      "sha256": "618480c04ff535cab1ec470f9fec88abbe5c7010482f45fe8a8821588095d7df",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g078_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g078_mixed.jsonl",
+      "sha256": "00c9eab69b11687882bf3f46909d2de37fd614e76a43e61ea354de3ff05e8b24",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g079_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g079_mixed.jsonl",
+      "sha256": "d8f9743bfd7e4022ffb9e70d9742e7dda6484c8faf52f3dc2a7cd590c8fcd95b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g080_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g080_mixed.jsonl",
+      "sha256": "42881f29269e1e65dc918bd9787dee6e2dd43417d4032339d032ef81c8e9b01a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g081_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g081_mixed.jsonl",
+      "sha256": "fb7f293b9c9c8b7c67ea5077e3004a3f572b96ef3a879d621cb0820b2fc0896c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g082_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g082_mixed.jsonl",
+      "sha256": "4bda097fb65b09dca4f1df40774513fff73a0523935260c3e7a743d5b247fef9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g083_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g083_mixed.jsonl",
+      "sha256": "a30c0f7257b393e640e9e936e4fef937c0ffe524aa3e838f7b9968290db10bb5",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g084_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g084_mixed.jsonl",
+      "sha256": "a8df9e934787c6d39ac205b44930dcbbe95f0226764c6c24ce8496bcb3602032",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g085_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g085_mixed.jsonl",
+      "sha256": "87a04ff780a3d5194397a0eb3062295208c4afb20a99dad3182a3cc154dcf9df",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g086_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g086_mixed.jsonl",
+      "sha256": "fc6861c1cc2e4ca20400235f1d26655b2912cb37c0ecc6dd4ab0c78343f21a9e",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g087_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g087_mixed.jsonl",
+      "sha256": "99e5d4490ef67bf1bee391944260677b491add8ea79864c697dfce0027ecd96d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g088_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g088_mixed.jsonl",
+      "sha256": "af7f1b63850876ee353629e9dc75edd5653467de36d5b4afb87bf34b5b80789f",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g089_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g089_mixed.jsonl",
+      "sha256": "12d169894dfe7414e754fda155f511e534e68e80e23f05fcd89e070eecbbd99a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g090_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g090_mixed.jsonl",
+      "sha256": "ba1515026fb2950eb554f0111e86f20f3b0b910f454dac0c4fa0cca6e7fddd59",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g091_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g091_mixed.jsonl",
+      "sha256": "1e3762b9ca68b37a68b3d01f2ba0a7ede490873723786cadc4a96ea148df5c52",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g092_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g092_mixed.jsonl",
+      "sha256": "6e610f9ad5aac2af7cc79d598e6b1ffc662514b752afc9a6ca1f1435b894819f",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g093_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g093_mixed.jsonl",
+      "sha256": "dc77b6efbea9ece538ddb378ace2806d594c4989cd1449383fdcb6ca401cbfb2",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g094_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g094_mixed.jsonl",
+      "sha256": "03358c267bd77920f596a6c1fe328273fe509f90549d31777f9df5ce645b985d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g095_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g095_mixed.jsonl",
+      "sha256": "1e47c3e985c42919accc314f25fd5c15e271e0c1a53b36dc0781add847db9722",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g096_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g096_mixed.jsonl",
+      "sha256": "5ed739eef7d086f0046eaae2052585cf509b5cda16d25b1a3081a8dc77724f33",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g097_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g097_mixed.jsonl",
+      "sha256": "d2bbae405c6e462e72a709888e1d3ec7823ef307db64679eecd93b5a49d00fa4",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g098_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g098_mixed.jsonl",
+      "sha256": "21aa616f75511857081ad7e3f8e8583a6f172b74a804a9c4b41779e2f02da167",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g099_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g099_mixed.jsonl",
+      "sha256": "598ddf3248fd1fca8605c9f6e0697051b1d7222a30e9465ea334a0318ec4edc6",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    },
+    {
+      "id": "g100_mixed",
+      "skill": "mixed_high_diversity",
+      "examples": 20,
+      "file": "datasets/generalization_v14/g100_mixed.jsonl",
+      "sha256": "46cc69a312ac620364272df1b92291e3df1fdea1eac8c5dc49d9ac2805adccaf",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic generator v14"
+    }
+  ]
+}

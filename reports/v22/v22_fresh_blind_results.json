@@ -1,0 +1,310 @@
+{
+ "benchmark": "v22_fresh_blind",
+ "protocol": "first-run-official-blind",
+ "seed": 20260917,
+ "total_questions": 1023,
+ "tallies": {
+  "correct": 715,
+  "wrong": 0,
+  "no_answer": 129,
+  "abstained": 179
+ },
+ "score_numeric": 69.89,
+ "score_with_abstention": 87.39,
+ "wall_seconds": 4.7,
+ "by_family": {
+  "adversarial_identifier": {
+   "total": 15,
+   "correct": 0,
+   "abstained": 15,
+   "wrong": 0,
+   "no_answer": 0
+  },
+  "ownership": {
+   "total": 60,
+   "correct": 19,
+   "abstained": 0,
+   "wrong": 0,
+   "no_answer": 41
+  },
+  "adversarial_currency": {
+   "total": 25,
+   "correct": 0,
+   "abstained": 25,
+   "wrong": 0,
+   "no_answer": 0
+  },
+  "finance": {
+   "total": 200,
+   "correct": 180,
+   "abstained": 20,
+   "wrong": 0,
+   "no_answer": 0
+  },
+  "work_rate": {
+   "total": 105,
+   "correct": 105,
+   "abstained": 0,
+   "wrong": 0,
+   "no_answer": 0
+  },
+  "sequence": {
+   "total": 43,
+   "correct": 43,
+   "abstained": 0,
+   "wrong": 0,
+   "no_answer": 0
+  },
+  "age": {
+   "total": 70,
+   "correct": 26,
+   "abstained": 29,
+   "wrong": 0,
+   "no_answer": 15
+  },
+  "scheduling": {
+   "total": 90,
+   "correct": 55,
+   "abstained": 0,
+   "wrong": 0,
+   "no_answer": 35
+  },
+  "inventory": {
+   "total": 100,
+   "correct": 67,
+   "abstained": 0,
+   "wrong": 0,
+   "no_answer": 33
+  },
+  "speed": {
+   "total": 60,
+   "correct": 60,
+   "abstained": 0,
+   "wrong": 0,
+   "no_answer": 0
+  },
+  "adversarial_dimension": {
+   "total": 45,
+   "correct": 0,
+   "abstained": 45,
+   "wrong": 0,
+   "no_answer": 0
+  },
+  "binomial": {
+   "total": 45,
+   "correct": 34,
+   "abstained": 11,
+   "wrong": 0,
+   "no_answer": 0
+  },
+  "ratio": {
+   "total": 120,
+   "correct": 86,
+   "abstained": 34,
+   "wrong": 0,
+   "no_answer": 0
+  },
+  "combination": {
+   "total": 45,
+   "correct": 40,
+   "abstained": 0,
+   "wrong": 0,
+   "no_answer": 5
+  }
+ },
+ "by_language": {
+  "fa": {
+   "total": 544,
+   "effective": 475,
+   "score_with_abstention": 87.32
+  },
+  "en": {
+   "total": 479,
+   "effective": 419,
+   "score_with_abstention": 87.47
+  }
+ },
+ "rows_sample_wrong": [],
+ "rows_sample_no_answer": [
+  {
+   "id": "fb22_0001",
+   "family": "ownership",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 5.8,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0004",
+   "family": "ownership",
+   "language": "fa",
+   "verdict": "no_answer",
+   "ms": 5.2,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0019",
+   "family": "scheduling",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 3.5,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0023",
+   "family": "scheduling",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 3.1,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0024",
+   "family": "scheduling",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 3.6,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0031",
+   "family": "ownership",
+   "language": "fa",
+   "verdict": "no_answer",
+   "ms": 4.7,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0037",
+   "family": "inventory",
+   "language": "fa",
+   "verdict": "no_answer",
+   "ms": 7.4,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0038",
+   "family": "ownership",
+   "language": "fa",
+   "verdict": "no_answer",
+   "ms": 4.6,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0052",
+   "family": "age",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 7.4,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0057",
+   "family": "ownership",
+   "language": "fa",
+   "verdict": "no_answer",
+   "ms": 4.7,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0063",
+   "family": "scheduling",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 3.7,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0076",
+   "family": "ownership",
+   "language": "fa",
+   "verdict": "no_answer",
+   "ms": 4.9,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0091",
+   "family": "inventory",
+   "language": "fa",
+   "verdict": "no_answer",
+   "ms": 6.5,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0106",
+   "family": "scheduling",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 3.6,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0127",
+   "family": "inventory",
+   "language": "fa",
+   "verdict": "no_answer",
+   "ms": 6.8,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0133",
+   "family": "ownership",
+   "language": "fa",
+   "verdict": "no_answer",
+   "ms": 5.1,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0153",
+   "family": "age",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 6.3,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0155",
+   "family": "combination",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 3.4,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0158",
+   "family": "scheduling",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 3.1,
+   "answer": null,
+   "error": null
+  },
+  {
+   "id": "fb22_0160",
+   "family": "scheduling",
+   "language": "en",
+   "verdict": "no_answer",
+   "ms": 3.6,
+   "answer": null,
+   "error": null
+  }
+ ]
+}

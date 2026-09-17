@@ -1,0 +1,102 @@
+{
+  "format": "jarvis-v19-final-release-manifest-v1",
+  "release": "Jarvis_v0.11.0_Intelligence_v19_REAL_TRAINED_FINAL_READY",
+  "dataset_version": "dataset_v019_real",
+  "new_trained_parameters": 2162727,
+  "training_quality": {
+    "numeric_role_v19": 0.9539673607203152,
+    "semantic_frame_v19": 0.9668486739469578,
+    "execution_pattern_v19": 1.0,
+    "code_intent_v19": 0.9510086455331412
+  },
+  "regression": {
+    "standard_tests_passed": 696,
+    "subtests_passed": 585,
+    "failures": 0,
+    "fresh_holdout": "50/50",
+    "exact_overlap": 0
+  },
+  "superseded_prototype_datasets_removed": [
+    "numeric_role_20000.jsonl",
+    "execution_graph_10000.jsonl",
+    "slot_binding_ratio_5000.jsonl"
+  ],
+  "critical_files": {
+    "jarvis/agent/semantic_ir_v19.py": {
+      "size_bytes": 17603,
+      "sha256": "8c831a2188c5353c29afdb3ac48a5b4ec98039e7082a7d70a0f4970020e20712"
+    },
+    "jarvis/agent/semantic_models_v19.py": {
+      "size_bytes": 16877,
+      "sha256": "8e3ff2f3499d91f743ca29e5148ffbe00616c94613666cc75f7063b29e69b424"
+    },
+    "jarvis/agent/local_intelligence_v19.py": {
+      "size_bytes": 869,
+      "sha256": "34e91e790521d03b1861c6d707a87178273ce326f18564905077ca52c3d36617"
+    },
+    "jarvis/nlu/semantic_slots_v19.py": {
+      "size_bytes": 5454,
+      "sha256": "598eb6df6fb88bd14cfd987e6eade0b832c9081d60c838b7a65868d575c7062d"
+    },
+    "models/numeric_role_v19.npz": {
+      "size_bytes": 405702,
+      "sha256": "847b665f53bdd2e492e4cd844c7b9df618113d272139bb8e2f01e84a97279421"
+    },
+    "models/semantic_frame_v19.npz": {
+      "size_bytes": 1661840,
+      "sha256": "fd6c941c23b2ebb2ab60711738c0f9d1a0d072d68c923a708df84a44340b0b89"
+    },
+    "models/execution_pattern_v19.npz": {
+      "size_bytes": 31014,
+      "sha256": "1c112aed8eec59f590dcdc47ccf25c2d1f56c8c603bf269fed14e28fc20160cc"
+    },
+    "models/code_intent_v19.npz": {
+      "size_bytes": 39484,
+      "sha256": "bfa34a2c4fcc5cdeea63dbc2910042add27624c5d5d8cb4cc201d17320d09690"
+    },
+    "datasets/numeric_roles_v19/numeric_role_24000_real.jsonl": {
+      "size_bytes": 5525756,
+      "sha256": "89cc7dc5c3ef9e12396ae8d141e7de4c52fa9185d06fb70b9acabe2bdad87303"
+    },
+    "datasets/multistep_v19/execution_graph_12000_real.jsonl": {
+      "size_bytes": 3968556,
+      "sha256": "c1f85ce16d3eda6fda1c277cc5154ebae6e9c6be3e7d1cf61ba73faad5536326"
+    },
+    "datasets/code_v19/code_intelligence_5000_real.jsonl": {
+      "size_bytes": 905180,
+      "sha256": "018e986b202b7d8336507318fd260ac8c9ae0d4ba1f39973188130d9d430af4e"
+    },
+    "datasets/semantic_ir_v19/semantic_frame_18000_real.jsonl": {
+      "size_bytes": 3016074,
+      "sha256": "037cc75d362eddd3709afecb7af6b261a061c196d79383a035d81b9c5b343789"
+    },
+    "reports/v19_real_training_report.json": {
+      "size_bytes": 37193,
+      "sha256": "41d5615a28ecc120dc224e3d0dacd1d535d604a0f04f31991b11c9f69af7c901"
+    },
+    "reports/v19_regression_report.json": {
+      "size_bytes": 1367,
+      "sha256": "60525187ac5e38f0086eb53077140ab5fa1c3efc7bf0f80fd4190b94c89f3ed0"
+    },
+    "tests/test_v19_intelligence.py": {
+      "size_bytes": 9426,
+      "sha256": "2b80bd78fc0cedb5333c490ffb032184b0a9a690a5a6e1b6bc96836cdd464ae8"
+    },
+    "tests/v19_holdout_cases.py": {
+      "size_bytes": 5838,
+      "sha256": "8b2e22e90b1b479bc324f80e88acec0195998af8c00b4431c614466543d050c9"
+    },
+    "training/train_v19_real.py": {
+      "size_bytes": 51166,
+      "sha256": "b4e4283124efbef338b3f65f241a692471ad412afd1d932df3db69ce657147bd"
+    },
+    "training/package_release.py": {
+      "size_bytes": 21288,
+      "sha256": "d6041e9aa041789541ad0d0c09a0018f2349b158d30ed7687443a97a65a447b8"
+    },
+    "V19_RELEASE_NOTES.md": {
+      "size_bytes": 2113,
+      "sha256": "d5983830849fc73c42ae39c5783f2a1ac567c883b1d3e4c9e4b67f4d8310e457"
+    }
+  }
+}

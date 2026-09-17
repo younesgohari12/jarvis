@@ -1,0 +1,1512 @@
+{
+  "version": 15,
+  "entries": [
+    {
+      "id": "jarvis-v5-identity",
+      "title": "JARVIS v0.11.0 کی ساختت سازنده developer who developed you Younes Gohari from scratch neural model",
+      "keywords": [
+        "سازنده",
+        "ساختت",
+        "کی",
+        "توسعه دهنده",
+        "یونس گوهری",
+        "developer",
+        "developed",
+        "creator",
+        "who",
+        "you",
+        "who made you",
+        "model",
+        "نسخه"
+      ],
+      "answers": {
+        "fa": "من JARVIS v0.11.0 هستم و توسط یونس گوهری توسعه داده شده‌ام. مدل‌های طبقه‌بندی من در همین پروژه با داده‌های Train/Holdout آموزش و ارزیابی شده‌اند؛ پاسخ‌های عددی و منطقی حساس نیز با حل‌گرهای قطعی کنترل می‌شوند و هیچ وزن pretrained وارد نشده است.",
+        "en": "I'm JARVIS v0.11.0, developed by Younes Gohari. My classifiers were trained and evaluated in this project with separate train/holdout data; sensitive numerical and logical answers are checked by deterministic solvers, and no pretrained weights were imported."
+      }
+    },
+    {
+      "id": "hello-english-equivalent",
+      "title": "سلام به انگلیسی معادل ترجمه مخفف کلمه واژه hello hi greeting abbreviation",
+      "keywords": [
+        "سلام",
+        "انگلیسی",
+        "معادل",
+        "ترجمه",
+        "مخفف",
+        "Hello",
+        "Hi",
+        "greeting",
+        "abbreviation"
+      ],
+      "answers": {
+        "fa": "معادل رایج «سلام» در انگلیسی Hello است و شکل کوتاه و محاوره‌ای آن Hi است. Hello یک کلمهٔ کامل است، نه مخفف؛ Hi هم صورت کوتاهِ احوال‌پرسی است، نه سرواژه.",
+        "en": "The usual English equivalent of «سلام» is “Hello”; the shorter informal greeting is “Hi.” Hello is a complete word, not an abbreviation, and Hi is a short greeting rather than an acronym."
+      }
+    },
+    {
+      "id": "offline-privacy",
+      "title": "Jarvis offline local privacy internet cloud API",
+      "keywords": [
+        "آفلاین",
+        "اینترنت",
+        "حریم خصوصی",
+        "داده محلی",
+        "offline",
+        "privacy",
+        "cloud",
+        "API"
+      ],
+      "answers": {
+        "fa": "چت اصلی Jarvis روی همین دستگاه اجرا می‌شود و پیام‌ها را برای API ابری نمی‌فرستد. Memory و Knowledge در SQLite محلی ذخیره می‌شوند.",
+        "en": "Jarvis main chat runs on this device and does not send messages to a cloud API. Memory and knowledge are stored in local SQLite databases."
+      }
+    },
+    {
+      "id": "brain-v4",
+      "title": "Jarvis v0.4 hybrid neural brain architecture parameters",
+      "keywords": [
+        "مدل",
+        "برین",
+        "مغز",
+        "شبکه عصبی",
+        "پارامتر",
+        "brain",
+        "neural",
+        "model",
+        "hybrid"
+      ],
+      "answers": {
+        "fa": "Brain v0.4 حدود ۲.۱ میلیون پارامتر quantized دارد: embedding هش‌شده Unicode، لایه پنهان عصبی و Router کالیبره. NLU فعل‌محور، Entity، Context، Knowledge، Search و Planner چندمرحله‌ای نیز در تصمیم نهایی نقش دارند.",
+        "en": "The v0.4 brain has about 2.1 million quantized parameters: hashed Unicode embeddings, a neural hidden layer, and a calibrated router. Verb-first NLU, entities, context, knowledge, search, and multi-step planning also affect decisions."
+      }
+    },
+    {
+      "id": "memory-v2",
+      "title": "Jarvis three level memory short term session long term SQLite",
+      "keywords": [
+        "حافظه",
+        "اسم",
+        "موضوع",
+        "پروژه",
+        "تاریخچه",
+        "memory",
+        "remember",
+        "session",
+        "facts"
+      ],
+      "answers": {
+        "fa": "Memory سه سطح دارد: Short-Term در RAM، Session در SQLite و Long-Term برای Factها و تنظیمات. Cleanup اندازه تاریخچه و Sessionها را محدود نگه می‌دارد.",
+        "en": "Memory has three levels: short-term RAM context, SQLite session history, and long-term facts/settings. Cleanup keeps history and session growth bounded."
+      }
+    },
+    {
+      "id": "files",
+      "title": "Jarvis attached file ZIP text safety preview",
+      "keywords": [
+        "فایل",
+        "زیپ",
+        "پیوست",
+        "ساختار",
+        "txt",
+        "zip",
+        "file",
+        "attachment",
+        "preview"
+      ],
+      "answers": {
+        "fa": "Jarvis فایل‌های متنی پشتیبانی‌شده را با Preview محدود می‌خواند و ساختار ZIP را بدون Extract فهرست می‌کند. سقف حجم و نسبت فشرده‌سازی از RAM و ZIP bomb محافظت می‌کنند.",
+        "en": "Jarvis reads supported text files with bounded previews and lists ZIP contents without extraction. Size and compression-ratio limits protect RAM and reduce ZIP-bomb risk."
+      }
+    },
+    {
+      "id": "personalities",
+      "title": "Jarvis personality modes Normal Kind Angry Loti Gang Professional Funny",
+      "keywords": [
+        "شخصیت",
+        "مود",
+        "لوتی",
+        "خنده دار",
+        "personality",
+        "kind",
+        "angry",
+        "funny",
+        "professional"
+      ],
+      "answers": {
+        "fa": "Personalityهای v0.4 عبارت‌اند از Normal، Kind، Angry، Loti، Gang، Professional و Funny. همه یک Brain و معنای مشترک دارند و فقط لحن به‌صورت Config-based تغییر می‌کند.",
+        "en": "v0.4 personalities are Normal, Kind, Angry, Loti, Gang, Professional, and Funny. They share the same brain and semantics; data-driven profiles change only tone."
+      }
+    },
+    {
+      "id": "performance",
+      "title": "Jarvis GUI performance LOW BALANCED ULTRA CPU idle animation",
+      "keywords": [
+        "پرفورمنس",
+        "انیمیشن",
+        "مصرف CPU",
+        "low",
+        "balanced",
+        "ultra",
+        "performance",
+        "animation"
+      ],
+      "answers": {
+        "fa": "GUI سه Profile دارد: LOW، BALANCED و ULTRA. نرخ Animation هنگام Idle کاهش می‌یابد و در حالت Minimize تقریباً متوقف می‌شود تا CPU هدر نرود.",
+        "en": "The GUI has LOW, BALANCED, and ULTRA profiles. Animation slows while idle and nearly pauses when minimized to avoid wasting CPU."
+      }
+    },
+    {
+      "id": "python",
+      "title": "Python programming language پایتون چیست",
+      "keywords": [
+        "پایتون",
+        "Python",
+        "زبان",
+        "برنامه نویسی"
+      ],
+      "answers": {
+        "fa": "پایتون زبان برنامه‌نویسی سطح‌بالا با خوانایی زیاد و کتابخانهٔ استاندارد گسترده است که برای اتوماسیون، وب، علم و ابزارهای دسکتاپ استفاده می‌شود.",
+        "en": "Python is a readable high-level programming language with a broad standard library, used for automation, web, science, and desktop tooling."
+      }
+    },
+    {
+      "id": "ram",
+      "title": "RAM memory حافظه رم چیست volatile",
+      "keywords": [
+        "رم",
+        "RAM",
+        "حافظه",
+        "memory",
+        "موقت"
+      ],
+      "answers": {
+        "fa": "RAM حافظهٔ سریع و موقتی برای برنامه‌ها و داده‌های در حال استفاده است. ظرفیت بیشتر آن اجرای هم‌زمان برنامه‌های بیشتری را ممکن می‌کند، اما جایگزین SSD نیست.",
+        "en": "RAM is fast, volatile working memory for active programs and data. More capacity helps multitasking, but RAM does not replace persistent storage."
+      }
+    },
+    {
+      "id": "future-tools",
+      "title": "future STT TTS wake word vision Windows control tools",
+      "keywords": [
+        "صدا",
+        "میکروفون",
+        "ویژن",
+        "کنترل ویندوز",
+        "STT",
+        "TTS",
+        "wake word",
+        "vision"
+      ],
+      "answers": {
+        "fa": "Core ماژولار برای اضافه‌شدن STT، TTS، Wake Word، Vision و کنترل تأییدشده Windows آماده است. دکمه میکروفون v0.4 هنوز Placeholder امن است.",
+        "en": "The modular core is ready for future STT, TTS, wake-word, vision, and permission-gated Windows tools. The v0.4 microphone is still a safe placeholder."
+      }
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript programming language browser Node.js",
+      "keywords": [
+        "جاوااسکریپت",
+        "JavaScript",
+        "JS",
+        "Node",
+        "browser",
+        "web"
+      ],
+      "answers": {
+        "fa": "JavaScript زبان اصلی برنامه‌نویسی تعاملی وب است و با Node.js خارج از مرورگر هم اجرا می‌شود. برای رابط وب مناسب است؛ برای ابزار دسکتاپ خیلی سبک، Python همراه Tkinter معمولاً dependency کمتری دارد.",
+        "en": "JavaScript is the primary language for interactive web applications and also runs outside browsers through Node.js. It suits web UIs; Python with Tkinter often has fewer dependencies for a very small desktop tool."
+      }
+    },
+    {
+      "id": "windows",
+      "title": "Microsoft Windows desktop operating system applications paths",
+      "keywords": [
+        "ویندوز",
+        "Windows",
+        "desktop",
+        "برنامه",
+        "مسیر",
+        "path"
+      ],
+      "answers": {
+        "fa": "Windows یک سیستم‌عامل دسکتاپ است. مسیرهای کاربر بهتر است با pathlib و متغیرهایی مثل LOCALAPPDATA ساخته شوند؛ مسیر ثابت مخصوص یک رایانه قابل حمل نیست.",
+        "en": "Windows is a desktop operating system. User paths should be built with pathlib and locations such as LOCALAPPDATA; machine-specific hard-coded paths are not portable."
+      }
+    },
+    {
+      "id": "artificial-intelligence",
+      "title": "artificial intelligence machine learning neural hybrid systems",
+      "keywords": [
+        "هوش مصنوعی",
+        "یادگیری ماشین",
+        "شبکه عصبی",
+        "AI",
+        "machine learning",
+        "neural"
+      ],
+      "answers": {
+        "fa": "هوش مصنوعی مجموعه روش‌هایی برای ادراک، پیش‌بینی و تصمیم‌گیری است. سیستم Hybrid می‌تواند یک مدل عصبی کوچک را با قواعد ایمنی، بازیابی دانش، حافظه و ابزارهای قطعی ترکیب کند تا با منابع کمتر قابل اعتمادتر باشد.",
+        "en": "Artificial intelligence includes methods for perception, prediction, and decision-making. A hybrid system combines a small neural model with safety rules, retrieval, memory, and deterministic tools for reliability at lower resource cost."
+      }
+    },
+    {
+      "id": "internet-web",
+      "title": "Internet World Wide Web URL HTTP browser search",
+      "keywords": [
+        "اینترنت",
+        "وب",
+        "مرورگر",
+        "URL",
+        "HTTP",
+        "Internet",
+        "browser",
+        "search"
+      ],
+      "answers": {
+        "fa": "اینترنت شبکهٔ جهانی زیرساخت است و وب یکی از سرویس‌های روی آن است. مرورگر URLهای HTTP/HTTPS را باز می‌کند؛ موتور جستجو صفحات را فهرست و رتبه‌بندی می‌کند.",
+        "en": "The Internet is global network infrastructure, while the Web is one service on it. Browsers open HTTP/HTTPS URLs; search engines index and rank pages."
+      }
+    },
+    {
+      "id": "sqlite",
+      "title": "SQLite database پایگاه داده",
+      "keywords": [
+        "SQLite",
+        "دیتابیس",
+        "database",
+        "SQL",
+        "تراکنش"
+      ],
+      "answers": {
+        "fa": "SQLite یک پایگاه‌دادهٔ رابطه‌ای تعبیه‌شده و بدون سرور است که معمولاً در یک فایل ذخیره می‌شود و از تراکنش پشتیبانی می‌کند.",
+        "en": "SQLite is an embedded, serverless relational database usually stored in one file, with transactional guarantees."
+      }
+    },
+    {
+      "id": "json",
+      "title": "JSON data format ساختار داده",
+      "keywords": [
+        "JSON",
+        "داده",
+        "فرمت",
+        "object",
+        "array"
+      ],
+      "answers": {
+        "fa": "JSON قالب متنی برای object، array، رشته، عدد، boolean و null است. برای تنظیمات کوچک مناسب است اما جای تراکنش و query پایگاه‌داده را نمی‌گیرد.",
+        "en": "JSON is a text format for objects, arrays, strings, numbers, booleans, and null. It suits small configuration data but does not provide database transactions or queries."
+      }
+    },
+    {
+      "id": "computer-hardware",
+      "title": "computer CPU GPU RAM storage cores hardware basics",
+      "keywords": [
+        "کامپیوتر",
+        "سخت افزار",
+        "CPU",
+        "GPU",
+        "RAM",
+        "هسته",
+        "حافظه",
+        "storage"
+      ],
+      "answers": {
+        "fa": "CPU دستورهای عمومی را اجرا می‌کند، RAM دادهٔ فعال را نگه می‌دارد و Storage نگهداری پایدار است. GPU برای محاسبات موازی مفید است، اما نرم‌افزار CPU-first باید بدون آن هم کامل کار کند.",
+        "en": "The CPU runs general instructions, RAM holds active data, and storage persists data. A GPU helps parallel workloads, but CPU-first software should remain fully functional without one."
+      }
+    },
+    {
+      "id": "files-folders-zip",
+      "title": "files folders ZIP archive compression paths safety",
+      "keywords": [
+        "فایل",
+        "پوشه",
+        "زیپ",
+        "آرشیو",
+        "file",
+        "folder",
+        "ZIP",
+        "archive"
+      ],
+      "answers": {
+        "fa": "فایل داده را نگه می‌دارد و پوشه فایل‌ها را سازمان‌دهی می‌کند. ZIP چند ورودی فشرده دارد؛ فهرست و Preview آن را می‌توان با zipfile و بدون Extract کامل خواند و برای جلوگیری از ZIP bomb سقف حجم گذاشت.",
+        "en": "Files hold data and folders organize files. ZIP archives contain compressed entries; Python's zipfile can list and preview them without full extraction, with limits to reduce ZIP-bomb risk."
+      }
+    },
+    {
+      "id": "threading-gui",
+      "title": "Tkinter GUI threading queue responsive background work",
+      "keywords": [
+        "Tkinter",
+        "thread",
+        "queue",
+        "GUI",
+        "freeze",
+        "رابط",
+        "فریز"
+      ],
+      "answers": {
+        "fa": "Tkinter باید در Thread اصلی به‌روزرسانی شود. کار کند مثل Search یا تحلیل فایل را می‌توان در Worker Thread اجرا و نتیجه را با queue و after به UI برگرداند تا پنجره Freeze نشود.",
+        "en": "Tkinter updates belong on the main thread. Slow search or file work can run in a worker thread, returning results through a queue polled with after so the window remains responsive."
+      }
+    },
+    {
+      "id": "security-permissions",
+      "title": "desktop agent permission safety confirmation destructive actions",
+      "keywords": [
+        "امنیت",
+        "مجوز",
+        "تایید",
+        "حذف",
+        "permission",
+        "confirmation",
+        "delete",
+        "security"
+      ],
+      "answers": {
+        "fa": "یک Agent دسکتاپ باید خواندن و بازکردن امن را از حذف، Shutdown و Command خطرناک جدا کند. عملیات مخرب نیازمند تأیید صریح‌اند و Command دلخواه نباید مستقیماً به Shell داده شود.",
+        "en": "A desktop agent should separate safe reading/opening from deletion, shutdown, and dangerous commands. Destructive actions require explicit confirmation, and arbitrary text should never be passed directly to a shell."
+      }
+    },
+    {
+      "id": "blue-sky",
+      "title": "why the sky is blue Rayleigh scattering sunlight atmosphere",
+      "keywords": [
+        "چرا آسمون آبیه",
+        "چرا آسمان آبی است",
+        "why is the sky blue",
+        "آسمان",
+        "آسمون",
+        "آبی",
+        "نور",
+        "پراکندگی رایلی",
+        "sky",
+        "blue",
+        "Rayleigh",
+        "light"
+      ],
+      "answers": {
+        "fa": "چرا آسمون آبیه؟ آسمان بیشتر آبی دیده می‌شود چون مولکول‌های جو طول موج‌های کوتاه نور خورشید، به‌ویژه آبی، را بسیار بیشتر از طول موج‌های بلند پراکنده می‌کنند. این پدیده پراکندگی رایلی نام دارد.",
+        "en": "Why is the sky blue? The sky usually looks blue because atmospheric molecules scatter shorter wavelengths of sunlight, especially blue, much more strongly than longer wavelengths. This is Rayleigh scattering."
+      }
+    },
+    {
+      "id": "jarvis-v6-identity",
+      "title": "JARVIS v0.11.0 identity developer Younes Gohari یونس گوهری",
+      "keywords": [
+        "جارویس",
+        "سازنده",
+        "توسعه دهنده",
+        "یونس گوهری",
+        "version",
+        "developer"
+      ],
+      "answers": {
+        "fa": "من JARVIS v0.11.0 هستم؛ Smart Brain & Dynamic Agent، توسعه‌یافته توسط یونس گوهری. مدل‌های پروژه از داده و مقداردهی داخلی استفاده می‌کنند و مدل‌های مکمل v0.11 با Holdout جداگانه ارزیابی شده‌اند.",
+        "en": "I'm JARVIS v0.11.0, Smart Brain & Dynamic Agent, developed by Younes Gohari. The project's models use internal data and initialization, and the v0.11 auxiliary models were evaluated on separate holdout sets."
+      }
+    },
+    {
+      "id": "human-testicle",
+      "title": "testicle anatomy بیضه چیست دستگاه تولیدمثل",
+      "keywords": [
+        "بیضه",
+        "testicle",
+        "اسپرم",
+        "تستوسترون",
+        "تولید مثل"
+      ],
+      "answers": {
+        "fa": "بیضه یکی از دو غدهٔ تولیدمثلی مردانه است که اسپرم و هورمون‌هایی مانند تستوسترون تولید می‌کند و معمولاً در کیسهٔ بیضه قرار دارد. درد یا تورم ناگهانی و شدید نیازمند ارزیابی فوری پزشکی است.",
+        "en": "A testicle is one of the male reproductive glands that produces sperm and hormones such as testosterone. Sudden severe pain or swelling needs urgent medical assessment."
+      }
+    },
+    {
+      "id": "human-penis",
+      "title": "penis anatomy آلت مردانه کیر چیست اندام تناسلی",
+      "keywords": [
+        "آلت مردانه",
+        "کیر",
+        "penis",
+        "اندام تناسلی",
+        "مجرای ادرار",
+        "دستگاه تولیدمثل"
+      ],
+      "answers": {
+        "fa": "«کیر» واژه‌ای عامیانه و رکیک برای آلت مردانه است. اصطلاح خنثی و پزشکی آن «آلت مردانه» یا «پِنیس» است؛ اندامی بیرونی که در دفع ادرار و عملکرد جنسی و تولیدمثلی نقش دارد و عمدتاً از بافت نعوظی، رگ‌های خونی، عصب‌ها و مجرای ادرار تشکیل شده است.",
+        "en": "The Persian word «کیر» is a vulgar term for the penis. The penis is an external organ involved in urination and sexual and reproductive function, composed mainly of erectile tissue, blood vessels, nerves, and the urethra."
+      }
+    },
+    {
+      "id": "human-vagina",
+      "title": "vagina anatomy واژن چیست مهبل دستگاه تولیدمثل",
+      "keywords": [
+        "واژن",
+        "مهبل",
+        "vagina",
+        "دهانه رحم",
+        "فرج",
+        "دستگاه تولیدمثل"
+      ],
+      "answers": {
+        "fa": "واژن یا مهبل مجرایی عضلانی و انعطاف‌پذیر در دستگاه تولیدمثلی است که دهانهٔ رحم را به بخش بیرونی دستگاه تناسلی متصل می‌کند. واژن با «فرج» یکی نیست؛ فرج نام بخش‌های بیرونی دستگاه تناسلی است. درد شدید، خون‌ریزی غیرعادی یا ترشح همراه با تب نیازمند ارزیابی پزشکی است.",
+        "en": "The vagina is a flexible muscular canal connecting the cervix to the external genital area. It is not the same as the vulva, which refers to the external genital structures. Severe pain, unusual bleeding, or discharge with fever warrants medical assessment."
+      }
+    },
+    {
+      "id": "penis-english-equivalent",
+      "title": "کیر آلت مردانه به انگلیسی معادل ترجمه مخفف penis vulgar slang",
+      "keywords": [
+        "کیر به انگلیسی",
+        "انگلیسی کیر",
+        "معادل انگلیسی",
+        "ترجمه",
+        "مخفف",
+        "penis",
+        "dick"
+      ],
+      "answers": {
+        "fa": "معادل خنثی و پزشکی «کیر» در انگلیسی penis است. واژهٔ dick عامیانه و رکیک است. این کلمه مخفف یا سرواژهٔ مشخصی ندارد؛ بنابراین برای متن معمولی یا پزشکی بهتر است از penis استفاده شود.",
+        "en": "The neutral medical English equivalent of «کیر» is “penis”; “dick” is vulgar slang. It does not have a standard abbreviation or acronym."
+      }
+    },
+    {
+      "id": "sky-blue",
+      "title": "why sky is blue چرا آسمان آبی است Rayleigh scattering",
+      "keywords": [
+        "آسمان",
+        "آبی",
+        "sky",
+        "blue",
+        "پراکندگی",
+        "Rayleigh"
+      ],
+      "answers": {
+        "fa": "مولکول‌های جو طول موج‌های کوتاه‌تر نور مرئی، به‌ویژه آبی، را بیشتر از طول موج‌های بلند پراکنده می‌کنند؛ بنابراین نور آبی از جهت‌های مختلف به چشم می‌رسد.",
+        "en": "Air molecules scatter shorter visible wavelengths, especially blue, more strongly than longer wavelengths, so blue light reaches our eyes from many directions."
+      }
+    },
+    {
+      "id": "cpu",
+      "title": "CPU processor پردازنده چیست cores",
+      "keywords": [
+        "CPU",
+        "پردازنده",
+        "هسته",
+        "processor",
+        "core"
+      ],
+      "answers": {
+        "fa": "CPU دستورهای برنامه را اجرا و کار عمومی سیستم را هماهنگ می‌کند. تعداد هسته، کارایی هر هسته، حافظهٔ نهان و محدودیت توان همگی بر عملکرد اثر دارند.",
+        "en": "A CPU executes program instructions and coordinates general computation. Core count, per-core performance, cache, and power limits all affect speed."
+      }
+    },
+    {
+      "id": "gpu",
+      "title": "GPU graphics پردازنده گرافیکی چیست",
+      "keywords": [
+        "GPU",
+        "گرافیک",
+        "پردازنده گرافیکی",
+        "parallel"
+      ],
+      "answers": {
+        "fa": "GPU تعداد زیادی واحد محاسباتی موازی دارد و برای گرافیک و برخی محاسبات ماتریسی مناسب است. JARVIS v0.6 برای اجرای اصلی به GPU نیاز ندارد.",
+        "en": "A GPU has many parallel compute units suited to graphics and some matrix workloads. JARVIS v0.6 does not require a GPU for its core runtime."
+      }
+    },
+    {
+      "id": "storage",
+      "title": "SSD HDD storage ذخیره سازی تفاوت",
+      "keywords": [
+        "SSD",
+        "HDD",
+        "ذخیره",
+        "storage",
+        "NVMe"
+      ],
+      "answers": {
+        "fa": "SSD بدون قطعات متحرک است و معمولاً تأخیر کمتر و سرعت بیشتری دارد؛ HDD اغلب برای ظرفیت زیاد ارزان‌تر است. NVMe نوعی رابط سریع SSD روی PCIe است.",
+        "en": "SSDs have no moving parts and usually provide lower latency and higher speed; HDDs are often cheaper for large capacity. NVMe is a fast PCIe interface for SSDs."
+      }
+    },
+    {
+      "id": "api",
+      "title": "API application programming interface رابط برنامه نویسی",
+      "keywords": [
+        "API",
+        "رابط",
+        "برنامه نویسی",
+        "interface"
+      ],
+      "answers": {
+        "fa": "API یک قرارداد مشخص است که نرم‌افزار از طریق آن داده یا رفتار جزء دیگری را درخواست می‌کند، بدون اینکه به جزئیات داخلی آن وابسته باشد.",
+        "en": "An API is a defined contract through which software requests data or behavior from another component without depending on its internals."
+      }
+    },
+    {
+      "id": "rest",
+      "title": "REST API HTTP resources",
+      "keywords": [
+        "REST",
+        "HTTP",
+        "resource",
+        "منبع"
+      ],
+      "answers": {
+        "fa": "REST سبکی برای طراحی API بر پایهٔ منبع، درخواست‌های stateless و معناهای استاندارد HTTP است؛ هر API مبتنی بر HTTP الزاماً RESTful نیست.",
+        "en": "REST is an API design style based on resources, stateless requests, and standard HTTP semantics; not every HTTP API is RESTful."
+      }
+    },
+    {
+      "id": "dns",
+      "title": "DNS domain name system دامنه آی پی",
+      "keywords": [
+        "DNS",
+        "دامنه",
+        "domain",
+        "IP",
+        "نام"
+      ],
+      "answers": {
+        "fa": "DNS نام دامنه را به رکوردهای شبکه مانند IP نگاشت می‌کند. پاسخ‌ها سلسله‌مراتبی‌اند و برای کاهش تأخیر cache می‌شوند.",
+        "en": "DNS maps domain names to network records such as IP addresses. Its hierarchy and caching reduce repeated lookup cost."
+      }
+    },
+    {
+      "id": "http-https",
+      "title": "HTTP HTTPS TLS security",
+      "keywords": [
+        "HTTP",
+        "HTTPS",
+        "TLS",
+        "امنیت",
+        "وب"
+      ],
+      "answers": {
+        "fa": "HTTPS همان HTTP روی TLS است و برای ارتباط، رمزنگاری مسیر، یکپارچگی و احراز هویت سرور را فراهم می‌کند؛ امنیت خود برنامه هنوز نیازمند طراحی درست است.",
+        "en": "HTTPS carries HTTP over TLS to provide transport encryption, integrity, and server authentication; application security still requires correct design."
+      }
+    },
+    {
+      "id": "ip-address",
+      "title": "IP address آدرس آی پی IPv4 IPv6",
+      "keywords": [
+        "IP",
+        "IPv4",
+        "IPv6",
+        "آدرس",
+        "شبکه"
+      ],
+      "answers": {
+        "fa": "آدرس IP شناسهٔ مسیریابی یک رابط شبکه است. IPv4 آدرس ۳۲ بیتی و IPv6 آدرس ۱۲۸ بیتی دارد؛ آدرس عمومی و خصوصی کاربرد متفاوت دارند.",
+        "en": "An IP address identifies a network interface for routing. IPv4 uses 32 bits and IPv6 uses 128; public and private addresses serve different scopes."
+      }
+    },
+    {
+      "id": "oop",
+      "title": "object oriented programming OOP شی گرایی",
+      "keywords": [
+        "OOP",
+        "شی گرایی",
+        "class",
+        "object",
+        "کلاس"
+      ],
+      "answers": {
+        "fa": "برنامه‌نویسی شی‌گرا داده و رفتار مرتبط را در objectها سازمان می‌دهد. encapsulation، composition و polymorphism ابزارند، نه الزام برای هر مسئله.",
+        "en": "Object-oriented programming organizes related state and behavior in objects. Encapsulation, composition, and polymorphism are tools rather than requirements for every problem."
+      }
+    },
+    {
+      "id": "algorithm",
+      "title": "algorithm الگوریتم complexity پیچیدگی",
+      "keywords": [
+        "الگوریتم",
+        "algorithm",
+        "پیچیدگی",
+        "Big O"
+      ],
+      "answers": {
+        "fa": "الگوریتم دنباله‌ای مشخص از گام‌ها برای حل مسئله است. پیچیدگی زمانی و فضایی چگونگی رشد هزینه با اندازهٔ ورودی را توصیف می‌کند.",
+        "en": "An algorithm is a defined sequence of steps for solving a problem. Time and space complexity describe how resource cost grows with input size."
+      }
+    },
+    {
+      "id": "process-thread",
+      "title": "process thread تفاوت پردازش رشته",
+      "keywords": [
+        "process",
+        "thread",
+        "پردازش",
+        "رشته",
+        "race condition"
+      ],
+      "answers": {
+        "fa": "Process فضای آدرس جدا دارد؛ threadهای یک process حافظه را به اشتراک می‌گذارند. اشتراک حافظه سبک‌تر است اما synchronization برای جلوگیری از race condition لازم می‌شود.",
+        "en": "Processes have separate address spaces; threads in one process share memory. Sharing is lighter but requires synchronization to prevent race conditions."
+      }
+    },
+    {
+      "id": "transformer",
+      "title": "Transformer attention مدل عصبی",
+      "keywords": [
+        "Transformer",
+        "attention",
+        "ترنسفورمر",
+        "توکن",
+        "neural"
+      ],
+      "answers": {
+        "fa": "Transformer معماری عصبی مبتنی بر attention است که روابط میان توکن‌ها را مدل می‌کند. اندازهٔ مدل، داده و روش آموزش همگی کیفیت را تعیین می‌کنند.",
+        "en": "A Transformer is a neural architecture based on attention for modeling relationships among tokens. Model size, data, and training procedure all affect quality."
+      }
+    },
+    {
+      "id": "neural-network",
+      "title": "neural network شبکه عصبی training inference",
+      "keywords": [
+        "شبکه عصبی",
+        "neural network",
+        "training",
+        "inference",
+        "وزن"
+      ],
+      "answers": {
+        "fa": "شبکهٔ عصبی تابعی پارامتری است که وزن‌هایش هنگام آموزش برای کاهش خطا تنظیم می‌شوند؛ inference از وزن‌های آموخته‌شده برای خروجی جدید استفاده می‌کند.",
+        "en": "A neural network is a parameterized function whose weights are adjusted during training to reduce error; inference uses those learned weights on new input."
+      }
+    },
+    {
+      "id": "machine-learning",
+      "title": "machine learning یادگیری ماشین",
+      "keywords": [
+        "یادگیری ماشین",
+        "machine learning",
+        "داده",
+        "مدل"
+      ],
+      "answers": {
+        "fa": "یادگیری ماشین روش ساخت مدل‌هایی است که از داده الگو می‌آموزند. کیفیت داده، split درست و ارزیابی روی نمونهٔ دیده‌نشده برای ادعای عملکرد ضروری است.",
+        "en": "Machine learning builds models that learn patterns from data. Data quality, proper splits, and evaluation on unseen examples are essential for performance claims."
+      }
+    },
+    {
+      "id": "black-hole",
+      "title": "black hole سیاهچاله event horizon",
+      "keywords": [
+        "سیاهچاله",
+        "black hole",
+        "افق رویداد",
+        "گرانش"
+      ],
+      "answers": {
+        "fa": "سیاهچاله ناحیه‌ای از فضا-زمان با گرانش بسیار شدید و افق رویداد است؛ پس از افق رویداد مسیر خروجی برای نور وجود ندارد.",
+        "en": "A black hole is a region of spacetime with extreme gravity and an event horizon beyond which light has no outward path."
+      }
+    },
+    {
+      "id": "solar-system",
+      "title": "solar system منظومه شمسی planets",
+      "keywords": [
+        "منظومه شمسی",
+        "خورشید",
+        "سیاره",
+        "solar system"
+      ],
+      "answers": {
+        "fa": "منظومهٔ شمسی شامل خورشید، هشت سیاره، سیاره‌های کوتوله، قمرها و اجرام کوچک‌تر است. ترتیب سیاره‌ها از خورشید با عطارد آغاز می‌شود و به نپتون می‌رسد.",
+        "en": "The Solar System contains the Sun, eight planets, dwarf planets, moons, and smaller bodies. The planets run from Mercury outward to Neptune."
+      }
+    },
+    {
+      "id": "photosynthesis",
+      "title": "photosynthesis فتوسنتز گیاه",
+      "keywords": [
+        "فتوسنتز",
+        "photosynthesis",
+        "گیاه",
+        "نور",
+        "کلروفیل"
+      ],
+      "answers": {
+        "fa": "در فتوسنتز، گیاهان و برخی جانداران انرژی نور را برای ساخت مواد آلی از دی‌اکسیدکربن و آب به کار می‌گیرند و معمولاً اکسیژن آزاد می‌کنند.",
+        "en": "In photosynthesis, plants and some organisms use light energy to build organic molecules from carbon dioxide and water, commonly releasing oxygen."
+      }
+    },
+    {
+      "id": "dna",
+      "title": "DNA ژن ماده وراثتی",
+      "keywords": [
+        "DNA",
+        "ژن",
+        "وراثت",
+        "genetic"
+      ],
+      "answers": {
+        "fa": "DNA مولکول اصلی ذخیرهٔ اطلاعات وراثتی در بسیاری از جانداران است. ژن بخشی از DNA است که می‌تواند در ساخت محصولی عملکردی نقش داشته باشد.",
+        "en": "DNA is the primary hereditary information molecule in many organisms. A gene is a DNA region that can contribute to a functional product."
+      }
+    },
+    {
+      "id": "cell",
+      "title": "cell biology سلول زیست شناسی",
+      "keywords": [
+        "سلول",
+        "cell",
+        "زیست",
+        "غشا",
+        "هسته"
+      ],
+      "answers": {
+        "fa": "سلول واحد بنیادی ساختار و عملکرد جانداران است. سلول‌های یوکاریوتی هسته و اندامک‌های غشادار دارند؛ پروکاریوت‌ها هستهٔ غشادار ندارند.",
+        "en": "The cell is the fundamental structural and functional unit of life. Eukaryotic cells have a nucleus and membrane-bound organelles; prokaryotes do not have a membrane-bound nucleus."
+      }
+    },
+    {
+      "id": "water-cycle",
+      "title": "water cycle چرخه آب",
+      "keywords": [
+        "چرخه آب",
+        "تبخیر",
+        "بارش",
+        "water cycle"
+      ],
+      "answers": {
+        "fa": "چرخهٔ آب شامل تبخیر و تعرق، میعان، بارش، نفوذ و رواناب است و آب را میان جو، سطح و زیرزمین جابه‌جا می‌کند.",
+        "en": "The water cycle includes evaporation and transpiration, condensation, precipitation, infiltration, and runoff, moving water among atmosphere, surface, and ground."
+      }
+    },
+    {
+      "id": "electricity",
+      "title": "electricity voltage current برق ولتاژ جریان",
+      "keywords": [
+        "برق",
+        "ولتاژ",
+        "جریان",
+        "مقاومت",
+        "electricity"
+      ],
+      "answers": {
+        "fa": "ولتاژ اختلاف پتانسیل الکتریکی، جریان نرخ عبور بار و مقاومت میزان مخالفت با جریان است. قانون اهم در شرایط مناسب رابطهٔ V=IR را بیان می‌کند.",
+        "en": "Voltage is electric potential difference, current is charge flow rate, and resistance opposes current. Under suitable conditions, Ohm's law is V=IR."
+      }
+    },
+    {
+      "id": "encryption-hash",
+      "title": "encryption hashing رمزنگاری هش",
+      "keywords": [
+        "رمزنگاری",
+        "هش",
+        "encryption",
+        "hash",
+        "password"
+      ],
+      "answers": {
+        "fa": "رمزنگاری با کلید برای بازگردانی مجاز داده طراحی می‌شود؛ هش یک‌طرفه است. گذرواژه باید با الگوریتم مشتق‌سازی کند و salt تصادفی ذخیره شود، نه هش سریع عمومی.",
+        "en": "Encryption uses a key for authorized recovery; hashing is one-way. Passwords should use a slow password KDF with a random salt, not a fast general-purpose hash."
+      }
+    },
+    {
+      "id": "git",
+      "title": "Git version control گیت کنترل نسخه",
+      "keywords": [
+        "Git",
+        "گیت",
+        "commit",
+        "branch",
+        "کنترل نسخه"
+      ],
+      "answers": {
+        "fa": "Git سامانهٔ کنترل نسخهٔ توزیع‌شده است. commit یک snapshot منطقی ثبت می‌کند و branch اشاره‌گری متحرک به تاریخچه است.",
+        "en": "Git is a distributed version-control system. A commit records a logical snapshot, and a branch is a movable reference into history."
+      }
+    },
+    {
+      "id": "zip",
+      "title": "ZIP archive فشرده سازی zip bomb",
+      "keywords": [
+        "ZIP",
+        "فشرده",
+        "آرشیو",
+        "zip bomb"
+      ],
+      "answers": {
+        "fa": "ZIP ظرفی برای چند فایل فشرده یا بدون فشرده‌سازی است. پیش از extract باید مسیر member، حجم بازشده و نسبت فشرده‌سازی محدود شود تا zip-slip و zip-bomb رخ ندهد.",
+        "en": "ZIP is a container for compressed or stored files. Before extraction, member paths, expanded size, and compression ratio should be bounded to prevent zip-slip and zip-bomb attacks."
+      }
+    },
+    {
+      "id": "sqlite-json",
+      "title": "SQLite versus JSON comparison",
+      "keywords": [
+        "SQLite",
+        "JSON",
+        "مقایسه",
+        "settings",
+        "history"
+      ],
+      "answers": {
+        "fa": "برای تنظیمات کوچک و خواندنی JSON ساده است؛ برای تاریخچه، query، چند جدول و ثبت اتمیک SQLite مناسب‌تر است. انتخاب به الگوی دسترسی بستگی دارد.",
+        "en": "JSON is simple for tiny human-readable settings; SQLite is better for history, queries, multiple tables, and atomic updates. The access pattern should drive the choice."
+      }
+    },
+    {
+      "id": "internet-current",
+      "title": "current latest information internet search freshness",
+      "keywords": [
+        "آخرین",
+        "امروز",
+        "قیمت",
+        "هوا",
+        "latest",
+        "current",
+        "today"
+      ],
+      "answers": {
+        "fa": "اطلاعات متغیر مانند نسخهٔ جدید، قیمت، هوا و خبر باید هنگام درخواست از منبع زنده بررسی و با تاریخ و منبع گزارش شود؛ دانش آفلاین برای آن کافی نیست.",
+        "en": "Changing facts such as releases, prices, weather, and news should be checked against live sources at request time and reported with dates and sources; offline knowledge is insufficient."
+      }
+    },
+    {
+      "id": "tcp-vs-udp",
+      "title": "TCP UDP difference comparison فرق تفاوت پروتکل انتقال شبکه",
+      "keywords": ["TCP", "UDP", "فرق", "تفاوت", "پروتکل", "قابل اعتماد", "سرعت", "network", "transport"],
+      "answers": {
+        "fa": "TCP اتصال‌گرا و قابل‌اعتماد است: ترتیب بسته‌ها، تحویل دوبارهٔ دادهٔ گم‌شده و کنترل ازدحام را مدیریت می‌کند؛ در عوض سربار و تأخیر بیشتری دارد. UDP بدون اتصال و سبک‌تر است و تحویل یا ترتیب را تضمین نمی‌کند، بنابراین برای صدا و ویدئوی زنده، بازی و DNS مناسب است؛ TCP معمولاً برای وب، ایمیل و انتقال فایل به‌کار می‌رود. انتخاب بین آن‌ها به نیاز به اطمینان در برابر کمترین تأخیر بستگی دارد.",
+        "en": "TCP is connection-oriented and reliable: it preserves order, retransmits lost data, and manages congestion, at the cost of more overhead and latency. UDP is connectionless and lighter, with no delivery or ordering guarantee, so it suits live audio/video, games, and DNS; TCP commonly carries web, email, and file transfers. Choose based on reliability versus minimum latency."
+      }
+    },
+    {
+      "id": "http-vs-https",
+      "title": "HTTP HTTPS difference TLS web security فرق",
+      "keywords": ["HTTP", "HTTPS", "TLS", "گواهی", "امنیت", "وب", "certificate"],
+      "answers": {
+        "fa": "HTTPS همان HTTP روی TLS است. TLS هویت دامنه را با گواهی بررسی می‌کند و دادهٔ بین مرورگر و سرور را رمزنگاری و در برابر تغییر محافظت می‌کند؛ اما معتبر بودن HTTPS به‌تنهایی درست یا بی‌خطر بودن محتوای سایت را تضمین نمی‌کند.",
+        "en": "HTTPS is HTTP carried over TLS. TLS authenticates the domain with a certificate and protects browser-server traffic from reading or modification, but HTTPS alone does not guarantee that a site's content is truthful or harmless."
+      }
+    },
+    {
+      "id": "process-vs-thread",
+      "title": "process thread difference operating system پردازش رشته تفاوت",
+      "keywords": ["process", "thread", "پردازش", "رشته", "حافظه", "سیستم عامل"],
+      "answers": {
+        "fa": "Process فضای آدرس و منابع مستقل برنامه را نگه می‌دارد؛ Thread مسیر اجرای سبک‌تری داخل همان Process است و حافظهٔ آن را با Threadهای دیگر به اشتراک می‌گذارد. جداسازی Process امن‌تر ولی ارتباطش پرهزینه‌تر است؛ Thread سبک‌تر است اما همگام‌سازی اشتباه می‌تواند race condition بسازد.",
+        "en": "A process owns an isolated address space and resources; a thread is a lighter execution path inside a process and shares its memory with peer threads. Process isolation is safer but communication costs more; threads are cheaper but incorrect synchronization can cause races."
+      }
+    },
+    {
+      "id": "ram-vs-storage",
+      "title": "RAM storage SSD difference حافظه رم ذخیره سازی",
+      "keywords": ["RAM", "SSD", "storage", "رم", "حافظه", "فضای ذخیره"],
+      "answers": {
+        "fa": "RAM حافظهٔ کاری سریع و فرّار برای داده‌های در حال استفاده است و با خاموش‌شدن پاک می‌شود. SSD یا دیسک ذخیره‌سازی پایدار و کندتری است. کمبود RAM باعث جابه‌جایی بیشتر داده با دیسک و افت سرعت می‌شود؛ خالی‌کردن فضای دیسک جای RAM را نمی‌گیرد.",
+        "en": "RAM is fast volatile working memory for active data and is cleared at power-off. An SSD or disk is slower persistent storage. Low RAM causes more swapping and slowdown; freeing disk space does not substitute for RAM."
+      }
+    },
+    {
+      "id": "cpu-vs-gpu",
+      "title": "CPU GPU difference parallel serial پردازنده گرافیک تفاوت",
+      "keywords": ["CPU", "GPU", "پردازنده", "گرافیک", "موازی", "parallel"],
+      "answers": {
+        "fa": "CPU چند هستهٔ عمومی و قدرتمند برای کنترل، شاخه‌ها و کارهای ترتیبی دارد. GPU هسته‌های سادهٔ بسیار بیشتری برای محاسبات موازی مشابه دارد. GPU همیشه سریع‌تر نیست؛ اندازهٔ مسئله، انتقال حافظه و میزان موازی‌بودن تعیین می‌کنند. JARVIS در اجرای اصلی CPU fallback دارد.",
+        "en": "A CPU has fewer powerful general-purpose cores for control flow and sequential work. A GPU has many simpler lanes for similar parallel calculations. A GPU is not always faster; workload size, memory transfer, and parallelism decide. JARVIS keeps a CPU fallback for core runtime."
+      }
+    },
+    {
+      "id": "dns-vs-dhcp",
+      "title": "DNS DHCP difference network فرق نام دامنه آدرس",
+      "keywords": ["DNS", "DHCP", "فرق", "شبکه", "IP", "دامنه"],
+      "answers": {
+        "fa": "DNS نام دامنه را به رکوردهایی مثل IP ترجمه می‌کند. DHCP تنظیمات شبکه مانند IP، gateway و DNS server را به دستگاه اجاره می‌دهد. اولی سرویس نام‌گذاری است و دومی پیکربندی خودکار میزبان؛ این دو مکمل‌اند، نه جایگزین هم.",
+        "en": "DNS translates domain names into records such as IP addresses. DHCP leases network settings such as an IP, gateway, and DNS server to a device. One is naming and the other automatic host configuration; they complement rather than replace each other."
+      }
+    },
+    {
+      "id": "compiler-vs-interpreter",
+      "title": "compiler interpreter difference کامپایلر مفسر تفاوت",
+      "keywords": ["compiler", "interpreter", "کامپایلر", "مفسر", "کد", "اجرا"],
+      "answers": {
+        "fa": "Compiler کد را پیش از اجرا به نمایش دیگری مثل کد ماشین یا bytecode تبدیل می‌کند؛ Interpreter اجرای برنامه را هنگام خواندن هدایت می‌کند. بسیاری از محیط‌های واقعی ترکیبی‌اند: مثلاً Python ابتدا bytecode می‌سازد و ماشین مجازی آن را اجرا می‌کند، و بعضی runtimeها JIT هم دارند.",
+        "en": "A compiler translates code before execution into another form such as machine code or bytecode; an interpreter drives execution while reading the program. Real runtimes are often hybrid: Python first makes bytecode for a virtual machine, and some runtimes also use JIT compilation."
+      }
+    },
+    {
+      "id": "python-delete-file",
+      "title": "how to delete file in Python آموزش پاک حذف فایل پایتون pathlib unlink",
+      "keywords": ["پاک کردن فایل", "حذف فایل", "پایتون", "Python", "Path.unlink", "os.remove", "چطور"],
+      "answers": {
+        "fa": "در Python برای حذف یک فایل مشخص می‌توانی از `Path(path).unlink()` استفاده کنی. پیش از آن مسیر را resolve و بررسی کن که فایل است، روی root یا پوشهٔ سیستمی نیست و در صورت نیاز تأیید کاربر گرفته شده؛ `missing_ok=True` فقط خطای نبودن فایل را نادیده می‌گیرد. این توضیح آموزشی است و هیچ فایلی اجرا یا حذف نشده است.",
+        "en": "In Python, delete one explicit file with `Path(path).unlink()`. First resolve and validate that it is a file, not a root or protected system path, and obtain user confirmation when appropriate; `missing_ok=True` only suppresses the missing-file error. This is an explanation—no file was executed or deleted."
+      }
+    },
+    {
+      "id": "machine-learning-basics",
+      "title": "machine learning training inference overfitting یادگیری ماشین آموزش استنتاج بیش برازش",
+      "keywords": ["machine learning", "یادگیری ماشین", "training", "inference", "overfitting", "آموزش"],
+      "answers": {
+        "fa": "در یادگیری ماشین، Training پارامترها را با داده و تابع خطا تنظیم می‌کند و Inference از پارامترهای ثابت برای پیش‌بینی جدید استفاده می‌کند. ارزیابی باید روی دادهٔ دیده‌نشده باشد؛ فاصلهٔ زیاد عملکرد train و test نشانهٔ محتمل overfitting است.",
+        "en": "In machine learning, training adjusts parameters using data and a loss function; inference uses fixed parameters for new predictions. Evaluation should use unseen data, and a large train-test performance gap is a likely sign of overfitting."
+      }
+    },
+    {
+      "id": "transformer-attention",
+      "title": "Transformer attention model شبکه ترنسفورمر توجه",
+      "keywords": ["Transformer", "attention", "ترنسفورمر", "توجه", "token", "context"],
+      "answers": {
+        "fa": "Transformer نمایش هر Token را با Attention از Tokenهای مرتبط Context ترکیب می‌کند و سپس شبکهٔ feed-forward آن را پردازش می‌کند. مدل causal فقط به گذشته نگاه می‌کند. طول Context، تعداد لایه‌ها و عرض مدل روی ظرفیت و هزینهٔ محاسبه اثر مستقیم دارند.",
+        "en": "A Transformer uses attention to combine each token with relevant context tokens, followed by feed-forward processing. A causal model only attends to the past. Context length, layer count, and model width directly affect capacity and compute cost."
+      }
+    },
+    {
+      "id": "probability-vs-statistics",
+      "title": "probability statistics difference احتمال آمار تفاوت",
+      "keywords": ["probability", "statistics", "احتمال", "آمار", "تفاوت"],
+      "answers": {
+        "fa": "احتمال از یک مدل و فرض‌ها به سمت پیامدهای ممکن می‌رود؛ آمار از مشاهده‌ها برای برآورد مدل، پارامتر یا عدم‌قطعیت استفاده می‌کند. در عمل این دو پیوسته‌اند: مدل احتمالی پایهٔ بسیاری از روش‌های استنباط آماری است.",
+        "en": "Probability starts with a model and assumptions to describe possible outcomes; statistics starts with observations to estimate a model, parameters, or uncertainty. In practice they connect closely because probabilistic models underpin much statistical inference."
+      }
+    },
+    {
+      "id": "speed-vs-velocity",
+      "title": "speed velocity difference physics سرعت تندی بردار",
+      "keywords": ["speed", "velocity", "سرعت", "تندی", "فیزیک", "بردار"],
+      "answers": {
+        "fa": "تندی کمیتی نرده‌ای و برابر مقدار مسافت طی‌شده بر زمان است؛ velocity یا سرعت برداری علاوه بر مقدار، جهت جابه‌جایی را هم دارد. جسمی که دور یک مسیر بسته برمی‌گردد می‌تواند تندی متوسط مثبت ولی سرعت متوسط صفر داشته باشد.",
+        "en": "Speed is a scalar distance-per-time magnitude; velocity is a vector based on displacement and includes direction. An object returning around a closed path can have positive average speed but zero average velocity."
+      }
+    },
+    {
+      "id": "dna-gene-chromosome",
+      "title": "DNA gene chromosome relationship ژن دی ان ای کروموزوم",
+      "keywords": ["DNA", "gene", "chromosome", "دی ان ای", "ژن", "کروموزوم"],
+      "answers": {
+        "fa": "DNA مولکول حامل اطلاعات ژنتیکی است. Gene ناحیه‌ای از DNA با نقش زیستی مشخص است و Chromosome ساختار بسته‌بندی‌شده‌ای از یک مولکول بلند DNA همراه پروتئین‌هاست. هر کروموزوم ژن‌های فراوان و نواحی تنظیمی دارد.",
+        "en": "DNA is the molecule carrying genetic information. A gene is a DNA region with a biological function, while a chromosome packages one long DNA molecule with proteins. Each chromosome contains many genes and regulatory regions."
+      }
+    },
+    {
+      "id": "star-vs-planet",
+      "title": "star planet difference astronomy ستاره سیاره تفاوت",
+      "keywords": ["star", "planet", "ستاره", "سیاره", "نجوم", "همجوشی"],
+      "answers": {
+        "fa": "ستاره جرم بسیار بزرگی است که در هسته‌اش همجوشی هسته‌ای انرژی تولید می‌کند. سیاره به دور ستاره می‌گردد، جرم کافی برای همجوشی پایدار ندارد و بیشتر نور دیده‌شده‌اش بازتاب نور ستاره است.",
+        "en": "A star is massive enough for nuclear fusion in its core to generate energy. A planet orbits a star, lacks enough mass for sustained fusion, and most of its visible light is reflected starlight."
+      }
+    },
+    {
+      "id": "router-vs-switch",
+      "title": "router switch difference network روتر سوییچ تفاوت شبکه",
+      "keywords": ["router", "switch", "روتر", "سوییچ", "شبکه", "LAN", "IP", "MAC"],
+      "answers": {
+        "fa": "Switch معمولاً دستگاه‌های یک شبکهٔ محلی را با آدرس MAC به هم متصل می‌کند. Router بین شبکه‌های متفاوت بر پایهٔ IP بسته‌ها را مسیریابی می‌کند و اغلب NAT، DHCP یا فایروال هم دارد. در شبکهٔ خانگی ممکن است هر دو نقش داخل یک دستگاه باشند.",
+        "en": "A switch usually connects devices inside one local network using MAC addresses. A router forwards packets between different IP networks and often also provides NAT, DHCP, or firewall functions. A home gateway commonly combines both roles."
+      }
+    },
+    {
+      "id": "nat",
+      "title": "NAT network address translation ترجمه آدرس شبکه",
+      "keywords": ["NAT", "network address translation", "ترجمه آدرس", "private IP", "public IP", "port"],
+      "answers": {
+        "fa": "NAT آدرس و گاهی شمارهٔ پورت بسته‌ها را هنگام عبور میان شبکه‌ها تغییر می‌دهد. در خانه چند دستگاه با IP خصوصی می‌توانند یک IP عمومی را به اشتراک بگذارند. NAT به‌تنهایی جای فایروال یا رمزنگاری را نمی‌گیرد.",
+        "en": "NAT rewrites network addresses and sometimes ports as traffic crosses networks. It lets several private-address devices share one public IP. NAT by itself is not a replacement for a firewall or encryption."
+      }
+    },
+    {
+      "id": "vpn",
+      "title": "VPN virtual private network تونل رمزگذاری شبکه خصوصی مجازی",
+      "keywords": ["VPN", "virtual private network", "تونل", "رمزگذاری", "IP", "privacy"],
+      "answers": {
+        "fa": "VPN ترافیک دستگاه را از یک تونل به سرور VPN می‌فرستد و معمولاً مسیر بین دستگاه و آن سرور را رمز می‌کند. سرویس مقصد IP سرور VPN را می‌بیند، اما خود ارائه‌دهندهٔ VPN هنوز نقطهٔ اعتماد است. VPN ناشناس‌بودن کامل یا امنیت همه‌جانبه تضمین نمی‌کند.",
+        "en": "A VPN sends device traffic through a tunnel to a VPN server and normally encrypts the path to that server. Destinations see the VPN server's IP, but the VPN operator remains a trust point. A VPN does not guarantee complete anonymity or universal security."
+      }
+    },
+    {
+      "id": "firewall",
+      "title": "firewall network traffic rules فایروال امنیت شبکه",
+      "keywords": ["firewall", "فایروال", "port", "network", "rule", "ترافیک"],
+      "answers": {
+        "fa": "Firewall ترافیک ورودی یا خروجی را بر پایهٔ قانون‌هایی مثل آدرس، پورت، پروتکل و وضعیت اتصال اجازه یا مسدود می‌کند. فایروال سطح حمله را کم می‌کند، اما فایل آلوده، رمز ضعیف یا نرم‌افزار آسیب‌پذیر را به‌تنهایی حل نمی‌کند.",
+        "en": "A firewall allows or blocks inbound or outbound traffic using rules such as address, port, protocol, and connection state. It reduces attack surface, but alone cannot fix malicious files, weak passwords, or vulnerable software."
+      }
+    },
+    {
+      "id": "bandwidth-vs-latency",
+      "title": "bandwidth latency difference پهنای باند تاخیر پینگ تفاوت",
+      "keywords": ["bandwidth", "latency", "ping", "پهنای باند", "تاخیر", "شبکه"],
+      "answers": {
+        "fa": "Bandwidth ظرفیت انتقال داده در واحد زمان است؛ latency مدت رسیدن داده از مبدأ به مقصد است. لینک پرظرفیت می‌تواند همچنان تأخیر زیادی داشته باشد. دانلود بزرگ بیشتر از پهنای باند و بازی یا تماس زنده بیشتر از latency و نوسان آن اثر می‌گیرد.",
+        "en": "Bandwidth is data-transfer capacity per unit time; latency is the time data takes to travel. A high-capacity link can still have high delay. Large downloads depend heavily on bandwidth, while games and live calls are especially sensitive to latency and jitter."
+      }
+    },
+    {
+      "id": "cache-vs-cookie",
+      "title": "browser cache cookie difference کش کوکی مرورگر تفاوت",
+      "keywords": ["cache", "cookie", "کش", "کوکی", "browser", "مرورگر", "session"],
+      "answers": {
+        "fa": "Cache نسخه‌ای از منابع مثل تصویر و CSS را نگه می‌دارد تا بارگذاری بعدی سریع‌تر شود. Cookie دادهٔ کوچکی است که سایت برای شناسهٔ نشست، ترجیح‌ها یا وضعیت کاربر در مرورگر ذخیره می‌کند و با درخواست‌های مربوط ارسال می‌شود. پاک‌کردن آن‌ها اثرهای متفاوتی دارد.",
+        "en": "A browser cache stores copies of resources such as images and CSS to speed later loads. A cookie is small site data used for session identifiers, preferences, or state and is sent with matching requests. Clearing them therefore has different effects."
+      }
+    },
+    {
+      "id": "sql-vs-nosql",
+      "title": "SQL NoSQL database difference پایگاه داده رابطه ای غیر رابطه ای",
+      "keywords": ["SQL", "NoSQL", "database", "پایگاه داده", "schema", "transaction"],
+      "answers": {
+        "fa": "پایگاه‌های SQL معمولاً داده را در جدول‌های رابطه‌ای با query استاندارد و تراکنش نگه می‌دارند. NoSQL یک خانواده شامل document، key-value، wide-column و graph است و مدل‌ها و تضمین‌های متفاوتی دارد. انتخاب باید از ساختار داده، queryها، سازگاری و مقیاس واقعی بیاید، نه از سریع‌تر دانستن مطلق یکی.",
+        "en": "SQL databases commonly store relational tables with standard queries and transactions. NoSQL is a family including document, key-value, wide-column, and graph systems with different models and guarantees. Choose from actual data shape, queries, consistency, and scale rather than assuming one is universally faster."
+      }
+    },
+    {
+      "id": "git-vs-github",
+      "title": "Git GitHub difference version control hosting تفاوت گیت گیت هاب",
+      "keywords": ["Git", "GitHub", "گیت", "گیت هاب", "version control", "repository"],
+      "answers": {
+        "fa": "Git ابزار کنترل نسخهٔ توزیع‌شده‌ای است که تاریخچه و branchهای مخزن را محلی مدیریت می‌کند. GitHub یک سرویس میزبانی و همکاری برای مخزن‌های Git با امکاناتی مثل pull request و issue است. Git بدون GitHub هم کار می‌کند.",
+        "en": "Git is a distributed version-control tool that manages repository history and branches locally. GitHub is a Git hosting and collaboration service with features such as pull requests and issues. Git works without GitHub."
+      }
+    },
+    {
+      "id": "frontend-vs-backend",
+      "title": "frontend backend difference web development فرانت اند بک اند تفاوت",
+      "keywords": ["frontend", "backend", "فرانت اند", "بک اند", "server", "browser"],
+      "answers": {
+        "fa": "Frontend بخشی است که کاربر مستقیماً در مرورگر یا برنامه می‌بیند و با آن تعامل دارد. Backend منطق سمت سرور، دسترسی داده، احراز هویت و APIها را اجرا می‌کند. مرز دقیق بسته به معماری پروژه تغییر می‌کند و هر دو باید قرارداد دادهٔ مشترکی داشته باشند.",
+        "en": "The frontend is what users directly see and interact with in a browser or app. The backend runs server-side logic, data access, authentication, and APIs. The exact boundary varies by architecture, and both sides need a shared data contract."
+      }
+    },
+    {
+      "id": "process-memory-stack-heap",
+      "title": "stack heap memory difference پشته هیپ حافظه برنامه",
+      "keywords": ["stack", "heap", "پشته", "هیپ", "memory", "allocation"],
+      "answers": {
+        "fa": "Stack معمولاً frameهای فراخوانی، متغیرهای محلی و اطلاعات بازگشت را با نظم عمر مشخص نگه می‌دارد. Heap برای داده‌هایی با اندازه یا عمر پویاتر استفاده می‌شود و مدیریت آن به allocator و runtime وابسته است. جزئیات دقیق بین زبان‌ها و سیستم‌ها فرق دارد.",
+        "en": "The stack commonly holds call frames, local variables, and return state with structured lifetimes. The heap serves data with more dynamic size or lifetime and is managed by an allocator or runtime. Exact behavior differs across languages and systems."
+      }
+    },
+    {
+      "id": "virtual-machine-vs-container",
+      "title": "virtual machine container difference ماشین مجازی کانتینر تفاوت",
+      "keywords": ["virtual machine", "container", "VM", "Docker", "ماشین مجازی", "کانتینر"],
+      "answers": {
+        "fa": "ماشین مجازی سخت‌افزار مجازی و سیستم‌عامل مهمان خودش را اجرا می‌کند. Container معمولاً kernel میزبان را به اشتراک می‌گذارد و processها و منابع را ایزوله می‌کند، پس سبک‌تر است اما مرز و سازگاری متفاوتی دارد. انتخاب به ایزولاسیون، سیستم‌عامل و عملیات استقرار بستگی دارد.",
+        "en": "A virtual machine runs virtual hardware and its own guest operating system. A container normally shares the host kernel while isolating processes and resources, making it lighter but giving it different compatibility and isolation boundaries. The choice depends on isolation, OS, and deployment needs."
+      }
+    },
+    {
+      "id": "data-structures",
+      "title": "array list stack queue hash map tree data structures ساختمان داده",
+      "keywords": ["data structure", "ساختمان داده", "array", "list", "stack", "queue", "hash map", "tree"],
+      "answers": {
+        "fa": "ساختمان داده روش سازمان‌دهی داده برای عملیات مشخص است. Array دسترسی اندیسی سریع، stack ترتیب آخرین‌ورودی‌اولین‌خروجی، queue ترتیب اولین‌ورودی‌اولین‌خروجی، hash map دسترسی کلیدی متوسط سریع و tree ساختار سلسله‌مراتبی می‌دهد. انتخاب به عملیات پرتکرار و محدودیت حافظه بستگی دارد.",
+        "en": "A data structure organizes data for particular operations. Arrays provide fast indexed access, stacks are last-in-first-out, queues are first-in-first-out, hash maps offer fast average key lookup, and trees represent hierarchy. Choose according to dominant operations and memory constraints."
+      }
+    },
+    {
+      "id": "big-o",
+      "title": "Big O time space complexity پیچیدگی زمانی فضایی الگوریتم",
+      "keywords": ["Big O", "complexity", "پیچیدگی", "O(n)", "algorithm", "الگوریتم"],
+      "answers": {
+        "fa": "Big O نرخ رشد تقریبی زمان یا حافظهٔ الگوریتم را با بزرگ‌شدن ورودی بیان می‌کند و ضریب‌های ثابت و جزئیات سخت‌افزار را کنار می‌گذارد. مثلاً O(n) خطی و O(n²) درجه‌دو رشد می‌کند. این نماد مقایسهٔ مقیاس‌پذیری است، نه اندازه‌گیری دقیق زمان اجرا.",
+        "en": "Big O describes the approximate growth rate of an algorithm's time or space as input grows, ignoring constant factors and hardware detail. For example, O(n) grows linearly and O(n²) quadratically. It compares scalability rather than measuring exact runtime."
+      }
+    },
+    {
+      "id": "recursion",
+      "title": "recursion base case call stack بازگشت تابع شرط پایان",
+      "keywords": ["recursion", "recursive", "بازگشت", "تابع بازگشتی", "base case", "stack"],
+      "answers": {
+        "fa": "در recursion تابع مسئله را به نمونهٔ کوچک‌تر تبدیل و خودش را فراخوانی می‌کند. شرط پایان لازم است تا زنجیره متوقف شود؛ عمق زیاد هم می‌تواند stack را پر کند. بعضی مسئله‌ها با loop خواناتر یا کم‌هزینه‌تر حل می‌شوند.",
+        "en": "Recursion solves a problem by calling the function on a smaller instance. A base case must stop the chain, and excessive depth can exhaust the call stack. Some problems are clearer or cheaper with an iterative loop."
+      }
+    },
+    {
+      "id": "binary-numbers",
+      "title": "binary decimal hexadecimal number system دودویی دهدهی هگزادسیمال",
+      "keywords": ["binary", "decimal", "hexadecimal", "دودویی", "دهدهی", "مبنای عدد"],
+      "answers": {
+        "fa": "در مبنای دو فقط رقم‌های 0 و 1 استفاده می‌شوند و ارزش هر جایگاه توانی از 2 است. دهدهی مبنای 10 و hexadecimal مبنای 16 با رقم‌های 0 تا 9 و A تا F است. نمایش عوض می‌شود، اما مقدار عدد یکی می‌ماند.",
+        "en": "Binary uses only 0 and 1, with each position worth a power of two. Decimal is base 10, while hexadecimal is base 16 using 0-9 and A-F. The representation changes, not the underlying numeric value."
+      }
+    },
+    {
+      "id": "authentication-vs-authorization",
+      "title": "authentication authorization difference احراز هویت مجوز دسترسی تفاوت",
+      "keywords": ["authentication", "authorization", "احراز هویت", "مجوز", "permission", "access"],
+      "answers": {
+        "fa": "Authentication بررسی می‌کند هویت ادعاشدهٔ کاربر چیست؛ authorization تعیین می‌کند آن هویت اجازهٔ انجام چه کاری را دارد. ورود موفق به‌معنای دسترسی به همهٔ منابع نیست. معمولاً احراز هویت پیش از کنترل مجوز انجام می‌شود.",
+        "en": "Authentication verifies the claimed identity; authorization decides what that identity may do. A successful login does not imply access to every resource. Authentication normally precedes permission checks."
+      }
+    },
+    {
+      "id": "symmetric-vs-asymmetric-encryption",
+      "title": "symmetric asymmetric encryption difference رمزنگاری متقارن نامتقارن",
+      "keywords": ["symmetric", "asymmetric", "encryption", "رمزنگاری", "کلید عمومی", "کلید خصوصی"],
+      "answers": {
+        "fa": "رمزنگاری متقارن از یک کلید مشترک برای رمز و بازکردن استفاده می‌کند و برای حجم داده سریع است. نامتقارن یک جفت کلید عمومی و خصوصی دارد و برای تبادل کلید، امضا و هویت مفید است ولی معمولاً سنگین‌تر است. پروتکل‌هایی مثل TLS هر دو را ترکیب می‌کنند.",
+        "en": "Symmetric encryption uses one shared key to encrypt and decrypt and is efficient for bulk data. Asymmetric cryptography uses a public/private key pair for key exchange, signatures, and identity but is usually more expensive. Protocols such as TLS combine both."
+      }
+    },
+    {
+      "id": "malware-virus-ransomware",
+      "title": "malware virus ransomware difference بدافزار ویروس باج افزار",
+      "keywords": ["malware", "virus", "ransomware", "بدافزار", "ویروس", "باج افزار"],
+      "answers": {
+        "fa": "Malware نام کلی نرم‌افزار مخرب است. Virus نوعی بدافزار است که خود را به فایل یا برنامه متصل و تکثیر می‌کند؛ ransomware داده یا سیستم را قفل می‌کند و باج می‌خواهد. پشتیبان آفلاین، به‌روزرسانی و اصل کمترین دسترسی ریسک را کاهش می‌دهند.",
+        "en": "Malware is the broad term for malicious software. A virus attaches to files or programs and replicates; ransomware locks data or systems and demands payment. Offline backups, updates, and least privilege reduce risk."
+      }
+    },
+    {
+      "id": "phishing",
+      "title": "phishing social engineering فیشینگ مهندسی اجتماعی تشخیص",
+      "keywords": ["phishing", "فیشینگ", "social engineering", "مهندسی اجتماعی", "email", "لینک"],
+      "answers": {
+        "fa": "Phishing با پیام یا صفحهٔ جعلی تلاش می‌کند کاربر را به افشای رمز، کد یا اجرای فایل وادار کند. دامنهٔ واقعی، لحن فوریتی، پیوست غیرمنتظره و درخواست اطلاعات حساس را بررسی کن؛ لینک را از مسیر رسمی باز کن و کد یک‌بارمصرف را تحویل نده.",
+        "en": "Phishing uses deceptive messages or pages to induce disclosure of credentials or codes, or execution of a file. Check the actual domain, urgency, unexpected attachments, and requests for secrets; use the official route and never hand over one-time codes."
+      }
+    },
+    {
+      "id": "backup-321",
+      "title": "3-2-1 backup rule پشتیبان گیری قانون بکاپ",
+      "keywords": ["backup", "بکاپ", "پشتیبان", "3-2-1", "restore", "بازیابی"],
+      "answers": {
+        "fa": "قاعدهٔ 3-2-1 یعنی سه نسخه از داده، روی دو نوع رسانه، و دست‌کم یک نسخه خارج از محل یا آفلاین. پشتیبان فقط وقتی قابل‌اعتماد است که بازیابی آن آزمایش شده باشد. Sync به‌تنهایی backup نیست چون حذف یا خرابی می‌تواند همگام شود.",
+        "en": "The 3-2-1 rule keeps three copies of data on two media types with at least one copy off-site or offline. A backup is trustworthy only after restore testing. Sync alone is not a backup because deletion or corruption may synchronize too."
+      }
+    },
+    {
+      "id": "correlation-vs-causation",
+      "title": "correlation causation difference همبستگی علیت تفاوت",
+      "keywords": ["correlation", "causation", "همبستگی", "علیت", "آمار", "cause"],
+      "answers": {
+        "fa": "همبستگی یعنی دو متغیر با هم تغییر می‌کنند؛ علیت یعنی تغییر یکی واقعاً در دیگری اثر ایجاد می‌کند. عامل سوم، جهت معکوس یا تصادف می‌تواند همبستگی بسازد. برای ادعای علی معمولاً طراحی آزمایش، ترتیب زمانی و حذف توضیح‌های رقیب لازم است.",
+        "en": "Correlation means two variables vary together; causation means changing one actually produces an effect in the other. Confounders, reverse direction, or chance can create correlation. Causal claims usually need experimental design, temporal order, and competing explanations addressed."
+      }
+    },
+    {
+      "id": "mean-median-mode-v11",
+      "title": "mean median mode average میانگین میانه نما آمار",
+      "keywords": ["mean", "median", "mode", "میانگین", "میانه", "نما", "آمار"],
+      "answers": {
+        "fa": "Mean جمع مقادیر تقسیم بر تعداد است؛ median مقدار میانی پس از مرتب‌سازی و mode پرتکرارترین مقدار است. دادهٔ پرت می‌تواند mean را شدید جابه‌جا کند، در حالی که median معمولاً مقاوم‌تر است. هیچ‌کدام همیشه بهترین خلاصه نیست.",
+        "en": "The mean is the sum divided by count, the median is the middle sorted value, and the mode is the most frequent value. Outliers can shift the mean strongly while the median is usually more robust. No single measure is always best."
+      }
+    },
+    {
+      "id": "atom-molecule",
+      "title": "atom molecule element compound اتم مولکول عنصر ترکیب",
+      "keywords": ["atom", "molecule", "element", "compound", "اتم", "مولکول", "عنصر", "ترکیب"],
+      "answers": {
+        "fa": "اتم کوچک‌ترین واحد یک عنصر است که ویژگی شیمیایی آن را حفظ می‌کند. مولکول از دو یا چند اتمِ پیوندخورده ساخته می‌شود. اگر اتم‌ها از عنصرهای متفاوت باشند ماده می‌تواند یک ترکیب باشد؛ همهٔ مواد هم الزاماً مولکول مجزا ندارند.",
+        "en": "An atom is the smallest unit of an element retaining its chemical identity. A molecule contains two or more bonded atoms. Atoms of different elements can form a compound, though not every substance consists of discrete molecules."
+      }
+    },
+    {
+      "id": "mass-vs-weight",
+      "title": "mass weight difference جرم وزن گرانش تفاوت",
+      "keywords": ["mass", "weight", "جرم", "وزن", "gravity", "گرانش"],
+      "answers": {
+        "fa": "جرم مقدار اینرسی ماده و واحد SI آن کیلوگرم است. وزن نیروی گرانش وارد بر جرم و برابر تقریبی m×g است و با میدان گرانشی تغییر می‌کند. جرم جسم روی ماه تقریباً ثابت می‌ماند ولی وزنش کمتر می‌شود.",
+        "en": "Mass measures inertia and its SI unit is the kilogram. Weight is gravitational force, approximately m×g, and changes with the gravitational field. An object's mass stays nearly the same on the Moon while its weight decreases."
+      }
+    },
+    {
+      "id": "climate-vs-weather",
+      "title": "climate weather difference آب و هوا اقلیم تفاوت",
+      "keywords": ["climate", "weather", "اقلیم", "آب و هوا", "هوا", "forecast"],
+      "answers": {
+        "fa": "Weather وضعیت کوتاه‌مدت جو در زمان و مکان مشخص است؛ climate الگوی آماری بلندمدت دما، بارش و دیگر متغیرها در یک منطقه است. یک روز سرد به‌تنهایی روند اقلیمی را رد یا تأیید نمی‌کند.",
+        "en": "Weather is short-term atmospheric state at a place and time; climate is the long-term statistical pattern of temperature, precipitation, and other variables in a region. One cold day alone neither proves nor disproves a climate trend."
+      }
+    },
+    {
+      "id": "eclipse-types",
+      "title": "solar lunar eclipse difference خورشید گرفتگی ماه گرفتگی تفاوت",
+      "keywords": ["solar eclipse", "lunar eclipse", "خورشید گرفتگی", "ماه گرفتگی", "کسوف", "خسوف"],
+      "answers": {
+        "fa": "در خورشیدگرفتگی ماه میان زمین و خورشید قرار می‌گیرد و سایه‌اش روی بخشی از زمین می‌افتد. در ماه‌گرفتگی زمین میان خورشید و ماه است و سایهٔ زمین روی ماه می‌افتد. مشاهدهٔ مستقیم خورشید بدون محافظ استاندارد خطرناک است.",
+        "en": "In a solar eclipse the Moon passes between Earth and the Sun, casting a shadow on part of Earth. In a lunar eclipse Earth lies between the Sun and Moon, casting Earth's shadow on the Moon. Direct solar viewing without certified protection is dangerous."
+      }
+    },
+    {
+      "id": "vaccine-basics",
+      "title": "vaccine immune memory واکسن ایمنی حافظه ایمنی",
+      "keywords": ["vaccine", "واکسن", "immune system", "سیستم ایمنی", "antibody", "آنتی بادی"],
+      "answers": {
+        "fa": "واکسن سیستم ایمنی را با یک آنتی‌ژن یا دستور ساخت آن آشنا می‌کند تا پاسخ و حافظهٔ ایمنی شکل بگیرد، بدون اینکه لازم باشد فرد بیماری کامل را تجربه کند. نوع، کارایی و عارضه‌ها بین واکسن‌ها متفاوت است و پرسش پزشکی شخصی باید با منبع سلامت معتبر بررسی شود.",
+        "en": "A vaccine exposes the immune system to an antigen or instructions for it so an immune response and memory can form without requiring the full disease. Types, effectiveness, and adverse effects differ; personal medical questions require an authoritative health source."
+      }
+    },
+    {
+      "id": "evolution-natural-selection",
+      "title": "evolution natural selection فرگشت انتخاب طبیعی ژنتیک",
+      "keywords": ["evolution", "natural selection", "فرگشت", "تکامل", "انتخاب طبیعی", "ژنتیک"],
+      "answers": {
+        "fa": "فرگشت تغییر ویژگی‌های وراثتی جمعیت‌ها در نسل‌هاست. انتخاب طبیعی یکی از سازوکارهاست: تفاوت‌های وراثتی که در محیطی بقا یا تولیدمثل را بیشتر می‌کنند می‌توانند فراوان‌تر شوند. انتخاب طبیعی هدف از پیش تعیین‌شده ندارد و تنها سازوکار فرگشت نیست.",
+        "en": "Evolution is change in inherited population traits across generations. Natural selection is one mechanism: heritable variants that improve survival or reproduction in an environment may become more common. It has no predetermined goal and is not evolution's only mechanism."
+      }
+    },
+    {
+      "id": "ac-vs-dc",
+      "title": "AC DC electricity difference جریان متناوب مستقیم برق تفاوت",
+      "keywords": ["AC", "DC", "alternating current", "direct current", "جریان متناوب", "جریان مستقیم"],
+      "answers": {
+        "fa": "در DC جهت جریان و قطبیت معمولاً ثابت است؛ در AC جهت و مقدار به‌صورت دوره‌ای تغییر می‌کند. باتری‌ها معمولاً DC می‌دهند و شبکهٔ برق AC توزیع می‌کند. مبدل‌ها و منبع تغذیه بین شکل‌ها و سطح‌های ولتاژ تبدیل انجام می‌دهند.",
+        "en": "With DC, current direction and polarity are normally fixed; with AC, direction and magnitude vary periodically. Batteries normally provide DC while power grids distribute AC. Converters and power supplies change between forms and voltage levels."
+      }
+    },
+    {
+      "id": "wifi-vs-bluetooth",
+      "title": "WiFi Bluetooth difference wireless وای فای بلوتوث تفاوت",
+      "keywords": ["Wi-Fi", "Bluetooth", "وای فای", "بلوتوث", "wireless", "برد", "سرعت"],
+      "answers": {
+        "fa": "Wi‑Fi معمولاً برای شبکهٔ محلی و دسترسی اینترنت با نرخ داده و برد بیشتر طراحی شده است. Bluetooth برای ارتباط کم‌مصرف و نزدیک میان لوازم جانبی و دستگاه‌ها رایج است. نسخه، محیط و توان فرستنده روی سرعت و برد واقعی اثر دارند.",
+        "en": "Wi-Fi is generally designed for local networking and internet access with higher throughput and range. Bluetooth commonly serves short-range, lower-power links to peripherals and devices. Version, environment, and transmit power affect real speed and range."
+      }
+    },
+    {
+      "id": "unicode-encoding",
+      "title": "Unicode UTF-8 encoding text یونیکد کدگذاری فارسی",
+      "keywords": ["Unicode", "UTF-8", "encoding", "یونیکد", "کدگذاری", "فارسی"],
+      "answers": {
+        "fa": "Unicode به نویسه‌ها code point می‌دهد؛ UTF‑8 روشی متغیرطول برای تبدیل آن code pointها به byte است. Unicode و UTF‑8 یک چیز نیستند. تعیین encoding هنگام خواندن و نوشتن فایل از خراب‌شدن فارسی و نمایش نویسهٔ جایگزین جلوگیری می‌کند.",
+        "en": "Unicode assigns code points to characters; UTF-8 is a variable-length way to encode those code points as bytes. Unicode and UTF-8 are not the same thing. Declaring the encoding when reading and writing prevents Persian text corruption and replacement characters."
+      }
+    },
+    {
+      "id": "json-vs-xml",
+      "title": "JSON XML difference data format تفاوت جیسون ایکس ام ال",
+      "keywords": ["JSON", "XML", "تفاوت", "data format", "schema", "namespace"],
+      "answers": {
+        "fa": "JSON ساختاری فشرده‌تر برای object و array دارد و در APIهای وب رایج است. XML عناصر، attribute، namespace، mixed content و ابزارهای schema بالغی دارد. انتخاب به قرارداد و ابزارهای اکوسیستم بستگی دارد؛ هیچ‌کدام پایگاه‌داده یا رمزنگاری نیستند.",
+        "en": "JSON offers a compact object-and-array structure common in web APIs. XML supports elements, attributes, namespaces, mixed content, and mature schema tooling. Choose according to contract and ecosystem; neither format is itself a database or encryption."
+      }
+    },
+    {
+      "id": "mean-median-mode",
+      "title": "mean median mode statistics میانگین میانه نما آمار تفاوت",
+      "keywords": ["mean", "median", "mode", "میانگین", "میانه", "نما", "آمار"],
+      "answers": {
+        "fa": "میانگین از تقسیم مجموع داده‌ها بر تعدادشان به‌دست می‌آید، میانه مقدار وسط پس از مرتب‌سازی است و نما پرتکرارترین مقدار است. داده‌های پرت روی میانگین اثر زیادی دارند، اما معمولاً میانه مقاوم‌تر است.",
+        "en": "The mean is the sum divided by the count, the median is the middle value after sorting, and the mode is the most frequent value. Outliers strongly affect the mean, while the median is usually more robust."
+      }
+    },
+    {
+      "id": "variance-standard-deviation",
+      "title": "variance standard deviation spread واریانس انحراف معیار پراکندگی",
+      "keywords": ["variance", "standard deviation", "واریانس", "انحراف معیار", "پراکندگی"],
+      "answers": {
+        "fa": "واریانس میانگینِ مربع فاصلهٔ داده‌ها از میانگین را اندازه می‌گیرد؛ انحراف معیار ریشهٔ دوم واریانس است و با واحد خود داده بیان می‌شود. مقدار بیشتر یعنی پراکندگی بیشتر، نه لزوماً کیفیت کمتر.",
+        "en": "Variance measures the average squared distance from the mean; standard deviation is its square root and uses the data's original unit. A larger value means greater spread, not necessarily lower quality."
+      }
+    },
+    {
+      "id": "correlation-causation",
+      "title": "correlation causation difference همبستگی علیت تفاوت علت معلول",
+      "keywords": ["correlation", "causation", "همبستگی", "علیت", "علت", "معلول"],
+      "answers": {
+        "fa": "همبستگی یعنی دو متغیر همراه هم تغییر می‌کنند، اما به‌تنهایی ثابت نمی‌کند یکی علت دیگری است. عامل مخدوش‌کننده، علیت معکوس یا تصادف می‌تواند الگو را بسازد؛ ادعای علی معمولاً به طراحی آزمایش، زمان‌بندی و شواهد تکمیلی نیاز دارد.",
+        "en": "Correlation means two variables vary together, but it does not by itself prove that one causes the other. Confounding, reverse causality, or chance may create the pattern; causal claims usually need experimental design, temporal order, and supporting evidence."
+      }
+    },
+    {
+      "id": "bayes-theorem",
+      "title": "Bayes theorem conditional probability قضیه بیز احتمال شرطی",
+      "keywords": ["Bayes", "Bayes theorem", "conditional probability", "قضیه بیز", "احتمال شرطی"],
+      "answers": {
+        "fa": "قضیهٔ بیز احتمال یک فرض پس از دیدن شاهد را به‌روزرسانی می‌کند: P(H|E)=P(E|H)P(H)/P(E). نرخ پایه مهم است؛ حتی آزمایشی با دقت بالا می‌تواند برای رویداد بسیار نادر مثبت کاذب قابل‌توجهی داشته باشد.",
+        "en": "Bayes' theorem updates a hypothesis after evidence: P(H|E)=P(E|H)P(H)/P(E). Base rates matter; even a highly accurate test can produce a meaningful share of false positives for a very rare event."
+      }
+    },
+    {
+      "id": "binary-hexadecimal",
+      "title": "binary hexadecimal base conversion دودویی هگز مبنای دو شانزده",
+      "keywords": ["binary", "hexadecimal", "base 2", "base 16", "دودویی", "هگز", "مبنای دو", "مبنای شانزده"],
+      "answers": {
+        "fa": "دودویی از رقم‌های ۰ و ۱ و هگزادسیمال از ۰ تا ۹ و A تا F استفاده می‌کند. هر رقم هگز دقیقاً چهار بیت را نمایش می‌دهد؛ مثلاً 1111₂ برابر F₁₆ و 15₁₀ است.",
+        "en": "Binary uses digits 0 and 1, while hexadecimal uses 0–9 and A–F. Each hexadecimal digit represents exactly four bits; for example, 1111₂ equals F₁₆ and 15₁₀."
+      }
+    },
+    {
+      "id": "stack-queue",
+      "title": "stack queue data structure LIFO FIFO پشته صف ساختمان داده",
+      "keywords": ["stack", "queue", "LIFO", "FIFO", "پشته", "صف", "ساختمان داده"],
+      "answers": {
+        "fa": "پشته معمولاً LIFO است: آخرین ورودی زودتر خارج می‌شود؛ مانند Undo یا پشتهٔ فراخوانی. صف معمولاً FIFO است: اولین ورودی زودتر خارج می‌شود؛ مانند صف کارها. انتخاب به ترتیب پردازش موردنیاز بستگی دارد.",
+        "en": "A stack is normally LIFO: the last item added leaves first, as in undo history or a call stack. A queue is normally FIFO: the first item added leaves first, as in a work queue. Choose according to the required processing order."
+      }
+    },
+    {
+      "id": "process-thread-v11",
+      "title": "process thread difference concurrency فرایند نخ ترد تفاوت",
+      "keywords": ["process", "thread", "concurrency", "فرایند", "پردازه", "نخ", "ترد"],
+      "answers": {
+        "fa": "فرایند فضای آدرس و منابع مستقل‌تری دارد؛ نخ‌ها درون یک فرایند حافظه و منابع زیادی را مشترک‌اند. نخ سبک‌تر است، اما اشتراک حافظه خطر race condition دارد؛ جداسازی فرایند معمولاً ایمن‌تر ولی پرهزینه‌تر است.",
+        "en": "A process has a more independent address space and resources; threads within one process share much of its memory and resources. Threads are lighter, but shared state risks race conditions; process isolation is usually safer but costlier."
+      }
+    },
+    {
+      "id": "compiler-interpreter",
+      "title": "compiler interpreter difference کامپایلر مفسر تفاوت",
+      "keywords": ["compiler", "interpreter", "کامپایلر", "مفسر", "ترجمه کد"],
+      "answers": {
+        "fa": "کامپایلر معمولاً پیش از اجرا کد را به شکل دیگری مانند کد ماشین تبدیل می‌کند؛ مفسر هنگام اجرا دستورها یا نمایش میانی را پردازش می‌کند. بسیاری از زبان‌ها ترکیبی‌اند—مثلاً bytecode و JIT—پس این دوگانه همیشه مطلق نیست.",
+        "en": "A compiler usually transforms code before execution, often into machine code; an interpreter processes instructions or an intermediate form during execution. Many languages combine approaches, such as bytecode and JIT, so the distinction is not always absolute."
+      }
+    },
+    {
+      "id": "hash-encryption",
+      "title": "hash encryption difference hashing رمزنگاری هش تفاوت",
+      "keywords": ["hash", "encryption", "hashing", "هش", "رمزنگاری", "رمزگذاری"],
+      "answers": {
+        "fa": "رمزنگاری با داشتن کلید مناسب برگشت‌پذیر است و محرمانگی می‌دهد؛ هش امن یک‌طرفه و با طول خروجی ثابت است و برای بررسی تمامیت یا نگهداری امن‌تر رمز عبور با salt و KDF به‌کار می‌رود. هش، رمزنگاری و encoding یکی نیستند.",
+        "en": "Encryption is reversible with the proper key and provides confidentiality; a secure hash is one-way with fixed-length output and supports integrity checks or safer password storage with a salt and KDF. Hashing, encryption, and encoding are different operations."
+      }
+    },
+    {
+      "id": "symmetric-asymmetric-crypto",
+      "title": "symmetric asymmetric encryption key رمزنگاری متقارن نامتقارن کلید",
+      "keywords": ["symmetric", "asymmetric", "public key", "private key", "متقارن", "نامتقارن", "کلید عمومی", "کلید خصوصی"],
+      "answers": {
+        "fa": "رمزنگاری متقارن از یک راز مشترک برای رمزگذاری و رمزگشایی استفاده می‌کند و سریع است. نامتقارن جفت کلید عمومی/خصوصی دارد و برای تبادل کلید و امضا مناسب است. سامانه‌های واقعی مانند TLS معمولاً هر دو را ترکیب می‌کنند.",
+        "en": "Symmetric encryption uses a shared secret for encryption and decryption and is fast. Asymmetric cryptography uses a public/private key pair and supports key exchange and signatures. Real systems such as TLS normally combine both."
+      }
+    },
+    {
+      "id": "database-acid",
+      "title": "ACID database transaction پایگاه داده تراکنش اتمی سازگاری",
+      "keywords": ["ACID", "database transaction", "تراکنش", "پایگاه داده", "atomicity", "isolation"],
+      "answers": {
+        "fa": "ACID چهار ویژگی تراکنش است: اتمی‌بودن، سازگاری، جداسازی و ماندگاری. هدف این است که تغییرهای چندمرحله‌ای یا کامل اعمال شوند یا برگردند و اجرای هم‌زمان و خرابی، داده را به وضعیت نامعتبر نبرد؛ سطح تضمین به پایگاه‌داده و تنظیمات بستگی دارد.",
+        "en": "ACID names four transaction properties: atomicity, consistency, isolation, and durability. Multi-step changes should commit completely or roll back, while concurrency and failure should not leave invalid state; exact guarantees depend on the database and configuration."
+      }
+    },
+    {
+      "id": "database-index",
+      "title": "database index query performance ایندکس پایگاه داده سرعت جستجو",
+      "keywords": ["database index", "index", "query performance", "ایندکس", "پایگاه داده", "سرعت کوئری"],
+      "answers": {
+        "fa": "ایندکس ساختاری کمکی برای پیدا کردن سریع‌تر ردیف‌هاست و می‌تواند مرتب‌سازی یا join را هم بهتر کند. در عوض فضا می‌گیرد و درج، حذف و به‌روزرسانی را پرهزینه‌تر می‌کند؛ ستون و ترتیب ایندکس باید براساس الگوی query انتخاب شود.",
+        "en": "A database index is an auxiliary structure that can locate rows faster and may improve sorting or joins. It consumes space and makes inserts, deletes, and updates costlier; columns and ordering should follow actual query patterns."
+      }
+    },
+    {
+      "id": "classification-regression",
+      "title": "classification regression machine learning طبقه بندی رگرسیون یادگیری ماشین",
+      "keywords": ["classification", "regression", "machine learning", "طبقه بندی", "رگرسیون", "یادگیری ماشین"],
+      "answers": {
+        "fa": "طبقه‌بندی یک برچسب گسسته مانند spam/not-spam پیش‌بینی می‌کند؛ رگرسیون مقدار پیوسته مانند قیمت را. معیار ارزیابی باید با مسئله هماهنگ باشد: accuracy همیشه برای طبقه‌بندی نامتوازن مناسب نیست و MAE یا RMSE جنبه‌های متفاوت خطای رگرسیون را نشان می‌دهند.",
+        "en": "Classification predicts a discrete label such as spam/not-spam; regression predicts a continuous value such as price. Metrics must match the problem: accuracy can mislead on imbalanced classes, while MAE and RMSE emphasize different regression errors."
+      }
+    },
+    {
+      "id": "overfitting-generalization",
+      "title": "overfitting underfitting generalization train validation بیش برازش تعمیم",
+      "keywords": ["overfitting", "underfitting", "generalization", "train", "validation", "بیش برازش", "کم برازش", "تعمیم"],
+      "answers": {
+        "fa": "بیش‌برازش یعنی مدل دادهٔ آموزش را خوب یاد گرفته اما روی نمونه‌های ندیده ضعیف است؛ کم‌برازش یعنی حتی الگوی آموزش را هم کافی نگرفته است. جداسازی Train/Validation/Test، جلوگیری از نشت داده، منظم‌سازی و ارزیابی روی دادهٔ ندیده برای سنجش تعمیم ضروری‌اند.",
+        "en": "Overfitting means a model fits training data well but performs poorly on unseen examples; underfitting means it has not captured even the training pattern. Separate train/validation/test sets, leakage prevention, regularization, and held-out evaluation are essential for measuring generalization."
+      }
+    },
+    {
+      "id": "precision-recall",
+      "title": "precision recall confusion matrix دقت بازیابی ماتریس درهم ریختگی",
+      "keywords": ["precision", "recall", "confusion matrix", "دقت", "بازیابی", "حساسیت", "مثبت کاذب"],
+      "answers": {
+        "fa": "Precision می‌پرسد از مواردی که مثبت اعلام شدند چند مورد واقعاً مثبت بودند؛ Recall می‌پرسد از همهٔ مثبت‌های واقعی چند مورد پیدا شدند. وقتی هزینهٔ مثبت کاذب و منفی کاذب فرق دارد، این دو معیار از accuracy گویاترند.",
+        "en": "Precision asks what fraction of predicted positives were truly positive; recall asks what fraction of all true positives were found. When false positives and false negatives have different costs, these metrics are more informative than accuracy."
+      }
+    },
+    {
+      "id": "gradient-descent",
+      "title": "gradient descent learning rate optimization گرادیان کاهشی نرخ یادگیری",
+      "keywords": ["gradient descent", "learning rate", "optimization", "گرادیان کاهشی", "نزول گرادیان", "نرخ یادگیری"],
+      "answers": {
+        "fa": "گرادیان کاهشی پارامترها را در جهت کاهش تابع خطا به‌روزرسانی می‌کند. نرخ یادگیری خیلی بزرگ می‌تواند از جواب عبور کند یا واگرا شود و نرخ خیلی کوچک آموزش را کند می‌کند؛ مقیاس ویژگی‌ها و نوع optimizer نیز مؤثرند.",
+        "en": "Gradient descent updates parameters in a direction that reduces the loss. A learning rate that is too large may overshoot or diverge, while one that is too small makes training slow; feature scaling and optimizer choice also matter."
+      }
+    },
+    {
+      "id": "atom-ion-isotope",
+      "title": "atom ion isotope difference اتم یون ایزوتوپ تفاوت",
+      "keywords": ["atom", "ion", "isotope", "اتم", "یون", "ایزوتوپ", "پروتون", "نوترون"],
+      "answers": {
+        "fa": "اتم با تعداد پروتون‌هایش عنصر را تعیین می‌کند. یون اتم یا مولکولی است که با گرفتن یا از دست‌دادن الکترون بار دارد؛ ایزوتوپ‌های یک عنصر پروتون برابر و نوترون متفاوت دارند. تغییر الکترون عنصر را عوض نمی‌کند، تغییر تعداد پروتون می‌کند.",
+        "en": "An atom's proton count determines its element. An ion is an atom or molecule charged by gaining or losing electrons; isotopes of one element have the same proton count but different neutron counts. Changing electrons does not change the element, but changing protons does."
+      }
+    },
+    {
+      "id": "dna-rna",
+      "title": "DNA RNA difference genetics دی ان ای آر ان ای تفاوت ژنتیک",
+      "keywords": ["DNA", "RNA", "genetics", "دی ان ای", "آر ان ای", "ژنتیک", "ژن"],
+      "answers": {
+        "fa": "DNA در بیشتر جانداران مخزن پایدارتر اطلاعات ژنتیکی و معمولاً دورشته‌ای است؛ RNA معمولاً تک‌رشته‌ای و در انتقال، تنظیم و اجرای اطلاعات نقش دارد. RNA فقط پیام‌رسان نیست و انواعی مانند rRNA، tRNA و RNAهای تنظیمی دارد.",
+        "en": "DNA is the more stable genetic information store in most organisms and is usually double-stranded; RNA is usually single-stranded and helps transfer, regulate, and execute information. RNA is not only messenger RNA; it includes rRNA, tRNA, and regulatory forms."
+      }
+    },
+    {
+      "id": "photosynthesis-respiration",
+      "title": "photosynthesis cellular respiration فتوسنتز تنفس سلولی گیاه",
+      "keywords": ["photosynthesis", "cellular respiration", "فتوسنتز", "تنفس سلولی", "گیاه", "گلوکز"],
+      "answers": {
+        "fa": "فتوسنتز با استفاده از نور، دی‌اکسیدکربن و آب، انرژی را در مولکول‌های آلی ذخیره و اکسیژن آزاد می‌کند. تنفس سلولی انرژی شیمیایی این مولکول‌ها را برای ساخت ATP آزاد می‌کند. گیاهان هم فتوسنتز و هم تنفس سلولی دارند.",
+        "en": "Photosynthesis uses light, carbon dioxide, and water to store energy in organic molecules and release oxygen. Cellular respiration releases chemical energy from those molecules to make ATP. Plants perform both photosynthesis and cellular respiration."
+      }
+    },
+    {
+      "id": "ph-scale",
+      "title": "pH acid base logarithmic اسیدی بازی مقیاس پی اچ",
+      "keywords": ["pH", "acid", "base", "اسید", "باز", "قلیایی", "لگاریتم"],
+      "answers": {
+        "fa": "pH معیاری لگاریتمی مرتبط با فعالیت یون هیدروژن است؛ در محلول‌های آبی معمول، مقدار کمتر اسیدی‌تر و مقدار بیشتر بازی‌تر است و ۷ در شرایط استاندارد تقریباً خنثی است. یک واحد تغییر pH تقریباً تغییر ده‌برابری در فعالیت یون هیدروژن است.",
+        "en": "pH is a logarithmic measure related to hydrogen-ion activity; in ordinary aqueous solutions, lower values are more acidic, higher values more basic, and 7 is approximately neutral under standard conditions. One pH unit is roughly a tenfold change in hydrogen-ion activity."
+      }
+    },
+    {
+      "id": "inflation-basics",
+      "title": "inflation purchasing power CPI تورم قدرت خرید شاخص قیمت",
+      "keywords": ["inflation", "purchasing power", "CPI", "تورم", "قدرت خرید", "شاخص قیمت"],
+      "answers": {
+        "fa": "تورم افزایش پایدار سطح عمومی قیمت‌هاست، نه صرفاً گران‌شدن یک کالا. با ثابت‌ماندن درآمد اسمی، قدرت خرید کاهش می‌یابد. شاخص‌هایی مانند CPI یک سبد مشخص را دنبال می‌کنند و تجربهٔ هر خانوار می‌تواند با میانگین شاخص فرق داشته باشد.",
+        "en": "Inflation is a sustained rise in the general price level, not merely one item becoming expensive. If nominal income stays fixed, purchasing power falls. Measures such as CPI track a defined basket, so a household's experience can differ from the index average."
+      }
+    },
+    {
+      "id": "gdp-basics",
+      "title": "GDP nominal real per capita تولید ناخالص داخلی سرانه واقعی اسمی",
+      "keywords": ["GDP", "nominal GDP", "real GDP", "per capita", "تولید ناخالص داخلی", "سرانه"],
+      "answers": {
+        "fa": "GDP ارزش بازار کالاها و خدمات نهایی تولیدشده در یک اقتصاد طی دوره‌ای مشخص است. GDP واقعی اثر تغییر قیمت را تعدیل می‌کند و سرانه آن را بر جمعیت تقسیم می‌کند؛ بااین‌حال GDP به‌تنهایی توزیع درآمد، کار خانگی یا کیفیت زندگی را کامل نشان نمی‌دهد.",
+        "en": "GDP is the market value of final goods and services produced in an economy over a period. Real GDP adjusts for price changes and per-capita GDP divides by population; GDP alone does not fully capture income distribution, unpaid work, or quality of life."
+      }
+    },
+    {
+      "id": "supply-demand",
+      "title": "supply demand equilibrium عرضه تقاضا تعادل قیمت اقتصاد",
+      "keywords": ["supply", "demand", "equilibrium", "عرضه", "تقاضا", "تعادل", "قیمت"],
+      "answers": {
+        "fa": "در مدل ساده، افزایش قیمت معمولاً مقدار تقاضا را کم و مقدار عرضه را زیاد می‌کند؛ نقطهٔ تقاطع منحنی‌ها تعادل است. تغییر درآمد، فناوری، سلیقه یا هزینهٔ نهاده خود منحنی‌ها را جابه‌جا می‌کند؛ این مدل ساده همهٔ بازارهای واقعی را کامل توضیح نمی‌دهد.",
+        "en": "In a simple model, a higher price generally reduces quantity demanded and increases quantity supplied; their intersection is equilibrium. Income, technology, preferences, or input costs shift the curves themselves; this simplified model does not fully describe every real market."
+      }
+    },
+    {
+      "id": "critical-source-evaluation",
+      "title": "evaluate source credibility evidence تحقیق منبع معتبر ارزیابی شواهد",
+      "keywords": ["source credibility", "evaluate evidence", "primary source", "منبع معتبر", "ارزیابی منبع", "شواهد", "تحقیق"],
+      "answers": {
+        "fa": "برای ارزیابی منبع، نویسنده و تخصص، تاریخ، شواهد و روش، تعارض منافع و امکان تأیید مستقل را بررسی کن. برای ادعاهای فنی و آماری، منبع اولیه یا نهاد رسمی را ترجیح بده؛ تعداد زیاد لینک‌های ضعیف جای یک شاهد مستقیم و مرتبط را نمی‌گیرد.",
+        "en": "To evaluate a source, check authorship and expertise, date, evidence and methods, conflicts of interest, and independent corroboration. For technical or statistical claims, prefer primary sources or official institutions; many weak links do not replace one direct, relevant source."
+      }
+    },
+    {
+      "id": "http-status-codes",
+      "title": "HTTP status codes 2xx 3xx 4xx 5xx کد وضعیت وب",
+      "keywords": ["HTTP status", "2xx", "3xx", "4xx", "5xx", "کد وضعیت", "404", "500"],
+      "answers": {
+        "fa": "کدهای HTTP در خانواده‌اند: 2xx موفقیت، 3xx تغییر مسیر، 4xx مشکل درخواست یا دسترسی سمت client و 5xx خطای پردازش سمت server. مثلاً 404 یعنی منبع پیدا نشد و 500 یک خطای عمومی داخلی سرور است. متن پاسخ و مستندات API هم باید بررسی شود.",
+        "en": "HTTP status families are: 2xx success, 3xx redirection, 4xx client request or access problems, and 5xx server processing errors. For example, 404 means not found and 500 is a generic internal server error. Also inspect the response body and API documentation."
+      }
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "release": "JARVIS Intelligence v15",
+  "base_application_version": "v0.11.0",
+  "dataset_version": "dataset_v007",
+  "created_utc": "2026-09-04T19:15:52.719027+00:00",
+  "status": "release_gate_passed",
+  "runtime_changes": [
+    "semantic intent routing before unknown/web fallback",
+    "context-aware regex/solver priority to prevent collisions",
+    "local reasoning v15 solvers for probability, combinatorics, rate/work, age, proportion, sequence and multi-step arithmetic",
+    "safe AST-based code tracing with code-before-math priority",
+    "semantic translation and rewrite routing with inline-text extraction",
+    "constraint extraction, response verification and repair",
+    "low-confidence smart-brain/reasoning fallback before web/unknown where safe"
+  ],
+  "learned_components": {
+    "neural_core": {
+      "model": "models/jarvis_nano_v13.npz",
+      "parameters": 23077376,
+      "sha256": "cafc07e12ddd6b00e07885a421348515396a7a58cb7351d78a2da13992220f1d",
+      "note": "unchanged from v13; retained because no new core-neural candidate passed a trustworthy release gate in this environment"
+    },
+    "semantic_router_v15": {
+      "model": "models/semantic_router_v15.npz",
+      "parameters": 3145740,
+      "sha256": "533116946afb974eb7d4f595369a77eaecdf5d263a2c714f819e462057224534",
+      "test_accuracy": 1.0,
+      "test_mean_confidence": 0.9056374589377016,
+      "test_mean_margin": 0.8930780153098931
+    },
+    "combined_model_oriented_parameters": 26223116
+  },
+  "datasets": {
+    "total_examples": 36530,
+    "new_examples_v15": 21800,
+    "source_dataset_count": 500,
+    "cross_split_concept_leakage": 0,
+    "packs": {
+      "generalization": {
+        "source_dataset_count": 100,
+        "examples": 5000,
+        "unique_inputs": 5000,
+        "unique_input_ratio": 1.0,
+        "semantic_families": 25,
+        "duplicate_input_count": 0,
+        "fa_language_contamination": 0,
+        "en_language_contamination": 0,
+        "linguistic_sanity_flags": 0,
+        "unique_outputs": 4996,
+        "unique_output_ratio": 0.9992,
+        "duplicate_output_count": 4,
+        "format": "jarvis-v15-pack-manifest",
+        "dataset_version": "dataset_v007",
+        "pack": "generalization",
+        "seed": 15092026
+      },
+      "reasoning": {
+        "source_dataset_count": 100,
+        "examples": 5000,
+        "unique_inputs": 5000,
+        "unique_input_ratio": 1.0,
+        "semantic_families": 50,
+        "duplicate_input_count": 0,
+        "fa_language_contamination": 300,
+        "en_language_contamination": 0,
+        "linguistic_sanity_flags": 0,
+        "unique_outputs": 5000,
+        "unique_output_ratio": 1.0,
+        "duplicate_output_count": 0,
+        "format": "jarvis-v15-pack-manifest",
+        "dataset_version": "dataset_v007",
+        "pack": "reasoning",
+        "seed": 15092026
+      },
+      "persian": {
+        "source_dataset_count": 100,
+        "examples": 4000,
+        "unique_inputs": 4000,
+        "unique_input_ratio": 1.0,
+        "semantic_families": 40,
+        "duplicate_input_count": 0,
+        "fa_language_contamination": 0,
+        "en_language_contamination": 0,
+        "linguistic_sanity_flags": 0,
+        "unique_outputs": 4000,
+        "unique_output_ratio": 1.0,
+        "duplicate_output_count": 0,
+        "format": "jarvis-v15-pack-manifest",
+        "dataset_version": "dataset_v007",
+        "pack": "persian",
+        "seed": 15092026
+      },
+      "routing": {
+        "source_dataset_count": 100,
+        "examples": 4800,
+        "unique_inputs": 4800,
+        "unique_input_ratio": 1.0,
+        "semantic_families": 12,
+        "duplicate_input_count": 0,
+        "fa_language_contamination": 1300,
+        "en_language_contamination": 0,
+        "linguistic_sanity_flags": 0,
+        "classification": true,
+        "labels": {
+          "code_trace": 400,
+          "coding": 400,
+          "constraint_writing": 400,
+          "desktop_command": 400,
+          "fresh_information": 400,
+          "general_question": 400,
+          "logic": 400,
+          "math": 400,
+          "probability": 400,
+          "rewrite": 400,
+          "translation": 400,
+          "word_problem": 400
+        },
+        "class_balance_min": 400,
+        "class_balance_max": 400,
+        "conflicting_input_labels": 0,
+        "format": "jarvis-v15-pack-manifest",
+        "dataset_version": "dataset_v007",
+        "pack": "routing",
+        "seed": 15092026
+      },
+      "constraints": {
+        "source_dataset_count": 100,
+        "examples": 3000,
+        "unique_inputs": 3000,
+        "unique_input_ratio": 1.0,
+        "semantic_families": 30,
+        "duplicate_input_count": 0,
+        "fa_language_contamination": 0,
+        "en_language_contamination": 0,
+        "linguistic_sanity_flags": 0,
+        "unique_outputs": 3000,
+        "unique_output_ratio": 1.0,
+        "duplicate_output_count": 0,
+        "format": "jarvis-v15-pack-manifest",
+        "dataset_version": "dataset_v007",
+        "pack": "constraints",
+        "seed": 15092026
+      }
+    },
+    "manifest_sha256": "a526e6d6138710e6a15c38e36e0b0f69230dccff01bb145c91e88167babe2b63",
+    "tokenizer_round_trip_accuracy": 1.0,
+    "unknown_token_rate": 0.0
+  },
+  "verification": {
+    "pytest_main_tests_passed": 672,
+    "pytest_subtests_passed": 231,
+    "pytest_failures": 0,
+    "verification_method": "all 27 test modules executed successfully in independent batches; v15 release tests rerun after final runtime fixes",
+    "v15_targeted_holdout": {
+      "passed": 22,
+      "total": 22,
+      "accuracy": 1.0
+    },
+    "v14_same_holdout": {
+      "passed": 4,
+      "total": 22,
+      "accuracy": 0.18181818181818182
+    },
+    "holdout_exact_training_overlap": 0,
+    "web_and_tools_disabled_in_holdout": true
+  },
+  "limitations": [
+    "The 22/22 holdout score measures the targeted failure domains fixed in v15 and is not a general intelligence score.",
+    "The 23M decoder-only neural core itself was not retrained for this release; most of the measurable gain comes from routing, learned semantic dispatch, local reasoning, code understanding, constraint following and higher-quality training assets."
+  ]
+}

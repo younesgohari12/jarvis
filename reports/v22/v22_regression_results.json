@@ -1,0 +1,8 @@
+{
+ "suite": "tests/ (v21 baseline + v22 suite)",
+ "passed": 989,
+ "subtests": 585,
+ "failures": 0,
+ "baseline_required": "955 passed / 585 subtests",
+ "raw_tail": "989 passed, 585 subtests passed in 39.86s"
+}

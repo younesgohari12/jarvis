@@ -1,0 +1,21 @@
+{
+  "benchmark": "v17_runtime_holdout_40",
+  "total": 40,
+  "v17_passed": 40,
+  "v17_accuracy": 1.0,
+  "tools_web_forbidden": true,
+  "exact_overlap_dataset_v008": 0,
+  "scope": [
+    "biased_binomial_probability",
+    "permutation_and_ranked_selection",
+    "two_dice_sum_probability",
+    "speed_distance_time",
+    "worker_productivity_scaling",
+    "transitive_reasoning",
+    "prime_divisibility_semantics",
+    "python_code_generation",
+    "ratio_split",
+    "persian_rewrite_fidelity"
+  ],
+  "note": "This is a targeted holdout for v17 failure families, not a general-IQ claim. The prompts are excluded from dataset_v008 by the dataset builder."
+}

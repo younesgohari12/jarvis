@@ -1,0 +1,24 @@
+{
+  "format": "jarvis-alignment-decision-v1",
+  "source_model": "models/jarvis_nano_v07.npz",
+  "parameters": 23077376,
+  "steps": 400,
+  "device": "cpu",
+  "pretrained_source": null,
+  "initial_validation_loss": 3.897027,
+  "final_validation_loss": 3.519131,
+  "final_perplexity": 33.755095,
+  "mean_training_loss": 3.914089,
+  "training_seconds": 110.801,
+  "generation_review": {
+    "accepted_samples": 0,
+    "reviewed_samples": 3,
+    "quality_guard_reasons": [
+      "invalid_or_structured_token",
+      "repetition_guard"
+    ],
+    "observed_failure": "tool-token leakage followed by repeated conjunction tokens"
+  },
+  "decision": "rejected_not_released",
+  "decision_reason": "Teacher-forced validation improved, but deterministic generation quality regressed; the original release checkpoint remains active."
+}

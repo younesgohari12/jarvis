@@ -1,0 +1,129 @@
+{
+  "format": "jarvis-bilingual-fluency-metrics-v1",
+  "version": "1.1.0",
+  "dataset_examples": 105,
+  "train_examples": 91,
+  "held_out_examples": 14,
+  "label_counts": {
+    "en:advice": 5,
+    "en:caption": 5,
+    "en:formal_message": 5,
+    "en:rewrite": 5,
+    "en:story": 5,
+    "en:support": 5,
+    "en:text": 5,
+    "fa:advice": 10,
+    "fa:caption": 10,
+    "fa:formal_message": 10,
+    "fa:rewrite": 10,
+    "fa:story": 10,
+    "fa:support": 10,
+    "fa:text": 10
+  },
+  "held_out_cases": 14,
+  "classification_accuracy": 1.0,
+  "generation_acceptance": 1.0,
+  "predictions": [
+    {
+      "prompt": "How can I give useful feedback to a colleague",
+      "expected": "en:advice",
+      "predicted": "en:advice",
+      "confidence": 0.4015,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "Create an engaging caption for a software update",
+      "expected": "en:caption",
+      "predicted": "en:caption",
+      "confidence": 0.6575,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "Draft a professional note about missing documents",
+      "expected": "en:formal_message",
+      "predicted": "en:formal_message",
+      "confidence": 0.3817,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "Rephrase this politely: send me the documents today",
+      "expected": "en:rewrite",
+      "predicted": "en:rewrite",
+      "confidence": 0.4413,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "Write a concise story about a difficult choice",
+      "expected": "en:story",
+      "predicted": "en:story",
+      "confidence": 0.5802,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "I am anxious about the result of my work",
+      "expected": "en:support",
+      "predicted": "en:support",
+      "confidence": 0.1871,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "Write something fluent about starting again",
+      "expected": "en:text",
+      "predicted": "en:text",
+      "confidence": 0.1966,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "چطور بازخورد بهتری به همکارم بدهم",
+      "expected": "fa:advice",
+      "predicted": "fa:advice",
+      "confidence": 0.2166,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "کپشن کوتاه برای شروع یک مسیر تازه می‌خواهم",
+      "expected": "fa:caption",
+      "predicted": "fa:caption",
+      "confidence": 0.2955,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "متن رسمی تأیید دریافت درخواست را بنویس",
+      "expected": "fa:formal_message",
+      "predicted": "fa:formal_message",
+      "confidence": 0.3999,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "این عبارت را کوتاه و روان کن: در این لحظه از زمان امکان پاسخ دادن وجود ندارد",
+      "expected": "fa:rewrite",
+      "predicted": "fa:rewrite",
+      "confidence": 0.394,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "داستان خیلی کوتاهی درباره انتخاب دشوار بنویس",
+      "expected": "fa:story",
+      "predicted": "fa:story",
+      "confidence": 0.6665,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "نگران نتیجه کاری هستم که انجام داده‌ام",
+      "expected": "fa:support",
+      "predicted": "fa:support",
+      "confidence": 0.1126,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "درباره خلاقیت یک پاراگراف طبیعی بنویس",
+      "expected": "fa:text",
+      "predicted": "fa:text",
+      "confidence": 0.6249,
+      "generation_accepted": true
+    }
+  ],
+  "minimum_accuracy": 0.85,
+  "accepted_for_release": true,
+  "pretrained_source": null
+}

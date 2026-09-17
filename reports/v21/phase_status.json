@@ -1,0 +1,58 @@
+{
+  "1_universal_verification": {
+    "implemented": true,
+    "limits": "A common source-to-slots/events/units/candidate/rendered-answer protocol with bounded extractors. Not universal natural-language understanding."
+  },
+  "2_world_model": {
+    "implemented": true,
+    "limits": "Typed entities, ownership ledger, event order, conservation, dependencies. General free-text causal worlds remain unsupported."
+  },
+  "3_execution_graph_v2": {
+    "implemented": true,
+    "operations": [
+      "compare",
+      "change_over_time",
+      "dependency",
+      "transfer",
+      "ownership",
+      "constraint_check",
+      "cause_effect"
+    ],
+    "limits": "All execute through GraphExecutorV21; some currently require structured graphs rather than arbitrary natural language."
+  },
+  "4_reasoning_dataset": {
+    "rows": 20000,
+    "count_target_met": true,
+    "semantic_program_groups": 9713,
+    "broad_linguistic_quality_target_met": false
+  },
+  "5_core_adapter": {
+    "trained": true,
+    "active": true,
+    "trainable_parameters": 73728,
+    "core_index_improvement_proven": false
+  },
+  "6_code": {
+    "rows": 10000,
+    "tasks": [
+      "generate",
+      "debug",
+      "explain",
+      "refactor",
+      "test"
+    ],
+    "implemented": true,
+    "general_arbitrary_code_model": false
+  },
+  "7_memory": {
+    "implemented": true,
+    "limits": "Explicit episodic topic recall, attributed user semantic assertions, ambiguity questions, disable/forget support on existing SQLite tables."
+  },
+  "8_benchmark": {
+    "cases": 500,
+    "first_unseen_v21": 386,
+    "final_retest_v21": 406,
+    "unique_numeric_masked_templates": 128,
+    "external_human_benchmark": false
+  }
+}

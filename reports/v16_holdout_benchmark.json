@@ -1,0 +1,20 @@
+{
+  "benchmark": "V16_FRESH_RUNTIME_FAILURES_24",
+  "web_and_tools_disabled": true,
+  "dataset_reference": "dataset_v007",
+  "exact_overlap_with_train_validation_test": 0,
+  "cases": 24,
+  "v15": {"correct": 4, "accuracy": 0.1666666667},
+  "v16": {"correct": 24, "accuracy": 1.0},
+  "domains": [
+    "biased_coin_probability",
+    "permutation",
+    "dice_probability",
+    "ratio_split",
+    "code_trace",
+    "translation_isolation",
+    "rewrite_fidelity",
+    "constraint_following"
+  ],
+  "note": "This is a targeted holdout benchmark for reported failure families, not a claim of 100% general intelligence."
+}

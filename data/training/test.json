@@ -1,0 +1,511 @@
+{
+  "version": 6,
+  "split": "test",
+  "seed": 2040,
+  "intents": [
+    {
+      "tag": "affirmation",
+      "route_type": "conversation",
+      "examples": [
+        "okay do it",
+        "اوکی انجام بده",
+        "حتما"
+      ]
+    },
+    {
+      "tag": "ask_name",
+      "route_type": "conversation",
+      "examples": [
+        "چی صدات کنم",
+        "اسم خودت رو بگو",
+        "نام این دستیار چیه"
+      ]
+    },
+    {
+      "tag": "ask_user_name",
+      "route_type": "conversation",
+      "examples": [
+        "نامم را به خاطر داری",
+        "do you remember my name",
+        "من کی هستم"
+      ]
+    },
+    {
+      "tag": "battery_info",
+      "route_type": "tool",
+      "examples": [
+        "show battery information",
+        "read battery status"
+      ]
+    },
+    {
+      "tag": "calculator",
+      "route_type": "tool",
+      "examples": [
+        "what is 250 / 5",
+        "حساب کن 144 / 12",
+        "جواب 10-3 چنده"
+      ]
+    },
+    {
+      "tag": "call_assistant",
+      "route_type": "conversation",
+      "examples": [
+        "jarvis bia",
+        "جارویس هستی",
+        "jarvis kojaei",
+        "jarvis online i"
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "route_type": "conversation",
+      "examples": [
+        "از دستت چی برمیاد",
+        "how can you help me",
+        "show me your features"
+      ]
+    },
+    {
+      "tag": "clear_conversation",
+      "route_type": "tool",
+      "examples": [
+        "clear the conversation",
+        "این جلسه رو ببند",
+        "چت فعلی را تمیز کن"
+      ]
+    },
+    {
+      "tag": "close_app",
+      "route_type": "tool",
+      "examples": [
+        "close the same browser",
+        "ماشین حساب رو ببند",
+        "close Microsoft Edge",
+        "همون قبلیه رو ببند",
+        "terminate Spotify",
+        "کرومو ببند",
+        "close it"
+      ]
+    },
+    {
+      "tag": "complex_question",
+      "route_type": "think",
+      "examples": [
+        "design a low memory desktop architecture",
+        "پایتون یا جاوااسکریپت کدام برای این پروژه بهتر است",
+        "how should I debug this complex issue"
+      ]
+    },
+    {
+      "tag": "correction_learning",
+      "route_type": "conversation",
+      "examples": [
+        "به خاطر بسپار وقتی گفتم کد بزن VS Code رو باز کنی",
+        "نه منظورم اینه وقتی میگم گوگل سایت گوگل رو باز کن",
+        "learn that when I say play music open Spotify"
+      ]
+    },
+    {
+      "tag": "create_file",
+      "route_type": "tool",
+      "examples": [
+        "create a text file",
+        "یک document بساز"
+      ]
+    },
+    {
+      "tag": "create_folder",
+      "route_type": "tool",
+      "examples": [
+        "روی دسکتاپ پوشه بساز",
+        "یک فولدر جدید ایجاد کن"
+      ]
+    },
+    {
+      "tag": "date_time",
+      "route_type": "tool",
+      "examples": [
+        "what date is today",
+        "امروز چندم است",
+        "ساعت فعلی",
+        "today's weekday",
+        "ساعت چنده",
+        "تاریخ امروز چیه",
+        "current local time",
+        "امروز چه روزیه"
+      ]
+    },
+    {
+      "tag": "delete_file",
+      "route_type": "tool",
+      "examples": [
+        "delete report.csv",
+        "این فایل رو حذف کن"
+      ]
+    },
+    {
+      "tag": "enumerate_windows",
+      "route_type": "tool",
+      "examples": [
+        "فهرست window ها",
+        "list desktop windows"
+      ]
+    },
+    {
+      "tag": "factual_question",
+      "route_type": "information",
+      "examples": [
+        "هوش مصنوعی چطور کار می کند",
+        "why are leaves green",
+        "چرا آسمان آبی است"
+      ]
+    },
+    {
+      "tag": "find_file",
+      "route_type": "tool",
+      "examples": [
+        "locate config.json",
+        "find main.py in the folder",
+        "دنبال فایل css تو پروژه بگرد"
+      ]
+    },
+    {
+      "tag": "focus_app",
+      "route_type": "tool",
+      "examples": [
+        "برو روی استیم",
+        "اون برنامه رو فعال کن",
+        "کروم رو بیار جلو",
+        "focus Microsoft Edge"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "route_type": "conversation",
+      "examples": [
+        "تا بعد",
+        "شب خوش",
+        "فعلا"
+      ]
+    },
+    {
+      "tag": "greeting",
+      "route_type": "conversation",
+      "examples": [
+        "hi jarvis khobi",
+        "salam jarvis",
+        "salam doste man",
+        "سلام خوبی"
+      ]
+    },
+    {
+      "tag": "help",
+      "route_type": "conversation",
+      "examples": [
+        "از کجا شروع کنم",
+        "نمی دونم چیکار کنم",
+        "where do I start"
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "route_type": "conversation",
+      "examples": [
+        "همه چی مرتبه",
+        "khobi",
+        "حالت خوبه",
+        "halet chetore"
+      ]
+    },
+    {
+      "tag": "is_app_running",
+      "route_type": "tool",
+      "examples": [
+        "دیسکورد بازه؟",
+        "check if Steam is running",
+        "پینت اجرا میشه؟",
+        "هنوز بازه؟"
+      ]
+    },
+    {
+      "tag": "list_folder",
+      "route_type": "tool",
+      "examples": [
+        "show directory contents",
+        "لیست پوشه فعلی",
+        "فهرست فولدر پروژه"
+      ]
+    },
+    {
+      "tag": "maximize_app",
+      "route_type": "tool",
+      "examples": [
+        "فایرفاکس رو بزرگ کن",
+        "maximize Chrome"
+      ]
+    },
+    {
+      "tag": "minimize_app",
+      "route_type": "tool",
+      "examples": [
+        "send Notepad to taskbar",
+        "اسپاتیفای رو مینیمایز کن"
+      ]
+    },
+    {
+      "tag": "multi_step_task",
+      "route_type": "tool",
+      "examples": [
+        "کروم رو باز کن و بعد OpenAI رو داخلش باز کن",
+        "اول کروم بعد گوگل رو باز کن",
+        "تلگرام رو باز کن بعد ببندش",
+        "پوشه پروژه رو باز کن بعد main.py رو بخون",
+        "برو یوتیوب بعد گیت هاب",
+        "do this first and then open the website",
+        "Edge رو باز کن سپس GitHub رو داخلش باز کن",
+        "گوگل رو باز کن سپس برو گیت هاب"
+      ]
+    },
+    {
+      "tag": "network_info",
+      "route_type": "tool",
+      "examples": [
+        "آدرس IP سیستم",
+        "list network addresses"
+      ]
+    },
+    {
+      "tag": "offline_privacy",
+      "route_type": "conversation",
+      "examples": [
+        "what about privacy",
+        "اینترنت لازم داری",
+        "where is my data stored"
+      ]
+    },
+    {
+      "tag": "open_app",
+      "route_type": "tool",
+      "examples": [
+        "open Chrome",
+        "vscode ro ejra kon",
+        "استیمو باز کن",
+        "open PowerShell",
+        "start Firefox",
+        "برنامه Blender رو باز کن",
+        "تلگرام دسکتاپ رو بیار",
+        "دیسکورد رو اجرا کن"
+      ]
+    },
+    {
+      "tag": "open_default_browser",
+      "route_type": "tool",
+      "examples": [
+        "can you open the browser",
+        "launch my browser",
+        "صفحه مرورگر رو باز کن"
+      ]
+    },
+    {
+      "tag": "open_folder",
+      "route_type": "tool",
+      "examples": [
+        "open a folder",
+        "برو درایو دی",
+        "پوشه Users رو باز کن",
+        "C drive رو باز کن"
+      ]
+    },
+    {
+      "tag": "open_settings",
+      "route_type": "tool",
+      "examples": [
+        "پنل تنظیمات",
+        "تنظیمات رو باز کن",
+        "settings panel"
+      ]
+    },
+    {
+      "tag": "open_url",
+      "route_type": "tool",
+      "examples": [
+        "یه یوتیوب باز کن",
+        "open Google",
+        "یو تیوب رو واسم باز کن",
+        "ویکی پدیا رو باز کن"
+      ]
+    },
+    {
+      "tag": "project_context",
+      "route_type": "conversation",
+      "examples": [
+        "I'm designing a program",
+        "روی پروژه جاوااسکریپت کار می کنم",
+        "I'm building an application"
+      ]
+    },
+    {
+      "tag": "project_kind",
+      "route_type": "conversation",
+      "examples": [
+        "a small game",
+        "یک بازی کوچیک",
+        "a Python tool"
+      ]
+    },
+    {
+      "tag": "read_file",
+      "route_type": "tool",
+      "examples": [
+        "متن فایل رو واسم بخون",
+        "محتوای main.py رو نشون بده",
+        "فایل لاگ رو بخون"
+      ]
+    },
+    {
+      "tag": "rejection",
+      "route_type": "conversation",
+      "examples": [
+        "never mind",
+        "لغوش کن",
+        "no"
+      ]
+    },
+    {
+      "tag": "restart_app",
+      "route_type": "tool",
+      "examples": [
+        "همونو ریستارت کن",
+        "restart it",
+        "استیم رو دوباره باز کن",
+        "فایرفاکس رو دوباره باز کن"
+      ]
+    },
+    {
+      "tag": "restore_app",
+      "route_type": "tool",
+      "examples": [
+        "برنامه رو به حالت عادی برگردون",
+        "unminimize Firefox"
+      ]
+    },
+    {
+      "tag": "run_command",
+      "route_type": "tool",
+      "examples": [
+        "دستور python --version رو اجرا کن",
+        "run hostname"
+      ]
+    },
+    {
+      "tag": "self_intro",
+      "route_type": "conversation",
+      "examples": [
+        "what exactly are you",
+        "what kind of assistant are you",
+        "describe yourself"
+      ]
+    },
+    {
+      "tag": "set_user_name",
+      "route_type": "conversation",
+      "examples": [
+        "اسمم یونس هست",
+        "اسم من یونس است",
+        "منو یونس صدا کن"
+      ]
+    },
+    {
+      "tag": "smalltalk",
+      "route_type": "conversation",
+      "examples": [
+        "anything new",
+        "what's up",
+        "بیا صحبت کنیم"
+      ]
+    },
+    {
+      "tag": "system_info",
+      "route_type": "tool",
+      "examples": [
+        "پردازنده من چیه",
+        "how much RAM do I have",
+        "do I have a GPU"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "route_type": "conversation",
+      "examples": [
+        "مرسی",
+        "دمت گرم",
+        "thank you"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "route_type": "unknown",
+      "examples": [
+        "این داده کافی نیست",
+        "not enough information to answer this",
+        "read my mind without context",
+        "guarantee tomorrow's exact stock price",
+        "قیمت دقیق فردای یک سهم چنده",
+        "زرت و پرت ناشناخته",
+        "فلان چیز عجیب چیه"
+      ]
+    },
+    {
+      "tag": "user_low_mood",
+      "route_type": "conversation",
+      "examples": [
+        "I feel a bit low",
+        "حوصله هیچ کاری ندارم",
+        "امروز روز خوبی نیست"
+      ]
+    },
+    {
+      "tag": "web_research",
+      "route_type": "tool",
+      "examples": [
+        "این موضوع را cross check کن",
+        "درباره آخرین پایتون تحقیق کن"
+      ]
+    },
+    {
+      "tag": "web_search",
+      "route_type": "tool",
+      "examples": [
+        "tonight football score",
+        "سرچ کن بهترین زبان برنامه نویسی برای AI",
+        "what is the weather now",
+        "لطفا سرچ کن بهترین دیتابیس سبک",
+        "search kon python tutorial",
+        "بازی امشب رئال چند چنده",
+        "درباره RTX 5090 سرچ کن",
+        "latest technology news",
+        "داخل اج OpenAI رو سرچ کن",
+        "گوگل کن آموزش FastAPI"
+      ]
+    },
+    {
+      "tag": "youtube_search",
+      "route_type": "tool",
+      "examples": [
+        "find this video on youtube",
+        "تو یوتیوب دنبال موسیقی بی کلام بگرد",
+        "youtube search Python course"
+      ]
+    },
+    {
+      "tag": "zip_inspect",
+      "route_type": "tool",
+      "examples": [
+        "فهرست آرشیو را نمایش بده",
+        "داخل zip چه فایلاییه",
+        "show files inside attached zip"
+      ]
+    }
+  ]
+}

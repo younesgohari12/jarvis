@@ -1,0 +1,63 @@
+{
+ "protocol": "component-off vs full v22 on the same fresh-blind subsets",
+ "runs": {
+  "typed_quantity_audit": {
+   "subset": "adversarial_dimension+adversarial_currency",
+   "n": 70,
+   "full_v22": {
+    "correct": 0,
+    "wrong": 0,
+    "no_answer": 0,
+    "abstained": 70
+   },
+   "audit_off": {
+    "correct": 0,
+    "wrong": 70,
+    "no_answer": 0,
+    "abstained": 0
+   },
+   "interpretation": "with audit: 0/70 safe abstentions; without audit: 0/70 silently computed (dimension-violating) answers"
+  },
+  "temporal_world_model": {
+   "subset": "scheduling with day wrap",
+   "n": 14,
+   "full_v22": {
+    "correct": 8,
+    "wrong": 0,
+    "no_answer": 6,
+    "abstained": 0
+   },
+   "temporal_off": {
+    "correct": 0,
+    "wrong": 8,
+    "no_answer": 6,
+    "abstained": 0
+   },
+   "interpretation": "without the temporal model, 23:00+2h is answered as the raw number 25 instead of 01:00"
+  },
+  "verifier_v2_full": {
+   "subset": "all adversarial abstention items",
+   "n": 85,
+   "v21_engine": {
+    "correct": 0,
+    "wrong": 70,
+    "no_answer": 0,
+    "abstained": 15
+   },
+   "v22_engine": {
+    "correct": 0,
+    "wrong": 0,
+    "no_answer": 0,
+    "abstained": 85
+   },
+   "interpretation": "v21 silently adds dollars to items; v22 refuses with a clarification"
+  },
+  "language_brain_natural_render": {
+   "subset": "inventory+finance sample",
+   "n": 60,
+   "natural_style_natural_text": 52,
+   "canonical_style_natural_text": 8,
+   "interpretation": "canonical style keeps the byte-compatible v21 numeric contract"
+  }
+ }
+}

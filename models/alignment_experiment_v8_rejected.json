@@ -1,0 +1,84 @@
+{
+  "format": "jarvis-alignment-metrics-v2",
+  "source": "models/jarvis_nano_v08.npz",
+  "output": "models/jarvis_nano_v08_tuned.npz",
+  "parameters": 23077376,
+  "steps": 480,
+  "curated_pairs": 18,
+  "rehearsal_rows": 1598,
+  "initial_validation_loss": 4.002606,
+  "final_validation_loss": 2.103404,
+  "final_perplexity": 8.194015,
+  "mean_training_loss": 2.752618,
+  "held_out_generation": {
+    "accepted": 1,
+    "cases": 8,
+    "samples": [
+      {
+        "prompt": "حوصلم خیلی سر رفته، پیشنهادی داری؟",
+        "output": "I'و و با و و و and و با در با با هم با آن با و و با با و و و",
+        "accepted": false,
+        "reason": "repetition_guard",
+        "confidence": 0.12
+      },
+      {
+        "prompt": "بیا چند دقیقه با هم گپ بزنیم",
+        "output": "I. و و و با و و می‌ز با گوش and با بگو با با ذدهز با با با و و و",
+        "accepted": false,
+        "reason": "incomplete_sentence_guard",
+        "confidence": 0.22
+      },
+      {
+        "prompt": "فکر می‌کنی امروز از کجا شروع کنم؟",
+        "output": "I. و و با و اینجام و می‌ز با ذدهرکز که در بگو هست تا با آن را با و و و",
+        "accepted": false,
+        "reason": "incomplete_sentence_guard",
+        "confidence": 0.22
+      },
+      {
+        "prompt": "الان می‌تونی کنارم باشی؟",
+        "output": "I'm و و با و و با می‌ز با and ذدهرکز در هست تا هم با آن با را روشن با",
+        "accepted": true,
+        "reason": "passed",
+        "confidence": 0.67
+      },
+      {
+        "prompt": "I'm feeling a little stuck today",
+        "output": "من و با و and و و و و می‌ز با هم تا را با با and and گوش و و و با با",
+        "accepted": false,
+        "reason": "substring_repetition_guard",
+        "confidence": 0.12
+      },
+      {
+        "prompt": "What should we talk about?",
+        "output": "من و و با و و اینجام می‌ز and و ذدهز با تا آن هست بگو که با با و را و و",
+        "accepted": false,
+        "reason": "language_consistency_guard",
+        "confidence": 0.2
+      },
+      {
+        "prompt": "Could you help me get started?",
+        "output": "I'm و با and و گوش با می‌ز ذدهرکدهدهدهدهز هست در که تا هم را آن با و و",
+        "accepted": false,
+        "reason": "substring_repetition_guard",
+        "confidence": 0.12
+      },
+      {
+        "prompt": "Tell me one useful thought",
+        "output": "من و و با و و و اینجام می‌ز و and با و تا ذدهرکز که آن با و را با و",
+        "accepted": false,
+        "reason": "language_consistency_guard",
+        "confidence": 0.2
+      }
+    ]
+  },
+  "quality_gate": {
+    "minimum_accepted_generations": 7,
+    "validation_loss_must_improve": true
+  },
+  "accepted_for_release": false,
+  "rejection_reason": "Only 1 of 8 held-out generations passed; the candidate was not released.",
+  "seconds": 184.935,
+  "device": "cpu",
+  "pretrained_source": null
+}

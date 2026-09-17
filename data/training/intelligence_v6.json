@@ -1,0 +1,203 @@
+{
+  "version": 6,
+  "intents": [
+    {
+      "tag": "minimize_app",
+      "route_type": "tool",
+      "examples": [
+        "کروم رو مینیمایز کن",
+        "فایرفاکس رو جمع کن",
+        "تلگرام رو بفرست تسک بار",
+        "پنجره نوت پد رو کوچک کن",
+        "minimize Chrome",
+        "minimize Firefox",
+        "send Notepad to taskbar",
+        "minimize that app",
+        "برنامه رو مینیمایز کن",
+        "دیسکورد رو جمعش کن",
+        "minimize VS Code",
+        "اسپاتیفای رو مینیمایز کن"
+      ]
+    },
+    {
+      "tag": "maximize_app",
+      "route_type": "tool",
+      "examples": [
+        "کروم رو تمام صفحه کن",
+        "فایرفاکس رو بزرگ کن",
+        "پنجره تلگرام رو maximize کن",
+        "نوت پد رو فول اسکرین کن",
+        "maximize Chrome",
+        "make Firefox full screen",
+        "maximize that app",
+        "maximize VS Code",
+        "برنامه رو بزرگ کن",
+        "دیسکورد رو تمام صفحه کن",
+        "maximize Notepad",
+        "اسپاتیفای رو بزرگ کن"
+      ]
+    },
+    {
+      "tag": "restore_app",
+      "route_type": "tool",
+      "examples": [
+        "کروم رو از مینیمایز دربیار",
+        "پنجره فایرفاکس رو برگردون",
+        "تلگرام رو restore کن",
+        "نوت پد رو برگردون",
+        "restore Chrome",
+        "unminimize Firefox",
+        "restore that app",
+        "restore VS Code window",
+        "برنامه رو به حالت عادی برگردون",
+        "دیسکورد رو restore کن",
+        "restore Notepad",
+        "اسپاتیفای رو برگردون"
+      ]
+    },
+    {
+      "tag": "create_folder",
+      "route_type": "tool",
+      "examples": [
+        "روی دسکتاپ پوشه بساز",
+        "یک فولدر جدید ایجاد کن",
+        "پوشه Jarvis Test رو بساز",
+        "داخل Documents پوشه بساز",
+        "create a folder on Desktop",
+        "make a new directory",
+        "create folder Jarvis Test",
+        "make a folder in Documents",
+        "پوشه جدید درست کن",
+        "یک directory بساز",
+        "create new folder",
+        "build a folder here"
+      ]
+    },
+    {
+      "tag": "create_file",
+      "route_type": "tool",
+      "examples": [
+        "فایل notes.txt رو بساز",
+        "یک فایل جدید ایجاد کن",
+        "روی دسکتاپ فایل text بساز",
+        "فایل پایتون بساز",
+        "create notes.txt",
+        "make a new file",
+        "create a text file",
+        "create Python file",
+        "فایل جدید درست کن",
+        "یک document بساز",
+        "create file here",
+        "make README.md"
+      ]
+    },
+    {
+      "tag": "delete_file",
+      "route_type": "tool",
+      "examples": [
+        "این فایل رو حذف کن",
+        "فایل notes.txt رو پاک کن",
+        "این سند رو delete کن",
+        "فایل انتخاب شده را حذف کن",
+        "delete this file",
+        "remove notes.txt",
+        "delete the selected document",
+        "erase this file",
+        "فایل رو برای حذف آماده کن",
+        "پاک کردن فایل",
+        "remove this file",
+        "delete report.csv"
+      ]
+    },
+    {
+      "tag": "enumerate_windows",
+      "route_type": "tool",
+      "examples": [
+        "لیست پنجره ها رو نشون بده",
+        "همه پنجره های باز",
+        "فهرست window ها",
+        "چه پنجره هایی بازه",
+        "list visible windows",
+        "show open windows",
+        "enumerate windows",
+        "which windows are open",
+        "لیست پنجره های ویندوز",
+        "پنجره ها رو بشمار",
+        "show all windows",
+        "list desktop windows"
+      ]
+    },
+    {
+      "tag": "battery_info",
+      "route_type": "tool",
+      "examples": [
+        "وضعیت باتری رو بگو",
+        "باتری چند درصده",
+        "اطلاعات باتری",
+        "آیا لپتاپ شارژ میشه",
+        "show battery information",
+        "battery status",
+        "what is the battery percentage",
+        "is the battery charging",
+        "مشخصات باتری",
+        "باتری وصله به برق",
+        "check battery",
+        "read battery status"
+      ]
+    },
+    {
+      "tag": "network_info",
+      "route_type": "tool",
+      "examples": [
+        "اطلاعات شبکه رو بگو",
+        "وضعیت network",
+        "آدرس IP سیستم",
+        "مشخصات اتصال شبکه",
+        "show network information",
+        "network status",
+        "show local IP",
+        "inspect the network",
+        "شبکه رو بررسی کن",
+        "اطلاعات اتصال",
+        "check network info",
+        "list network addresses"
+      ]
+    },
+    {
+      "tag": "run_command",
+      "route_type": "tool",
+      "examples": [
+        "دستور python --version رو اجرا کن",
+        "command git status",
+        "فرمان hostname را اجرا کن",
+        "دستور whoami",
+        "run command python --version",
+        "execute git status",
+        "run hostname",
+        "execute whoami",
+        "ترمینال دستور رو اجرا کن",
+        "این command را بزن",
+        "run a terminal command",
+        "execute this command"
+      ]
+    },
+    {
+      "tag": "web_research",
+      "route_type": "tool",
+      "examples": [
+        "درباره آخرین پایتون تحقیق کن",
+        "از چند منبع اینترنتی بررسی کن",
+        "تحقیق اینترنتی انجام بده",
+        "این موضوع را cross check کن",
+        "research the latest Python release",
+        "cross-check this on the web",
+        "do web research",
+        "research from multiple sources",
+        "در اینترنت تحقیق کن",
+        "منابع مختلف را بررسی کن",
+        "research this topic",
+        "verify current information online"
+      ]
+    }
+  ]
+}

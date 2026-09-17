@@ -1,0 +1,35 @@
+.............................................. [  4%]
+..................................................................... [ 12%]
+........................................................................ [ 19%]
+........................................................................ [ 27%]
+........................................................................ [ 35%]
+........................................................................ [ 42%]
+........................................................................ [ 50%]
+....................................................................................................................... [ 63%]
+.................................. [ 66%]
+..................................................... [ 72%]
+.............................. [ 75%]
+........................................................................ [ 83%]
+........................................................................ [ 90%]
+........................................................................ [ 98%]
+..............                                                           [100%]
+=================================== FAILURES ===================================
+_ IntelligenceV17Tests.test_v17_semantic_ir_generalization_without_tools (prompt='Write a Python function that returns only even numbers') _
+
+self = <tests.test_v17_intelligence.IntelligenceV17Tests testMethod=test_v17_semantic_ir_generalization_without_tools>
+
+    def test_v17_semantic_ir_generalization_without_tools(self):
+        with TemporaryRuntime() as rt:
+            with mock.patch.object(rt.tools,'invoke',side_effect=AssertionError('unexpected tool')):
+                for prompt,frags in CASES:
+                    with self.subTest(prompt=prompt):
+                        ans=rt.agent.respond(prompt)
+                        low=ans.text.casefold()
+>                       for f in frags:self.assertIn(f.casefold(),low)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: 'def even_numbers' not found in '```python\ndef transform(values):\n    return [x for x in values if x % 2 == 0]\n```'
+
+tests/test_v17_intelligence.py:59: AssertionError
+=========================== short test summary info ============================
+SUBFAILED(prompt='Write a Python function that returns only even numbers') tests/test_v17_intelligence.py::IntelligenceV17Tests::test_v17_semantic_ir_generalization_without_tools
+1 failed, 941 passed, 584 subtests passed in 30.23s

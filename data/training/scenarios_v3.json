@@ -1,0 +1,747 @@
+{
+  "version": 3,
+  "scenarios": [
+    {
+      "text": "یوتیوب رو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.youtube.com/"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "یوتیوبو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.youtube.com/"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "برو یوتیوب",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.youtube.com/"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "open YouTube",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.youtube.com/"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "YT رو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.youtube.com/"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "حالا یوتیوب رو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.youtube.com/"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "گوگل رو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.google.com/"
+      },
+      "entity": "google",
+      "confirmation": false
+    },
+    {
+      "text": "گوگلو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.google.com/"
+      },
+      "entity": "google",
+      "confirmation": false
+    },
+    {
+      "text": "برو گوگل",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.google.com/"
+      },
+      "entity": "google",
+      "confirmation": false
+    },
+    {
+      "text": "open Google",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.google.com/"
+      },
+      "entity": "google",
+      "confirmation": false
+    },
+    {
+      "text": "حالا گوگل",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.google.com/"
+      },
+      "entity": "google",
+      "confirmation": false
+    },
+    {
+      "text": "سایت گوگل رو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.google.com/"
+      },
+      "entity": "google",
+      "confirmation": false
+    },
+    {
+      "text": "گیت هاب رو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://github.com/"
+      },
+      "entity": "github",
+      "confirmation": false
+    },
+    {
+      "text": "گیت‌هاب رو بیار",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://github.com/"
+      },
+      "entity": "github",
+      "confirmation": false
+    },
+    {
+      "text": "open GitHub",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://github.com/"
+      },
+      "entity": "github",
+      "confirmation": false
+    },
+    {
+      "text": "برو تو github",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://github.com/"
+      },
+      "entity": "github",
+      "confirmation": false
+    },
+    {
+      "text": "حالا گیتهاب",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://github.com/"
+      },
+      "entity": "github",
+      "confirmation": false
+    },
+    {
+      "text": "سایت GitHub رو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://github.com/"
+      },
+      "entity": "github",
+      "confirmation": false
+    },
+    {
+      "text": "اینستاگرام رو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.instagram.com/"
+      },
+      "entity": "instagram",
+      "confirmation": false
+    },
+    {
+      "text": "اینستاگرامو بیار",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.instagram.com/"
+      },
+      "entity": "instagram",
+      "confirmation": false
+    },
+    {
+      "text": "open Instagram",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.instagram.com/"
+      },
+      "entity": "instagram",
+      "confirmation": false
+    },
+    {
+      "text": "برو اینستا",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.instagram.com/"
+      },
+      "entity": "instagram",
+      "confirmation": false
+    },
+    {
+      "text": "حالا اینستا",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.instagram.com/"
+      },
+      "entity": "instagram",
+      "confirmation": false
+    },
+    {
+      "text": "سایت instagram رو باز کن",
+      "intent": "open_url",
+      "arguments": {
+        "url": "https://www.instagram.com/"
+      },
+      "entity": "instagram",
+      "confirmation": false
+    },
+    {
+      "text": "کروم رو باز کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "chrome"
+      },
+      "entity": "chrome",
+      "confirmation": false
+    },
+    {
+      "text": "کرومو باز کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "chrome"
+      },
+      "entity": "chrome",
+      "confirmation": false
+    },
+    {
+      "text": "گوگل کروم رو باز کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "chrome"
+      },
+      "entity": "chrome",
+      "confirmation": false
+    },
+    {
+      "text": "open Chrome",
+      "intent": "open_app",
+      "arguments": {
+        "app": "chrome"
+      },
+      "entity": "chrome",
+      "confirmation": false
+    },
+    {
+      "text": "launch Google Chrome",
+      "intent": "open_app",
+      "arguments": {
+        "app": "chrome"
+      },
+      "entity": "chrome",
+      "confirmation": false
+    },
+    {
+      "text": "chrome رو اجرا کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "chrome"
+      },
+      "entity": "chrome",
+      "confirmation": false
+    },
+    {
+      "text": "وی اس کد رو باز کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "vscode"
+      },
+      "entity": "vscode",
+      "confirmation": false
+    },
+    {
+      "text": "vscode رو اجرا کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "vscode"
+      },
+      "entity": "vscode",
+      "confirmation": false
+    },
+    {
+      "text": "open VS Code",
+      "intent": "open_app",
+      "arguments": {
+        "app": "vscode"
+      },
+      "entity": "vscode",
+      "confirmation": false
+    },
+    {
+      "text": "launch Visual Studio Code",
+      "intent": "open_app",
+      "arguments": {
+        "app": "vscode"
+      },
+      "entity": "vscode",
+      "confirmation": false
+    },
+    {
+      "text": "کد ادیتور رو باز کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "vscode"
+      },
+      "entity": "vscode",
+      "confirmation": false
+    },
+    {
+      "text": "حالا VSCode رو بیار",
+      "intent": "open_app",
+      "arguments": {
+        "app": "vscode"
+      },
+      "entity": "vscode",
+      "confirmation": false
+    },
+    {
+      "text": "نوت پد رو باز کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "notepad"
+      },
+      "entity": "notepad",
+      "confirmation": false
+    },
+    {
+      "text": "notepad رو اجرا کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "notepad"
+      },
+      "entity": "notepad",
+      "confirmation": false
+    },
+    {
+      "text": "open Notepad",
+      "intent": "open_app",
+      "arguments": {
+        "app": "notepad"
+      },
+      "entity": "notepad",
+      "confirmation": false
+    },
+    {
+      "text": "launch notepad",
+      "intent": "open_app",
+      "arguments": {
+        "app": "notepad"
+      },
+      "entity": "notepad",
+      "confirmation": false
+    },
+    {
+      "text": "یادداشت ویندوز رو باز کن",
+      "intent": "open_app",
+      "arguments": {
+        "app": "notepad"
+      },
+      "entity": "notepad",
+      "confirmation": false
+    },
+    {
+      "text": "حالا نوت پد",
+      "intent": "open_app",
+      "arguments": {
+        "app": "notepad"
+      },
+      "entity": "notepad",
+      "confirmation": false
+    },
+    {
+      "text": "مرورگر رو باز کن",
+      "intent": "open_default_browser",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "مرورگرو بیار",
+      "intent": "open_default_browser",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "مرورگر پیش فرض رو باز کن",
+      "intent": "open_default_browser",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "open the browser",
+      "intent": "open_default_browser",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "open my default browser",
+      "intent": "open_default_browser",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "launch web browser",
+      "intent": "open_default_browser",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "browser رو اجرا کن",
+      "intent": "open_default_browser",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "یه مرورگر باز کن",
+      "intent": "open_default_browser",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "سرچ کن آموزش پایتون",
+      "intent": "web_search",
+      "arguments": {
+        "query": "آموزش پایتون"
+      },
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "گوگل کن آموزش FastAPI",
+      "intent": "web_search",
+      "arguments": {
+        "query": "آموزش fastapi"
+      },
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "search for local AI",
+      "intent": "web_search",
+      "arguments": {
+        "query": "local ai"
+      },
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "look up SQLite WAL",
+      "intent": "web_search",
+      "arguments": {
+        "query": "sqlite wal"
+      },
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "در وب جستجو کن tkinter",
+      "intent": "web_search",
+      "arguments": {
+        "query": "tkinter"
+      },
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "درباره امنیت ZIP سرچ کن",
+      "intent": "web_search",
+      "arguments": {
+        "query": "امنیت zip"
+      },
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "search the web for Python docs",
+      "intent": "web_search",
+      "arguments": {
+        "query": "python docs"
+      },
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "تو اینترنت بگرد lightweight AI",
+      "intent": "web_search",
+      "arguments": {
+        "query": "lightweight ai"
+      },
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "یوتیوب سرچ کن آموزش پایتون",
+      "intent": "youtube_search",
+      "arguments": {
+        "query": "آموزش پایتون"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "توی یوتیوب سرچ کن آموزش رباتیک",
+      "intent": "youtube_search",
+      "arguments": {
+        "query": "آموزش رباتیک"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "youtube search jazz",
+      "intent": "youtube_search",
+      "arguments": {
+        "query": "jazz"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "search YouTube for local AI",
+      "intent": "youtube_search",
+      "arguments": {
+        "query": "local ai"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "در یو تیوب بگرد FastAPI",
+      "intent": "youtube_search",
+      "arguments": {
+        "query": "fastapi"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "YT search tkinter",
+      "intent": "youtube_search",
+      "arguments": {
+        "query": "tkinter"
+      },
+      "entity": "youtube",
+      "confirmation": false
+    },
+    {
+      "text": "آخرین نسخه پایتون چیه",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "امروز بیت کوین چنده",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "هوا امروز چطوره",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "آخرین اخبار AI رو بگو",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "بازی امشب رئال چند چنده",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "latest Python version",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "Bitcoin price today",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "weather now",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "latest AI news",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "current gold price",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "نرخ دلار امروز",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "جدیدترین نسخه Node چیه",
+      "intent": "web_search",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "برای تنظیمات SQLite بهتره یا JSON و چرا",
+      "intent": "complex_question",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "compare SQLite and JSON for settings",
+      "intent": "complex_question",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "این خطای Python از کجا میاد و چطور حلش کنم",
+      "intent": "complex_question",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "why is this Python error happening",
+      "intent": "complex_question",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "مزایا و معایب threads و process رو مقایسه کن",
+      "intent": "complex_question",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "analyze this architecture and its tradeoffs",
+      "intent": "complex_question",
+      "arguments": {},
+      "entity": "",
+      "confirmation": false
+    },
+    {
+      "text": "فایل مهم رو حذف کن",
+      "intent": "delete_file",
+      "arguments": {},
+      "entity": "",
+      "confirmation": true
+    },
+    {
+      "text": "delete this file",
+      "intent": "delete_file",
+      "arguments": {},
+      "entity": "",
+      "confirmation": true
+    },
+    {
+      "text": "سیستم رو خاموش کن",
+      "intent": "shutdown_system",
+      "arguments": {},
+      "entity": "",
+      "confirmation": true
+    },
+    {
+      "text": "restart the computer",
+      "intent": "restart_system",
+      "arguments": {},
+      "entity": "",
+      "confirmation": true
+    },
+    {
+      "text": "هارد رو فرمت کن",
+      "intent": "dangerous_request",
+      "arguments": {},
+      "entity": "",
+      "confirmation": true
+    },
+    {
+      "text": "run a dangerous command",
+      "intent": "dangerous_request",
+      "arguments": {},
+      "entity": "",
+      "confirmation": true
+    },
+    {
+      "text": "همه فایل ها رو پاک کن",
+      "intent": "dangerous_request",
+      "arguments": {},
+      "entity": "",
+      "confirmation": true
+    },
+    {
+      "text": "shutdown now",
+      "intent": "dangerous_request",
+      "arguments": {},
+      "entity": "",
+      "confirmation": true
+    }
+  ]
+}

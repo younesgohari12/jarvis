@@ -1,0 +1,32 @@
+{
+  "name": "v22_fresh_blind",
+  "created": "2026-09-17",
+  "seed": 20260917,
+  "generator": "v2 (fixed human-template structure)",
+  "total": 1023,
+  "human_authored": 636,
+  "generated": 387,
+  "human_share": 0.622,
+  "languages": {
+    "fa": 544,
+    "en": 479
+  },
+  "families": {
+    "adversarial_identifier": 15,
+    "ownership": 60,
+    "adversarial_currency": 25,
+    "finance": 200,
+    "work_rate": 105,
+    "sequence": 43,
+    "age": 70,
+    "scheduling": 90,
+    "inventory": 100,
+    "speed": 60,
+    "adversarial_dimension": 45,
+    "binomial": 45,
+    "ratio": 120,
+    "combination": 45
+  },
+  "protocol": "first official execution counts as the only blind result",
+  "note": "an earlier v1 generator had a template/kind mix-up bug; fixed before the official run"
+}

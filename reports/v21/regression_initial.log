@@ -1,0 +1,304 @@
+.............................................. [  5%]
+..................................................................... [ 12%]
+........................................................................ [ 20%]
+........................................................................ [ 28%]
+........................................................................ [ 36%]
+........................................................................ [ 44%]
+........................................................................ [ 52%]
+....................................................................................................................... [ 66%]
+.................................. [ 69%]
+..................................................... [ 75%]
+.............................. [ 79%]
+........................F............................................... [ 87%]
+........................................................................ [ 95%]
+............................................                             [100%]
+=================================== FAILURES ===================================
+_ ChallengeReasoningV094Tests.test_reported_logic_questions_are_solved_locally_without_tools (question='دنبالهٔ ۱، ۲، ۴، ۸ را ادامه بده؛ اما قبلش توضیح بده چرا جواب قطعی و یکتا نیست.') _
+
+self = <tests.test_v094_challenge_reasoning.ChallengeReasoningV094Tests testMethod=test_reported_logic_questions_are_solved_locally_without_tools>
+
+    def test_reported_logic_questions_are_solved_locally_without_tools(self) -> None:
+        with TemporaryRuntime() as runtime, mock.patch.object(
+            runtime.tools, "invoke", side_effect=AssertionError("desktop/web tool call was not expected")
+        ):
+            for question, fragments in self.LOGIC_CASES:
+                with self.subTest(question=question):
+                    answer = runtime.agent.respond(question)
+                    self.assertEqual(answer.intent, "reasoned_answer")
+>                   self.assertEqual(answer.data["reasoning_source"], "local_challenge_reasoner_v094")
+E                   AssertionError: 'semantic_ir_v20' != 'local_challenge_reasoner_v094'
+E                   - semantic_ir_v20
+E                   + local_challenge_reasoner_v094
+
+tests/test_v094_challenge_reasoning.py:50: AssertionError
+_ RuntimeIntelligenceV14Tests.test_v14_end_to_end_reasoning_language_and_code_holdout (prompt='How many ordered selections of 3 items from 10 distinct items?') _
+
+self = <tests.test_v14_runtime_intelligence.RuntimeIntelligenceV14Tests testMethod=test_v14_end_to_end_reasoning_language_and_code_holdout>
+
+    def test_v14_end_to_end_reasoning_language_and_code_holdout(self) -> None:
+        # One continuous session is intentional: these prompts must keep routing
+        # correctly even after unrelated earlier turns have populated context.
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        lowered = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), lowered)
+E                           AssertionError: '720' not found in '120'
+
+tests/test_v14_runtime_intelligence.py:74: AssertionError
+_ RuntimeIntelligenceV14Tests.test_v14_end_to_end_reasoning_language_and_code_holdout (prompt='نمره 70 با وزن 2 و نمره 90 با وزن 3 داریم. میانگین وزنی؟') _
+
+self = <tests.test_v14_runtime_intelligence.RuntimeIntelligenceV14Tests testMethod=test_v14_end_to_end_reasoning_language_and_code_holdout>
+
+    def test_v14_end_to_end_reasoning_language_and_code_holdout(self) -> None:
+        # One continuous session is intentional: these prompts must keep routing
+        # correctly even after unrelated earlier turns have populated context.
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        lowered = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), lowered)
+E                           AssertionError: '82' not found in '41.25'
+
+tests/test_v14_runtime_intelligence.py:74: AssertionError
+_ RuntimeIntelligenceV14Tests.test_v14_end_to_end_reasoning_language_and_code_holdout (prompt='خودرویی با سرعت 65 کیلومتر بر ساعت، 4 ساعت حرکت می\u200cکند. مسافت چقدر است؟') _
+
+self = <tests.test_v14_runtime_intelligence.RuntimeIntelligenceV14Tests testMethod=test_v14_end_to_end_reasoning_language_and_code_holdout>
+
+    def test_v14_end_to_end_reasoning_language_and_code_holdout(self) -> None:
+        # One continuous session is intentional: these prompts must keep routing
+        # correctly even after unrelated earlier turns have populated context.
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        lowered = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), lowered)
+E                           AssertionError: '260' not found in '16.25'
+
+tests/test_v14_runtime_intelligence.py:74: AssertionError
+_ IntelligenceV15Tests.test_v15_end_to_end_holdout_without_tools (prompt='سرعت خودرو 72 کیلومتر بر ساعت است و 2.5 ساعت حرکت می\u200cکند؛ مسافت؟') _
+
+self = <tests.test_v15_intelligence.IntelligenceV15Tests testMethod=test_v15_end_to_end_holdout_without_tools>
+
+    def test_v15_end_to_end_holdout_without_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in E2E_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        lowered = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), lowered)
+E                           AssertionError: '180' not found in '28.8'
+
+tests/test_v15_intelligence.py:66: AssertionError
+_ IntelligenceV16Tests.test_v16_reported_failures_and_variants_without_tools (prompt='A coin has a 60% chance of heads. In 3 tosses, what is the probability of exactly 2 heads?') _
+
+self = <tests.test_v16_intelligence.IntelligenceV16Tests testMethod=test_v16_reported_failures_and_variants_without_tools>
+
+    def test_v16_reported_failures_and_variants_without_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V16_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: 'c(3,2)' not found in 'i could not verify this calculation. please clarify the values and units.'
+
+tests/test_v16_intelligence.py:59: AssertionError
+_ IntelligenceV16Tests.test_v16_reported_failures_and_variants_without_tools (prompt='How many arrangements of 3 from 7 without repetition?') _
+
+self = <tests.test_v16_intelligence.IntelligenceV16Tests testMethod=test_v16_reported_failures_and_variants_without_tools>
+
+    def test_v16_reported_failures_and_variants_without_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V16_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: 'p(7,3)' not found in '210'
+
+tests/test_v16_intelligence.py:59: AssertionError
+_ IntelligenceV17Tests.test_v17_semantic_ir_generalization_without_tools (prompt='A coin has heads probability 70%. In 4 tosses, exactly 3 heads?') _
+
+self = <tests.test_v17_intelligence.IntelligenceV17Tests testMethod=test_v17_semantic_ir_generalization_without_tools>
+
+    def test_v17_semantic_ir_generalization_without_tools(self):
+        with TemporaryRuntime() as rt:
+            with mock.patch.object(rt.tools,'invoke',side_effect=AssertionError('unexpected tool')):
+                for prompt,frags in CASES:
+                    with self.subTest(prompt=prompt):
+                        ans=rt.agent.respond(prompt)
+                        low=ans.text.casefold()
+>                       for f in frags:self.assertIn(f.casefold(),low)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: '41.16' not found in 'i could not verify this calculation. please clarify the values and units.'
+
+tests/test_v17_intelligence.py:59: AssertionError
+_ IntelligenceV17Tests.test_v17_semantic_ir_generalization_without_tools (prompt='What is the chance that two fair dice add up to 11?') _
+
+self = <tests.test_v17_intelligence.IntelligenceV17Tests testMethod=test_v17_semantic_ir_generalization_without_tools>
+
+    def test_v17_semantic_ir_generalization_without_tools(self):
+        with TemporaryRuntime() as rt:
+            with mock.patch.object(rt.tools,'invoke',side_effect=AssertionError('unexpected tool')):
+                for prompt,frags in CASES:
+                    with self.subTest(prompt=prompt):
+                        ans=rt.agent.respond(prompt)
+                        low=ans.text.casefold()
+>                       for f in frags:self.assertIn(f.casefold(),low)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: '1/18' not found in 'i could not verify this calculation. please clarify the values and units.'
+
+tests/test_v17_intelligence.py:59: AssertionError
+_ IntelligenceV17Tests.test_v17_semantic_ir_generalization_without_tools (prompt='A coin has a 25% chance of heads. In 4 tosses exactly 1 head?') _
+
+self = <tests.test_v17_intelligence.IntelligenceV17Tests testMethod=test_v17_semantic_ir_generalization_without_tools>
+
+    def test_v17_semantic_ir_generalization_without_tools(self):
+        with TemporaryRuntime() as rt:
+            with mock.patch.object(rt.tools,'invoke',side_effect=AssertionError('unexpected tool')):
+                for prompt,frags in CASES:
+                    with self.subTest(prompt=prompt):
+                        ans=rt.agent.respond(prompt)
+                        low=ans.text.casefold()
+>                       for f in frags:self.assertIn(f.casefold(),low)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: '42.1875' not found in 'i could not verify this calculation. please clarify the values and units.'
+
+tests/test_v17_intelligence.py:59: AssertionError
+_ IntelligenceV17Tests.test_v17_semantic_ir_generalization_without_tools (prompt='دو تاس سالم؛ شانس اینکه مجموع 12 شود؟') _
+
+self = <tests.test_v17_intelligence.IntelligenceV17Tests testMethod=test_v17_semantic_ir_generalization_without_tools>
+
+    def test_v17_semantic_ir_generalization_without_tools(self):
+        with TemporaryRuntime() as rt:
+            with mock.patch.object(rt.tools,'invoke',side_effect=AssertionError('unexpected tool')):
+                for prompt,frags in CASES:
+                    with self.subTest(prompt=prompt):
+                        ans=rt.agent.respond(prompt)
+                        low=ans.text.casefold()
+>                       for f in frags:self.assertIn(f.casefold(),low)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: '1/36' not found in 'اطلاعات یا محاسبهٔ این مسئله قابل تأیید نیست؛ لطفاً عددها و واحدها را روشن\u200cتر بنویس.'
+
+tests/test_v17_intelligence.py:59: AssertionError
+_ IntelligenceV18Tests.test_v18_holdout_end_to_end_without_web_or_tools (prompt='This coin has a 65% chance of heads. In 4 tosses, exactly 3 heads?') _
+
+self = <tests.test_v18_intelligence.IntelligenceV18Tests testMethod=test_v18_holdout_end_to_end_without_web_or_tools>
+
+    def test_v18_holdout_end_to_end_without_web_or_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V18_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: '38.4475' not found in 'i could not verify this calculation. please clarify the values and units.'
+
+tests/test_v18_intelligence.py:27: AssertionError
+_ IntelligenceV18Tests.test_v18_holdout_end_to_end_without_web_or_tools (prompt='Two fair dice are rolled. What is the chance their sum equals 9?') _
+
+self = <tests.test_v18_intelligence.IntelligenceV18Tests testMethod=test_v18_holdout_end_to_end_without_web_or_tools>
+
+    def test_v18_holdout_end_to_end_without_web_or_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V18_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: '1/9' not found in 'i could not verify this calculation. please clarify the values and units.'
+
+tests/test_v18_intelligence.py:27: AssertionError
+_ IntelligenceV18Tests.test_v18_holdout_end_to_end_without_web_or_tools (prompt='What is the probability that two fair dice total 6?') _
+
+self = <tests.test_v18_intelligence.IntelligenceV18Tests testMethod=test_v18_holdout_end_to_end_without_web_or_tools>
+
+    def test_v18_holdout_end_to_end_without_web_or_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V18_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: '5/36' not found in 'i could not verify this calculation. please clarify the values and units.'
+
+tests/test_v18_intelligence.py:27: AssertionError
+_ IntelligenceV18Tests.test_v18_holdout_end_to_end_without_web_or_tools (prompt='Divide 660 in a 4:7 ratio') _
+
+self = <tests.test_v18_intelligence.IntelligenceV18Tests testMethod=test_v18_holdout_end_to_end_without_web_or_tools>
+
+    def test_v18_holdout_end_to_end_without_web_or_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V18_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: '240' not found in 'i could not verify this calculation. please clarify the values and units.'
+
+tests/test_v18_intelligence.py:27: AssertionError
+_____________ test_trained_operation_changes_final_runtime_answer ______________
+
+    def test_trained_operation_changes_final_runtime_answer():
+        with TemporaryRuntime() as rt:
+            b=rt.agent.reasoning.local_intelligence; original=b.parser.operation.predict
+            q='500 را 20 درصد کم کن، 30 اضافه کن و حاصل را بر 5 تقسیم کن'
+            assert '86' in rt.agent.respond(q).text
+            def altered(text,*args,**kwargs):
+                pred=original(text,*args,**kwargs)
+                return [('subtract',.999)] if pred and pred[0][0]=='add' else pred
+            with patch.object(b.parser.operation,'predict',side_effect=altered):
+>               assert '74' in rt.agent.respond(q).text
+E               AssertionError: assert '74' in '86'
+E                +  where '86' = AgentReply(text='86', intent='reasoned_answer', confidence=0.99, language='fa', status='READY', event='', data={'reaso...', 'source_event_order', 'source_answer_consistency', 'result_verified'], 'web_bypassed': True, 'tool_bypassed': True}).text
+E                +    where AgentReply(text='86', intent='reasoned_answer', confidence=0.99, language='fa', status='READY', event='', data={'reaso...', 'source_event_order', 'source_answer_consistency', 'result_verified'], 'web_bypassed': True, 'tool_bypassed': True}) = respond('500 را 20 درصد کم کن، 30 اضافه کن و حاصل را بر 5 تقسیم کن')
+E                +      where respond = <jarvis.agent.core.JarvisAgent object at 0x7fc1b2d8cb90>.respond
+E                +        where <jarvis.agent.core.JarvisAgent object at 0x7fc1b2d8cb90> = RuntimeContext(config=AppConfig(app_name='Jarvis', version='0.11.0', default_personality='Normal', window=WindowConfig...0>, agent=<jarvis.agent.core.JarvisAgent object at 0x7fc1b2d8cb90>, startup_warnings=(), logger=<Logger jarvis (INFO)>).agent
+
+tests/test_v20_cognitive.py:47: AssertionError
+------------------------------ Captured log call -------------------------------
+INFO     jarvis:bootstrap.py:108 Starting Jarvis 0.11.0 (debug=False)
+INFO     jarvis:bootstrap.py:127 Hybrid brain loaded: 2106645 parameters, 1391119 bytes
+INFO     jarvis:bootstrap.py:143 JARVIS Smart Brain registered lazily: 23077376 parameters, dataset=dataset_v009, pretrained_source=None
+=========================== short test summary info ============================
+SUBFAILED(question='دنبالهٔ ۱، ۲، ۴، ۸ را ادامه بده؛ اما قبلش توضیح بده چرا جواب قطعی و یکتا نیست.') tests/test_v094_challenge_reasoning.py::ChallengeReasoningV094Tests::test_reported_logic_questions_are_solved_locally_without_tools
+SUBFAILED(prompt='How many ordered selections of 3 items from 10 distinct items?') tests/test_v14_runtime_intelligence.py::RuntimeIntelligenceV14Tests::test_v14_end_to_end_reasoning_language_and_code_holdout
+SUBFAILED(prompt='نمره 70 با وزن 2 و نمره 90 با وزن 3 داریم. میانگین وزنی؟') tests/test_v14_runtime_intelligence.py::RuntimeIntelligenceV14Tests::test_v14_end_to_end_reasoning_language_and_code_holdout
+SUBFAILED(prompt='خودرویی با سرعت 65 کیلومتر بر ساعت، 4 ساعت حرکت می\u200cکند. مسافت چقدر است؟') tests/test_v14_runtime_intelligence.py::RuntimeIntelligenceV14Tests::test_v14_end_to_end_reasoning_language_and_code_holdout
+SUBFAILED(prompt='سرعت خودرو 72 کیلومتر بر ساعت است و 2.5 ساعت حرکت می\u200cکند؛ مسافت؟') tests/test_v15_intelligence.py::IntelligenceV15Tests::test_v15_end_to_end_holdout_without_tools
+SUBFAILED(prompt='A coin has a 60% chance of heads. In 3 tosses, what is the probability of exactly 2 heads?') tests/test_v16_intelligence.py::IntelligenceV16Tests::test_v16_reported_failures_and_variants_without_tools
+SUBFAILED(prompt='How many arrangements of 3 from 7 without repetition?') tests/test_v16_intelligence.py::IntelligenceV16Tests::test_v16_reported_failures_and_variants_without_tools
+SUBFAILED(prompt='A coin has heads probability 70%. In 4 tosses, exactly 3 heads?') tests/test_v17_intelligence.py::IntelligenceV17Tests::test_v17_semantic_ir_generalization_without_tools
+SUBFAILED(prompt='What is the chance that two fair dice add up to 11?') tests/test_v17_intelligence.py::IntelligenceV17Tests::test_v17_semantic_ir_generalization_without_tools
+SUBFAILED(prompt='A coin has a 25% chance of heads. In 4 tosses exactly 1 head?') tests/test_v17_intelligence.py::IntelligenceV17Tests::test_v17_semantic_ir_generalization_without_tools
+SUBFAILED(prompt='دو تاس سالم؛ شانس اینکه مجموع 12 شود؟') tests/test_v17_intelligence.py::IntelligenceV17Tests::test_v17_semantic_ir_generalization_without_tools
+SUBFAILED(prompt='This coin has a 65% chance of heads. In 4 tosses, exactly 3 heads?') tests/test_v18_intelligence.py::IntelligenceV18Tests::test_v18_holdout_end_to_end_without_web_or_tools
+SUBFAILED(prompt='Two fair dice are rolled. What is the chance their sum equals 9?') tests/test_v18_intelligence.py::IntelligenceV18Tests::test_v18_holdout_end_to_end_without_web_or_tools
+SUBFAILED(prompt='What is the probability that two fair dice total 6?') tests/test_v18_intelligence.py::IntelligenceV18Tests::test_v18_holdout_end_to_end_without_web_or_tools
+SUBFAILED(prompt='Divide 660 in a 4:7 ratio') tests/test_v18_intelligence.py::IntelligenceV18Tests::test_v18_holdout_end_to_end_without_web_or_tools
+FAILED tests/test_v20_cognitive.py::test_trained_operation_changes_final_runtime_answer
+16 failed, 898 passed, 570 subtests passed in 31.27s

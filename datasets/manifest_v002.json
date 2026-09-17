@@ -1,0 +1,120 @@
+{
+  "dataset_version": "dataset_v002",
+  "created_by": "JARVIS v0.6 project-owned training pipeline",
+  "provenance": "random initialization; project-authored data only",
+  "pretrained_sources": [],
+  "pretrained_source": null,
+  "seed": 6062026,
+  "examples": 4643,
+  "splits": {
+    "train": 3703,
+    "validation": 476,
+    "test": 464
+  },
+  "categories": {
+    "argument_extraction": 30,
+    "context_followup": 224,
+    "context_followup_v6": 18,
+    "desktop_action": 420,
+    "english_conversation": 160,
+    "entity_arguments": 125,
+    "entity_extraction": 24,
+    "general_knowledge": 200,
+    "general_knowledge_v6": 108,
+    "goal_planning": 18,
+    "instruction_following": 308,
+    "model_identity": 77,
+    "multi_step_tasks": 845,
+    "persian_conversation": 192,
+    "personality": 119,
+    "personality_behavior_v6": 14,
+    "personality_switch_v6": 7,
+    "programming": 72,
+    "reasoning": 72,
+    "reasoning_v6": 12,
+    "recovery_verification": 15,
+    "search_decision": 132,
+    "search_decision_v6": 24,
+    "tool_calling": 1361,
+    "tool_selection": 36,
+    "unknown_low_confidence": 30
+  },
+  "languages": {
+    "en": 1540,
+    "fa": 2253,
+    "mixed": 850
+  },
+  "curriculum": [
+    {
+      "stage": 1,
+      "name": "language_foundations",
+      "examples": 176
+    },
+    {
+      "stage": 2,
+      "name": "conversation",
+      "examples": 253
+    },
+    {
+      "stage": 3,
+      "name": "general_knowledge",
+      "examples": 380
+    },
+    {
+      "stage": 4,
+      "name": "instruction_following",
+      "examples": 338
+    },
+    {
+      "stage": 5,
+      "name": "action_recognition",
+      "examples": 1484
+    },
+    {
+      "stage": 6,
+      "name": "entity_extraction",
+      "examples": 24
+    },
+    {
+      "stage": 7,
+      "name": "tool_calling",
+      "examples": 333
+    },
+    {
+      "stage": 8,
+      "name": "argument_extraction",
+      "examples": 155
+    },
+    {
+      "stage": 9,
+      "name": "context_memory",
+      "examples": 242
+    },
+    {
+      "stage": 10,
+      "name": "planning",
+      "examples": 863
+    },
+    {
+      "stage": 11,
+      "name": "reasoning",
+      "examples": 84
+    },
+    {
+      "stage": 12,
+      "name": "recovery_verification",
+      "examples": 15
+    },
+    {
+      "stage": 13,
+      "name": "search_decision",
+      "examples": 156
+    },
+    {
+      "stage": 14,
+      "name": "jarvis_personality",
+      "examples": 140
+    }
+  ],
+  "sha256": "d53d4585641f69d8cc4880cb12540e17219e1556d56f946fa751b628d69b62ae"
+}

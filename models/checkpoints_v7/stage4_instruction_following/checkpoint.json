@@ -1,0 +1,18 @@
+{
+  "training_complete": false,
+  "dataset_version": "dataset_v003",
+  "training_stages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoint_parent": "stage3_general_knowledge",
+  "backend": "numpy_cpu_full_gradient",
+  "optimizer": "AdamW",
+  "step": 192,
+  "trained_at_utc": "2026-08-21T23:43:56.199543+00:00",
+  "model_file": null,
+  "size_bytes": 0,
+  "sha256": null
+}

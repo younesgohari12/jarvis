@@ -1,0 +1,25 @@
+base 512 4096
+features 200 3040 seconds 38.7
+features 400 3040 seconds 76.4
+features 600 3040 seconds 113.8
+features 800 3040 seconds 148.5
+features 1000 3040 seconds 181.1
+features 1200 3040 seconds 212.0
+features 1400 3040 seconds 243.0
+features 1600 3040 seconds 275.3
+features 1800 3040 seconds 307.4
+features 2000 3040 seconds 339.3
+features 2200 3040 seconds 371.2
+features 2400 3040 seconds 406.0
+features 2600 3040 seconds 437.6
+features 2800 3040 seconds 464.0
+features 3000 3040 seconds 491.2
+epoch 1 {'tokens': 3840, 'loss': 2.4987590312957764, 'token_accuracy': 0.3763020833333333}
+epoch 2 {'tokens': 3840, 'loss': 2.412734031677246, 'token_accuracy': 0.39140625}
+epoch 3 {'tokens': 3840, 'loss': 2.38582706451416, 'token_accuracy': 0.3921875}
+epoch 4 {'tokens': 3840, 'loss': 2.32344388961792, 'token_accuracy': 0.39479166666666665}
+epoch 5 {'tokens': 3840, 'loss': 2.2769291400909424, 'token_accuracy': 0.40703125}
+epoch 6 {'tokens': 3840, 'loss': 2.2502036094665527, 'token_accuracy': 0.40520833333333334}
+epoch 7 {'tokens': 3840, 'loss': 2.2203803062438965, 'token_accuracy': 0.41041666666666665}
+epoch 8 {'tokens': 3840, 'loss': 2.19120717048645, 'token_accuracy': 0.4192708333333333}
+complete True {'validation': {'tokens': 3840, 'loss': 5.998352527618408, 'token_accuracy': 0.29739583333333336}, 'test': {'tokens': 3840, 'loss': 5.917140483856201, 'token_accuracy': 0.29921875}} {'train': {'tokens': 28799, 'loss': 2.1830403804779053, 'token_accuracy': 0.4158477724921004}, 'validation': {'tokens': 3840, 'loss': 2.19120717048645, 'token_accuracy': 0.4192708333333333}, 'test': {'tokens': 3840, 'loss': 2.1794676780700684, 'token_accuracy': 0.42083333333333334}}

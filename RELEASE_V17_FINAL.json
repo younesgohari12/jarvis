@@ -1,0 +1,48 @@
+{
+  "release": "JARVIS Intelligence v17 FINAL",
+  "runtime_version": "v17",
+  "base_project": "v0.11.0",
+  "semantic_ir": "jarvis/agent/semantic_ir_v17.py",
+  "local_intelligence": "jarvis/agent/local_intelligence_v17.py",
+  "rewrite_engine": "jarvis/agent/rewrite_v17.py",
+  "dataset_version": "dataset_v008",
+  "dataset_total_examples": 38100,
+  "dataset_new_examples": 1570,
+  "dataset_source_shards": 40,
+  "cross_split_concept_leakage": 0,
+  "tokenizer_round_trip_accuracy": 1.0,
+  "unknown_token_rate": 0.0,
+  "holdout": {
+    "passed": 40,
+    "total": 40,
+    "exact_overlap": 0,
+    "web_tools_forbidden": true
+  },
+  "regression_tests": {
+    "passed": 680,
+    "failed": 0,
+    "batches": [
+      485,
+      142,
+      53
+    ]
+  },
+  "model_oriented_parameters": 26223116,
+  "parameter_policy": "unchanged; no unverified neural parameter inflation",
+  "architecture": [
+    "semantic_intermediate_representation",
+    "semantic_role_binding",
+    "bounded_multi_stage_reasoning",
+    "deterministic_solver",
+    "result_verification",
+    "context_safe_rewrite"
+  ],
+  "sha256": {
+    "jarvis/agent/semantic_ir_v17.py": "a4b10161f594458a18d67f10aad10798d12194b234ff808afa772d707cca8aef",
+    "jarvis/agent/local_intelligence_v17.py": "13a972aad30cb274d0dee84cf8e343049473ab729414b6aeda8c42d25d64a80c",
+    "jarvis/agent/rewrite_v17.py": "3a365992cf6723258eaa10fadaa9f2ed6fcb0c2363d759d5ab007790090855a4",
+    "datasets/manifest_v008.json": "1c01aa919a1b14c68c6ed937f96619e00c55287c0219ae0ed8361cd5cce4ee8e",
+    "models/tokenizer_metrics_v008.json": "fb353802c1ef07e861ec3aed3b52e8cbb0dd8672ea21626b7122f368c2a6af4f",
+    "reports/v17_holdout_benchmark.json": "485891a259d0361698922c04495342cb8449dc9fc5ce0d0afa089e4fad98fdaf"
+  }
+}

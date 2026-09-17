@@ -1,0 +1,23 @@
+{
+  "format": "jarvis-v14-tokenization-report-v1",
+  "dataset_version": "dataset_v006",
+  "tokenizer": "models/jarvis_tokenizer_v003.json",
+  "tokenizer_sha256": "e116174dbcb823714951cfb3e889a852e26461336968f3b965f61d28883c46a9",
+  "vocab_size": 4096,
+  "base_training_examples": 12391,
+  "training_examples_after_lab_merge": 12391,
+  "lab_supervised_added": 0,
+  "lab_tool_only_skipped": 0,
+  "lab_disabled_files": 0,
+  "lab_malformed_skipped": 0,
+  "mean_sequence_tokens": 57.4255,
+  "median_sequence_tokens": 54,
+  "validation_texts": 2950,
+  "validation_tokens_per_utf8_byte": 0.373771,
+  "normalized_round_trip_accuracy": 1.0,
+  "unknown_token_rate": 0.0,
+  "output": "datasets/tokenized/dataset_v006_train.jsonl",
+  "output_sha256": "5fc9a0aaf3972f42b3760ad35b5c7deb181e8371bc731189edb4ba654a9acadf",
+  "note": "v14 uses dataset_v006 and merges enabled LAB supervised rows without duplicating built-in corpus files.",
+  "pretrained_source": null
+}

@@ -1,0 +1,23 @@
+{
+  "training_texts_scanned": 407399,
+  "original_candidates": 275,
+  "excluded_for_overlap": 1,
+  "retained": 274,
+  "collisions": [
+    {
+      "id": "fresh_174",
+      "question": "صدا را روی 55 درصد بگذار",
+      "matches": {
+        "exact": null,
+        "normalized": null,
+        "template": "datasets/v20/cognitive.jsonl"
+      }
+    }
+  ],
+  "exact_overlap": 0,
+  "normalized_overlap": 0,
+  "template_overlap": 0,
+  "template_definition": "NFKC+FA/EN word-number normalization then mask numeric spans; whole lexical skeleton",
+  "semantic_overlap_claim": "No claim of zero conceptual overlap. Arithmetic/semantic families intentionally recur.",
+  "clean_sha256": "d19e40c43a1d21f733d66bc93031a593b9534c2db66eef9ab8dcb41742029b22"
+}

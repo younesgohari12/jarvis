@@ -1,0 +1,42 @@
+{
+  "format": "jarvis-continual-training-v13-v1",
+  "backend": "torch_cpu_adamw",
+  "source": "models/jarvis_nano_v12.npz",
+  "output": "models/jarvis_nano_v13_candidate.npz",
+  "parameters": 23077376,
+  "dataset_version": "dataset_v005",
+  "steps": 40,
+  "sequence_length": 64,
+  "ratios": {
+    "generalization": 0.38,
+    "reasoning": 0.42,
+    "rehearsal": 0.2
+  },
+  "learning_rate": 1.5e-05,
+  "min_learning_rate": 3e-06,
+  "pool_counts": {
+    "generalization": 19,
+    "reasoning": 12,
+    "rehearsal": 9
+  },
+  "mean_training_loss": 5.187922,
+  "mean_gradient_norm": 28.735827,
+  "probe_loss_before": {
+    "generalization": 4.737776,
+    "reasoning": 5.807439,
+    "rehearsal": 4.54446
+  },
+  "probe_loss_after": {
+    "generalization": 4.493267,
+    "reasoning": 5.267201,
+    "rehearsal": 4.454867
+  },
+  "probe_improvement_pct": {
+    "generalization": 5.161,
+    "reasoning": 9.303,
+    "rehearsal": 1.971
+  },
+  "duration_seconds": 14.066,
+  "promoted_release": "models/jarvis_nano_v13.npz",
+  "promotion_strategy": "40% interpolation into v12 to reduce drift"
+}

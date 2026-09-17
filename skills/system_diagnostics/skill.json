@@ -1,0 +1,10 @@
+{
+  "format": "jarvis-skill-v1",
+  "id": "system_diagnostics",
+  "name": "System Diagnostics",
+  "version": "0.7.2",
+  "description": "Read-only health checks for models, memory, tools and hardware.",
+  "required_tools": ["diagnose_system", "cpu_info", "ram_info", "gpu_info"],
+  "maximum_permission": "L0",
+  "languages": ["fa", "en"]
+}

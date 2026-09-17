@@ -1,0 +1,6623 @@
+{
+  "version": 4,
+  "scenario_count": 306,
+  "scenarios": [
+    {
+      "id": "open-chrome-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "کروم رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-chrome-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "کرومو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-chrome-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه کروم رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-chrome-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Chrome",
+          "expected": {
+            "action": "open",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-chrome-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Chrome",
+          "expected": {
+            "action": "open",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-chrome-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "کروم رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-chrome-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "کروم رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-chrome-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "کرومو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-chrome-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "مرورگر کروم رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-chrome-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Chrome",
+          "expected": {
+            "action": "close",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-chrome-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Chrome",
+          "expected": {
+            "action": "close",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-chrome-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از کروم خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-edge-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "مایکروسافت اج رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-edge-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "مایکروسافت اجو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-edge-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه مایکروسافت اج رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-edge-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Microsoft Edge",
+          "expected": {
+            "action": "open",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-edge-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Microsoft Edge",
+          "expected": {
+            "action": "open",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-edge-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "مایکروسافت اج رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-edge-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "مایکروسافت اج رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-edge-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "مایکروسافت اجو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-edge-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "مرورگر مایکروسافت اج رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-edge-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Microsoft Edge",
+          "expected": {
+            "action": "close",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-edge-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Microsoft Edge",
+          "expected": {
+            "action": "close",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-edge-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از مایکروسافت اج خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-firefox-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "فایرفاکس رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-firefox-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "فایرفاکسو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-firefox-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه فایرفاکس رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-firefox-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Firefox",
+          "expected": {
+            "action": "open",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-firefox-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Firefox",
+          "expected": {
+            "action": "open",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-firefox-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "فایرفاکس رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-firefox-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "فایرفاکس رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-firefox-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "فایرفاکسو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-firefox-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "مرورگر فایرفاکس رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-firefox-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Firefox",
+          "expected": {
+            "action": "close",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-firefox-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Firefox",
+          "expected": {
+            "action": "close",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-firefox-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از فایرفاکس خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-steam-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "استیم رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-steam-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "استیمو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-steam-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه استیم رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-steam-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Steam",
+          "expected": {
+            "action": "open",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-steam-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Steam",
+          "expected": {
+            "action": "open",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-steam-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "استیم رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-steam-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "استیم رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-steam-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "استیمو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-steam-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه استیم رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-steam-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Steam",
+          "expected": {
+            "action": "close",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-steam-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Steam",
+          "expected": {
+            "action": "close",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-steam-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از استیم خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-discord-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "دیسکورد رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-discord-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "دیسکوردو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-discord-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه دیسکورد رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-discord-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Discord",
+          "expected": {
+            "action": "open",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-discord-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Discord",
+          "expected": {
+            "action": "open",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-discord-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "دیسکورد رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-discord-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "دیسکورد رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-discord-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "دیسکوردو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-discord-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه دیسکورد رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-discord-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Discord",
+          "expected": {
+            "action": "close",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-discord-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Discord",
+          "expected": {
+            "action": "close",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-discord-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از دیسکورد خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-telegram-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "تلگرام رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-telegram-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "تلگرامو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-telegram-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه تلگرام رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-telegram-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Telegram",
+          "expected": {
+            "action": "open",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-telegram-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Telegram",
+          "expected": {
+            "action": "open",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-telegram-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "تلگرام رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-telegram-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "تلگرام رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-telegram-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "تلگرامو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-telegram-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه تلگرام رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-telegram-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Telegram",
+          "expected": {
+            "action": "close",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-telegram-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Telegram",
+          "expected": {
+            "action": "close",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-telegram-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از تلگرام خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-spotify-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "اسپاتیفای رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-spotify-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "اسپاتیفایو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-spotify-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه اسپاتیفای رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-spotify-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Spotify",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-spotify-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Spotify",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-spotify-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "اسپاتیفای رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-spotify-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "اسپاتیفای رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-spotify-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "اسپاتیفایو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-spotify-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه اسپاتیفای رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-spotify-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Spotify",
+          "expected": {
+            "action": "close",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-spotify-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Spotify",
+          "expected": {
+            "action": "close",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-spotify-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از اسپاتیفای خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-vscode-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "وی اس کد رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-vscode-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "وی اس کدو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-vscode-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه وی اس کد رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-vscode-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open VS Code",
+          "expected": {
+            "action": "open",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-vscode-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch VS Code",
+          "expected": {
+            "action": "open",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-vscode-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "وی اس کد رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-vscode-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "وی اس کد رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-vscode-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "وی اس کدو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-vscode-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه وی اس کد رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-vscode-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close VS Code",
+          "expected": {
+            "action": "close",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-vscode-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate VS Code",
+          "expected": {
+            "action": "close",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-vscode-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از وی اس کد خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-notepad-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "نوت پد رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-notepad-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "نوت پدو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-notepad-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه نوت پد رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-notepad-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Notepad",
+          "expected": {
+            "action": "open",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-notepad-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Notepad",
+          "expected": {
+            "action": "open",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-notepad-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "نوت پد رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-notepad-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "نوت پد رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-notepad-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "نوت پدو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-notepad-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه نوت پد رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-notepad-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Notepad",
+          "expected": {
+            "action": "close",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-notepad-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Notepad",
+          "expected": {
+            "action": "close",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-notepad-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از نوت پد خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "notepad",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "notepad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-calculator-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "ماشین حساب رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-calculator-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "ماشین حسابو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-calculator-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه ماشین حساب رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-calculator-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Calculator",
+          "expected": {
+            "action": "open",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-calculator-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Calculator",
+          "expected": {
+            "action": "open",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-calculator-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "ماشین حساب رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-calculator-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "ماشین حساب رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-calculator-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "ماشین حسابو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-calculator-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه ماشین حساب رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-calculator-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Calculator",
+          "expected": {
+            "action": "close",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-calculator-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Calculator",
+          "expected": {
+            "action": "close",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-calculator-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از ماشین حساب خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "calculator",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "calculator"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-explorer-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "اکسپلورر رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-explorer-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "اکسپلوررو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-explorer-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه اکسپلورر رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-explorer-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Explorer",
+          "expected": {
+            "action": "open",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-explorer-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Explorer",
+          "expected": {
+            "action": "open",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-explorer-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "اکسپلورر رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-explorer-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "اکسپلورر رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-explorer-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "اکسپلوررو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-explorer-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه اکسپلورر رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-explorer-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Explorer",
+          "expected": {
+            "action": "close",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-explorer-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Explorer",
+          "expected": {
+            "action": "close",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-explorer-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از اکسپلورر خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "explorer",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "explorer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-cmd-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "سی ام دی رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-cmd-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "سی ام دیو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-cmd-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه سی ام دی رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-cmd-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open CMD",
+          "expected": {
+            "action": "open",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-cmd-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch CMD",
+          "expected": {
+            "action": "open",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-cmd-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "سی ام دی رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-cmd-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "سی ام دی رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-cmd-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "سی ام دیو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-cmd-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه سی ام دی رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-cmd-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close CMD",
+          "expected": {
+            "action": "close",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-cmd-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate CMD",
+          "expected": {
+            "action": "close",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-cmd-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از سی ام دی خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "cmd",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "cmd"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-powershell-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "پاورشل رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-powershell-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "پاورشلو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-powershell-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه پاورشل رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-powershell-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open PowerShell",
+          "expected": {
+            "action": "open",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-powershell-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch PowerShell",
+          "expected": {
+            "action": "open",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-powershell-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "پاورشل رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-powershell-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "پاورشل رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-powershell-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "پاورشلو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-powershell-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه پاورشل رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-powershell-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close PowerShell",
+          "expected": {
+            "action": "close",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-powershell-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate PowerShell",
+          "expected": {
+            "action": "close",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-powershell-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از پاورشل خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "powershell",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-paint-1",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "پینت رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-paint-2",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "پینتو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-paint-3",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "برنامه پینت رو اجرا کن",
+          "expected": {
+            "action": "open",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-paint-4",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "open Paint",
+          "expected": {
+            "action": "open",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-paint-5",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "launch Paint",
+          "expected": {
+            "action": "open",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-paint-6",
+      "category": "open_app",
+      "turns": [
+        {
+          "text": "پینت رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-paint-1",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "پینت رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-paint-2",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "پینتو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-paint-3",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "برنامه پینت رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-paint-4",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "close Paint",
+          "expected": {
+            "action": "close",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-paint-5",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "terminate Paint",
+          "expected": {
+            "action": "close",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "close-paint-6",
+      "category": "close_app",
+      "turns": [
+        {
+          "text": "از پینت خارج شو",
+          "expected": {
+            "action": "close",
+            "entity": "paint",
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "paint"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-c-1",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "درایو C رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "C",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "C:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-c-2",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "درایو سی رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "C",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "C:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-c-3",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "برو تو درایو C",
+          "expected": {
+            "action": "open",
+            "entity": "C",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "C:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-c-4",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "open drive C",
+          "expected": {
+            "action": "open",
+            "entity": "C",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "C:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-c-5",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "C drive رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "C",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "C:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-d-1",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "درایو D رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "D",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "D:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-d-2",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "درایو دی رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "D",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "D:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-d-3",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "برو تو درایو D",
+          "expected": {
+            "action": "open",
+            "entity": "D",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "D:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-d-4",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "open drive D",
+          "expected": {
+            "action": "open",
+            "entity": "D",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "D:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-d-5",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "D drive رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "D",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "D:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-e-1",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "درایو E رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "E",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "E:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-e-2",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "درایو ای رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "E",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "E:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-e-3",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "برو تو درایو E",
+          "expected": {
+            "action": "open",
+            "entity": "E",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "E:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-e-4",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "open drive E",
+          "expected": {
+            "action": "open",
+            "entity": "E",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "E:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-e-5",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "E drive رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "E",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "E:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-f-1",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "درایو F رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "F",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "F:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-f-2",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "درایو اف رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "F",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "F:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-f-3",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "برو تو درایو F",
+          "expected": {
+            "action": "open",
+            "entity": "F",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "F:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-f-4",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "open drive F",
+          "expected": {
+            "action": "open",
+            "entity": "F",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "F:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive-f-5",
+      "category": "drive",
+      "turns": [
+        {
+          "text": "F drive رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "F",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path": "F:\\"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-desktop-1",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "دسکتاپ رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "desktop",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-desktop-2",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "دسکتاپ رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "desktop",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-desktop-3",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "open Desktop",
+          "expected": {
+            "action": "open",
+            "entity": "desktop",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-desktop-4",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "go to Desktop",
+          "expected": {
+            "action": "open",
+            "entity": "desktop",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-downloads-1",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "دانلودها رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "downloads",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-downloads-2",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "دانلودها رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "downloads",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-downloads-3",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "open Downloads",
+          "expected": {
+            "action": "open",
+            "entity": "downloads",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-downloads-4",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "go to Downloads",
+          "expected": {
+            "action": "open",
+            "entity": "downloads",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-documents-1",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "اسناد رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "documents",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-documents-2",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "اسناد رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "documents",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-documents-3",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "open Documents",
+          "expected": {
+            "action": "open",
+            "entity": "documents",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-documents-4",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "go to Documents",
+          "expected": {
+            "action": "open",
+            "entity": "documents",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-pictures-1",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "تصاویر رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "pictures",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-pictures-2",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "تصاویر رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "pictures",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-pictures-3",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "open Pictures",
+          "expected": {
+            "action": "open",
+            "entity": "pictures",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-pictures-4",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "go to Pictures",
+          "expected": {
+            "action": "open",
+            "entity": "pictures",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-videos-1",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "ویدیوها رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "videos",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-videos-2",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "ویدیوها رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "videos",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-videos-3",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "open Videos",
+          "expected": {
+            "action": "open",
+            "entity": "videos",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-videos-4",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "go to Videos",
+          "expected": {
+            "action": "open",
+            "entity": "videos",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-music-1",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "موزیک رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "music",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-music-2",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "موزیک رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "music",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-music-3",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "open Music",
+          "expected": {
+            "action": "open",
+            "entity": "music",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-music-4",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "go to Music",
+          "expected": {
+            "action": "open",
+            "entity": "music",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-home-1",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "پوشه کاربر رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "home",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-home-2",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "پوشه کاربر رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "home",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-home-3",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "open Home",
+          "expected": {
+            "action": "open",
+            "entity": "home",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-home-4",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "go to Home",
+          "expected": {
+            "action": "open",
+            "entity": "home",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-appdata-1",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "اپ دیتا رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "appdata",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-appdata-2",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "اپ دیتا رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "appdata",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-appdata-3",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "open AppData",
+          "expected": {
+            "action": "open",
+            "entity": "appdata",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-appdata-4",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "go to AppData",
+          "expected": {
+            "action": "open",
+            "entity": "appdata",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-temp-1",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "پوشه موقت رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "temp",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-temp-2",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "پوشه موقت رو بیار",
+          "expected": {
+            "action": "open",
+            "entity": "temp",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-temp-3",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "open Temp",
+          "expected": {
+            "action": "open",
+            "entity": "temp",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "folder-temp-4",
+      "category": "known_folder",
+      "turns": [
+        {
+          "text": "go to Temp",
+          "expected": {
+            "action": "open",
+            "entity": "temp",
+            "calls": [
+              {
+                "tool": "open_folder",
+                "arguments": {
+                  "path_nonempty": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-youtube-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "یوتیوب رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "youtube",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.youtube.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-youtube-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو یوتیوب",
+          "expected": {
+            "action": "open",
+            "entity": "youtube",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.youtube.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-youtube-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open YouTube",
+          "expected": {
+            "action": "open",
+            "entity": "youtube",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.youtube.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-google-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "گوگل رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "google",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.google.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-google-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو گوگل",
+          "expected": {
+            "action": "open",
+            "entity": "google",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.google.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-google-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open Google",
+          "expected": {
+            "action": "open",
+            "entity": "google",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.google.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-github-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "گیت هاب رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "github",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://github.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-github-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو گیت هاب",
+          "expected": {
+            "action": "open",
+            "entity": "github",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://github.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-github-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open GitHub",
+          "expected": {
+            "action": "open",
+            "entity": "github",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://github.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-stackoverflow-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "استک اورفلو رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "stackoverflow",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://stackoverflow.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-stackoverflow-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو استک اورفلو",
+          "expected": {
+            "action": "open",
+            "entity": "stackoverflow",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://stackoverflow.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-stackoverflow-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open Stack Overflow",
+          "expected": {
+            "action": "open",
+            "entity": "stackoverflow",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://stackoverflow.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-reddit-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "ردیت رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "reddit",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.reddit.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-reddit-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو ردیت",
+          "expected": {
+            "action": "open",
+            "entity": "reddit",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.reddit.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-reddit-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open Reddit",
+          "expected": {
+            "action": "open",
+            "entity": "reddit",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.reddit.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-instagram-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "اینستاگرام رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "instagram",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.instagram.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-instagram-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو اینستاگرام",
+          "expected": {
+            "action": "open",
+            "entity": "instagram",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.instagram.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-instagram-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open Instagram",
+          "expected": {
+            "action": "open",
+            "entity": "instagram",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.instagram.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-facebook-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "فیسبوک رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "facebook",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.facebook.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-facebook-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو فیسبوک",
+          "expected": {
+            "action": "open",
+            "entity": "facebook",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.facebook.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-facebook-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open Facebook",
+          "expected": {
+            "action": "open",
+            "entity": "facebook",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.facebook.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-gmail-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "جیمیل رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "gmail",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://mail.google.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-gmail-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو جیمیل",
+          "expected": {
+            "action": "open",
+            "entity": "gmail",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://mail.google.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-gmail-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open Gmail",
+          "expected": {
+            "action": "open",
+            "entity": "gmail",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://mail.google.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-wikipedia-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "ویکی پدیا رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "wikipedia",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.wikipedia.org/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-wikipedia-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو ویکی پدیا",
+          "expected": {
+            "action": "open",
+            "entity": "wikipedia",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.wikipedia.org/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-wikipedia-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open Wikipedia",
+          "expected": {
+            "action": "open",
+            "entity": "wikipedia",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://www.wikipedia.org/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-spotify-1",
+      "category": "website",
+      "turns": [
+        {
+          "text": "سایت اسپاتیفای رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://open.spotify.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-spotify-2",
+      "category": "website",
+      "turns": [
+        {
+          "text": "برو سایت اسپاتیفای",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://open.spotify.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "website-spotify-3",
+      "category": "website",
+      "turns": [
+        {
+          "text": "open Spotify website",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_url",
+                "arguments": {
+                  "url": "https://open.spotify.com/"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-chrome-1",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Chrome یونس گوهری رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "یونس گوهری",
+                  "target_browser": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-chrome-2",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Chrome OpenAI رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "openai",
+                  "target_browser": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-chrome-3",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Chrome Python 3.13 رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "python 3.13",
+                  "target_browser": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-chrome-4",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Chrome REST API رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "rest api",
+                  "target_browser": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-edge-1",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Microsoft Edge یونس گوهری رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "یونس گوهری",
+                  "target_browser": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-edge-2",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Microsoft Edge OpenAI رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "openai",
+                  "target_browser": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-edge-3",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Microsoft Edge Python 3.13 رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "python 3.13",
+                  "target_browser": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-edge-4",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Microsoft Edge REST API رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "rest api",
+                  "target_browser": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-firefox-1",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Firefox یونس گوهری رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "یونس گوهری",
+                  "target_browser": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-firefox-2",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Firefox OpenAI رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "openai",
+                  "target_browser": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-firefox-3",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Firefox Python 3.13 رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "python 3.13",
+                  "target_browser": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "browser-search-firefox-4",
+      "category": "browser_search",
+      "turns": [
+        {
+          "text": "داخل Firefox REST API رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "rest api",
+                  "target_browser": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-close-1",
+      "category": "reference",
+      "turns": [
+        {
+          "text": "کروم رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "ببندش",
+          "expected": {
+            "action": "close",
+            "entity": "chrome",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-close-2",
+      "category": "reference",
+      "turns": [
+        {
+          "text": "مایکروسافت اج رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "همون مرورگر رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "edge",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-close-3",
+      "category": "reference",
+      "turns": [
+        {
+          "text": "فایرفاکس رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "اون برنامه رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "firefox",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-close-4",
+      "category": "reference",
+      "turns": [
+        {
+          "text": "استیم رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "همونو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "steam",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-close-5",
+      "category": "reference",
+      "turns": [
+        {
+          "text": "تلگرام رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "ببندش",
+          "expected": {
+            "action": "close",
+            "entity": "telegram",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-close-6",
+      "category": "reference",
+      "turns": [
+        {
+          "text": "دیسکورد رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "discord",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "همون قبلیه رو ببند",
+          "expected": {
+            "action": "close",
+            "entity": "discord",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "discord"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-close-7",
+      "category": "reference",
+      "turns": [
+        {
+          "text": "اسپاتیفای رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "spotify",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "close it",
+          "expected": {
+            "action": "close",
+            "entity": "spotify",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "spotify"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-close-8",
+      "category": "reference",
+      "turns": [
+        {
+          "text": "وی اس کد رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "quit that app",
+          "expected": {
+            "action": "close",
+            "entity": "vscode",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "close_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-search-1",
+      "category": "reference_search",
+      "turns": [
+        {
+          "text": "کروم رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "حالا داخلش OpenAI رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "chrome",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "openai",
+                  "target_browser": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-search-2",
+      "category": "reference_search",
+      "turns": [
+        {
+          "text": "مایکروسافت اج رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "توش Python رو سرچ کن",
+          "expected": {
+            "action": "search",
+            "entity": "edge",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "python",
+                  "target_browser": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-search-3",
+      "category": "reference_search",
+      "turns": [
+        {
+          "text": "فایرفاکس رو باز کن",
+          "expected": {
+            "action": "open",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "search REST API in it",
+          "expected": {
+            "action": "search",
+            "entity": "firefox",
+            "reference": true,
+            "calls": [
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "rest api",
+                  "target_browser": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify-1",
+      "category": "clarification",
+      "turns": [
+        {
+          "text": "یه فولدر باز کن",
+          "expected": {
+            "clarification": true,
+            "missing": "path",
+            "blocked_tool": "open_folder",
+            "calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify-2",
+      "category": "clarification",
+      "turns": [
+        {
+          "text": "یک پوشه باز کن",
+          "expected": {
+            "clarification": true,
+            "missing": "path",
+            "blocked_tool": "open_folder",
+            "calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify-3",
+      "category": "clarification",
+      "turns": [
+        {
+          "text": "open a folder",
+          "expected": {
+            "clarification": true,
+            "missing": "path",
+            "blocked_tool": "open_folder",
+            "calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify-4",
+      "category": "clarification",
+      "turns": [
+        {
+          "text": "یه برنامه باز کن",
+          "expected": {
+            "clarification": true,
+            "missing": "app",
+            "blocked_tool": "open_app",
+            "calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify-5",
+      "category": "clarification",
+      "turns": [
+        {
+          "text": "برنامه رو اجرا کن",
+          "expected": {
+            "clarification": true,
+            "missing": "app",
+            "blocked_tool": "open_app",
+            "calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify-6",
+      "category": "clarification",
+      "turns": [
+        {
+          "text": "یک اپلیکیشن باز کن",
+          "expected": {
+            "clarification": true,
+            "missing": "app",
+            "blocked_tool": "open_app",
+            "calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify-7",
+      "category": "clarification",
+      "turns": [
+        {
+          "text": "سرچ کن",
+          "expected": {
+            "clarification": true,
+            "missing": "query",
+            "blocked_tool": "web_search",
+            "calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify-8",
+      "category": "clarification",
+      "turns": [
+        {
+          "text": "search for",
+          "expected": {
+            "clarification": true,
+            "missing": "query",
+            "blocked_tool": "web_search",
+            "calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-browser-search-1",
+      "category": "multi_step",
+      "turns": [
+        {
+          "text": "کروم رو باز کن و یونس گوهری رو سرچ کن داخلش",
+          "expected": {
+            "multistep": true,
+            "action": "multi",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              },
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "یونس گوهری",
+                  "target_browser": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-browser-search-2",
+      "category": "multi_step",
+      "turns": [
+        {
+          "text": "مایکروسافت اج رو باز کن و OpenAI رو سرچ کن داخلش",
+          "expected": {
+            "multistep": true,
+            "action": "multi",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              },
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "openai",
+                  "target_browser": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-browser-search-3",
+      "category": "multi_step",
+      "turns": [
+        {
+          "text": "فایرفاکس رو باز کن و Python رو سرچ کن توش",
+          "expected": {
+            "multistep": true,
+            "action": "multi",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              },
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "python",
+                  "target_browser": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-browser-search-4",
+      "category": "multi_step",
+      "turns": [
+        {
+          "text": "open Chrome and search for local AI",
+          "expected": {
+            "multistep": true,
+            "action": "multi",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              },
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "local ai",
+                  "target_browser": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-browser-search-5",
+      "category": "multi_step",
+      "turns": [
+        {
+          "text": "launch Edge then look up REST API",
+          "expected": {
+            "multistep": true,
+            "action": "multi",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              },
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "rest api",
+                  "target_browser": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-browser-search-6",
+      "category": "multi_step",
+      "turns": [
+        {
+          "text": "open Firefox and search SQLite WAL in it",
+          "expected": {
+            "multistep": true,
+            "action": "multi",
+            "entity": "firefox",
+            "calls": [
+              {
+                "tool": "open_app",
+                "arguments": {
+                  "app": "firefox"
+                }
+              },
+              {
+                "tool": "web_search",
+                "arguments": {
+                  "query": "sqlite wal",
+                  "target_browser": "firefox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "focus-1",
+      "category": "process",
+      "turns": [
+        {
+          "text": "کروم رو بیار جلو",
+          "expected": {
+            "action": "focus",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "focus_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "restart-1",
+      "category": "process",
+      "turns": [
+        {
+          "text": "restart Chrome",
+          "expected": {
+            "action": "restart",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "restart_app",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "running-1",
+      "category": "process",
+      "turns": [
+        {
+          "text": "is Chrome running",
+          "expected": {
+            "action": "is_running",
+            "entity": "chrome",
+            "calls": [
+              {
+                "tool": "is_app_running",
+                "arguments": {
+                  "app": "chrome"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "focus-2",
+      "category": "process",
+      "turns": [
+        {
+          "text": "مایکروسافت اج رو بیار جلو",
+          "expected": {
+            "action": "focus",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "focus_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "restart-2",
+      "category": "process",
+      "turns": [
+        {
+          "text": "restart Microsoft Edge",
+          "expected": {
+            "action": "restart",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "restart_app",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "running-2",
+      "category": "process",
+      "turns": [
+        {
+          "text": "is Microsoft Edge running",
+          "expected": {
+            "action": "is_running",
+            "entity": "edge",
+            "calls": [
+              {
+                "tool": "is_app_running",
+                "arguments": {
+                  "app": "edge"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "focus-3",
+      "category": "process",
+      "turns": [
+        {
+          "text": "استیم رو بیار جلو",
+          "expected": {
+            "action": "focus",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "focus_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "restart-3",
+      "category": "process",
+      "turns": [
+        {
+          "text": "restart Steam",
+          "expected": {
+            "action": "restart",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "restart_app",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "running-3",
+      "category": "process",
+      "turns": [
+        {
+          "text": "is Steam running",
+          "expected": {
+            "action": "is_running",
+            "entity": "steam",
+            "calls": [
+              {
+                "tool": "is_app_running",
+                "arguments": {
+                  "app": "steam"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "focus-4",
+      "category": "process",
+      "turns": [
+        {
+          "text": "تلگرام رو بیار جلو",
+          "expected": {
+            "action": "focus",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "focus_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "restart-4",
+      "category": "process",
+      "turns": [
+        {
+          "text": "restart Telegram",
+          "expected": {
+            "action": "restart",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "restart_app",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "running-4",
+      "category": "process",
+      "turns": [
+        {
+          "text": "is Telegram running",
+          "expected": {
+            "action": "is_running",
+            "entity": "telegram",
+            "calls": [
+              {
+                "tool": "is_app_running",
+                "arguments": {
+                  "app": "telegram"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "focus-5",
+      "category": "process",
+      "turns": [
+        {
+          "text": "وی اس کد رو بیار جلو",
+          "expected": {
+            "action": "focus",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "focus_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "restart-5",
+      "category": "process",
+      "turns": [
+        {
+          "text": "restart VS Code",
+          "expected": {
+            "action": "restart",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "restart_app",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "running-5",
+      "category": "process",
+      "turns": [
+        {
+          "text": "is VS Code running",
+          "expected": {
+            "action": "is_running",
+            "entity": "vscode",
+            "calls": [
+              {
+                "tool": "is_app_running",
+                "arguments": {
+                  "app": "vscode"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

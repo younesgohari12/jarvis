@@ -1,0 +1,43 @@
+{
+  "dataset_manifest": {
+    "version": 6,
+    "seed": 2040,
+    "intent_count": 53,
+    "counts": {
+      "train": 654,
+      "validation": 186,
+      "test": 186
+    },
+    "scenario_count": 817,
+    "sha256": {
+      "train": "9c1fcea9052fa088bf47350587df4fd088f7ffae08997aeb25bbe8e8b12c9790",
+      "validation": "b1b3c5f6f78688677850ec2d1406e8a878b5f0875cba505eeffaf06f3d85f965",
+      "test": "7e25a1d9f32b15e2402e3df01a5b628c2f1ffd6e64555ded7adb8b9baa62bf7c"
+    }
+  },
+  "training_examples_after_augmentation": 1064,
+  "validation_examples": 186,
+  "test_examples": 186,
+  "intent_count": 53,
+  "epochs": 36,
+  "best_float_neural_validation_accuracy": 0.688172,
+  "final_float_neural_train_accuracy": 1.0,
+  "final_float_neural_validation_accuracy": 0.688172,
+  "final_float_neural_test_accuracy": 0.709677,
+  "final_loss": 0.013606,
+  "quantization": "symmetric_int8",
+  "trained_at_utc": "2026-08-21T23:52:57+00:00",
+  "python": "3.12",
+  "release": "0.7.0",
+  "pretrained_source": null,
+  "project_dataset_manifest": "datasets/manifest_v003.json",
+  "train_hybrid_accuracy": 1.0,
+  "train_known_accuracy": 1.0,
+  "train_unknown_recall": 1.0,
+  "validation_hybrid_accuracy": 0.650538,
+  "validation_known_accuracy": 0.642458,
+  "validation_unknown_recall": 0.857143,
+  "test_hybrid_accuracy": 0.655914,
+  "test_known_accuracy": 0.642458,
+  "test_unknown_recall": 1.0
+}

@@ -1,0 +1,106 @@
+{
+  "baseline_archive": "Jarvis_v0.11.0_Intelligence_v20.1_SEMANTIC_VERIFICATION_TESTED.zip",
+  "baseline_sha256": "c5a07c27b9ee934358405676fc19c827651cebcb80531c5bee627f91221d3ad0",
+  "original_checkpoint_count": 18,
+  "all_original_checkpoints_unchanged": true,
+  "checkpoints": [
+    {
+      "file": "models/code_intent_v19.npz",
+      "sha256": "bfa34a2c4fcc5cdeea63dbc2910042add27624c5d5d8cb4cc201d17320d09690",
+      "unchanged": true
+    },
+    {
+      "file": "models/code_intent_v20.npz",
+      "sha256": "77bd5e5c20a16f31330c2a9df58590cbec14e1af964041726c9179549c287df2",
+      "unchanged": true
+    },
+    {
+      "file": "models/execution_pattern_v19.npz",
+      "sha256": "1c112aed8eec59f590dcdc47ccf25c2d1f56c8c603bf269fed14e28fc20160cc",
+      "unchanged": true
+    },
+    {
+      "file": "models/jarvis_nano_v07.npz",
+      "sha256": "9a64678bd7f7a372401c081d80a016a0325713c382d0b496224fe88c9b52e318",
+      "unchanged": true
+    },
+    {
+      "file": "models/jarvis_nano_v08.npz",
+      "sha256": "a55af85e16023ec13c280c171143e8c173534b2ec864caed22b443e5d2d0d260",
+      "unchanged": true
+    },
+    {
+      "file": "models/jarvis_nano_v12.npz",
+      "sha256": "6db62f6fb69ae0c02a4166866f2b2c1562c41a067b142792b694d7d3f42e3a4b",
+      "unchanged": true
+    },
+    {
+      "file": "models/jarvis_nano_v13.npz",
+      "sha256": "cafc07e12ddd6b00e07885a421348515396a7a58cb7351d78a2da13992220f1d",
+      "unchanged": true
+    },
+    {
+      "file": "models/jarvis_nano_v18.npz",
+      "sha256": "a28217cd1c967e71c3cd7d4cd8f359bbcc812db853269fc5ac84f5c4414d0fde",
+      "unchanged": true
+    },
+    {
+      "file": "models/numeric_role_v19.npz",
+      "sha256": "847b665f53bdd2e492e4cd844c7b9df618113d272139bb8e2f01e84a97279421",
+      "unchanged": true
+    },
+    {
+      "file": "models/numeric_role_v20.npz",
+      "sha256": "bfc27cb809b50ca97ba2c47daf10b10d908e008f60cd01962c286338c1d53d8a",
+      "unchanged": true
+    },
+    {
+      "file": "models/numeric_slot_tagger_v18.npz",
+      "sha256": "55cd917c2efe863b94dfa4551929619aad551d1c5ddb8c6f467f644ca1eeb42a",
+      "unchanged": true
+    },
+    {
+      "file": "models/operation_v20.npz",
+      "sha256": "d91508fbdf64b448101a930a45989285e8f9dfd9aee4de7ff8832e362ff4c013",
+      "unchanged": true
+    },
+    {
+      "file": "models/repair_stage_v20.npz",
+      "sha256": "029bf1927765b2b89d621028c3457103687981f76895fc313b36395dbee2358f",
+      "unchanged": true
+    },
+    {
+      "file": "models/semantic_frame_v18.npz",
+      "sha256": "c6720a5ae4f7ec46bed4ab2385bad96ebb09bb34d25f5bc49ad2003f33c37cd3",
+      "unchanged": true
+    },
+    {
+      "file": "models/semantic_frame_v19.npz",
+      "sha256": "fd6c941c23b2ebb2ab60711738c0f9d1a0d072d68c923a708df84a44340b0b89",
+      "unchanged": true
+    },
+    {
+      "file": "models/semantic_frame_v20.npz",
+      "sha256": "41b6d4ecf5ebd83710bb5b8e1726bda35ec33cea2216b8fbf39a3e9d995ce65e",
+      "unchanged": true
+    },
+    {
+      "file": "models/semantic_router_v15.npz",
+      "sha256": "533116946afb974eb7d4f595369a77eaecdf5d263a2c714f819e462057224534",
+      "unchanged": true
+    },
+    {
+      "file": "models/semantic_router_v18.npz",
+      "sha256": "62d47668531a98a460240157546410fd97a1cb9aac886226f851de35fd322d13",
+      "unchanged": true
+    }
+  ],
+  "modified_existing_files": [
+    "jarvis/agent/core.py",
+    "jarvis/agent/intent_router.py",
+    "jarvis/agent/reasoning.py",
+    "jarvis/neural/conversation.py",
+    "tests/test_v20_cognitive.py"
+  ],
+  "new_release_is_separate_copy": true
+}

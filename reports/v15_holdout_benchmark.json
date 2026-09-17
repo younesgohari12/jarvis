@@ -1,0 +1,290 @@
+{
+  "format": "jarvis-v15-runtime-holdout-benchmark-v1",
+  "benchmark_scope": "targeted end-to-end runtime intelligence; not a general-IQ score",
+  "web_and_tools_disabled": true,
+  "exact_prompt_overlap_with_dataset_v007": 0,
+  "case_count": 22,
+  "v14": {
+    "passed": 4,
+    "total": 22,
+    "accuracy": 0.18181818181818182
+  },
+  "v15": {
+    "passed": 22,
+    "total": 22,
+    "accuracy": 1.0
+  },
+  "cases": [
+    {
+      "prompt": "101 به جز 1 و خودش مقسوم‌علیه دیگری دارد یا نه؟",
+      "expected_fragments": [
+        "عدد اول است"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "خیر؛ 101 غیر از ۱ و خودش مقسوم‌علیه دیگری ندارد، پس عدد اول است.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "97 غیر از یک و خودش مقسوم‌علیه دیگری دارد؟",
+      "expected_fragments": [
+        "عدد اول است"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "خیر؛ 97 غیر از ۱ و خودش مقسوم‌علیه دیگری ندارد، پس عدد اول است.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "بین 90 تا 100 کدام عدد اول است؟",
+      "expected_fragments": [
+        "97"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "عددهای اول بین 90 و 100: 97.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "احتمال دقیقاً 2 بار شیر در 4 پرتاب سکه سالم چقدر است؟",
+      "expected_fragments": [
+        "3/8",
+        "37.5"
+      ],
+      "v14_ok": false,
+      "v14_answer": "احتمال دقیقاً 2 بار = 1/4 = 25٪.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "P(X=2) = C(4,2)×0.5^2×0.5^2 = 3/8 = 37.5%.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "What is the probability of exactly 3 heads in 5 coin tosses?",
+      "expected_fragments": [
+        "5/16",
+        "31.25"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "P(X=3) = C(5,3)×0.5^3×0.5^2 = 5/16 = 31.25%.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "از 11 عضو چند انتخاب 4 عضوی می‌توان داشت؟",
+      "expected_fragments": [
+        "330"
+      ],
+      "v14_ok": false,
+      "v14_answer": "تعداد انتخاب‌ها C(1,1) = 1 است.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "تعداد انتخاب‌های بدون ترتیب C(11,4) = 330 است.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "P(9,3) را حساب کن",
+      "expected_fragments": [
+        "504"
+      ],
+      "v14_ok": true,
+      "v14_answer": "تعداد انتخاب‌های ترتیبی P(9,3) = 504 است.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "تعداد انتخاب‌های ترتیبی P(9,3) = 504 است.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "دو کارگر کاری را جداگانه در 6 و 3 ساعت تمام می‌کنند؛ با هم چند ساعت؟",
+      "expected_fragments": [
+        "2"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "نرخ مشترک = 1/6 + 1/3؛ زمان انجام کار = 2 ساعت.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "کتابی 120 صفحه دارد؛ روز اول 35 و روز دوم 28 صفحه خواندم. چند صفحه باقی مانده؟",
+      "expected_fragments": [
+        "57"
+      ],
+      "v14_ok": false,
+      "v14_answer": "نه. 35 عدد اول نیست؛ چون بر 5 بخش‌پذیر است.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "در مجموع 63 صفحه خوانده شده است؛ 57 صفحه باقی می‌ماند.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "علی 12 ساله است. 5 سال دیگر چند ساله است؟",
+      "expected_fragments": [
+        "17"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "5 سال بعد، سن = 17 سال.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "اگر 3 کتاب 120 هزار تومان باشد، 5 کتاب چقدر می‌شود؟",
+      "expected_fragments": [
+        "200"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "هزینهٔ 5 واحد = 200 هزار تومان.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "سرعت خودرو 72 کیلومتر بر ساعت است و 2.5 ساعت حرکت می‌کند؛ مسافت؟",
+      "expected_fragments": [
+        "180"
+      ],
+      "v14_ok": true,
+      "v14_answer": "مسافت = 180 کیلومتر.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "مسافت = 180 کیلومتر.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "حل کن: 4x - 7 = 21",
+      "expected_fragments": [
+        "x = 7"
+      ],
+      "v14_ok": true,
+      "v14_answer": "4x -7 = 21 ⇒ x = 7.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "4x -7 = 21 ⇒ x = 7.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "دنباله حسابی از 5 با اختلاف 4 داریم. جمله 9 چیست؟",
+      "expected_fragments": [
+        "37"
+      ],
+      "v14_ok": true,
+      "v14_answer": "جملهٔ 9 برابر 37 است.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "جملهٔ 9 برابر 37 است.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "اگر A قبل از B و B قبل از C باشد، کدام‌یک اول است؟",
+      "expected_fragments": [
+        "A"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "ترتیب از اول به آخر: a ← b ← c.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "به انگلیسی بگو: لطفاً فایل نهایی را ارسال کنید",
+      "expected_fragments": [
+        "Please send the final file."
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "Please send the final file.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "این جمله رو انگلیسی کن: جلسه به هفته بعد منتقل شد",
+      "expected_fragments": [
+        "meeting",
+        "next week"
+      ],
+      "v14_ok": false,
+      "v14_answer": "اطلاعات کافی برای جواب مطمئن ندارم. می‌خوای از اینترنت بررسی کنم؟",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "The meeting was moved to next week.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "Translate this into Farsi: The result is ready",
+      "expected_fragments": [
+        "نتیجه آماده است"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "نتیجه آماده است.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "خروجی این کد چیست؟ x=3; x += 2; print(x)",
+      "expected_fragments": [
+        "5"
+      ],
+      "v14_ok": false,
+      "v14_answer": "1x +0 = 3 ⇒ x = 3.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "خروجی کد:\n5",
+      "v15_error": ""
+    },
+    {
+      "prompt": "خروجی این کد چیست؟ x=2; for i in range(3): x += i; print(x)",
+      "expected_fragments": [
+        "2",
+        "3",
+        "5"
+      ],
+      "v14_ok": false,
+      "v14_answer": "1x +0 = 2 ⇒ x = 2.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "خروجی کد:\n2\n3\n5",
+      "v15_error": ""
+    },
+    {
+      "prompt": "این متن را رسمی‌تر بنویس: فایل رو زود بفرست",
+      "expected_fragments": [
+        "فایل را",
+        "ارسال کنید"
+      ],
+      "v14_ok": false,
+      "v14_answer": "این متن را رسمی‌تر بنویس: فایل رو زود بفرست زمانی معنا پیدا می‌کند که از یک فکر زیبا به رفتاری واقعی تبدیل شود. تغییرهای ماندگار معمولاً آرام و پیوسته شکل می‌گیرند؛ با انتخاب‌های کوچک، توجه به مسیر و شجاعتِ ادامه‌دادن حتی وقتی نتیجه فوری نیست.",
+      "v14_error": "",
+      "v15_ok": true,
+      "v15_answer": "نسخهٔ رسمی‌تر:\n\nفایل را در اسرع وقت ارسال کنید.",
+      "v15_error": ""
+    },
+    {
+      "prompt": "حداکثر 18 کلمه درباره امنیت داده بنویس",
+      "expected_fragments": [
+        "امنیت",
+        "داده"
+      ],
+      "v14_ok": false,
+      "v14_answer": "",
+      "v14_error": "AssertionError: unexpected tool invocation",
+      "v15_ok": true,
+      "v15_answer": "امنیت داده با هدف روشن، دادهٔ معتبر و ارزیابی دقیق، نتیجه‌ای قابل اعتماد و کاربردی ایجاد می‌کند.",
+      "v15_error": ""
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "source_dataset_count": 100,
+  "examples": 4800,
+  "unique_inputs": 4800,
+  "unique_input_ratio": 1.0,
+  "semantic_families": 12,
+  "duplicate_input_count": 0,
+  "fa_language_contamination": 1300,
+  "en_language_contamination": 0,
+  "linguistic_sanity_flags": 0,
+  "classification": true,
+  "labels": {
+    "code_trace": 400,
+    "coding": 400,
+    "constraint_writing": 400,
+    "desktop_command": 400,
+    "fresh_information": 400,
+    "general_question": 400,
+    "logic": 400,
+    "math": 400,
+    "probability": 400,
+    "rewrite": 400,
+    "translation": 400,
+    "word_problem": 400
+  },
+  "class_balance_min": 400,
+  "class_balance_max": 400,
+  "conflicting_input_labels": 0,
+  "format": "jarvis-v15-pack-manifest",
+  "dataset_version": "dataset_v007",
+  "pack": "routing",
+  "seed": 15092026
+}

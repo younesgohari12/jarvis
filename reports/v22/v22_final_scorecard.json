@@ -1,0 +1,179 @@
+{
+ "release": "v22",
+ "engine_version": "4.0.0-v22",
+ "date": "2026-09-17",
+ "rule": "every score references an actual evaluation artifact; no estimated numbers",
+ "categories": {
+  "regression_integrity": {
+   "score": 100,
+   "evidence": "v22_regression_results.json",
+   "detail": "989 passed, 585 subtests passed in 39.86s"
+  },
+  "p0_currency_item_guard": {
+   "score": 100,
+   "evidence": "v22_fresh_blind_results.json (adversarial_dimension 45/45 abstained)"
+  },
+  "p0_two_currency_guard": {
+   "score": 100,
+   "evidence": "v22_fresh_blind_results.json (adversarial_currency 25/25 abstained)"
+  },
+  "identifier_not_quantity": {
+   "score": 100,
+   "evidence": "v22_fresh_blind_results.json (adversarial_identifier 15/15)"
+  },
+  "p0_temporal_wrap": {
+   "score": 61.1,
+   "evidence": "v22_fresh_blind_results.json (scheduling, clock answers)"
+  },
+  "source_slot_consistency": {
+   "score": 100.0,
+   "evidence": "v22_semantic_results.json"
+  },
+  "numeric_roles": {
+   "score": 100.0,
+   "evidence": "v22_semantic_results.json"
+  },
+  "semantic_ir_v2_schema": {
+   "score": 100.0,
+   "evidence": "v22_semantic_results.json"
+  },
+  "reasoning_broad_500": {
+   "score": 81.2,
+   "evidence": "v22_reasoning_results.json (official runner)",
+   "detail": {
+    "Adversarial": {
+     "total": 100,
+     "correct": 100
+    },
+    "Code": {
+     "total": 100,
+     "correct": 100
+    },
+    "English": {
+     "total": 50,
+     "correct": 0
+    },
+    "Persian": {
+     "total": 50,
+     "correct": 6
+    },
+    "Reasoning": {
+     "total": 100,
+     "correct": 100
+    },
+    "World Model": {
+     "total": 100,
+     "correct": 100
+    }
+   }
+  },
+  "reasoning_diagnostic_300": {
+   "score": 100.0,
+   "evidence": "v22_diagnostic_results.json"
+  },
+  "reasoning_fresh_v20_274": {
+   "score": 77.0,
+   "evidence": "v22_fresh_v20_results.json"
+  },
+  "fresh_blind_overall": {
+   "score": 87.39,
+   "evidence": "v22_fresh_blind_results.json",
+   "detail": {
+    "wrong_answers": 0,
+    "coverage_note": "no_answer items are safe declines routed upstream"
+   }
+  },
+  "fresh_blind_fa": {
+   "score": 87.32,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "fresh_blind_en": {
+   "score": 87.47,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "finance_chain": {
+   "score": 100.0,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "inventory_chain": {
+   "score": 67.0,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "work_rate_binding": {
+   "score": 100.0,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "ratio_parts": {
+   "score": 100.0,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "age_tasks": {
+   "score": 78.6,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "probability_binomial": {
+   "score": 100.0,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "counting_combination": {
+   "score": 88.9,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "sequence_tasks": {
+   "score": 100.0,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "ownership_transfer": {
+   "score": 31.7,
+   "evidence": "v22_fresh_blind_results.json (fa ownership grammar gap documented)"
+  },
+  "language_nlu_normalization": {
+   "score": 100.0,
+   "evidence": "v22_language_results.json"
+  },
+  "language_nlg_rendering": {
+   "score": 100.0,
+   "evidence": "v22_language_results.json"
+  },
+  "response_sanitization": {
+   "score": 100.0,
+   "evidence": "v22_language_results.json"
+  },
+  "clarification_quality": {
+   "score": 83.3,
+   "evidence": "v22_language_results.json"
+  },
+  "abstention_precision": {
+   "score": 100.0,
+   "evidence": "v22_fresh_blind_results.json"
+  },
+  "ablation_typed_quantity": {
+   "score": 100,
+   "evidence": "v22_ablation_results.json",
+   "detail": "audit-off reproduces the v21 USD+ITEM bug; audit-on refuses"
+  },
+  "ablation_temporal": {
+   "score": 100,
+   "evidence": "v22_ablation_results.json"
+  },
+  "wiring_and_telemetry_honesty": {
+   "score": 100,
+   "evidence": "v22_architecture_status.json"
+  },
+  "performance_parity": {
+   "score": 90,
+   "evidence": "v22_performance_results.json",
+   "detail": {
+    "v21_mean_ms": 2.94,
+    "v22_mean_ms": 4.27
+   }
+  }
+ },
+ "OVERALL": 91.3,
+ "honest_limitations": [
+  "Persian ownership transfer grammar (v21 gap) still routes to safe decline",
+  "translation tasks through the runtime benchmark path remain weak (v21 parity, 2/10-6/50)",
+  "constraints/routing/web_needed benchmark categories require upper-layer LLM (v21 parity, 0)",
+  "129/1023 fresh-blind questions are safe declines (bounded grammar), not solved answers"
+ ]
+}

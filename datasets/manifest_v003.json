@@ -1,0 +1,85 @@
+{
+  "format": "jarvis-dataset-manifest-v3",
+  "dataset_version": "dataset_v003",
+  "seed": 7072026,
+  "total_examples": 5529,
+  "split_counts": {
+    "train": 4583,
+    "validation": 535,
+    "test": 411
+  },
+  "concept_group_counts": {
+    "train": 518,
+    "validation": 63,
+    "test": 53
+  },
+  "cross_split_concept_leakage": 0,
+  "duplicates_removed": 146,
+  "languages": {
+    "en": 1748,
+    "fa": 2931,
+    "mixed": 850
+  },
+  "categories": {
+    "argument_extraction": 30,
+    "context_followup": 224,
+    "context_followup_v6": 18,
+    "context_reference_v7": 4,
+    "desktop_action": 379,
+    "desktop_entity_extraction": 320,
+    "dynamic_multistep_planning": 192,
+    "english_conversation": 160,
+    "entity_arguments": 125,
+    "entity_extraction": 24,
+    "execution_false_positive": 4,
+    "general_knowledge": 200,
+    "general_knowledge_v6": 108,
+    "general_knowledge_v7": 512,
+    "goal_planning": 18,
+    "instruction_following": 269,
+    "model_identity": 77,
+    "multi_step_tasks": 845,
+    "persian_conversation": 192,
+    "personality": 119,
+    "personality_behavior_v6": 14,
+    "personality_switch_v6": 7,
+    "programming": 72,
+    "reasoning": 72,
+    "reasoning_v6": 12,
+    "recovery_verification": 15,
+    "search_decision": 132,
+    "search_decision_v6": 24,
+    "tool_calling": 1295,
+    "tool_selection": 36,
+    "unknown_low_confidence": 30
+  },
+  "unseen_benchmark_prompts": 1000,
+  "unseen_benchmark_training_overlap": 0,
+  "provenance": {
+    "origin": "jarvis-authored",
+    "pretrained_source": null,
+    "external_model_outputs": false
+  },
+  "files": {
+    "datasets/raw/seed_v003.jsonl": {
+      "bytes": 4589708,
+      "sha256": "bc28047daefd990b9e0978700bc102ff92e0e164b0da0beb90959dbd5f75c453"
+    },
+    "datasets/splits/dataset_v003_train.jsonl": {
+      "bytes": 3796178,
+      "sha256": "79205903a77f3501f094664a844f39eeab871fcc145e1759befaa286e5bce10d"
+    },
+    "datasets/splits/dataset_v003_validation.jsonl": {
+      "bytes": 444218,
+      "sha256": "4c0e9f0b806f6a46052ec7fbd11147002965e803fa614b33920967699c90dadc"
+    },
+    "datasets/splits/dataset_v003_test.jsonl": {
+      "bytes": 349312,
+      "sha256": "0d5cda9918998aa0a24f125ddac3c9993b9afd68fcf42dfb8e6e05c7be77af53"
+    },
+    "datasets/benchmarks/unseen_v003_1000.jsonl": {
+      "bytes": 371034,
+      "sha256": "addb83c63af3d66f948c5c847f6166c3eb877941208a2a5e43fac019782eb02b"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+semantic_frame {"train": 1.0, "validation": 0.9526813880126183, "test": 0.9754601226993865}
+numeric_role {"train": 1.0, "validation": 0.9592198581560284, "test": 0.9266304347826086}
+operation {"train": 1.0, "validation": 0.9827586206896551, "test": 0.9814814814814815}
+code_intent {"train": 1.0, "validation": 0.9791666666666666, "test": 0.9841269841269841}
+repair_stage {"train": 1.0, "validation": 1.0, "test": 1.0}

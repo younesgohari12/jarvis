@@ -1,0 +1,111 @@
+{
+  "format": "jarvis-v12-release-gate-v1",
+  "release_model": "models/jarvis_nano_v12.npz",
+  "release_sha256": "6db62f6fb69ae0c02a4166866f2b2c1562c41a067b142792b694d7d3f42e3a4b",
+  "release_size_bytes": 15153934,
+  "parameters": 23077376,
+  "dataset_version": "dataset_v004",
+  "old_v003_regression_gate": {
+    "baseline": {
+      "cross_entropy": 3.882264,
+      "token_accuracy": 0.441933,
+      "action_accuracy": 0.778095,
+      "argument_accuracy": 0.391794,
+      "entity_accuracy": 0.315789,
+      "context_accuracy": 0.754167,
+      "knowledge_accuracy": 0.358447,
+      "instruction_accuracy": 0.8,
+      "planning_accuracy": 0.414079,
+      "recovery_accuracy": 0.299363,
+      "search_decision_accuracy": 0.422078,
+      "personality_accuracy": 0.286713
+    },
+    "candidate": {
+      "cross_entropy": 3.883659,
+      "token_accuracy": 0.453547,
+      "action_accuracy": 0.741905,
+      "argument_accuracy": 0.371681,
+      "entity_accuracy": 0.368421,
+      "context_accuracy": 0.745833,
+      "knowledge_accuracy": 0.395833,
+      "instruction_accuracy": 0.775,
+      "planning_accuracy": 0.426501,
+      "recovery_accuracy": 0.324841,
+      "search_decision_accuracy": 0.363636,
+      "personality_accuracy": 0.440559
+    }
+  },
+  "old_v003_thresholds": {
+    "cross_entropy_max_relative_increase_pct": 0.5,
+    "token_accuracy_min_delta": -0.005,
+    "action_accuracy_min_delta": -0.05,
+    "instruction_accuracy_min_delta": -0.05,
+    "planning_accuracy_min_delta": -0.03
+  },
+  "old_v003_checks": {
+    "cross_entropy": true,
+    "token_accuracy": true,
+    "action_accuracy": true,
+    "instruction_accuracy": true,
+    "planning_accuracy": true
+  },
+  "curated_v12_holdout_gate": {
+    "format": "jarvis-v12-quality-gate-v1",
+    "dataset": "datasets/splits/dataset_v004_test.jsonl",
+    "scope": "curated_v12_holdout_only",
+    "baseline": "models/jarvis_nano_v08.npz",
+    "candidate": "models/jarvis_nano_v12.npz",
+    "baseline_metrics": {
+      "cases": 105,
+      "cross_entropy": 5.290025,
+      "perplexity": 198.348423,
+      "token_accuracy": 0.305893,
+      "by_language_cross_entropy": {
+        "en": 5.541114,
+        "fa": 5.393488,
+        "mixed": 5.0285
+      },
+      "by_stage_cross_entropy": {
+        "1": 5.280301,
+        "2": 5.533678,
+        "3": 5.066648,
+        "4": 5.056498,
+        "9": 6.021543
+      },
+      "by_language_token_accuracy": {
+        "en": 0.255,
+        "fa": 0.275162,
+        "mixed": 0.348293
+      }
+    },
+    "candidate_metrics": {
+      "cases": 105,
+      "cross_entropy": 5.274711,
+      "perplexity": 195.334035,
+      "token_accuracy": 0.354419,
+      "by_language_cross_entropy": {
+        "en": 5.452482,
+        "fa": 5.410873,
+        "mixed": 4.967544
+      },
+      "by_stage_cross_entropy": {
+        "1": 5.34791,
+        "2": 5.445144,
+        "3": 5.001362,
+        "4": 5.018666,
+        "9": 5.938834
+      },
+      "by_language_token_accuracy": {
+        "en": 0.325,
+        "fa": 0.320406,
+        "mixed": 0.396098
+      }
+    },
+    "cross_entropy_improvement_pct": 0.289,
+    "candidate_improves_curated_holdout": true,
+    "persian_token_accuracy_improvement_points": 4.524,
+    "promoted_from": "models/jarvis_nano_v12_candidate.npz"
+  },
+  "passed": true,
+  "notes": "The rejected 60-step candidate is not activated. Release uses the gentle 20-step continual-training candidate."
+}

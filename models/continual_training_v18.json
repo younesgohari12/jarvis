@@ -1,0 +1,30 @@
+{
+  "format": "jarvis-continual-training-v18-v1",
+  "dataset_version": "dataset_v009",
+  "source": "models/jarvis_nano_v13.npz",
+  "output": "models/jarvis_nano_v18_candidate.npz",
+  "parameters": 23077376,
+  "steps": 12,
+  "counts": {
+    "v18": 6,
+    "persian_v18": 2,
+    "rehearsal": 4
+  },
+  "probe_before": {
+    "v18": 6.390177,
+    "persian_v18": 6.850321,
+    "rehearsal": 5.376559
+  },
+  "probe_after": {
+    "v18": 6.142884,
+    "persian_v18": 6.578781,
+    "rehearsal": 5.239172
+  },
+  "improvement_pct": {
+    "v18": 3.87,
+    "persian_v18": 3.964,
+    "rehearsal": 2.555
+  },
+  "mean_loss": 5.904304,
+  "duration_seconds": 5.376
+}

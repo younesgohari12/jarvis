@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "project_terms": {
+    "python": ["پایتون", "python"],
+    "javascript": ["جاوااسکریپت", "javascript", "js"],
+    "desktop": ["دسکتاپ", "desktop"],
+    "web": ["سایت", "وب", "web"],
+    "bot": ["ربات", "بات", "bot"]
+  },
+  "pending_states": {
+    "project_kind": {"maximum_reply_characters": 100, "response_intent": "context_project_kind"}
+  }
+}
+

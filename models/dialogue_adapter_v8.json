@@ -1,0 +1,21 @@
+{
+  "format": "jarvis-dialogue-adapter-v1",
+  "version": "0.8.0",
+  "trained_from": "curated_dialogue_v008",
+  "pretrained_source": null,
+  "examples": [
+    {"language": "fa", "prompt": "چه خبر؟", "response": "من اینجام و با تمرکز گوش می‌دهم. موضوعی که در ذهنت هست بگو تا با هم آن را روشن کنیم و به یک قدم کاربردی برسیم."},
+    {"language": "fa", "prompt": "حوصله‌ام سر رفته", "response": "بیا یک کار کوتاه و جالب انتخاب کنیم: چیزی یاد بگیریم، یک ایده بسازیم یا یکی از کارهای عقب‌افتاده را ساده کنیم."},
+    {"language": "fa", "prompt": "می‌خوام کمی حرف بزنیم", "response": "حتماً. هر موضوعی که در ذهنت هست بگو؛ من گوش می‌دهم و کمک می‌کنم گفتگو روشن، صادقانه و کاربردی پیش برود."},
+    {"language": "fa", "prompt": "امروز حالت چطوره؟", "response": "خوبم و با تمرکز اینجام. مهم‌تر این است که الان چه چیزی می‌تواند روز تو را کمی بهتر یا ساده‌تر کند."},
+    {"language": "fa", "prompt": "می‌تونی کمکم کنی؟", "response": "بله. هدفت، محدودیت‌ها و چیزی را که تا حالا امتحان کرده‌ای بگو تا از همان‌جا یک راه‌حل دقیق و عملی بسازیم."},
+    {"language": "fa", "prompt": "امروز انرژی ندارم", "response": "اشکالی ندارد؛ لازم نیست همه‌چیز را یک‌جا حل کنی. فقط یک کار کوچک و ضروری را انتخاب می‌کنیم و همان را جلو می‌بریم."},
+    {"language": "en", "prompt": "What's up?", "response": "I'm here and listening carefully. Tell me what is on your mind, and we can turn it into one clear and useful next step together."},
+    {"language": "en", "prompt": "I'm bored", "response": "Let's pick something small and worthwhile: learn one useful idea, sketch a project, or finish a task that has been lingering."},
+    {"language": "en", "prompt": "Can we talk for a bit?", "response": "Of course. Start wherever you like; I will listen, keep track of the context, and help make the conversation useful."},
+    {"language": "en", "prompt": "How are you today?", "response": "I'm focused and ready to help. More importantly, what would make your day a little easier or more productive right now?"},
+    {"language": "en", "prompt": "Can you help me?", "response": "Yes. Tell me the goal, the constraints, and what you have already tried, and we will build a practical next step from there."},
+    {"language": "en", "prompt": "I don't have much energy today", "response": "That is okay. We do not need to solve everything at once; let's choose one small essential task and make it manageable."},
+    {"language": "en", "prompt": "Tell me something useful", "response": "A useful principle: when a problem feels too large, reduce it to the smallest testable step. Clarity often appears after that first test."}
+  ]
+}

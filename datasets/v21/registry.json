@@ -1,0 +1,131 @@
+{
+  "id": "dataset_v021",
+  "rows": 30000,
+  "files": [
+    {
+      "path": "adversarial.jsonl",
+      "sha256": "3128223112fe5dc24493bb1aeaeb874d8cce9059749abf9ea2e8937492451adf",
+      "rows": 3000,
+      "unique_inputs": 3000,
+      "unique_outputs": 3000,
+      "unique_templates": 2990,
+      "concept_groups": 2227,
+      "class_distribution": {
+        "graph": 3000
+      },
+      "split_distribution": {
+        "train": 2374,
+        "validation": 335,
+        "test": 291
+      }
+    },
+    {
+      "path": "code.jsonl",
+      "sha256": "5fd33ea65d3de3626ddf5c5f22e1c6f1dfd7b00b351506c0f50b0fc493cba173",
+      "rows": 10000,
+      "unique_inputs": 10000,
+      "unique_outputs": 7317,
+      "unique_templates": 2000,
+      "concept_groups": 2000,
+      "class_distribution": {
+        "generate": 2000,
+        "debug": 2000,
+        "explain": 2000,
+        "refactor": 2000,
+        "test": 2000
+      },
+      "split_distribution": {
+        "train": 8035,
+        "validation": 910,
+        "test": 1055
+      }
+    },
+    {
+      "path": "persian.jsonl",
+      "sha256": "d4695452a9abd24d1ce6d35f67dae88417959f6cc48ffe0edf18b5267ba95992",
+      "rows": 3000,
+      "unique_inputs": 3000,
+      "unique_outputs": 2993,
+      "unique_templates": 2968,
+      "concept_groups": 2211,
+      "class_distribution": {
+        "graph": 3000
+      },
+      "split_distribution": {
+        "validation": 338,
+        "train": 2372,
+        "test": 290
+      }
+    },
+    {
+      "path": "semantic_ir.jsonl",
+      "sha256": "9f067be0b03ced565e1621e4406f21414580748f1d26061f2161a1413176841d",
+      "rows": 5000,
+      "unique_inputs": 5000,
+      "unique_outputs": 5000,
+      "unique_templates": 4973,
+      "concept_groups": 3366,
+      "class_distribution": {
+        "work_rate": 2,
+        "ratio": 2,
+        "binomial": 2,
+        "finance": 2,
+        "age": 2,
+        "speed": 2,
+        "scheduling": 2,
+        "graph": 4986
+      },
+      "split_distribution": {
+        "train": 4010,
+        "validation": 511,
+        "test": 479
+      }
+    },
+    {
+      "path": "verification.jsonl",
+      "sha256": "a52ce38011e5fafdc9215b53dcc05806c5e963a9352fed88fccfb790d337a893",
+      "rows": 4000,
+      "unique_inputs": 4000,
+      "unique_outputs": 4000,
+      "unique_templates": 3991,
+      "concept_groups": 2803,
+      "class_distribution": {
+        "slot_value": 1000,
+        "event_direction": 1000,
+        "event_order": 1000,
+        "answer_value": 1000
+      },
+      "split_distribution": {
+        "train": 3201,
+        "validation": 397,
+        "test": 402
+      }
+    },
+    {
+      "path": "world_model.jsonl",
+      "sha256": "d7b75f2d0a28f0e6b9a4bf122fdee06a751205bca66c0fc26b0ae61dc904c31a",
+      "rows": 5000,
+      "unique_inputs": 5000,
+      "unique_outputs": 5000,
+      "unique_templates": 4993,
+      "concept_groups": 4064,
+      "class_distribution": {
+        "finance": 1641,
+        "graph": 1655,
+        "inventory": 1704
+      },
+      "split_distribution": {
+        "train": 4017,
+        "test": 492,
+        "validation": 491
+      }
+    }
+  ],
+  "audit": "../../reports/v21/dataset_audit.json",
+  "quality_target_met": false,
+  "training_scripts": [
+    "training/train_heads_v21.py",
+    "training/train_numeric_v21.py",
+    "training/train_language_adapter_v21.py"
+  ]
+}

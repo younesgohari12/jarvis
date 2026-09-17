@@ -1,0 +1,39 @@
+{
+  "release": "JARVIS Intelligence v16 FINAL",
+  "base": "Jarvis_v0.11.0_Intelligence_v15_FINAL_ready",
+  "runtime_intelligence": "v16",
+  "transformer_model": "jarvis_nano_v13.npz",
+  "transformer_parameters": 23077376,
+  "semantic_router_model": "semantic_router_v15.npz",
+  "semantic_router_parameters": 3145740,
+  "model_oriented_parameters_total": 26223116,
+  "active_dataset": "dataset_v007",
+  "active_dataset_examples": 36530,
+  "new_training_examples_in_v16": 0,
+  "quality_note": "No artificial parameter/dataset inflation; v16 targets runtime semantic failures.",
+  "benchmark": {
+    "name": "V16_FRESH_RUNTIME_FAILURES_24",
+    "v15_correct": 4,
+    "v16_correct": 24,
+    "total": 24,
+    "exact_training_overlap": 0,
+    "tools_disabled": true
+  },
+  "tests": {
+    "primary_passed": 677,
+    "subtests_passed": 279,
+    "failures": 0,
+    "errors": 0
+  },
+  "major_fixes": [
+    "biased coin probability p/n/k semantic parsing",
+    "permutation solver",
+    "two-dice sum parser variants",
+    "ratio split solver",
+    "bare code trace precedence over memory/math",
+    "translation isolated from Knowledge/RAG",
+    "high-fidelity Persian rewrite",
+    "semantic must-include constraints",
+    "constraint writing precedence over multi-step splitting"
+  ]
+}

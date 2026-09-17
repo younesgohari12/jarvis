@@ -1,0 +1,473 @@
+{
+  "models": {
+    "code_task": {
+      "architecture": "hashed_linear_softmax",
+      "parameters": 81925,
+      "classes": [
+        "debug",
+        "explain",
+        "generate",
+        "refactor",
+        "test"
+      ],
+      "training_selection": [
+        {
+          "alpha": 1e-05,
+          "validation_accuracy": 1.0
+        },
+        {
+          "alpha": 0.0001,
+          "validation_accuracy": 1.0
+        }
+      ],
+      "metrics": {
+        "train": {
+          "n": 8035,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "loss": 0.008711394844798739,
+          "confusion_matrix": [
+            [
+              1607,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1607,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1607,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1607,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1607
+            ]
+          ]
+        },
+        "validation": {
+          "n": 910,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "loss": 0.009058939096330319,
+          "confusion_matrix": [
+            [
+              182,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              182,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              182,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              182,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              182
+            ]
+          ]
+        },
+        "test": {
+          "n": 1055,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "loss": 0.008936256739484044,
+          "confusion_matrix": [
+            [
+              211,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              211,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              211,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              211,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              211
+            ]
+          ]
+        }
+      },
+      "training_rows_sha256": "b27ed37f6db4e697f881bcab18894487dfc31155be3feae9aa0ce6104813f3ab",
+      "sha256": "c882f6349a03961ba88768fda0cb80f52d4c198901a532209bc138e9e2c2c59a"
+    },
+    "verification_failure": {
+      "architecture": "hashed_linear_softmax",
+      "parameters": 65540,
+      "classes": [
+        "answer_value",
+        "event_direction",
+        "event_order",
+        "slot_value"
+      ],
+      "training_selection": [
+        {
+          "alpha": 1e-05,
+          "validation_accuracy": 0.38287153652392947
+        },
+        {
+          "alpha": 0.0001,
+          "validation_accuracy": 0.3350125944584383
+        }
+      ],
+      "metrics": {
+        "train": {
+          "n": 3191,
+          "accuracy": 0.48605452836101537,
+          "macro_f1": 0.440588599677606,
+          "loss": 1.1579141304388023,
+          "confusion_matrix": [
+            [
+              36,
+              67,
+              337,
+              361
+            ],
+            [
+              6,
+              675,
+              64,
+              66
+            ],
+            [
+              20,
+              70,
+              424,
+              275
+            ],
+            [
+              19,
+              67,
+              288,
+              416
+            ]
+          ]
+        },
+        "validation": {
+          "n": 397,
+          "accuracy": 0.38287153652392947,
+          "macro_f1": 0.35651409053615596,
+          "loss": 1.2147216337938493,
+          "confusion_matrix": [
+            [
+              3,
+              11,
+              36,
+              54
+            ],
+            [
+              0,
+              74,
+              13,
+              6
+            ],
+            [
+              2,
+              10,
+              32,
+              52
+            ],
+            [
+              4,
+              7,
+              50,
+              43
+            ]
+          ]
+        },
+        "test": {
+          "n": 412,
+          "accuracy": 0.4344660194174757,
+          "macro_f1": 0.3867783017540657,
+          "loss": 1.2097762412929556,
+          "confusion_matrix": [
+            [
+              1,
+              12,
+              47,
+              35
+            ],
+            [
+              0,
+              75,
+              11,
+              10
+            ],
+            [
+              2,
+              15,
+              52,
+              46
+            ],
+            [
+              4,
+              8,
+              43,
+              51
+            ]
+          ]
+        }
+      },
+      "training_rows_sha256": "ff9d0d949919c0fecb3b279552d227d93863cabf34a0320cace5c32745385dcc",
+      "sha256": "090b7a4563dedd79da7a20395e3c6bec87b4f055efe7c16354521ef6d265418a"
+    },
+    "operation_language": {
+      "architecture": "hashed_linear_softmax",
+      "parameters": 98310,
+      "classes": [
+        "add",
+        "divide",
+        "multiply",
+        "percentage_add",
+        "percentage_remove",
+        "subtract"
+      ],
+      "training_selection": [
+        {
+          "alpha": 1e-05,
+          "validation_accuracy": 0.8571428571428571
+        },
+        {
+          "alpha": 0.0001,
+          "validation_accuracy": 0.5714285714285714
+        }
+      ],
+      "metrics": {
+        "train": {
+          "n": 31,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "loss": 0.005050110082699404,
+          "confusion_matrix": [
+            [
+              7,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              6,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              6
+            ]
+          ]
+        },
+        "validation": {
+          "n": 7,
+          "accuracy": 0.8571428571428571,
+          "macro_f1": 0.8933333333333333,
+          "loss": 0.6206490029326494,
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "test": {
+          "n": 8,
+          "accuracy": 0.5,
+          "macro_f1": 0.4133333333333333,
+          "loss": 3.9719067678639455,
+          "confusion_matrix": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "training_rows_sha256": "b63cf5bfa53726d455b1330250373e2bd58de3471a75cdebccff705089cde55e",
+      "sha256": "cb2ab875a3541bd4d9d6900d38d7c089f9e0909c185fecf1320f4eec305964a1"
+    }
+  },
+  "core_model_unchanged_by_this_script": true
+}

@@ -1,0 +1,18 @@
+{
+  "source_dataset_count": 100,
+  "examples": 3000,
+  "unique_inputs": 3000,
+  "unique_input_ratio": 1.0,
+  "semantic_families": 30,
+  "duplicate_input_count": 0,
+  "fa_language_contamination": 0,
+  "en_language_contamination": 0,
+  "linguistic_sanity_flags": 0,
+  "unique_outputs": 3000,
+  "unique_output_ratio": 1.0,
+  "duplicate_output_count": 0,
+  "format": "jarvis-v15-pack-manifest",
+  "dataset_version": "dataset_v007",
+  "pack": "constraints",
+  "seed": 15092026
+}

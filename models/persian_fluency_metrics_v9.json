@@ -1,0 +1,72 @@
+{
+  "format": "jarvis-persian-fluency-training-metrics-v1",
+  "version": "0.9.0",
+  "dataset_examples": 49,
+  "train_examples": 42,
+  "held_out_examples": 7,
+  "label_counts": {
+    "advice": 7,
+    "caption": 7,
+    "formal_message": 7,
+    "rewrite": 7,
+    "story": 7,
+    "support": 7,
+    "text": 7
+  },
+  "held_out_cases": 7,
+  "classification_accuracy": 1.0,
+  "generation_acceptance": 1.0,
+  "predictions": [
+    {
+      "prompt": "کارهایم خیلی زیاد شده و نمی‌دانم چه کنم",
+      "expected": "advice",
+      "predicted": "advice",
+      "confidence": 0.2936,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "کپشن افتتاح فروشگاه جدید بنویس",
+      "expected": "caption",
+      "predicted": "caption",
+      "confidence": 0.6558,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "متن تشکر رسمی برای همکاری شرکت بنویس",
+      "expected": "formal_message",
+      "predicted": "formal_message",
+      "confidence": 0.3609,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "این عبارت را حرفه‌ای‌تر کن: خیلی خوشحالیم که کار تموم شد",
+      "expected": "rewrite",
+      "predicted": "rewrite",
+      "confidence": 0.3953,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "یک قصه کوتاه درباره باران تعریف کن",
+      "expected": "story",
+      "predicted": "story",
+      "confidence": 0.4306,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "فشار کارها خیلی زیاد شده",
+      "expected": "support",
+      "predicted": "support",
+      "confidence": 0.2761,
+      "generation_accepted": true
+    },
+    {
+      "prompt": "یک پاراگراف درباره صبر و آرامش بنویس",
+      "expected": "text",
+      "predicted": "text",
+      "confidence": 0.46,
+      "generation_accepted": true
+    }
+  ],
+  "accepted_for_release": true,
+  "pretrained_source": null
+}

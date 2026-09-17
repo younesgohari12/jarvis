@@ -1,0 +1,166 @@
+{
+  "format": "jarvis-training-metrics-v1",
+  "model": "JARVIS Nano v0.7",
+  "architecture": "decoder_only_transformer_gqa_rope_swiglu",
+  "parameters": 23077376,
+  "dataset_version": "dataset_v003",
+  "pretrained_source": null,
+  "initial_loss": 8.190477,
+  "final_validation_loss": 3.634206,
+  "final_perplexity": 37.871771,
+  "training_steps": 672,
+  "training_seconds": 176.126,
+  "device": "cpu",
+  "backend": "numpy_cpu_full_gradient",
+  "stage_metrics": [
+    {
+      "stage": 1,
+      "name": "language_foundations",
+      "steps": 48,
+      "mean_train_loss": 4.193628,
+      "last_train_loss": 3.79544,
+      "validation_loss": 2.440311,
+      "seconds": 12.164,
+      "checkpoint": "models/checkpoints_v7/stage1_language_foundations"
+    },
+    {
+      "stage": 2,
+      "name": "conversation",
+      "steps": 48,
+      "mean_train_loss": 2.788775,
+      "last_train_loss": 2.085168,
+      "validation_loss": 2.887563,
+      "seconds": 11.815,
+      "checkpoint": "models/checkpoints_v7/stage2_conversation"
+    },
+    {
+      "stage": 3,
+      "name": "general_knowledge",
+      "steps": 48,
+      "mean_train_loss": 4.58365,
+      "last_train_loss": 3.96735,
+      "validation_loss": 4.157656,
+      "seconds": 11.878,
+      "checkpoint": "models/checkpoints_v7/stage3_general_knowledge"
+    },
+    {
+      "stage": 4,
+      "name": "instruction_following",
+      "steps": 48,
+      "mean_train_loss": 4.52298,
+      "last_train_loss": 3.125384,
+      "validation_loss": 2.42211,
+      "seconds": 12.718,
+      "checkpoint": "models/checkpoints_v7/stage4_instruction_following"
+    },
+    {
+      "stage": 5,
+      "name": "action_recognition",
+      "steps": 48,
+      "mean_train_loss": 2.970319,
+      "last_train_loss": 2.139188,
+      "validation_loss": 2.105495,
+      "seconds": 13.146,
+      "checkpoint": "models/checkpoints_v7/stage5_action_recognition"
+    },
+    {
+      "stage": 6,
+      "name": "entity_extraction",
+      "steps": 48,
+      "mean_train_loss": 3.540851,
+      "last_train_loss": 2.643006,
+      "validation_loss": 3.08523,
+      "seconds": 12.849,
+      "checkpoint": "models/checkpoints_v7/stage6_entity_extraction"
+    },
+    {
+      "stage": 7,
+      "name": "tool_calling",
+      "steps": 48,
+      "mean_train_loss": 3.071485,
+      "last_train_loss": 1.736503,
+      "validation_loss": 4.416269,
+      "seconds": 12.632,
+      "checkpoint": "models/checkpoints_v7/stage7_tool_calling"
+    },
+    {
+      "stage": 8,
+      "name": "argument_extraction",
+      "steps": 48,
+      "mean_train_loss": 4.679106,
+      "last_train_loss": 3.822991,
+      "validation_loss": 3.845208,
+      "seconds": 12.444,
+      "checkpoint": "models/checkpoints_v7/stage8_argument_extraction"
+    },
+    {
+      "stage": 9,
+      "name": "context_memory",
+      "steps": 48,
+      "mean_train_loss": 2.424649,
+      "last_train_loss": 1.303342,
+      "validation_loss": 1.452162,
+      "seconds": 12.654,
+      "checkpoint": "models/checkpoints_v7/stage9_context_memory"
+    },
+    {
+      "stage": 10,
+      "name": "planning",
+      "steps": 48,
+      "mean_train_loss": 3.673904,
+      "last_train_loss": 2.617735,
+      "validation_loss": 2.579977,
+      "seconds": 12.571,
+      "checkpoint": "models/checkpoints_v7/stage10_planning"
+    },
+    {
+      "stage": 11,
+      "name": "reasoning",
+      "steps": 48,
+      "mean_train_loss": 4.275386,
+      "last_train_loss": 3.756148,
+      "validation_loss": 3.861777,
+      "seconds": 12.827,
+      "checkpoint": "models/checkpoints_v7/stage11_reasoning"
+    },
+    {
+      "stage": 12,
+      "name": "recovery_verification",
+      "steps": 48,
+      "mean_train_loss": 4.534856,
+      "last_train_loss": 5.075571,
+      "validation_loss": 4.707598,
+      "seconds": 12.803,
+      "checkpoint": "models/checkpoints_v7/stage12_recovery_verification"
+    },
+    {
+      "stage": 13,
+      "name": "search_decision",
+      "steps": 48,
+      "mean_train_loss": 4.005917,
+      "last_train_loss": 3.824247,
+      "validation_loss": 2.604499,
+      "seconds": 12.14,
+      "checkpoint": "models/checkpoints_v7/stage13_search_decision"
+    },
+    {
+      "stage": 14,
+      "name": "jarvis_personality",
+      "steps": 48,
+      "mean_train_loss": 4.195059,
+      "last_train_loss": 4.100579,
+      "validation_loss": 3.634206,
+      "seconds": 13.416,
+      "checkpoint": "models/checkpoints_v7/stage14_jarvis_personality"
+    }
+  ],
+  "completed_at_utc": "2026-08-21T23:46:03.683647+00:00",
+  "jsonl_log": "logs/training/train_20260821T234307Z.jsonl",
+  "weights": "models/jarvis_nano_v07.npz",
+  "weights_size_bytes": 15201068,
+  "weights_sha256": "58563a6cf54ec940f3d82e379d9dc8af0a8ecb607ec8488f84ac9b35f7375866",
+  "tokenizer": "models/jarvis_tokenizer_v003.json",
+  "tokenizer_sha256": "e116174dbcb823714951cfb3e889a852e26461336968f3b965f61d28883c46a9",
+  "model_format": "jarvis-numpy-int8-v2",
+  "integrity_verified": true
+}

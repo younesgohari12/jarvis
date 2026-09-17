@@ -1,0 +1,67 @@
+{
+  "format": "jarvis-v14-runtime-intelligence-release-v1",
+  "release": "Intelligence v14",
+  "base_application_version": "0.11.0",
+  "runtime_intelligence_version": "1.4.0",
+  "active_dataset": "dataset_v006",
+  "active_neural_fallback": {
+    "model_id": "jarvis_nano_v13",
+    "weights": "models/jarvis_nano_v13.npz",
+    "sha256": "cafc07e12ddd6b00e07885a421348515396a7a58cb7351d78a2da13992220f1d",
+    "note": "Retained deliberately. No transformer checkpoint is renamed to v14 without a completed quality gate."
+  },
+  "runtime_changes": [
+    "high-precision local intelligence before generic unknown/web routing",
+    "deterministic reasoning bypasses contextual follow-up preemption",
+    "unknown no longer uses unrelated creative fallback before reasoning",
+    "neural fallback is attempted only for genuinely uncertain routes before web",
+    "explicit routing for math, probability, coding, translation and rewrite/writing families",
+    "LAB and training tokenization use dataset_v006 rather than the old hardcoded dataset_v003"
+  ],
+  "dataset_quality": {
+    "total_examples": 15329,
+    "inherited_v004_examples": 10329,
+    "generalization": {
+      "datasets": 100,
+      "examples": 2000,
+      "unique_inputs": 2000,
+      "unique_outputs": 2000,
+      "unique_output_ratio": 1.0,
+      "families": 20
+    },
+    "reasoning": {
+      "datasets": 100,
+      "examples": 3000,
+      "unique_inputs": 3000,
+      "unique_outputs": 3000,
+      "unique_output_ratio": 1.0,
+      "families": 30
+    },
+    "cross_split_concept_leakage": 0,
+    "removed_v13_template_packs_from_active_corpus": true,
+    "tokenizer_round_trip_accuracy": 1.0,
+    "unknown_token_rate": 0.0
+  },
+  "e2e_holdout": {
+    "cases": 30,
+    "exact_prompt_overlap_with_dataset_v006": 0,
+    "web_or_tool_allowed": false,
+    "v13_baseline_passed": 0,
+    "v14_passed": 30,
+    "scope_note": "Measures the targeted local reasoning/routing/language/code families; it is not a claim of 100% general intelligence."
+  },
+  "tests": {
+    "pytest_tests_passed": 666,
+    "pytest_tests_failed": 0,
+    "subtests_passed": 169
+  },
+  "key_files_sha256": {
+    "local_intelligence_v14.py": "68c030376bbd50cf852644e217a0da01bae98dc4f418a11b4fb56f8e5e374fff",
+    "intent_router.py": "0894ce307fbd6ce6df04b7a156463a2f8122c932956313efdd1872261bb8c349",
+    "reasoning.py": "a9165fb3b184160e4f97d5d8215cf3b39a233ff0939ac091acd1d60a5314cdf3",
+    "core.py": "bda1d1016de5445466ac8e07d0f0092d7c7f4264a2b3af3d8b6e6d0d753355e1",
+    "dataset_manifest_v006.json": "074a8e371c5124d2365b5fcea70707a291d41c91fcdcc0cdf8db45a5fc618dea",
+    "generalization_manifest_v14.json": "bdb4d60910153e93e6633a148f7985d55b5a37ebdd1f0cef0d98da6f0a801654",
+    "reasoning_manifest_v14.json": "fafcecd5b4946e5f4a33890ca6c16f0d13d89670de6958f2caa6844acad251d9"
+  }
+}

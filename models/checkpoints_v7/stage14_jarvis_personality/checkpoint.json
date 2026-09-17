@@ -1,0 +1,30 @@
+{
+  "training_complete": true,
+  "dataset_version": "dataset_v003",
+  "training_stages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "checkpoint_parent": "stage13_search_decision",
+  "backend": "numpy_cpu_full_gradient",
+  "optimizer": "AdamW",
+  "step": 672,
+  "trained_at_utc": "2026-08-21T23:46:02.905972+00:00",
+  "model_file": "../../jarvis_nano_v07.npz",
+  "size_bytes": 15201155,
+  "sha256": "9a64678bd7f7a372401c081d80a016a0325713c382d0b496224fe88c9b52e318",
+  "artifact_repacked_for_v08_compatibility": true,
+  "weights_sha256": "9ef18eeaedcc231bbb732a8437cc828c6b8a0c3a1483de2415829b0551d2fd04"
+}

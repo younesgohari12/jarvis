@@ -1,0 +1,23 @@
+{
+  "format": "jarvis-benchmark-v1",
+  "model_size_bytes": 15201068,
+  "parameters": 23077376,
+  "quantization": "symmetric_per_tensor_int8",
+  "runtime_weight_dtype": "int8",
+  "runtime_quantized": true,
+  "resident_weight_bytes": 23086308,
+  "resident_weight_mb": 22.017,
+  "load_latency_ms": 123.476,
+  "ram_delta_mb": 25.992,
+  "vram_mb": 0,
+  "device": "cpu",
+  "tokens_per_second": 15.716,
+  "first_token_latency_ms": 275.121,
+  "generated_tokens": 53,
+  "conversation_score": null,
+  "tool_score": null,
+  "context_score": 0.75,
+  "pretrained_source": null,
+  "benchmarked_at_utc": "2026-08-22T00:16:28.384717+00:00",
+  "platform": "posix"
+}

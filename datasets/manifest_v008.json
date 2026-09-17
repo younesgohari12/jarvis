@@ -1,0 +1,40 @@
+{
+  "format": "jarvis-dataset-manifest-v8",
+  "dataset_version": "dataset_v008",
+  "parent": "dataset_v007",
+  "seed": 17092026,
+  "inherited_examples": 36530,
+  "new_examples": 1570,
+  "total_examples": 38100,
+  "source_dataset_count": 40,
+  "split_counts": {
+    "train": 30631,
+    "validation": 3636,
+    "test": 3833
+  },
+  "exact_overlap_with_parent": 0,
+  "unique_new_inputs": 1570,
+  "unique_input_ratio": 1.0,
+  "categories": {
+    "sir_binomial": 200,
+    "sir_permutation": 100,
+    "sir_dice_sum": 43,
+    "sir_speed": 160,
+    "sir_work_scaling": 160,
+    "sir_ratio_split": 120,
+    "multistep_arithmetic": 500,
+    "transitive_logic": 10,
+    "age_reasoning": 200,
+    "persian_formal_rewrite": 49,
+    "persian_formal_fluency": 10,
+    "code_generation": 3,
+    "semantic_constraints": 15
+  },
+  "cross_split_concept_leakage": 0,
+  "quality_notes": [
+    "semantic-role supervision rather than number-position templates",
+    "deterministic answers for quantitative rows",
+    "Persian formal register curated separately",
+    "no synthetic exercise numbering added to prompts"
+  ]
+}

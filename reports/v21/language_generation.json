@@ -1,0 +1,92 @@
+{
+  "mode": "direct deterministic neural generation; bypasses retrieval only for ablation",
+  "examples": [
+    {
+      "question": "سلام، خودت را معرفی کن.",
+      "base": {
+        "text": "<tool>close_app app=.",
+        "heuristic_quality_gate": false,
+        "gate_reason": "invalid_or_structured_token"
+      },
+      "adapter": {
+        "text": "def ",
+        "heuristic_quality_gate": false,
+        "gate_reason": "language_consistency_guard"
+      },
+      "changed": true
+    },
+    {
+      "question": "برای یادگیری پایتون از کجا شروع کنم؟",
+      "base": {
+        "text": "<tool>close_app app=.",
+        "heuristic_quality_gate": false,
+        "gate_reason": "invalid_or_structured_token"
+      },
+      "adapter": {
+        "text": "def برابر است محاسبه برابر برابر برابر برابر است است است است است است است است است است است است ",
+        "heuristic_quality_gate": false,
+        "gate_reason": "repetition_guard"
+      },
+      "changed": true
+    },
+    {
+      "question": "فرق متغیر و تابع را توضیح بده.",
+      "base": {
+        "text": "<tool>close_app app=.",
+        "heuristic_quality_gate": false,
+        "gate_reason": "invalid_or_structured_token"
+      },
+      "adapter": {
+        "text": "نتیجه است برابر است است است است است است است است است است است است است است است است است ",
+        "heuristic_quality_gate": false,
+        "gate_reason": "repetition_guard"
+      },
+      "changed": true
+    },
+    {
+      "question": "Write a function that checks whether a number is prime.",
+      "base": {
+        "text": "<tool>close_app و app=.",
+        "heuristic_quality_gate": false,
+        "gate_reason": "invalid_or_structured_token"
+      },
+      "adapter": {
+        "text": "نتیجه است برابر محاسبه است است است است است است است است است است است است است است است است ",
+        "heuristic_quality_gate": false,
+        "gate_reason": "repetition_guard"
+      },
+      "changed": true
+    },
+    {
+      "question": "Please explain why percentages compound.",
+      "base": {
+        "text": "<tool>>>>>close_app app=.",
+        "heuristic_quality_gate": false,
+        "gate_reason": "invalid_or_structured_token"
+      },
+      "adapter": {
+        "text": "تابع x ",
+        "heuristic_quality_gate": false,
+        "gate_reason": "language_consistency_guard"
+      },
+      "changed": true
+    },
+    {
+      "question": "چرا جواب بدون شواهد ممکن است اشتباه باشد؟",
+      "base": {
+        "text": "<tool>close_app و app=.",
+        "heuristic_quality_gate": false,
+        "gate_reason": "invalid_or_structured_token"
+      },
+      "adapter": {
+        "text": "نتیجه برابر محاسبه است است است است است است است است است است است است است است است است است ",
+        "heuristic_quality_gate": false,
+        "gate_reason": "repetition_guard"
+      },
+      "changed": true
+    }
+  ],
+  "adapter_calls": 284,
+  "changed_outputs": 6,
+  "meaning": "Output changes are causal evidence, not proof of response correctness. Production retains existing quality and routing gates."
+}

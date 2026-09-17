@@ -1,0 +1,919 @@
+{
+  "format": "jarvis-intelligence-pack-v13",
+  "kind": "reasoning",
+  "version": "reasoning_100_v13",
+  "seed": 13092026,
+  "source_dataset_count": 100,
+  "examples": 3600,
+  "unique_input_output_pairs": 3600,
+  "exact_duplicates_detected_and_rewritten": 1399,
+  "sources": [
+    {
+      "id": "r001_r00_v0",
+      "skill": "r00_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r001_r00_v0.jsonl",
+      "sha256": "dce0b7fa56800c1ffbae4bd3a7dfaa37fb6c930474680f8ad8a1238118c0bb8f",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r002_r00_v1",
+      "skill": "r00_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r002_r00_v1.jsonl",
+      "sha256": "86f1c2688bcf4286e88b2a2a238755fdcedd6d8ce1d832cafbb934c3f2a1960d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r003_r00_v2",
+      "skill": "r00_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r003_r00_v2.jsonl",
+      "sha256": "23f9d16be8e3a2deb986cd65fb513fb5397fcae3ad5601578b61344919e0d420",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r004_r00_v3",
+      "skill": "r00_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r004_r00_v3.jsonl",
+      "sha256": "f467713756df6e398a0e73f2a278dcbabe6d286b00a619c3d62e80c0f5e47799",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r005_r01_v0",
+      "skill": "r01_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r005_r01_v0.jsonl",
+      "sha256": "6c784b62ca77874db7078c895432c79d63b4494cc20f6cf442c32b5039932183",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r006_r01_v1",
+      "skill": "r01_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r006_r01_v1.jsonl",
+      "sha256": "60c31b58b695be65c1db48fb261addc17d35d4e3ff50b4e600c7fb6079ad182b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r007_r01_v2",
+      "skill": "r01_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r007_r01_v2.jsonl",
+      "sha256": "409e84ee7b95081ef1e759bf19172d459cf4642115d9330acde208b566ad1394",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r008_r01_v3",
+      "skill": "r01_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r008_r01_v3.jsonl",
+      "sha256": "15b82ca10a38ae70070b89cc0ce97ca381a4d12dc93d8601549383449b5c8cdf",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r009_r02_v0",
+      "skill": "r02_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r009_r02_v0.jsonl",
+      "sha256": "2a9fc664f0c643205fc0a44d6521fb00d51ac55ab484666def8283ee865acf69",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r010_r02_v1",
+      "skill": "r02_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r010_r02_v1.jsonl",
+      "sha256": "317f300600085a34f162a5325eb04316558ae90da2dcfd227b7655a0513cb42a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r011_r02_v2",
+      "skill": "r02_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r011_r02_v2.jsonl",
+      "sha256": "a68443c9188577a5c1a0fd8d28c2319353aa931901a40e7a95029340aebfcab9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r012_r02_v3",
+      "skill": "r02_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r012_r02_v3.jsonl",
+      "sha256": "2e92ce17d13368327bed3a728ac9a9b13877be4ee09d0ea06b54dadf504873f5",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r013_r03_v0",
+      "skill": "r03_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r013_r03_v0.jsonl",
+      "sha256": "64102acd7356d35d56e01617e6bb6318633574502ed04677bbe6bd1713e109b9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r014_r03_v1",
+      "skill": "r03_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r014_r03_v1.jsonl",
+      "sha256": "f61e2365c9eba7ad543c99b4ef496a56c6faab7ec463fea71334d1f35340a0cd",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r015_r03_v2",
+      "skill": "r03_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r015_r03_v2.jsonl",
+      "sha256": "23902ceb46f604d064ff02ef7ae16e7175d709dbba3103f689097a8a636607a2",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r016_r03_v3",
+      "skill": "r03_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r016_r03_v3.jsonl",
+      "sha256": "416e52d4a1b324c2967faef1995ba4dd541b638189d91c9f74c0d187564f945a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r017_r04_v0",
+      "skill": "r04_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r017_r04_v0.jsonl",
+      "sha256": "dda1e0e1307536e907e4e66e3d2d473c0fd38b54fe8068a4b5466283bd421546",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r018_r04_v1",
+      "skill": "r04_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r018_r04_v1.jsonl",
+      "sha256": "95a0f4befe2b86fa2cc97814649e915bccbe969e0f2e9ef7bf6dad0cf46e2017",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r019_r04_v2",
+      "skill": "r04_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r019_r04_v2.jsonl",
+      "sha256": "14aa0c9067fb98725e49ef457e5dfabc911225fbb13bb3dd345a7f3ccd0b38c6",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r020_r04_v3",
+      "skill": "r04_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r020_r04_v3.jsonl",
+      "sha256": "0720a2e30b7b9197fb54f7b801ede24efdbcda94900965e80ab346da41036001",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r021_r05_v0",
+      "skill": "r05_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r021_r05_v0.jsonl",
+      "sha256": "318fb7c8191ea84bce251fbd46fd952976b42a83e2058e33d2acd2f464c6d672",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r022_r05_v1",
+      "skill": "r05_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r022_r05_v1.jsonl",
+      "sha256": "b1709de8cc10513ff7c806905e53bc9a9bfebeb0837277569d2031bb042bc7cc",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r023_r05_v2",
+      "skill": "r05_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r023_r05_v2.jsonl",
+      "sha256": "552ab977e4ef81e41e1c9339a91e0ddfa5c309c7c1ac33f317ab63dedaf85129",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r024_r05_v3",
+      "skill": "r05_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r024_r05_v3.jsonl",
+      "sha256": "6c494e96f7e054ca67ca7adb21957ac72db00b85c48b245a3582b32711a57f54",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r025_r06_v0",
+      "skill": "r06_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r025_r06_v0.jsonl",
+      "sha256": "58e9b5ebb5353ae85f174fde721945c38820b0eea6407ec94bf93e086bff0c93",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r026_r06_v1",
+      "skill": "r06_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r026_r06_v1.jsonl",
+      "sha256": "9aaf738a14428760ebb646ab979aaa731064f3c434d02fbb51981e3ed442610c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r027_r06_v2",
+      "skill": "r06_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r027_r06_v2.jsonl",
+      "sha256": "44c5dcfefa361b6f5945854aa7db3ed9a819913126e69ea64f0f04fe98d3be7d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r028_r06_v3",
+      "skill": "r06_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r028_r06_v3.jsonl",
+      "sha256": "954fafa316a40f66f52b7addb81b8bc97890a9d5dcb0944e07ed58f61a1a95ca",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r029_r07_v0",
+      "skill": "r07_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r029_r07_v0.jsonl",
+      "sha256": "9d6a9c9f7d1027f0df34c40413b3736aee040c69b5099d2b84e485976ee2c83a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r030_r07_v1",
+      "skill": "r07_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r030_r07_v1.jsonl",
+      "sha256": "2c0138afdf2f7ce06c5f890df86f4ed0ee0e7d87084afc8a0048bdd5db90550f",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r031_r07_v2",
+      "skill": "r07_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r031_r07_v2.jsonl",
+      "sha256": "f92b152a3e99ec0a79dedcb6f4c195c5a48ae2dba325d3b6cf5866edade2dc56",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r032_r07_v3",
+      "skill": "r07_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r032_r07_v3.jsonl",
+      "sha256": "0a19b64dde292fbc7155ce8c6de1ed16aafe2319ab4b7506954e1155094c972b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r033_r08_v0",
+      "skill": "r08_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r033_r08_v0.jsonl",
+      "sha256": "5c6c00f7a4e00223bb49b644bfeaf510e7199b43283c3bafa1ccab3b0c19fba1",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r034_r08_v1",
+      "skill": "r08_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r034_r08_v1.jsonl",
+      "sha256": "9e08547dc6230f2c93d2117afd848ea3041aabddaed145b76b1e2e73dd2465fc",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r035_r08_v2",
+      "skill": "r08_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r035_r08_v2.jsonl",
+      "sha256": "2c76a5ee7ff48c7a0f0fc317774b005ddcd77bca93054aea1c68c941d56af572",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r036_r08_v3",
+      "skill": "r08_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r036_r08_v3.jsonl",
+      "sha256": "507a9056e443a68bab9304d9fbe65016855e56a7d91f1437f8aba5274929caf6",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r037_r09_v0",
+      "skill": "r09_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r037_r09_v0.jsonl",
+      "sha256": "916c964f2e065830db8cf82b20dbffaf29d9e7be94ba9e65171be85ad13858d7",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r038_r09_v1",
+      "skill": "r09_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r038_r09_v1.jsonl",
+      "sha256": "bb8b7e3731e0747c0dc2da59d0854a16a94d7f4e2ef15b0dcb89155ce037ef0b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r039_r09_v2",
+      "skill": "r09_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r039_r09_v2.jsonl",
+      "sha256": "994bc932dddddb8b34ad4fdfefe31ea8b27d0ee0e7b3af09c0f2c330ef894784",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r040_r09_v3",
+      "skill": "r09_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r040_r09_v3.jsonl",
+      "sha256": "ffd24dcc597cbbb7f782856844293075d906cea7385f800635cbf69d8f64cf1d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r041_r10_v0",
+      "skill": "r10_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r041_r10_v0.jsonl",
+      "sha256": "42a3cec45ff1fc5a653cf26021bb32d7e9c5af122a97ea1ab9ea483eea58057e",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r042_r10_v1",
+      "skill": "r10_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r042_r10_v1.jsonl",
+      "sha256": "64e971f8265fee28ef979bf5401f9128d5542576df4c39bce2da62f9ca967222",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r043_r10_v2",
+      "skill": "r10_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r043_r10_v2.jsonl",
+      "sha256": "f50a19b899d9f4cbbe1113048632ad2e3d26d9db4ec2844592a30eb55d60d646",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r044_r10_v3",
+      "skill": "r10_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r044_r10_v3.jsonl",
+      "sha256": "0fe9e60569ecfeecde08d12933316eaf33c7acc235b53b678b44cd26f027e1c8",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r045_r11_v0",
+      "skill": "r11_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r045_r11_v0.jsonl",
+      "sha256": "b05dd580bff0e2d511cdf4319b41455855afb9e5dea6733255ca907c3c1cdfed",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r046_r11_v1",
+      "skill": "r11_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r046_r11_v1.jsonl",
+      "sha256": "a1d5094cb1b3206b5c25b5b35bd72afaa61bee0a8c1a983d7f7db634f7338e9b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r047_r11_v2",
+      "skill": "r11_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r047_r11_v2.jsonl",
+      "sha256": "d53abc95348bd78ae82334978009b721182821efdf49b958f541865f6e4dcd1d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r048_r11_v3",
+      "skill": "r11_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r048_r11_v3.jsonl",
+      "sha256": "ecc17e147e7c7eae57f7aad97ddeab3851d87ae00ec38e81effbe6cf947b1721",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r049_r12_v0",
+      "skill": "r12_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r049_r12_v0.jsonl",
+      "sha256": "fd7a6230c1eb80274508f16de0626d86972d26d5c44ab5379affa6aafbe2136e",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r050_r12_v1",
+      "skill": "r12_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r050_r12_v1.jsonl",
+      "sha256": "081138ad483259e0c43b5796dbd3919c872de641effa33e054ab0f4bff9e8870",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r051_r12_v2",
+      "skill": "r12_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r051_r12_v2.jsonl",
+      "sha256": "892f0c72761dd89a21846097be8c423cb6309774c71b561161fe113a925a4623",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r052_r12_v3",
+      "skill": "r12_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r052_r12_v3.jsonl",
+      "sha256": "56d68972e0c02eac1cd59e0a08f4417aad74836c9da3e6ba643452d3ebf13d31",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r053_r13_v0",
+      "skill": "r13_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r053_r13_v0.jsonl",
+      "sha256": "08db8ee0ecf383dce9043c70b4e062737d9d362f565dedd6132a1050b2c015c4",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r054_r13_v1",
+      "skill": "r13_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r054_r13_v1.jsonl",
+      "sha256": "32077ec7e1cd7396f08a56788a2b7f573bcbc55902414e5863f1fb1fef3dfdd5",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r055_r13_v2",
+      "skill": "r13_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r055_r13_v2.jsonl",
+      "sha256": "b50bc32cdbe6ba2662ddaf2680f795da78647f3ad5386715408a23f3887a83f9",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r056_r13_v3",
+      "skill": "r13_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r056_r13_v3.jsonl",
+      "sha256": "854a50063e34c7e00fc7a7af3f94ca34d9494d02103815a13ef9cddafb4e082d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r057_r14_v0",
+      "skill": "r14_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r057_r14_v0.jsonl",
+      "sha256": "4402c7c72f1302d2023467c54d6b1fa66e7a16a69cffe603d2492445f80fec50",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r058_r14_v1",
+      "skill": "r14_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r058_r14_v1.jsonl",
+      "sha256": "9393d1f8f7c4ae6012794dbaf55777e3271622540384a331f07a0ad3f36fd2ea",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r059_r14_v2",
+      "skill": "r14_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r059_r14_v2.jsonl",
+      "sha256": "470af5d4f1344b2714abdbaf08d40b441d50c454e3f06946bd541c8343dac32b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r060_r14_v3",
+      "skill": "r14_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r060_r14_v3.jsonl",
+      "sha256": "52719086a9264f66799a6e66d3c63d626a8c1c344435555c35dffe2b91619638",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r061_r15_v0",
+      "skill": "r15_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r061_r15_v0.jsonl",
+      "sha256": "5b28d8044cc78e9617dc3e98d73762510aab4d27d8413ce285cbf7e0d7f92cb6",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r062_r15_v1",
+      "skill": "r15_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r062_r15_v1.jsonl",
+      "sha256": "9da9800cfd84c6c166c1adec2beae800beaf814f638bd13a5e9149f33154f7d4",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r063_r15_v2",
+      "skill": "r15_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r063_r15_v2.jsonl",
+      "sha256": "8e026dc899436157e684d80c84a3eb6703336461fc80a54ea03c5c81527c4de6",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r064_r15_v3",
+      "skill": "r15_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r064_r15_v3.jsonl",
+      "sha256": "3fea3dc7ddd1ff1963e1876056d0039a05b04511cb4fedbaab48fd4e78b0fd87",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r065_r16_v0",
+      "skill": "r16_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r065_r16_v0.jsonl",
+      "sha256": "1c1e884788800fdacbf8beaa3c0c68b7b353b9cc23d53d896801ee066306e49c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r066_r16_v1",
+      "skill": "r16_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r066_r16_v1.jsonl",
+      "sha256": "dfee08b22e9cc3d5a9ae0586d4c26ce0bd5ff27042001a37fd17cdf6e17145c3",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r067_r16_v2",
+      "skill": "r16_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r067_r16_v2.jsonl",
+      "sha256": "133811f3c60cc9e8190be1e02b781b4a9ca18aae0115fbff72a7532d41c60fb7",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r068_r16_v3",
+      "skill": "r16_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r068_r16_v3.jsonl",
+      "sha256": "832d25f352aace9385fc537b593347eb46db3c5897f3ec2916ae392378d33a47",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r069_r17_v0",
+      "skill": "r17_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r069_r17_v0.jsonl",
+      "sha256": "3c17f911f197c31e095ad0d9e6474484415d6d87b34cccef6283bc710faecc08",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r070_r17_v1",
+      "skill": "r17_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r070_r17_v1.jsonl",
+      "sha256": "41474404dd8e86c217cf25a2592a779982557826406c69c8a51974e0d0a5ec26",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r071_r17_v2",
+      "skill": "r17_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r071_r17_v2.jsonl",
+      "sha256": "8b8b238cb2dc9a2cd360b2bf557f1ea46cf2c0b722fc70d1f499f9653e526307",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r072_r17_v3",
+      "skill": "r17_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r072_r17_v3.jsonl",
+      "sha256": "ded21e80b8bf71d3a2bcebac00895374bcc4a204fc120809426f4c62c0990df1",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r073_r18_v0",
+      "skill": "r18_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r073_r18_v0.jsonl",
+      "sha256": "c727ecf52a1032cb0e5e07fb30c1cf4d4534bd122005c1080fcf3de830c1f1f3",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r074_r18_v1",
+      "skill": "r18_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r074_r18_v1.jsonl",
+      "sha256": "7554664db777122876f421d52a996959cf4ea7c16d7564de7855cfaf6fd31f0d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r075_r18_v2",
+      "skill": "r18_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r075_r18_v2.jsonl",
+      "sha256": "f1e0384563909449ab558a45b5ab4ec868883890f2712b9008041694e9eea708",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r076_r18_v3",
+      "skill": "r18_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r076_r18_v3.jsonl",
+      "sha256": "1ebc1fe74ac7984bb4473d22b0df0373e920c3eee8634b5ab87f510e754c2ea1",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r077_r19_v0",
+      "skill": "r19_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r077_r19_v0.jsonl",
+      "sha256": "0766f895f9d63df2c2cca635492fe55987e0fa2e1fd88b9347e71133e0f42b02",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r078_r19_v1",
+      "skill": "r19_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r078_r19_v1.jsonl",
+      "sha256": "65a18df431368ce65665fe6e3cc0fe01a6d3b270cde80eb8bb2235c755bef231",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r079_r19_v2",
+      "skill": "r19_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r079_r19_v2.jsonl",
+      "sha256": "d94bb3d12afc22ee989bc57d3f071b0c2549e5679765c7b9eef682208c7c98e1",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r080_r19_v3",
+      "skill": "r19_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r080_r19_v3.jsonl",
+      "sha256": "2031eed842a0721947a8c47225e1151e0ddd7b4dc015709a86f423dee0fa4f88",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r081_r20_v0",
+      "skill": "r20_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r081_r20_v0.jsonl",
+      "sha256": "e253978c8bced0bca01085a6b7b2983620a558d969acd5cff3a95ceea629cf8d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r082_r20_v1",
+      "skill": "r20_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r082_r20_v1.jsonl",
+      "sha256": "884eafbfd14633bb56dd57f84f2db0976a166275e66b16b2973f89627935f8eb",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r083_r20_v2",
+      "skill": "r20_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r083_r20_v2.jsonl",
+      "sha256": "fef39910b92d8cedff81fbd84b8ed741f7b845b17ce9f66c618e1bd61714c556",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r084_r20_v3",
+      "skill": "r20_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r084_r20_v3.jsonl",
+      "sha256": "c96d44fc480352b23a45c1b432f29cd2304d02d86a8775df33fdb7f19169f33c",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r085_r21_v0",
+      "skill": "r21_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r085_r21_v0.jsonl",
+      "sha256": "ae10c02e18564446ca414fb72a919e89e3383a9465431362304e74ad2390d3bd",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r086_r21_v1",
+      "skill": "r21_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r086_r21_v1.jsonl",
+      "sha256": "366506acc825c3a386c335719d3cd1fb0a80afa174ec11e16453332da9d72eb0",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r087_r21_v2",
+      "skill": "r21_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r087_r21_v2.jsonl",
+      "sha256": "678ab3ab1b3a6ce0f50f7034e5327311b22aec799919604db3d59e17c192ec11",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r088_r21_v3",
+      "skill": "r21_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r088_r21_v3.jsonl",
+      "sha256": "bb04936a78057475b750e7723eae88995d5b87d5592495b77c91499d044ba251",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r089_r22_v0",
+      "skill": "r22_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r089_r22_v0.jsonl",
+      "sha256": "a1aaeb9006117f408e050c04847f8f26d2c6f557e74603f4ce08c41872c8d26d",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r090_r22_v1",
+      "skill": "r22_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r090_r22_v1.jsonl",
+      "sha256": "5c0eb580199ad8a9f0d130aa35aecf0ba256bcee14606db42cb2dd0d63b7818e",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r091_r22_v2",
+      "skill": "r22_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r091_r22_v2.jsonl",
+      "sha256": "e656a1d87069dd5cfe194090c444caa0f2fa095283bff0d3a86f12a9d7467e8b",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r092_r22_v3",
+      "skill": "r22_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r092_r22_v3.jsonl",
+      "sha256": "0c0fc25f23bedecbfc47281db574a99ac81831d1213fd8385025754679b35cd5",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r093_r23_v0",
+      "skill": "r23_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r093_r23_v0.jsonl",
+      "sha256": "25e943b702acf00a543703482a355fb17d24d4ea01d213980de5ecfc65be10e5",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r094_r23_v1",
+      "skill": "r23_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r094_r23_v1.jsonl",
+      "sha256": "b33b27947f306bbb5040868bb62b5c5e405568e55569782aea477a093557a20f",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r095_r23_v2",
+      "skill": "r23_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r095_r23_v2.jsonl",
+      "sha256": "377aeb2008ab9542357fd8fc796842924ad94192397d95408a977a3d0255205a",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r096_r23_v3",
+      "skill": "r23_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r096_r23_v3.jsonl",
+      "sha256": "4a79419678ea4e6b660205c5f3b3e3ba91a0637d74fb2e5d2e3e2eadf92cb5bf",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r097_r24_v0",
+      "skill": "r24_v0",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r097_r24_v0.jsonl",
+      "sha256": "b85628ad40685f1860980b9954a6d79b27889329ff65429efc243aacdf9c5570",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r098_r24_v1",
+      "skill": "r24_v1",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r098_r24_v1.jsonl",
+      "sha256": "b850572641d1841b7985dc2234ec04f5ffdadd3a7a2957a643b6bd3be90ca19f",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r099_r24_v2",
+      "skill": "r24_v2",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r099_r24_v2.jsonl",
+      "sha256": "308c2b2fd9702d931bd95fc4cd0e9cdf0c4ecb8e49c86bc42593c86c27f37493",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    },
+    {
+      "id": "r100_r24_v3",
+      "skill": "r24_v3",
+      "examples": 36,
+      "file": "datasets/reasoning_v13/r100_r24_v3.jsonl",
+      "sha256": "36e6b5a08671767d25bb932cd44d14d1851d65341a8399c47af2869839f17e70",
+      "quality": "gold-verified",
+      "provenance": "project-authored deterministic/editorial"
+    }
+  ],
+  "quality_policy": [
+    "concept-group split isolation",
+    "deterministic quantitative labels",
+    "editorial semantic labels",
+    "no external model outputs",
+    "no benchmark-test copying"
+  ]
+}

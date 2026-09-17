@@ -1,0 +1,53 @@
+{
+  "format": "jarvis-v19-regression-report-v1",
+  "release": "v19-real-trained-final",
+  "date": "2026-09-05",
+  "standard_tests_passed": 696,
+  "subtests_passed": 585,
+  "failures": 0,
+  "shards": [
+    {
+      "id": 1,
+      "scope": "core through v4",
+      "standard_passed": 506,
+      "subtests_passed": 35,
+      "seconds": 11.16
+    },
+    {
+      "id": 2,
+      "scope": "v05 through v09",
+      "standard_passed": 121,
+      "subtests_passed": 53,
+      "seconds": 27.23
+    },
+    {
+      "id": 3,
+      "scope": "v09.4 through v14",
+      "standard_passed": 39,
+      "subtests_passed": 81,
+      "seconds": 3.76
+    },
+    {
+      "id": 4,
+      "scope": "v15 through v19",
+      "standard_passed": 30,
+      "subtests_passed": 416,
+      "seconds": 5.27
+    }
+  ],
+  "critical_cases": {
+    "ratio_525": "525 split 4:3 -> 300,225",
+    "volume_priority": "set_volume percent=30",
+    "brightness_priority": "set_brightness percent=40",
+    "probability_collision": "30% / n=4 / k=2 -> 26.46%",
+    "geometric_sequence_collision": "start=4 ratio=3 term=6 -> 972",
+    "multistep_execution": "500 -20% +30 -> 430",
+    "numeric_role_order_independent": "6 hours, 4 workers, 120 output"
+  },
+  "v19_holdout": {
+    "cases": 50,
+    "passed": 50,
+    "exact_training_overlap": 0,
+    "strategy": "fresh prompts + template-id-disjoint model holdouts"
+  }
+}

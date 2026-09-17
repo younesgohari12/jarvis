@@ -1,0 +1,329 @@
+{
+  "format": "jarvis-v18-holdout-v1",
+  "dataset_version": "dataset_v009",
+  "cases": [
+    {
+      "prompt": "P(head)=0.6. Flip the coin 4 times. What is the probability of exactly 2 heads?",
+      "expected_fragments": [
+        "34.56"
+      ]
+    },
+    {
+      "prompt": "احتمال اینکه این سکه شیر بیاید 0.35 است؛ 3 پرتاب، دقیقاً 2 شیر؟",
+      "expected_fragments": [
+        "23.8875"
+      ]
+    },
+    {
+      "prompt": "شانس شیر این سکه 70 درصد است؛ در 5 پرتاب دقیقاً 3 شیر چقدر احتمال دارد؟",
+      "expected_fragments": [
+        "30.87"
+      ]
+    },
+    {
+      "prompt": "This coin has a 65% chance of heads. In 4 tosses, exactly 3 heads?",
+      "expected_fragments": [
+        "38.4475"
+      ]
+    },
+    {
+      "prompt": "احتمال شیرش 80٪ است؛ سه بار پرتاب می‌کنیم، دقیقاً دو شیر؟",
+      "expected_fragments": [
+        "38.4"
+      ]
+    },
+    {
+      "prompt": "Two fair dice are rolled. What is the chance their sum equals 9?",
+      "expected_fragments": [
+        "1/9"
+      ]
+    },
+    {
+      "prompt": "دو تاس معمولی می‌اندازیم؛ شانس جمع 11 چقدر است؟",
+      "expected_fragments": [
+        "1/18"
+      ]
+    },
+    {
+      "prompt": "What is the probability that two fair dice total 6?",
+      "expected_fragments": [
+        "5/36"
+      ]
+    },
+    {
+      "prompt": "از بین 12 کتاب، 4 کتاب را به ترتیب جایگاه اول تا چهارم می‌چینیم",
+      "expected_fragments": [
+        "11880"
+      ]
+    },
+    {
+      "prompt": "How many ordered top-three finishes are possible among 10 runners?",
+      "expected_fragments": [
+        "720"
+      ]
+    },
+    {
+      "prompt": "از میان 13 نفر، نفرات اول تا چهارم چند حالت دارند؟",
+      "expected_fragments": [
+        "17160"
+      ]
+    },
+    {
+      "prompt": "Arrange 5 of 9 objects without repetition.",
+      "expected_fragments": [
+        "15120"
+      ]
+    },
+    {
+      "prompt": "جایگشت سه‌تایی بدون تکرار از میان 7 گزینه چند حالت است؟",
+      "expected_fragments": [
+        "210"
+      ]
+    },
+    {
+      "prompt": "در 2 ساعت، 150 کیلومتر طی شد؛ سرعت متوسط؟",
+      "expected_fragments": [
+        "75"
+      ]
+    },
+    {
+      "prompt": "A vehicle covered 180 km over 2.5 hours. Average speed?",
+      "expected_fragments": [
+        "72"
+      ]
+    },
+    {
+      "prompt": "90 کیلومتر در 90 دقیقه طی شد؛ سرعت بر حسب کیلومتر بر ساعت؟",
+      "expected_fragments": [
+        "60"
+      ]
+    },
+    {
+      "prompt": "In 45 minutes a car travels 60 km. What is its average speed?",
+      "expected_fragments": [
+        "80"
+      ]
+    },
+    {
+      "prompt": "360 را بین دو نفر با نسبت 5 به 7 تقسیم کن",
+      "expected_fragments": [
+        "150",
+        "210"
+      ]
+    },
+    {
+      "prompt": "Divide 660 in a 4:7 ratio",
+      "expected_fragments": [
+        "240",
+        "420"
+      ]
+    },
+    {
+      "prompt": "840 را با نسبت 3:4 تقسیم کن",
+      "expected_fragments": [
+        "360",
+        "480"
+      ]
+    },
+    {
+      "prompt": "Split 900 between two shares in the ratio 2 to 3.",
+      "expected_fragments": [
+        "360",
+        "540"
+      ]
+    },
+    {
+      "prompt": "علی 14 ساله است، خواهرش 3 سال بزرگ‌تر؛ پنج سال بعد مجموع سنشان؟",
+      "expected_fragments": [
+        "41"
+      ]
+    },
+    {
+      "prompt": "رضا 12 ساله است، برادرش 2 سال کوچک‌تر؛ چهار سال بعد مجموع سنشان؟",
+      "expected_fragments": [
+        "30"
+      ]
+    },
+    {
+      "prompt": "Sara is 15 years old. Her sister is 4 years older. 3 years later, what is their total age?",
+      "expected_fragments": [
+        "40"
+      ]
+    },
+    {
+      "prompt": "240 کالا داریم، 25٪ فروخته شد، بعد 30 عدد دیگر فروختیم؛ چند تا می‌ماند؟",
+      "expected_fragments": [
+        "150"
+      ]
+    },
+    {
+      "prompt": "400 واحد موجودی داریم؛ 20 درصد فروخته شد، سپس 50 واحد دیگر فروختیم. چند واحد باقی ماند؟",
+      "expected_fragments": [
+        "270"
+      ]
+    },
+    {
+      "prompt": "We have 500 items. 30% were sold, then 40 more items were sold. How many remain?",
+      "expected_fragments": [
+        "310"
+      ]
+    },
+    {
+      "prompt": "8 workers make 240 boxes in 3 hours. How many boxes do 4 workers make in 6 hours?",
+      "expected_fragments": [
+        "240"
+      ]
+    },
+    {
+      "prompt": "6 کارگر در 4 ساعت 192 جعبه می‌سازند؛ 3 کارگر در 8 ساعت چند جعبه؟",
+      "expected_fragments": [
+        "192"
+      ]
+    },
+    {
+      "prompt": "10 workers produce 500 items in 5 hours. How many do 5 workers produce in 4 hours?",
+      "expected_fragments": [
+        "200"
+      ]
+    },
+    {
+      "prompt": "آیا 103 غیر از 1 و خودش عامل دیگری دارد؟",
+      "expected_fragments": [
+        "خیر"
+      ]
+    },
+    {
+      "prompt": "آیا 119 غیر از 1 و خودش عامل دیگری دارد؟",
+      "expected_fragments": [
+        "بله",
+        "7"
+      ]
+    },
+    {
+      "prompt": "Does 113 have any other factor besides 1 and itself?",
+      "expected_fragments": [
+        "no"
+      ]
+    },
+    {
+      "prompt": "Is 109 divisible only by 1 and itself?",
+      "expected_fragments": [
+        "yes"
+      ]
+    },
+    {
+      "prompt": "آیا 121 فقط بر 1 و خودش بخش‌پذیر است؟",
+      "expected_fragments": [
+        "خیر"
+      ]
+    },
+    {
+      "prompt": "Mina is taller than Sara and Sara is taller than Neda. Is Mina taller than Neda?",
+      "expected_fragments": [
+        "mina",
+        "neda"
+      ]
+    },
+    {
+      "prompt": "مینا از سارا بلندتر است و سارا از ندا بلندتر است؛ آیا مینا از ندا بلندتر است؟",
+      "expected_fragments": [
+        "مینا",
+        "ندا"
+      ]
+    },
+    {
+      "prompt": "Alex is ahead of Bob and Bob is ahead of Carl. Who is ahead, Alex or Carl?",
+      "expected_fragments": [
+        "alex",
+        "carl"
+      ]
+    },
+    {
+      "prompt": "نیما از امیر کوتاه‌تر است و امیر از آرش کوتاه‌تر است؛ بین نیما و آرش کدام بلندتر است؟",
+      "expected_fragments": [
+        "آرش",
+        "نیما"
+      ]
+    },
+    {
+      "prompt": "با Python تابعی بساز که فقط مقادیر زوج را نگه دارد",
+      "expected_fragments": [
+        "def even_numbers",
+        "% 2 == 0"
+      ]
+    },
+    {
+      "prompt": "یک تابع پایتون ایجاد کن که فقط اعداد زوج را برگرداند",
+      "expected_fragments": [
+        "def even_numbers",
+        "% 2 == 0"
+      ]
+    },
+    {
+      "prompt": "Create a Python function that keeps only even values.",
+      "expected_fragments": [
+        "def even_numbers",
+        "% 2 == 0"
+      ]
+    },
+    {
+      "prompt": "این متن را رسمی‌تر کن: لطفا سندو تا سه‌شنبه واسم بفرست",
+      "expected_fragments": [
+        "سند را",
+        "برای من",
+        "سه‌شنبه"
+      ]
+    },
+    {
+      "prompt": "رسمی‌تر بنویس: نسخه رو برات فردا می‌فرستم",
+      "expected_fragments": [
+        "نسخه را",
+        "برای شما",
+        "فردا"
+      ]
+    },
+    {
+      "prompt": "این جمله را رسمی کن: گزارشو واسم ارسال کن",
+      "expected_fragments": [
+        "گزارش را",
+        "برای من",
+        "ارسال"
+      ]
+    },
+    {
+      "prompt": "Exactly 1 head in 3 flips when the chance of heads is 25%?",
+      "expected_fragments": [
+        "42.1875"
+      ]
+    },
+    {
+      "prompt": "در پنج پرتاب، دقیقاً دو شیر می‌خواهیم؛ احتمال شیر هر بار 40٪ است. احتمال؟",
+      "expected_fragments": [
+        "34.56"
+      ]
+    },
+    {
+      "prompt": "در 3 ساعت 210 کیلومتر طی کرد؛ سرعتش چقدر است؟",
+      "expected_fragments": [
+        "70"
+      ]
+    },
+    {
+      "prompt": "از 11 دونده، رتبه‌های اول، دوم و سوم را چند جور می‌توان تعیین کرد؟",
+      "expected_fragments": [
+        "990"
+      ]
+    },
+    {
+      "prompt": "Divide 770 into two shares in the ratio 3 to 8.",
+      "expected_fragments": [
+        "210",
+        "560"
+      ]
+    }
+  ],
+  "exact_overlap": 0,
+  "web_allowed": false,
+  "tools_allowed": false,
+  "overlap_prompts": []
+}

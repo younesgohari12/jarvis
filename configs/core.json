@@ -1,0 +1,29 @@
+{
+  "name": "JARVIS Core v0.7",
+  "profile": "core",
+  "format": "jarvis-transformer-v2",
+  "architecture": "decoder_only_transformer_gqa_rope_swiglu",
+  "vocab_size": 4096,
+  "d_model": 768,
+  "n_layers": 12,
+  "n_heads": 12,
+  "n_kv_heads": 4,
+  "ffn_hidden": 2176,
+  "max_seq_len": 4096,
+  "rope_theta": 10000.0,
+  "rms_epsilon": 0.00001,
+  "tie_embeddings": true,
+  "initializer_std": 0.02,
+  "seed": 7072026,
+  "training": {
+    "sequence_length": 256,
+    "micro_batch_size": 1,
+    "gradient_accumulation": 16,
+    "learning_rate": 0.00025,
+    "minimum_learning_rate": 0.000025,
+    "weight_decay": 0.05,
+    "gradient_clip": 1.0,
+    "warmup_steps": 250,
+    "steps_per_stage": 5000
+  }
+}

@@ -1,0 +1,179 @@
+.............................................. [  5%]
+..................................................................... [ 13%]
+........................................................................ [ 21%]
+........................................................................ [ 29%]
+........................................................................ [ 38%]
+........................................................................ [ 46%]
+........................................................................ [ 54%]
+....................................................................................................................... [ 68%]
+.................................. [ 72%]
+..................................................... [ 78%]
+.............................. [ 82%]
+........................................................................ [ 90%]
+........................................................................ [ 98%]
+............                                                             [100%]
+=================================== FAILURES ===================================
+_ BilingualCognitiveResearchV11Tests.test_reported_reasoning_failures_are_now_solved_locally (prompt='اگر احتمال موفقیت هر تلاش مستقل ۳۵٪ باشد، احتمال حداقل دو موفقیت در چهار تلاش چقدر است؟') _
+
+self = <tests.test_v11_bilingual_cognitive_research.BilingualCognitiveResearchV11Tests testMethod=test_reported_reasoning_failures_are_now_solved_locally>
+
+    def test_reported_reasoning_failures_are_now_solved_locally(self) -> None:
+        cases = (
+            ("همهٔ وارها تِپ هستند. بعضی تِپ‌ها سردند. آیا حتماً بعضی وارها سردند؟", "مثال نقض"),
+            ("اگر پریروز، فردای دوشنبه بود، امروز چه روزی است؟", "پنجشنبه"),
+            ("اگر احتمال موفقیت هر تلاش مستقل ۳۵٪ باشد، احتمال حداقل دو موفقیت در چهار تلاش چقدر است؟", "43.701875٪"),
+            ("سه جعبه با برچسب‌های قرمز، آبی و مخلوط داریم و هر سه برچسب اشتباه‌اند. فقط با بیرون‌آوردن یک مهره، چطور اصلاح می‌شوند؟", "برچسب «مخلوط»"),
+        )
+        with TemporaryRuntime() as runtime, mock.patch.object(
+            runtime.tools, "invoke", side_effect=AssertionError("web/tool call was not expected")
+        ):
+            for prompt, expected in cases:
+                with self.subTest(prompt=prompt):
+                    route = runtime.agent.router.route(prompt)
+                    answer = runtime.agent.respond(prompt)
+                    self.assertEqual(answer.intent, "reasoned_answer")
+>                   self.assertIn(expected, answer.text)
+E                   AssertionError: '43.701875٪' not found in '43.701875%'
+
+../baseline/Jarvis_v0.11.0/tests/test_v11_bilingual_cognitive_research.py:120: AssertionError
+_ RuntimeIntelligenceV14Tests.test_v14_end_to_end_reasoning_language_and_code_holdout (prompt='میانگین اعداد 12، 18، 24 و 30 چیست؟') _
+
+self = <tests.test_v14_runtime_intelligence.RuntimeIntelligenceV14Tests testMethod=test_v14_end_to_end_reasoning_language_and_code_holdout>
+
+    def test_v14_end_to_end_reasoning_language_and_code_holdout(self) -> None:
+        # One continuous session is intentional: these prompts must keep routing
+        # correctly even after unrelated earlier turns have populated context.
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        lowered = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), lowered)
+E                           AssertionError: '21' not found in '36'
+
+../baseline/Jarvis_v0.11.0/tests/test_v14_runtime_intelligence.py:74: AssertionError
+_ IntelligenceV16Tests.test_v16_reported_failures_and_variants_without_tools (prompt='دو تاس سالم؛ احتمال مجموع 9؟') _
+
+self = <tests.test_v16_intelligence.IntelligenceV16Tests testMethod=test_v16_reported_failures_and_variants_without_tools>
+
+    def test_v16_reported_failures_and_variants_without_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V16_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: '1/9' not found in '11.11111111%'
+
+../baseline/Jarvis_v0.11.0/tests/test_v16_intelligence.py:59: AssertionError
+_ IntelligenceV16Tests.test_v16_reported_failures_and_variants_without_tools (prompt='احتمال اینکه مجموع دو تاس سالم 7 شود؟') _
+
+self = <tests.test_v16_intelligence.IntelligenceV16Tests testMethod=test_v16_reported_failures_and_variants_without_tools>
+
+    def test_v16_reported_failures_and_variants_without_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V16_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: '1/6' not found in '16.66666667%'
+
+../baseline/Jarvis_v0.11.0/tests/test_v16_intelligence.py:59: AssertionError
+_ IntelligenceV17Tests.test_v17_semantic_ir_generalization_without_tools (prompt='What is the chance that two fair dice add up to 11?') _
+
+self = <tests.test_v17_intelligence.IntelligenceV17Tests testMethod=test_v17_semantic_ir_generalization_without_tools>
+
+    def test_v17_semantic_ir_generalization_without_tools(self):
+        with TemporaryRuntime() as rt:
+            with mock.patch.object(rt.tools,'invoke',side_effect=AssertionError('unexpected tool')):
+                for prompt,frags in CASES:
+                    with self.subTest(prompt=prompt):
+                        ans=rt.agent.respond(prompt)
+                        low=ans.text.casefold()
+>                       for f in frags:self.assertIn(f.casefold(),low)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: '1/18' not found in '5.555555556%'
+
+../baseline/Jarvis_v0.11.0/tests/test_v17_intelligence.py:59: AssertionError
+_ IntelligenceV17Tests.test_v17_semantic_ir_generalization_without_tools (prompt='دو تاس سالم؛ احتمال مجموع 4؟') _
+
+self = <tests.test_v17_intelligence.IntelligenceV17Tests testMethod=test_v17_semantic_ir_generalization_without_tools>
+
+    def test_v17_semantic_ir_generalization_without_tools(self):
+        with TemporaryRuntime() as rt:
+            with mock.patch.object(rt.tools,'invoke',side_effect=AssertionError('unexpected tool')):
+                for prompt,frags in CASES:
+                    with self.subTest(prompt=prompt):
+                        ans=rt.agent.respond(prompt)
+                        low=ans.text.casefold()
+>                       for f in frags:self.assertIn(f.casefold(),low)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: '1/12' not found in '8.333333333%'
+
+../baseline/Jarvis_v0.11.0/tests/test_v17_intelligence.py:59: AssertionError
+_ IntelligenceV17Tests.test_v17_semantic_ir_generalization_without_tools (prompt='دو تاس سالم؛ شانس اینکه مجموع 12 شود؟') _
+
+self = <tests.test_v17_intelligence.IntelligenceV17Tests testMethod=test_v17_semantic_ir_generalization_without_tools>
+
+    def test_v17_semantic_ir_generalization_without_tools(self):
+        with TemporaryRuntime() as rt:
+            with mock.patch.object(rt.tools,'invoke',side_effect=AssertionError('unexpected tool')):
+                for prompt,frags in CASES:
+                    with self.subTest(prompt=prompt):
+                        ans=rt.agent.respond(prompt)
+                        low=ans.text.casefold()
+>                       for f in frags:self.assertIn(f.casefold(),low)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E                       AssertionError: '1/36' not found in '2.777777778%'
+
+../baseline/Jarvis_v0.11.0/tests/test_v17_intelligence.py:59: AssertionError
+_ IntelligenceV18Tests.test_v18_holdout_end_to_end_without_web_or_tools (prompt='Two fair dice are rolled. What is the chance their sum equals 9?') _
+
+self = <tests.test_v18_intelligence.IntelligenceV18Tests testMethod=test_v18_holdout_end_to_end_without_web_or_tools>
+
+    def test_v18_holdout_end_to_end_without_web_or_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V18_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: '1/9' not found in '11.11111111%'
+
+../baseline/Jarvis_v0.11.0/tests/test_v18_intelligence.py:27: AssertionError
+_ IntelligenceV18Tests.test_v18_holdout_end_to_end_without_web_or_tools (prompt='What is the probability that two fair dice total 6?') _
+
+self = <tests.test_v18_intelligence.IntelligenceV18Tests testMethod=test_v18_holdout_end_to_end_without_web_or_tools>
+
+    def test_v18_holdout_end_to_end_without_web_or_tools(self) -> None:
+        with TemporaryRuntime() as runtime:
+            with mock.patch.object(runtime.tools, "invoke", side_effect=AssertionError("unexpected tool invocation")):
+                for prompt, fragments in V18_HOLDOUT_CASES:
+                    with self.subTest(prompt=prompt):
+                        answer = runtime.agent.respond(prompt)
+                        low = answer.text.casefold()
+                        for fragment in fragments:
+>                           self.assertIn(fragment.casefold(), low)
+E                           AssertionError: '5/36' not found in '13.88888889%'
+
+../baseline/Jarvis_v0.11.0/tests/test_v18_intelligence.py:27: AssertionError
+=========================== short test summary info ============================
+SUBFAILED(prompt='اگر احتمال موفقیت هر تلاش مستقل ۳۵٪ باشد، احتمال حداقل دو موفقیت در چهار تلاش چقدر است؟') tests/test_v11_bilingual_cognitive_research.py::BilingualCognitiveResearchV11Tests::test_reported_reasoning_failures_are_now_solved_locally
+SUBFAILED(prompt='میانگین اعداد 12، 18، 24 و 30 چیست؟') tests/test_v14_runtime_intelligence.py::RuntimeIntelligenceV14Tests::test_v14_end_to_end_reasoning_language_and_code_holdout
+SUBFAILED(prompt='دو تاس سالم؛ احتمال مجموع 9؟') tests/test_v16_intelligence.py::IntelligenceV16Tests::test_v16_reported_failures_and_variants_without_tools
+SUBFAILED(prompt='احتمال اینکه مجموع دو تاس سالم 7 شود؟') tests/test_v16_intelligence.py::IntelligenceV16Tests::test_v16_reported_failures_and_variants_without_tools
+SUBFAILED(prompt='What is the chance that two fair dice add up to 11?') tests/test_v17_intelligence.py::IntelligenceV17Tests::test_v17_semantic_ir_generalization_without_tools
+SUBFAILED(prompt='دو تاس سالم؛ احتمال مجموع 4؟') tests/test_v17_intelligence.py::IntelligenceV17Tests::test_v17_semantic_ir_generalization_without_tools
+SUBFAILED(prompt='دو تاس سالم؛ شانس اینکه مجموع 12 شود؟') tests/test_v17_intelligence.py::IntelligenceV17Tests::test_v17_semantic_ir_generalization_without_tools
+SUBFAILED(prompt='Two fair dice are rolled. What is the chance their sum equals 9?') tests/test_v18_intelligence.py::IntelligenceV18Tests::test_v18_holdout_end_to_end_without_web_or_tools
+SUBFAILED(prompt='What is the probability that two fair dice total 6?') tests/test_v18_intelligence.py::IntelligenceV18Tests::test_v18_holdout_end_to_end_without_web_or_tools
+9 failed, 867 passed, 576 subtests passed in 28.76s

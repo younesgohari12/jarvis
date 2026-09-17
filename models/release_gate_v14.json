@@ -1,0 +1,53 @@
+{
+  "format": "jarvis-v14-runtime-intelligence-release-gate-v1",
+  "release": "intelligence_v14",
+  "base_application": "v0.11.0",
+  "neural_core": "models/jarvis_nano_v13.npz",
+  "neural_core_changed": false,
+  "why_no_fake_v14_weight": "Runtime/routing/reasoning changes are released independently; no neural checkpoint is renamed unless retraining passes a separate quality gate.",
+  "active_dataset": "dataset_v006",
+  "dataset_quality": {
+    "total_examples": 15329,
+    "generalization_shards": 100,
+    "generalization_examples": 2000,
+    "generalization_unique_inputs": 2000,
+    "generalization_unique_outputs": 2000,
+    "generalization_unique_output_ratio": 1.0,
+    "reasoning_shards": 100,
+    "reasoning_examples": 3000,
+    "reasoning_unique_inputs": 3000,
+    "reasoning_unique_outputs": 3000,
+    "reasoning_unique_output_ratio": 1.0,
+    "cross_split_concept_leakage": 0,
+    "v13_template_packs_active": false
+  },
+  "tokenizer_gate": {
+    "round_trip_accuracy": 1.0,
+    "unknown_token_rate": 0.0,
+    "tokenized_training_examples": 12391
+  },
+  "strict_e2e_holdout_comparison": {
+    "cases": 30,
+    "exact_prompts_absent_from_v006": true,
+    "v13_passed": 0,
+    "v14_passed": 30,
+    "v13_external_call_cases": 11,
+    "v14_external_call_cases": 0,
+    "acceptance": "all expected answer fragments present; external web/tool calls are treated as failures for these locally solvable tasks"
+  },
+  "regression_suite": {
+    "tests_discovered": 666,
+    "tests_passed": 666,
+    "tests_failed": 0,
+    "execution_note": "Run module-by-module in fresh Python processes to avoid cumulative suite timeout; every discovered module passed after final patches."
+  },
+  "runtime_changes": [
+    "High-precision LocalIntelligenceV14 before unknown/web fallback",
+    "Explicit routing for deterministic math, probability, combinatorics, ratios, averages, units, temperature, sequences, coding and translation",
+    "Unknown no longer enters creative/story fallback",
+    "Accepted Smart Brain neural fallback runs before web only when router confidence is genuinely low",
+    "Full-sentence translation bypasses DialogueSubjectResolver word-equivalent rewrite",
+    "Explicit English story/support/writing/rewrite routing preserves prior fluency behavior",
+    "LAB and Torch/Numpy training paths use dataset_v006; enabled supervised LAB data is merged during v14 tokenization"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "dataset_version": "dataset_v001",
+  "created_by": "JARVIS training pipeline",
+  "pretrained_sources": [],
+  "pretrained_source": null,
+  "seed": 5052026,
+  "examples": 3917,
+  "splits": {
+    "train": 3126,
+    "validation": 414,
+    "test": 377
+  },
+  "categories": {
+    "context_followup": 224,
+    "english_conversation": 160,
+    "entity_arguments": 125,
+    "general_knowledge": 200,
+    "instruction_following": 308,
+    "model_identity": 77,
+    "multi_step_tasks": 845,
+    "persian_conversation": 192,
+    "personality": 119,
+    "programming": 72,
+    "reasoning": 72,
+    "search_decision": 132,
+    "tool_calling": 1361,
+    "unknown_low_confidence": 30
+  },
+  "languages": {
+    "en": 1189,
+    "fa": 1878,
+    "mixed": 850
+  },
+  "stages": {
+    "1": 176,
+    "2": 448,
+    "3": 338,
+    "4": 1486,
+    "5": 224,
+    "6": 845,
+    "7": 204,
+    "8": 196
+  },
+  "sha256": "a643db2fe51682e4ba3909a195246cb921e779b91764b1aed9ef1693ffc7b819"
+}

@@ -1,0 +1,25 @@
+{
+  "format": "jarvis-hybrid-brain-7",
+  "feature_size": 32768,
+  "embedding_method": "learned_hashed_unicode_ngrams",
+  "embedding_size": 64,
+  "hidden_size": 80,
+  "layers": 3,
+  "context_length": 28,
+  "confidence_threshold": 0.32,
+  "margin_threshold": 0.04,
+  "lexical_ood_threshold": 0.075,
+  "maximum_normalized_entropy": 0.91,
+  "neural_weight": 0.58,
+  "lexical_weight": 0.42,
+  "temperature": 0.9,
+  "training": {
+    "epochs": 36,
+    "learning_rate": 0.028,
+    "learning_rate_decay": 0.97,
+    "l2": 0.00002,
+    "seed": 2027,
+    "validation_ratio": 0.18,
+    "test_ratio": 0.18
+  }
+}

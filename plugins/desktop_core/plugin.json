@@ -1,0 +1,10 @@
+{
+  "format": "jarvis-plugin-v1",
+  "id": "desktop_core",
+  "name": "Desktop Core Capability Pack",
+  "version": "0.7.2",
+  "description": "Validated local capability pack for file workflows, diagnostics and local-first research.",
+  "required_skills": ["file_workflow", "system_diagnostics", "local_research"],
+  "required_tools": ["list_skills", "diagnose_system", "search_files"],
+  "entrypoint": null
+}

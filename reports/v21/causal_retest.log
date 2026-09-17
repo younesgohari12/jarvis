@@ -1,0 +1,48 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_______________ test_runtime_all_models_loaded_registered_called _______________
+
+    def test_runtime_all_models_loaded_registered_called():
+        with TemporaryRuntime() as rt:
+            brain=rt.agent.reasoning.local_intelligence
+            assert isinstance(brain,LocalIntelligenceV20)
+            models=[brain.parser.frame,brain.parser.numeric,brain.parser.operation,brain.code_v20.model,brain.reflection.stage_model]
+            registry=json.loads((ROOT/'models/model_registry_v2.json').read_text())['cognitive_v20']['models']
+            for model in models:
+                assert model.ready and model.parameter_count>1000
+                assert any(v['sha256']==model.sha256 for v in registry.values())
+            before=[m.calls for m in models[:3]]
+            with patch.object(rt.tools,'invoke',side_effect=AssertionError('unexpected tool')):
+                result=rt.agent.respond('500 را 20 درصد کم کن، 30 اضافه کن و حاصل را بر 5 تقسیم کن')
+            assert '86' in result.text
+>           assert all(m.calls>n for m,n in zip(models,before))
+E           assert False
+E            +  where False = all(<generator object test_runtime_all_models_loaded_registered_called.<locals>.<genexpr> at 0x7fd521db1be0>)
+
+tests/test_v20_cognitive.py:34: AssertionError
+_____________ test_trained_operation_changes_final_runtime_answer ______________
+
+    def test_trained_operation_changes_final_runtime_answer():
+        with TemporaryRuntime() as rt:
+            b=rt.agent.reasoning.local_intelligence; original=b.parser.operation.predict
+            q='500 را 20 درصد کم کن، 30 اضافه کن و حاصل را بر 5 تقسیم کن'
+            assert '86' in rt.agent.respond(q).text
+            def altered(text,*args,**kwargs):
+                pred=original(text,*args,**kwargs)
+                return [('subtract',.999)] if pred and pred[0][0]=='add' else pred
+            with patch.object(b.parser.operation,'predict',side_effect=altered):
+                # v21: the model still changes the initial graph, but semantic verification repairs it.
+                assert '86' in rt.agent.respond(q).text
+                attempts=b.last_trace['attempts']
+>               assert attempts[0]['answer']==74
+E               assert 86.0 == 74
+
+tests/test_v20_cognitive.py:50: AssertionError
+------------------------------ Captured log call -------------------------------
+INFO     jarvis:bootstrap.py:108 Starting Jarvis 0.11.0 (debug=False)
+INFO     jarvis:bootstrap.py:127 Hybrid brain loaded: 2106645 parameters, 1391119 bytes
+INFO     jarvis:bootstrap.py:143 JARVIS Smart Brain registered lazily: 23077376 parameters, dataset=dataset_v009, pretrained_source=None
+=========================== short test summary info ============================
+FAILED tests/test_v20_cognitive.py::test_runtime_all_models_loaded_registered_called
+FAILED tests/test_v20_cognitive.py::test_trained_operation_changes_final_runtime_answer
+2 failed in 0.65s

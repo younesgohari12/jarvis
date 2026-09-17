@@ -1,0 +1,14 @@
+{
+  "cases": 300,
+  "template_families": 30,
+  "seed": 20260907,
+  "sha256": "9f9694114a4daad256ec4e8e8b550e93b93e17360752e8906d1a99837ce83bc7",
+  "scope": "150 work-rate, 150 sequence; synthetic diagnostic, not a broad external holdout",
+  "frozen_before_first_evaluation": true,
+  "no_training_on_these_cases": true,
+  "score_claim": "No overall intelligence score; shared templates limit independence.",
+  "used_for_debugging_after_first_evaluation": true,
+  "final_evaluation_is_unseen_holdout": false,
+  "initial_patch_correct": 280,
+  "final_patch_correct": 300
+}

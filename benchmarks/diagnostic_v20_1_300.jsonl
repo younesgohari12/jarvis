@@ -1,0 +1,300 @@
+{"id": "work-00-00", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 5 کارگر و 5 ساعت، خروجی 325 قطعه است. با 8 کارگر و 5 ساعت چه خروجی داریم؟", "expected": 520.0}
+{"id": "work-00-01", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 11 کارگر و 5 ساعت، خروجی 550 قطعه است. با 9 کارگر و 6 ساعت چه خروجی داریم؟", "expected": 540.0}
+{"id": "work-00-02", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 3 کارگر و 5 ساعت، خروجی 150 قطعه است. با 4 کارگر و 7 ساعت چه خروجی داریم؟", "expected": 280.0}
+{"id": "work-00-03", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 6 کارگر و 7 ساعت، خروجی 294 قطعه است. با 2 کارگر و 5 ساعت چه خروجی داریم؟", "expected": 70.0}
+{"id": "work-00-04", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 2 کارگر و 3 ساعت، خروجی 66 قطعه است. با 2 کارگر و 2 ساعت چه خروجی داریم؟", "expected": 44.0}
+{"id": "work-00-05", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 2 کارگر و 4 ساعت، خروجی 64 قطعه است. با 3 کارگر و 8 ساعت چه خروجی داریم؟", "expected": 192.0}
+{"id": "work-00-06", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 3 کارگر و 2 ساعت، خروجی 66 قطعه است. با 11 کارگر و 6 ساعت چه خروجی داریم؟", "expected": 726.0}
+{"id": "work-00-07", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 3 کارگر و 3 ساعت، خروجی 117 قطعه است. با 5 کارگر و 7 ساعت چه خروجی داریم؟", "expected": 455.0}
+{"id": "work-00-08", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 4 کارگر و 5 ساعت، خروجی 200 قطعه است. با 7 کارگر و 2 ساعت چه خروجی داریم؟", "expected": 140.0}
+{"id": "work-00-09", "family": "work-00", "category": "work_rate", "kind": "number", "question": "با 9 کارگر و 6 ساعت، خروجی 486 قطعه است. با 3 کارگر و 6 ساعت چه خروجی داریم؟", "expected": 162.0}
+{"id": "work-01-00", "family": "work-01", "category": "work_rate", "kind": "number", "question": "8 کارگر در 4 ساعت 160 قطعه می سازند. 13 کارگر در 5 ساعت چند قطعه می سازند؟", "expected": 325.0}
+{"id": "work-01-01", "family": "work-01", "category": "work_rate", "kind": "number", "question": "7 کارگر در 2 ساعت 140 قطعه می سازند. 10 کارگر در 6 ساعت چند قطعه می سازند؟", "expected": 600.0}
+{"id": "work-01-02", "family": "work-01", "category": "work_rate", "kind": "number", "question": "7 کارگر در 3 ساعت 63 قطعه می سازند. 7 کارگر در 7 ساعت چند قطعه می سازند؟", "expected": 147.0}
+{"id": "work-01-03", "family": "work-01", "category": "work_rate", "kind": "number", "question": "12 کارگر در 3 ساعت 108 قطعه می سازند. 2 کارگر در 9 ساعت چند قطعه می سازند؟", "expected": 54.0}
+{"id": "work-01-04", "family": "work-01", "category": "work_rate", "kind": "number", "question": "9 کارگر در 6 ساعت 702 قطعه می سازند. 12 کارگر در 4 ساعت چند قطعه می سازند؟", "expected": 624.0}
+{"id": "work-01-05", "family": "work-01", "category": "work_rate", "kind": "number", "question": "4 کارگر در 3 ساعت 84 قطعه می سازند. 4 کارگر در 10 ساعت چند قطعه می سازند؟", "expected": 280.0}
+{"id": "work-01-06", "family": "work-01", "category": "work_rate", "kind": "number", "question": "10 کارگر در 2 ساعت 220 قطعه می سازند. 13 کارگر در 2 ساعت چند قطعه می سازند؟", "expected": 286.0}
+{"id": "work-01-07", "family": "work-01", "category": "work_rate", "kind": "number", "question": "3 کارگر در 9 ساعت 351 قطعه می سازند. 4 کارگر در 5 ساعت چند قطعه می سازند؟", "expected": 260.0}
+{"id": "work-01-08", "family": "work-01", "category": "work_rate", "kind": "number", "question": "7 کارگر در 7 ساعت 441 قطعه می سازند. 4 کارگر در 3 ساعت چند قطعه می سازند؟", "expected": 108.0}
+{"id": "work-01-09", "family": "work-01", "category": "work_rate", "kind": "number", "question": "6 کارگر در 7 ساعت 84 قطعه می سازند. 11 کارگر در 6 ساعت چند قطعه می سازند؟", "expected": 132.0}
+{"id": "work-02-00", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 6 ساعت، 7 کارگر 378 قطعه تولید می کنند؛ حالا در 2 ساعت، 8 کارگر چند قطعه تولید می کنند؟", "expected": 144.0}
+{"id": "work-02-01", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 3 ساعت، 7 کارگر 147 قطعه تولید می کنند؛ حالا در 7 ساعت، 4 کارگر چند قطعه تولید می کنند؟", "expected": 196.0}
+{"id": "work-02-02", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 3 ساعت، 6 کارگر 198 قطعه تولید می کنند؛ حالا در 8 ساعت، 6 کارگر چند قطعه تولید می کنند؟", "expected": 528.0}
+{"id": "work-02-03", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 2 ساعت، 9 کارگر 108 قطعه تولید می کنند؛ حالا در 5 ساعت، 11 کارگر چند قطعه تولید می کنند؟", "expected": 330.0}
+{"id": "work-02-04", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 3 ساعت، 10 کارگر 60 قطعه تولید می کنند؛ حالا در 8 ساعت، 2 کارگر چند قطعه تولید می کنند؟", "expected": 32.0}
+{"id": "work-02-05", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 7 ساعت، 4 کارگر 336 قطعه تولید می کنند؛ حالا در 6 ساعت، 3 کارگر چند قطعه تولید می کنند؟", "expected": 216.0}
+{"id": "work-02-06", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 2 ساعت، 10 کارگر 200 قطعه تولید می کنند؛ حالا در 10 ساعت، 13 کارگر چند قطعه تولید می کنند؟", "expected": 1300.0}
+{"id": "work-02-07", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 2 ساعت، 3 کارگر 12 قطعه تولید می کنند؛ حالا در 7 ساعت، 2 کارگر چند قطعه تولید می کنند؟", "expected": 28.0}
+{"id": "work-02-08", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 5 ساعت، 8 کارگر 240 قطعه تولید می کنند؛ حالا در 10 ساعت، 9 کارگر چند قطعه تولید می کنند؟", "expected": 540.0}
+{"id": "work-02-09", "family": "work-02", "category": "work_rate", "kind": "number", "question": "در 5 ساعت، 6 کارگر 240 قطعه تولید می کنند؛ حالا در 9 ساعت، 10 کارگر چند قطعه تولید می کنند؟", "expected": 720.0}
+{"id": "work-03-00", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 8 کارگر و 4 ساعت چه خروجی داریم؟ با 11 کارگر و 9 ساعت، خروجی 1287 قطعه است.", "expected": 416.0}
+{"id": "work-03-01", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 13 کارگر و 4 ساعت چه خروجی داریم؟ با 7 کارگر و 4 ساعت، خروجی 280 قطعه است.", "expected": 520.0}
+{"id": "work-03-02", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 6 کارگر و 7 ساعت چه خروجی داریم؟ با 8 کارگر و 9 ساعت، خروجی 936 قطعه است.", "expected": 546.0}
+{"id": "work-03-03", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 8 کارگر و 4 ساعت چه خروجی داریم؟ با 4 کارگر و 4 ساعت، خروجی 176 قطعه است.", "expected": 352.0}
+{"id": "work-03-04", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 9 کارگر و 3 ساعت چه خروجی داریم؟ با 11 کارگر و 3 ساعت، خروجی 99 قطعه است.", "expected": 81.0}
+{"id": "work-03-05", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 14 کارگر و 6 ساعت چه خروجی داریم؟ با 12 کارگر و 8 ساعت، خروجی 672 قطعه است.", "expected": 588.0}
+{"id": "work-03-06", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 13 کارگر و 6 ساعت چه خروجی داریم؟ با 12 کارگر و 8 ساعت، خروجی 192 قطعه است.", "expected": 156.0}
+{"id": "work-03-07", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 6 کارگر و 9 ساعت چه خروجی داریم؟ با 9 کارگر و 9 ساعت، خروجی 729 قطعه است.", "expected": 486.0}
+{"id": "work-03-08", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 12 کارگر و 10 ساعت چه خروجی داریم؟ با 7 کارگر و 9 ساعت، خروجی 756 قطعه است.", "expected": 1440.0}
+{"id": "work-03-09", "family": "work-03", "category": "work_rate", "kind": "number", "question": "با 7 کارگر و 7 ساعت چه خروجی داریم؟ با 4 کارگر و 4 ساعت، خروجی 208 قطعه است.", "expected": 637.0}
+{"id": "work-04-00", "family": "work-04", "category": "work_rate", "kind": "number", "question": "9 workers make 756 pieces in 7 hours. What will 7 workers make in 3 hours?", "expected": 252.0}
+{"id": "work-04-01", "family": "work-04", "category": "work_rate", "kind": "number", "question": "10 workers make 200 pieces in 4 hours. What will 12 workers make in 3 hours?", "expected": 180.0}
+{"id": "work-04-02", "family": "work-04", "category": "work_rate", "kind": "number", "question": "8 workers make 240 pieces in 6 hours. What will 14 workers make in 8 hours?", "expected": 560.0}
+{"id": "work-04-03", "family": "work-04", "category": "work_rate", "kind": "number", "question": "12 workers make 540 pieces in 9 hours. What will 8 workers make in 5 hours?", "expected": 200.0}
+{"id": "work-04-04", "family": "work-04", "category": "work_rate", "kind": "number", "question": "12 workers make 288 pieces in 6 hours. What will 2 workers make in 8 hours?", "expected": 64.0}
+{"id": "work-04-05", "family": "work-04", "category": "work_rate", "kind": "number", "question": "3 workers make 297 pieces in 9 hours. What will 12 workers make in 10 hours?", "expected": 1320.0}
+{"id": "work-04-06", "family": "work-04", "category": "work_rate", "kind": "number", "question": "11 workers make 99 pieces in 3 hours. What will 11 workers make in 9 hours?", "expected": 297.0}
+{"id": "work-04-07", "family": "work-04", "category": "work_rate", "kind": "number", "question": "12 workers make 432 pieces in 6 hours. What will 8 workers make in 7 hours?", "expected": 336.0}
+{"id": "work-04-08", "family": "work-04", "category": "work_rate", "kind": "number", "question": "12 workers make 480 pieces in 4 hours. What will 3 workers make in 9 hours?", "expected": 270.0}
+{"id": "work-04-09", "family": "work-04", "category": "work_rate", "kind": "number", "question": "6 workers make 540 pieces in 9 hours. What will 11 workers make in 3 hours?", "expected": 330.0}
+{"id": "work-05-00", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 5 workers make in 7 hours? 5 workers make 245 pieces in 7 hours.", "expected": 245.0}
+{"id": "work-05-01", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 8 workers make in 6 hours? 7 workers make 84 pieces in 4 hours.", "expected": 144.0}
+{"id": "work-05-02", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 9 workers make in 2 hours? 6 workers make 180 pieces in 5 hours.", "expected": 108.0}
+{"id": "work-05-03", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 2 workers make in 3 hours? 7 workers make 336 pieces in 4 hours.", "expected": 72.0}
+{"id": "work-05-04", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 6 workers make in 10 hours? 6 workers make 300 pieces in 5 hours.", "expected": 600.0}
+{"id": "work-05-05", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 4 workers make in 7 hours? 7 workers make 385 pieces in 5 hours.", "expected": 308.0}
+{"id": "work-05-06", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 4 workers make in 2 hours? 2 workers make 80 pieces in 4 hours.", "expected": 80.0}
+{"id": "work-05-07", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 3 workers make in 2 hours? 10 workers make 490 pieces in 7 hours.", "expected": 42.0}
+{"id": "work-05-08", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 14 workers make in 6 hours? 12 workers make 216 pieces in 6 hours.", "expected": 252.0}
+{"id": "work-05-09", "family": "work-05", "category": "work_rate", "kind": "number", "question": "What will 2 workers make in 10 hours? 9 workers make 810 pieces in 9 hours.", "expected": 200.0}
+{"id": "work-06-00", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 8 hours, 11 workers produce 352 units; now 15 workers have 3 hours. Find output.", "expected": 180.0}
+{"id": "work-06-01", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 9 hours, 9 workers produce 648 units; now 11 workers have 9 hours. Find output.", "expected": 792.0}
+{"id": "work-06-02", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 5 hours, 12 workers produce 180 units; now 14 workers have 9 hours. Find output.", "expected": 378.0}
+{"id": "work-06-03", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 9 hours, 5 workers produce 90 units; now 4 workers have 9 hours. Find output.", "expected": 72.0}
+{"id": "work-06-04", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 8 hours, 6 workers produce 288 units; now 13 workers have 6 hours. Find output.", "expected": 468.0}
+{"id": "work-06-05", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 4 hours, 5 workers produce 120 units; now 2 workers have 8 hours. Find output.", "expected": 96.0}
+{"id": "work-06-06", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 9 hours, 6 workers produce 648 units; now 6 workers have 7 hours. Find output.", "expected": 504.0}
+{"id": "work-06-07", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 6 hours, 3 workers produce 54 units; now 5 workers have 8 hours. Find output.", "expected": 120.0}
+{"id": "work-06-08", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 5 hours, 11 workers produce 495 units; now 5 workers have 3 hours. Find output.", "expected": 135.0}
+{"id": "work-06-09", "family": "work-06", "category": "work_rate", "kind": "number", "question": "In 2 hours, 12 workers produce 240 units; now 12 workers have 8 hours. Find output.", "expected": 960.0}
+{"id": "work-07-00", "family": "work-07", "category": "work_rate", "kind": "number", "question": "11 کارگر در 6 ساعت 528 جعبه می سازند؛ 10 کارگر در 8 ساعت چند جعبه؟", "expected": 640.0}
+{"id": "work-07-01", "family": "work-07", "category": "work_rate", "kind": "number", "question": "4 کارگر در 5 ساعت 60 جعبه می سازند؛ 9 کارگر در 8 ساعت چند جعبه؟", "expected": 216.0}
+{"id": "work-07-02", "family": "work-07", "category": "work_rate", "kind": "number", "question": "5 کارگر در 9 ساعت 135 جعبه می سازند؛ 4 کارگر در 6 ساعت چند جعبه؟", "expected": 72.0}
+{"id": "work-07-03", "family": "work-07", "category": "work_rate", "kind": "number", "question": "5 کارگر در 2 ساعت 90 جعبه می سازند؛ 7 کارگر در 10 ساعت چند جعبه؟", "expected": 630.0}
+{"id": "work-07-04", "family": "work-07", "category": "work_rate", "kind": "number", "question": "8 کارگر در 7 ساعت 728 جعبه می سازند؛ 15 کارگر در 7 ساعت چند جعبه؟", "expected": 1365.0}
+{"id": "work-07-05", "family": "work-07", "category": "work_rate", "kind": "number", "question": "11 کارگر در 7 ساعت 1001 جعبه می سازند؛ 5 کارگر در 6 ساعت چند جعبه؟", "expected": 390.0}
+{"id": "work-07-06", "family": "work-07", "category": "work_rate", "kind": "number", "question": "9 کارگر در 2 ساعت 126 جعبه می سازند؛ 11 کارگر در 10 ساعت چند جعبه؟", "expected": 770.0}
+{"id": "work-07-07", "family": "work-07", "category": "work_rate", "kind": "number", "question": "10 کارگر در 2 ساعت 120 جعبه می سازند؛ 15 کارگر در 4 ساعت چند جعبه؟", "expected": 360.0}
+{"id": "work-07-08", "family": "work-07", "category": "work_rate", "kind": "number", "question": "9 کارگر در 7 ساعت 378 جعبه می سازند؛ 2 کارگر در 8 ساعت چند جعبه؟", "expected": 96.0}
+{"id": "work-07-09", "family": "work-07", "category": "work_rate", "kind": "number", "question": "7 کارگر در 2 ساعت 56 جعبه می سازند؛ 7 کارگر در 8 ساعت چند جعبه؟", "expected": 224.0}
+{"id": "work-08-00", "family": "work-08", "category": "work_rate", "kind": "number", "question": "6 workers produce 702 boxes in 9 hours; 13 workers in 7 hours produce how many boxes?", "expected": 1183.0}
+{"id": "work-08-01", "family": "work-08", "category": "work_rate", "kind": "number", "question": "5 workers produce 540 boxes in 9 hours; 6 workers in 3 hours produce how many boxes?", "expected": 216.0}
+{"id": "work-08-02", "family": "work-08", "category": "work_rate", "kind": "number", "question": "7 workers produce 112 boxes in 4 hours; 12 workers in 4 hours produce how many boxes?", "expected": 192.0}
+{"id": "work-08-03", "family": "work-08", "category": "work_rate", "kind": "number", "question": "12 workers produce 144 boxes in 4 hours; 4 workers in 6 hours produce how many boxes?", "expected": 72.0}
+{"id": "work-08-04", "family": "work-08", "category": "work_rate", "kind": "number", "question": "6 workers produce 180 boxes in 6 hours; 10 workers in 5 hours produce how many boxes?", "expected": 250.0}
+{"id": "work-08-05", "family": "work-08", "category": "work_rate", "kind": "number", "question": "5 workers produce 150 boxes in 3 hours; 2 workers in 10 hours produce how many boxes?", "expected": 200.0}
+{"id": "work-08-06", "family": "work-08", "category": "work_rate", "kind": "number", "question": "12 workers produce 780 boxes in 5 hours; 13 workers in 9 hours produce how many boxes?", "expected": 1521.0}
+{"id": "work-08-07", "family": "work-08", "category": "work_rate", "kind": "number", "question": "10 workers produce 400 boxes in 4 hours; 8 workers in 2 hours produce how many boxes?", "expected": 160.0}
+{"id": "work-08-08", "family": "work-08", "category": "work_rate", "kind": "number", "question": "9 workers produce 693 boxes in 7 hours; 2 workers in 8 hours produce how many boxes?", "expected": 176.0}
+{"id": "work-08-09", "family": "work-08", "category": "work_rate", "kind": "number", "question": "8 workers produce 144 boxes in 3 hours; 2 workers in 2 hours produce how many boxes?", "expected": 24.0}
+{"id": "work-09-00", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 9 کارگر، زمان 9 ساعت و خروجی 648 قطعه است. برای 5 کارگر، زمان 4 ساعت است؛ خروجی چقدر است؟", "expected": 160.0}
+{"id": "work-09-01", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 4 کارگر، زمان 7 ساعت و خروجی 84 قطعه است. برای 4 کارگر، زمان 3 ساعت است؛ خروجی چقدر است؟", "expected": 36.0}
+{"id": "work-09-02", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 3 کارگر، زمان 2 ساعت و خروجی 72 قطعه است. برای 2 کارگر، زمان 5 ساعت است؛ خروجی چقدر است؟", "expected": 120.0}
+{"id": "work-09-03", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 3 کارگر، زمان 6 ساعت و خروجی 180 قطعه است. برای 9 کارگر، زمان 4 ساعت است؛ خروجی چقدر است؟", "expected": 360.0}
+{"id": "work-09-04", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 8 کارگر، زمان 2 ساعت و خروجی 96 قطعه است. برای 10 کارگر، زمان 2 ساعت است؛ خروجی چقدر است؟", "expected": 120.0}
+{"id": "work-09-05", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 3 کارگر، زمان 3 ساعت و خروجی 18 قطعه است. برای 11 کارگر، زمان 5 ساعت است؛ خروجی چقدر است؟", "expected": 110.0}
+{"id": "work-09-06", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 10 کارگر، زمان 6 ساعت و خروجی 300 قطعه است. برای 15 کارگر، زمان 2 ساعت است؛ خروجی چقدر است؟", "expected": 150.0}
+{"id": "work-09-07", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 9 کارگر، زمان 6 ساعت و خروجی 108 قطعه است. برای 14 کارگر، زمان 9 ساعت است؛ خروجی چقدر است؟", "expected": 252.0}
+{"id": "work-09-08", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 5 کارگر، زمان 2 ساعت و خروجی 60 قطعه است. برای 4 کارگر، زمان 5 ساعت است؛ خروجی چقدر است؟", "expected": 120.0}
+{"id": "work-09-09", "family": "work-09", "category": "work_rate", "kind": "number", "question": "برای 7 کارگر، زمان 4 ساعت و خروجی 112 قطعه است. برای 14 کارگر، زمان 6 ساعت است؛ خروجی چقدر است؟", "expected": 336.0}
+{"id": "work-10-00", "family": "work-10", "category": "work_rate", "kind": "number", "question": "4 workers need 6 hours for 312 items. How many items can 2 workers finish in 4 hours?", "expected": 104.0}
+{"id": "work-10-01", "family": "work-10", "category": "work_rate", "kind": "number", "question": "9 workers need 8 hours for 576 items. How many items can 6 workers finish in 3 hours?", "expected": 144.0}
+{"id": "work-10-02", "family": "work-10", "category": "work_rate", "kind": "number", "question": "3 workers need 2 hours for 18 items. How many items can 4 workers finish in 8 hours?", "expected": 96.0}
+{"id": "work-10-03", "family": "work-10", "category": "work_rate", "kind": "number", "question": "11 workers need 4 hours for 352 items. How many items can 9 workers finish in 7 hours?", "expected": 504.0}
+{"id": "work-10-04", "family": "work-10", "category": "work_rate", "kind": "number", "question": "4 workers need 7 hours for 196 items. How many items can 7 workers finish in 9 hours?", "expected": 441.0}
+{"id": "work-10-05", "family": "work-10", "category": "work_rate", "kind": "number", "question": "4 workers need 4 hours for 80 items. How many items can 14 workers finish in 8 hours?", "expected": 560.0}
+{"id": "work-10-06", "family": "work-10", "category": "work_rate", "kind": "number", "question": "2 workers need 8 hours for 128 items. How many items can 8 workers finish in 9 hours?", "expected": 576.0}
+{"id": "work-10-07", "family": "work-10", "category": "work_rate", "kind": "number", "question": "7 workers need 9 hours for 126 items. How many items can 3 workers finish in 3 hours?", "expected": 18.0}
+{"id": "work-10-08", "family": "work-10", "category": "work_rate", "kind": "number", "question": "4 workers need 6 hours for 264 items. How many items can 8 workers finish in 2 hours?", "expected": 176.0}
+{"id": "work-10-09", "family": "work-10", "category": "work_rate", "kind": "number", "question": "10 workers need 4 hours for 360 items. How many items can 8 workers finish in 9 hours?", "expected": 648.0}
+{"id": "work-11-00", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 12 کارگر طی 7 ساعت 420 قطعه ساختند. اکنون 8 کارگر طی 7 ساعت چند قطعه می سازند؟", "expected": 280.0}
+{"id": "work-11-01", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 7 کارگر طی 9 ساعت 567 قطعه ساختند. اکنون 10 کارگر طی 2 ساعت چند قطعه می سازند؟", "expected": 180.0}
+{"id": "work-11-02", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 2 کارگر طی 4 ساعت 80 قطعه ساختند. اکنون 3 کارگر طی 2 ساعت چند قطعه می سازند؟", "expected": 60.0}
+{"id": "work-11-03", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 9 کارگر طی 9 ساعت 405 قطعه ساختند. اکنون 14 کارگر طی 5 ساعت چند قطعه می سازند؟", "expected": 350.0}
+{"id": "work-11-04", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 7 کارگر طی 7 ساعت 392 قطعه ساختند. اکنون 8 کارگر طی 6 ساعت چند قطعه می سازند؟", "expected": 384.0}
+{"id": "work-11-05", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 10 کارگر طی 7 ساعت 630 قطعه ساختند. اکنون 7 کارگر طی 2 ساعت چند قطعه می سازند؟", "expected": 126.0}
+{"id": "work-11-06", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 6 کارگر طی 2 ساعت 144 قطعه ساختند. اکنون 5 کارگر طی 2 ساعت چند قطعه می سازند؟", "expected": 120.0}
+{"id": "work-11-07", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 3 کارگر طی 2 ساعت 36 قطعه ساختند. اکنون 12 کارگر طی 10 ساعت چند قطعه می سازند؟", "expected": 720.0}
+{"id": "work-11-08", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 11 کارگر طی 8 ساعت 968 قطعه ساختند. اکنون 7 کارگر طی 10 ساعت چند قطعه می سازند؟", "expected": 770.0}
+{"id": "work-11-09", "family": "work-11", "category": "work_rate", "kind": "number", "question": "ابتدا 9 کارگر طی 2 ساعت 90 قطعه ساختند. اکنون 13 کارگر طی 6 ساعت چند قطعه می سازند؟", "expected": 390.0}
+{"id": "work-12-00", "family": "work-12", "category": "work_rate", "kind": "number", "question": "12 کارگر طی 5 ساعت چند قطعه می سازند؟ ابتدا 3 کارگر طی 3 ساعت 81 قطعه ساختند.", "expected": 540.0}
+{"id": "work-12-01", "family": "work-12", "category": "work_rate", "kind": "number", "question": "14 کارگر طی 6 ساعت چند قطعه می سازند؟ ابتدا 6 کارگر طی 8 ساعت 144 قطعه ساختند.", "expected": 252.0}
+{"id": "work-12-02", "family": "work-12", "category": "work_rate", "kind": "number", "question": "15 کارگر طی 9 ساعت چند قطعه می سازند؟ ابتدا 10 کارگر طی 7 ساعت 420 قطعه ساختند.", "expected": 810.0}
+{"id": "work-12-03", "family": "work-12", "category": "work_rate", "kind": "number", "question": "5 کارگر طی 4 ساعت چند قطعه می سازند؟ ابتدا 8 کارگر طی 4 ساعت 192 قطعه ساختند.", "expected": 120.0}
+{"id": "work-12-04", "family": "work-12", "category": "work_rate", "kind": "number", "question": "6 کارگر طی 9 ساعت چند قطعه می سازند؟ ابتدا 12 کارگر طی 4 ساعت 576 قطعه ساختند.", "expected": 648.0}
+{"id": "work-12-05", "family": "work-12", "category": "work_rate", "kind": "number", "question": "15 کارگر طی 2 ساعت چند قطعه می سازند؟ ابتدا 10 کارگر طی 9 ساعت 720 قطعه ساختند.", "expected": 240.0}
+{"id": "work-12-06", "family": "work-12", "category": "work_rate", "kind": "number", "question": "4 کارگر طی 8 ساعت چند قطعه می سازند؟ ابتدا 5 کارگر طی 6 ساعت 120 قطعه ساختند.", "expected": 128.0}
+{"id": "work-12-07", "family": "work-12", "category": "work_rate", "kind": "number", "question": "13 کارگر طی 2 ساعت چند قطعه می سازند؟ ابتدا 4 کارگر طی 4 ساعت 192 قطعه ساختند.", "expected": 312.0}
+{"id": "work-12-08", "family": "work-12", "category": "work_rate", "kind": "number", "question": "7 کارگر طی 4 ساعت چند قطعه می سازند؟ ابتدا 7 کارگر طی 4 ساعت 56 قطعه ساختند.", "expected": 56.0}
+{"id": "work-12-09", "family": "work-12", "category": "work_rate", "kind": "number", "question": "12 کارگر طی 2 ساعت چند قطعه می سازند؟ ابتدا 7 کارگر طی 6 ساعت 294 قطعه ساختند.", "expected": 168.0}
+{"id": "work-13-00", "family": "work-13", "category": "work_rate", "kind": "number", "question": "6 کارگر در 540 دقیقه 486 قطعه تولید می کنند. 10 کارگر در 6 ساعت چقدر تولید می کنند؟", "expected": 540.0}
+{"id": "work-13-01", "family": "work-13", "category": "work_rate", "kind": "number", "question": "4 کارگر در 420 دقیقه 112 قطعه تولید می کنند. 5 کارگر در 5 ساعت چقدر تولید می کنند؟", "expected": 100.0}
+{"id": "work-13-02", "family": "work-13", "category": "work_rate", "kind": "number", "question": "6 کارگر در 180 دقیقه 162 قطعه تولید می کنند. 7 کارگر در 2 ساعت چقدر تولید می کنند؟", "expected": 126.0}
+{"id": "work-13-03", "family": "work-13", "category": "work_rate", "kind": "number", "question": "7 کارگر در 180 دقیقه 84 قطعه تولید می کنند. 3 کارگر در 4 ساعت چقدر تولید می کنند؟", "expected": 48.0}
+{"id": "work-13-04", "family": "work-13", "category": "work_rate", "kind": "number", "question": "3 کارگر در 540 دقیقه 162 قطعه تولید می کنند. 6 کارگر در 5 ساعت چقدر تولید می کنند؟", "expected": 180.0}
+{"id": "work-13-05", "family": "work-13", "category": "work_rate", "kind": "number", "question": "8 کارگر در 300 دقیقه 160 قطعه تولید می کنند. 12 کارگر در 3 ساعت چقدر تولید می کنند؟", "expected": 144.0}
+{"id": "work-13-06", "family": "work-13", "category": "work_rate", "kind": "number", "question": "10 کارگر در 480 دقیقه 480 قطعه تولید می کنند. 10 کارگر در 4 ساعت چقدر تولید می کنند؟", "expected": 240.0}
+{"id": "work-13-07", "family": "work-13", "category": "work_rate", "kind": "number", "question": "5 کارگر در 480 دقیقه 400 قطعه تولید می کنند. 6 کارگر در 2 ساعت چقدر تولید می کنند؟", "expected": 120.0}
+{"id": "work-13-08", "family": "work-13", "category": "work_rate", "kind": "number", "question": "5 کارگر در 300 دقیقه 225 قطعه تولید می کنند. 2 کارگر در 5 ساعت چقدر تولید می کنند؟", "expected": 90.0}
+{"id": "work-13-09", "family": "work-13", "category": "work_rate", "kind": "number", "question": "5 کارگر در 480 دقیقه 200 قطعه تولید می کنند. 7 کارگر در 2 ساعت چقدر تولید می کنند؟", "expected": 70.0}
+{"id": "work-14-00", "family": "work-14", "category": "work_rate", "kind": "number", "question": "12 workers make 48 pieces in 120 minutes. What will 7 workers make in 5 hours?", "expected": 70.0}
+{"id": "work-14-01", "family": "work-14", "category": "work_rate", "kind": "number", "question": "8 workers make 192 pieces in 360 minutes. What will 7 workers make in 8 hours?", "expected": 224.0}
+{"id": "work-14-02", "family": "work-14", "category": "work_rate", "kind": "number", "question": "7 workers make 126 pieces in 360 minutes. What will 6 workers make in 2 hours?", "expected": 36.0}
+{"id": "work-14-03", "family": "work-14", "category": "work_rate", "kind": "number", "question": "12 workers make 1056 pieces in 480 minutes. What will 4 workers make in 6 hours?", "expected": 264.0}
+{"id": "work-14-04", "family": "work-14", "category": "work_rate", "kind": "number", "question": "7 workers make 196 pieces in 420 minutes. What will 5 workers make in 3 hours?", "expected": 60.0}
+{"id": "work-14-05", "family": "work-14", "category": "work_rate", "kind": "number", "question": "6 workers make 198 pieces in 180 minutes. What will 4 workers make in 3 hours?", "expected": 132.0}
+{"id": "work-14-06", "family": "work-14", "category": "work_rate", "kind": "number", "question": "5 workers make 75 pieces in 300 minutes. What will 15 workers make in 2 hours?", "expected": 90.0}
+{"id": "work-14-07", "family": "work-14", "category": "work_rate", "kind": "number", "question": "4 workers make 56 pieces in 120 minutes. What will 12 workers make in 9 hours?", "expected": 756.0}
+{"id": "work-14-08", "family": "work-14", "category": "work_rate", "kind": "number", "question": "6 workers make 210 pieces in 420 minutes. What will 12 workers make in 7 hours?", "expected": 420.0}
+{"id": "work-14-09", "family": "work-14", "category": "work_rate", "kind": "number", "question": "6 workers make 324 pieces in 540 minutes. What will 6 workers make in 6 hours?", "expected": 216.0}
+{"id": "sequence-00-00", "family": "sequence-00", "category": "sequence_geometric", "kind": "number", "question": "دنباله 152، 76، 38؛ جمله 5 چیست؟", "expected": 9.5}
+{"id": "sequence-00-01", "family": "sequence-00", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 2، 9، 16؛ جمله 6 چیست؟", "expected": 37.0}
+{"id": "sequence-00-02", "family": "sequence-00", "category": "sequence_geometric", "kind": "number", "question": "دنباله 232، 116، 58؛ جمله 7 چیست؟", "expected": 3.625}
+{"id": "sequence-00-03", "family": "sequence-00", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -16، -10، -4؛ جمله 8 چیست؟", "expected": 26.0}
+{"id": "sequence-00-04", "family": "sequence-00", "category": "sequence_geometric", "kind": "number", "question": "دنباله 192، 96، 48؛ جمله 9 چیست؟", "expected": 0.75}
+{"id": "sequence-00-05", "family": "sequence-00", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -12، -7، -2؛ جمله 5 چیست؟", "expected": 8.0}
+{"id": "sequence-00-06", "family": "sequence-00", "category": "sequence_geometric", "kind": "number", "question": "دنباله 240، 120، 60؛ جمله 6 چیست؟", "expected": 7.5}
+{"id": "sequence-00-07", "family": "sequence-00", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 0، 11، 22؛ جمله 7 چیست؟", "expected": 66.0}
+{"id": "sequence-00-08", "family": "sequence-00", "category": "sequence_geometric", "kind": "number", "question": "دنباله 224، 112، 56؛ جمله 8 چیست؟", "expected": 1.75}
+{"id": "sequence-00-09", "family": "sequence-00", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -7، 4، 15؛ جمله 9 چیست؟", "expected": 81.0}
+{"id": "sequence-01-00", "family": "sequence-01", "category": "sequence_geometric", "kind": "number", "question": "دنباله 48، 24، 12؛ جمله پنجم را پیدا کن.", "expected": 3.0}
+{"id": "sequence-01-01", "family": "sequence-01", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 2، 8، 14؛ جمله ششم را پیدا کن.", "expected": 32.0}
+{"id": "sequence-01-02", "family": "sequence-01", "category": "sequence_geometric", "kind": "number", "question": "دنباله 64، 32، 16؛ جمله هفتم را پیدا کن.", "expected": 1.0}
+{"id": "sequence-01-03", "family": "sequence-01", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 10، 17، 24؛ جمله هشتم را پیدا کن.", "expected": 59.0}
+{"id": "sequence-01-04", "family": "sequence-01", "category": "sequence_geometric", "kind": "number", "question": "دنباله 72، 36، 18؛ جمله نهم را پیدا کن.", "expected": 0.28125}
+{"id": "sequence-01-05", "family": "sequence-01", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 4، 11، 18؛ جمله پنجم را پیدا کن.", "expected": 32.0}
+{"id": "sequence-01-06", "family": "sequence-01", "category": "sequence_geometric", "kind": "number", "question": "دنباله 112، 56، 28؛ جمله ششم را پیدا کن.", "expected": 3.5}
+{"id": "sequence-01-07", "family": "sequence-01", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -5، 5، 15؛ جمله هفتم را پیدا کن.", "expected": 55.0}
+{"id": "sequence-01-08", "family": "sequence-01", "category": "sequence_geometric", "kind": "number", "question": "دنباله 184، 92، 46؛ جمله هشتم را پیدا کن.", "expected": 1.4375}
+{"id": "sequence-01-09", "family": "sequence-01", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -6، 1، 8؛ جمله نهم را پیدا کن.", "expected": 50.0}
+{"id": "sequence-02-00", "family": "sequence-02", "category": "sequence_geometric", "kind": "number", "question": "جمله پنجم در دنباله 216، 108، 54 چیست؟", "expected": 13.5}
+{"id": "sequence-02-01", "family": "sequence-02", "category": "sequence_arithmetic", "kind": "number", "question": "جمله ششم در دنباله -7، -2، 3 چیست؟", "expected": 18.0}
+{"id": "sequence-02-02", "family": "sequence-02", "category": "sequence_geometric", "kind": "number", "question": "جمله هفتم در دنباله 40، 20، 10 چیست؟", "expected": 0.625}
+{"id": "sequence-02-03", "family": "sequence-02", "category": "sequence_arithmetic", "kind": "number", "question": "جمله هشتم در دنباله -1، 7، 15 چیست؟", "expected": 55.0}
+{"id": "sequence-02-04", "family": "sequence-02", "category": "sequence_geometric", "kind": "number", "question": "جمله نهم در دنباله 224، 112، 56 چیست؟", "expected": 0.875}
+{"id": "sequence-02-05", "family": "sequence-02", "category": "sequence_arithmetic", "kind": "number", "question": "جمله پنجم در دنباله 2، 8، 14 چیست؟", "expected": 26.0}
+{"id": "sequence-02-06", "family": "sequence-02", "category": "sequence_geometric", "kind": "number", "question": "جمله ششم در دنباله 56، 28، 14 چیست؟", "expected": 1.75}
+{"id": "sequence-02-07", "family": "sequence-02", "category": "sequence_arithmetic", "kind": "number", "question": "جمله هفتم در دنباله 26، 36، 46 چیست؟", "expected": 86.0}
+{"id": "sequence-02-08", "family": "sequence-02", "category": "sequence_geometric", "kind": "number", "question": "جمله هشتم در دنباله 128، 64، 32 چیست؟", "expected": 1.0}
+{"id": "sequence-02-09", "family": "sequence-02", "category": "sequence_arithmetic", "kind": "number", "question": "جمله نهم در دنباله 12، 18، 24 چیست؟", "expected": 60.0}
+{"id": "sequence-03-00", "family": "sequence-03", "category": "sequence_geometric", "kind": "number", "question": "Find term 5 of the sequence 144, 72, 36.", "expected": 9.0}
+{"id": "sequence-03-01", "family": "sequence-03", "category": "sequence_arithmetic", "kind": "number", "question": "Find term 6 of the sequence 5, 12, 19.", "expected": 40.0}
+{"id": "sequence-03-02", "family": "sequence-03", "category": "sequence_geometric", "kind": "number", "question": "Find term 7 of the sequence 136, 68, 34.", "expected": 2.125}
+{"id": "sequence-03-03", "family": "sequence-03", "category": "sequence_arithmetic", "kind": "number", "question": "Find term 8 of the sequence -9, -7, -5.", "expected": 5.0}
+{"id": "sequence-03-04", "family": "sequence-03", "category": "sequence_geometric", "kind": "number", "question": "Find term 9 of the sequence 56, 28, 14.", "expected": 0.21875}
+{"id": "sequence-03-05", "family": "sequence-03", "category": "sequence_arithmetic", "kind": "number", "question": "Find term 5 of the sequence -2, 1, 4.", "expected": 10.0}
+{"id": "sequence-03-06", "family": "sequence-03", "category": "sequence_geometric", "kind": "number", "question": "Find term 6 of the sequence 176, 88, 44.", "expected": 5.5}
+{"id": "sequence-03-07", "family": "sequence-03", "category": "sequence_arithmetic", "kind": "number", "question": "Find term 7 of the sequence 22, 33, 44.", "expected": 88.0}
+{"id": "sequence-03-08", "family": "sequence-03", "category": "sequence_geometric", "kind": "number", "question": "Find term 8 of the sequence 160, 80, 40.", "expected": 1.25}
+{"id": "sequence-03-09", "family": "sequence-03", "category": "sequence_arithmetic", "kind": "number", "question": "Find term 9 of the sequence -8, -5, -2.", "expected": 16.0}
+{"id": "sequence-04-00", "family": "sequence-04", "category": "sequence_geometric", "kind": "number", "question": "What is the fifth term in 112, 56, 28?", "expected": 7.0}
+{"id": "sequence-04-01", "family": "sequence-04", "category": "sequence_arithmetic", "kind": "number", "question": "What is the sixth term in 28, 35, 42?", "expected": 63.0}
+{"id": "sequence-04-02", "family": "sequence-04", "category": "sequence_geometric", "kind": "number", "question": "What is the seventh term in 240, 120, 60?", "expected": 3.75}
+{"id": "sequence-04-03", "family": "sequence-04", "category": "sequence_arithmetic", "kind": "number", "question": "What is the eighth term in 7, 18, 29?", "expected": 84.0}
+{"id": "sequence-04-04", "family": "sequence-04", "category": "sequence_geometric", "kind": "number", "question": "What is the ninth term in 80, 40, 20?", "expected": 0.3125}
+{"id": "sequence-04-05", "family": "sequence-04", "category": "sequence_arithmetic", "kind": "number", "question": "What is the fifth term in 20, 28, 36?", "expected": 52.0}
+{"id": "sequence-04-06", "family": "sequence-04", "category": "sequence_geometric", "kind": "number", "question": "What is the sixth term in 216, 108, 54?", "expected": 6.75}
+{"id": "sequence-04-07", "family": "sequence-04", "category": "sequence_arithmetic", "kind": "number", "question": "What is the seventh term in -16, -8, 0?", "expected": 32.0}
+{"id": "sequence-04-08", "family": "sequence-04", "category": "sequence_geometric", "kind": "number", "question": "What is the eighth term in 88, 44, 22?", "expected": 0.6875}
+{"id": "sequence-04-09", "family": "sequence-04", "category": "sequence_arithmetic", "kind": "number", "question": "What is the ninth term in -11, -6, -1?", "expected": 29.0}
+{"id": "sequence-05-00", "family": "sequence-05", "category": "sequence_geometric", "kind": "number", "question": "The sequence is 192, 96, 48. Find term number 5.", "expected": 12.0}
+{"id": "sequence-05-01", "family": "sequence-05", "category": "sequence_arithmetic", "kind": "number", "question": "The sequence is 16, 23, 30. Find term number 6.", "expected": 51.0}
+{"id": "sequence-05-02", "family": "sequence-05", "category": "sequence_geometric", "kind": "number", "question": "The sequence is 152, 76, 38. Find term number 7.", "expected": 2.375}
+{"id": "sequence-05-03", "family": "sequence-05", "category": "sequence_arithmetic", "kind": "number", "question": "The sequence is -11, -7, -3. Find term number 8.", "expected": 17.0}
+{"id": "sequence-05-04", "family": "sequence-05", "category": "sequence_geometric", "kind": "number", "question": "The sequence is 56, 28, 14. Find term number 9.", "expected": 0.21875}
+{"id": "sequence-05-05", "family": "sequence-05", "category": "sequence_arithmetic", "kind": "number", "question": "The sequence is 5, 9, 13. Find term number 5.", "expected": 21.0}
+{"id": "sequence-05-06", "family": "sequence-05", "category": "sequence_geometric", "kind": "number", "question": "The sequence is 128, 64, 32. Find term number 6.", "expected": 4.0}
+{"id": "sequence-05-07", "family": "sequence-05", "category": "sequence_arithmetic", "kind": "number", "question": "The sequence is -18, -7, 4. Find term number 7.", "expected": 48.0}
+{"id": "sequence-05-08", "family": "sequence-05", "category": "sequence_geometric", "kind": "number", "question": "The sequence is 80, 40, 20. Find term number 8.", "expected": 0.625}
+{"id": "sequence-05-09", "family": "sequence-05", "category": "sequence_arithmetic", "kind": "number", "question": "The sequence is 0, 4, 8. Find term number 9.", "expected": 32.0}
+{"id": "sequence-06-00", "family": "sequence-06", "category": "sequence_geometric", "kind": "number", "question": "دنباله 96، 48، 24 است. عدد بعدی چیست؟", "expected": 12.0}
+{"id": "sequence-06-01", "family": "sequence-06", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -15، -12، -9 است. عدد بعدی چیست؟", "expected": -6.0}
+{"id": "sequence-06-02", "family": "sequence-06", "category": "sequence_geometric", "kind": "number", "question": "دنباله 160، 80، 40 است. عدد بعدی چیست؟", "expected": 20.0}
+{"id": "sequence-06-03", "family": "sequence-06", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -6، -2، 2 است. عدد بعدی چیست؟", "expected": 6.0}
+{"id": "sequence-06-04", "family": "sequence-06", "category": "sequence_geometric", "kind": "number", "question": "دنباله 112، 56، 28 است. عدد بعدی چیست؟", "expected": 14.0}
+{"id": "sequence-06-05", "family": "sequence-06", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 5، 14، 23 است. عدد بعدی چیست؟", "expected": 32.0}
+{"id": "sequence-06-06", "family": "sequence-06", "category": "sequence_geometric", "kind": "number", "question": "دنباله 80، 40، 20 است. عدد بعدی چیست؟", "expected": 10.0}
+{"id": "sequence-06-07", "family": "sequence-06", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 11، 20، 29 است. عدد بعدی چیست؟", "expected": 38.0}
+{"id": "sequence-06-08", "family": "sequence-06", "category": "sequence_geometric", "kind": "number", "question": "دنباله 240، 120، 60 است. عدد بعدی چیست؟", "expected": 30.0}
+{"id": "sequence-06-09", "family": "sequence-06", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -2، 7، 16 است. عدد بعدی چیست؟", "expected": 25.0}
+{"id": "sequence-07-00", "family": "sequence-07", "category": "sequence_geometric", "kind": "number", "question": "What comes next in the sequence 136, 68, 34?", "expected": 17.0}
+{"id": "sequence-07-01", "family": "sequence-07", "category": "sequence_arithmetic", "kind": "number", "question": "What comes next in the sequence 14, 20, 26?", "expected": 32.0}
+{"id": "sequence-07-02", "family": "sequence-07", "category": "sequence_geometric", "kind": "number", "question": "What comes next in the sequence 152, 76, 38?", "expected": 19.0}
+{"id": "sequence-07-03", "family": "sequence-07", "category": "sequence_arithmetic", "kind": "number", "question": "What comes next in the sequence -12, -1, 10?", "expected": 21.0}
+{"id": "sequence-07-04", "family": "sequence-07", "category": "sequence_geometric", "kind": "number", "question": "What comes next in the sequence 72, 36, 18?", "expected": 9.0}
+{"id": "sequence-07-05", "family": "sequence-07", "category": "sequence_arithmetic", "kind": "number", "question": "What comes next in the sequence 9, 16, 23?", "expected": 30.0}
+{"id": "sequence-07-06", "family": "sequence-07", "category": "sequence_geometric", "kind": "number", "question": "What comes next in the sequence 192, 96, 48?", "expected": 24.0}
+{"id": "sequence-07-07", "family": "sequence-07", "category": "sequence_arithmetic", "kind": "number", "question": "What comes next in the sequence 7, 10, 13?", "expected": 16.0}
+{"id": "sequence-07-08", "family": "sequence-07", "category": "sequence_geometric", "kind": "number", "question": "What comes next in the sequence 184, 92, 46?", "expected": 23.0}
+{"id": "sequence-07-09", "family": "sequence-07", "category": "sequence_arithmetic", "kind": "number", "question": "What comes next in the sequence -10, -7, -4?", "expected": -1.0}
+{"id": "sequence-08-00", "family": "sequence-08", "category": "sequence_geometric", "kind": "number", "question": "دنباله 56، 28، 14؛ جمله پنجم چیست؟", "expected": 3.5}
+{"id": "sequence-08-01", "family": "sequence-08", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -4، 5، 14؛ جمله پنجم چیست؟", "expected": 32.0}
+{"id": "sequence-08-02", "family": "sequence-08", "category": "sequence_geometric", "kind": "number", "question": "دنباله 40، 20، 10؛ جمله پنجم چیست؟", "expected": 2.5}
+{"id": "sequence-08-03", "family": "sequence-08", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -11، -3، 5؛ جمله پنجم چیست؟", "expected": 21.0}
+{"id": "sequence-08-04", "family": "sequence-08", "category": "sequence_geometric", "kind": "number", "question": "دنباله 112، 56، 28؛ جمله پنجم چیست؟", "expected": 7.0}
+{"id": "sequence-08-05", "family": "sequence-08", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 1، 7، 13؛ جمله پنجم چیست؟", "expected": 25.0}
+{"id": "sequence-08-06", "family": "sequence-08", "category": "sequence_geometric", "kind": "number", "question": "دنباله 48، 24، 12؛ جمله پنجم چیست؟", "expected": 3.0}
+{"id": "sequence-08-07", "family": "sequence-08", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -20، -18، -16؛ جمله پنجم چیست؟", "expected": -12.0}
+{"id": "sequence-08-08", "family": "sequence-08", "category": "sequence_geometric", "kind": "number", "question": "دنباله 160، 80، 40؛ جمله پنجم چیست؟", "expected": 10.0}
+{"id": "sequence-08-09", "family": "sequence-08", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 28، 31، 34؛ جمله پنجم چیست؟", "expected": 40.0}
+{"id": "sequence-09-00", "family": "sequence-09", "category": "sequence_geometric", "kind": "number", "question": "جمله هشتم دنباله 88، 44، 22 را حساب کن.", "expected": 0.6875}
+{"id": "sequence-09-01", "family": "sequence-09", "category": "sequence_arithmetic", "kind": "number", "question": "جمله هشتم دنباله -18، -9، 0 را حساب کن.", "expected": 45.0}
+{"id": "sequence-09-02", "family": "sequence-09", "category": "sequence_geometric", "kind": "number", "question": "جمله هشتم دنباله 200، 100، 50 را حساب کن.", "expected": 1.5625}
+{"id": "sequence-09-03", "family": "sequence-09", "category": "sequence_arithmetic", "kind": "number", "question": "جمله هشتم دنباله 1، 12، 23 را حساب کن.", "expected": 78.0}
+{"id": "sequence-09-04", "family": "sequence-09", "category": "sequence_geometric", "kind": "number", "question": "جمله هشتم دنباله 48، 24، 12 را حساب کن.", "expected": 0.375}
+{"id": "sequence-09-05", "family": "sequence-09", "category": "sequence_arithmetic", "kind": "number", "question": "جمله هشتم دنباله 25، 30، 35 را حساب کن.", "expected": 60.0}
+{"id": "sequence-09-06", "family": "sequence-09", "category": "sequence_geometric", "kind": "number", "question": "جمله هشتم دنباله 72، 36، 18 را حساب کن.", "expected": 0.5625}
+{"id": "sequence-09-07", "family": "sequence-09", "category": "sequence_arithmetic", "kind": "number", "question": "جمله هشتم دنباله -11، -2، 7 را حساب کن.", "expected": 52.0}
+{"id": "sequence-09-08", "family": "sequence-09", "category": "sequence_geometric", "kind": "number", "question": "جمله هشتم دنباله 80، 40، 20 را حساب کن.", "expected": 0.625}
+{"id": "sequence-09-09", "family": "sequence-09", "category": "sequence_arithmetic", "kind": "number", "question": "جمله هشتم دنباله -2، 9، 20 را حساب کن.", "expected": 75.0}
+{"id": "sequence-10-00", "family": "sequence-10", "category": "sequence_geometric", "kind": "number", "question": "In the sequence 208, 104, 52, find the term at position 5.", "expected": 13.0}
+{"id": "sequence-10-01", "family": "sequence-10", "category": "sequence_arithmetic", "kind": "number", "question": "In the sequence -10, -6, -2, find the term at position 6.", "expected": 10.0}
+{"id": "sequence-10-02", "family": "sequence-10", "category": "sequence_geometric", "kind": "number", "question": "In the sequence 56, 28, 14, find the term at position 7.", "expected": 0.875}
+{"id": "sequence-10-03", "family": "sequence-10", "category": "sequence_arithmetic", "kind": "number", "question": "In the sequence 4, 9, 14, find the term at position 8.", "expected": 39.0}
+{"id": "sequence-10-04", "family": "sequence-10", "category": "sequence_geometric", "kind": "number", "question": "In the sequence 104, 52, 26, find the term at position 9.", "expected": 0.40625}
+{"id": "sequence-10-05", "family": "sequence-10", "category": "sequence_arithmetic", "kind": "number", "question": "In the sequence 26, 36, 46, find the term at position 5.", "expected": 66.0}
+{"id": "sequence-10-06", "family": "sequence-10", "category": "sequence_geometric", "kind": "number", "question": "In the sequence 152, 76, 38, find the term at position 6.", "expected": 4.75}
+{"id": "sequence-10-07", "family": "sequence-10", "category": "sequence_arithmetic", "kind": "number", "question": "In the sequence 8, 15, 22, find the term at position 7.", "expected": 50.0}
+{"id": "sequence-10-08", "family": "sequence-10", "category": "sequence_geometric", "kind": "number", "question": "In the sequence 72, 36, 18, find the term at position 8.", "expected": 0.5625}
+{"id": "sequence-10-09", "family": "sequence-10", "category": "sequence_arithmetic", "kind": "number", "question": "In the sequence 28, 36, 44, find the term at position 9.", "expected": 92.0}
+{"id": "sequence-11-00", "family": "sequence-11", "category": "sequence_geometric", "kind": "number", "question": "در دنباله 64، 32، 16، عضو شماره 5 چقدر است؟", "expected": 4.0}
+{"id": "sequence-11-01", "family": "sequence-11", "category": "sequence_arithmetic", "kind": "number", "question": "در دنباله 5، 11، 17، عضو شماره 6 چقدر است؟", "expected": 35.0}
+{"id": "sequence-11-02", "family": "sequence-11", "category": "sequence_geometric", "kind": "number", "question": "در دنباله 216، 108، 54، عضو شماره 7 چقدر است؟", "expected": 3.375}
+{"id": "sequence-11-03", "family": "sequence-11", "category": "sequence_arithmetic", "kind": "number", "question": "در دنباله 28، 39، 50، عضو شماره 8 چقدر است؟", "expected": 105.0}
+{"id": "sequence-11-04", "family": "sequence-11", "category": "sequence_geometric", "kind": "number", "question": "در دنباله 184، 92، 46، عضو شماره 9 چقدر است؟", "expected": 0.71875}
+{"id": "sequence-11-05", "family": "sequence-11", "category": "sequence_arithmetic", "kind": "number", "question": "در دنباله -12، -8، -4، عضو شماره 5 چقدر است؟", "expected": 4.0}
+{"id": "sequence-11-06", "family": "sequence-11", "category": "sequence_geometric", "kind": "number", "question": "در دنباله 128، 64، 32، عضو شماره 6 چقدر است؟", "expected": 4.0}
+{"id": "sequence-11-07", "family": "sequence-11", "category": "sequence_arithmetic", "kind": "number", "question": "در دنباله 12، 15، 18، عضو شماره 7 چقدر است؟", "expected": 30.0}
+{"id": "sequence-11-08", "family": "sequence-11", "category": "sequence_geometric", "kind": "number", "question": "در دنباله 112، 56، 28، عضو شماره 8 چقدر است؟", "expected": 0.875}
+{"id": "sequence-11-09", "family": "sequence-11", "category": "sequence_arithmetic", "kind": "number", "question": "در دنباله -16، -5، 6، عضو شماره 9 چقدر است؟", "expected": 72.0}
+{"id": "sequence-12-00", "family": "sequence-12", "category": "sequence_geometric", "kind": "number", "question": "دنباله 80، 40، 20 است؛ جمله پنجم را می خواهم، نه صرفاً عدد بعدی.", "expected": 5.0}
+{"id": "sequence-12-01", "family": "sequence-12", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -18، -16، -14 است؛ جمله ششم را می خواهم، نه صرفاً عدد بعدی.", "expected": -8.0}
+{"id": "sequence-12-02", "family": "sequence-12", "category": "sequence_geometric", "kind": "number", "question": "دنباله 160، 80، 40 است؛ جمله هفتم را می خواهم، نه صرفاً عدد بعدی.", "expected": 2.5}
+{"id": "sequence-12-03", "family": "sequence-12", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -4، 2، 8 است؛ جمله هشتم را می خواهم، نه صرفاً عدد بعدی.", "expected": 38.0}
+{"id": "sequence-12-04", "family": "sequence-12", "category": "sequence_geometric", "kind": "number", "question": "دنباله 64، 32، 16 است؛ جمله نهم را می خواهم، نه صرفاً عدد بعدی.", "expected": 0.25}
+{"id": "sequence-12-05", "family": "sequence-12", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 21، 31، 41 است؛ جمله پنجم را می خواهم، نه صرفاً عدد بعدی.", "expected": 61.0}
+{"id": "sequence-12-06", "family": "sequence-12", "category": "sequence_geometric", "kind": "number", "question": "دنباله 144، 72، 36 است؛ جمله ششم را می خواهم، نه صرفاً عدد بعدی.", "expected": 4.5}
+{"id": "sequence-12-07", "family": "sequence-12", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله -5، 6، 17 است؛ جمله هفتم را می خواهم، نه صرفاً عدد بعدی.", "expected": 61.0}
+{"id": "sequence-12-08", "family": "sequence-12", "category": "sequence_geometric", "kind": "number", "question": "دنباله 200، 100، 50 است؛ جمله هشتم را می خواهم، نه صرفاً عدد بعدی.", "expected": 1.5625}
+{"id": "sequence-12-09", "family": "sequence-12", "category": "sequence_arithmetic", "kind": "number", "question": "دنباله 8، 17، 26 است؛ جمله نهم را می خواهم، نه صرفاً عدد بعدی.", "expected": 80.0}
+{"id": "sequence-13-00", "family": "sequence-13", "category": "sequence_geometric", "kind": "number", "question": "Sequence: 168, 84, 42. Give the fifth term, not just the next value.", "expected": 10.5}
+{"id": "sequence-13-01", "family": "sequence-13", "category": "sequence_arithmetic", "kind": "number", "question": "Sequence: 8, 10, 12. Give the sixth term, not just the next value.", "expected": 18.0}
+{"id": "sequence-13-02", "family": "sequence-13", "category": "sequence_geometric", "kind": "number", "question": "Sequence: 216, 108, 54. Give the seventh term, not just the next value.", "expected": 3.375}
+{"id": "sequence-13-03", "family": "sequence-13", "category": "sequence_arithmetic", "kind": "number", "question": "Sequence: -12, -5, 2. Give the eighth term, not just the next value.", "expected": 37.0}
+{"id": "sequence-13-04", "family": "sequence-13", "category": "sequence_geometric", "kind": "number", "question": "Sequence: 56, 28, 14. Give the ninth term, not just the next value.", "expected": 0.21875}
+{"id": "sequence-13-05", "family": "sequence-13", "category": "sequence_arithmetic", "kind": "number", "question": "Sequence: -1, 3, 7. Give the fifth term, not just the next value.", "expected": 15.0}
+{"id": "sequence-13-06", "family": "sequence-13", "category": "sequence_geometric", "kind": "number", "question": "Sequence: 64, 32, 16. Give the sixth term, not just the next value.", "expected": 2.0}
+{"id": "sequence-13-07", "family": "sequence-13", "category": "sequence_arithmetic", "kind": "number", "question": "Sequence: -3, 0, 3. Give the seventh term, not just the next value.", "expected": 15.0}
+{"id": "sequence-13-08", "family": "sequence-13", "category": "sequence_geometric", "kind": "number", "question": "Sequence: 72, 36, 18. Give the eighth term, not just the next value.", "expected": 0.5625}
+{"id": "sequence-13-09", "family": "sequence-13", "category": "sequence_arithmetic", "kind": "number", "question": "Sequence: 21, 29, 37. Give the ninth term, not just the next value.", "expected": 85.0}
+{"id": "sequence-14-00", "family": "sequence-14", "category": "sequence_geometric", "kind": "number", "question": "سؤال 91: دنباله 168، 84، 42؛ جمله پنجم را بیاب.", "expected": 10.5}
+{"id": "sequence-14-01", "family": "sequence-14", "category": "sequence_arithmetic", "kind": "number", "question": "سؤال 91: دنباله 22، 24، 26؛ جمله ششم را بیاب.", "expected": 32.0}
+{"id": "sequence-14-02", "family": "sequence-14", "category": "sequence_geometric", "kind": "number", "question": "سؤال 91: دنباله 120، 60، 30؛ جمله هفتم را بیاب.", "expected": 1.875}
+{"id": "sequence-14-03", "family": "sequence-14", "category": "sequence_arithmetic", "kind": "number", "question": "سؤال 91: دنباله 19، 28، 37؛ جمله هشتم را بیاب.", "expected": 82.0}
+{"id": "sequence-14-04", "family": "sequence-14", "category": "sequence_geometric", "kind": "number", "question": "سؤال 91: دنباله 72، 36، 18؛ جمله نهم را بیاب.", "expected": 0.28125}
+{"id": "sequence-14-05", "family": "sequence-14", "category": "sequence_arithmetic", "kind": "number", "question": "سؤال 91: دنباله 24، 30، 36؛ جمله پنجم را بیاب.", "expected": 48.0}
+{"id": "sequence-14-06", "family": "sequence-14", "category": "sequence_geometric", "kind": "number", "question": "سؤال 91: دنباله 96، 48، 24؛ جمله ششم را بیاب.", "expected": 3.0}
+{"id": "sequence-14-07", "family": "sequence-14", "category": "sequence_arithmetic", "kind": "number", "question": "سؤال 91: دنباله -5، 2، 9؛ جمله هفتم را بیاب.", "expected": 37.0}
+{"id": "sequence-14-08", "family": "sequence-14", "category": "sequence_geometric", "kind": "number", "question": "سؤال 91: دنباله 240، 120، 60؛ جمله هشتم را بیاب.", "expected": 1.875}
+{"id": "sequence-14-09", "family": "sequence-14", "category": "sequence_arithmetic", "kind": "number", "question": "سؤال 91: دنباله 14، 19، 24؛ جمله نهم را بیاب.", "expected": 54.0}
