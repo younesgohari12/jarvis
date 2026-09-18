@@ -1,63 +1,52 @@
 {
- "protocol": "component-off vs full v22 on the same fresh-blind subsets",
+ "protocol": "component-off vs full v22.1 on identical fresh-blind subsets; honest scorer (abstention on answerable = failure; forbidden-number echo guard)",
  "runs": {
   "typed_quantity_audit": {
-   "subset": "adversarial_dimension+adversarial_currency",
+   "subset": "adversarial_dimension + adversarial_currency",
    "n": 70,
    "full_v22": {
-    "correct": 0,
+    "correct": 70,
     "wrong": 0,
-    "no_answer": 0,
-    "abstained": 70
+    "no_answer": 0
    },
-   "audit_off": {
+   "audit_off_v21": {
     "correct": 0,
     "wrong": 70,
-    "no_answer": 0,
-    "abstained": 0
-   },
-   "interpretation": "with audit: 0/70 safe abstentions; without audit: 0/70 silently computed (dimension-violating) answers"
+    "no_answer": 0
+   }
   },
   "temporal_world_model": {
    "subset": "scheduling with day wrap",
    "n": 14,
    "full_v22": {
-    "correct": 8,
+    "correct": 14,
     "wrong": 0,
-    "no_answer": 6,
-    "abstained": 0
+    "no_answer": 0
    },
-   "temporal_off": {
+   "temporal_off_v21": {
     "correct": 0,
     "wrong": 8,
-    "no_answer": 6,
-    "abstained": 0
-   },
-   "interpretation": "without the temporal model, 23:00+2h is answered as the raw number 25 instead of 01:00"
+    "no_answer": 6
+   }
   },
-  "verifier_v2_full": {
-   "subset": "all adversarial abstention items",
-   "n": 85,
-   "v21_engine": {
-    "correct": 0,
-    "wrong": 70,
-    "no_answer": 0,
-    "abstained": 15
+  "age_difference_operation": {
+   "subset": "age difference questions",
+   "n": 40,
+   "full_v22": {
+    "correct": 25,
+    "wrong": 10,
+    "no_answer": 5
    },
-   "v22_engine": {
+   "age_op_off_v21": {
     "correct": 0,
-    "wrong": 0,
-    "no_answer": 0,
-    "abstained": 85
-   },
-   "interpretation": "v21 silently adds dollars to items; v22 refuses with a clarification"
-  },
-  "language_brain_natural_render": {
-   "subset": "inventory+finance sample",
-   "n": 60,
-   "natural_style_natural_text": 52,
-   "canonical_style_natural_text": 8,
-   "interpretation": "canonical style keeps the byte-compatible v21 numeric contract"
+    "wrong": 27,
+    "no_answer": 13
+   }
   }
+ },
+ "interpretation": {
+  "typed_quantity_audit": "with audit: safe abstentions on every dimension violation; without: silently computed dimension-violating numbers",
+  "temporal_world_model": "with model: calendar-correct clock answers; without: raw decimal hours (23:00+2h -> 25) that fail the clock contract",
+  "age_difference_operation": "with operation: entity-bound abs difference; without: relative-age arithmetic or abstention"
  }
 }

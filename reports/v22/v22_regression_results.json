@@ -1,8 +1,8 @@
 {
- "suite": "tests/ (v21 baseline + v22 suite)",
- "passed": 989,
+ "suite": "tests/ (v21 baseline + v22 suite + v22.1 audit-fix suite)",
+ "passed": 1031,
  "subtests": 585,
  "failures": 0,
  "baseline_required": "955 passed / 585 subtests",
- "raw_tail": "989 passed, 585 subtests passed in 39.86s"
+ "raw_tail": "1031 passed, 585 subtests passed in 58.45s"
 }

@@ -1,21 +1,21 @@
 {
- "protocol": "same questions, v21 engine vs v22 engine, direct solve()",
+ "protocol": "same 12-question mix x20, direct solve(), canonical style, one process",
  "v21": {
-  "n": 220,
-  "p50_ms": 2.2,
-  "p95_ms": 7.41,
-  "mean_ms": 2.94
+  "n": 240,
+  "p50_ms": 1.68,
+  "p95_ms": 4.57,
+  "mean_ms": 1.97
  },
  "v22": {
-  "n": 220,
-  "p50_ms": 3.05,
-  "p95_ms": 11.27,
-  "mean_ms": 4.27
+  "n": 240,
+  "p50_ms": 2.94,
+  "p95_ms": 13.6,
+  "mean_ms": 5.07
  },
- "startup_ms": {
-  "v21": "see v21 reports (equivalent loader)",
-  "v22": 38.5
+ "overhead_pct": {
+  "mean": 157.4,
+  "p50": 75.0,
+  "p95": 197.6
  },
- "peak_rss_mb_v22_process": 74.6,
- "note": "v22 adds one typed-extraction + role pass per verified answer; budget < 5ms"
+ "budget_note": "v22.1 adds typed extraction, role classification, immutable-source context and the age-difference witness; absolute cost stays in low ms."
 }

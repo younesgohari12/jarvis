@@ -1,0 +1,39 @@
+{
+ "product": "JARVIS",
+ "version": "v0.11.0-intelligence-v22.1",
+ "codename": "LANGUAGE_SEMANTIC_VERIFIER_UPGRADE — AUDIT RESPONSE",
+ "date": "2026-09-18",
+ "base": "v21 architecture trained tested (byte-identical core, additive v22 modules)",
+ "summary": {
+  "p0_fixed": [
+   "semantic rewrite no longer corrupts meaning: age difference answered by an entity-bound abs(age_a - age_b) operation verified against the immutable source",
+   "verifier V2 fails CLOSED on internal typed-audit errors (typed_audit_internal_error -> abstain)",
+   "SHA256SUMS.json regenerated for this package; RELEASE_V22.json added",
+   "fresh-blind scorer made honest: abstention on answerable questions = failure"
+  ],
+  "also_fixed": [
+   "typed quantity real unit extraction (time/distance/mass/volume/temperature/speed/age) with number+unit source spans",
+   "cross-dimension addition guard (hours+km, kg+liters) with rate-context exemptions",
+   "expressive numeric roles classified: total/ratio_a/ratio_b, inventory_initial/add/remove, price vs discount, p/n/k, age_difference",
+   "minute-precision scheduling: 23:30+2h -> 01:30 next day, 23:45+30m -> 00:15 next day",
+   "intent router telemetry label -> local_intelligence_router_v22",
+   "packaging root restored to a single Jarvis_v0.11.0/ directory"
+  ],
+  "not_claimed": [
+   "no new model weights; broad language generation unchanged (Persian 6/50, English 0/50)",
+   "semantic IR V2 stays an audit/provenance layer (v21 IR remains execution source of truth)"
+  ]
+ },
+ "metrics": {
+  "regression": "1031 passed + 585 subtests, 0 failures (baseline 955 required)",
+  "broad_benchmark": "406/500 = 81.2 (parity with v21)",
+  "fresh_blind_honest": "855/1023 = 83.58 (v22.0 under the same scorer: 78.2)",
+  "fresh_blind_answerable_only": 82.09,
+  "ablation": "typed audit 70/70 vs 0/70; temporal 14/14 vs 0/14; age op 25/40 vs 0/40"
+ },
+ "test_suites": [
+  "tests/test_v22_semantic.py (34)",
+  "tests/test_v221_audit_fixes.py (42)",
+  "full tests/ regression (1031)"
+ ]
+}

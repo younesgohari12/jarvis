@@ -35,6 +35,34 @@ DURATION_CUE = r'ساعت|دقیقه|روز|hours?|minutes?|days?|hr\b|min\b'
 DISTANCE_CUE = r'کیلومتر|کیلومتر|متر|کیلومتر|kilometers?|kilometres?|meters?|metres?|km\b|m\b'
 SPEED_CUE = r'سرعت|speed|velocity'
 
+# v22.1 — immediate unit lexicon: the token glued AFTER the number names its
+# physical dimension. Ordered: speed before distance ('km/h'), age before
+# bare time ('ساله'/'سال بزرگتر' before 'سال').
+_AGE_SUFFIX = re.compile(
+    r'\s*(?:ساله|سال\s*(?:بزرگ|کوچک)[\s\u200c]*تر?|years?\s+old|years?\s+(?:older|younger))', re.I)
+_TIME_SUFFIX = re.compile(
+    r'\s*(?:ساعت|دقیقه|ثانیه|روز|hours?|hr\b|h\b|minutes?|min\b|seconds?|sec\b|s\b|days?)', re.I)
+_YEAR_SUFFIX = re.compile(r'\s*(?:سال|years?)', re.I)
+_SPEED_SUFFIX = re.compile(
+    r'\s*(?:کیلومتر\s*بر\s*ساعت|کیلومتر/ساعت|km\s*/\s*h(?:\s*ph)?|kilometers?\s+per\s+hour|'
+    r'متر\s*بر\s*ثانیه|m\s*/\s*s\b|meters?\s+per\s+second)', re.I)
+_DISTANCE_SUFFIX = re.compile(
+    r'\s*(?:کیلومتر|کیلومتر\b|kilometers?|kilometres?|km\b|متر|meters?|metres?|m\b)', re.I)
+_MASS_SUFFIX = re.compile(
+    r'\s*(?:کیلوگرم|گرم|kilograms?|kgs?\b|kg\b|grams?|g\b)', re.I)
+_VOLUME_SUFFIX = re.compile(
+    r'\s*(?:لیتر|liters?|litres?|l\b|میلی لیتر|milliliters?|ml\b)', re.I)
+_TEMP_SUFFIX = re.compile(
+    r'\s*(?:درجه\s*(?:سلسیوس|سانتیگراد|فارنهایت)?|سلسیوس|سانتیگراد|'
+    r'degrees?\s*(?:celsius|fahrenheit|c\b|f\b)?|celsius|fahrenheit|°\s*[CF]\b|(?<=\s)[CF]\b)', re.I)
+_AGE_WINDOW = re.compile(r'سن|ساله|بزرگ[\s\u200c]*تر|کوچک[\s\u200c]*تر|older|younger|\bage\b|old\b', re.I)
+
+
+def _full_span(t: str, m: 're.Match', suffix: 're.Match') -> str:
+    """Extend the source span over the unit token: '100' + ' دلار' -> '100 دلار'."""
+    return t[m.start(): m.end() + suffix.end()].strip()
+
+
 DIMENSIONS = {
     'currency': {'USD', 'EUR', 'TOMAN', 'RIAL', 'GBP'},
     'count': {'ITEM', 'PERSON', 'PIECE', 'GENERIC'},
@@ -129,23 +157,84 @@ def extract_typed_quantities(text: str) -> list[Quantity]:
             cur = _currency_of(immediate)
             entity = 'account' if re.search(ACCOUNT_CUE, window, re.I) else (
                 'inventory' if re.search(INVENTORY_CUE, window, re.I) else '')
-            out.append(Quantity(value, 'currency', cur, entity=entity, source_span=m.group(),
+            cur_m = re.match(r'\s*(?:دلار\s*آمریکا|دلار|dollars?|usd\b|یورو|euros?|eur\b|تومان|toman\b|ریال|rial\b|پوند|pounds?\b|gbp\b)', right, re.I)
+            out.append(Quantity(value, 'currency', cur, entity=entity,
+                                source_span=_full_span(t, m, cur_m) if cur_m else m.group(),
                                 confidence=0.97, role='value', start=start, end=end))
             seen.append((start, end))
             continue
-        if re.match(ITEM_CUE, immediate, re.I):
-            out.append(Quantity(value, 'count', 'ITEM', source_span=m.group(), confidence=0.95,
-                                role='value', start=start, end=end))
-            seen.append((start, end))
-            continue
-        if re.match(PERSON_CUE, immediate, re.I):
-            out.append(Quantity(value, 'count', 'PERSON', source_span=m.group(), confidence=0.95,
-                                role='value', start=start, end=end))
-            seen.append((start, end))
-            continue
-        if re.match(r'(?:درصد|%|percent)', immediate, re.I):
-            out.append(Quantity(value, 'percentage', 'PERCENT', source_span=m.group(),
+        item_imm = re.match(ITEM_CUE, immediate, re.I)
+        if item_imm:
+            out.append(Quantity(value, 'count', 'ITEM', source_span=_full_span(t, m, item_imm),
                                 confidence=0.95, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+        person_imm = re.match(PERSON_CUE, immediate, re.I)
+        if person_imm:
+            out.append(Quantity(value, 'count', 'PERSON', source_span=_full_span(t, m, person_imm),
+                                confidence=0.95, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+        pct_imm = re.match(r'\s*(?:درصد|%|percent)', right, re.I)
+        if pct_imm:
+            out.append(Quantity(value, 'percentage', 'PERCENT', source_span=_full_span(t, m, pct_imm),
+                                confidence=0.95, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+
+        # --- v22.1 immediate physical units (the token glued AFTER the
+        #     number names its dimension); spans cover number + unit -------
+        age_m = _AGE_SUFFIX.match(right)
+        if age_m:
+            out.append(Quantity(value, 'age', 'YEAR', source_span=_full_span(t, m, age_m),
+                                confidence=0.92, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+        speed_m = _SPEED_SUFFIX.match(right)
+        if speed_m:
+            out.append(Quantity(value, 'speed', 'KM_PER_HOUR', source_span=_full_span(t, m, speed_m),
+                                confidence=0.92, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+        time_m = _TIME_SUFFIX.match(right)
+        if time_m:
+            unit = _time_unit_of(time_m.group())
+            out.append(Quantity(value, 'time', unit, source_span=_full_span(t, m, time_m),
+                                confidence=0.9, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+        year_m = _YEAR_SUFFIX.match(right)
+        if year_m and _AGE_WINDOW.search(window):
+            out.append(Quantity(value, 'age', 'YEAR', source_span=_full_span(t, m, year_m),
+                                confidence=0.85, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+        dist_m = _DISTANCE_SUFFIX.match(right)
+        if dist_m:
+            unit = 'KM' if re.search(r'کیلومتر|kilometers?|kilometres?|km', dist_m.group(), re.I) else 'M'
+            out.append(Quantity(value, 'distance', unit, source_span=_full_span(t, m, dist_m),
+                                confidence=0.9, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+        mass_m = _MASS_SUFFIX.match(right)
+        if mass_m:
+            unit = 'KG' if re.search(r'کیلوگرم|kilograms?|kgs?|kg', mass_m.group(), re.I) else 'G'
+            out.append(Quantity(value, 'mass', unit, source_span=_full_span(t, m, mass_m),
+                                confidence=0.9, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+        vol_m = _VOLUME_SUFFIX.match(right)
+        if vol_m:
+            unit = 'ML' if re.search(r'میلی|milli|ml', vol_m.group(), re.I) else 'L'
+            out.append(Quantity(value, 'volume', unit, source_span=_full_span(t, m, vol_m),
+                                confidence=0.9, role='value', start=start, end=end))
+            seen.append((start, end))
+            continue
+        temp_m = _TEMP_SUFFIX.match(right)
+        if temp_m:
+            unit = 'F' if re.search(r'فارنهایت|fahrenheit|°\s*F|F\b', temp_m.group(), re.I) else 'C'
+            out.append(Quantity(value, 'temperature', unit, source_span=_full_span(t, m, temp_m),
+                                confidence=0.85, role='value', start=start, end=end))
             seen.append((start, end))
             continue
 
@@ -201,6 +290,17 @@ def extract_typed_quantities(text: str) -> list[Quantity]:
                             confidence=0.4, role='value', start=start, end=end))
         seen.append((start, end))
     return out
+
+
+def _time_unit_of(token: str) -> str:
+    tok = token.strip().lower()
+    if tok.startswith(('دقیقه', 'min')) or 'دقیقه' in tok:
+        return 'MINUTE'
+    if tok.startswith(('ثانیه', 'sec', 's')):
+        return 'SECOND'
+    if tok.startswith(('روز', 'day')):
+        return 'DAY'
+    return 'HOUR'
 
 
 def _dim_of_operation_value(op: dict, quantities: list[Quantity]) -> str:

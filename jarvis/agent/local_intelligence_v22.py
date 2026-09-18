@@ -17,7 +17,7 @@ from __future__ import annotations
 from fractions import Fraction
 
 from jarvis.agent.local_intelligence_v21 import LocalIntelligenceV21
-from jarvis.agent.verifier_v22 import UniversalVerifierV2
+from jarvis.agent.verifier_v22 import UniversalVerifierV2, ORIGINAL_SOURCE
 from jarvis.agent.reflection_v22 import ReflectionLoopV22
 from jarvis.agent.semantic_ir_v22 import SemanticIRV2
 from jarvis.agent import temporal_v22
@@ -44,9 +44,33 @@ class LocalIntelligenceV22(LocalIntelligenceV21):
 
     # ------------------------------------------------------------------
     def solve(self, text, language='fa'):
+        from jarvis.agent.local_intelligence_v14 import LocalIntelligenceAnswer
         self._active_source = text
+        # v22.1: the ORIGINAL user text is pinned as the immutable
+        # verification source for the whole solve. Normalized/paraphrased
+        # text is parse-assistance only and is never verified against.
+        source_token = ORIGINAL_SOURCE.set(text)
+        try:
+            answer = self._solve_inner(text, language, LocalIntelligenceAnswer)
+        finally:
+            ORIGINAL_SOURCE.reset(source_token)
+        return answer
+
+    # ------------------------------------------------------------------
+    def _solve_inner(self, text, language, LocalIntelligenceAnswer):
         # 1) code path is inherited verbatim from v21 through super().solve().
-        answer = super().solve(text, language)
+        #    v22.1: minute-precision clock starts (ساعت 23:30) are decoded for
+        #    the PARSER input only; verification keeps the original text.
+        stext = lb.normalize_clock_tokens(text)
+        answer = super().solve(stext if stext != text else text, language)
+
+        # 1.5) v22.1 independent age-difference operation (entity-bound abs).
+        # Fires on the immutable source before any repair/abstain path: a
+        # rewrite can never re-title this task as inventory/finance again.
+        if lb.detect_age_difference(text) is not None:
+            op = self._age_difference_answer(text, language, LocalIntelligenceAnswer)
+            if op is not None:
+                return op
 
         # 2) NLU retry: informal Persian/English gets one normalized retry.
         if answer is None:
@@ -80,10 +104,9 @@ class LocalIntelligenceV22(LocalIntelligenceV21):
                     retry = super().solve(ntext, language)
                     if retry is not None and self.last_trace and self.last_trace['verification']['passed']:
                         self.last_trace['v22_nlu_normalized'] = True
-                        self._active_source = ntext
                         answer = retry
                         if self.last_trace.get('verification', {}).get('passed'):
-                            self.ir_v2 = self._upgrade_ir(ntext)
+                            self.ir_v2 = self._upgrade_ir(text)
                             try:
                                 return self._naturalize(answer, language)
                             except Exception:
@@ -98,6 +121,42 @@ class LocalIntelligenceV22(LocalIntelligenceV21):
             except Exception:  # rendering must never break a verified answer
                 pass
         return answer
+
+    # ------------------------------------------------------------------
+    def _age_difference_answer(self, text, language, LocalIntelligenceAnswer):
+        """v22.1 independent operation: age difference = abs(age_a − age_b),
+        bound to the two named entities of the IMMUTABLE source and verified
+        by the independent witness (never by the rewrite of itself)."""
+        try:
+            detection = lb.detect_age_difference(text)
+            if not detection:
+                return None
+            (name_a, age_a), (name_b, age_b) = detection
+            value = abs(float(age_a) - float(age_b))
+            verdict = self.verifier.verify_age_difference(text, detection, value)
+            if not verdict.passed:
+                return None
+            if self.last_trace is None:
+                self.last_trace = {}
+            self.last_trace['v22_age_difference'] = {
+                'entities': [name_a, name_b],
+                'ages': [age_a, age_b],
+                'difference': value,
+                'verified': True,
+                **verdict.to_dict(),
+            }
+            self.ir_v2 = None
+            if self.output_style == 'natural':
+                older = name_b if age_b >= age_a else name_a
+                rendered = lb.render_age_difference(older, value, language)
+            else:
+                rendered = lb.fmt_number(value)
+            return LocalIntelligenceAnswer(
+                rendered, 'reasoned_answer', .93,
+                ('v22_age_difference_model', 'v22_age_entity_binding',
+                 'source_slot_consistency'))
+        except Exception:
+            return None
 
     # ------------------------------------------------------------------
     def _upgrade_ir(self, text):
@@ -133,9 +192,9 @@ class LocalIntelligenceV22(LocalIntelligenceV21):
             start, durations = slots.get('start'), slots.get('durations', [])
             if start is None or not durations:
                 return answer
-            clock = temporal_v22.ClockTime(
-                int(start) if float(start).is_integer() else 0,
-                int(round((float(start) % 1) * 60)) if not float(start).is_integer() else 0)
+            # v22.1 fix: minute-precision starts must keep their clock face
+            # (23.5 -> 23:30); the previous int/0 fallback produced 00:30.
+            clock = temporal_v22.parse_clock_time(start)
             result = temporal_v22.add_duration(clock, *[temporal_v22.Duration.of(d, 'hour') for d in durations])
             absolute = float(result.absolute_hours())
             text = self._render_clock(result, absolute, language)
@@ -194,5 +253,5 @@ class LocalIntelligenceV22(LocalIntelligenceV21):
 
     # ------------------------------------------------------------------
     def last_source_text(self) -> str:
-        from jarvis.agent.verification_v21 import AUTHORITATIVE_SOURCE
-        return AUTHORITATIVE_SOURCE.get() or getattr(self, '_active_source', '') or ''
+        from jarvis.agent.verifier_v22 import ORIGINAL_SOURCE
+        return ORIGINAL_SOURCE.get() or getattr(self, '_active_source', '') or ''

@@ -74,14 +74,13 @@ _PARAPHRASE = [
     (r'شیفت\s*کاری', 'کار'),
     (r'پایان\s*شیفت', 'پایان کار'),
     (r'و\s*(\d+(?:\.\d+)?)\s*ساعت\s*طول\s*می[\s\u200c]*کشد', r'؛ مدت کار \1 ساعت است'),
-    # Two named ages asking the difference -> arithmetic chain (canonical form)
-    (r'(\S+)\s+(\d+)\s*ساله\s*است\s*(?:و|،)\s*(\S+)\s+(\d+)\s*ساله\s*است\s*[؛,]\s*\S*\s*چند\s*سال\s*بزرگ[\s\u200c]*تر\s*از\s*\S+\s*است\s*؟?',
-     'موجودی \\2 است؛ \\4 کم کن؛ نتیجه چند است؟'),
-    (r'سن\s+\S+\s+(\d+)\s*سال\s+و\s+سن\s+\S+\s+(\d+)\s*سال\s*است\s*[؛;]?\s*اختلاف[^؟?]*',
-     'موجودی \\1 است؛ \\2 کم کن؛ نتیجه چند است؟'),
-    (r'(\w+)\s+is\s+(\d+)(?:\s+years?\s+old)?\s+and\s+(\w+)\s+is\s+(\d+)\s+years?\s+old(?![er])[^?]*\?',
-     'start with \\2; subtract \\4; result?'),
 ]
+# v22.1 P0 fix: the two former age-difference rewrites ("موجودی X است؛ Y کم کن"
+# / "start with X; subtract Y") were REMOVED — they re-titled an age task as
+# an inventory/finance chain and produced 35−57 = −22 verified against the
+# rewrite itself. Age differences are now computed by the dedicated
+# entity-bound operation in LocalIntelligenceV22._age_difference_answer,
+# verified with abs(age_a − age_b) against the immutable source.
 
 
 def _paraphrase_rewrite(text: str) -> str:
@@ -91,6 +90,79 @@ def _paraphrase_rewrite(text: str) -> str:
             text = new
             break  # one bounded rewrite per retry
     return text
+
+
+# ----------------------------------------------------------------------
+# v22.1 — age-difference detection (independent, span-based).
+# Reads ONLY the immutable user text: exactly two distinct named ages plus
+# difference language -> the entity-bound abs(a−b) operation may answer.
+AGE_DIFFERENCE_LANGUAGE = re.compile(
+    r'اختلاف\s*سن|چند\s*سال\s*(?:بزرگ|کوچک)[\s\u200c]*تر'
+    r'|چند\s*سال[\s\u200c]*(?:متفاوت|فرق)'
+    r'|age\s+difference|how\s+many\s+years\s+(?:older|younger)'
+    r'|what\s+is\s+the\s+age\s+difference', re.I)
+
+_AGE_FA_SALEH = re.compile(r'([\u0600-\u06FF]+)\s+(\d+)\s*ساله')
+_AGE_FA_SEN = re.compile(r'سن\s+([\u0600-\u06FF]+)\s+(\d+)')
+_AGE_EN_IS = re.compile(r'([A-Za-z\u0600-\u06FF]+)\s+is\s+(\d+)(?:\s+years?\s+old)?')
+
+
+def detect_age_difference(text: str):
+    """Return ((name_a, age_a), (name_b, age_b)) when the immutable source
+    asks an age-difference question about exactly two distinct named ages;
+    otherwise None. Never invents or reorders values."""
+    t = normalize_chars(text or '')
+    if not AGE_DIFFERENCE_LANGUAGE.search(t):
+        return None
+    ages: list[tuple[str, float]] = []
+    seen_names: set[str] = set()
+    for pattern in (_AGE_FA_SALEH, _AGE_FA_SEN, _AGE_EN_IS):
+        for m in pattern.finditer(t):
+            name = m.group(1).strip('\u200c ').strip()
+            value = float(m.group(2))
+            if not name or name in seen_names or not (0 <= value <= 150):
+                continue
+            seen_names.add(name)
+            ages.append((name, value))
+        if len(ages) >= 2:
+            break
+    if len(ages) != 2:
+        return None
+    return (ages[0], ages[1])
+
+
+# ----------------------------------------------------------------------
+# v22.1 — clock-token normalization for the PARSE INPUT only.
+# 'ساعت 23:30' -> 'ساعت 23.5' so the v21 parser can read minute-precision
+# starts. The immutable user source itself is never rewritten; every
+# witness (typed audit, temporal witness) keeps reading the original.
+_CLOCK_TOKEN = re.compile(r'(\d{1,2}):(\d{2})')
+_SCHED_LANGUAGE = re.compile(
+    r'شروع|پایان|تمام|مدت|کار|شیفت|duration|lasts?|shift|start|end|finish', re.I)
+
+
+def normalize_clock_tokens(text: str) -> str:
+    t = normalize_chars(text or '')
+    if not _SCHED_LANGUAGE.search(t):
+        return text or ''
+
+    def _repl(m: 're.Match') -> str:
+        h, mm = int(m.group(1)), int(m.group(2))
+        left = t[max(0, m.start() - 14):m.start()]
+        if h <= 23 and mm < 60 and re.search(r'(?:ساعت|at|از)\s*$', left, re.I):
+            dec = h + mm / 60.0
+            return f'{dec:.10g}'.rstrip('0').rstrip('.') if mm else str(h)
+        return m.group(0)
+
+    out = _CLOCK_TOKEN.sub(_repl, t)
+    return out
+
+
+def render_age_difference(older_name: str, value: float, language: str = 'fa') -> str:
+    v = fmt_number(value)
+    if language == 'fa':
+        return f'اختلاف سن {v} سال است.'
+    return f'The age difference is {v} years.'
 
 
 def fmt_number(v, language: str = 'fa') -> str:

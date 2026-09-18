@@ -1,3 +1,7 @@
 __pycache__/
-*.pyc
-.pytest_cache/
+*.py[cod]
+.venv/
+runtime_data/
+jarvis.db*
+knowledge.db*
+jarvis.log*

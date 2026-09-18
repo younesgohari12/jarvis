@@ -14,6 +14,8 @@ silently "fixed" answer.
 """
 from __future__ import annotations
 
+from contextvars import ContextVar
+
 from jarvis.agent.verification_v21 import UniversalVerifier, AUTHORITATIVE_SOURCE
 from jarvis.agent.verification_v20 import Verdict, close
 from jarvis.agent.quantity_v22 import (
@@ -24,14 +26,23 @@ from jarvis.agent.numeric_roles_v22 import (
     classify_source_numbers_v2, role_slot_consistency, ROLE_CHECK, SLOT_CHECK,
 )
 from jarvis.agent import temporal_v22
+from jarvis.agent.language_brain_v22 import detect_age_difference
 
-__all__ = ['UniversalVerifierV2', 'dimension_verdict', 'UnitIncompatibilityError']
+__all__ = ['UniversalVerifierV2', 'dimension_verdict', 'UnitIncompatibilityError',
+           'ORIGINAL_SOURCE']
+
+# v22.1 — the immutable user source. Every v22 witness reads the ORIGINAL
+# user text through this context; NLU-normalized text is parse-assistance
+# only and can never become the verification source (P0 fix: a paraphrase
+# must not be verified against itself).
+ORIGINAL_SOURCE = ContextVar('jarvis_v22_original_source', default=None)
 
 # Failure names introduced by the V2 audit layer.
 TYPED_FAILURES = {
     'currency_dimension_mismatch',
     'source_operation_dimension_consistency',
     'source_currency_consistency',
+    'typed_audit_internal_error',
     ROLE_CHECK,
     SLOT_CHECK,
 }
@@ -42,6 +53,7 @@ REPAIR_HINTS = {
     'source_currency_consistency': 'Two different currencies never add without an explicit exchange rate.',
     ROLE_CHECK: 'Slots must honour source order: first workers count is workers_initial, second is workers_target.',
     SLOT_CHECK: 'Every numeric slot must be traceable to a span in the immutable user source.',
+    'typed_audit_internal_error': 'The typed audit layer failed internally; the result cannot be verified and is discarded (fail-closed).',
 }
 
 # Tasks where the slot-traceability witness is enforced. Other tasks keep the
@@ -58,6 +70,30 @@ DIFFERENCE_LANGUAGE = _re.compile(
     r'چند\s*سال\s*(?:بزرگ|کوچک)|اختلاف[^؟?;؛]{0,15}چند|چند[^؟?;؛]{0,15}اختلاف'
     r'|how\s+many\s+years\s+(?:older|younger)|what\s+is\s+the\s+age\s+difference', _re.I)
 
+# Add/subtract chain language that must never span two different known dims.
+CHAIN_LANGUAGE = _re.compile(
+    r'جمع\s*کن|جمع\s*می?شود|جمع\s*می\u200cشود|اضافه\s*کن|کم\s*کن|کم\s*می?شود|'
+    r'کم\s*می\u200cشود|\badd\b|\bplus\b|\bsubtract\b|\bsum\b|\btotal\b', _re.I)
+_CHAIN_SAFE_DIMS = {'dimensionless', 'identifier', 'clock_time', 'percentage',
+                    'probability', 'date'}
+
+
+def cross_dimension_chain_failure(quantities, source_text: str) -> list:
+    """v22.1: an explicit add/subtract request over two KNOWN different
+    dimensions (hours + km, kg + liters, USD + items, ...) is refused.
+    Untyped (dimensionless) numbers never trigger this guard."""
+    if not source_text or not CHAIN_LANGUAGE.search(source_text):
+        return []
+    known = {q.dimension for q in quantities if q.dimension not in _CHAIN_SAFE_DIMS}
+    if len(known) < 2:
+        return []
+    # rate-style contexts (per hour/day) legitimately mix time with counts or
+    # money; every other known-dimension pair inside one add/subtract request
+    # is refused (hours+km, kg+liters, USD+items, ...).
+    if known <= {'time', 'count'} or known <= {'time', 'currency'}:
+        return []
+    return ['source_operation_dimension_consistency']
+
 
 class UniversalVerifierV2(UniversalVerifier):
     """v21 verifier + independent typed witnesses. Additive only."""
@@ -67,9 +103,16 @@ class UniversalVerifierV2(UniversalVerifier):
         verdict = super().verify(ir, candidate)
         try:
             self._typed_audit(ir, verdict)
-        except Exception:
-            # The audit layer must never crash the verified path; v21 verdict stands.
-            pass
+        except Exception as exc:  # v22.1: FAIL-CLOSED, never fail-open.
+            # A safety verifier that crashes must not fall back to the
+            # unchallenged v21 verdict: an internal audit error means the
+            # result CANNOT be verified, so the engine abstains/clarifies.
+            verdict.checks.append('typed_audit_internal_error')
+            verdict.failed_checks.append('typed_audit_internal_error')
+            verdict.repair_stage = 'abstain'
+            verdict.repair_hint = (
+                REPAIR_HINTS['typed_audit_internal_error']
+                + f' ({type(exc).__name__})')
         if verdict.failed_checks:
             verdict.failed_checks = list(dict.fromkeys(verdict.failed_checks))
             verdict.checks = list(dict.fromkeys(verdict.checks))
@@ -83,7 +126,10 @@ class UniversalVerifierV2(UniversalVerifier):
 
     # ------------------------------------------------------------------
     def _typed_audit(self, ir, verdict: Verdict):
-        source_text = AUTHORITATIVE_SOURCE.get() or ir.source_text or ''
+        # v22.1: the typed audit ALWAYS reads the immutable original user
+        # source — never a normalized/paraphrased rewrite of it.
+        source_text = ORIGINAL_SOURCE.get() or AUTHORITATIVE_SOURCE.get() \
+            or ir.source_text or ''
         if not source_text:
             return
         quantities = extract_typed_quantities(source_text)
@@ -92,6 +138,12 @@ class UniversalVerifierV2(UniversalVerifier):
         # -- 1. whole-source dimension audit (currencies vs counts) --------
         dv = dimension_verdict(quantities)
         for name in dv['failed_checks']:
+            verdict.failed_checks.append(name)
+
+        # -- 1b. cross-dimension addition guard (v22.1) ---------------------
+        # '2 ساعت و 120 کیلومتر را جمع کن' must never compute: an explicit
+        # add/subtract request over two KNOWN different dimensions fails.
+        for name in cross_dimension_chain_failure(quantities, source_text):
             verdict.failed_checks.append(name)
 
         # -- 2. operation-chain dimension audit ----------------------------
@@ -128,6 +180,39 @@ class UniversalVerifierV2(UniversalVerifier):
             verdict.failed_checks.append(name)
 
     # ------------------------------------------------------------------
+    def verify_age_difference(self, source_text, detection, value) -> Verdict:
+        """Independent entity-bound witness for the v22 age-difference
+        operation: re-read the IMMUTABLE source, re-detect the two named
+        ages, and confirm answer == abs(age_a - age_b)."""
+        import re
+        try:
+            source_text = ORIGINAL_SOURCE.get() or source_text
+            t = (source_text or '').translate(
+                str.maketrans('۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩', '01234567890123456789'))
+            if not DIFFERENCE_LANGUAGE.search(t):
+                return Verdict(False, ['age_difference_language_missing'],
+                               'No age-difference question in the immutable source.',
+                               'none', ['age_difference'])
+            fresh = detect_age_difference(t)
+            if not fresh:
+                return Verdict(False, ['age_difference_entities_missing'],
+                               'Two named ages are required.', 'none',
+                               ['age_difference'])
+            (name_a, age_a), (name_b, age_b) = fresh
+            expected = abs(float(age_a) - float(age_b))
+            passed = (close(float(value), expected) and 0 <= expected <= 150
+                      and str(name_a).strip() != str(name_b).strip())
+            return Verdict(passed,
+                           [] if passed else ['age_difference_consistency'],
+                           '' if passed else 'Answer must equal the absolute age difference of the two bound entities.',
+                           'none' if passed else 'abstain',
+                           ['age_difference', 'entity_binding'])
+        except Exception:
+            return Verdict(False, ['age_difference_verification_error'],
+                           'Age-difference witness failed internally.',
+                           'abstain', ['age_difference'])
+
+    # ------------------------------------------------------------------
     @staticmethod
     def _quantity_for(quantities, value, prefer=()):
         matches = [q for q in quantities if abs(float(q.value) - float(value)) < 1e-9]
@@ -142,6 +227,7 @@ class UniversalVerifierV2(UniversalVerifier):
         """Independent temporal witness: recompute start+Σdurations from the
         raw source and compare with the world-model result (calendar aware)."""
         import re
+        source_text = ORIGINAL_SOURCE.get() or source_text  # immutable source
         try:
             t = (source_text or '').translate(str.maketrans('۰۱۲۳۴۵۶۷۸۹', '0123456789'))
             start = None

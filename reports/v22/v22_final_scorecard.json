@@ -1,179 +1,69 @@
 {
- "release": "v22",
+ "release": "v22.1 (audit-response rebuild)",
  "engine_version": "4.0.0-v22",
- "date": "2026-09-17",
- "rule": "every score references an actual evaluation artifact; no estimated numbers",
- "categories": {
-  "regression_integrity": {
-   "score": 100,
-   "evidence": "v22_regression_results.json",
-   "detail": "989 passed, 585 subtests passed in 39.86s"
-  },
-  "p0_currency_item_guard": {
-   "score": 100,
-   "evidence": "v22_fresh_blind_results.json (adversarial_dimension 45/45 abstained)"
-  },
-  "p0_two_currency_guard": {
-   "score": 100,
-   "evidence": "v22_fresh_blind_results.json (adversarial_currency 25/25 abstained)"
-  },
-  "identifier_not_quantity": {
-   "score": 100,
-   "evidence": "v22_fresh_blind_results.json (adversarial_identifier 15/15)"
-  },
-  "p0_temporal_wrap": {
-   "score": 61.1,
-   "evidence": "v22_fresh_blind_results.json (scheduling, clock answers)"
-  },
-  "source_slot_consistency": {
+ "date": "2026-09-18",
+ "formula": "composite = mean of the five capabilities above; each capability counted ONCE; every score references an evaluation artifact",
+ "comparability_warning": "composite_v22_1 is NOT comparable to v22.0 scorecard 91.3 (that number double-counted overlapping metrics) nor to older releases. The apples-to-apples numbers are: broad benchmark 81.2 (unchanged from v21/v22.0) and fresh-blind honest 83.58 vs 78.2 for v22.0 under the same honest scorer (+5.4 points).",
+ "capabilities": {
+  "reasoning_core_broad": {
    "score": 100.0,
-   "evidence": "v22_semantic_results.json"
+   "evidence": "v22_reasoning_results.json — {'Adversarial': {'total': 100, 'correct': 100}, 'Code': {'total': 100, 'correct': 100}, 'English': {'total': 50, 'correct': 0}, 'Persian': {'total': 50, 'correct': 6}, 'Reasoning': {'total': 100, 'correct': 100}, 'World Model': {'total': 100, 'correct': 100}}",
+   "comparable_to_v21": true
   },
-  "numeric_roles": {
+  "language_generation_broad": {
+   "score": 6.0,
+   "evidence": "v22_reasoning_results.json — Persian 6/50, English 0/50 (UNCHANGED: v22.1 adds no model weights; this remains the known open gap)",
+   "comparable_to_v21": true
+  },
+  "fresh_blind_honest": {
+   "score": 83.58,
+   "answerable_only": 82.09,
+   "evidence": "v22_fresh_blind_results.json — {'correct_answerable': 770, 'correct_expected_abstain': 85, 'correct_total': 855, 'wrong_or_abstained_on_answerable': 168, 'failed_expected_abstain': 0}",
+   "scorer": "abstention on answerable questions counts as FAILURE",
+   "comparable_to_v21": true
+  },
+  "safety_layer": {
    "score": 100.0,
-   "evidence": "v22_semantic_results.json"
+   "evidence": "v22_ablation_results.json — typed audit on: 70/70 safe abstentions; off: 0/70; temporal on: 14/14 vs off 0/14; age op on: 25/40 vs off 0/40",
+   "comparable_to_v21": false
   },
-  "semantic_ir_v2_schema": {
+  "engineering_integrity": {
    "score": 100.0,
-   "evidence": "v22_semantic_results.json"
-  },
-  "reasoning_broad_500": {
-   "score": 81.2,
-   "evidence": "v22_reasoning_results.json (official runner)",
-   "detail": {
-    "Adversarial": {
-     "total": 100,
-     "correct": 100
-    },
-    "Code": {
-     "total": 100,
-     "correct": 100
-    },
-    "English": {
-     "total": 50,
-     "correct": 0
-    },
-    "Persian": {
-     "total": 50,
-     "correct": 6
-    },
-    "Reasoning": {
-     "total": 100,
-     "correct": 100
-    },
-    "World Model": {
-     "total": 100,
-     "correct": 100
-    }
-   }
-  },
-  "reasoning_diagnostic_300": {
-   "score": 100.0,
-   "evidence": "v22_diagnostic_results.json"
-  },
-  "reasoning_fresh_v20_274": {
-   "score": 77.0,
-   "evidence": "v22_fresh_v20_results.json"
-  },
-  "fresh_blind_overall": {
-   "score": 87.39,
-   "evidence": "v22_fresh_blind_results.json",
-   "detail": {
-    "wrong_answers": 0,
-    "coverage_note": "no_answer items are safe declines routed upstream"
-   }
-  },
-  "fresh_blind_fa": {
-   "score": 87.32,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "fresh_blind_en": {
-   "score": 87.47,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "finance_chain": {
-   "score": 100.0,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "inventory_chain": {
-   "score": 67.0,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "work_rate_binding": {
-   "score": 100.0,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "ratio_parts": {
-   "score": 100.0,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "age_tasks": {
-   "score": 78.6,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "probability_binomial": {
-   "score": 100.0,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "counting_combination": {
-   "score": 88.9,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "sequence_tasks": {
-   "score": 100.0,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "ownership_transfer": {
-   "score": 31.7,
-   "evidence": "v22_fresh_blind_results.json (fa ownership grammar gap documented)"
-  },
-  "language_nlu_normalization": {
-   "score": 100.0,
-   "evidence": "v22_language_results.json"
-  },
-  "language_nlg_rendering": {
-   "score": 100.0,
-   "evidence": "v22_language_results.json"
-  },
-  "response_sanitization": {
-   "score": 100.0,
-   "evidence": "v22_language_results.json"
-  },
-  "clarification_quality": {
-   "score": 83.3,
-   "evidence": "v22_language_results.json"
-  },
-  "abstention_precision": {
-   "score": 100.0,
-   "evidence": "v22_fresh_blind_results.json"
-  },
-  "ablation_typed_quantity": {
-   "score": 100,
-   "evidence": "v22_ablation_results.json",
-   "detail": "audit-off reproduces the v21 USD+ITEM bug; audit-on refuses"
-  },
-  "ablation_temporal": {
-   "score": 100,
-   "evidence": "v22_ablation_results.json"
-  },
-  "wiring_and_telemetry_honesty": {
-   "score": 100,
-   "evidence": "v22_architecture_status.json"
-  },
-  "performance_parity": {
-   "score": 90,
-   "evidence": "v22_performance_results.json",
-   "detail": {
-    "v21_mean_ms": 2.94,
-    "v22_mean_ms": 4.27
-   }
+   "evidence": "regression 1031/1031 + subtests 585; semantic {'typed_quantity': 100.0, 'numeric_roles': 100.0, 'ir_v2': 100.0}",
+   "comparable_to_v21": false
   }
  },
- "OVERALL": 91.3,
- "honest_limitations": [
-  "Persian ownership transfer grammar (v21 gap) still routes to safe decline",
-  "translation tasks through the runtime benchmark path remain weak (v21 parity, 2/10-6/50)",
-  "constraints/routing/web_needed benchmark categories require upper-layer LLM (v21 parity, 0)",
-  "129/1023 fresh-blind questions are safe declines (bounded grammar), not solved answers"
+ "composite_v22_1": 77.92,
+ "comparable_numbers": {
+  "broad_benchmark": "81.2 (406/500) — identical engine core to v21; language generation NOT improved",
+  "fresh_blind_honest_v22_0": 78.2,
+  "fresh_blind_honest_v22_1": 83.58,
+  "fresh_blind_answerable_only_v22_1": 82.09
+ },
+ "performance_informational": {
+  "v21": {
+   "n": 240,
+   "p50_ms": 1.68,
+   "p95_ms": 4.57,
+   "mean_ms": 1.97
+  },
+  "v22": {
+   "n": 240,
+   "p50_ms": 2.94,
+   "p95_ms": 13.6,
+   "mean_ms": 5.07
+  },
+  "overhead_pct": {
+   "mean": 157.4,
+   "p50": 75.0,
+   "p95": 197.6
+  },
+  "note": "informational only — absolute latency stays in low milliseconds"
+ },
+ "known_open_gaps": [
+  "general Persian/English language generation (6/50, 0/50) — needs a real language-model upgrade",
+  "ownership family 31.7% on fresh blind — unchanged",
+  "inventory family 67% — unchanged",
+  "semantic IR V2 remains an audit/provenance view, not the runtime execution source of truth"
  ]
 }

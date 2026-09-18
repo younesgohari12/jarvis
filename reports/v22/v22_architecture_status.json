@@ -1,70 +1,53 @@
 {
- "schema": "jarvis-v22-wiring-audit",
+ "schema": "jarvis-v22.1-wiring-audit",
  "modules": {
   "quantity_v22": {
    "implemented": true,
-   "imported_in_reasoning": false
+   "real_unit_extraction": true
   },
   "numeric_roles_v22": {
    "implemented": true,
-   "imported_in_reasoning": false
+   "expressive_roles_classified": true
   },
-  "semantic_ir_v22": {
+  "semantic_ir_v2": {
    "implemented": true,
-   "imported_in_reasoning": false
+   "role": "audit/provenance view (v21 IR stays execution source of truth)"
   },
   "temporal_v22": {
    "implemented": true,
-   "imported_in_reasoning": false
+   "minute_aware": true
   },
   "verifier_v22": {
    "implemented": true,
-   "imported_in_reasoning": false
+   "fail_closed": true,
+   "immutable_source": true
   },
   "reflection_v22": {
-   "implemented": true,
-   "imported_in_reasoning": false
+   "implemented": true
   },
   "language_brain_v22": {
    "implemented": true,
-   "imported_in_reasoning": false
+   "corrupting_rewrites_removed": true,
+   "age_difference_operation": true
   },
   "local_intelligence_v22": {
    "implemented": true,
    "imported_in_reasoning": true
-  },
-  "_runtime": {
-   "instantiated": true,
-   "version_label": "4.0.0-v22",
-   "is_v21_subclass": true,
-   "runtime_reachable": true,
-   "canonical_contract_preserved": true,
-   "dimension_guard_active_in_runtime": true
-  },
-  "_executed": {
-   "typed_quantity_audit_in_trace": true,
-   "temporal_world_model_in_trace": true
   }
  },
- "telemetry": {
-  "label_source": "engine.VERSION via _local_source_label",
-  "expected_label": "local_intelligence_4_0_0_v22"
+ "runtime": {
+  "instantiated": true,
+  "version_label": "4.0.0-v22",
+  "telemetry_router": "local_intelligence_router_v22"
  },
- "v21_preservation": {
-  "strategy": "LocalIntelligenceV22 subclasses LocalIntelligenceV21; v21 modules untouched",
-  "benchmarks": {
-   "broad_v21_500": {
-    "v21": 406,
-    "v22": 406
-   },
-   "diagnostic_v20_1_300": {
-    "v21": 300,
-    "v22": 300
-   },
-   "fresh_v20_clean": {
-    "v21": 211,
-    "v22": 211
-   }
-  }
- }
+ "v22_1_changes": [
+  "ORIGINAL_SOURCE contextvar: typed audit, temporal witness and IR upgrade read the immutable user text",
+  "corrupting age-difference paraphrases removed; entity-bound abs(age_a-age_b) operation added",
+  "typed audit fail-closed on internal errors (typed_audit_internal_error -> abstain)",
+  "real typed-quantity unit extraction with number+unit source spans",
+  "cross-dimension addition guard (hours+km, kg+liters) with rate-context exemptions",
+  "expressive numeric roles: total/ratio_a/ratio_b, inventory_initial/add/remove, price vs discount, p/n/k, age_difference",
+  "minute-precision scheduling (23:30+2h -> 01:30 next day) via parse_clock_time",
+  "honest fresh-blind scorer: abstention on answerable questions counts as failure"
+ ]
 }

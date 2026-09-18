@@ -1,189 +1,438 @@
 {
+ "engine": "v22.1 audit-response rebuild",
  "scores": {
   "typed_quantity": 100.0,
   "numeric_roles": 100.0,
   "ir_v2": 100.0
  },
+ "note": "typed_quantity now measures REAL unit extraction (hours/km/kg/liters/°C/km/h/years) with number+unit source spans — the v22.0 report scored a dimensionless stub as 100.",
  "cases": {
   "typed_quantity": [
    {
     "text": "موجودی حساب 100 دلار است",
+    "want": [
+     [
+      "currency",
+      "USD"
+     ]
+    ],
+    "got": [
+     [
+      "currency",
+      "USD"
+     ]
+    ],
     "quantities": [
      {
       "value": 100.0,
       "dimension": "currency",
       "unit": "USD",
       "entity": "account",
-      "source_span": "100",
+      "source_span": "100 دلار",
       "confidence": 0.97,
       "role": "value",
       "start": 12,
       "end": 15
      }
     ],
+    "span_covers_unit": true,
     "passed": true
    },
    {
     "text": "موجودی انبار 50 کالا است",
+    "want": [
+     [
+      "count",
+      "ITEM"
+     ]
+    ],
+    "got": [
+     [
+      "count",
+      "ITEM"
+     ]
+    ],
     "quantities": [
      {
       "value": 50.0,
       "dimension": "count",
       "unit": "ITEM",
       "entity": "",
-      "source_span": "50",
+      "source_span": "50 کال",
       "confidence": 0.95,
       "role": "value",
       "start": 13,
       "end": 15
      }
     ],
+    "span_covers_unit": true,
     "passed": true
    },
    {
-    "text": "در 2 ساعت 120 کیلومتر",
+    "text": "کار 2 ساعت طول کشید",
+    "want": [
+     [
+      "time",
+      "HOUR"
+     ]
+    ],
+    "got": [
+     [
+      "time",
+      "HOUR"
+     ]
+    ],
     "quantities": [
      {
       "value": 2.0,
-      "dimension": "dimensionless",
-      "unit": "NONE",
+      "dimension": "time",
+      "unit": "HOUR",
       "entity": "",
-      "source_span": "2",
-      "confidence": 0.4,
-      "role": "value",
-      "start": 3,
-      "end": 4
-     },
-     {
-      "value": 120.0,
-      "dimension": "dimensionless",
-      "unit": "NONE",
-      "entity": "",
-      "source_span": "120",
-      "confidence": 0.4,
-      "role": "value",
-      "start": 10,
-      "end": 13
-     }
-    ],
-    "passed": true
-   },
-   {
-    "text": "شناسه پرونده 778 است",
-    "quantities": [
-     {
-      "value": 778.0,
-      "dimension": "identifier",
-      "unit": "ID",
-      "entity": "",
-      "source_span": "778",
+      "source_span": "2 ساعت",
       "confidence": 0.9,
-      "role": "identifier",
-      "start": 13,
-      "end": 16
+      "role": "value",
+      "start": 4,
+      "end": 5
      }
     ],
+    "span_covers_unit": true,
     "passed": true
    },
    {
-    "text": "20 درصد تخفیف",
+    "text": "90 minutes passed",
+    "want": [
+     [
+      "time",
+      "MINUTE"
+     ]
+    ],
+    "got": [
+     [
+      "time",
+      "MINUTE"
+     ]
+    ],
     "quantities": [
      {
-      "value": 20.0,
-      "dimension": "percentage",
-      "unit": "PERCENT",
+      "value": 90.0,
+      "dimension": "time",
+      "unit": "MINUTE",
       "entity": "",
-      "source_span": "20",
-      "confidence": 0.95,
+      "source_span": "90 minutes",
+      "confidence": 0.9,
       "role": "value",
       "start": 0,
       "end": 2
      }
+    ],
+    "span_covers_unit": true,
+    "passed": true
+   },
+   {
+    "text": "120 کیلومتر رفتم",
+    "want": [
+     [
+      "distance",
+      "KM"
+     ]
+    ],
+    "got": [
+     [
+      "distance",
+      "KM"
+     ]
+    ],
+    "quantities": [
+     {
+      "value": 120.0,
+      "dimension": "distance",
+      "unit": "KM",
+      "entity": "",
+      "source_span": "120 کیلومتر",
+      "confidence": 0.9,
+      "role": "value",
+      "start": 0,
+      "end": 3
+     }
+    ],
+    "span_covers_unit": true,
+    "passed": true
+   },
+   {
+    "text": "5 kg آرد",
+    "want": [
+     [
+      "mass",
+      "KG"
+     ]
+    ],
+    "got": [
+     [
+      "mass",
+      "KG"
+     ]
+    ],
+    "quantities": [
+     {
+      "value": 5.0,
+      "dimension": "mass",
+      "unit": "KG",
+      "entity": "",
+      "source_span": "5 kg",
+      "confidence": 0.9,
+      "role": "value",
+      "start": 0,
+      "end": 1
+     }
+    ],
+    "span_covers_unit": true,
+    "passed": true
+   },
+   {
+    "text": "3 liters آب",
+    "want": [
+     [
+      "volume",
+      "L"
+     ]
+    ],
+    "got": [
+     [
+      "volume",
+      "L"
+     ]
+    ],
+    "quantities": [
+     {
+      "value": 3.0,
+      "dimension": "volume",
+      "unit": "L",
+      "entity": "",
+      "source_span": "3 liters",
+      "confidence": 0.9,
+      "role": "value",
+      "start": 0,
+      "end": 1
+     }
+    ],
+    "span_covers_unit": true,
+    "passed": true
+   },
+   {
+    "text": "30 C هوا",
+    "want": [
+     [
+      "temperature",
+      "C"
+     ]
+    ],
+    "got": [
+     [
+      "temperature",
+      "C"
+     ]
+    ],
+    "quantities": [
+     {
+      "value": 30.0,
+      "dimension": "temperature",
+      "unit": "C",
+      "entity": "",
+      "source_span": "30 C",
+      "confidence": 0.85,
+      "role": "value",
+      "start": 0,
+      "end": 2
+     }
+    ],
+    "span_covers_unit": true,
+    "passed": true
+   },
+   {
+    "text": "سرعت 60 km/h",
+    "want": [
+     [
+      "speed",
+      "KM_PER_HOUR"
+     ]
+    ],
+    "got": [
+     [
+      "speed",
+      "KM_PER_HOUR"
+     ]
+    ],
+    "quantities": [
+     {
+      "value": 60.0,
+      "dimension": "speed",
+      "unit": "KM_PER_HOUR",
+      "entity": "",
+      "source_span": "60 km/h",
+      "confidence": 0.92,
+      "role": "value",
+      "start": 5,
+      "end": 7
+     }
+    ],
+    "span_covers_unit": true,
+    "passed": true
+   },
+   {
+    "text": "علی 20 ساله است",
+    "want": [
+     [
+      "age",
+      "YEAR"
+     ]
+    ],
+    "got": [
+     [
+      "age",
+      "YEAR"
+     ]
+    ],
+    "quantities": [
+     {
+      "value": 20.0,
+      "dimension": "age",
+      "unit": "YEAR",
+      "entity": "",
+      "source_span": "20 ساله",
+      "confidence": 0.92,
+      "role": "value",
+      "start": 4,
+      "end": 6
+     }
+    ],
+    "span_covers_unit": true,
+    "passed": true
+   },
+   {
+    "text": "20 years old",
+    "want": [
+     [
+      "age",
+      "YEAR"
+     ]
+    ],
+    "got": [
+     [
+      "age",
+      "YEAR"
+     ]
+    ],
+    "quantities": [
+     {
+      "value": 20.0,
+      "dimension": "age",
+      "unit": "YEAR",
+      "entity": "",
+      "source_span": "20 years old",
+      "confidence": 0.92,
+      "role": "value",
+      "start": 0,
+      "end": 2
+     }
+    ],
+    "span_covers_unit": true,
+    "passed": true
+   },
+   {
+    "text": "موجودی حساب 100 دلار است؛ 5 کالا اضافه کن",
+    "verdict": [
+     "currency_dimension_mismatch"
     ],
     "passed": true
    }
   ],
   "numeric_roles": [
    {
-    "text": "3 کارگر در 4 ساعت 84 واحد تولید می کنند؛ 8 کارگر در 6 ساعت؟",
-    "roles": [
-     {
-      "value": 3.0,
-      "start": 0,
-      "end": 1,
-      "span": "3",
-      "role": "workers_initial",
-      "confidence": 0.88
-     },
-     {
-      "value": 4.0,
-      "start": 11,
-      "end": 12,
-      "span": "4",
-      "role": "hours_initial",
-      "confidence": 0.88
-     },
-     {
-      "value": 84.0,
-      "start": 18,
-      "end": 20,
-      "span": "84",
-      "role": "output_initial",
-      "confidence": 0.88
-     },
-     {
-      "value": 8.0,
-      "start": 41,
-      "end": 42,
-      "span": "8",
-      "role": "workers_target",
-      "confidence": 0.88
-     },
-     {
-      "value": 6.0,
-      "start": 52,
-      "end": 53,
-      "span": "6",
-      "role": "hours_target",
-      "confidence": 0.88
-     }
+    "text": "525 را با نسبت 4 به 3 تقسیم کن",
+    "want": [
+     "ratio_a",
+     "ratio_b",
+     "total"
+    ],
+    "got": [
+     "ratio_a",
+     "ratio_b",
+     "total"
     ],
     "passed": true
    },
    {
-    "text": "کد بسته 1234 را ثبت کن",
-    "roles": [
-     {
-      "value": 1234.0,
-      "start": 8,
-      "end": 12,
-      "span": "1234",
-      "role": "identifier",
-      "confidence": 0.92
-     }
+    "text": "موجودی انبار 100 کالا است؛ 5 کالا اضافه کن",
+    "want": [
+     "inventory_add",
+     "inventory_initial"
+    ],
+    "got": [
+     "inventory_add",
+     "inventory_initial"
+    ],
+    "passed": true
+   },
+   {
+    "text": "قیمت 100 تومان است و 20 درصد تخفیف دارد",
+    "want": [
+     "discount",
+     "price"
+    ],
+    "got": [
+     "discount",
+     "price"
+    ],
+    "passed": true
+   },
+   {
+    "text": "احتمال موفقیت 30 درصد است؛ در 4 تلاش دقیقاً 2 موفقیت؟",
+    "want": [
+     "k",
+     "n",
+     "p"
+    ],
+    "got": [
+     "k",
+     "n",
+     "p"
+    ],
+    "passed": true
+   },
+   {
+    "text": "علی 20 ساله است و رضا 5 سال بزرگتر است",
+    "want": [
+     "age_difference",
+     "age_value"
+    ],
+    "got": [
+     "age_difference",
+     "age_value"
+    ],
+    "passed": true
+   },
+   {
+    "text": "3 کارگر در 4 ساعت 84 واحد تولید می کنند؛ 8 کارگر در 6 ساعت؟",
+    "want": [
+     "hours_initial",
+     "hours_target",
+     "output_initial",
+     "workers_initial",
+     "workers_target"
+    ],
+    "got": [
+     "hours_initial",
+     "hours_target",
+     "output_initial",
+     "workers_initial",
+     "workers_target"
     ],
     "passed": true
    }
   ],
-  "ir_v2": [
-   {
-    "text": "موجودی انبار 100 کالا است؛ 5 کالا اضافه کن",
-    "schema": "jarvis-semantic-ir-v22",
-    "source_mapping": {
-     "initial": "100"
-    },
-    "passed": true
-   },
-   {
-    "text": "525 را با نسبت 4 به 3 تقسیم کن",
-    "schema": "jarvis-semantic-ir-v22",
-    "source_mapping": {
-     "total": "525",
-     "ratio_a": "4",
-     "ratio_b": "3"
-    },
-    "passed": true
-   }
-  ]
+  "ir_v2": {
+   "schema_version": "jarvis-semantic-ir-v22",
+   "passed": true
+  }
  }
 }

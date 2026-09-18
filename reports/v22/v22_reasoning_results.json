@@ -1,5 +1,5 @@
 {
-  "project": "/home/z/my-project/jarvis_work/v22_working",
+  "project": "/home/z/my-project/jarvis_work/v22_extract",
   "benchmark_sha256": "810d65156e5bfe0da9f03feaaf38479531f7e4c2949d886804bb9f4fb0b28dd8",
   "total": 500,
   "correct": 406,
@@ -19,7 +19,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 18.900592000136385
+      "latency_ms": 19.390661000215914
     },
     {
       "id": "b21_001",
@@ -36,7 +36,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.5726370001139
+      "latency_ms": 5.207423999763705
     },
     {
       "id": "b21_002",
@@ -53,7 +53,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.394503999923472
+      "latency_ms": 5.0467579999349255
     },
     {
       "id": "b21_003",
@@ -70,7 +70,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.270749000374053
+      "latency_ms": 4.9902209998435865
     },
     {
       "id": "b21_004",
@@ -87,7 +87,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.9622389997239225
+      "latency_ms": 5.113220000112051
     },
     {
       "id": "b21_005",
@@ -104,7 +104,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.725591999886092
+      "latency_ms": 4.949441999997362
     },
     {
       "id": "b21_006",
@@ -121,7 +121,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.812776000107988
+      "latency_ms": 5.011954000110563
     },
     {
       "id": "b21_007",
@@ -138,7 +138,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.779631000019435
+      "latency_ms": 4.932349000227987
     },
     {
       "id": "b21_008",
@@ -155,7 +155,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.812056999980996
+      "latency_ms": 4.84295199976259
     },
     {
       "id": "b21_009",
@@ -172,7 +172,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 10.852145000171731
+      "latency_ms": 11.52467500014609
     },
     {
       "id": "b21_010",
@@ -189,7 +189,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.783043000315956
+      "latency_ms": 5.1723229998970055
     },
     {
       "id": "b21_011",
@@ -206,7 +206,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.8386509997726534
+      "latency_ms": 5.193951999899582
     },
     {
       "id": "b21_012",
@@ -223,7 +223,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.753942999741412
+      "latency_ms": 5.0443219997760025
     },
     {
       "id": "b21_013",
@@ -240,7 +240,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.83106299998326
+      "latency_ms": 5.112389000260009
     },
     {
       "id": "b21_014",
@@ -257,7 +257,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 10.517135000554845
+      "latency_ms": 10.816835000241554
     },
     {
       "id": "b21_015",
@@ -274,7 +274,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.0498410000727745
+      "latency_ms": 5.060166000021127
     },
     {
       "id": "b21_016",
@@ -291,7 +291,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.983688000720576
+      "latency_ms": 4.946418000145059
     },
     {
       "id": "b21_017",
@@ -308,7 +308,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.688127000212262
+      "latency_ms": 5.039570000008098
     },
     {
       "id": "b21_018",
@@ -325,7 +325,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.853480999576277
+      "latency_ms": 5.08023200018215
     },
     {
       "id": "b21_019",
@@ -342,7 +342,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.850814999372233
+      "latency_ms": 5.032348999975511
     },
     {
       "id": "b21_020",
@@ -356,7 +356,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.0445130002335645
+      "latency_ms": 6.407687000319129
     },
     {
       "id": "b21_021",
@@ -370,7 +370,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9970170000742655
+      "latency_ms": 4.131105999931606
     },
     {
       "id": "b21_022",
@@ -384,7 +384,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.27667899930384
+      "latency_ms": 4.4211549998181
     },
     {
       "id": "b21_023",
@@ -398,7 +398,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.168892999587115
+      "latency_ms": 4.350566000084655
     },
     {
       "id": "b21_024",
@@ -412,7 +412,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.17019600081403
+      "latency_ms": 4.156759000125021
     },
     {
       "id": "b21_025",
@@ -426,7 +426,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.102087000319443
+      "latency_ms": 4.18542100032937
     },
     {
       "id": "b21_026",
@@ -440,7 +440,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.102105000129086
+      "latency_ms": 4.010393000044132
     },
     {
       "id": "b21_027",
@@ -454,7 +454,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.342952000115474
+      "latency_ms": 4.353841000011016
     },
     {
       "id": "b21_028",
@@ -468,7 +468,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.110350999326329
+      "latency_ms": 4.207855000004201
     },
     {
       "id": "b21_029",
@@ -482,7 +482,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8876970002093003
+      "latency_ms": 3.8700640002389264
     },
     {
       "id": "b21_030",
@@ -496,7 +496,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.515593999713019
+      "latency_ms": 4.42728400003034
     },
     {
       "id": "b21_031",
@@ -510,7 +510,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.447909999726107
+      "latency_ms": 4.515595000157191
     },
     {
       "id": "b21_032",
@@ -524,7 +524,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.172816000391322
+      "latency_ms": 4.318820000207779
     },
     {
       "id": "b21_033",
@@ -538,7 +538,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.184688999885111
+      "latency_ms": 4.311598999720445
     },
     {
       "id": "b21_034",
@@ -552,7 +552,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9183280005090637
+      "latency_ms": 3.977199000019027
     },
     {
       "id": "b21_035",
@@ -566,7 +566,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9770089997546165
+      "latency_ms": 4.087199999958102
     },
     {
       "id": "b21_036",
@@ -580,7 +580,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.222128000037628
+      "latency_ms": 4.344316000242543
     },
     {
       "id": "b21_037",
@@ -594,7 +594,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.217738000079407
+      "latency_ms": 4.146979999859468
     },
     {
       "id": "b21_038",
@@ -608,7 +608,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.200359999231296
+      "latency_ms": 4.021334999833925
     },
     {
       "id": "b21_039",
@@ -622,7 +622,7 @@
       "intent": "probability_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.442346999894653
+      "latency_ms": 4.176331000053324
     },
     {
       "id": "b21_040",
@@ -636,7 +636,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.968649000147707
+      "latency_ms": 5.154419999598758
     },
     {
       "id": "b21_041",
@@ -650,7 +650,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.919088999282394
+      "latency_ms": 4.070235999733995
     },
     {
       "id": "b21_042",
@@ -664,7 +664,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.7961399993946543
+      "latency_ms": 4.0656779997334525
     },
     {
       "id": "b21_043",
@@ -678,7 +678,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8448479999715346
+      "latency_ms": 3.988698999819462
     },
     {
       "id": "b21_044",
@@ -692,7 +692,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9809850004530745
+      "latency_ms": 3.9570640001329593
     },
     {
       "id": "b21_045",
@@ -706,7 +706,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9787159994375543
+      "latency_ms": 4.132842000217352
     },
     {
       "id": "b21_046",
@@ -720,7 +720,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.91330200000084
+      "latency_ms": 3.9787390001038148
     },
     {
       "id": "b21_047",
@@ -734,7 +734,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.831127000012202
+      "latency_ms": 4.05673300019771
     },
     {
       "id": "b21_048",
@@ -748,7 +748,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8708030006091576
+      "latency_ms": 3.912785000011354
     },
     {
       "id": "b21_049",
@@ -762,7 +762,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.7786819993925747
+      "latency_ms": 4.006661999937933
     },
     {
       "id": "b21_050",
@@ -776,7 +776,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9994569997361396
+      "latency_ms": 4.168343000401364
     },
     {
       "id": "b21_051",
@@ -790,7 +790,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8363660005416023
+      "latency_ms": 4.046985000059067
     },
     {
       "id": "b21_052",
@@ -804,7 +804,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8002330002200324
+      "latency_ms": 4.014253000150347
     },
     {
       "id": "b21_053",
@@ -818,7 +818,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.77618199945573
+      "latency_ms": 3.9411959996868973
     },
     {
       "id": "b21_054",
@@ -832,7 +832,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.773950999857334
+      "latency_ms": 3.9662419999331178
     },
     {
       "id": "b21_055",
@@ -846,7 +846,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.776896000090346
+      "latency_ms": 4.100876000393328
     },
     {
       "id": "b21_056",
@@ -860,7 +860,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.593174000547151
+      "latency_ms": 4.84843300000648
     },
     {
       "id": "b21_057",
@@ -874,7 +874,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.947904000597191
+      "latency_ms": 4.041452999899775
     },
     {
       "id": "b21_058",
@@ -888,7 +888,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.6995609998484724
+      "latency_ms": 3.9539630001854675
     },
     {
       "id": "b21_059",
@@ -902,7 +902,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.7380320000011125
+      "latency_ms": 4.118624000057025
     },
     {
       "id": "b21_060",
@@ -916,7 +916,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.27672200032248
+      "latency_ms": 9.505945999990217
     },
     {
       "id": "b21_061",
@@ -930,7 +930,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.6536990003005485
+      "latency_ms": 4.899610999927972
     },
     {
       "id": "b21_062",
@@ -944,7 +944,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.70469499941828
+      "latency_ms": 4.775384999902599
     },
     {
       "id": "b21_063",
@@ -958,7 +958,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.776382000272861
+      "latency_ms": 4.750945000068896
     },
     {
       "id": "b21_064",
@@ -972,7 +972,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.788707000443537
+      "latency_ms": 4.765092000070581
     },
     {
       "id": "b21_065",
@@ -986,7 +986,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.776096000568941
+      "latency_ms": 4.787752999618533
     },
     {
       "id": "b21_066",
@@ -1000,7 +1000,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.759956999805581
+      "latency_ms": 4.8424109995721665
     },
     {
       "id": "b21_067",
@@ -1014,7 +1014,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.830341999877419
+      "latency_ms": 4.90400300031979
     },
     {
       "id": "b21_068",
@@ -1028,7 +1028,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 11.182062000443693
+      "latency_ms": 4.9764740001592145
     },
     {
       "id": "b21_069",
@@ -1042,7 +1042,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.062191000433813
+      "latency_ms": 5.0893180000457505
     },
     {
       "id": "b21_070",
@@ -1056,7 +1056,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.825261999940267
+      "latency_ms": 4.70444700022199
     },
     {
       "id": "b21_071",
@@ -1070,7 +1070,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.822000999411102
+      "latency_ms": 4.690106000452943
     },
     {
       "id": "b21_072",
@@ -1084,7 +1084,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.879445000369742
+      "latency_ms": 4.755668000143487
     },
     {
       "id": "b21_073",
@@ -1098,7 +1098,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.774737999468925
+      "latency_ms": 4.783780000252591
     },
     {
       "id": "b21_074",
@@ -1112,7 +1112,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.8567399999228655
+      "latency_ms": 4.838722000386042
     },
     {
       "id": "b21_075",
@@ -1126,7 +1126,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.008424000152445
+      "latency_ms": 5.081405999590061
     },
     {
       "id": "b21_076",
@@ -1140,7 +1140,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.76889299989125
+      "latency_ms": 4.95496399980766
     },
     {
       "id": "b21_077",
@@ -1154,7 +1154,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.966501999660977
+      "latency_ms": 4.894505000265781
     },
     {
       "id": "b21_078",
@@ -1168,7 +1168,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.831828000533278
+      "latency_ms": 4.829574999803299
     },
     {
       "id": "b21_079",
@@ -1182,7 +1182,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.782728999998653
+      "latency_ms": 4.828128000099241
     },
     {
       "id": "b21_080",
@@ -1196,7 +1196,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.573104000177409
+      "latency_ms": 5.448883000099158
     },
     {
       "id": "b21_081",
@@ -1210,7 +1210,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.990680999777396
+      "latency_ms": 3.846874999908323
     },
     {
       "id": "b21_082",
@@ -1224,7 +1224,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.3121709995830315
+      "latency_ms": 3.8232920001064485
     },
     {
       "id": "b21_083",
@@ -1238,7 +1238,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.126030999941577
+      "latency_ms": 3.8986190002106014
     },
     {
       "id": "b21_084",
@@ -1252,7 +1252,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.237369000293256
+      "latency_ms": 3.700893999848631
     },
     {
       "id": "b21_085",
@@ -1266,7 +1266,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.890021000188426
+      "latency_ms": 3.858811000100104
     },
     {
       "id": "b21_086",
@@ -1280,7 +1280,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9636400006202166
+      "latency_ms": 3.860160000385804
     },
     {
       "id": "b21_087",
@@ -1294,7 +1294,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8409560002037324
+      "latency_ms": 3.747377999843593
     },
     {
       "id": "b21_088",
@@ -1308,7 +1308,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8604340006713755
+      "latency_ms": 3.8599590002377226
     },
     {
       "id": "b21_089",
@@ -1322,7 +1322,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8094209994596895
+      "latency_ms": 3.816044999894075
     },
     {
       "id": "b21_090",
@@ -1336,7 +1336,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8587670005654218
+      "latency_ms": 3.7230709999676037
     },
     {
       "id": "b21_091",
@@ -1350,7 +1350,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8404849992730306
+      "latency_ms": 3.7765490001220314
     },
     {
       "id": "b21_092",
@@ -1364,7 +1364,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.770359999180073
+      "latency_ms": 3.7782630001856887
     },
     {
       "id": "b21_093",
@@ -1378,7 +1378,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8729669995518634
+      "latency_ms": 3.7979339999765216
     },
     {
       "id": "b21_094",
@@ -1392,7 +1392,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.792497000176809
+      "latency_ms": 3.706789999796456
     },
     {
       "id": "b21_095",
@@ -1406,7 +1406,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.7661659998775576
+      "latency_ms": 3.899691999777133
     },
     {
       "id": "b21_096",
@@ -1420,7 +1420,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.857946000607626
+      "latency_ms": 3.935348000140948
     },
     {
       "id": "b21_097",
@@ -1434,7 +1434,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.844093000225257
+      "latency_ms": 3.6647030001404346
     },
     {
       "id": "b21_098",
@@ -1448,7 +1448,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.744536999874981
+      "latency_ms": 3.5763749997386185
     },
     {
       "id": "b21_099",
@@ -1462,7 +1462,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.820724999968661
+      "latency_ms": 3.7343680000958557
     },
     {
       "id": "b21_100",
@@ -1476,7 +1476,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.608427999504784
+      "latency_ms": 6.199619000199164
     },
     {
       "id": "b21_101",
@@ -1490,7 +1490,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9929289996507578
+      "latency_ms": 4.203011999834416
     },
     {
       "id": "b21_102",
@@ -1504,7 +1504,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8766389998272643
+      "latency_ms": 4.279807000330038
     },
     {
       "id": "b21_103",
@@ -1518,7 +1518,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.8851350000186358
+      "latency_ms": 4.221494999910647
     },
     {
       "id": "b21_104",
@@ -1532,7 +1532,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.09378799940896
+      "latency_ms": 4.07352100000935
     },
     {
       "id": "b21_105",
@@ -1546,7 +1546,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.963748000387568
+      "latency_ms": 4.096395000033226
     },
     {
       "id": "b21_106",
@@ -1560,7 +1560,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.05711099938344
+      "latency_ms": 4.226394999932381
     },
     {
       "id": "b21_107",
@@ -1574,7 +1574,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.160647000389872
+      "latency_ms": 4.134801999953197
     },
     {
       "id": "b21_108",
@@ -1588,7 +1588,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.371500000161177
+      "latency_ms": 4.078993999883096
     },
     {
       "id": "b21_109",
@@ -1602,7 +1602,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.4726429996444494
+      "latency_ms": 4.144221999922593
     },
     {
       "id": "b21_110",
@@ -1616,7 +1616,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.124436999518366
+      "latency_ms": 4.185642999800621
     },
     {
       "id": "b21_111",
@@ -1630,7 +1630,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.485702000238234
+      "latency_ms": 4.242605000399635
     },
     {
       "id": "b21_112",
@@ -1644,7 +1644,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.094206000445411
+      "latency_ms": 4.069490999881964
     },
     {
       "id": "b21_113",
@@ -1658,7 +1658,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.377561999717727
+      "latency_ms": 4.181944000265503
     },
     {
       "id": "b21_114",
@@ -1672,7 +1672,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.1232849998777965
+      "latency_ms": 4.168837000179337
     },
     {
       "id": "b21_115",
@@ -1686,7 +1686,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.97683900064294
+      "latency_ms": 4.170364000401605
     },
     {
       "id": "b21_116",
@@ -1700,7 +1700,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9762790001987014
+      "latency_ms": 4.100819999621308
     },
     {
       "id": "b21_117",
@@ -1714,7 +1714,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.016789000161225
+      "latency_ms": 4.018481999992218
     },
     {
       "id": "b21_118",
@@ -1728,7 +1728,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9800680006010225
+      "latency_ms": 3.976100999807386
     },
     {
       "id": "b21_119",
@@ -1742,7 +1742,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9533620001748204
+      "latency_ms": 3.962222000154725
     },
     {
       "id": "b21_120",
@@ -1756,7 +1756,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.9482199999838485
+      "latency_ms": 4.235241000060341
     },
     {
       "id": "b21_121",
@@ -1770,7 +1770,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.065420000188169
+      "latency_ms": 3.949850000026345
     },
     {
       "id": "b21_122",
@@ -1784,7 +1784,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.006293999736954
+      "latency_ms": 3.9445409997824754
     },
     {
       "id": "b21_123",
@@ -1798,7 +1798,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.026668999358662
+      "latency_ms": 4.134195999995427
     },
     {
       "id": "b21_124",
@@ -1812,7 +1812,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.043105999699037
+      "latency_ms": 4.219380999984423
     },
     {
       "id": "b21_125",
@@ -1826,7 +1826,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.7428670006629545
+      "latency_ms": 6.022973999733949
     },
     {
       "id": "b21_126",
@@ -1840,7 +1840,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.7587779999958
+      "latency_ms": 5.21742799992353
     },
     {
       "id": "b21_127",
@@ -1854,7 +1854,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.819497999960731
+      "latency_ms": 4.986100000223814
     },
     {
       "id": "b21_128",
@@ -1868,7 +1868,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.675895000218588
+      "latency_ms": 4.943609000292781
     },
     {
       "id": "b21_129",
@@ -1882,7 +1882,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.808811999282625
+      "latency_ms": 5.094963999908941
     },
     {
       "id": "b21_130",
@@ -1896,7 +1896,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.186340999898675
+      "latency_ms": 4.969224999967992
     },
     {
       "id": "b21_131",
@@ -1910,7 +1910,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.309531999955652
+      "latency_ms": 5.098590999750741
     },
     {
       "id": "b21_132",
@@ -1924,7 +1924,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.838554999878397
+      "latency_ms": 5.024236999815912
     },
     {
       "id": "b21_133",
@@ -1938,7 +1938,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.851249000239477
+      "latency_ms": 4.896655999800714
     },
     {
       "id": "b21_134",
@@ -1952,7 +1952,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.916109000077995
+      "latency_ms": 4.788003000157914
     },
     {
       "id": "b21_135",
@@ -1966,7 +1966,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.067516000053729
+      "latency_ms": 5.0760389999595645
     },
     {
       "id": "b21_136",
@@ -1980,7 +1980,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.864812000050733
+      "latency_ms": 4.903610999917873
     },
     {
       "id": "b21_137",
@@ -1994,7 +1994,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.223920000389626
+      "latency_ms": 5.062518000158889
     },
     {
       "id": "b21_138",
@@ -2008,7 +2008,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.009388999496878
+      "latency_ms": 4.752141000153642
     },
     {
       "id": "b21_139",
@@ -2022,7 +2022,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.856522999943991
+      "latency_ms": 4.871831999935239
     },
     {
       "id": "b21_140",
@@ -2036,7 +2036,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.883622999841464
+      "latency_ms": 4.864053999881435
     },
     {
       "id": "b21_141",
@@ -2050,7 +2050,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.93022499995277
+      "latency_ms": 4.857854999954725
     },
     {
       "id": "b21_142",
@@ -2064,7 +2064,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.84863099973154
+      "latency_ms": 4.8887319999266765
     },
     {
       "id": "b21_143",
@@ -2078,7 +2078,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.871435000495694
+      "latency_ms": 4.940050999721279
     },
     {
       "id": "b21_144",
@@ -2092,7 +2092,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.755930000101216
+      "latency_ms": 5.159379999895464
     },
     {
       "id": "b21_145",
@@ -2106,7 +2106,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.712283999651845
+      "latency_ms": 5.027232000429649
     },
     {
       "id": "b21_146",
@@ -2120,7 +2120,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.780836999998428
+      "latency_ms": 5.00204699983442
     },
     {
       "id": "b21_147",
@@ -2134,7 +2134,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.676413000197499
+      "latency_ms": 5.125477999627037
     },
     {
       "id": "b21_148",
@@ -2148,7 +2148,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.66265300019586
+      "latency_ms": 5.219500999828597
     },
     {
       "id": "b21_149",
@@ -2162,7 +2162,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.959786000654276
+      "latency_ms": 5.09046999968632
     },
     {
       "id": "b21_150",
@@ -2176,7 +2176,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.848264000022027
+      "latency_ms": 3.2100170001285733
     },
     {
       "id": "b21_151",
@@ -2190,7 +2190,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.4775870006124023
+      "latency_ms": 2.6486269998713396
     },
     {
       "id": "b21_152",
@@ -2204,7 +2204,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.5420130004931707
+      "latency_ms": 2.684468000097695
     },
     {
       "id": "b21_153",
@@ -2218,7 +2218,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.548127000409295
+      "latency_ms": 2.572881999640231
     },
     {
       "id": "b21_154",
@@ -2232,7 +2232,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.75637499998993
+      "latency_ms": 2.5367339999320393
     },
     {
       "id": "b21_155",
@@ -2246,7 +2246,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.504552999198495
+      "latency_ms": 2.5764289998733148
     },
     {
       "id": "b21_156",
@@ -2260,7 +2260,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.7846930006489856
+      "latency_ms": 2.5473549999333045
     },
     {
       "id": "b21_157",
@@ -2274,7 +2274,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.602442999886989
+      "latency_ms": 2.545696000197495
     },
     {
       "id": "b21_158",
@@ -2288,7 +2288,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.4465609994877013
+      "latency_ms": 2.5503800002297794
     },
     {
       "id": "b21_159",
@@ -2302,7 +2302,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.475950999723864
+      "latency_ms": 2.6326329998482834
     },
     {
       "id": "b21_160",
@@ -2316,7 +2316,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.5792500000534346
+      "latency_ms": 2.6134570002795954
     },
     {
       "id": "b21_161",
@@ -2330,7 +2330,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.7734639998016064
+      "latency_ms": 2.570527999978367
     },
     {
       "id": "b21_162",
@@ -2344,7 +2344,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.633319000779011
+      "latency_ms": 2.541451000070083
     },
     {
       "id": "b21_163",
@@ -2358,7 +2358,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.4818419997245655
+      "latency_ms": 2.622206000069127
     },
     {
       "id": "b21_164",
@@ -2372,7 +2372,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.4898009996832116
+      "latency_ms": 2.5669439996818255
     },
     {
       "id": "b21_165",
@@ -2386,7 +2386,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.4920349997046287
+      "latency_ms": 2.608923000025243
     },
     {
       "id": "b21_166",
@@ -2400,7 +2400,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8794229992854525
+      "latency_ms": 2.568827999766654
     },
     {
       "id": "b21_167",
@@ -2414,7 +2414,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.5944139999628533
+      "latency_ms": 2.5468939998063433
     },
     {
       "id": "b21_168",
@@ -2428,7 +2428,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.254440000091563
+      "latency_ms": 2.5202550000358315
     },
     {
       "id": "b21_169",
@@ -2442,7 +2442,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.595633000055386
+      "latency_ms": 2.5213640001311433
     },
     {
       "id": "b21_170",
@@ -2456,7 +2456,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.309810000449943
+      "latency_ms": 4.265350999958173
     },
     {
       "id": "b21_171",
@@ -2470,7 +2470,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.953168000203732
+      "latency_ms": 2.805056999932276
     },
     {
       "id": "b21_172",
@@ -2484,7 +2484,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8368889998091618
+      "latency_ms": 2.716239000164933
     },
     {
       "id": "b21_173",
@@ -2498,7 +2498,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9420199998639873
+      "latency_ms": 2.7868719998878078
     },
     {
       "id": "b21_174",
@@ -2512,7 +2512,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8121010000177193
+      "latency_ms": 2.886312000100588
     },
     {
       "id": "b21_175",
@@ -2526,7 +2526,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.1068890002643457
+      "latency_ms": 3.1459560000257625
     },
     {
       "id": "b21_176",
@@ -2540,7 +2540,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.7883610000571935
+      "latency_ms": 3.0130280001685605
     },
     {
       "id": "b21_177",
@@ -2554,7 +2554,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.7338800000507035
+      "latency_ms": 2.7689889998328
     },
     {
       "id": "b21_178",
@@ -2568,7 +2568,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9006810000282712
+      "latency_ms": 2.6953480000884156
     },
     {
       "id": "b21_179",
@@ -2582,7 +2582,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.813903000060236
+      "latency_ms": 2.7594620000854775
     },
     {
       "id": "b21_180",
@@ -2596,7 +2596,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.7310830000715214
+      "latency_ms": 2.9101169998284604
     },
     {
       "id": "b21_181",
@@ -2610,7 +2610,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.7227709997532656
+      "latency_ms": 2.7654919999804406
     },
     {
       "id": "b21_182",
@@ -2624,7 +2624,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.783004999400873
+      "latency_ms": 2.690464999886899
     },
     {
       "id": "b21_183",
@@ -2638,7 +2638,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.7800480002042605
+      "latency_ms": 2.760067000053823
     },
     {
       "id": "b21_184",
@@ -2652,7 +2652,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.3541439997861744
+      "latency_ms": 2.9091260003042407
     },
     {
       "id": "b21_185",
@@ -2666,7 +2666,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.927123000517895
+      "latency_ms": 2.7825850002045627
     },
     {
       "id": "b21_186",
@@ -2680,7 +2680,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.80901200039807
+      "latency_ms": 2.748435000285099
     },
     {
       "id": "b21_187",
@@ -2694,7 +2694,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9114579992892686
+      "latency_ms": 2.754954000010912
     },
     {
       "id": "b21_188",
@@ -2708,7 +2708,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.846751000106451
+      "latency_ms": 2.784220999728859
     },
     {
       "id": "b21_189",
@@ -2722,7 +2722,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.775420999569178
+      "latency_ms": 2.7284640000289073
     },
     {
       "id": "b21_190",
@@ -2736,7 +2736,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.767602999891096
+      "latency_ms": 4.275667000001704
     },
     {
       "id": "b21_191",
@@ -2750,7 +2750,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.2046779997472186
+      "latency_ms": 3.0021279999346007
     },
     {
       "id": "b21_192",
@@ -2764,7 +2764,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.342811000038637
+      "latency_ms": 3.0551439999726426
     },
     {
       "id": "b21_193",
@@ -2778,7 +2778,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.1314199995904346
+      "latency_ms": 2.942431000064971
     },
     {
       "id": "b21_194",
@@ -2792,7 +2792,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.047121000236075
+      "latency_ms": 2.9362530003709253
     },
     {
       "id": "b21_195",
@@ -2806,7 +2806,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.1660189997637644
+      "latency_ms": 3.0396370002563344
     },
     {
       "id": "b21_196",
@@ -2820,7 +2820,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9348470006880234
+      "latency_ms": 3.025198999694112
     },
     {
       "id": "b21_197",
@@ -2834,7 +2834,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.902721999817004
+      "latency_ms": 3.0928280002626707
     },
     {
       "id": "b21_198",
@@ -2848,7 +2848,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.958862999548728
+      "latency_ms": 3.0127769996397546
     },
     {
       "id": "b21_199",
@@ -2862,7 +2862,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.997157000208972
+      "latency_ms": 2.874163999877055
     },
     {
       "id": "b21_200",
@@ -2876,7 +2876,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.8417430001136381
+      "latency_ms": 1.8283740000697435
     },
     {
       "id": "b21_201",
@@ -2890,7 +2890,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.570525000715861
+      "latency_ms": 1.5974799998730305
     },
     {
       "id": "b21_202",
@@ -2904,7 +2904,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.515822000328626
+      "latency_ms": 1.5382389997284918
     },
     {
       "id": "b21_203",
@@ -2918,7 +2918,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.534266000817297
+      "latency_ms": 1.8140530000891886
     },
     {
       "id": "b21_204",
@@ -2932,7 +2932,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.5199370000118506
+      "latency_ms": 1.6142800000125135
     },
     {
       "id": "b21_205",
@@ -2946,7 +2946,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.4972809995015268
+      "latency_ms": 1.6322239998771693
     },
     {
       "id": "b21_206",
@@ -2960,7 +2960,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.4862420002828003
+      "latency_ms": 1.7394410001543292
     },
     {
       "id": "b21_207",
@@ -2974,7 +2974,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.475772999583569
+      "latency_ms": 1.6174289999071334
     },
     {
       "id": "b21_208",
@@ -2988,7 +2988,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.5227240000967868
+      "latency_ms": 1.754127000367589
     },
     {
       "id": "b21_209",
@@ -3002,7 +3002,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.5042889999676845
+      "latency_ms": 1.57254500027193
     },
     {
       "id": "b21_210",
@@ -3016,7 +3016,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.5092109997567604
+      "latency_ms": 1.5071530001478095
     },
     {
       "id": "b21_211",
@@ -3030,7 +3030,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.4780639994569356
+      "latency_ms": 1.542472999972233
     },
     {
       "id": "b21_212",
@@ -3044,7 +3044,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.4853869997750735
+      "latency_ms": 1.4997030002632528
     },
     {
       "id": "b21_213",
@@ -3058,7 +3058,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.4854370001557982
+      "latency_ms": 1.656505000028119
     },
     {
       "id": "b21_214",
@@ -3072,7 +3072,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.4862320003885543
+      "latency_ms": 1.5693199998167984
     },
     {
       "id": "b21_215",
@@ -3086,7 +3086,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.4997629996287287
+      "latency_ms": 1.5730730001450866
     },
     {
       "id": "b21_216",
@@ -3100,7 +3100,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.4944829999876674
+      "latency_ms": 1.5784629999870958
     },
     {
       "id": "b21_217",
@@ -3114,7 +3114,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.478938000218477
+      "latency_ms": 1.7061869998542534
     },
     {
       "id": "b21_218",
@@ -3128,7 +3128,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.472613999794703
+      "latency_ms": 1.6394839999520627
     },
     {
       "id": "b21_219",
@@ -3142,7 +3142,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 1.479856000514701
+      "latency_ms": 1.7087060000449128
     },
     {
       "id": "b21_220",
@@ -3156,7 +3156,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.326705999526894
+      "latency_ms": 6.661440999778279
     },
     {
       "id": "b21_221",
@@ -3170,7 +3170,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.641470999762532
+      "latency_ms": 6.1312630000429635
     },
     {
       "id": "b21_222",
@@ -3184,7 +3184,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.628216000332031
+      "latency_ms": 5.984237000120629
     },
     {
       "id": "b21_223",
@@ -3198,7 +3198,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.025656000019808
+      "latency_ms": 5.988097000226844
     },
     {
       "id": "b21_224",
@@ -3212,7 +3212,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.842278999807604
+      "latency_ms": 6.118603999766492
     },
     {
       "id": "b21_225",
@@ -3226,7 +3226,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.139039999652596
+      "latency_ms": 6.121280000115803
     },
     {
       "id": "b21_226",
@@ -3240,7 +3240,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.838127999595599
+      "latency_ms": 6.0850270001537865
     },
     {
       "id": "b21_227",
@@ -3254,7 +3254,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.963992000033613
+      "latency_ms": 6.028856000284577
     },
     {
       "id": "b21_228",
@@ -3268,7 +3268,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.874501999642234
+      "latency_ms": 6.226289000096585
     },
     {
       "id": "b21_229",
@@ -3282,7 +3282,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.060030000298866
+      "latency_ms": 6.107323999913206
     },
     {
       "id": "b21_230",
@@ -3296,7 +3296,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.8052419999512495
+      "latency_ms": 5.893099999866536
     },
     {
       "id": "b21_231",
@@ -3310,7 +3310,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.992729999888979
+      "latency_ms": 5.990354000005027
     },
     {
       "id": "b21_232",
@@ -3324,7 +3324,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.872255999747722
+      "latency_ms": 5.955969000297046
     },
     {
       "id": "b21_233",
@@ -3338,7 +3338,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.934128000262717
+      "latency_ms": 6.083449000016117
     },
     {
       "id": "b21_234",
@@ -3352,7 +3352,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.949680000412627
+      "latency_ms": 6.017952999627596
     },
     {
       "id": "b21_235",
@@ -3366,7 +3366,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.276256000091962
+      "latency_ms": 6.143354999949224
     },
     {
       "id": "b21_236",
@@ -3380,7 +3380,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.846523000400339
+      "latency_ms": 6.080697000015789
     },
     {
       "id": "b21_237",
@@ -3394,7 +3394,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.888792000405374
+      "latency_ms": 6.123690000094939
     },
     {
       "id": "b21_238",
@@ -3408,7 +3408,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.710908999390085
+      "latency_ms": 6.149626000024
     },
     {
       "id": "b21_239",
@@ -3422,7 +3422,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.710700000236102
+      "latency_ms": 6.101319999743282
     },
     {
       "id": "b21_240",
@@ -3436,7 +3436,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.093263000366278
+      "latency_ms": 6.146743000044808
     },
     {
       "id": "b21_241",
@@ -3450,7 +3450,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.914677999498963
+      "latency_ms": 5.982711000342533
     },
     {
       "id": "b21_242",
@@ -3464,7 +3464,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.816988000333367
+      "latency_ms": 6.0707769998771255
     },
     {
       "id": "b21_243",
@@ -3478,7 +3478,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.783485999927507
+      "latency_ms": 6.584475999716233
     },
     {
       "id": "b21_244",
@@ -3492,7 +3492,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.7165779999195365
+      "latency_ms": 6.1017829998490924
     },
     {
       "id": "b21_245",
@@ -3506,7 +3506,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.7794910007942235
+      "latency_ms": 6.199556999945344
     },
     {
       "id": "b21_246",
@@ -3520,7 +3520,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.816050999783329
+      "latency_ms": 6.175448999783839
     },
     {
       "id": "b21_247",
@@ -3534,7 +3534,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.699413000002096
+      "latency_ms": 5.960776999927475
     },
     {
       "id": "b21_248",
@@ -3548,7 +3548,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.860369999936665
+      "latency_ms": 5.9389960001681175
     },
     {
       "id": "b21_249",
@@ -3562,7 +3562,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.751190999944811
+      "latency_ms": 6.000266000228294
     },
     {
       "id": "b21_250",
@@ -3576,7 +3576,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.962813000223832
+      "latency_ms": 6.143188999885751
     },
     {
       "id": "b21_251",
@@ -3590,7 +3590,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.901565999920422
+      "latency_ms": 6.0372259999894595
     },
     {
       "id": "b21_252",
@@ -3604,7 +3604,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.822629999784112
+      "latency_ms": 5.971117999706621
     },
     {
       "id": "b21_253",
@@ -3618,7 +3618,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.797637999421568
+      "latency_ms": 5.982938000215654
     },
     {
       "id": "b21_254",
@@ -3632,7 +3632,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.723303999729978
+      "latency_ms": 6.118781000168383
     },
     {
       "id": "b21_255",
@@ -3646,7 +3646,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.785989000287373
+      "latency_ms": 6.0509840000122495
     },
     {
       "id": "b21_256",
@@ -3660,7 +3660,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.796551999992516
+      "latency_ms": 6.001081000249542
     },
     {
       "id": "b21_257",
@@ -3674,7 +3674,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.852823000168428
+      "latency_ms": 6.093050999879779
     },
     {
       "id": "b21_258",
@@ -3688,7 +3688,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.948734999947192
+      "latency_ms": 5.977533000077528
     },
     {
       "id": "b21_259",
@@ -3702,7 +3702,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.87158000053023
+      "latency_ms": 6.034353999893938
     },
     {
       "id": "b21_260",
@@ -3716,7 +3716,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 12.323293000008562
+      "latency_ms": 11.556072000075801
     },
     {
       "id": "b21_261",
@@ -3730,7 +3730,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.468287000345299
+      "latency_ms": 9.31250000030559
     },
     {
       "id": "b21_262",
@@ -3744,7 +3744,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.986384999843722
+      "latency_ms": 8.996949999982462
     },
     {
       "id": "b21_263",
@@ -3758,7 +3758,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.005806000459415
+      "latency_ms": 8.973986999990302
     },
     {
       "id": "b21_264",
@@ -3772,7 +3772,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.070305999557604
+      "latency_ms": 8.956520000083401
     },
     {
       "id": "b21_265",
@@ -3786,7 +3786,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.369656999297149
+      "latency_ms": 9.077236999928573
     },
     {
       "id": "b21_266",
@@ -3800,7 +3800,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.921769999687967
+      "latency_ms": 9.226131000104942
     },
     {
       "id": "b21_267",
@@ -3814,7 +3814,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.89766399996006
+      "latency_ms": 9.072254000329849
     },
     {
       "id": "b21_268",
@@ -3828,7 +3828,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.015264000481693
+      "latency_ms": 9.039264999955776
     },
     {
       "id": "b21_269",
@@ -3842,7 +3842,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.98765599959006
+      "latency_ms": 9.154014999694482
     },
     {
       "id": "b21_270",
@@ -3856,7 +3856,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.212531000230229
+      "latency_ms": 9.154333999958908
     },
     {
       "id": "b21_271",
@@ -3870,7 +3870,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.113812999203219
+      "latency_ms": 9.153348999916489
     },
     {
       "id": "b21_272",
@@ -3884,7 +3884,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.164293999674555
+      "latency_ms": 9.115004999785015
     },
     {
       "id": "b21_273",
@@ -3898,7 +3898,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.884320000106527
+      "latency_ms": 9.072557999843411
     },
     {
       "id": "b21_274",
@@ -3912,7 +3912,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.866392000527412
+      "latency_ms": 8.90581400017254
     },
     {
       "id": "b21_275",
@@ -3926,7 +3926,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.119292999457684
+      "latency_ms": 9.310261999871727
     },
     {
       "id": "b21_276",
@@ -3940,7 +3940,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.989715999632608
+      "latency_ms": 9.034838999923522
     },
     {
       "id": "b21_277",
@@ -3954,7 +3954,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.614286999545584
+      "latency_ms": 8.926602999963507
     },
     {
       "id": "b21_278",
@@ -3968,7 +3968,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.75942600032431
+      "latency_ms": 9.056942999905004
     },
     {
       "id": "b21_279",
@@ -3982,7 +3982,7 @@
       "intent": "reasoned_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.917982000639313
+      "latency_ms": 9.071960000255785
     },
     {
       "id": "b21_280",
@@ -3996,7 +3996,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.4681829999244655
+      "latency_ms": 6.578716000149143
     },
     {
       "id": "b21_281",
@@ -4010,7 +4010,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.838546000428323
+      "latency_ms": 4.872210000030464
     },
     {
       "id": "b21_282",
@@ -4024,7 +4024,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.865304999839282
+      "latency_ms": 4.867811000167421
     },
     {
       "id": "b21_283",
@@ -4038,7 +4038,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.712220999863348
+      "latency_ms": 4.888081999979477
     },
     {
       "id": "b21_284",
@@ -4052,7 +4052,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.86424500013527
+      "latency_ms": 4.817347999960475
     },
     {
       "id": "b21_285",
@@ -4066,7 +4066,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.70221900013712
+      "latency_ms": 4.8316170000362035
     },
     {
       "id": "b21_286",
@@ -4080,7 +4080,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.822001999855274
+      "latency_ms": 5.562254999858851
     },
     {
       "id": "b21_287",
@@ -4094,7 +4094,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.881254000792978
+      "latency_ms": 4.7086169997783145
     },
     {
       "id": "b21_288",
@@ -4108,7 +4108,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.7789749996809405
+      "latency_ms": 5.089058000066871
     },
     {
       "id": "b21_289",
@@ -4122,7 +4122,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.800907000571897
+      "latency_ms": 4.807370999969862
     },
     {
       "id": "b21_290",
@@ -4136,7 +4136,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.64585099962278
+      "latency_ms": 4.733633000341797
     },
     {
       "id": "b21_291",
@@ -4150,7 +4150,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.828394000469416
+      "latency_ms": 4.821271999844612
     },
     {
       "id": "b21_292",
@@ -4164,7 +4164,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.675227000006998
+      "latency_ms": 4.776057000071887
     },
     {
       "id": "b21_293",
@@ -4178,7 +4178,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.71379899954627
+      "latency_ms": 4.862746000071638
     },
     {
       "id": "b21_294",
@@ -4192,7 +4192,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.641667000214511
+      "latency_ms": 5.081681000319804
     },
     {
       "id": "b21_295",
@@ -4206,7 +4206,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.800507999789261
+      "latency_ms": 4.817093999918143
     },
     {
       "id": "b21_296",
@@ -4220,7 +4220,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.644650000045658
+      "latency_ms": 4.855144999964978
     },
     {
       "id": "b21_297",
@@ -4234,7 +4234,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.6760830000494025
+      "latency_ms": 4.87349400009407
     },
     {
       "id": "b21_298",
@@ -4248,7 +4248,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.6499440004481585
+      "latency_ms": 4.904552999960288
     },
     {
       "id": "b21_299",
@@ -4262,7 +4262,7 @@
       "intent": "word_problem_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.642675000468444
+      "latency_ms": 4.809880999800953
     },
     {
       "id": "b21_300",
@@ -4322,7 +4322,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.158295999739494
+      "latency_ms": 6.165793000036501
     },
     {
       "id": "b21_301",
@@ -4387,7 +4387,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.42351899962523
+      "latency_ms": 3.4880929997598287
     },
     {
       "id": "b21_302",
@@ -4447,7 +4447,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9699429996981053
+      "latency_ms": 3.150625000216678
     },
     {
       "id": "b21_303",
@@ -4510,7 +4510,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0503059997499804
+      "latency_ms": 3.1051129999468685
     },
     {
       "id": "b21_304",
@@ -4570,7 +4570,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9657250006493996
+      "latency_ms": 2.925711000443698
     },
     {
       "id": "b21_305",
@@ -4637,7 +4637,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.151036999952339
+      "latency_ms": 3.0878830002620816
     },
     {
       "id": "b21_306",
@@ -4697,7 +4697,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.868010000383947
+      "latency_ms": 3.0215040001166926
     },
     {
       "id": "b21_307",
@@ -4769,7 +4769,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0553269998563337
+      "latency_ms": 3.0759340002077806
     },
     {
       "id": "b21_308",
@@ -4829,7 +4829,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8585609998117434
+      "latency_ms": 2.946489999885671
     },
     {
       "id": "b21_309",
@@ -4900,7 +4900,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0286050005088327
+      "latency_ms": 3.1197589996736497
     },
     {
       "id": "b21_310",
@@ -4960,7 +4960,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8520209998532664
+      "latency_ms": 2.9325860000426474
     },
     {
       "id": "b21_311",
@@ -5025,7 +5025,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.060099000322225
+      "latency_ms": 3.0629279999629944
     },
     {
       "id": "b21_312",
@@ -5085,7 +5085,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.98453600044013
+      "latency_ms": 2.924490000168589
     },
     {
       "id": "b21_313",
@@ -5148,7 +5148,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.052114999263722
+      "latency_ms": 3.0625130002590595
     },
     {
       "id": "b21_314",
@@ -5208,7 +5208,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8709780008284724
+      "latency_ms": 2.814480000324693
     },
     {
       "id": "b21_315",
@@ -5275,7 +5275,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0653809999421355
+      "latency_ms": 2.9456120000759256
     },
     {
       "id": "b21_316",
@@ -5335,7 +5335,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8976160001548124
+      "latency_ms": 2.8108209999118117
     },
     {
       "id": "b21_317",
@@ -5407,7 +5407,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0244259996834444
+      "latency_ms": 3.1000459998722363
     },
     {
       "id": "b21_318",
@@ -5467,7 +5467,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9164540001147543
+      "latency_ms": 2.9398790002233
     },
     {
       "id": "b21_319",
@@ -5538,7 +5538,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.01640099951328
+      "latency_ms": 3.0842730002405006
     },
     {
       "id": "b21_320",
@@ -5598,7 +5598,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8600750001714914
+      "latency_ms": 2.8878780003651627
     },
     {
       "id": "b21_321",
@@ -5663,7 +5663,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0294060006781365
+      "latency_ms": 3.0437460000030114
     },
     {
       "id": "b21_322",
@@ -5723,7 +5723,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.88236100004724
+      "latency_ms": 2.982057999815879
     },
     {
       "id": "b21_323",
@@ -5786,7 +5786,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0110570005490445
+      "latency_ms": 3.0745540002499183
     },
     {
       "id": "b21_324",
@@ -5846,7 +5846,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.7902379997613025
+      "latency_ms": 2.9082309997647826
     },
     {
       "id": "b21_325",
@@ -5913,7 +5913,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.1610360001650406
+      "latency_ms": 3.3468430001448723
     },
     {
       "id": "b21_326",
@@ -5973,7 +5973,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8262759997232934
+      "latency_ms": 2.9076130003886647
     },
     {
       "id": "b21_327",
@@ -6045,7 +6045,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.009256000041205
+      "latency_ms": 3.088330000082351
     },
     {
       "id": "b21_328",
@@ -6105,7 +6105,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8080290003345
+      "latency_ms": 2.936891999979707
     },
     {
       "id": "b21_329",
@@ -6176,7 +6176,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.951153000140039
+      "latency_ms": 3.109042999767553
     },
     {
       "id": "b21_330",
@@ -6236,7 +6236,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.772531000118761
+      "latency_ms": 2.8971390001970576
     },
     {
       "id": "b21_331",
@@ -6301,7 +6301,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.97270299961383
+      "latency_ms": 3.0921879997549695
     },
     {
       "id": "b21_332",
@@ -6361,7 +6361,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9323260005185148
+      "latency_ms": 3.0167270001584257
     },
     {
       "id": "b21_333",
@@ -6424,7 +6424,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0365159991561086
+      "latency_ms": 3.0766019999646232
     },
     {
       "id": "b21_334",
@@ -6484,7 +6484,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9002460005358444
+      "latency_ms": 2.953796999918268
     },
     {
       "id": "b21_335",
@@ -6551,7 +6551,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.1200080002236064
+      "latency_ms": 3.058254000279703
     },
     {
       "id": "b21_336",
@@ -6611,7 +6611,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9437749999488005
+      "latency_ms": 2.87803699984579
     },
     {
       "id": "b21_337",
@@ -6683,7 +6683,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0542510003215284
+      "latency_ms": 3.0990899999778776
     },
     {
       "id": "b21_338",
@@ -6743,7 +6743,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9053799999019247
+      "latency_ms": 2.9592350001621526
     },
     {
       "id": "b21_339",
@@ -6814,7 +6814,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.010286999597156
+      "latency_ms": 3.049572000236367
     },
     {
       "id": "b21_340",
@@ -6874,7 +6874,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.828704999956244
+      "latency_ms": 2.9043009999440983
     },
     {
       "id": "b21_341",
@@ -6939,7 +6939,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.025173999958497
+      "latency_ms": 3.0556159999832744
     },
     {
       "id": "b21_342",
@@ -6999,7 +6999,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.0966350004746346
+      "latency_ms": 2.8623960001823434
     },
     {
       "id": "b21_343",
@@ -7062,7 +7062,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.127052999843727
+      "latency_ms": 2.921001999766304
     },
     {
       "id": "b21_344",
@@ -7122,7 +7122,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9186229994593305
+      "latency_ms": 2.7946969998993154
     },
     {
       "id": "b21_345",
@@ -7189,7 +7189,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.061027000512695
+      "latency_ms": 2.968333999888273
     },
     {
       "id": "b21_346",
@@ -7249,7 +7249,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.8604609997273656
+      "latency_ms": 2.8088009999009955
     },
     {
       "id": "b21_347",
@@ -7321,7 +7321,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.2527849998587044
+      "latency_ms": 3.001210000093124
     },
     {
       "id": "b21_348",
@@ -7381,7 +7381,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9375579997577006
+      "latency_ms": 2.8643109999393346
     },
     {
       "id": "b21_349",
@@ -7452,7 +7452,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9913689995737514
+      "latency_ms": 2.9830649996256398
     },
     {
       "id": "b21_350",
@@ -7526,7 +7526,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 42.780281999512226
+      "latency_ms": 43.1811819998984
     },
     {
       "id": "b21_351",
@@ -7600,7 +7600,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.437017000076594
+      "latency_ms": 5.729557999984536
     },
     {
       "id": "b21_352",
@@ -7674,7 +7674,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.244543000117119
+      "latency_ms": 5.337123000117572
     },
     {
       "id": "b21_353",
@@ -7748,7 +7748,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.204289000175777
+      "latency_ms": 5.306428000039887
     },
     {
       "id": "b21_354",
@@ -7822,7 +7822,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.22088499928941
+      "latency_ms": 5.325877000359469
     },
     {
       "id": "b21_355",
@@ -7896,7 +7896,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.140908000612399
+      "latency_ms": 5.31705299999885
     },
     {
       "id": "b21_356",
@@ -7970,7 +7970,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.164788000001863
+      "latency_ms": 5.215050000060728
     },
     {
       "id": "b21_357",
@@ -8044,7 +8044,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.17283099998167
+      "latency_ms": 5.142380000052071
     },
     {
       "id": "b21_358",
@@ -8118,7 +8118,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.233648999819707
+      "latency_ms": 5.2556700002242
     },
     {
       "id": "b21_359",
@@ -8192,7 +8192,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.487731999892276
+      "latency_ms": 5.1759440002570045
     },
     {
       "id": "b21_360",
@@ -8266,7 +8266,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.245418999948015
+      "latency_ms": 5.155367000043043
     },
     {
       "id": "b21_361",
@@ -8340,7 +8340,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.166171999917424
+      "latency_ms": 5.215848999796435
     },
     {
       "id": "b21_362",
@@ -8414,7 +8414,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.147462999957497
+      "latency_ms": 5.355530000088038
     },
     {
       "id": "b21_363",
@@ -8488,7 +8488,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.201576000217756
+      "latency_ms": 5.500296000263916
     },
     {
       "id": "b21_364",
@@ -8562,7 +8562,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.101464000290434
+      "latency_ms": 5.32044399960796
     },
     {
       "id": "b21_365",
@@ -8636,7 +8636,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.094416000247293
+      "latency_ms": 5.280709000089701
     },
     {
       "id": "b21_366",
@@ -8710,7 +8710,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.0512400002844515
+      "latency_ms": 5.253348000223923
     },
     {
       "id": "b21_367",
@@ -8784,7 +8784,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.057375999967917
+      "latency_ms": 5.291186999784259
     },
     {
       "id": "b21_368",
@@ -8858,7 +8858,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.978869999831659
+      "latency_ms": 5.41581400011637
     },
     {
       "id": "b21_369",
@@ -8932,7 +8932,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.075568000393105
+      "latency_ms": 5.283349999899656
     },
     {
       "id": "b21_370",
@@ -8999,7 +8999,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.010289000390912
+      "latency_ms": 7.1408389999305655
     },
     {
       "id": "b21_371",
@@ -9066,7 +9066,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.7524300000295625
+      "latency_ms": 5.876724999779981
     },
     {
       "id": "b21_372",
@@ -9131,7 +9131,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.9288000002197805
+      "latency_ms": 5.755483000029926
     },
     {
       "id": "b21_373",
@@ -9196,7 +9196,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.625194999993255
+      "latency_ms": 5.680574000052729
     },
     {
       "id": "b21_374",
@@ -9260,7 +9260,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.581780999818875
+      "latency_ms": 5.7434780001131
     },
     {
       "id": "b21_375",
@@ -9322,7 +9322,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.879958000150509
+      "latency_ms": 5.701999000393698
     },
     {
       "id": "b21_376",
@@ -9384,7 +9384,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.547527999624435
+      "latency_ms": 5.48622999986037
     },
     {
       "id": "b21_377",
@@ -9446,7 +9446,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.622536999908334
+      "latency_ms": 5.478203999700781
     },
     {
       "id": "b21_378",
@@ -9506,7 +9506,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.532655999559211
+      "latency_ms": 5.463758000132657
     },
     {
       "id": "b21_379",
@@ -9566,7 +9566,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.667662999258027
+      "latency_ms": 5.538275999697362
     },
     {
       "id": "b21_380",
@@ -9626,7 +9626,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.599463000180549
+      "latency_ms": 5.720621999898867
     },
     {
       "id": "b21_381",
@@ -9686,7 +9686,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.571525999584992
+      "latency_ms": 5.539441000109946
     },
     {
       "id": "b21_382",
@@ -9746,7 +9746,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.612368999209139
+      "latency_ms": 5.637169000237918
     },
     {
       "id": "b21_383",
@@ -9806,7 +9806,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.558549999477691
+      "latency_ms": 5.595040000116569
     },
     {
       "id": "b21_384",
@@ -9866,7 +9866,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.562256000303023
+      "latency_ms": 5.612640999970608
     },
     {
       "id": "b21_385",
@@ -9883,7 +9883,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.614984999439912
+      "latency_ms": 8.734049000395316
     },
     {
       "id": "b21_386",
@@ -9900,7 +9900,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.562017000556807
+      "latency_ms": 5.762430000231689
     },
     {
       "id": "b21_387",
@@ -9917,7 +9917,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.492080999829341
+      "latency_ms": 5.596518999936961
     },
     {
       "id": "b21_388",
@@ -9934,7 +9934,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.6579990005047875
+      "latency_ms": 5.571730000156094
     },
     {
       "id": "b21_389",
@@ -9951,7 +9951,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.508557000212022
+      "latency_ms": 5.6646319999345
     },
     {
       "id": "b21_390",
@@ -9968,7 +9968,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.493705999469967
+      "latency_ms": 5.559531000017159
     },
     {
       "id": "b21_391",
@@ -9985,7 +9985,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.541813000490947
+      "latency_ms": 5.428753999694891
     },
     {
       "id": "b21_392",
@@ -10002,7 +10002,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.518599999959406
+      "latency_ms": 5.620946999897569
     },
     {
       "id": "b21_393",
@@ -10019,7 +10019,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.520140000044194
+      "latency_ms": 5.586523000147281
     },
     {
       "id": "b21_394",
@@ -10036,7 +10036,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.56107600004907
+      "latency_ms": 5.517914999927598
     },
     {
       "id": "b21_395",
@@ -10053,7 +10053,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.513909000001149
+      "latency_ms": 5.503338999915286
     },
     {
       "id": "b21_396",
@@ -10070,7 +10070,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.591404999904626
+      "latency_ms": 5.540753999866865
     },
     {
       "id": "b21_397",
@@ -10087,7 +10087,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.5730470003254595
+      "latency_ms": 5.908615000407735
     },
     {
       "id": "b21_398",
@@ -10104,7 +10104,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.56317299924558
+      "latency_ms": 5.6077029998959915
     },
     {
       "id": "b21_399",
@@ -10121,7 +10121,7 @@
       "intent": "coding_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.5783219995646505
+      "latency_ms": 5.727015000047686
     },
     {
       "id": "b21_400",
@@ -10137,7 +10137,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 17.206915000315348
+      "latency_ms": 17.581287000211887
     },
     {
       "id": "b21_401",
@@ -10153,7 +10153,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.34253500054183
+      "latency_ms": 9.354478000204836
     },
     {
       "id": "b21_402",
@@ -10169,7 +10169,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 10.425275999295991
+      "latency_ms": 10.655434999989666
     },
     {
       "id": "b21_403",
@@ -10185,7 +10185,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.389442000407143
+      "latency_ms": 8.594021000135399
     },
     {
       "id": "b21_404",
@@ -10201,7 +10201,7 @@
       "intent": "reasoned_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4534.944042999996
+      "latency_ms": 3661.328419000256
     },
     {
       "id": "b21_405",
@@ -10217,7 +10217,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 60.36139699972409
+      "latency_ms": 38.7147679998634
     },
     {
       "id": "b21_406",
@@ -10233,7 +10233,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.422677999988082
+      "latency_ms": 8.33420999970258
     },
     {
       "id": "b21_407",
@@ -10249,7 +10249,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.075699000073655
+      "latency_ms": 30.21094499990795
     },
     {
       "id": "b21_408",
@@ -10265,7 +10265,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.692594999753055
+      "latency_ms": 8.06176299965955
     },
     {
       "id": "b21_409",
@@ -10281,7 +10281,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.39946100020461
+      "latency_ms": 7.853077000163466
     },
     {
       "id": "b21_410",
@@ -10297,7 +10297,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.515096999464731
+      "latency_ms": 6.63937099989198
     },
     {
       "id": "b21_411",
@@ -10313,7 +10313,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.832932000383153
+      "latency_ms": 8.156586000040988
     },
     {
       "id": "b21_412",
@@ -10329,7 +10329,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.842435999918962
+      "latency_ms": 7.913355999789928
     },
     {
       "id": "b21_413",
@@ -10345,7 +10345,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.663932000468776
+      "latency_ms": 7.571343999643432
     },
     {
       "id": "b21_414",
@@ -10361,7 +10361,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.209795000060694
+      "latency_ms": 9.933066000030522
     },
     {
       "id": "b21_415",
@@ -10377,7 +10377,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 9.385977999954775
+      "latency_ms": 9.557726999901206
     },
     {
       "id": "b21_416",
@@ -10393,7 +10393,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.730760000413284
+      "latency_ms": 7.71771700010504
     },
     {
       "id": "b21_417",
@@ -10409,7 +10409,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.043491000535141
+      "latency_ms": 7.85123699961332
     },
     {
       "id": "b21_418",
@@ -10425,7 +10425,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.384370999716339
+      "latency_ms": 7.280916000127036
     },
     {
       "id": "b21_419",
@@ -10441,7 +10441,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.504236999920977
+      "latency_ms": 7.452461999946536
     },
     {
       "id": "b21_420",
@@ -10457,7 +10457,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.878694000079122
+      "latency_ms": 6.872380000004341
     },
     {
       "id": "b21_421",
@@ -10473,7 +10473,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.290765999845462
+      "latency_ms": 8.2831139998234
     },
     {
       "id": "b21_422",
@@ -10489,7 +10489,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.158246000675717
+      "latency_ms": 8.334012999966944
     },
     {
       "id": "b21_423",
@@ -10505,7 +10505,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.994691000021703
+      "latency_ms": 8.05191300014485
     },
     {
       "id": "b21_424",
@@ -10521,7 +10521,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.37651100007497
+      "latency_ms": 7.335668999985501
     },
     {
       "id": "b21_425",
@@ -10537,7 +10537,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.1301269992764
+      "latency_ms": 8.068954000009398
     },
     {
       "id": "b21_426",
@@ -10553,7 +10553,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.662717000130215
+      "latency_ms": 7.633669999904669
     },
     {
       "id": "b21_427",
@@ -10569,7 +10569,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.297114999550104
+      "latency_ms": 8.447331000297709
     },
     {
       "id": "b21_428",
@@ -10585,7 +10585,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 10.006282000176725
+      "latency_ms": 10.409416000129568
     },
     {
       "id": "b21_429",
@@ -10601,7 +10601,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.337960000062594
+      "latency_ms": 8.049604000007093
     },
     {
       "id": "b21_430",
@@ -10617,7 +10617,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.258968999849458
+      "latency_ms": 7.315832000131195
     },
     {
       "id": "b21_431",
@@ -10633,7 +10633,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.40710400007083
+      "latency_ms": 8.173618000000715
     },
     {
       "id": "b21_432",
@@ -10649,7 +10649,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.575126000119781
+      "latency_ms": 7.38578399977996
     },
     {
       "id": "b21_433",
@@ -10665,7 +10665,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.2750409999571275
+      "latency_ms": 7.361327999660716
     },
     {
       "id": "b21_434",
@@ -10681,7 +10681,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.387082999230188
+      "latency_ms": 7.696702999965055
     },
     {
       "id": "b21_435",
@@ -10697,7 +10697,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.969785999193846
+      "latency_ms": 8.071127999755845
     },
     {
       "id": "b21_436",
@@ -10713,7 +10713,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.560560000456462
+      "latency_ms": 7.38712000020314
     },
     {
       "id": "b21_437",
@@ -10729,7 +10729,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.812424999428913
+      "latency_ms": 7.87321100006011
     },
     {
       "id": "b21_438",
@@ -10745,7 +10745,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.618279999405786
+      "latency_ms": 7.7201529998092155
     },
     {
       "id": "b21_439",
@@ -10761,7 +10761,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.771155000227736
+      "latency_ms": 7.809879000433284
     },
     {
       "id": "b21_440",
@@ -10777,7 +10777,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 6.936693999705312
+      "latency_ms": 7.1649910000815
     },
     {
       "id": "b21_441",
@@ -10793,7 +10793,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.115239000289876
+      "latency_ms": 8.200368999951024
     },
     {
       "id": "b21_442",
@@ -10809,7 +10809,7 @@
       "intent": "tool_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.727241000182403
+      "latency_ms": 4.780947000199376
     },
     {
       "id": "b21_443",
@@ -10825,7 +10825,7 @@
       "intent": "tool_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.499787999520777
+      "latency_ms": 4.498055999647477
     },
     {
       "id": "b21_444",
@@ -10843,7 +10843,7 @@
       "tools_called": [
         "close_app"
       ],
-      "latency_ms": 0.6760840005881619
+      "latency_ms": 0.6724770000801072
     },
     {
       "id": "b21_445",
@@ -10859,7 +10859,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.902104000095278
+      "latency_ms": 7.784076999996614
     },
     {
       "id": "b21_446",
@@ -10875,7 +10875,7 @@
       "intent": "translation_answer",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.599355000413198
+      "latency_ms": 5.547791000026336
     },
     {
       "id": "b21_447",
@@ -10891,7 +10891,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.285615999739093
+      "latency_ms": 8.101259999875765
     },
     {
       "id": "b21_448",
@@ -10907,7 +10907,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.6472549999380135
+      "latency_ms": 7.851112000025751
     },
     {
       "id": "b21_449",
@@ -10923,7 +10923,7 @@
       "intent": "translation_clarification",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.132126999749744
+      "latency_ms": 7.2480000003452005
     },
     {
       "id": "b21_450",
@@ -10939,7 +10939,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 11.240544999964186
+      "latency_ms": 11.283085999821196
     },
     {
       "id": "b21_451",
@@ -10955,7 +10955,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.049772999882407
+      "latency_ms": 5.03228300021874
     },
     {
       "id": "b21_452",
@@ -10971,7 +10971,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 10.345607999624917
+      "latency_ms": 10.179870999763807
     },
     {
       "id": "b21_453",
@@ -10987,7 +10987,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5.1542880000852165
+      "latency_ms": 5.350660999738466
     },
     {
       "id": "b21_454",
@@ -11003,7 +11003,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.6414309999818215
+      "latency_ms": 4.791430999830482
     },
     {
       "id": "b21_455",
@@ -11019,7 +11019,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.8186709999718
+      "latency_ms": 9.032045999902039
     },
     {
       "id": "b21_456",
@@ -11035,7 +11035,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.61133999942831
+      "latency_ms": 4.780851999839797
     },
     {
       "id": "b21_457",
@@ -11051,7 +11051,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.950025999889476
+      "latency_ms": 8.084740000413149
     },
     {
       "id": "b21_458",
@@ -11067,7 +11067,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.909765000775224
+      "latency_ms": 4.93635099974199
     },
     {
       "id": "b21_459",
@@ -11083,7 +11083,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.581098999551614
+      "latency_ms": 4.655462999835436
     },
     {
       "id": "b21_460",
@@ -11099,7 +11099,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.68087300023035
+      "latency_ms": 8.752881999953388
     },
     {
       "id": "b21_461",
@@ -11115,7 +11115,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.5411139999487204
+      "latency_ms": 4.467881999971723
     },
     {
       "id": "b21_462",
@@ -11131,7 +11131,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.4815449997913674
+      "latency_ms": 7.75861400006761
     },
     {
       "id": "b21_463",
@@ -11147,7 +11147,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.819081999812624
+      "latency_ms": 4.838128999836044
     },
     {
       "id": "b21_464",
@@ -11163,7 +11163,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.59993200001918
+      "latency_ms": 4.481353000301169
     },
     {
       "id": "b21_465",
@@ -11179,7 +11179,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.89127600021311
+      "latency_ms": 8.926246000100946
     },
     {
       "id": "b21_466",
@@ -11195,7 +11195,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.585356999996293
+      "latency_ms": 4.5687470001212205
     },
     {
       "id": "b21_467",
@@ -11211,7 +11211,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.737384999927599
+      "latency_ms": 7.960399999774381
     },
     {
       "id": "b21_468",
@@ -11227,7 +11227,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.865957000220078
+      "latency_ms": 4.787501000009797
     },
     {
       "id": "b21_469",
@@ -11243,7 +11243,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.3707009999707225
+      "latency_ms": 4.566134000015154
     },
     {
       "id": "b21_470",
@@ -11259,7 +11259,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 8.724455999981728
+      "latency_ms": 9.000216000004002
     },
     {
       "id": "b21_471",
@@ -11275,7 +11275,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.459988999769848
+      "latency_ms": 4.66426799994224
     },
     {
       "id": "b21_472",
@@ -11291,7 +11291,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 7.631358999788063
+      "latency_ms": 7.822351999948296
     },
     {
       "id": "b21_473",
@@ -11307,7 +11307,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.842266000196105
+      "latency_ms": 4.767395999806467
     },
     {
       "id": "b21_474",
@@ -11323,7 +11323,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.532786999334348
+      "latency_ms": 4.490602999794646
     },
     {
       "id": "b21_475",
@@ -11339,7 +11339,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4348.254896999606
+      "latency_ms": 3434.3961940003283
     },
     {
       "id": "b21_476",
@@ -11355,7 +11355,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5355.24026999974
+      "latency_ms": 4233.706585000164
     },
     {
       "id": "b21_477",
@@ -11371,7 +11371,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5247.271573000035
+      "latency_ms": 4103.186697000183
     },
     {
       "id": "b21_478",
@@ -11387,7 +11387,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 5138.053101999503
+      "latency_ms": 3943.4282519996486
     },
     {
       "id": "b21_479",
@@ -11403,7 +11403,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4300.753755000187
+      "latency_ms": 4222.661528999652
     },
     {
       "id": "b21_480",
@@ -11419,7 +11419,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4309.727813999416
+      "latency_ms": 4693.826412999897
     },
     {
       "id": "b21_481",
@@ -11435,7 +11435,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4613.905618999524
+      "latency_ms": 4748.243766999622
     },
     {
       "id": "b21_482",
@@ -11451,7 +11451,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4447.956560999955
+      "latency_ms": 4584.3813249998675
     },
     {
       "id": "b21_483",
@@ -11467,7 +11467,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4293.678576000275
+      "latency_ms": 4397.49265599994
     },
     {
       "id": "b21_484",
@@ -11483,7 +11483,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4281.050556999617
+      "latency_ms": 4299.799217000327
     },
     {
       "id": "b21_485",
@@ -11499,7 +11499,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4.433759999301401
+      "latency_ms": 4.388046999793005
     },
     {
       "id": "b21_486",
@@ -11515,7 +11515,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.3323979996566777
+      "latency_ms": 3.7637969999195775
     },
     {
       "id": "b21_487",
@@ -11531,7 +11531,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 3.112857999440166
+      "latency_ms": 3.294350000032864
     },
     {
       "id": "b21_488",
@@ -11547,7 +11547,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.9170699999667704
+      "latency_ms": 3.1122899999900255
     },
     {
       "id": "b21_489",
@@ -11563,7 +11563,7 @@
       "intent": "rewrite_response",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2.7037199997721473
+      "latency_ms": 2.8001229998153576
     },
     {
       "id": "b21_490",
@@ -11579,7 +11579,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 2255.5452149999837
+      "latency_ms": 2292.5891949998913
     },
     {
       "id": "b21_491",
@@ -11595,7 +11595,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4793.145491999894
+      "latency_ms": 4788.266610999926
     },
     {
       "id": "b21_492",
@@ -11611,7 +11611,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4606.454130000202
+      "latency_ms": 4510.34749099972
     },
     {
       "id": "b21_493",
@@ -11627,7 +11627,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4231.761983000069
+      "latency_ms": 4052.3500640001657
     },
     {
       "id": "b21_494",
@@ -11643,7 +11643,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 4067.73488700037
+      "latency_ms": 3907.077572000162
     },
     {
       "id": "b21_495",
@@ -11659,7 +11659,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 36.020186000314425
+      "latency_ms": 45.01179399994726
     },
     {
       "id": "b21_496",
@@ -11675,7 +11675,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 51.148665999789955
+      "latency_ms": 52.879375999964395
     },
     {
       "id": "b21_497",
@@ -11691,7 +11691,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 26.302450000002864
+      "latency_ms": 27.106961000299634
     },
     {
       "id": "b21_498",
@@ -11707,7 +11707,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 30.756305000068096
+      "latency_ms": 31.003818000044703
     },
     {
       "id": "b21_499",
@@ -11723,7 +11723,7 @@
       "intent": "unknown_information",
       "error": "",
       "tools_called": [],
-      "latency_ms": 39.598173000740644
+      "latency_ms": 40.23925399997097
     }
   ],
   "category": {
@@ -11752,167 +11752,167 @@
       "correct": 100
     }
   },
-  "startup_ms": 162.53730500011443,
-  "peak_rss_mb": 147.50390625,
-  "duration_seconds": 73.67433510299998,
+  "startup_ms": 161.4278310003101,
+  "peak_rss_mb": 148.37109375,
+  "duration_seconds": 68.7564808420002,
   "tools_enabled": false,
   "memory_enabled": false,
   "source_hashes": {
-    "jarvis/config.py": "9fe031d0fc08cbc8b61cafe6c3440b900e35ab1bbc1200f1cc3d45f9df9d6b3e",
-    "jarvis/__init__.py": "ff0f0e6c9f8c296991fb9281dc8b789b5f26c3e41ab524b09e20a00625d4d7e8",
-    "jarvis/telemetry.py": "1e05d8a1d0e6ff767e9b6337cfd18d84b7db62e4eb82f1f4d5af4d2f8e8bc646",
     "jarvis/logging_config.py": "dbfa4039059b49dd08c58fb98bf1a0dd30f38150a851cdaf5bb9c7c9a381803f",
-    "jarvis/entities/resolver.py": "d6f94eea9f543b1928747fadd4207fff6483254cc29797959aff661432dfa0af",
-    "jarvis/entities/__init__.py": "586b6f3e97b5f281f3dd05364329ec38a381ce6c185a5926c60e4063e467ae2a",
+    "jarvis/__init__.py": "ff0f0e6c9f8c296991fb9281dc8b789b5f26c3e41ab524b09e20a00625d4d7e8",
+    "jarvis/config.py": "9fe031d0fc08cbc8b61cafe6c3440b900e35ab1bbc1200f1cc3d45f9df9d6b3e",
+    "jarvis/telemetry.py": "1e05d8a1d0e6ff767e9b6337cfd18d84b7db62e4eb82f1f4d5af4d2f8e8bc646",
+    "jarvis/memory/context_v21.py": "4680c8c46093afa3f206513b7f7e8723121cbe700af9a8d073eee9d2c709a2d8",
+    "jarvis/memory/__init__.py": "ceba072ab3f4dc7ac0145e9871ca78aa04e529ded5f73bb18ff745b9b2195d9e",
+    "jarvis/memory/store.py": "6f49c7a32fa94674a2d8e491ae481d1bf2073445bda22766c3591eacb2f352f4",
+    "jarvis/tools/desktop.py": "44339be7e725a6ebdc00d214ae995cc5375d211eba201b2bb7921f83a005c586",
+    "jarvis/tools/input_control.py": "9e569e38e46a4c10a8400c6dd35760de1c04f32a26f2de2ed1e7d8f8775f6625",
+    "jarvis/tools/terminal.py": "d38fce33ff1d868234f3e35a55ab3a6e9d86c22f4826d4303562e4e479d53338",
+    "jarvis/tools/system.py": "afbb1b6d44fa846e1223ed9352a9cde655efe2614d9969c88c2358e0bd7e62ca",
+    "jarvis/tools/windows.py": "718e7b947a3942f6d9a0fb173fbb91213038302f935a3558be5f23b5e987b16e",
+    "jarvis/tools/registry.py": "58e6bf3b2815a338b39c44e3b9bbf0b675245d7acf65bc0385e0a27fcbac5e22",
+    "jarvis/tools/processes.py": "a8ba6b5cac1cb7c83ca8c4933dcf071422ba1a9c2208c5406e811c5a7aebb6d4",
+    "jarvis/tools/files.py": "67e8ffd64e010f7dbc1df55221c8e382b5173706027ba0c1336f95fd4a855ee1",
+    "jarvis/tools/__init__.py": "60e8b9693e0965796960eb84d15da0d67c77d9c3a3dcbb3db6bdab238fb8700c",
+    "jarvis/tools/datetime_tool.py": "d6c85eba03f90633408757ff2952e61df9f988dc71ef5b2b6926c9a542197e11",
+    "jarvis/tools/calculator.py": "dbb14b016d36392e33b4bb4fc92c1d6f1e5958013372743b38abba30ba85c00a",
+    "jarvis/tools/drives.py": "1e11f8f61db13a4f6095f1b5cbb07ec0f468f3a339c8a43ef9a2c0bf28ec385c",
+    "jarvis/tools/browser_automation.py": "c4a9055273ddfb3f7c9687cb801741504510fab5b5acdaddf6334d89709d1be2",
+    "jarvis/tools/system_control.py": "c3921ab2b34c269d3f682ec96c6abce7d396a05444262091e3f8b8482f7e1fe9",
+    "jarvis/tools/internet.py": "07b172bbb452953df182b0bd70e7e1860a7e0b1951bc55cd1f9fd2e9267cb31d",
+    "jarvis/tools/clipboard.py": "9182456389c933f60ed05243483c4131411c2a8a71d63a28b161c40ac52e8cab",
+    "jarvis/tools/browser.py": "d8776d1629db8fc05b274904fb9ffd020eaa5a49e98f78ca5336bd5cec253817",
+    "jarvis/lab/__init__.py": "ef8f5c2986b561c56512bcca2fdb06d6f391a323fea25bf845174e8cbd69e641",
+    "jarvis/lab/catalog.py": "6ec2d8dd4ee0d980f31715d1e2cfc29fbaa3398351647dac2a840d5b13878329",
+    "jarvis/lab/app.py": "b1df6a5597cc37f80c85b11af392fd09eaca79ebab79da334fae2b2f410590a9",
+    "jarvis/runtime/diagnostics.py": "54b248c956b0cf27aaa2957f3b644602a52401acada9e5b6f330381b55126e51",
+    "jarvis/runtime/bootstrap.py": "b904754d36f4c0a58646eb12bb408b64a1c980c7d3e5d853dae5c3011ff593af",
+    "jarvis/runtime/__init__.py": "ebc4b0c3931dbe127104a691a0c8e0616bc5447437755f4f74f7cf067fcb95e5",
+    "jarvis/runtime/app_index.py": "9c3e29739874d34dc4f4ed15a6a74df4b596c4ed132766b6450e7438e3254dc5",
+    "jarvis/runtime/hardware.py": "1bd7f904c5c3370cfd64212817c78ac3b0e8fad0af8ac434492adf6a07c00b45",
+    "jarvis/plugins/registry.py": "e0fb23e4264885ec28356cacd0bafeb67adf6728a841c7496edb8647862b5ea4",
+    "jarvis/plugins/__init__.py": "42cd80a7f2be1f765ef830586fb93221b80f73aad4aa854ca97d36761b0eb369",
     "jarvis/agent/semantic_ir_v19.py": "8c831a2188c5353c29afdb3ac48a5b4ec98039e7082a7d70a0f4970020e20712",
-    "jarvis/agent/code_intelligence_v16.py": "de22f46e611d5c3e28f9fb30eb5c95fd54c117a4357ad22dad9c4e6fe5de2dfc",
-    "jarvis/agent/semantic_router_v18.py": "7c8b0125b14c28ea9ffabfc5d726747ff49761ff852b4cc11680a5119d98b4dc",
-    "jarvis/agent/quantity_v22.py": "856f95991f3c1827be4531ba5ff2b39d2d4da65b56d69ff46b8a30f5db571fd5",
-    "jarvis/agent/verifier_v22.py": "cfcd095cd6295d1452ed4778d412279f7bd0a1cbd33bf5308a61571ecf367aee",
-    "jarvis/agent/local_intelligence_v20.py": "bc971811c0057dd6d7c09fee3a29bcdbfea1896f17f867d8c5e3b98675599e74",
-    "jarvis/agent/executor.py": "8fbd5655f31cf56118fdf2f9c8d7549e0e97768308c71a0f7db3f0fbfd027c09",
-    "jarvis/agent/intent_router.py": "f9417d180e5a975a9ff484a6f4afaa30893bc88548e8ae947cfb8abcb72b4d1b",
-    "jarvis/agent/normalization_v20.py": "0bf1d66f9b3cd13dbeaaf4d700bcda8bb3da37cfdcb7fc99019fad2e71ce3385",
-    "jarvis/agent/planner.py": "5db85969fe9d4072eabca5f49ccc2f6d9a9ec7092981e15ca9cdd3282406b3f9",
-    "jarvis/agent/reasoning.py": "e753a71ae032b12ebb4cff25b6c75e93efcbfc34645ffbe3a81a3fe4d78e5d9b",
-    "jarvis/agent/cognitive_ir_v20.py": "81f50e8a8e53463db08392a5737ed54039f8da3156029b27027336d705041dfa",
-    "jarvis/agent/constraints_v16.py": "4d22d781c53081b17a599c9a685df101d5815cd6bae6785fde03ca594080c901",
-    "jarvis/agent/local_intelligence_v21.py": "7d659b6d1e5ca3c751d3e66f882631a625b855f38b0eb36c5744057e44730097",
-    "jarvis/agent/parser_v20.py": "fe01fc745224a0b5c0926645890cbf472a816f0e5c1d456ac9c191658124b306",
-    "jarvis/agent/__init__.py": "05c9387e43969c1657dad62ec908f6f077dd3ef1a21f38b4ccf2cd9ca14f2137",
-    "jarvis/agent/permissions.py": "37058142e497c7a57fcafe81ce34e14648bd0709c0bc25d9d8cac5ee1813c586",
-    "jarvis/agent/semantic_ir_v17.py": "a4b10161f594458a18d67f10aad10798d12194b234ff808afa772d707cca8aef",
-    "jarvis/agent/code_intelligence_v20.py": "394eb08a9ab0cb3cf0451452c5e5a79eea38eb91e19766b1ff35343bf034b280",
-    "jarvis/agent/rewrite_v16.py": "49fd469b3f66268e706f7401bbb408ffc3af859860a9819222067731254988a9",
-    "jarvis/agent/local_intelligence_v17.py": "13a972aad30cb274d0dee84cf8e343049473ab729414b6aeda8c42d25d64a80c",
-    "jarvis/agent/numeric_roles_v22.py": "ff3d5a8a4834304d40778631444965faba0c4ca9dc0e727a9313dfb72e61fc99",
-    "jarvis/agent/parser_v21.py": "aac2a6830c49aa47b97b3a990059b9863237e2450ec256d3ec8b48c2fb585b7a",
-    "jarvis/agent/local_intelligence_v22.py": "614a0b23a968418443cfd3f94b30d7b918dbd1f373676991d311f791b06c9d8b",
-    "jarvis/agent/deliberation.py": "1c6a48a1cefd2c4aa2ede8694147bfe29e79eae9c43ace71ba130500dc0a577c",
-    "jarvis/agent/semantic_ir_v18.py": "8a5528c3e65b7b7445daca87780ee0fddd26aaf3b1f38898246bc2a83c4a51bf",
-    "jarvis/agent/world_v21.py": "e359e5594888d86b6c6b83463833adfe429a6ba9e9fc08e1cc2c73b21a12e96f",
-    "jarvis/agent/local_intelligence_v15.py": "3d75c994e8d4fdc37510f5039e61a6a2ccca4d0a5230452fbe1979d4514e121a",
-    "jarvis/agent/language_brain_v22.py": "f0db9685fd0b1edc4ce276704b66232cdaa2cb7334168c5a2ae7daf602cf4875",
-    "jarvis/agent/verifier.py": "33a7e23a956810ffb6e0ec34e10b42978c096e00e4f2e690580bee963fafc76a",
-    "jarvis/agent/recovery.py": "c719637deead17b248216781e87fd70e13f96c68cf3ae3f8e86f8d21a14e8c87",
-    "jarvis/agent/source_facts_v21.py": "d16b00fd0c967aa0a99514e0e245e09a7059b3ad760d348f81d103abdaf5bd26",
-    "jarvis/agent/task_context.py": "8e01c0bbc53fee3a887fdfccaab57c8c62c48ec63d8ca55e97ae0ff495b19e99",
-    "jarvis/agent/local_intelligence_v18.py": "093643ef2dab9946af1012171de013c14d912cb06665b5bc4c1d686f70ae592f",
-    "jarvis/agent/source_semantics_v20_1.py": "c0dac5c79114e3f821c1ba8c147ff664826916ccbe8348a027182dd5fc6c7c3a",
-    "jarvis/agent/semantic_models_v18.py": "083895bd898dde2124af841a959fd201604b432cfbc4e84528c1a6b2184dc8f3",
-    "jarvis/agent/context.py": "c5ac093752c018dbe03d24c132f7481eb0694038d3798d9c626b8370168ce772",
-    "jarvis/agent/conversation_chain.py": "572f774bcd845546e016ece64693152a8fb4c2ab7a36963e0a9f4fab4d2a9136",
-    "jarvis/agent/semantic_router_v15.py": "e49164be04adaabe2ec935c6fe0bfe20d53c8479df69c2b6fd2376df2428e29b",
-    "jarvis/agent/code_v21.py": "a172bc5f8c3871e932b0878fbf906c150812f7fd41d17af4602b9048b2703c16",
     "jarvis/agent/verification_v21.py": "5d5ddeba2fe027a7828a4215049bd61aa0c832ed3554d9f10624c2b031806381",
-    "jarvis/agent/numeric_v21.py": "5053b33aae2f5ea1f765ead3d5965e8cea57793cc8c128beb9010dc75c442ecd",
-    "jarvis/agent/followup_model.py": "b7cda40eedde59a33f1897807ef8aec75ce28fdce3d2e5b8b7dda7c1df231ea1",
-    "jarvis/agent/code_intelligence_v15.py": "2a09ea5cba376429ed57822bf80a807e8d6f625ba7259fa47e080144e8d22f70",
-    "jarvis/agent/local_intelligence_v14.py": "d5f77d24212697206c13c079dfa8362a3ed27e2c38e958b445e33c3c4bc95953",
-    "jarvis/agent/temporal_v22.py": "f409aed7705ab707122453f2ec6a6bc3038421e0239a63fa8e1cdd15fdc16688",
-    "jarvis/agent/verification_v20.py": "8184afbd966bd7d9f1d541a1824e7038175c6a726ac5d46db0e5a0f30d06c8e1",
+    "jarvis/agent/reflection_v20.py": "424d3e695df2bedf1d56a2b2d3b68ebc545bad608c185c449dd2f45394d202c6",
+    "jarvis/agent/local_intelligence_v17.py": "13a972aad30cb274d0dee84cf8e343049473ab729414b6aeda8c42d25d64a80c",
+    "jarvis/agent/semantic_models_v19.py": "8e3ff2f3499d91f743ca29e5148ffbe00616c94613666cc75f7063b29e69b424",
+    "jarvis/agent/core.py": "99b9e6e7a8381b40378aa1a64fc743b74809b2e22b6632460fb7c6d80638abc8",
+    "jarvis/agent/constraints_v16.py": "4d22d781c53081b17a599c9a685df101d5815cd6bae6785fde03ca594080c901",
+    "jarvis/agent/local_intelligence_v22.py": "60e55593e7ea475105ef4812a7a1da3a3e9cc77a86a2ce9b1e20af41e0c0c816",
+    "jarvis/agent/deliberation.py": "1c6a48a1cefd2c4aa2ede8694147bfe29e79eae9c43ace71ba130500dc0a577c",
+    "jarvis/agent/local_intelligence_v21.py": "7d659b6d1e5ca3c751d3e66f882631a625b855f38b0eb36c5744057e44730097",
+    "jarvis/agent/verifier.py": "33a7e23a956810ffb6e0ec34e10b42978c096e00e4f2e690580bee963fafc76a",
+    "jarvis/agent/local_intelligence_v16.py": "873f9b16b6a82b3b12aa378593c5a781754ab97d75973490c3fdb853e58cda93",
+    "jarvis/agent/local_intelligence_v19.py": "34e91e790521d03b1861c6d707a87178273ce326f18564905077ca52c3d36617",
+    "jarvis/agent/execution_v20.py": "ef4b88aed585d2a6644c3399a3c314ffab577186af11177a41f3f7d75b09b50e",
+    "jarvis/agent/planner.py": "5db85969fe9d4072eabca5f49ccc2f6d9a9ec7092981e15ca9cdd3282406b3f9",
+    "jarvis/agent/semantic_ir_v18.py": "8a5528c3e65b7b7445daca87780ee0fddd26aaf3b1f38898246bc2a83c4a51bf",
+    "jarvis/agent/verifier_v22.py": "a66e112c00069ebdacdd30488a7f917a7e13546831806de315e61d75d14f00f3",
+    "jarvis/agent/cognitive_ir_v20.py": "81f50e8a8e53463db08392a5737ed54039f8da3156029b27027336d705041dfa",
+    "jarvis/agent/numeric_roles_v22.py": "ff928d40e187f013dcd94411536d42c6c8f5b2c1783ae69bb00d64d8bd49fd1c",
+    "jarvis/agent/code_intelligence_v20.py": "394eb08a9ab0cb3cf0451452c5e5a79eea38eb91e19766b1ff35343bf034b280",
+    "jarvis/agent/models_v21.py": "8106870a916877257074cac2822c999c68ccb5c7137f59956cc9e8af316f7026",
+    "jarvis/agent/source_facts_v21.py": "d16b00fd0c967aa0a99514e0e245e09a7059b3ad760d348f81d103abdaf5bd26",
+    "jarvis/agent/code_intelligence_v16.py": "de22f46e611d5c3e28f9fb30eb5c95fd54c117a4357ad22dad9c4e6fe5de2dfc",
+    "jarvis/agent/__init__.py": "05c9387e43969c1657dad62ec908f6f077dd3ef1a21f38b4ccf2cd9ca14f2137",
     "jarvis/agent/decision.py": "2e8c5ac5f0efc58f443cd82af901667e3ded70c6074eef6430935ffb00f01b15",
-    "jarvis/agent/rewrite_v17.py": "3a365992cf6723258eaa10fadaa9f2ed6fcb0c2363d759d5ab007790090855a4",
-    "jarvis/agent/cognitive_model.py": "547bc8041a7cc951e9f76fe1c6c7aa9388ddf407005415d404388d075da4a5ae",
+    "jarvis/agent/local_intelligence_v18.py": "093643ef2dab9946af1012171de013c14d912cb06665b5bc4c1d686f70ae592f",
+    "jarvis/agent/followup_model.py": "b7cda40eedde59a33f1897807ef8aec75ce28fdce3d2e5b8b7dda7c1df231ea1",
+    "jarvis/agent/source_semantics_v20_1.py": "c0dac5c79114e3f821c1ba8c147ff664826916ccbe8348a027182dd5fc6c7c3a",
+    "jarvis/agent/rewrite_v18.py": "6b7131dacd2decdae857708587cf7176386f90ca12cf6a1b9265206938db4b2a",
+    "jarvis/agent/task_context.py": "8e01c0bbc53fee3a887fdfccaab57c8c62c48ec63d8ca55e97ae0ff495b19e99",
     "jarvis/agent/dialogue_subject.py": "72d957c00401e469933a48fe32544e4d14a792c59d7dfc763e16828e9d435a88",
+    "jarvis/agent/recovery.py": "c719637deead17b248216781e87fd70e13f96c68cf3ae3f8e86f8d21a14e8c87",
+    "jarvis/agent/challenge_reasoner.py": "5590812df0c5e040f7a6a2114f5a0b982c5b566a4f7193cc9dcf2915eecb9a07",
+    "jarvis/agent/temporal_v22.py": "f409aed7705ab707122453f2ec6a6bc3038421e0239a63fa8e1cdd15fdc16688",
+    "jarvis/agent/semantic_router_v18.py": "7c8b0125b14c28ea9ffabfc5d726747ff49761ff852b4cc11680a5119d98b4dc",
+    "jarvis/agent/parser_v20.py": "fe01fc745224a0b5c0926645890cbf472a816f0e5c1d456ac9c191658124b306",
+    "jarvis/agent/parser_v21.py": "aac2a6830c49aa47b97b3a990059b9863237e2450ec256d3ec8b48c2fb585b7a",
+    "jarvis/agent/permissions.py": "37058142e497c7a57fcafe81ce34e14648bd0709c0bc25d9d8cac5ee1813c586",
+    "jarvis/agent/rewrite_v16.py": "49fd469b3f66268e706f7401bbb408ffc3af859860a9819222067731254988a9",
+    "jarvis/agent/world_v21.py": "e359e5594888d86b6c6b83463833adfe429a6ba9e9fc08e1cc2c73b21a12e96f",
+    "jarvis/agent/code_intelligence_v15.py": "2a09ea5cba376429ed57822bf80a807e8d6f625ba7259fa47e080144e8d22f70",
+    "jarvis/agent/verification_v20.py": "8184afbd966bd7d9f1d541a1824e7038175c6a726ac5d46db0e5a0f30d06c8e1",
+    "jarvis/agent/numeric_v21.py": "5053b33aae2f5ea1f765ead3d5965e8cea57793cc8c128beb9010dc75c442ecd",
+    "jarvis/agent/fluency.py": "60eb30580d348a6b6b083c66fa6d5b4b60a19c2d63071c5bdb5ad4445920e2cc",
+    "jarvis/agent/bilingual_fluency.py": "9fe933a5c89c2999fbf87ae746dc6ea0c8222ea9062166782535e7bcb7884760",
+    "jarvis/agent/conversation_chain.py": "572f774bcd845546e016ece64693152a8fb4c2ab7a36963e0a9f4fab4d2a9136",
+    "jarvis/agent/semantic_models_v18.py": "083895bd898dde2124af841a959fd201604b432cfbc4e84528c1a6b2184dc8f3",
+    "jarvis/agent/semantic_router_v15.py": "e49164be04adaabe2ec935c6fe0bfe20d53c8479df69c2b6fd2376df2428e29b",
+    "jarvis/agent/local_intelligence_v20.py": "bc971811c0057dd6d7c09fee3a29bcdbfea1896f17f867d8c5e3b98675599e74",
+    "jarvis/agent/local_intelligence_v15.py": "3d75c994e8d4fdc37510f5039e61a6a2ccca4d0a5230452fbe1979d4514e121a",
+    "jarvis/agent/reflection_v22.py": "e1f04770999cfe5ec2a636ad524c6d59ccec0d03c9482e5e2e6b86338b4c55d9",
+    "jarvis/agent/quantity_v22.py": "07dcdda21e82323686dc2ca382c8d370810dca0adc164b80403959d2ef3b3beb",
+    "jarvis/agent/local_intelligence_v14.py": "d5f77d24212697206c13c079dfa8362a3ed27e2c38e958b445e33c3c4bc95953",
+    "jarvis/agent/context.py": "c5ac093752c018dbe03d24c132f7481eb0694038d3798d9c626b8370168ce772",
+    "jarvis/agent/normalization_v20.py": "0bf1d66f9b3cd13dbeaaf4d700bcda8bb3da37cfdcb7fc99019fad2e71ce3385",
+    "jarvis/agent/semantic_ir_v22.py": "93a43bb515f0ea39fa0481d0a5b4ec03b3643d4be4f78179ee010dfe4539a847",
+    "jarvis/agent/code_v21.py": "a172bc5f8c3871e932b0878fbf906c150812f7fd41d17af4602b9048b2703c16",
+    "jarvis/agent/cognitive_model.py": "547bc8041a7cc951e9f76fe1c6c7aa9388ddf407005415d404388d075da4a5ae",
+    "jarvis/agent/reasoning.py": "e753a71ae032b12ebb4cff25b6c75e93efcbfc34645ffbe3a81a3fe4d78e5d9b",
+    "jarvis/agent/semantic_ir_v17.py": "a4b10161f594458a18d67f10aad10798d12194b234ff808afa772d707cca8aef",
+    "jarvis/agent/intent_router.py": "7a42d559c944fc0c132c06e2041087cb7516b3b92357b02fd50e8c20fefc83c7",
+    "jarvis/agent/rewrite_v17.py": "3a365992cf6723258eaa10fadaa9f2ed6fcb0c2363d759d5ab007790090855a4",
+    "jarvis/agent/learning.py": "1870b266f41bc3487cd71f5fd7056246571948ede5dc00569b480b9af0a8d1d7",
     "jarvis/agent/semantic_models_v20.py": "72106e9363e9f41578627372551787c789cfb3e59ba1b7ec57532ee2cdfff00a",
     "jarvis/agent/constraints_v15.py": "bbfce7fa7a94e0bf6e76af9f4eae323ef18148f8932012cd64a16850506108ff",
-    "jarvis/agent/semantic_ir_v22.py": "93a43bb515f0ea39fa0481d0a5b4ec03b3643d4be4f78179ee010dfe4539a847",
-    "jarvis/agent/learning.py": "1870b266f41bc3487cd71f5fd7056246571948ede5dc00569b480b9af0a8d1d7",
-    "jarvis/agent/reflection_v20.py": "424d3e695df2bedf1d56a2b2d3b68ebc545bad608c185c449dd2f45394d202c6",
-    "jarvis/agent/reflection_v22.py": "e1f04770999cfe5ec2a636ad524c6d59ccec0d03c9482e5e2e6b86338b4c55d9",
-    "jarvis/agent/rewrite_v18.py": "6b7131dacd2decdae857708587cf7176386f90ca12cf6a1b9265206938db4b2a",
-    "jarvis/agent/bilingual_fluency.py": "9fe933a5c89c2999fbf87ae746dc6ea0c8222ea9062166782535e7bcb7884760",
-    "jarvis/agent/models_v21.py": "8106870a916877257074cac2822c999c68ccb5c7137f59956cc9e8af316f7026",
-    "jarvis/agent/core.py": "99b9e6e7a8381b40378aa1a64fc743b74809b2e22b6632460fb7c6d80638abc8",
-    "jarvis/agent/fluency.py": "60eb30580d348a6b6b083c66fa6d5b4b60a19c2d63071c5bdb5ad4445920e2cc",
-    "jarvis/agent/local_intelligence_v16.py": "873f9b16b6a82b3b12aa378593c5a781754ab97d75973490c3fdb853e58cda93",
-    "jarvis/agent/challenge_reasoner.py": "5590812df0c5e040f7a6a2114f5a0b982c5b566a4f7193cc9dcf2915eecb9a07",
-    "jarvis/agent/execution_v20.py": "ef4b88aed585d2a6644c3399a3c314ffab577186af11177a41f3f7d75b09b50e",
-    "jarvis/agent/local_intelligence_v19.py": "34e91e790521d03b1861c6d707a87178273ce326f18564905077ca52c3d36617",
+    "jarvis/agent/executor.py": "8fbd5655f31cf56118fdf2f9c8d7549e0e97768308c71a0f7db3f0fbfd027c09",
     "jarvis/agent/reflection_v21.py": "e9b51fb1b580db45ac807861e6fa05390f771f5180cf9f4e278562e2adc6fc10",
-    "jarvis/agent/semantic_models_v19.py": "8e3ff2f3499d91f743ca29e5148ffbe00616c94613666cc75f7063b29e69b424",
-    "jarvis/nlu/task_parser.py": "0f6bd820d90a210b386a7499e844d1e01673c7d1d6bc43af4da9d5933cabab03",
-    "jarvis/nlu/action_parser.py": "26045975135fe6ffa9a4dd266be94b660102a8bd942f0436c7f3914f0ce43df4",
-    "jarvis/nlu/entities_v7.py": "09dcc84773c98271042437950212fcff65bec51f9c4c2af5dc18fa8636f144b1",
-    "jarvis/nlu/__init__.py": "91472c845b2f51bc9e1a591dd678d593f765847cf69c04c8b4211f65bfa40ce2",
-    "jarvis/nlu/semantic_slots_v19.py": "598eb6df6fb88bd14cfd987e6eade0b832c9081d60c838b7a65868d575c7062d",
-    "jarvis/nlu/reference_resolver.py": "902d912bcc7a57079961525f8143afecd4858a7f7b0a07d2bfc18b3ad3609552",
-    "jarvis/nlu/typo.py": "1408ef5c3e1ae9b201a68692fea7e101ffaa4bb2ad84b61970fc85e6f0769ac4",
-    "jarvis/nlu/workflow_parser.py": "cf375e18628cd4b47544c95e0f099cff9eec3f3da0c643b9c17c108b6a83af65",
-    "jarvis/skills/__init__.py": "61b775a0b794fe56f98f990fbfc1d2cfd70f58c6103aa049b903320a4a597f96",
-    "jarvis/skills/registry.py": "69bcfbe0b903a3f904260b581d136e71cebfdf3e3f323edda7f620f2a0ff8518",
-    "jarvis/lab/__init__.py": "ef8f5c2986b561c56512bcca2fdb06d6f391a323fea25bf845174e8cbd69e641",
-    "jarvis/lab/app.py": "b1df6a5597cc37f80c85b11af392fd09eaca79ebab79da334fae2b2f410590a9",
-    "jarvis/lab/catalog.py": "6ec2d8dd4ee0d980f31715d1e2cfc29fbaa3398351647dac2a840d5b13878329",
-    "jarvis/utils/text.py": "015fa0b142ef0605695d88dc4d0f5a322506d124a86915a0730992b20a83b46c",
-    "jarvis/utils/__init__.py": "416ef969e50c318d344f1cada8b88a0938e5590a00f3cdc9d85b1725b5d658fd",
+    "jarvis/agent/language_brain_v22.py": "bbbf13fb7c883601b2966794f7fcfcd7e2469fef2cef35c4add854ae9151f2b6",
     "jarvis/brain/__init__.py": "90a7a35781a4f1d3afa09beb7dc42267cbb67428dc41352ff6607d2640e83650",
     "jarvis/brain/responses.py": "c50c0b66d8fd44071e60592274812ea0354b5f9838f2ffa3eb0ef7a836751207",
     "jarvis/brain/model.py": "34fcc5860f86e90847ec77e9608ec929103c99afcc1bee90d215eeaf95ab1a41",
+    "jarvis/skills/registry.py": "69bcfbe0b903a3f904260b581d136e71cebfdf3e3f323edda7f620f2a0ff8518",
+    "jarvis/skills/__init__.py": "61b775a0b794fe56f98f990fbfc1d2cfd70f58c6103aa049b903320a4a597f96",
     "jarvis/learning/failures.py": "1ac9767aba6dbdf9a690a7043bad3b7da01a1d6586a2aaca709b856a34e7b5b5",
     "jarvis/learning/__init__.py": "13a9dbf1ca83b868f5937dc34cec4ab357618daacf5d7c3f363d18b091c5c889",
     "jarvis/learning/queue.py": "b33674447b5b12ec95c14d20b03ab5336edd704e27e2202f137666fba1b9a29a",
-    "jarvis/personalities/__init__.py": "a5d4d0f98253101fe8de47ea354e2602b8f97a112dbc1d8a464eaacfd7b9849b",
-    "jarvis/personalities/engine.py": "3409ea2aa170c848ba813f41c9a0e34c6b070b355278cafb45dd94c925974a30",
-    "jarvis/tools/input_control.py": "9e569e38e46a4c10a8400c6dd35760de1c04f32a26f2de2ed1e7d8f8775f6625",
-    "jarvis/tools/__init__.py": "60e8b9693e0965796960eb84d15da0d67c77d9c3a3dcbb3db6bdab238fb8700c",
-    "jarvis/tools/clipboard.py": "9182456389c933f60ed05243483c4131411c2a8a71d63a28b161c40ac52e8cab",
-    "jarvis/tools/processes.py": "a8ba6b5cac1cb7c83ca8c4933dcf071422ba1a9c2208c5406e811c5a7aebb6d4",
-    "jarvis/tools/datetime_tool.py": "d6c85eba03f90633408757ff2952e61df9f988dc71ef5b2b6926c9a542197e11",
-    "jarvis/tools/windows.py": "718e7b947a3942f6d9a0fb173fbb91213038302f935a3558be5f23b5e987b16e",
-    "jarvis/tools/browser.py": "d8776d1629db8fc05b274904fb9ffd020eaa5a49e98f78ca5336bd5cec253817",
-    "jarvis/tools/terminal.py": "d38fce33ff1d868234f3e35a55ab3a6e9d86c22f4826d4303562e4e479d53338",
-    "jarvis/tools/drives.py": "1e11f8f61db13a4f6095f1b5cbb07ec0f468f3a339c8a43ef9a2c0bf28ec385c",
-    "jarvis/tools/system_control.py": "c3921ab2b34c269d3f682ec96c6abce7d396a05444262091e3f8b8482f7e1fe9",
-    "jarvis/tools/browser_automation.py": "c4a9055273ddfb3f7c9687cb801741504510fab5b5acdaddf6334d89709d1be2",
-    "jarvis/tools/system.py": "afbb1b6d44fa846e1223ed9352a9cde655efe2614d9969c88c2358e0bd7e62ca",
-    "jarvis/tools/registry.py": "58e6bf3b2815a338b39c44e3b9bbf0b675245d7acf65bc0385e0a27fcbac5e22",
-    "jarvis/tools/files.py": "67e8ffd64e010f7dbc1df55221c8e382b5173706027ba0c1336f95fd4a855ee1",
-    "jarvis/tools/internet.py": "07b172bbb452953df182b0bd70e7e1860a7e0b1951bc55cd1f9fd2e9267cb31d",
-    "jarvis/tools/desktop.py": "44339be7e725a6ebdc00d214ae995cc5375d211eba201b2bb7921f83a005c586",
-    "jarvis/tools/calculator.py": "dbb14b016d36392e33b4bb4fc92c1d6f1e5958013372743b38abba30ba85c00a",
-    "jarvis/research/__init__.py": "c6f5efbce8026945087971ee6965715eca8ddba3d66fb62b78206d7cdaa6d167",
-    "jarvis/research/engine.py": "802db6de707b18a1b5b2e594f4e076a649e8d2267fc1bc971c271453b6da6674",
     "jarvis/search/__init__.py": "3710fae2eafaa0ef21fb85d2e0d2c55b4d601cb221153eabd8630ad90c71aae9",
     "jarvis/search/engine.py": "2755d90867aac4e16b57d0084537e150db4931ad9bd9dff214f06f5b4055ebaf",
-    "jarvis/memory/__init__.py": "ceba072ab3f4dc7ac0145e9871ca78aa04e529ded5f73bb18ff745b9b2195d9e",
-    "jarvis/memory/store.py": "6f49c7a32fa94674a2d8e491ae481d1bf2073445bda22766c3591eacb2f352f4",
-    "jarvis/memory/context_v21.py": "4680c8c46093afa3f206513b7f7e8723121cbe700af9a8d073eee9d2c709a2d8",
-    "jarvis/runtime/__init__.py": "ebc4b0c3931dbe127104a691a0c8e0616bc5447437755f4f74f7cf067fcb95e5",
-    "jarvis/runtime/bootstrap.py": "b904754d36f4c0a58646eb12bb408b64a1c980c7d3e5d853dae5c3011ff593af",
-    "jarvis/runtime/app_index.py": "9c3e29739874d34dc4f4ed15a6a74df4b596c4ed132766b6450e7438e3254dc5",
-    "jarvis/runtime/hardware.py": "1bd7f904c5c3370cfd64212817c78ac3b0e8fad0af8ac434492adf6a07c00b45",
-    "jarvis/runtime/diagnostics.py": "54b248c956b0cf27aaa2957f3b644602a52401acada9e5b6f330381b55126e51",
+    "jarvis/knowledge/retrieval_v20.py": "813276e870accf2924f2c1c08bc7d158907ad633a668e041081c9e586d4159a4",
     "jarvis/knowledge/__init__.py": "674f821ce2226e01ff22cce8ece849e3ed5d87d33b13967b69615ea97f7b2c59",
     "jarvis/knowledge/store.py": "f6937116f327dbde08176488909ba3267a487bf97071b8f13716a1d4dbb7cbc7",
     "jarvis/knowledge/rag.py": "2b83aa827adcaf31dc777df3ed9e4d54e4e71976e687ff1c745970d00698c5f8",
-    "jarvis/knowledge/retrieval_v20.py": "813276e870accf2924f2c1c08bc7d158907ad633a668e041081c9e586d4159a4",
-    "jarvis/neural/config.py": "675661de3314f5e31da3dd956e6de5dad2ffab50bdf3a9592ef1f389886974f5",
+    "jarvis/research/__init__.py": "c6f5efbce8026945087971ee6965715eca8ddba3d66fb62b78206d7cdaa6d167",
+    "jarvis/research/engine.py": "802db6de707b18a1b5b2e594f4e076a649e8d2267fc1bc971c271453b6da6674",
+    "jarvis/utils/text.py": "015fa0b142ef0605695d88dc4d0f5a322506d124a86915a0730992b20a83b46c",
+    "jarvis/utils/__init__.py": "416ef969e50c318d344f1cada8b88a0938e5590a00f3cdc9d85b1725b5d658fd",
+    "jarvis/nlu/__init__.py": "91472c845b2f51bc9e1a591dd678d593f765847cf69c04c8b4211f65bfa40ce2",
+    "jarvis/nlu/entities_v7.py": "09dcc84773c98271042437950212fcff65bec51f9c4c2af5dc18fa8636f144b1",
+    "jarvis/nlu/workflow_parser.py": "cf375e18628cd4b47544c95e0f099cff9eec3f3da0c643b9c17c108b6a83af65",
+    "jarvis/nlu/typo.py": "1408ef5c3e1ae9b201a68692fea7e101ffaa4bb2ad84b61970fc85e6f0769ac4",
+    "jarvis/nlu/action_parser.py": "26045975135fe6ffa9a4dd266be94b660102a8bd942f0436c7f3914f0ce43df4",
+    "jarvis/nlu/reference_resolver.py": "902d912bcc7a57079961525f8143afecd4858a7f7b0a07d2bfc18b3ad3609552",
+    "jarvis/nlu/task_parser.py": "0f6bd820d90a210b386a7499e844d1e01673c7d1d6bc43af4da9d5933cabab03",
+    "jarvis/nlu/semantic_slots_v19.py": "598eb6df6fb88bd14cfd987e6eade0b832c9081d60c838b7a65868d575c7062d",
+    "jarvis/monitoring/live.py": "94dd81c19146dbda81632a4e19243efae5764945145706b271ff8d8ac393edf3",
+    "jarvis/monitoring/__init__.py": "dcecf0c8b1ad5ce65cab9430af3239fef0d61a0455883ac8b64d3f37598f789e",
+    "jarvis/personalities/__init__.py": "a5d4d0f98253101fe8de47ea354e2602b8f97a112dbc1d8a464eaacfd7b9849b",
+    "jarvis/personalities/engine.py": "3409ea2aa170c848ba813f41c9a0e34c6b070b355278cafb45dd94c925974a30",
+    "jarvis/gui/orb.py": "432c044f48d947b1f9461e01250b002b3fed2cbaeacbde91f42ab3ed0e15d9f4",
+    "jarvis/gui/visual_fx.py": "71f47e32f0aca1db3d33f4f13cceadfeeacc6f5932db0ee19252e58acb8b3dee",
+    "jarvis/gui/__init__.py": "4474f4c6d7e30c0540cf5c3251b336570b67d359ce1fd8bbbe6d76d9ecc7be06",
+    "jarvis/gui/settings.py": "a29484d8fb29dd3926d4c2ed6e04fb1f536d7b0b6dc29eae08df618b4979669d",
+    "jarvis/gui/monitor.py": "78282729c707e2887a34148b47d6eea0c1417f0405c9ee8d8ec735d2aee74da2",
+    "jarvis/gui/app.py": "81cc9beeac9241f52a93b67459e0106a2f7d52cffa83c3d86a2b763dd0c60025",
+    "jarvis/gui/palette.py": "f383b1044fd0cfe87994c7015abf2d629272bb18b489842a6ac2f81a4cccdd63",
+    "jarvis/gui/chat_surface.py": "f36accee8884d866707af4c92d1292bcca91e6409485b443dd51acc5e7abe594",
+    "jarvis/entities/__init__.py": "586b6f3e97b5f281f3dd05364329ec38a381ce6c185a5926c60e4063e467ae2a",
+    "jarvis/entities/resolver.py": "d6f94eea9f543b1928747fadd4207fff6483254cc29797959aff661432dfa0af",
+    "jarvis/neural/tokenizer.py": "1ff67c437b54a26b1e6e45036254985079c622dd3b19429c837d82a4bbdeb81e",
+    "jarvis/neural/language_adapter_v21.py": "66dcc1ba2659ea04f6db69d4cdfad60a780913c9875522902826de3d8d4350b0",
     "jarvis/neural/__init__.py": "ad9b3db57bd0b2d72e76ba8f64b4557b97bf1f84121dfe4284d1c13cbc94dc75",
-    "jarvis/neural/conversation.py": "736112828384879cc543fbb456c9517cb143660e7712cd7cbfca9d97bb421e0d",
+    "jarvis/neural/config.py": "675661de3314f5e31da3dd956e6de5dad2ffab50bdf3a9592ef1f389886974f5",
     "jarvis/neural/transformer.py": "051ef07a839dac8ac7ad5b94453683b8b240625aa93322d5afa62d23e7d73819",
     "jarvis/neural/torch_model.py": "dd4d73d091a52894cd4bc015f0b1fe5ddd02ab8a6db2bc9331b08999b276ec04",
-    "jarvis/neural/language_adapter_v21.py": "66dcc1ba2659ea04f6db69d4cdfad60a780913c9875522902826de3d8d4350b0",
-    "jarvis/neural/tokenizer.py": "1ff67c437b54a26b1e6e45036254985079c622dd3b19429c837d82a4bbdeb81e",
-    "jarvis/gui/orb.py": "432c044f48d947b1f9461e01250b002b3fed2cbaeacbde91f42ab3ed0e15d9f4",
-    "jarvis/gui/__init__.py": "4474f4c6d7e30c0540cf5c3251b336570b67d359ce1fd8bbbe6d76d9ecc7be06",
-    "jarvis/gui/palette.py": "f383b1044fd0cfe87994c7015abf2d629272bb18b489842a6ac2f81a4cccdd63",
-    "jarvis/gui/settings.py": "a29484d8fb29dd3926d4c2ed6e04fb1f536d7b0b6dc29eae08df618b4979669d",
-    "jarvis/gui/chat_surface.py": "f36accee8884d866707af4c92d1292bcca91e6409485b443dd51acc5e7abe594",
-    "jarvis/gui/app.py": "81cc9beeac9241f52a93b67459e0106a2f7d52cffa83c3d86a2b763dd0c60025",
-    "jarvis/gui/monitor.py": "78282729c707e2887a34148b47d6eea0c1417f0405c9ee8d8ec735d2aee74da2",
-    "jarvis/gui/visual_fx.py": "71f47e32f0aca1db3d33f4f13cceadfeeacc6f5932db0ee19252e58acb8b3dee",
-    "jarvis/plugins/__init__.py": "42cd80a7f2be1f765ef830586fb93221b80f73aad4aa854ca97d36761b0eb369",
-    "jarvis/plugins/registry.py": "e0fb23e4264885ec28356cacd0bafeb67adf6728a841c7496edb8647862b5ea4",
-    "jarvis/monitoring/__init__.py": "dcecf0c8b1ad5ce65cab9430af3239fef0d61a0455883ac8b64d3f37598f789e",
-    "jarvis/monitoring/live.py": "94dd81c19146dbda81632a4e19243efae5764945145706b271ff8d8ac393edf3"
+    "jarvis/neural/conversation.py": "736112828384879cc543fbb456c9517cb143660e7712cd7cbfca9d97bb421e0d"
   },
   "checkpoint_hashes": {
     "verification_failure_v21.npz": "5d7f05aadd6959839b875ea5db71868170c538b64c283f03101c4bee99892af6",
     "numeric_binding_v21.npz": "85df28c1b795d3d3a72ac086bac9ec0b8b3fc4e0655649365a50e82c314e0f45",
     "operation_language_v21.npz": "cb2ab875a3541bd4d9d6900d38d7c089f9e0909c185fecf1320f4eec305964a1",
-    "language_adapter_v21.npz": "feb2c154e509094641f6566612008dde679ddc08ce644196eb7f0da8d9c752ac",
-    "code_task_v21.npz": "c882f6349a03961ba88768fda0cb80f52d4c198901a532209bc138e9e2c2c59a"
+    "code_task_v21.npz": "c882f6349a03961ba88768fda0cb80f52d4c198901a532209bc138e9e2c2c59a",
+    "language_adapter_v21.npz": "feb2c154e509094641f6566612008dde679ddc08ce644196eb7f0da8d9c752ac"
   }
 }

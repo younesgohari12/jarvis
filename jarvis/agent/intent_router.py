@@ -997,7 +997,7 @@ class IntentRouter:
         if LocalIntelligenceV22.matches(text):
             return IntentRoute(
                 "local_intelligence", "think", 0.995, 0.88,
-                arguments={"question": text.strip()}, source="local_intelligence_router_v19",
+                arguments={"question": text.strip()}, source="local_intelligence_router_v22",
                 decision_mode="think",
             )
 
