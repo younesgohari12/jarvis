@@ -267,3 +267,48 @@ def test_work_rate_still_green(canon):
 def test_ratio_task_still_green(canon):
     a = canon.solve('525 را با نسبت 4 به 3 تقسیم کن', 'fa')
     assert a is not None and '300' in a.text and '225' in a.text
+
+
+# ======================================================================
+# 7. v22.2 coverage extensions (independent-verification follow-ups)
+# ======================================================================
+def test_clock_state_opening_scheduling(canon):
+    # "It is 23:00 now" previously mis-answered as the chain 23+2=25.
+    a = canon.solve('It is 23:00 now. The meeting lasts 2 hours. When does it end?', 'en')
+    assert a is not None and '01:00' in a.text and '25' not in a.text
+
+
+def test_clock_state_opening_minutes(canon):
+    a = canon.solve('It is 23:00 now. The meeting lasts 90 minutes. When does it end?', 'en')
+    assert a is not None and '00:30' in a.text
+
+
+def test_begins_at_scheduling(canon):
+    a = canon.solve('A meeting begins at 23:30 and lasts 2 hours.', 'en')
+    assert a is not None and ('01:30' in a.text or '1:30' in a.text)
+
+
+def test_verify_temporal_bare_clock_token_witness():
+    from jarvis.agent.verifier_v22 import UniversalVerifierV2, ORIGINAL_SOURCE
+    import jarvis.agent.temporal_v22 as temporal_v22
+    token = ORIGINAL_SOURCE.set('It is 23:00 now. The meeting lasts 2 hours.')
+    try:
+        clock = temporal_v22.parse_clock_time(23.0)
+        result = temporal_v22.add_duration(clock, temporal_v22.Duration.of(2.0, 'hour'))
+        v = UniversalVerifierV2().verify_temporal(
+            'It is 23:00 now. The meeting lasts 2 hours.', result, 'en')
+        assert v.passed
+    finally:
+        ORIGINAL_SOURCE.reset(token)
+
+
+def test_roles_price_linking_verb():
+    roles = classify_source_numbers_v2('The price is 200 dollars with a 50 dollar discount.')
+    by_val = {float(f['value']): f['role'] for f in roles}
+    assert by_val[200.0] == 'price' and by_val[50.0] == 'discount'
+
+
+def test_roles_currency_discount_persian():
+    roles = classify_source_numbers_v2('قیمت پایه 500 دلار؛ 50 دلار تخفیف')
+    by_val = {float(f['value']): f['role'] for f in roles}
+    assert by_val[500.0] == 'price' and by_val[50.0] == 'discount'

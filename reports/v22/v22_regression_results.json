@@ -1,8 +1,9 @@
 {
- "suite": "tests/ (v21 baseline + v22 suite + v22.1 audit-fix suite)",
- "passed": 1031,
+ "suite": "tests/ (v21 baseline + v22 suite + v22.1 audit-fix suite incl. v22.2 coverage tests)",
+ "passed": 1037,
  "subtests": 585,
  "failures": 0,
  "baseline_required": "955 passed / 585 subtests",
- "raw_tail": "1031 passed, 585 subtests passed in 58.45s"
+ "raw_tail": "1037 passed, 585 subtests passed in 102.97s (0:01:42)",
+ "date": "2026-09-19"
 }

@@ -123,12 +123,19 @@ def _role_for(left: str, right: str, value: float, full: str) -> tuple[str, floa
             return 'k', 0.85
 
     # --- price vs discount: the price is anchored by a price cue on its
-    #     LEFT; only the number glued to the percent token is a discount ---
-    if re.search(r'(?:قیمت|هزینه|price|cost)\s*(?:پایه)?\s*:??\s*$', left, re.I):
+    #     LEFT; only the number glued to the discount token is a discount ---
+    #     v22.2: a linking verb ("price is 200") still anchors the price, and
+    #     a currency-denominated discount ("50 dollar discount") is honoured
+    #     ONLY when the discount noun directly follows the currency word.
+    if re.search(r'(?:قیمت|هزینه|price|cost)(?:\s+(?:پایه|is|was|are|است|بود))?'
+                 r'\s*(?:پایه)?\s*:??\s*$', left, re.I):
         return 'price', 0.88
     if re.match(r'\s*(?:درصد|%|percent)', right, re.I) and \
             re.search(r'تخفیف|discount|کاهش|reduce', right[:40], re.I):
         return 'discount', 0.9
+    if re.match(r'\s*(?:دلار|ریال|تومان|dollars?|euros?|tomans?)\s*'
+                r'(?:تخفیف|discount)\b', right, re.I):
+        return 'discount', 0.88
 
     # --- window-based fallbacks ---
     if re.search(r'درصد|%|percent', left + right, re.I) and \

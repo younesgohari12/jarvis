@@ -2,20 +2,21 @@
  "protocol": "same 12-question mix x20, direct solve(), canonical style, one process",
  "v21": {
   "n": 240,
-  "p50_ms": 1.68,
-  "p95_ms": 4.57,
-  "mean_ms": 1.97
+  "p50_ms": 2.311,
+  "p95_ms": 19.365,
+  "mean_ms": 5.196
  },
  "v22": {
   "n": 240,
-  "p50_ms": 2.94,
-  "p95_ms": 13.6,
-  "mean_ms": 5.07
+  "p50_ms": 3.439,
+  "p95_ms": 33.316,
+  "mean_ms": 7.723
  },
  "overhead_pct": {
-  "mean": 157.4,
-  "p50": 75.0,
-  "p95": 197.6
+  "mean": 48.6,
+  "p50": 48.8,
+  "p95": 72.0
  },
- "budget_note": "v22.1 adds typed extraction, role classification, immutable-source context and the age-difference witness; absolute cost stays in low ms."
+ "budget_note": "v22.2 keeps the v22.1 runtime additions (typed extraction, role classification, immutable-source context, age-difference witness, temporal witness) plus two extra regex alternations; overhead is the measured price of fail-closed verification.",
+ "date": "2026-09-19"
 }

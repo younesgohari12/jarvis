@@ -234,6 +234,14 @@ class UniversalVerifierV2(UniversalVerifier):
             m = re.search(r'(?:ساعت|at)\s*(\d{1,2})(?::(\d{2}))?', t, re.I)
             if m:
                 start = f"{int(m.group(1)):02d}:{int(m.group(2) or 0):02d}"
+            elif re.search(r'\b\d{1,2}:\d{2}\b|\b\d{1,2}\s*o\u2019?clock\b', t, re.I):
+                # v22.2: a bare clock token ("It is 23:00 now.") also names the
+                # start instant even without a ساعت/at cue — accept it as the
+                # start witness ONLY when the cued form is absent.
+                cm = re.search(r'\b(\d{1,2}):(\d{2})\b|\b(\d{1,2})\s*o\u2019?clock\b', t, re.I)
+                hh = cm.group(1) or cm.group(3)
+                mm = cm.group(2) or 0
+                start = f"{int(hh):02d}:{int(mm):02d}"
             durations = []
             for dm in re.finditer(
                     r'(?:مدت(?:\s*کار)?|duration|دیرش)\D{0,12}?(\d+(?:\.\d+)?)\s*(ساعت|دقیقه|hours?|minutes?|hr|min)'

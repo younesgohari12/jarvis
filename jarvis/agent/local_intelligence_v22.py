@@ -73,8 +73,12 @@ class LocalIntelligenceV22(LocalIntelligenceV21):
                 return op
 
         # 2) NLU retry: informal Persian/English gets one normalized retry.
+        #    v22.2: the retry input also passes through the minute-precision
+        #    clock decoder so rewritten scheduling starts (e.g. "it starts at
+        #    23:00 now") parse as decimal hours, exactly like attempt #1.
         if answer is None:
             ntext = lb.normalize_nlu(text)
+            ntext = lb.normalize_clock_tokens(ntext) if ntext != text else text
             if ntext != text:
                 answer = super().solve(ntext, language)
                 if answer is not None and self.last_trace:
@@ -100,6 +104,7 @@ class LocalIntelligenceV22(LocalIntelligenceV21):
                     or 'independently verify' in text_l.lower()
                     or 'سازگار نیست' in text_l):
                 ntext = lb.normalize_nlu(text)
+                ntext = lb.normalize_clock_tokens(ntext) if ntext != text else text
                 if ntext != text:
                     retry = super().solve(ntext, language)
                     if retry is not None and self.last_trace and self.last_trace['verification']['passed']:

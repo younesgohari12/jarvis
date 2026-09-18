@@ -137,7 +137,7 @@ def extract_source(text):
         if re.match(r'\s*(?:کیلومتر|kilometers?|km)\s*(?:بر ساعت|per hour|/h)',ds):
             return graph('speed',{'speed':vals[di],'time':seconds/3600,'query':'distance'},units={'distance':'km'})
         return graph('speed',{'distance':dist if persecond else dist/1000,'time':seconds if persecond else seconds/3600},units={'speed':'m/s' if persecond else 'km/h'})
-    if re.search(r'شروع|start|begins?',t) and re.search(r'تمام|پایان|finish|end|مدت|duration',t) and re.search(r'ساعت|hours?|minutes?|دقیقه',t):
+    if re.search(r'شروع|start|begins?|leaves?|departs?|opens?',t) and re.search(r'تمام|پایان|finish|end|مدت|duration|lasts?|takes?',t) and re.search(r'ساعت|hours?|minutes?|دقیقه',t):
         si=choose([(r'(?:ساعت|at|start(?:s)?(?: at)?)\s*$',r'.*')])
         durations=[]
         for i,m in enumerate(numbers):

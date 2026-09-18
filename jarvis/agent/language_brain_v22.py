@@ -70,6 +70,10 @@ _PARAPHRASE = [
      r'Divide \1 in the ratio \2:\3'),
     # English ownership tail -> canonical witness form
     (r'[Ww]hat\s+is\s+(\w+)(?:\u2019|\')s\s+balance[^?]*\?', r'Balance of \1?'),
+    # English clock-state opening -> canonical scheduling start wording
+    # ("It is 23:00 now." names the START instant of the coming duration)
+    (r'[Ii]t\s+is\s+(\d{1,2}(?:[:.]\d{2})?)\s*(?:o\u2019?clock\s*)?now\b',
+     r'it starts at \1 now'),
     # Persian shift wording -> canonical scheduling wording
     (r'شیفت\s*کاری', 'کار'),
     (r'پایان\s*شیفت', 'پایان کار'),

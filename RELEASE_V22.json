@@ -1,8 +1,8 @@
 {
  "product": "JARVIS",
- "version": "v0.11.0-intelligence-v22.1",
- "codename": "LANGUAGE_SEMANTIC_VERIFIER_UPGRADE — AUDIT RESPONSE",
- "date": "2026-09-18",
+ "version": "v0.11.0-intelligence-v22.2",
+ "codename": "LANGUAGE_SEMANTIC_VERIFIER_UPGRADE — AUDIT RESPONSE FINAL",
+ "date": "2026-09-19",
  "base": "v21 architecture trained tested (byte-identical core, additive v22 modules)",
  "summary": {
   "p0_fixed": [
@@ -35,5 +35,24 @@
   "tests/test_v22_semantic.py (34)",
   "tests/test_v221_audit_fixes.py (42)",
   "full tests/ regression (1031)"
- ]
+ ],
+ "v22_2_addendum": {
+  "trigger": "independent verification pass over the v22.1 release before final delivery",
+  "fixed": [
+   "reports/v22/v22_fresh_blind_v221_official.json contained a stale v20-runner artifact whose pass marks contradicted the honest report (8.4% vs 83.58%); replaced with a fresh official run of benchmarks/run_v22_fresh_blind.py (855/1023, honest 83.58, answerable-only 82.09) and verified family-by-family identical to v22_fresh_blind_results.json",
+   "clock-state openings (\"It is 23:00 now. The meeting lasts 2 hours.\") previously mis-parsed as an addition chain and returned the wrong answer 25; the temporal witness now accepts a bare clock token as the start instant and the answer is 01:00 next day",
+   "numeric role classifier: linking verbs (\"price is 200\") now anchor the price role and currency-denominated discounts (\"50 dollar discount\") are honoured when the discount noun directly follows the currency word",
+   "English scheduling cue coverage extended (leaves/departs/opens + lasts/takes) and the NLU retry path now also decodes minute-precision clock tokens"
+  ],
+  "verification": [
+   "fresh-blind benchmark re-run after the code changes: 855/1023, honest score 83.58, answerable-only 82.09 — family-by-family identical (no benchmark row changed behavior)",
+   "full regression: 1037 tests + 585 subtests, 0 failures (1031 prior + 6 new v22.2 coverage tests in tests/test_v221_audit_fixes.py)",
+   "performance re-measured with the documented protocol: v21 mean 5.196ms vs v22.2 mean 7.723ms (+48.6% mean, +72.0% p95) — consistent with the independent audit measurements"
+  ],
+  "not_claimed": [
+   "frame-model coverage gaps remain: unrecognized phrasings answer None (safe abstain) — e.g. \"A train departs at 23:30. The trip takes 45 minutes.\"",
+   "no new model weights; broad language generation unchanged (Persian 6/50, English 0/50)",
+   "ownership 19/60 and inventory 67/100 fresh-blind rates unchanged since v21 — documented open gaps"
+  ]
+ }
 }
