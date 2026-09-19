@@ -1,0 +1,127 @@
+{
+  "framework": "v22.4.1 valid-kill semantics (spec §13-§18), reused by v22.4.2",
+  "kill_definition": "applied AND collected>=1 AND failed>=1 AND errors==0",
+  "mutants": [
+    {
+      "id": "M8_route_readonly_set_overextended",
+      "file": "jarvis/tools/terminal.py",
+      "tests": [
+        "tests/test_v2242_security_and_rootcause.py"
+      ],
+      "sha_before": "8295da9edb752fa45fb45edf1814953c9de22025fb79a7994c48561fe6be085b",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 65,
+        "passed": 53,
+        "failed": 12,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "r_unknown_operation_fails_closed[route -4 add 10.0.0.0]\nFAILED tests/test_v2242_security_and_rootcause.py::TestRouteCommandPolicy::test_route_risk_category_maps_mutating_to_shell\nFAILED tests/test_v2242_security_and_rootcause.py::TestRouteCommandPolicy::test_mutating_route_never_reaches_subprocess_without_confirmation\n======================== 12 failed, 53 passed in 1.23s =========================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "8295da9edb752fa45fb45edf1814953c9de22025fb79a7994c48561fe6be085b",
+      "source_restored": true
+    },
+    {
+      "id": "M9_scanner_prefix_group_dropped",
+      "file": "benchmarks/v22_4_1_security.py",
+      "tests": [
+        "tests/test_v2242_security_and_rootcause.py"
+      ],
+      "sha_before": "3ef5e495e65ddd015456aac0c2e8ea19cc5e41e90e938215f8b3db50ff057427",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 65,
+        "passed": 55,
+        "failed": 10,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "tcause.py::TestSecretScanner::test_prefixed_credential_names_are_detected[json_form]\nFAILED tests/test_v2242_security_and_rootcause.py::TestSecretScanner::test_prefixed_credential_names_are_detected[env_form]\nFAILED tests/test_v2242_security_and_rootcause.py::TestSecretScanner::test_findings_contain_only_safe_metadata\n======================== 10 failed, 55 passed in 1.24s =========================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "3ef5e495e65ddd015456aac0c2e8ea19cc5e41e90e938215f8b3db50ff057427",
+      "source_restored": true
+    },
+    {
+      "id": "M10_placeholder_filter_disabled",
+      "file": "benchmarks/v22_4_1_security.py",
+      "tests": [
+        "tests/test_v2242_security_and_rootcause.py"
+      ],
+      "sha_before": "3ef5e495e65ddd015456aac0c2e8ea19cc5e41e90e938215f8b3db50ff057427",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 65,
+        "passed": 64,
+        "failed": 1,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "................ [ 44%]\n.................F..................                                     [100%]\n\n=========================== short test summary info ============================\nFAILED tests/test_v2242_security_and_rootcause.py::TestSecretScanner::test_placeholders_and_lookups_are_not_reported[env_placeholder]\n========================= 1 failed, 64 passed in 1.25s =========================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "3ef5e495e65ddd015456aac0c2e8ea19cc5e41e90e938215f8b3db50ff057427",
+      "source_restored": true
+    },
+    {
+      "id": "M11_markdown_gate_forced_green",
+      "file": "benchmarks/v22_4_1_metadata_consistency.py",
+      "tests": [
+        "tests/test_v2242_security_and_rootcause.py"
+      ],
+      "sha_before": "0af0d930d4d050b7ab72c03783122219a907f7a917bfb1b639b4e4e759e2abc4",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 65,
+        "passed": 63,
+        "failed": 2,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "  [100%]\n\n=========================== short test summary info ============================\nFAILED tests/test_v2242_security_and_rootcause.py::TestMarkdownMetadataGate::test_stale_markdown_claim_is_rejected\nFAILED tests/test_v2242_security_and_rootcause.py::TestMarkdownMetadataGate::test_table_current_column_is_checked\n========================= 2 failed, 63 passed in 1.25s =========================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "0af0d930d4d050b7ab72c03783122219a907f7a917bfb1b639b4e4e759e2abc4",
+      "source_restored": true
+    }
+  ],
+  "valid_mutants": 4,
+  "killed": 4,
+  "survived": 0,
+  "invalid": 0,
+  "timeouts": 0,
+  "all_source_restored": true,
+  "target": {
+    "valid_mutants": 4,
+    "killed": 4,
+    "survived": 0,
+    "invalid": 0
+  },
+  "meets_target": true
+}

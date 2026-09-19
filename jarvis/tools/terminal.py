@@ -42,6 +42,14 @@ class CommandPolicy:
         }
     )
     SAFE_PYTHON_ARGS = frozenset({"--version", "-V", "-VV"})
+    # BUG-001 (v22.4.2): explicit Route command grammar. `-4`/`-6` are global
+    # address-family selectors, NOT operations; they can precede a mutating
+    # subcommand (`route -4 add ...`). Classification must therefore skip
+    # global flags first and then inspect the real operation, failing closed
+    # on missing or unknown operations.
+    ROUTE_GLOBAL_FLAGS = frozenset({"-4", "-6"})
+    ROUTE_READONLY_OPERATIONS = frozenset({"print"})
+    ROUTE_MUTATING_OPERATIONS = frozenset({"add", "delete", "change"})
     CAUTION_EXECUTABLES = frozenset({"git", "git.exe", "python", "python.exe", "py", "py.exe"})
     DANGEROUS_EXECUTABLES = frozenset(
         {"shutdown", "shutdown.exe", "taskkill", "taskkill.exe", "reg", "reg.exe", "sc", "sc.exe"}
@@ -104,8 +112,8 @@ class CommandPolicy:
                 "The command can change processes, services, registry or power state",
             )
         if executable in cls.SAFE_EXECUTABLES:
-            if executable == "route" and len(values) > 1 and values[1].casefold() not in {"print", "-4", "-6"}:
-                return CommandAssessment("dangerous", "network_change_confirmation_required", "Route changes require confirmation")
+            if executable == "route":
+                return cls._assess_route(values)
             if executable == "ipconfig" and any(
                 value.casefold() in {"/release", "/renew", "/registerdns"} for value in values[1:]
             ):
@@ -145,6 +153,40 @@ class CommandPolicy:
         return CommandAssessment(
             "blocked", "executable_not_allowlisted",
             f"Executable is not in the command allowlist: {executable}",
+        )
+
+    @classmethod
+    def _assess_route(cls, values: tuple[str, ...]) -> CommandAssessment:
+        """Classify a `route` command by its real operation, fail-closed.
+
+        Grammar: route [-4|-6 ...] <operation> [args...]
+
+        * global address-family selectors (-4/-6) are skipped and never
+          treated as the operation (BUG-001);
+        * `print` (with any selectors) stays read-only;
+        * `add`/`delete`/`change` always require confirmation;
+        * a missing or unknown operation is BLOCKED — it never defaults to
+          safe (fail closed).
+        """
+        remainder = list(values[1:])
+        while remainder and remainder[0].casefold() in cls.ROUTE_GLOBAL_FLAGS:
+            remainder.pop(0)
+        if not remainder:
+            return CommandAssessment(
+                "blocked", "route_operation_unverified",
+                "Route command without a verifiable operation is not allowed",
+            )
+        operation = remainder[0].casefold()
+        if operation in cls.ROUTE_READONLY_OPERATIONS:
+            return CommandAssessment("safe", "read_only", "Route print is read-only")
+        if operation in cls.ROUTE_MUTATING_OPERATIONS:
+            return CommandAssessment(
+                "dangerous", "network_change_confirmation_required",
+                "Route changes require confirmation",
+            )
+        return CommandAssessment(
+            "blocked", "route_unknown_operation_blocked",
+            f"Unknown route operation is not allowed: {operation}",
         )
 
     @classmethod

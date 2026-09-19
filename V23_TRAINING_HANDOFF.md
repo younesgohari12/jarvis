@@ -78,4 +78,4 @@ generated number through the deterministic verifier before accepting it.
    synthetic) from day one.
 4. Maintain the mutation-integrity discipline: every guard added in v23 gets
    a mutation test with valid-kill semantics.
-5. Regression baseline to protect: 1227 tests + 585 subtests, 0 failures.
+5. Regression baseline to protect: 1228 tests + 585 subtests, 0 failures.

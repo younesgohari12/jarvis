@@ -1,0 +1,27 @@
+{
+  "scan": "source_tree",
+  "root": "/home/z/my-project/jarvis_work/pkg/Jarvis_v0.11.0",
+  "files_scanned": 1783,
+  "findings": [],
+  "secret_count": 0,
+  "passed": true,
+  "patterns_checked": [
+    "github_pat",
+    "github_token_classic",
+    "github_oauth",
+    "github_token_finegrained",
+    "api_key_generic",
+    "access_token_generic",
+    "secret_key_generic",
+    "secret_token_generic",
+    "bot_token_generic",
+    "aws_access_key",
+    "aws_secret_key",
+    "private_key_block",
+    "bot_token",
+    "slack_token",
+    "google_api_key",
+    "hardcoded_password"
+  ],
+  "note": "only (file, secret_type) is reported; values are never recorded"
+}

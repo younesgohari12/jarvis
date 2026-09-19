@@ -53,9 +53,9 @@ def source_work_facts(source):
     for number in NUMBER.finditer(t):
         left=t[max(0,number.start()-45):number.start()]; right=t[number.end():number.end()+45]
         roles=[]
-        if re.match(r'\s*(?:کارگر\w*|نفر(?:\s+(?:نیرو|کارگر))?|نیروی\s+کار|workers?\b|people\b)',right) or re.search(r'(?:(?:کارگر|نیروی)\s*(?:=|:)|(?:تعداد\s+کارگر|worker count|staffing)\s*(?:is|=|:)?)\s*$',left): roles.append('workers')
+        if re.match(r'\s*(?:کارگر\w*|نفر(?:\s+(?:نیرو|کارگر))?|نیروی\s+کار|machine\w*|robot\w*|tap\w*|pipe\w*|pump\w*|printer\w*|workers?\b|people\b|operators?\b|technicians?\b|employees?\b|staff\b|crew\w*|developers?\b|programmers?\b|bakers?\b|packers?\b|painters?\b|drivers?\b|assemblers?\b)',right) or re.search(r'(?:(?:کارگر|نیروی)\s*(?:=|:)|(?:تعداد\s+کارگر|worker count|staffing)\s*(?:is|=|:)?)\s*$',left): roles.append('workers')
         if re.match(r'\s*(?:ساعت\w*|دقیقه|ثانیه|hours?\b|minutes?\b|seconds?\b)',right) or re.search(r'(?:مدت|زمان|duration|time)\s*(?:is|=|:)??\s*$',left): roles.append('hours')
-        if re.match(r'\s*(?:قطعه|کالا|واحد|جعبه|boxes\b|pieces?\b|units?\b|items?\b)',right) or re.search(r'(?:خروجی|تولید|output|production)\s*(?:is|was|=|:)??\s*$',left): roles.append('output')
+        if re.match(r'\s*(?:قطعه|کالا|واحد|جعبه|boxes\b|pieces?\b|units?\b|items?\b|widgets?\b|gadgets?\b|products?\b|components?\b|parts\b|bricks?\b|bottles?\b|cans\b|jars\b|crates\b|trays\b|toys?\b|dolls?\b|balls\b|cakes?\b|cookies\b|cupcakes\b|pizzas?\b|sandwiches\b|meals?\b|chairs?\b|tables?\b|desks\b|shelves\b|shirts?\b|trousers\b|shoes\b|bags?\b|hats\b|cars\b|trucks?\b|bikes\b|bicycles?\b|engines\b|tools\b|laptops?\b|phones\b|cameras?\b|tickets?\b|packages?\b|parcels?\b|orders?\b|reports?\b|documents?\b|invoices\b|signs\b|banners?\b|posters?\b|flyers\b|booklets\b|notebooks?\b|pencils?\b|pens\b|mugs\b|cups\b|plates?\b|bowls\b|spoons\b|frames?\b|gears?\b|valves?\b|bolts?\b|screws\b|nails\b|panels?\b|modules\b|circuits?\b)',right) or re.search(r'(?:خروجی|تولید|output|production)\s*(?:is|was|=|:)??\s*$',left): roles.append('output')
         roles=list(dict.fromkeys(roles))
         if len(roles)>1: raise SourceAmbiguity('conflicting_source_units')
         if not roles: continue

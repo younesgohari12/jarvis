@@ -1,0 +1,73 @@
+{
+  "release": "v0.11.0-intelligence-v22.4.2",
+  "generated_by": "benchmarks/v22_4_2_release_pipeline.py + benchmarks/v22_4_2_mutation.py + benchmarks/v22_4_2_security_scan.py (all measured, never hand-typed)",
+  "evidence_classes": {
+    "measured_now": "all numbers below",
+    "verified_from_source": "permission-chain audit (SECURITY_AUDIT_FA.md)",
+    "historical_release_claim": "v22.4: 1215 tests / v22.4.1: 1228 tests, frozen blind 1891/2075"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux x86_64 (CPython via uv) — project targets Windows/CPython 3.13; difference documented",
+    "cpu": "virtualized x86_64 host CPU",
+    "ram": "host-managed",
+    "gpu": "none"
+  },
+  "baseline": {
+    "tests": 1227,
+    "subtests": 585,
+    "failures": 0,
+    "note": "measured pre-fix in this environment on the extracted v22.4.1 release ZIP (SHA dbc6f586... verified); 1 additional environment-dependent test (release ZIP gate) skipped, giving 1227 passed + 1 skipped = 1228 collected, consistent with the published 1228"
+  },
+  "final": {
+    "tests": 1292,
+    "subtests": 585,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1,
+    "skipped_reason": "tests/test_v224_1_release_pipeline.py::release ZIP gate — the packaged ZIP is not present in the working tree during the test run (environment-dependent, runs on the release machine)",
+    "pytest_tail": "1292 passed, 1 skipped, 585 subtests passed"
+  },
+  "security": {
+    "passed": 1,
+    "failed": 0,
+    "source_scan": {"files_scanned": 1783, "secret_count": 0, "patterns_checked": 16},
+    "package_scan": {"secret_count": 0, "passed": true}
+  },
+  "mutation": {
+    "valid_mutants": 11,
+    "killed": 11,
+    "survived": 0,
+    "invalid": 0,
+    "detail": {
+      "new_guards_M8_M11": "4/4 KILLED_BY_ASSERTION (reports/v22_4_2/mutation_tests.json)",
+      "original_M1_M7": "7/7 KILLED_BY_ASSERTION re-measured in this environment; published v22.4.1 mutation_tests.json byte-restored after measurement"
+    },
+    "kill_definition": "applied AND collected>=1 AND failed>=1 AND errors==0"
+  },
+  "diagnostic_v2242": {
+    "cases": 107,
+    "sha256": "8e4aac45df363facdb4cb64f65fc9515111665949941b3e170375f13599adaa2",
+    "run1_score_numeric": 31.78,
+    "run2_score_numeric": 32.71,
+    "run2_score_answerable_only": 25.77,
+    "hard_negatives_abstain_correct": "10/10",
+    "note": "freshly authored generalization diagnostic; NOT the frozen benchmark; never averaged with it (spec 38)"
+  },
+  "package": {
+    "integrity_passed": true,
+    "zip_name": "Jarvis_v0.11.0_Intelligence_v22.4.2_SECURITY_AUDITED_FIXED.zip",
+    "archive_file_count": 1784,
+    "manifest_entries": 1783,
+    "crc_ok": true,
+    "forbidden_cache_files": 0,
+    "reproducible_rebuild_byte_identical": true,
+    "sha256_recorded_in": "PACKAGE_INTEGRITY.json + reports/v22_4_2/package_integrity.json (external finalization artifact)"
+  },
+  "bugs": {
+    "BUG-001": {"status": "FIXED", "regression_tests": "TestRouteCommandPolicy + TestPermissionFloor", "mutation": "M8 KILLED_BY_ASSERTION"},
+    "BUG-002": {"status": "FIXED", "regression_tests": "TestSecretScanner (11 positive / 10 negative / metadata safety)", "mutation": "M9 + M10 KILLED_BY_ASSERTION"},
+    "BUG-003": {"status": "FIXED", "regression_tests": "TestMarkdownMetadataGate", "mutation": "M11 KILLED_BY_ASSERTION"},
+    "WEAK-W1": {"status": "FIXED (bounded, measured)", "regression_tests": "TestWorkRateAnswers + TestSourceSlotConsistency", "mutation": "covered by shared suite"}
+  }
+}

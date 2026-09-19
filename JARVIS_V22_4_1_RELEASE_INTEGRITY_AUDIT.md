@@ -43,7 +43,7 @@ plus working tree = empty). Evidence:
   (`reports/v22_4_1/runtime_parity.json`).
 - Full P0 smoke suite (the v22.4 hardening behaviors): **16/16 PASS**
   (`reports/v22_4_1/p0_smoke.json`).
-- Regression: **1227 tests + 585 subtests, 0 failures** (v22.4 baseline was
+- Regression: **1228 tests + 585 subtests, 0 failures** (v22.4 baseline was
   1215 + 585, 0 — held and raised by release-pipeline tests).
 
 ## 4. Packaging cleanup
@@ -185,11 +185,11 @@ never hand-typed):
 
 | | v22.4 baseline | v22.4.1 |
 |---|---|---|
-| tests | 1215 | **1227** |
+| tests | 1215 | **1228** |
 | subtests | 585 | **585** |
 | failures | 0 | **0** |
 
-The increase (+12) is the new release-pipeline test module
+The increase (+13) is the new release-pipeline test module
 (`tests/test_v224_1_release_pipeline.py`: forbidden-path matcher, ZIP
 integrity, benchmark accounting, benchmark immutability, authoring sidecar
 consistency, mutation classification semantics, metadata namespacing, P0
@@ -275,7 +275,7 @@ All §60 acceptance gates are green (machine-checked in
 `RELEASE_V22_4_1.json.gates` and `reports/v22_4_1/final_scorecard.json`):
 
 - runtime parity with v22.4 confirmed (40/40) — `runtime_changed = false`
-- 1227 tests + 585 subtests, 0 failures (≥ 1215 baseline held)
+- 1228 tests + 585 subtests, 0 failures (≥ 1215 baseline held)
 - all P0 smoke tests pass (16/16)
 - `.hypothesis` and all forbidden caches absent from the package (verified
   from the archive itself)

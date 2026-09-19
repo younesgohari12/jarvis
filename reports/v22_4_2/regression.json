@@ -1,0 +1,13 @@
+{
+  "source": "raw pytest run of tests/ (never hand-typed)",
+  "pytest_tail": "1292 passed, 1 skipped, 585 subtests passed in 63.96s (0:01:03)",
+  "returncode": 0,
+  "tests": 1292,
+  "skipped": 1,
+  "skip_reason": "release ZIP not present in the working tree during the run (environment-dependent packaging test)",
+  "subtests": 585,
+  "failures": 0,
+  "errors": 0,
+  "baseline_required": ">= 1215 tests + 585 subtests (v22.4), previous v22.4.1 = 1228",
+  "meets_baseline": true
+}

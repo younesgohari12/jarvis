@@ -20,3 +20,6 @@ dist_v22_4_1/
 *.tmp
 *.bak
 reports/v22_4_1/mutation_selftest_fixtures/
+
+# v22.4.2 release hygiene
+dist_v22_4_2/

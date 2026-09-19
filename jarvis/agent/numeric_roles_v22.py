@@ -34,9 +34,9 @@ def close(a, b):
     except (ValueError, TypeError, OverflowError):
         return False
 
-_WORKERS_PAT = r'کارگر|workers?|نفر|people'
+_WORKERS_PAT = r'کارگر|workers?|نفر|people|machines?|robots?|taps?|pipes?|pumps?|printers?|operators?|technicians?|employees?|staff|crew\w*|developers?|programmers?|bakers?|packers?|painters?|drivers?|assemblers?'
 _HOURS_PAT = r'ساعت|hours?|hr\b'
-_OUTPUT_PAT = r'تولید|خروجی|قطعه|واحد|جعبه|produces?|output|pieces?|units?|boxes?|items?|products?'
+_OUTPUT_PAT = r'تولید|خروجی|قطعه|کالا|واحد|جعبه|produces?|output|pieces?|units?|boxes?|items?|products?|widgets?|gadgets?|components?|parts|bricks?|bottles?|crates?|toys?|cakes?|cookies|chairs?|tables?|shirts?|shoes|bags?|cars|trucks?|bikes|tools|tickets?|packages?|orders?|reports?|documents?|frames?|gears?|valves?|bolts?|panels?|modules?'
 
 
 def classify_source_numbers(text: str) -> list[dict]:
@@ -112,7 +112,7 @@ def _role_for(left: str, right: str, value: float, full: str) -> tuple[str, floa
         return 'hours', 0.85  # duration family (may be minute-denominated)
     if re.match(_WORKERS_PAT, immediate, re.I):
         return 'workers', 0.88
-    if re.match(r'(?:واحد|قطعه|جعبه|pieces?|units?\b|products?|boxes?|items?|output)', immediate, re.I):
+    if re.match(r'(?:واحد|قطعه|جعبه|pieces?|units?\b|products?|boxes?|items?|output|widgets?|parts|frames?|components?|crates?|bricks?|bottles?|cakes?|chairs?|tables?|gadgets?|toys?)', immediate, re.I):
         return 'output', 0.88
 
     # --- binomial n/k (must precede the probability/p fallbacks) -------
@@ -292,7 +292,8 @@ def _mark_inventory_roles(t: str, found: list[dict]) -> list[dict]:
     for f in found:
         left = t[max(0, f['start'] - 70):f['start']]
         right = t[f['end']:f['end'] + 70]
-        if f['role'] not in ('value', 'output', 'inventory_initial',
+        if f['role'] not in ('value', 'output', 'output_initial', 'output_target',
+                             'inventory_initial',
                              'inventory_add', 'inventory_remove'):
             continue
         if not re.search(r'کالا|قطعه|جنس|آیتم|items?|pieces?|products?|واحد|units?',

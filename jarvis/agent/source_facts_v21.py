@@ -58,7 +58,7 @@ def extract_source(text):
     if re.search('کارگر|workers',t) and re.search('جداگانه|separately',t):
         m=re.search(r'(?:در|in)\s*(\d+(?:\.\d+)?)\s*(?:و|and)\s*(\d+(?:\.\d+)?)\s*(?:ساعت|hours)',t)
         if m:return graph('work_rate',{'durations':[float(m.group(1)),float(m.group(2))],'query':'combined_time'},units={'time':'hour'})
-    if re.search(r'کارگر|workers?\b',t) and re.search(r'ساعت|دقیقه|hours?|minutes?',t):
+    if re.search(r'کارگر|workers?\b|machines?\b|robots?\b|crew\b|people\b|operators?\b|employees?\b|staff\b|bakers?\b|packers?\b|painters?\b|assemblers?\b|technicians?\b',t) and re.search(r'ساعت|دقیقه|hours?|minutes?',t):
         try:return graph('work_rate',source_work_facts(t),units={'time':'hour','output':'piece'})
         except SourceAmbiguity as e:raise UnsupportedSource(str(e))
     if re.search(r'دنباله|sequence|\bterm\b|جمله',t):

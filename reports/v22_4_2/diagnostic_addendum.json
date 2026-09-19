@@ -1,0 +1,23 @@
+{
+  "purpose": "transparency addendum to the frozen diagnostic run (file untouched)",
+  "invalid_rows": [
+    {
+      "id": "v2242diag-0068",
+      "domain": "age",
+      "question": "A speed of 10 m/s equals how many km/h?",
+      "issue": "AUTHORING ARITHMETIC ERROR in the expected value (computed -4). The correct solution of 42+x = 4*(10+x) is x = 2/3 years. Detected during report review, AFTER the frozen run. The frozen file was NOT modified; the row failed in both interpretations (the engine abstained), so it does not affect any conclusion.",
+      "resolution": "row excluded from answerable scoring if recomputed; documented here for honesty"
+    }
+  ],
+  "run_transition": {
+    "run1": "after WEAK-W1a only (reports backup: evidence/diagnostic_run1.json)",
+    "run2": "after WEAK-W1b/c/d (reports/v22_4_2/diagnostic.json)",
+    "row_diff_run1_run2": [
+      "v2242diag-0003 work_rate: FAIL -> PASS (machines/parts vocabulary class)"
+    ]
+  },
+  "harness_notes": [
+    "4 rows failed because the agent attempted to call tools (tools are disabled in blind runs, same as the reference runner methodology); outputs recorded as empty, not wrong answers",
+    "tools called on those rows: close_app, open_folder, calculator — honest planner behavior outside the semantic engine scope"
+  ]
+}
