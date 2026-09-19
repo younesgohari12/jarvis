@@ -1,0 +1,46 @@
+{
+  "release": "v0.11.0-intelligence-v22.4.1",
+  "zip_name": "Jarvis_v0.11.0_Intelligence_v22.4.1_FINAL_CLEAN_HARDENED.zip",
+  "zip_sha256": "dbc6f586288161de499224eee7270d6b2b0f183f12f40abe7658b0c30502c2be",
+  "zip_size_bytes": 110388331,
+  "package_root": "Jarvis_v0.11.0",
+  "archive_file_count": 1771,
+  "manifest_entries": 1770,
+  "manifest_scope": "all packaged files except SHA256SUMS.json",
+  "missing": 0,
+  "mismatch": 0,
+  "extra": 0,
+  "crc_ok": true,
+  "forbidden_cache_files": 0,
+  "passed": true,
+  "verification_detail": {
+    "single_root": true,
+    "roots_found": [
+      "Jarvis_v0.11.0"
+    ],
+    "missing_files": [],
+    "extra_files": [],
+    "hash_mismatches": [],
+    "forbidden_paths": [],
+    "manifest_self_hash_ok": true,
+    "inventory_exact": true
+  },
+  "reproducibility": {
+    "attempted": true,
+    "inventories_identical": true,
+    "zip_binary_hash_identical": true,
+    "rebuild_sha256": "dbc6f586288161de499224eee7270d6b2b0f183f12f40abe7658b0c30502c2be",
+    "final_sha256": "dbc6f586288161de499224eee7270d6b2b0f183f12f40abe7658b0c30502c2be",
+    "note": "timestamps and permissions are normalized, so two builds of one tree are byte-identical"
+  },
+  "security_scan": {
+    "secret_count": 0,
+    "files_scanned": 1771,
+    "passed": true
+  },
+  "generated_from": "ZipFile(final_zip) — measured, never hand-typed (spec §44)",
+  "generation_order": "source → tests → reports → cache cleanup → file list → SHA256SUMS → ZIP → verify ZIP → package_integrity (this file) — spec §9",
+  "shipping_policy": "this report ships BESIDE the ZIP (external finalization artifact); a file inside a ZIP cannot contain that ZIP's final SHA256",
+  "post_upload_digest_verified": false,
+  "post_upload_reason": "not yet uploaded"
+}

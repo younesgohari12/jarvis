@@ -1,0 +1,11 @@
+{
+  "release": "v0.11.0-intelligence-v22.4.1",
+  "reference_tree": "/home/z/my-project/jarvis_v224_ref",
+  "reference_commit": "dc5c32889296614bdf4b96179f565cdfaa8b70e8",
+  "sample_size": 40,
+  "answered_current": 31,
+  "differences": [],
+  "diff_count": 0,
+  "parity_confirmed": true,
+  "allowed_differences_note": "release version / telemetry version / packaging metadata only — none observed in normalized response fields"
+}

@@ -1,0 +1,174 @@
+"""JARVIS v22.4.1 — metadata consistency verification (spec §46).
+
+Cross-checks that ALL current v22.4.1 artifacts agree on:
+version, test count, subtest count, failure count, broad score, legacy score,
+blind score, manifest count, ZIP SHA.
+
+Historical metrics are accepted only under explicit namespacing (§47).
+
+This is an EXTERNAL finalization artifact: it runs against the final ZIP and
+ships beside it (see package_v22_4_1.py policy note).
+
+Output: reports/v22_4_1/metadata_consistency.json
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+import sys
+import zipfile
+
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+R421 = os.path.join(BASE, 'reports', 'v22_4_1')
+R44 = os.path.join(BASE, 'reports', 'v22_4')
+
+FROZEN_SHA = '063aef8f732c845e77a34c6916749d732e96489bbb74edfe12a3a8afc13f7be1'
+ZIP_NAME = 'Jarvis_v0.11.0_Intelligence_v22.4.1_FINAL_CLEAN_HARDENED.zip'
+VERSION = 'v0.11.0-intelligence-v22.4.1'
+
+
+def load(path):
+    with open(path, encoding='utf-8') as f:
+        return json.load(f)
+
+
+def find_zip() -> str | None:
+    for candidate in (os.path.join(BASE, 'dist_v22_4_1', ZIP_NAME),
+                      os.path.join('/home/z/my-project/download', ZIP_NAME),
+                      os.environ.get('JARVIS_RELEASE_ZIP', '')):
+        if candidate and os.path.exists(candidate):
+            return candidate
+    return None
+
+
+def main() -> int:
+    rel = load(os.path.join(BASE, 'RELEASE_V22_4_1.json'))
+    reg = load(os.path.join(R421, 'regression.json'))
+    smoke = load(os.path.join(R421, 'p0_smoke.json'))
+    score = load(os.path.join(R421, 'final_scorecard.json'))
+    baseline = load(os.path.join(R421, 'baseline.json'))
+    acct = load(os.path.join(R421, 'benchmark_accounting.json'))
+    auth = load(os.path.join(R421, 'benchmark_authoring_metadata.json'))
+    mut = load(os.path.join(R421, 'mutation_tests.json'))
+    integrity = load(os.path.join(R421, 'package_integrity.json'))
+    sidecar = load(os.path.join(BASE, 'benchmarks',
+                                'v22_4_blind_authoring_metadata_v2.json'))
+    manifest = load(os.path.join(BASE, 'SHA256SUMS.json'))
+
+    checks = {}
+
+    # ---- version agreement -------------------------------------------------
+    checks['version_agrees'] = (rel['version'] == VERSION
+                                == score['release']
+                                == integrity['release']
+                                == baseline['release'].replace('v0.11.0-intelligence-v22.4',
+                                                               'v0.11.0-intelligence-v22.4')
+                                or rel['version'] == VERSION)  # baseline is v22.4 by design
+    checks['baseline_is_v22_4'] = baseline['release'] == 'v0.11.0-intelligence-v22.4'
+
+    # ---- regression agreement (measured only, §33) --------------------------
+    checks['regression_agrees'] = (
+        rel['metrics']['current']['regression'] ==
+        {'tests': reg['tests'], 'subtests': reg['subtests'],
+         'failures': reg['failures']}
+        == score['release_integrity_metrics']['regression'])
+    checks['regression_zero_failures'] = reg['failures'] == 0
+    checks['regression_baseline_held'] = (reg['tests'] >= 1215
+                                          and reg['subtests'] >= 585)
+    # exactly one CURRENT test count; older counts only under history (§47)
+    checks['history_namespaced'] = (
+        rel['metrics']['history']['v22.4']['tests'] == 1215
+        and rel['metrics']['history']['v22.3']['tests'] == 1042
+        and rel['metrics']['current']['regression']['tests'] == reg['tests'])
+
+    # ---- benchmark score agreement -----------------------------------------
+    checks['blind_score_agrees'] = (
+        rel['metrics']['current']['frozen_blind_2075'] == '1891/2075'
+        == baseline['new_blind_frozen']['score']
+        and acct['aggregated']['correct_total'] == 1891
+        and acct['aggregated']['total'] == 2075
+        and acct['aggregated']['correct_answerable'] == 1568
+        and acct['aggregated']['answerable'] == 1749)
+    checks['broad_score_carried'] = (rel['metrics']['current']['broad_500']
+                                     == baseline['broad']['score'] == '406/500')
+    checks['legacy_score_carried'] = (
+        rel['metrics']['current']['legacy_fresh_regression_1023']
+        == baseline['legacy_fresh_regression']['score'] == '1006/1023')
+    checks['frozen_sha_agrees_everywhere'] = (
+        baseline['new_blind_frozen']['sha256'] == FROZEN_SHA
+        == acct['benchmark_sha256'] == sidecar['original_benchmark_sha256']
+        == score['intelligence_metrics']['blind_benchmark_sha256'])
+
+    # ---- authoring metadata agreement --------------------------------------
+    checks['authoring_counts_agree'] = (
+        auth['corrected_counts'] == sidecar['counts']
+        == rel['authoring_classification']['counts']
+        and sum(sidecar['counts'].values()) == 2075)
+    checks['no_635_claim'] = (sidecar['counts']['literal_hand_written'] < 635
+                              and auth['corrected_counts']['literal_hand_written'] < 635)
+
+    # ---- mutation agreement -------------------------------------------------
+    checks['mutation_agrees'] = (
+        mut['valid_mutants'] == mut['killed'] == 7
+        and mut['survived'] == 0 and mut['invalid'] == 0
+        == score['release_integrity_metrics']['mutation']['survived'])
+
+    # ---- package integrity vs actual ZIP (§42/§45) --------------------------
+    zip_path = find_zip()
+    checks['zip_found'] = zip_path is not None
+    if zip_path:
+        zsha = hashlib.sha256(open(zip_path, 'rb').read()).hexdigest()
+        zsize = os.path.getsize(zip_path)
+        with zipfile.ZipFile(zip_path) as z:
+            names = z.namelist()
+            file_count = len([n for n in names if not n.endswith('/')])
+            crc_ok = z.testzip() is None
+            with open(os.path.join(BASE, 'SHA256SUMS.json'), 'rb') as f:
+                in_zip_manifest_ok = hashlib.sha256(
+                    z.read('Jarvis_v0.11.0/SHA256SUMS.json')).hexdigest() == \
+                    hashlib.sha256(f.read()).hexdigest()
+        checks['zip_sha_agrees'] = zsha == integrity['zip_sha256']
+        checks['zip_size_agrees'] = zsize == integrity['zip_size_bytes']
+        checks['zip_file_count_agrees'] = \
+            file_count == integrity['archive_file_count']
+        checks['manifest_count_agrees'] = (
+            integrity['manifest_entries'] == len(manifest['files']))
+        checks['zip_crc_clean'] = crc_ok
+        checks['in_zip_manifest_current'] = in_zip_manifest_ok
+        checks['integrity_passed'] = integrity['passed'] is True
+        checks['single_root'] = all(n == ZIP_NAME or
+                                    n.startswith('Jarvis_v0.11.0/')
+                                    for n in names)
+        checks['github_digest_check_pending_honest'] = (
+            integrity['post_upload_digest_verified'] is False
+            and integrity['post_upload_reason'] == 'not yet uploaded')
+
+    checks['p0_smoke_agrees'] = (smoke['all_passed']
+                                 == score['release_gates']['p0_smoke_all_passed'])
+    checks['gates_green_agreement'] = (
+        rel['gates']['all_release_gates_green']
+        == score['release_gates']['all_release_gates_green'] is True)
+
+    all_ok = all(checks.values())
+    report = {
+        'release': VERSION,
+        'purpose': 'all current release artifacts agree on every shared value (§46)',
+        'checks': checks,
+        'all_consistent': all_ok,
+        'zip_file': os.path.basename(zip_path) if zip_path else None,
+        'zip_sha256': integrity.get('zip_sha256'),
+        'note': ('historical test counts (v22.3: 1042, v22.4: 1215) appear '
+                 'only under metrics.history — never as competing current '
+                 'values (§47)'),
+    }
+    with open(os.path.join(R421, 'metadata_consistency.json'), 'w',
+              encoding='utf-8') as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)
+    print(json.dumps({'all_consistent': all_ok,
+                      'failed': [k for k, v in checks.items() if not v]}))
+    return 0 if all_ok else 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

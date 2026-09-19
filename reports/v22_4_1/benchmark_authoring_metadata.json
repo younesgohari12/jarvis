@@ -1,0 +1,95 @@
+{
+  "release": "v0.11.0-intelligence-v22.4.1",
+  "issue": "D — benchmark authoring label honesty (spec §19-§24)",
+  "old_label": {
+    "hand_written": 635,
+    "template_generated": 1440,
+    "problem": "the 635 included ~570 rows produced by rng loops inside hand_written_batch2/3"
+  },
+  "corrected_counts": {
+    "literal_hand_written": 65,
+    "authored_template_generated": 570,
+    "synthetic_template_generated": 1440
+  },
+  "total": 2075,
+  "x_plus_y_plus_z_equals_total": true,
+  "original_benchmark_sha256": "063aef8f732c845e77a34c6916749d732e96489bbb74edfe12a3a8afc13f7be1",
+  "benchmark_sha_verified_again": true,
+  "benchmark_bytes_unchanged": true,
+  "authoring_metadata_version": 2,
+  "sidecar_file": "benchmarks/v22_4_blind_authoring_metadata_v2.json",
+  "faithful_reconstruction": true,
+  "per_family": {
+    "hard_negatives": {
+      "literal_hand_written": 8,
+      "authored_template_generated": 115,
+      "synthetic_template_generated": 120
+    },
+    "ownership": {
+      "literal_hand_written": 10,
+      "authored_template_generated": 75,
+      "synthetic_template_generated": 150
+    },
+    "mixed_language": {
+      "literal_hand_written": 0,
+      "authored_template_generated": 30,
+      "synthetic_template_generated": 90
+    },
+    "inventory": {
+      "literal_hand_written": 7,
+      "authored_template_generated": 50,
+      "synthetic_template_generated": 130
+    },
+    "finance": {
+      "literal_hand_written": 0,
+      "authored_template_generated": 40,
+      "synthetic_template_generated": 110
+    },
+    "units": {
+      "literal_hand_written": 4,
+      "authored_template_generated": 40,
+      "synthetic_template_generated": 110
+    },
+    "age": {
+      "literal_hand_written": 8,
+      "authored_template_generated": 25,
+      "synthetic_template_generated": 130
+    },
+    "work_rate": {
+      "literal_hand_written": 0,
+      "authored_template_generated": 20,
+      "synthetic_template_generated": 70
+    },
+    "scheduling": {
+      "literal_hand_written": 6,
+      "authored_template_generated": 40,
+      "synthetic_template_generated": 110
+    },
+    "rates": {
+      "literal_hand_written": 10,
+      "authored_template_generated": 60,
+      "synthetic_template_generated": 140
+    },
+    "ratio": {
+      "literal_hand_written": 0,
+      "authored_template_generated": 20,
+      "synthetic_template_generated": 90
+    },
+    "identifiers": {
+      "literal_hand_written": 6,
+      "authored_template_generated": 20,
+      "synthetic_template_generated": 60
+    },
+    "probability": {
+      "literal_hand_written": 0,
+      "authored_template_generated": 20,
+      "synthetic_template_generated": 70
+    },
+    "ood": {
+      "literal_hand_written": 6,
+      "authored_template_generated": 15,
+      "synthetic_template_generated": 60
+    }
+  },
+  "claim_language": "2075-case frozen benchmark with 65 literal individually-authored cases, 570 human-designed template instances, and 1440 synthetic template-generated cases"
+}

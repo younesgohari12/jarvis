@@ -1,0 +1,214 @@
+{
+  "framework": "v22.4.1 valid-kill semantics (spec §13-§18)",
+  "kill_definition": "applied AND collected>=1 AND failed>=1 AND errors==0",
+  "mutants": [
+    {
+      "id": "M1_disable_dimension_guard",
+      "file": "jarvis/agent/semantics_v22_4.py",
+      "tests": [
+        "tests/test_v224_root_cause.py::test_p0_time_distance_addition_rejected",
+        "tests/test_v221_audit_fixes.py::test_cross_dimension_addition_refused"
+      ],
+      "sha_before": "4def5fa3b248ba82654918e1ee44fc8834243601e2427e5288188f91b72d9cfc",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 2,
+        "passed": 0,
+        "failed": 2,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "%]\ntests/test_v221_audit_fixes.py F                                         [100%]\n\n=========================== short test summary info ============================\nFAILED tests/test_v224_root_cause.py::test_p0_time_distance_addition_rejected\nFAILED tests/test_v221_audit_fixes.py::test_cross_dimension_addition_refused\n============================== 2 failed in 1.23s ===============================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "4def5fa3b248ba82654918e1ee44fc8834243601e2427e5288188f91b72d9cfc",
+      "source_restored": true
+    },
+    {
+      "id": "M2_speed_unit_flattened",
+      "file": "jarvis/agent/semantics_v22_4.py",
+      "tests": [
+        "tests/test_v224_root_cause.py::test_speed_unit_mapping",
+        "tests/test_v224_property_fuzz.py::test_property_speed_unit_preserved_hypothesis"
+      ],
+      "sha_before": "4def5fa3b248ba82654918e1ee44fc8834243601e2427e5288188f91b72d9cfc",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 13,
+        "passed": 8,
+        "failed": 5,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "se.py::test_speed_unit_mapping[10 metres per second-M_PER_SECOND]\nFAILED tests/test_v224_root_cause.py::test_speed_unit_mapping[\\u0633\\u0631\\u0639\\u062a 10 \\u0645\\u062a\\u0631 \\u0628\\u0631 \\u062b\\u0627\\u0646\\u06cc\\u0647-M_PER_SECOND]\nFAILED tests/test_v224_property_fuzz.py::test_property_speed_unit_preserved_hypothesis\n========================= 5 failed, 8 passed in 1.73s ==========================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "4def5fa3b248ba82654918e1ee44fc8834243601e2427e5288188f91b72d9cfc",
+      "source_restored": true
+    },
+    {
+      "id": "M3_span_end_shifted",
+      "file": "jarvis/agent/quantity_v22.py",
+      "tests": [
+        "tests/test_v221_audit_fixes.py::test_source_span_covers_number_and_unit",
+        "tests/test_v224_root_cause.py::test_exact_spans_on_original_text"
+      ],
+      "sha_before": "401562700e6d2c65ec6e8bd13e2a52988d3885ca24b415af9ac8c9a9d03d8bf5",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 12,
+        "passed": 0,
+        "failed": 12,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "0639\\u062a 10 \\u0645\\u062a\\u0631 \\u0628\\u0631 \\u062b\\u0627\\u0646\\u06cc\\u0647]\nFAILED tests/test_v224_root_cause.py::test_exact_spans_on_original_text[120 \\u06a9\\u06cc\\u0644\\u0648\\u0645\\u062a\\u0631 \\u0631\\u0641\\u062a\\u0645]\nFAILED tests/test_v224_root_cause.py::test_exact_spans_on_original_text[5 kg \\u0622\\u0631\\u062f]\n============================== 12 failed in 1.27s ==============================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "401562700e6d2c65ec6e8bd13e2a52988d3885ca24b415af9ac8c9a9d03d8bf5",
+      "source_restored": true
+    },
+    {
+      "id": "M4_age_abs_removed",
+      "file": "jarvis/agent/local_intelligence_v22.py",
+      "tests": [
+        "tests/test_v22_semantic.py",
+        "tests/test_v224_root_cause.py::test_age_query_binds_named_entities"
+      ],
+      "sha_before": "182c00b1a00e933eb81fa6ea9c2d5331c5846deeeddcf18b12d567d18effea37",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 39,
+        "passed": 38,
+        "failed": 1,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "test_v224_root_cause.py F....                                      [100%]\n\n=========================== short test summary info ============================\nFAILED tests/test_v224_root_cause.py::test_age_query_binds_named_entities[Ali is 35. Reza is 57. Sara is 10. What is the age difference between Ali and Reza?-22.0]\n========================= 1 failed, 38 passed in 2.06s =========================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "182c00b1a00e933eb81fa6ea9c2d5331c5846deeeddcf18b12d567d18effea37",
+      "source_restored": true
+    },
+    {
+      "id": "M5_verifier_fail_open",
+      "file": "jarvis/agent/verifier_v22.py",
+      "tests": [
+        "tests/test_v221_audit_fixes.py::test_typed_audit_crash_fails_closed",
+        "tests/test_v224_root_cause.py::test_verifier_fail_closed_on_internal_error"
+      ],
+      "sha_before": "fee4538cc3ea1592a47a0a17d2bac4fe40e4940595a02ef939fda391baa0539a",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 2,
+        "passed": 0,
+        "failed": 2,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "/test_v224_root_cause.py F                                          [100%]\n\n=========================== short test summary info ============================\nFAILED tests/test_v221_audit_fixes.py::test_typed_audit_crash_fails_closed - ...\nFAILED tests/test_v224_root_cause.py::test_verifier_fail_closed_on_internal_error\n============================== 2 failed in 1.33s ===============================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "fee4538cc3ea1592a47a0a17d2bac4fe40e4940595a02ef939fda391baa0539a",
+      "source_restored": true
+    },
+    {
+      "id": "M6_transfer_direction_swapped",
+      "file": "jarvis/agent/semantics_v22_4.py",
+      "tests": [
+        "tests/test_v224_root_cause.py::test_ownership_direction_resolves"
+      ],
+      "sha_before": "4def5fa3b248ba82654918e1ee44fc8834243601e2427e5288188f91b72d9cfc",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 8,
+        "passed": 0,
+        "failed": 8,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "2f\\u0644\\u0627\\u0631 \\u062f\\u0627\\u0631\\u062f. \\u0633\\u0627\\u0631\\u0627 15 \\u062f\\u0644\\u0627\\u0631 \\u0627\\u0632 \\u0639\\u0644\\u06cc \\u062f\\u0631\\u06cc\\u0627\\u0641\\u062a \\u0645\\u06cc\\u200c\\u06a9\\u0646\\u062f. \\u0645\\u0648\\u062c\\u0648\\u062f\\u06cc \\u0633\\u0627\\u0631\\u0627 \\u0686\\u0646\\u062f \\u0627\\u0633\\u062a\\u061f-238.0]\n============================== 8 failed in 1.21s ===============================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "4def5fa3b248ba82654918e1ee44fc8834243601e2427e5288188f91b72d9cfc",
+      "source_restored": true
+    },
+    {
+      "id": "M7_inventory_order_reversed",
+      "file": "jarvis/agent/semantics_v22_4.py",
+      "tests": [
+        "tests/test_v224_root_cause.py::test_inventory_order_is_semantic",
+        "tests/test_v224_property_fuzz.py::test_property_inventory_order_preserved"
+      ],
+      "sha_before": "4def5fa3b248ba82654918e1ee44fc8834243601e2427e5288188f91b72d9cfc",
+      "applied": true,
+      "pytest": {
+        "returncode": 1,
+        "status": "KILLED_BY_ASSERTION",
+        "collected": 2,
+        "passed": 1,
+        "failed": 1,
+        "errors": 0,
+        "subtests_passed": 0,
+        "subtests_failed": 0,
+        "skipped": 0,
+        "stdout_tail": "ts/test_v224_root_cause.py F                                          [ 50%]\ntests/test_v224_property_fuzz.py .                                       [100%]\n\n=========================== short test summary info ============================\nFAILED tests/test_v224_root_cause.py::test_inventory_order_is_semantic - asse...\n========================= 1 failed, 1 passed in 1.38s ==========================",
+        "stderr_tail": ""
+      },
+      "status": "KILLED_BY_ASSERTION",
+      "killed": true,
+      "valid_kill": true,
+      "sha_after": "4def5fa3b248ba82654918e1ee44fc8834243601e2427e5288188f91b72d9cfc",
+      "source_restored": true
+    }
+  ],
+  "valid_mutants": 7,
+  "killed": 7,
+  "survived": 0,
+  "invalid": 0,
+  "timeouts": 0,
+  "all_source_restored": true,
+  "target": {
+    "valid_mutants": 7,
+    "killed": 7,
+    "survived": 0,
+    "invalid": 0
+  },
+  "meets_target": true
+}

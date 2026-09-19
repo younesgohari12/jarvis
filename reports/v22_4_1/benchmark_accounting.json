@@ -1,0 +1,116 @@
+{
+  "release": "v0.11.0-intelligence-v22.4.1",
+  "purpose": "independent raw-chunk aggregation of the frozen v22.4 blind run",
+  "benchmark_sha256": "063aef8f732c845e77a34c6916749d732e96489bbb74edfe12a3a8afc13f7be1",
+  "frozen_sha_required": "063aef8f732c845e77a34c6916749d732e96489bbb74edfe12a3a8afc13f7be1",
+  "benchmark_sha_matches_frozen": true,
+  "chunks": [
+    {
+      "chunk": "chunk_00",
+      "sha256": "cc187562f42ea140e8673ff3b2bb9fef5171e7504608083efc10d6efb6139398",
+      "total": 420,
+      "answerable": 359,
+      "expected_abstain": 61,
+      "correct_total": 388,
+      "correct_answerable": 328,
+      "correct_expected_abstain": 60,
+      "score_numeric": 92.38
+    },
+    {
+      "chunk": "chunk_01",
+      "sha256": "2547d87cc323ef5a00b11bac278a99f96e33b7876582ffdfe04f340328b2bbb9",
+      "total": 420,
+      "answerable": 356,
+      "expected_abstain": 64,
+      "correct_total": 385,
+      "correct_answerable": 322,
+      "correct_expected_abstain": 63,
+      "score_numeric": 91.67
+    },
+    {
+      "chunk": "chunk_02",
+      "sha256": "63611aea925b1020a816f4bf716b7d4ad59c97bc713191edd10eff7c4358feb4",
+      "total": 420,
+      "answerable": 344,
+      "expected_abstain": 76,
+      "correct_total": 388,
+      "correct_answerable": 313,
+      "correct_expected_abstain": 75,
+      "score_numeric": 92.38
+    },
+    {
+      "chunk": "chunk_03",
+      "sha256": "b2ae77e24db2fbcb7bd974a1da1689196de09810cebd78dd787f353729a0dca3",
+      "total": 420,
+      "answerable": 356,
+      "expected_abstain": 64,
+      "correct_total": 376,
+      "correct_answerable": 312,
+      "correct_expected_abstain": 64,
+      "score_numeric": 89.52
+    },
+    {
+      "chunk": "chunk_04",
+      "sha256": "d8298e23cb28d5dbad13677509298636c32da627d68dc207b8db75f4d2033c12",
+      "total": 395,
+      "answerable": 334,
+      "expected_abstain": 61,
+      "correct_total": 354,
+      "correct_answerable": 293,
+      "correct_expected_abstain": 61,
+      "score_numeric": 89.62
+    }
+  ],
+  "aggregated": {
+    "total": 2075,
+    "correct_total": 1891,
+    "answerable": 1749,
+    "correct_answerable": 1568,
+    "expected_abstain": 326,
+    "correct_expected_abstain": 323
+  },
+  "final_summary": {
+    "total": 2075,
+    "answerable": 1749,
+    "tallies": {
+      "correct_answerable": 1568,
+      "correct_expected_abstain": 323,
+      "correct_total": 1891
+    },
+    "score_numeric": 91.13,
+    "score_answerable_only": 89.65
+  },
+  "checks": {
+    "sum_chunk_total_equals_final": true,
+    "sum_chunk_correct_total_equals_final": true,
+    "sum_chunk_answerable_equals_final": true,
+    "sum_chunk_correct_answerable_equals_final": true,
+    "expected_total_2075": true,
+    "expected_correct_1891": true,
+    "expected_answerable_1749": true,
+    "expected_correct_answerable_1568": true,
+    "per_chunk_partition_consistent": true,
+    "score_reproduced": true,
+    "answerable_score_reproduced": true,
+    "family_totals_sum_to_total": true,
+    "family_corrects_sum_to_correct": true
+  },
+  "all_consistent": true,
+  "family_results": {
+    "age": "139/163",
+    "finance": "124/150",
+    "hard_negatives": "241/243",
+    "identifiers": "82/86",
+    "inventory": "185/187",
+    "mixed_language": "120/120",
+    "ood": "81/81",
+    "ownership": "194/235",
+    "probability": "90/90",
+    "rates": "176/210",
+    "ratio": "100/110",
+    "scheduling": "154/156",
+    "units": "153/154",
+    "work_rate": "52/90"
+  },
+  "chunk_provenance_note": "raw chunk files are excluded from the release ZIP; their SHA256 hashes above + the frozen benchmark SHA allow full reproduction"
+}

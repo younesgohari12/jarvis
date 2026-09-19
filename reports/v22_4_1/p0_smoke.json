@@ -1,0 +1,137 @@
+{
+  "release": "v0.11.0-intelligence-v22.4.1",
+  "total": 16,
+  "passed": 16,
+  "failed": 0,
+  "all_passed": true,
+  "results": [
+    {
+      "name": "time_plus_currency_rejected",
+      "passed": true,
+      "detail": {
+        "guard": true,
+        "answer": "Time and money cannot be directly added. Could you clarify what exactly should be computed?",
+        "dims": [
+          "time",
+          "currency"
+        ]
+      }
+    },
+    {
+      "name": "time_plus_count_rejected",
+      "passed": true,
+      "detail": {
+        "guard": true,
+        "answer": "Time and counts cannot be directly added. Could you clarify what exactly should be computed?",
+        "dims": [
+          "time",
+          "count"
+        ]
+      }
+    },
+    {
+      "name": "m_per_second_unit",
+      "passed": true,
+      "detail": {
+        "unit": "M_PER_SECOND"
+      }
+    },
+    {
+      "name": "m_per_second_unit_fa",
+      "passed": true,
+      "detail": {
+        "unit": "M_PER_SECOND"
+      }
+    },
+    {
+      "name": "exact_source_span_fa",
+      "passed": true,
+      "detail": {
+        "span": "50 کالا"
+      }
+    },
+    {
+      "name": "exact_source_span[3 workers]",
+      "passed": true,
+      "detail": {
+        "span": "3 workers"
+      }
+    },
+    {
+      "name": "exact_source_span[8 نفر]",
+      "passed": true,
+      "detail": {
+        "span": "8 نفر"
+      }
+    },
+    {
+      "name": "age_difference_fa",
+      "passed": true,
+      "detail": {
+        "order1": "اختلاف سن 5 سال است.",
+        "order2": "اختلاف سن 5 سال است."
+      }
+    },
+    {
+      "name": "age_difference_en",
+      "passed": true,
+      "detail": {
+        "answer": "The age difference is 5 years."
+      }
+    },
+    {
+      "name": "ownership_transfer",
+      "passed": true,
+      "detail": {
+        "answer": "Sara's balance is 238 dollars."
+      }
+    },
+    {
+      "name": "ownership_transfer_fa",
+      "passed": true,
+      "detail": {
+        "answer": "250"
+      }
+    },
+    {
+      "name": "inventory_events",
+      "passed": true,
+      "detail": {
+        "multi_product": "نتیجه می‌شود 95 کالا.",
+        "simple": "نتیجه می‌شود 90 کالا."
+      }
+    },
+    {
+      "name": "temporal_day_wrap",
+      "passed": true,
+      "detail": {
+        "answer": "00:15 next day."
+      }
+    },
+    {
+      "name": "temporal_day_wrap_fa",
+      "passed": true,
+      "detail": {
+        "answer": "ساعت 00:15 روز بعد."
+      }
+    },
+    {
+      "name": "verifier_fail_closed",
+      "passed": true,
+      "detail": {
+        "passed": false,
+        "failed_checks": [
+          "typed_audit_internal_error"
+        ],
+        "repair_stage": "abstain"
+      }
+    },
+    {
+      "name": "rate_semantics_fa",
+      "passed": true,
+      "detail": {
+        "answer": "نتیجه می‌شود 120 کیلومتر."
+      }
+    }
+  ]
+}

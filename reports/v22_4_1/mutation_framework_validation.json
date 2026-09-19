@@ -1,0 +1,43 @@
+{
+  "purpose": "only real assertion failures count as mutation kills (spec §55)",
+  "cases": [
+    {
+      "scenario": "assertion_failure",
+      "expected": "KILLED_BY_ASSERTION",
+      "got": "KILLED_BY_ASSERTION",
+      "ok": true
+    },
+    {
+      "scenario": "all_pass",
+      "expected": "SURVIVED",
+      "got": "SURVIVED",
+      "ok": true
+    },
+    {
+      "scenario": "invalid_node_id",
+      "expected": "TEST_NOT_FOUND",
+      "got": "TEST_NOT_FOUND",
+      "ok": true
+    },
+    {
+      "scenario": "collection_error",
+      "expected": "TEST_COLLECTION_ERROR",
+      "got": "TEST_COLLECTION_ERROR",
+      "ok": true
+    },
+    {
+      "scenario": "timeout",
+      "expected": "TIMEOUT",
+      "got": "TIMEOUT",
+      "ok": true
+    },
+    {
+      "scenario": "no_tests_collected",
+      "expected": "INVALID_TEST_SELECTION",
+      "got": "INVALID_TEST_SELECTION",
+      "ok": true
+    }
+  ],
+  "passed": true,
+  "killing_classification_unique": "KILLED_BY_ASSERTION"
+}

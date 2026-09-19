@@ -1,0 +1,42 @@
+{
+  "release": "v0.11.0-intelligence-v22.4",
+  "base_tag_for_this_release": "v0.11.0-intelligence-v22.4",
+  "source": "measured v22.4 artifacts (reports/v22_4/) — preserved, not re-measured",
+  "regression": {
+    "tests": 1215,
+    "subtests": 585,
+    "failures": 0
+  },
+  "broad": {
+    "score": "406/500",
+    "percent": 81.2
+  },
+  "legacy_fresh_regression": {
+    "score": "1006/1023",
+    "percent": 98.34,
+    "label": "FRESH_REGRESSION_LEGACY"
+  },
+  "new_blind_frozen": {
+    "score": "1891/2075",
+    "percent": 91.13,
+    "answerable_only": "1568/1749",
+    "answerable_percent": 89.65,
+    "sha256": "063aef8f732c845e77a34c6916749d732e96489bbb74edfe12a3a8afc13f7be1"
+  },
+  "families": {
+    "ownership_legacy": "60/60",
+    "inventory_legacy": "99/100",
+    "age_legacy": "70/70",
+    "scheduling": "90/90",
+    "work_rate": "105/105"
+  },
+  "honest_gaps": {
+    "persian_broad": "6/50",
+    "english_broad": "0/50",
+    "new_blind_work_rate": "52/90",
+    "new_blind_ownership": "194/235",
+    "new_blind_rates": "176/210",
+    "new_blind_finance": "124/150",
+    "new_blind_age": "139/163"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "release": "v0.11.0-intelligence-v22.4.1",
+  "method": "cold interpreter measurement + warmup phase then measured phase (spec §30); percentiles over per-call latencies",
+  "cold": {
+    "import_ms": 385.084,
+    "engine_init_ms": 43.423,
+    "12 + 30 چه می شود؟": 15.57,
+    "موجودی 100 دلار است؛ 30 دلار کم کن؛ چند؟": 5.62,
+    "525 را با نسبت 4 به 3 تقسیم کن": 3.527,
+    "3 کارگر در 4 ساعت 84 واحد تولید می کنند؛ 8 کارگر در 6 ساعت؟": 5.378,
+    "Ali has 704 dollars. Sara has 223 dollars. Ali transfers 15 dollars to Sara. What is Sara's balance?": 59.746,
+    "موجودی انبار 100 کالا است؛ 7 کالا فروخته شد و 3 کالا آسیب دید؛ چند؟": 4.93,
+    "کار ساعت 23:30 شروع می شود؛ مدت کار 90 دقیقه است؛ چه ساعتی تمام می شود؟": 4.235,
+    "علی 35 سال دارد و رضا 57 سال دارد. اختلاف سن علی و رضا چند سال است؟": 4.464
+  },
+  "warm": {
+    "simple_math": {
+      "n": 120,
+      "warm_mean_ms": 2.022,
+      "warm_p50_ms": 2.344,
+      "warm_p95_ms": 2.487,
+      "warm_p99_ms": 2.522
+    },
+    "typed_semantic": {
+      "n": 120,
+      "warm_mean_ms": 2.722,
+      "warm_p50_ms": 3.291,
+      "warm_p95_ms": 3.458,
+      "warm_p99_ms": 3.505
+    },
+    "ownership": {
+      "n": 60,
+      "warm_mean_ms": 5.891,
+      "warm_p50_ms": 5.886,
+      "warm_p95_ms": 6.017,
+      "warm_p99_ms": 6.034
+    },
+    "inventory": {
+      "n": 60,
+      "warm_mean_ms": 3.653,
+      "warm_p50_ms": 3.653,
+      "warm_p95_ms": 3.764,
+      "warm_p99_ms": 3.908
+    },
+    "temporal": {
+      "n": 60,
+      "warm_mean_ms": 1.924,
+      "warm_p50_ms": 1.921,
+      "warm_p95_ms": 1.986,
+      "warm_p99_ms": 1.988
+    },
+    "age": {
+      "n": 60,
+      "warm_mean_ms": 2.665,
+      "warm_p50_ms": 2.669,
+      "warm_p95_ms": 2.751,
+      "warm_p99_ms": 2.76
+    }
+  },
+  "ownership_p99_investigation": {
+    "ownership_first_call_cold_ms": 6.491,
+    "ownership_second_call_ms": 6.042,
+    "warm_with_gc": {
+      "mean_ms": 5.881,
+      "p50_ms": 5.877,
+      "p99_ms": 6.083,
+      "max_ms": 6.108
+    },
+    "warm_without_gc": {
+      "mean_ms": 5.88,
+      "p50_ms": 5.875,
+      "p99_ms": 6.111,
+      "max_ms": 6.132
+    },
+    "gc_tail_ratio_p99": 0.995,
+    "gc_count_after_single_call": [
+      546,
+      4,
+      5
+    ],
+    "conclusion": "no significant p99 outlier in warm steady-state",
+    "reproducible_algorithmic_issue": false,
+    "runtime_change_required": false,
+    "method": "read-only investigation (spec §29) — no Runtime modification"
+  },
+  "interpretation": {
+    "v22_4_reported": {
+      "ownership_mean_ms": 7.65,
+      "ownership_p99_ms": 59.0
+    },
+    "v22_4_1_warm": {
+      "n": 60,
+      "warm_mean_ms": 5.891,
+      "warm_p50_ms": 5.886,
+      "warm_p95_ms": 6.017,
+      "warm_p99_ms": 6.034
+    },
+    "note": "v22.4 mixed cold and warm calls in one distribution: the p99 tail was dominated by first-call initialization, not by a pathological input or an algorithmic regression"
+  }
+}

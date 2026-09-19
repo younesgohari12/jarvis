@@ -1,0 +1,121 @@
+{
+  "release": "v0.11.0-intelligence-v22.4.1",
+  "label": "FINAL CLEAN HARDENED / RELEASE INTEGRITY LOCK (§59)",
+  "purpose": "release-integrity evidence; NOT a new intelligence score (§48)",
+  "intelligence_metrics": {
+    "note": "carried forward from v22.4 — runtime is unchanged (§32)",
+    "broad_500": "406/500",
+    "legacy_fresh_regression_1023": "1006/1023",
+    "frozen_blind_2075": "1891/2075",
+    "frozen_blind_answerable_only": "1568/1749",
+    "blind_benchmark_sha256": "063aef8f732c845e77a34c6916749d732e96489bbb74edfe12a3a8afc13f7be1",
+    "family_results_blind": {
+      "age": "139/163",
+      "finance": "124/150",
+      "hard_negatives": "241/243",
+      "identifiers": "82/86",
+      "inventory": "185/187",
+      "mixed_language": "120/120",
+      "ood": "81/81",
+      "ownership": "194/235",
+      "probability": "90/90",
+      "rates": "176/210",
+      "ratio": "100/110",
+      "scheduling": "154/156",
+      "units": "153/154",
+      "work_rate": "52/90"
+    },
+    "honest_remaining_gaps": {
+      "persian_broad": "6/50",
+      "english_broad": "0/50",
+      "new_blind_work_rate": "52/90",
+      "new_blind_ownership": "194/235",
+      "new_blind_rates": "176/210",
+      "new_blind_finance": "124/150",
+      "new_blind_age": "139/163"
+    }
+  },
+  "release_integrity_metrics": {
+    "note": "independent dimension — never averaged into intelligence (§49)",
+    "regression": {
+      "tests": 1228,
+      "subtests": 585,
+      "failures": 0
+    },
+    "p0_smoke": "16/16",
+    "runtime_parity_vs_v22_4": "40/40 identical",
+    "mutation": {
+      "valid_mutants": 7,
+      "killed": 7,
+      "survived": 0,
+      "invalid": 0,
+      "framework_selftest": true,
+      "m5_manual_evidence": true
+    },
+    "benchmark_authoring": {
+      "literal_hand_written": 65,
+      "authored_template_generated": 570,
+      "synthetic_template_generated": 1440
+    },
+    "performance_warm_ms": {
+      "simple_math": {
+        "n": 120,
+        "warm_mean_ms": 2.022,
+        "warm_p50_ms": 2.344,
+        "warm_p95_ms": 2.487,
+        "warm_p99_ms": 2.522
+      },
+      "typed_semantic": {
+        "n": 120,
+        "warm_mean_ms": 2.722,
+        "warm_p50_ms": 3.291,
+        "warm_p95_ms": 3.458,
+        "warm_p99_ms": 3.505
+      },
+      "ownership": {
+        "n": 60,
+        "warm_mean_ms": 5.891,
+        "warm_p50_ms": 5.886,
+        "warm_p95_ms": 6.017,
+        "warm_p99_ms": 6.034
+      },
+      "inventory": {
+        "n": 60,
+        "warm_mean_ms": 3.653,
+        "warm_p50_ms": 3.653,
+        "warm_p95_ms": 3.764,
+        "warm_p99_ms": 3.908
+      },
+      "temporal": {
+        "n": 60,
+        "warm_mean_ms": 1.924,
+        "warm_p50_ms": 1.921,
+        "warm_p95_ms": 1.986,
+        "warm_p99_ms": 1.988
+      },
+      "age": {
+        "n": 60,
+        "warm_mean_ms": 2.665,
+        "warm_p50_ms": 2.669,
+        "warm_p95_ms": 2.751,
+        "warm_p99_ms": 2.76
+      }
+    },
+    "security_source_secrets": 0
+  },
+  "release_gates": {
+    "runtime_parity_confirmed": true,
+    "regression_baseline_held": true,
+    "p0_smoke_all_passed": true,
+    "mutation_target_met": true,
+    "mutation_m5_real_kill": true,
+    "mutation_framework_selftest": true,
+    "mutation_sources_restored": true,
+    "frozen_blind_sha_unchanged": true,
+    "blind_accounting_reproduced": true,
+    "authoring_labels_corrected": true,
+    "source_security_clean": true,
+    "no_misleading_handwritten_claim": true,
+    "all_release_gates_green": true
+  }
+}

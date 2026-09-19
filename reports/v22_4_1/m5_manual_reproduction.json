@@ -1,0 +1,23 @@
+{
+  "mutation": "M5 verifier exception -> return verdict (fail-open)",
+  "targeted_test": [
+    "tests/test_v221_audit_fixes.py::test_typed_audit_crash_fails_closed"
+  ],
+  "step1_pre_mutation": {
+    "status": "SURVIVED",
+    "passed": 1,
+    "failed": 0
+  },
+  "step2_mutation_applied": true,
+  "step3_mutated_run": {
+    "status": "KILLED_BY_ASSERTION",
+    "returncode": 1,
+    "collected": 1,
+    "failed": 1,
+    "errors": 0,
+    "stdout_tail": "======= test session starts ==============================\ncollected 1 item\n\ntests/test_v221_audit_fixes.py F                                         [100%]\n\n=========================== short test summary info ============================\nFAILED tests/test_v221_audit_fixes.py::test_typed_audit_crash_fails_closed - ...\n============================== 1 failed in 1.21s ==============================="
+  },
+  "step4_source_restored": true,
+  "evidence_valid": true,
+  "conclusion": "the fail-open mutant is killed by a REAL collected, asserting test — the v22.4 \"no tests ran\" false kill is fixed"
+}

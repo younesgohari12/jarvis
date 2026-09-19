@@ -5,3 +5,18 @@ runtime_data/
 jarvis.db*
 knowledge.db*
 jarvis.log*
+
+# v22.4.1 release hygiene: dev/cache artifacts are never tracked
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.cache/
+htmlcov/
+coverage.xml
+.coverage
+dist_v22_4_1/
+*.tmp
+*.bak
+reports/v22_4_1/mutation_selftest_fixtures/

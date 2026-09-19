@@ -1,0 +1,108 @@
+{
+  "product": "JARVIS",
+  "version": "v0.11.0-intelligence-v22.4.1",
+  "codename": "RELEASE INTEGRITY / EVALUATION CLEANUP / FINAL LOCK",
+  "release_label": "JARVIS v0.11.0 — Intelligence v22.4.1 FINAL CLEAN HARDENED / RELEASE INTEGRITY LOCK (§59)",
+  "is_release_integrity_patch": true,
+  "base_tag": "v0.11.0-intelligence-v22.4",
+  "base_commit": "dc5c32889296614bdf4b96179f565cdfaa8b70e8",
+  "release_tag": "v0.11.0-intelligence-v22.4.1",
+  "release_commit_note": "the release commit is identified by its tag; a file cannot reference the commit that first contains it",
+  "date": "2026-09-19",
+  "generated_by": "benchmarks/v22_4_1_finalize.py — from measured artifacts",
+  "runtime_changed": false,
+  "runtime_files_changed": [],
+  "runtime_files_changed_count": 0,
+  "evaluation_changed": true,
+  "packaging_changed": true,
+  "scope": [
+    "Issue A: .hypothesis + dev/cache artifacts excluded from the package (~175 cache files shipped in v22.4 are now rejected by policy + tests)",
+    "Issue B: package_integrity.json generated LAST, directly from the final ZIP (manifest_entries now measured, not stale)",
+    "Issue C: mutation runner valid-kill semantics (collected/failed/errors parsed); M5 test selection fixed to the real fail-closed tests; manual M5 reproduction evidence; framework self-test",
+    "Issue D: honest authoring classification sidecar (authoring_metadata_version = 2) — frozen benchmark bytes and SHA untouched",
+    "blind chunk accounting independently aggregated from raw chunks",
+    "warm performance measurement + ownership p99 read-only investigation",
+    "two security scans (source tree + final package)",
+    "deterministic packaging + rebuild reproducibility check",
+    "release-pipeline test suite (integrity, accounting, immutability, exclusion policy, metadata namespacing)",
+    "V23_TRAINING_HANDOFF.md (informational)"
+  ],
+  "metrics": {
+    "current": {
+      "regression": {
+        "tests": 1228,
+        "subtests": 585,
+        "failures": 0
+      },
+      "p0_smoke": {
+        "passed": 16,
+        "total": 16
+      },
+      "broad_500": "406/500",
+      "legacy_fresh_regression_1023": "1006/1023",
+      "frozen_blind_2075": "1891/2075",
+      "frozen_blind_answerable_only": "1568/1749",
+      "blind_benchmark_sha256": "063aef8f732c845e77a34c6916749d732e96489bbb74edfe12a3a8afc13f7be1",
+      "mutation": {
+        "valid_mutants": 7,
+        "killed": 7,
+        "survived": 0
+      },
+      "runtime_parity_vs_v22_4": true
+    },
+    "history": {
+      "v22.4": {
+        "tests": 1215,
+        "subtests": 585,
+        "failures": 0,
+        "broad": "406/500",
+        "legacy": "1006/1023",
+        "blind": "1891/2075"
+      },
+      "v22.3": {
+        "tests": 1042,
+        "subtests": 585,
+        "failures": 0,
+        "broad": "406/500",
+        "legacy": "855/1023"
+      }
+    }
+  },
+  "authoring_classification": {
+    "authoring_metadata_version": 2,
+    "counts": {
+      "literal_hand_written": 65,
+      "authored_template_generated": 570,
+      "synthetic_template_generated": 1440
+    },
+    "total": 2075,
+    "claim_language": "2075-case frozen benchmark with 65 literal individually-authored cases, 570 human-designed template instances, and 1440 synthetic template-generated cases",
+    "sidecar": "benchmarks/v22_4_blind_authoring_metadata_v2.json"
+  },
+  "not_claimed": [
+    "no runtime intelligence changes vs v22.4 (parity 40/40 verified)",
+    "no new model weights; no GPU training (v23 scope)",
+    "no improvement claims on the seen blind benchmark — it is frozen as V22_4_FROZEN_EVALUATION and becomes a v23 target only (§27/§28)",
+    "no composite intelligence+quality score (§49)"
+  ],
+  "post_upload_digest": {
+    "verified": false,
+    "reason": "not yet uploaded (§43) — updated after the GitHub asset digest comparison"
+  },
+  "release_gate": "FINAL CLEAN HARDENED — all release-integrity gates green (§60); see JARVIS_V22_4_1_RELEASE_INTEGRITY_AUDIT.md",
+  "gates": {
+    "runtime_parity_confirmed": true,
+    "regression_baseline_held": true,
+    "p0_smoke_all_passed": true,
+    "mutation_target_met": true,
+    "mutation_m5_real_kill": true,
+    "mutation_framework_selftest": true,
+    "mutation_sources_restored": true,
+    "frozen_blind_sha_unchanged": true,
+    "blind_accounting_reproduced": true,
+    "authoring_labels_corrected": true,
+    "source_security_clean": true,
+    "no_misleading_handwritten_claim": true,
+    "all_release_gates_green": true
+  }
+}

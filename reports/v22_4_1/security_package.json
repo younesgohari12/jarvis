@@ -1,0 +1,23 @@
+{
+  "scan": "final_package",
+  "zip": "Jarvis_v0.11.0_Intelligence_v22.4.1_FINAL_CLEAN_HARDENED.zip",
+  "files_scanned": 1771,
+  "findings": [],
+  "secret_count": 0,
+  "passed": true,
+  "patterns_checked": [
+    "github_pat",
+    "github_token_classic",
+    "github_oauth",
+    "api_key_generic",
+    "secret_generic",
+    "aws_access_key",
+    "aws_secret_key",
+    "private_key_block",
+    "bot_token",
+    "slack_token",
+    "google_api_key",
+    "hardcoded_password"
+  ],
+  "authoritative_for_release": true
+}
