@@ -127,9 +127,23 @@ def _role_for(left: str, right: str, value: float, full: str) -> tuple[str, floa
     #     v22.2: a linking verb ("price is 200") still anchors the price, and
     #     a currency-denominated discount ("50 dollar discount") is honoured
     #     ONLY when the discount noun directly follows the currency word.
+    #     v22.3: a short possessive noun may sit between the cue and the
+    #     number ("قیمت کتاب 50 دلار است", "the price of the book is 200");
+    #     the bridge must be digit-free, function-word-free and short.
     if re.search(r'(?:قیمت|هزینه|price|cost)(?:\s+(?:پایه|is|was|are|است|بود))?'
                  r'\s*(?:پایه)?\s*:??\s*$', left, re.I):
         return 'price', 0.88
+    _bridge = re.search(r'(?:قیمت|هزینه|price|cost)\b(.{1,48})$', left, re.I)
+    if _bridge:
+        btxt = _bridge.group(1)
+        _bridge_ok = (
+            not re.search(r'[0-9\u06F0-\u06F9]', btxt)
+            and not re.search(r'\b(?:را|رو|از|به|با|تا|در|و|که|یا|تخفیف|discount'
+                              r'|کم|اضافه|افزایش|کاهش|less|more)\b', btxt, re.I)
+            and len(btxt.split()) <= 4
+        )
+        if _bridge_ok:
+            return 'price', 0.86
     if re.match(r'\s*(?:درصد|%|percent)', right, re.I) and \
             re.search(r'تخفیف|discount|کاهش|reduce', right[:40], re.I):
         return 'discount', 0.9

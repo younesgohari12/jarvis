@@ -312,3 +312,40 @@ def test_roles_currency_discount_persian():
     roles = classify_source_numbers_v2('قیمت پایه 500 دلار؛ 50 دلار تخفیف')
     by_val = {float(f['value']): f['role'] for f in roles}
     assert by_val[500.0] == 'price' and by_val[50.0] == 'discount'
+
+
+# ======================================================================
+# 7. v22.3 — possessive price bridge ("قیمت کتاب 50 دلار است")
+#    A short digit-free, function-word-free noun between the price cue and
+#    the number must still anchor the price role.
+# ======================================================================
+def test_roles_price_bridge_persian_noun():
+    roles = classify_source_numbers_v2('قیمت کتاب 50 دلار است و 10 دلار تخفیف خورد')
+    by_val = {float(f['value']): f['role'] for f in roles}
+    assert by_val[50.0] == 'price' and by_val[10.0] == 'discount'
+
+
+def test_roles_price_bridge_english_of_phrase():
+    roles = classify_source_numbers_v2('The price of the book is 200 dollars with a 50 dollar discount.')
+    by_val = {float(f['value']): f['role'] for f in roles}
+    assert by_val[200.0] == 'price' and by_val[50.0] == 'discount'
+
+
+def test_roles_price_bridge_cost_phrase():
+    roles = classify_source_numbers_v2('هزینه سفر 120 دلار بود')
+    by_val = {float(f['value']): f['role'] for f in roles}
+    assert by_val[120.0] == 'price'
+
+
+def test_roles_price_object_delta_never_price():
+    """'قیمت را 20 دلار کم کن' — the number is a delta, not the price itself."""
+    roles = classify_source_numbers_v2('قیمت را 20 دلار کم کن')
+    got = [f['role'] for f in roles]
+    assert 'price' not in got
+
+
+def test_roles_price_bridge_rejects_digit_bridge():
+    """A second number between the cue and the value blocks the bridge."""
+    roles = classify_source_numbers_v2('قیمت 500 دلار؛ 50 دلار تخفیف')
+    by_val = {float(f['value']): f['role'] for f in roles}
+    assert by_val[50.0] == 'discount'

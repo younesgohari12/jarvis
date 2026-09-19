@@ -1,58 +1,66 @@
 {
- "product": "JARVIS",
- "version": "v0.11.0-intelligence-v22.2",
- "codename": "LANGUAGE_SEMANTIC_VERIFIER_UPGRADE — AUDIT RESPONSE FINAL",
- "date": "2026-09-19",
- "base": "v21 architecture trained tested (byte-identical core, additive v22 modules)",
- "summary": {
-  "p0_fixed": [
-   "semantic rewrite no longer corrupts meaning: age difference answered by an entity-bound abs(age_a - age_b) operation verified against the immutable source",
-   "verifier V2 fails CLOSED on internal typed-audit errors (typed_audit_internal_error -> abstain)",
-   "SHA256SUMS.json regenerated for this package; RELEASE_V22.json added",
-   "fresh-blind scorer made honest: abstention on answerable questions = failure"
+  "product": "JARVIS",
+  "version": "v0.11.0-intelligence-v22.3",
+  "codename": "LANGUAGE_SEMANTIC_VERIFIER_UPGRADE — AUDIT RESPONSE FINAL",
+  "date": "2026-09-19",
+  "base": "v21 architecture trained tested (byte-identical core, additive v22 modules)",
+  "summary": {
+    "p0_fixed": [
+      "semantic rewrite no longer corrupts meaning: age difference answered by an entity-bound abs(age_a - age_b) operation verified against the immutable source",
+      "verifier V2 fails CLOSED on internal typed-audit errors (typed_audit_internal_error -> abstain)",
+      "SHA256SUMS.json regenerated for this package; RELEASE_V22.json added",
+      "fresh-blind scorer made honest: abstention on answerable questions = failure"
+    ],
+    "also_fixed": [
+      "typed quantity real unit extraction (time/distance/mass/volume/temperature/speed/age) with number+unit source spans",
+      "cross-dimension addition guard (hours+km, kg+liters) with rate-context exemptions",
+      "expressive numeric roles classified: total/ratio_a/ratio_b, inventory_initial/add/remove, price vs discount, p/n/k, age_difference",
+      "minute-precision scheduling: 23:30+2h -> 01:30 next day, 23:45+30m -> 00:15 next day",
+      "intent router telemetry label -> local_intelligence_router_v22",
+      "packaging root restored to a single Jarvis_v0.11.0/ directory"
+    ],
+    "not_claimed": [
+      "no new model weights; broad language generation unchanged (Persian 6/50, English 0/50)",
+      "semantic IR V2 stays an audit/provenance layer (v21 IR remains execution source of truth)"
+    ]
+  },
+  "metrics": {
+    "regression": "1031 passed + 585 subtests, 0 failures (baseline 955 required)",
+    "broad_benchmark": "406/500 = 81.2 (parity with v21)",
+    "fresh_blind_honest": "855/1023 = 83.58 (v22.0 under the same scorer: 78.2)",
+    "fresh_blind_answerable_only": 82.09,
+    "ablation": "typed audit 70/70 vs 0/70; temporal 14/14 vs 0/14; age op 25/40 vs 0/40"
+  },
+  "test_suites": [
+    "tests/test_v22_semantic.py (34)",
+    "tests/test_v221_audit_fixes.py (53)",
+    "full tests/ regression (1042)"
   ],
-  "also_fixed": [
-   "typed quantity real unit extraction (time/distance/mass/volume/temperature/speed/age) with number+unit source spans",
-   "cross-dimension addition guard (hours+km, kg+liters) with rate-context exemptions",
-   "expressive numeric roles classified: total/ratio_a/ratio_b, inventory_initial/add/remove, price vs discount, p/n/k, age_difference",
-   "minute-precision scheduling: 23:30+2h -> 01:30 next day, 23:45+30m -> 00:15 next day",
-   "intent router telemetry label -> local_intelligence_router_v22",
-   "packaging root restored to a single Jarvis_v0.11.0/ directory"
-  ],
-  "not_claimed": [
-   "no new model weights; broad language generation unchanged (Persian 6/50, English 0/50)",
-   "semantic IR V2 stays an audit/provenance layer (v21 IR remains execution source of truth)"
-  ]
- },
- "metrics": {
-  "regression": "1031 passed + 585 subtests, 0 failures (baseline 955 required)",
-  "broad_benchmark": "406/500 = 81.2 (parity with v21)",
-  "fresh_blind_honest": "855/1023 = 83.58 (v22.0 under the same scorer: 78.2)",
-  "fresh_blind_answerable_only": 82.09,
-  "ablation": "typed audit 70/70 vs 0/70; temporal 14/14 vs 0/14; age op 25/40 vs 0/40"
- },
- "test_suites": [
-  "tests/test_v22_semantic.py (34)",
-  "tests/test_v221_audit_fixes.py (42)",
-  "full tests/ regression (1031)"
- ],
- "v22_2_addendum": {
-  "trigger": "independent verification pass over the v22.1 release before final delivery",
-  "fixed": [
-   "reports/v22/v22_fresh_blind_v221_official.json contained a stale v20-runner artifact whose pass marks contradicted the honest report (8.4% vs 83.58%); replaced with a fresh official run of benchmarks/run_v22_fresh_blind.py (855/1023, honest 83.58, answerable-only 82.09) and verified family-by-family identical to v22_fresh_blind_results.json",
-   "clock-state openings (\"It is 23:00 now. The meeting lasts 2 hours.\") previously mis-parsed as an addition chain and returned the wrong answer 25; the temporal witness now accepts a bare clock token as the start instant and the answer is 01:00 next day",
-   "numeric role classifier: linking verbs (\"price is 200\") now anchor the price role and currency-denominated discounts (\"50 dollar discount\") are honoured when the discount noun directly follows the currency word",
-   "English scheduling cue coverage extended (leaves/departs/opens + lasts/takes) and the NLU retry path now also decodes minute-precision clock tokens"
-  ],
-  "verification": [
-   "fresh-blind benchmark re-run after the code changes: 855/1023, honest score 83.58, answerable-only 82.09 — family-by-family identical (no benchmark row changed behavior)",
-   "full regression: 1037 tests + 585 subtests, 0 failures (1031 prior + 6 new v22.2 coverage tests in tests/test_v221_audit_fixes.py)",
-   "performance re-measured with the documented protocol: v21 mean 5.196ms vs v22.2 mean 7.723ms (+48.6% mean, +72.0% p95) — consistent with the independent audit measurements"
-  ],
-  "not_claimed": [
-   "frame-model coverage gaps remain: unrecognized phrasings answer None (safe abstain) — e.g. \"A train departs at 23:30. The trip takes 45 minutes.\"",
-   "no new model weights; broad language generation unchanged (Persian 6/50, English 0/50)",
-   "ownership 19/60 and inventory 67/100 fresh-blind rates unchanged since v21 — documented open gaps"
-  ]
- }
+  "v22_2_addendum": {
+    "trigger": "independent verification pass over the v22.1 release before final delivery",
+    "fixed": [
+      "reports/v22/v22_fresh_blind_v221_official.json contained a stale v20-runner artifact whose pass marks contradicted the honest report (8.4% vs 83.58%); replaced with a fresh official run of benchmarks/run_v22_fresh_blind.py (855/1023, honest 83.58, answerable-only 82.09) and verified family-by-family identical to v22_fresh_blind_results.json",
+      "clock-state openings (\"It is 23:00 now. The meeting lasts 2 hours.\") previously mis-parsed as an addition chain and returned the wrong answer 25; the temporal witness now accepts a bare clock token as the start instant and the answer is 01:00 next day",
+      "numeric role classifier: linking verbs (\"price is 200\") now anchor the price role and currency-denominated discounts (\"50 dollar discount\") are honoured when the discount noun directly follows the currency word",
+      "English scheduling cue coverage extended (leaves/departs/opens + lasts/takes) and the NLU retry path now also decodes minute-precision clock tokens"
+    ],
+    "verification": [
+      "fresh-blind benchmark re-run after the code changes: 855/1023, honest score 83.58, answerable-only 82.09 — family-by-family identical (no benchmark row changed behavior)",
+      "full regression: 1037 tests + 585 subtests, 0 failures (1031 prior + 6 new v22.2 coverage tests in tests/test_v221_audit_fixes.py)",
+      "performance re-measured with the documented protocol: v21 mean 5.196ms vs v22.2 mean 7.723ms (+48.6% mean, +72.0% p95) — consistent with the independent audit measurements"
+    ],
+    "not_claimed": [
+      "frame-model coverage gaps remain: unrecognized phrasings answer None (safe abstain) — e.g. \"A train departs at 23:30. The trip takes 45 minutes.\"",
+      "no new model weights; broad language generation unchanged (Persian 6/50, English 0/50)",
+      "ownership 19/60 and inventory 67/100 fresh-blind rates unchanged since v21 — documented open gaps"
+    ]
+  },
+  "v22_3_addendum": {
+    "trigger": "final delivery verification pass: adversarial replay of every audit repro case against the packaged tree",
+    "verification": "23/23 independent audit repros pass (age-difference EN/FA/sen-form, dollars+items never silently 105, USD+EUR never silently 120, minute scheduling 23:30+2h / 23:45+30min, typed-audit fail-closed, quantity dimensions + full spans, ratio roles, price/discount roles, inventory sum)",
+    "fixed": [
+      "numeric role classifier v22.3: a short possessive noun between the price cue and the number now still anchors the price role ('قیمت کتاب 50 دلار است', 'The price of the book is 200 dollars'); the bridge must be digit-free, function-word-free and <= 4 words, so object deltas ('قیمت را 20 دلار کم کن') and digit-separated second numbers never misfire"
+    ],
+    "tests": "full regression 1042 tests + 585 subtests, 0 failures (1037 prior + 5 new v22.3 price-bridge tests in tests/test_v221_audit_fixes.py)"
+  }
 }
