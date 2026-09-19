@@ -224,5 +224,11 @@
     "security_source_clean": true,
     "package_integrity_passed": true,
     "all_release_gates_green": true
+  },
+  "post_upload_digest": {
+    "verified": true,
+    "reason": "GitHub asset digest == local zip_sha256 (match confirmed)",
+    "github_asset_digest": "sha256:91e1c179a8ac5731819c2740dee6749cfae8e5caafa110cec06c1ccd7106df97",
+    "release_url": "https://github.com/younesgohari12/jarvis/releases/tag/v0.11.0-intelligence-v22.4.2"
   }
 }
