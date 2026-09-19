@@ -271,9 +271,9 @@ def test_reasoning_uses_v22_with_honest_label():
         li = rt.agent.reasoning.local_intelligence
         assert isinstance(li, LocalIntelligenceV22)
         assert isinstance(li, LocalIntelligenceV21)  # subclass keeps v21 isinstance
-        assert li.VERSION == '4.0.0-v22'
+        assert li.VERSION == '5.0.0-v22.4'
         from jarvis.agent.reasoning import _local_source_label
-        assert _local_source_label(li) == 'local_intelligence_4_0_0_v22'
+        assert _local_source_label(li) == 'local_intelligence_5_0_0_v22_4'
 
 
 def test_runtime_endpoint_keeps_canonical_contract():

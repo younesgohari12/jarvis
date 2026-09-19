@@ -1,0 +1,84 @@
+{
+  "total": 12,
+  "passed": 12,
+  "cases": [
+    {
+      "input": "Ali is 35 and Reza is 57 years old. What is the age difference between Ali and Reza?",
+      "expected": 22,
+      "answer": "The age difference is 22 years.",
+      "passed": true
+    },
+    {
+      "input": "Ali is 35 years old and Reza is 57 years old. What is the age difference?",
+      "expected": 22,
+      "answer": "The age difference is 22 years.",
+      "passed": true
+    },
+    {
+      "input": "Ali, aged 35, and Reza, aged 57. What is the age difference between Ali and Reza?",
+      "expected": 22,
+      "answer": "The age difference is 22 years.",
+      "passed": true
+    },
+    {
+      "input": "Ali's age is 35 and Reza's age is 57. How many years apart are Ali and Reza?",
+      "expected": 22,
+      "answer": "The age difference is 22 years.",
+      "passed": true
+    },
+    {
+      "input": "علی 35 ساله است و رضا 57 ساله است. اختلاف سن علی و رضا چند سال است؟",
+      "expected": 22,
+      "answer": "اختلاف سن 22 سال است.",
+      "passed": true
+    },
+    {
+      "input": "علی 35 سال دارد و رضا 57 سال دارد. اختلاف سن علی و رضا چند سال است؟",
+      "expected": 22,
+      "answer": "اختلاف سن 22 سال است.",
+      "passed": true
+    },
+    {
+      "input": "سن علی 35 و سن رضا 57 است. اختلاف سن چند سال است؟",
+      "expected": 22,
+      "answer": "اختلاف سن 22 سال است.",
+      "passed": true
+    },
+    {
+      "input": "سن علی 35 سال است و سن رضا 57 سال است. اختلاف سن علی و رضا چند سال است؟",
+      "expected": 22,
+      "answer": "اختلاف سن 22 سال است.",
+      "passed": true
+    },
+    {
+      "input": "Reza is 22 years older than Ali. How much older is Reza than Ali?",
+      "expected": 22,
+      "answer": "The age difference is 22 years.",
+      "passed": true
+    },
+    {
+      "input": "رضا 22 سال از علی بزرگتر است. رضا چند سال از علی بزرگتر است؟",
+      "expected": 22,
+      "answer": "اختلاف سن 22 سال است.",
+      "passed": true
+    },
+    {
+      "input": "مینا 48 ساله است؛ مادرش 18 سال بزرگتر از اوست؛ جمع سن آن دو چند سال است؟",
+      "expected": 114,
+      "answer": "جمع سن‌ها می‌شود 114 سال.",
+      "passed": true
+    },
+    {
+      "input": "Mina is 32 years old and her mother is 6 years older. What is the sum of their ages in years?",
+      "expected": 70,
+      "answer": "The sum of their ages is 70 years.",
+      "passed": true
+    }
+  ],
+  "entity_binding_proof": {
+    "input": "Ali 35 / Reza 57 / Sara 10 -> Reza-Sara",
+    "answer": "The age difference is 47 years.",
+    "passed": true
+  },
+  "difference_invariant": "abs(a-b) only after entity binding; answer >= 0"
+}

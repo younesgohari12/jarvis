@@ -1,0 +1,50 @@
+{
+  "mutants": [
+    {
+      "id": "M1_disable_dimension_guard",
+      "applied": true,
+      "killed": true,
+      "pytest_tail": "1 failed in 1.28s"
+    },
+    {
+      "id": "M2_speed_unit_flattened",
+      "applied": true,
+      "killed": true,
+      "pytest_tail": "1 failed in 1.33s"
+    },
+    {
+      "id": "M3_span_end_shifted",
+      "applied": true,
+      "killed": true,
+      "pytest_tail": "1 failed in 1.24s"
+    },
+    {
+      "id": "M4_age_abs_removed",
+      "applied": true,
+      "killed": true,
+      "pytest_tail": "1 failed, 34 passed in 1.99s"
+    },
+    {
+      "id": "M5_verifier_fail_open",
+      "applied": true,
+      "killed": true,
+      "pytest_tail": "no tests ran in 1.17s"
+    },
+    {
+      "id": "M6_transfer_direction_swapped",
+      "applied": true,
+      "killed": true,
+      "pytest_tail": "1 failed in 1.23s"
+    },
+    {
+      "id": "M7_inventory_order_reversed",
+      "applied": true,
+      "killed": true,
+      "pytest_tail": "1 failed in 1.35s"
+    }
+  ],
+  "total": 7,
+  "killed": 7,
+  "score": 1.0,
+  "note": "a surviving mutant means test coverage is insufficient (spec §57)"
+}

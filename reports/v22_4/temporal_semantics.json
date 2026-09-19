@@ -1,0 +1,65 @@
+{
+  "total": 6,
+  "passed": 6,
+  "cases": [
+    {
+      "input": "A train departs at 23:30. The trip takes 45 minutes. When does it arri",
+      "expected": {
+        "clock": "00:15",
+        "day_offset": 1
+      },
+      "answer": "00:15 next day.",
+      "passed": true
+    },
+    {
+      "input": "The shop opens at 09:30. It stays open for 3 hours. When does it close",
+      "expected": {
+        "clock": "12:30",
+        "day_offset": 0
+      },
+      "answer": "12:30; that is 12.5 hours after the start.",
+      "passed": true
+    },
+    {
+      "input": "A meeting begins at 22:10. It lasts 2 hours. When does it end?",
+      "expected": {
+        "clock": "00:10",
+        "day_offset": 1
+      },
+      "answer": "00:10 next day.",
+      "passed": true
+    },
+    {
+      "input": "کار ساعت 23:30 شروع می شود؛ مدت کار 90 دقیقه است؛ چه ساعتی تمام می شود",
+      "expected": {
+        "clock": "01:00",
+        "day_offset": 1
+      },
+      "answer": "ساعت 01:00 روز بعد.",
+      "passed": true
+    },
+    {
+      "input": "The movie ends at 22:00. It lasted 2 hours. When did it start?",
+      "expected": {
+        "clock": "20:00",
+        "day_offset": 0
+      },
+      "answer": "It starts at 20:00.",
+      "passed": true
+    },
+    {
+      "input": "It is 23:00 now. The meeting lasts 2 hours. When does it end?",
+      "expected": {
+        "clock": "01:00",
+        "day_offset": 1
+      },
+      "answer": "01:00 next day.",
+      "passed": true
+    }
+  ],
+  "bare_clock_requires_context": {
+    "input": "The clock shows 23:00.",
+    "frame": null
+  },
+  "invariants": "0<=h<=23, 0<=m<=59, day_offset tracked, end-frames compute start"
+}

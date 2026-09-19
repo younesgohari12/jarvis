@@ -60,9 +60,15 @@ class Verifier:
                 invariant={'finance':'balance_conservation','inventory':'inventory_conservation'}.get(task,'independent_execution')
                 check(invariant,close(candidate,expected))
             elif task=='ratio':
-                check('ratio_sum',isinstance(candidate,list) and len(candidate)==2 and close(sum(candidate),s['total']))
-                check('ratio_proportion',len(candidate)==2 and close(candidate[0]*s['ratio_b'],candidate[1]*s['ratio_a']))
-                check('ratio_valid',s['ratio_a']>0 and s['ratio_b']>0)
+                if s.get('query') in ('first','second'):
+                    total=s['ratio_a']+s['ratio_b']
+                    expected=s['total']*(s['ratio_a'] if s['query']=='first' else s['ratio_b'])/total
+                    check('ratio_valid',s['ratio_a']>0 and s['ratio_b']>0 and total>0)
+                    check('ratio_part_recompute',close(candidate,expected))
+                else:
+                    check('ratio_sum',isinstance(candidate,list) and len(candidate)==2 and close(sum(candidate),s['total']))
+                    check('ratio_proportion',len(candidate)==2 and close(candidate[0]*s['ratio_b'],candidate[1]*s['ratio_a']))
+                    check('ratio_valid',s['ratio_a']>0 and s['ratio_b']>0)
             elif task=='binomial':
                 n,k,p=s['n'],s['k'],s['p']
                 valid=int(n)==n and int(k)==k and 0<=k<=n<=200 and 0<=p<=1

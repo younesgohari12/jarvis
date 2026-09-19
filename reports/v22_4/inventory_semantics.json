@@ -1,0 +1,41 @@
+{
+  "total": 4,
+  "passed": 4,
+  "cases": [
+    {
+      "input": "موجودی انبار 100 کالا است؛ 7 کالا فروخته شد و 3 کالا آسیب دید و 2 کالا",
+      "expected": 92,
+      "answer": "نتیجه می‌شود 92 کالا.",
+      "passed": true
+    },
+    {
+      "input": "انبار 242 کالا دارد؛ 20 کالا فروخته می‌شود و 39 کالای جدید می‌رسد؛ موج",
+      "expected": 261,
+      "answer": "نتیجه می‌شود 261 کالا.",
+      "passed": true
+    },
+    {
+      "input": "Product A stock = 10. Product B stock = 20. 5 of Product A sold. What ",
+      "expected": 5,
+      "answer": "Product A stock is 5 items.",
+      "passed": true
+    },
+    {
+      "input": "موجودی محصول الف 10 کالا است و موجودی محصول ب 20 کالا است. 5 کالا از م",
+      "expected": 5,
+      "answer": "موجودی محصول الف می‌شود 5 کالا.",
+      "passed": true
+    }
+  ],
+  "typed_event_example": {
+    "event_id": "event_0",
+    "type": "sale",
+    "direction": -1,
+    "quantity": 5.0,
+    "unit": "ITEM",
+    "product": "Product A",
+    "source_span": "5 of Product A"
+  },
+  "product_binding": null,
+  "note": "intermediate-negative stock still refuses (physical invariant); final answer must be non-negative"
+}

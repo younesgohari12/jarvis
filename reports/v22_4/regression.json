@@ -1,0 +1,10 @@
+{
+  "source": "raw pytest run of tests/ (never hand-typed)",
+  "pytest_tail": "1215 passed, 585 subtests passed in 41.74s",
+  "tests": 1215,
+  "subtests": 585,
+  "failures": 0,
+  "returncode": 0,
+  "baseline_required": ">= 1042 tests + 585 subtests (v22.3)",
+  "meets_baseline": true
+}

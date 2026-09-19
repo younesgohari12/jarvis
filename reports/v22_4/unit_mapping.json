@@ -1,0 +1,85 @@
+{
+  "total": 10,
+  "passed": 10,
+  "cases": [
+    {
+      "input": "10 m/s",
+      "expected": "M_PER_SECOND",
+      "got": "M_PER_SECOND",
+      "raw_unit": "m/s",
+      "passed": true
+    },
+    {
+      "input": "10 meters per second",
+      "expected": "M_PER_SECOND",
+      "got": "M_PER_SECOND",
+      "raw_unit": "meters per second",
+      "passed": true
+    },
+    {
+      "input": "سرعت 10 متر بر ثانیه",
+      "expected": "M_PER_SECOND",
+      "got": "M_PER_SECOND",
+      "raw_unit": "متر بر ثانیه",
+      "passed": true
+    },
+    {
+      "input": "36 km/h",
+      "expected": "KM_PER_HOUR",
+      "got": "KM_PER_HOUR",
+      "raw_unit": "km/h",
+      "passed": true
+    },
+    {
+      "input": "36 kmph",
+      "expected": "KM_PER_HOUR",
+      "got": "KM_PER_HOUR",
+      "raw_unit": "kmph",
+      "passed": true
+    },
+    {
+      "input": "36 kilometers per hour",
+      "expected": "KM_PER_HOUR",
+      "got": "KM_PER_HOUR",
+      "raw_unit": "kilometers per hour",
+      "passed": true
+    },
+    {
+      "input": "سرعت 36 کیلومتر بر ساعت",
+      "expected": "KM_PER_HOUR",
+      "got": "KM_PER_HOUR",
+      "raw_unit": "کیلومتر بر ساعت",
+      "passed": true
+    },
+    {
+      "input": "5 mph",
+      "expected": "MILE_PER_HOUR",
+      "got": "MILE_PER_HOUR",
+      "raw_unit": "mph",
+      "passed": true
+    },
+    {
+      "input": "5 miles per hour",
+      "expected": "MILE_PER_HOUR",
+      "got": "MILE_PER_HOUR",
+      "raw_unit": "miles per hour",
+      "passed": true
+    },
+    {
+      "input": "سرعت 5 مایل بر ساعت",
+      "expected": "MILE_PER_HOUR",
+      "got": "MILE_PER_HOUR",
+      "raw_unit": "مایل بر ساعت",
+      "passed": true
+    }
+  ],
+  "explicit_conversion_example": {
+    "source_value": 10.0,
+    "source_unit": "M_PER_SECOND",
+    "result_value": 36.0,
+    "result_unit": "KM_PER_HOUR",
+    "factor": 3.6
+  },
+  "unknown_unit_policy": "UNKNOWN_UNIT (never silently substituted)",
+  "unknown_unit_value": "NONE"
+}

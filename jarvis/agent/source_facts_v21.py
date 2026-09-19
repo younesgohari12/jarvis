@@ -81,11 +81,27 @@ def extract_source(text):
         left=[i for i,m in enumerate(numbers) if not(pair.start()<=m.start()<pair.end())]
         # Reference IDs are not arithmetic inputs.
         left=[i for i in left if not re.search(r'(?:کد|شناسه|\bid|record|سؤال)\s*$',t[max(0,numbers[i].start()-20):numbers[i].start()])]
-        left=[i for i in left if not(vals[i]==2 and re.match(r'\s*(?:نفر|shares|بخش|سهم|تیم|beneficiaries)',t[numbers[i].end():]))]
+        left=[i for i in left if not(vals[i]==2 and re.match(r'\s*(?:نفر|shares|بخش|سهم|تیم|beneficiaries|واحد|units?|parts?)',t[numbers[i].end():]))]
+        # v22.4: ordinal references ('سهم واحد اول'/'the first unit') convert
+        # to bare numbers ('اول'->1) and must never enter the ratio total.
+        left=[i for i in left if not(
+            re.search(r'(?:واحد|واحدی|the|سهم)\s*$',t[max(0,numbers[i].start()-14):numbers[i].start()],re.I)
+            and re.match(r'\s*(?:واحد|unit|part|share|\?|؟|چند)',t[numbers[i].end():],re.I))]
         ordinal_pair=re.search(r'1\s+(?:to|و)\s+2\s*(?:ratio|نسبت)',t)
         if ordinal_pair:left=[i for i in left if not ordinal_pair.start()<=numbers[i].start()<ordinal_pair.end()]
         if len(left)!=1:raise UnsupportedSource('ratio_total')
-        return graph('ratio',{'total':vals[left[0]],'ratio_a':float(pair.group(1)),'ratio_b':float(pair.group(2))})
+        g=graph('ratio',{'total':vals[left[0]],'ratio_a':float(pair.group(1)),'ratio_b':float(pair.group(2))})
+        # v22.4: 'سهم واحد اول / first unit's share' asks ONE part, not both.
+        # NB: the source is normalized, so 'اول'/'دوم' already became 1/2.
+        if re.search(r"سهم\s*(?:واحد\s*)?(?:اول|1)\b|سهم\s*اول|سهم\s*بخش\s*(?:اول|1)"
+                     r"|first\s*(?:unit|part|share)"
+                     r"|(?:the|سهم)\s*1\s*(?:unit|part|share)",t,re.I):
+            g.slots['query']='first'
+        elif re.search(r"سهم\s*(?:واحد\s*)?(?:دوم|2)\b|سهم\s*دوم|سهم\s*بخش\s*(?:دوم|2)"
+                       r"|second\s*(?:unit|part|share)"
+                       r"|(?:the|سهم)\s*2\s*(?:unit|part|share)",t,re.I):
+            g.slots['query']='second'
+        return g
     if re.search(r'موفق|شانس|سکه|success|binomial|chance|coin|شیر|برد',t) and re.search(r'احتمال|شانس|probab|chance',t) and not re.search(r'تاس|dice|\bdie\b',t) and not (re.search('همزمان|هم زمان|both|all',t) and re.search('مستقل|independent',t)):
         try:pi=choose([(r'.*',r'\s*(?:%|درصد|percent)'),(r'(?:احتمال|probability|chance|p\s*\(\s*head\s*\)\s*=)\s*$',r'.*')])
         except UnsupportedSource:
@@ -165,8 +181,42 @@ def extract_source(text):
     if percent_of:return graph('graph',{'initial':float(percent_of.group(2))},[{'op':'multiply','value':float(percent_of.group(1))/100}])
     return extract_events(t,graph)
 
-POS=r'اضافه|زیاد|افزایش|واریز|دریافت|وارد|ورودی|رسید|بیشتر|بگیر|جمع|add|increase|deposit|credit|receive|restock|arrive'
-NEG=r'کم|کاهش|برداشت|خرج|پرداخت|ارسال|فروخت|فروخته|خارج|خروجی|subtract|decrease|reduce|withdraw|debit|spend|spent|pay|paid|charge|ship|sell|sold|leave|remove'
+POS=r'اضافه|زیاد|افزایش|واریز|دریافت|وارد|ورودی|رسید|رسد|مرجوع|برگشت|بازگشت|اصلاح|تصحیح|بیشتر|بگیر|جمع|add|increase|deposit|credit|receive|restock|arrive|returned'
+NEG=r'کم|کاهش|برداشت|خرج|پرداخت|ارسال|فروخت|فروش|فروخته|آسیب|خراب|ضایع|از بین|نقص|خارج|خروجی|تخفیف|discount|subtract|decrease|reduce|withdraw|debit|spend|spent|pay|paid|charge|ship|sell|sold|leave|remove|damaged|spoiled|destroyed'
+
+# v22.4 typed inventory events (spec §33): every event carries event_id,
+# type, direction, quantity, unit and source_span — the type is derived from
+# the verb of the clause, never from a global sentence keyword.
+_INVENTORY_EVENT_TYPES = [
+    ('restock', r'restock|replenish|رسید|رسد\s*$|تأمین|تامین|جدید\s*می\s*رسد'),
+    ('purchase_in', r'purchas|خریداری|خرید\s*(?:شد|کرد)'),
+    ('sale', r'sell|sold|sale|فروخت|فروش\s*(?:شد|رف)|به فروش'),
+    ('damage', r'damag|spoiled|destroyed|آسیب|خراب|ضایع|از بین'),
+    ('return', r'return|مرجوع|برگشت|بازگشت'),
+    ('correction', r'correct|اصلاح|تصحیح'),
+    ('remove', r'remove|بردار|حذف|خارج'),
+    ('add', r'add|اضافه|افزایش'),
+    ('subtract', r'subtract|کاهش|کم'),
+]
+
+
+def _inventory_event_type(clause: str, op: str) -> str:
+    for etype, pattern in _INVENTORY_EVENT_TYPES:
+        if re.search(pattern, clause, re.I):
+            return etype
+    return 'add' if op in ('add', 'inventory_add') else 'subtract'
+
+
+def _typed_event(op: str, value: float, clause: str, start: int, end: int,
+                 raw: str, unit: str = 'ITEM') -> dict:
+    """Typed event envelope (spec §33): event_id/type/direction/quantity/
+    unit/source_span. The GraphExecutor reads op/value; the extra typed
+    fields are additive metadata."""
+    etype = _inventory_event_type(clause, op)
+    direction = +1 if op in ('add', 'inventory_add', 'credit') else -1
+    return {'op': op, 'value': value, 'type': etype, 'direction': direction,
+            'quantity': value, 'unit': unit, 'source_span': raw.strip(),
+            'span': [start, end]}
 def operation_from_source(clause):
     if re.search(r'باقی.?مانده.*تقسیم|modulo|remainder',clause):return 'modulo'
     if re.search(r'توان|power|exponent',clause):return 'exponent'
@@ -194,6 +244,18 @@ def extract_events(t,make):
             if len(values)!=1:raise UnsupportedSource('conditional_action')
             actions.append({'op':operation_from_source(arm),'value':float(values[0].group())})
         return make('graph',{'initial':float(initial_numbers[0].group())},[{'op':'conditional','comparison':comparison,'threshold':float(boundary[0].group()),'then':[actions[0]],'else':[actions[1]]}])
+    # v22.4 verb-first arithmetic: 'جمع 340 و 60 دلار' / 'what is 98 + 393'.
+    # Identifier numbers (کد/شناسه/ticket #) never enter the sum.
+    def _ident_number(m):
+        left=t[max(0,m.start()-40):m.start()]
+        return bool(re.search(r'(?:کد(?:\s*\S+)?|شناسه(?:\s*\S+)?|شماره\s*پرونده|record\s*id|package\s*identifier|ticket|order|invoice|tracking|پیگیری)\s*[:#=]?\s*$',left,re.I))
+    arith_cue=re.search(r'جمع|حاصل\s*جمع|\bsum\b|\bplus\b|\btotal\s+of\b|(?<=\d)\s*\+\s*(?=\d)',t,re.I)
+    nums_all=[m for m in NUMBER.finditer(t) if not _ident_number(m)]
+    if arith_cue and len(nums_all)==2 and not re.search(NEG,t,re.I) \
+            and not re.search(r'کم|subtract|decrease|reduce|withdraw|debit|spend|sold|فروخت|برداشت',t,re.I):
+        return make('graph',{'initial':0.0},[
+            {'op':'add','value':float(nums_all[0].group())},
+            {'op':'add','value':float(nums_all[1].group())}])
     parts=[p.strip() for p in re.split(r'[;؛،,]|(?<!\d)\.(?!\d)|\band then\b|\bafter that\b|\bfollowed by\b|\bthen\b|\band\b|و بعدش|و بعد|بعدش|سپس|آنگاه|حاصل را|\bو\b',t) if p.strip()]
     initial=None;events=[];declared_steps=[]
     for part in parts:
@@ -201,18 +263,43 @@ def extract_events(t,make):
         if not ns:continue
         if len(ns)==1 and re.match(r'\s*(?:تغییر|مرحله|steps?|operations?)',part[ns[0].end():]):
             declared_steps.append(int(ns[0].group()));continue
-        if re.search(r'کد|شناسه|شماره پرونده|record id|question id|package identifier',part):continue
+        if re.search(r'کد|شناسه|شماره پرونده|record id|question id|package identifier',part):
+            # v22.4: an identifier mention invalidates only ITS OWN number;
+            # the rest of the part may still carry real arithmetic.
+            kept=[m for m in ns if not re.search(
+                r'(?:کد(?:\s*\S+)?|شناسه(?:\s*\S+)?|شماره\s*پرونده|record\s*id|question\s*id|package\s*identifier)\s*[:#]?$',
+                part[max(0,m.start()-40):m.start()],re.I)]
+            if not kept:continue
+            ns=kept
         if initial is None:
             if len(ns)>2:raise UnsupportedSource('initial_event_coverage')
             initial=float(ns[0].group())
             if len(ns)==2:
                 events.append({'op':operation_from_source(part[ns[0].end():]),'value':float(ns[1].group())})
             continue
+        if (len(ns)==2 and initial is not None and not events
+                and re.search(r'جمع|حاصل\s*جمع|\+|\bsum\b|\btotal\b|\bplus\b',part,re.I)
+                and not re.search(POS+'|'+NEG,part,re.I)):
+            # v22.4 verb-first arithmetic: 'جمع 340 و 60 دلار' = 340 + 60
+            events.append({'op':'add','value':float(ns[0].group())})
+            events.append({'op':'add','value':float(ns[1].group())})
+            initial=0.0
+            continue
         if len(ns)!=1:raise UnsupportedSource('event_coverage')
-        events.append({'op':operation_from_source(part),'value':float(ns[0].group())})
+        events.append({'op':operation_from_source(part),'value':float(ns[0].group()),'span':[ns[0].start(),ns[0].end()],'clause':part})
     if initial is None or not events:raise UnsupportedSource('no_event_graph')
     if any(n!=len(events) for n in declared_steps):raise UnsupportedSource('declared_event_count_mismatch')
     domain='inventory' if re.search(r'انبار|کالا|قطعه|inventory|warehouse|stock|items|pieces|units',t) else 'finance' if re.search(r'حساب|پول|دلار|تومان|bank|account|balance|dollar|money',t) else 'graph'
+    if domain=='inventory':
+        # v22.4 typed events (spec §33): event_id/type/direction/unit derived
+        # from the verb of the event clause; executor reads op/value only.
+        for i,e in enumerate(events):
+            clause=e.pop('clause','')
+            span=e.pop('span',[-1,-1])
+            events[i]=_typed_event(e['op'],e['value'],clause,span[0],span[1],
+                                   clause,unit='ITEM')
+    else:
+        for e in events:e.pop('clause',None);e.pop('span',None)
     g=make(domain,{'initial':initial},events)
     if declared_steps:g.constraints.append({'type':'event_count','value':len(events)})
     return g
@@ -251,7 +338,11 @@ def source_answer(f):
     if d=='ratio' and s.get('query')=='simplify':
         divisor=math.gcd(int(s['ratio_a']),int(s['ratio_b']));return [s['ratio_a']/divisor,s['ratio_b']/divisor]
     if d=='work_rate' and s.get('query')=='combined_time':return float(1/sum(1/F(v) for v in s['durations']))
-    if d=='ratio':return [float(F(s['total'])*F(s[k])/(F(s['ratio_a'])+F(s['ratio_b']))) for k in ('ratio_a','ratio_b')]
+    if d=='ratio':
+        parts=[float(F(s['total'])*F(s[k])/(F(s['ratio_a'])+F(s['ratio_b']))) for k in ('ratio_a','ratio_b')]
+        if s.get('query')=='first':return parts[0]
+        if s.get('query')=='second':return parts[1]
+        return parts
     if d=='work_rate':return float(F(s['output_initial'])*F(s['workers_target'])*F(s['hours_target'])/(F(s['workers_initial'])*F(s['hours_initial'])))
     if d=='binomial':
         n,k=int(s['n']),int(s['k']);p=F(s['p'])

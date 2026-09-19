@@ -1,0 +1,112 @@
+{
+  "total": 13,
+  "passed": 13,
+  "cases": [
+    {
+      "input": "2 hours + 5 USD",
+      "expected": true,
+      "got": true,
+      "passed": true
+    },
+    {
+      "input": "5 USD + 2 hours",
+      "expected": true,
+      "got": true,
+      "passed": true
+    },
+    {
+      "input": "2 ساعت + 5 دلار",
+      "expected": true,
+      "got": true,
+      "passed": true
+    },
+    {
+      "input": "2 hours + 5 dollars",
+      "expected": true,
+      "got": true,
+      "passed": true
+    },
+    {
+      "input": "10 items + 3 hours",
+      "expected": true,
+      "got": true,
+      "passed": true
+    },
+    {
+      "input": "2 ساعت و 120 کیلومتر را جمع کن",
+      "expected": true,
+      "got": true,
+      "passed": true
+    },
+    {
+      "input": "10 USD/hour + 3 ITEM/hour",
+      "expected": true,
+      "got": true,
+      "passed": true
+    },
+    {
+      "input": "2 کیلوگرم و 3 لیتر را جمع کن",
+      "expected": true,
+      "got": true,
+      "passed": true
+    },
+    {
+      "input": "جمع 5 لیتر و 8 کیلوگرم چند می‌شود؟",
+      "expected": true,
+      "got": true,
+      "passed": true
+    },
+    {
+      "input": "موجودی انبار 100 کالا است؛ هر روز 5 کالا اضافه می شود؛ بعد از 3 روز؟",
+      "expected": false,
+      "got": false,
+      "passed": true
+    },
+    {
+      "input": "موجودی حساب 100 دلار است؛ 5 دلار اضافه کن",
+      "expected": false,
+      "got": false,
+      "passed": true
+    },
+    {
+      "input": "10 USD/hour + 3 USD/hour",
+      "expected": false,
+      "got": false,
+      "passed": true
+    },
+    {
+      "input": "5 دلار در ساعت × 2 ساعت",
+      "expected": false,
+      "got": false,
+      "passed": true
+    }
+  ],
+  "structured_failure_example": {
+    "failure_type": "dimension_mismatch",
+    "operator": "add",
+    "left_dimension": "time",
+    "left_unit": "HOUR",
+    "right_dimension": "distance",
+    "right_unit": "KM",
+    "message_fa": "زمان و مسافت را نمی‌توان مستقیماً جمع کرد.",
+    "message_en": "Time and distance cannot be directly added.",
+    "key": "time_distance"
+  },
+  "spec_matrix": {
+    "USD + USD": true,
+    "USD - USD": true,
+    "USD + EUR": true,
+    "USD + ITEM": true,
+    "USD + HOUR": true,
+    "TIME + DISTANCE": true,
+    "MASS + VOLUME": true,
+    "DISTANCE + DISTANCE": true,
+    "TIME + TIME": true,
+    "DISTANCE / TIME -> SPEED": true,
+    "CURRENCY / TIME -> CURRENCY_RATE": true,
+    "COUNT / TIME -> COUNT_RATE": true,
+    "SPEED x TIME -> DISTANCE": true,
+    "CURRENCY_RATE x TIME -> CURRENCY": true,
+    "COUNT_RATE x TIME -> COUNT": true
+  }
+}

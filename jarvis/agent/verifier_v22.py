@@ -1,16 +1,27 @@
-"""JARVIS v22 — Universal Verifier V2.
+"""JARVIS v22 — Universal Verifier V2 (v22.4 TRUE ROOT-CAUSE HARDENED).
 
 The independent challenger. v21's verifier repeated the parser's semantic
 reading (correlated failure). V2 adds witnesses that are independent of the
 parser interpretation:
 
   * typed-dimension audit    (quantity_v22 — USD never adds to ITEM)
+  * operation-aware dimension algebra (semantics_v22_4 — the SAME dimension
+    pair may be legal for one operator and illegal for another: USD/hour x
+    hour is legal, hour + USD is not; the v22.3 blanket {time,count} /
+    {time,currency} exemptions are REMOVED at the root)
   * expressive numeric-role audit (numeric_roles_v22 — slot swaps caught)
   * temporal witness         (temporal_v22 — 23:00 + 2h must be 01:00, not 25)
 
 v21 checks are inherited verbatim and can never be weakened: V2 only ADDS
 failures. A typed failure always ends in abstention/clarification — never a
 silently "fixed" answer.
+
+v22.4 additions:
+  * structured DimensionFailure metadata on every dimension rejection
+    (operator, left/right dimension + unit) so the renderer never guesses
+    (spec §22/§23);
+  * the immutable ORIGINAL_SOURCE stays authoritative (spec §43);
+  * fail-closed behaviour is preserved (spec §45).
 """
 from __future__ import annotations
 
@@ -22,6 +33,10 @@ from jarvis.agent.quantity_v22 import (
     Quantity, UnitIncompatibilityError, extract_typed_quantities,
     validate_operation_chain, dimension_verdict, compatible,
 )
+from jarvis.agent.semantics_v22_4 import (
+    DimensionFailure, cross_dimension_chain_failure_v4,
+    numeric_guard, probability_guard,
+)
 from jarvis.agent.numeric_roles_v22 import (
     classify_source_numbers_v2, role_slot_consistency, ROLE_CHECK, SLOT_CHECK,
 )
@@ -29,13 +44,18 @@ from jarvis.agent import temporal_v22
 from jarvis.agent.language_brain_v22 import detect_age_difference
 
 __all__ = ['UniversalVerifierV2', 'dimension_verdict', 'UnitIncompatibilityError',
-           'ORIGINAL_SOURCE']
+           'ORIGINAL_SOURCE', 'LAST_DIMENSION_FAILURE']
 
 # v22.1 — the immutable user source. Every v22 witness reads the ORIGINAL
 # user text through this context; NLU-normalized text is parse-assistance
 # only and can never become the verification source (P0 fix: a paraphrase
 # must not be verified against itself).
 ORIGINAL_SOURCE = ContextVar('jarvis_v22_original_source', default=None)
+
+# v22.4 — structured failure channel: the verifier records the EXACT
+# DimensionFailure of the last audit so the renderer can speak the real
+# dimension pair (never a guessed 'currency_item').
+LAST_DIMENSION_FAILURE = ContextVar('jarvis_v22_dimension_failure', default=None)
 
 # Failure names introduced by the V2 audit layer.
 TYPED_FAILURES = {
@@ -68,31 +88,37 @@ COUNT_LANGUAGE = _re.compile(
     r'چند\s*گروه|به\s*چند\s*روش|چند\s*نفره|ways\s*to\s*choose|how\s*many\s+(?:groups|ways)', _re.I)
 DIFFERENCE_LANGUAGE = _re.compile(
     r'چند\s*سال\s*(?:بزرگ|کوچک)|اختلاف[^؟?;؛]{0,15}چند|چند[^؟?;؛]{0,15}اختلاف'
-    r'|how\s+many\s+years\s+(?:older|younger)|what\s+is\s+the\s+age\s+difference', _re.I)
+    r'|how\s+many\s+years\s+(?:older|younger)|what\s+is\s+the\s+age\s+difference'
+    r'|how\s+many\s+years\s+apart|فاصله\s*سن', _re.I)
 
 # Add/subtract chain language that must never span two different known dims.
 CHAIN_LANGUAGE = _re.compile(
     r'جمع\s*کن|جمع\s*می?شود|جمع\s*می\u200cشود|اضافه\s*کن|کم\s*کن|کم\s*می?شود|'
     r'کم\s*می\u200cشود|\badd\b|\bplus\b|\bsubtract\b|\bsum\b|\btotal\b', _re.I)
-_CHAIN_SAFE_DIMS = {'dimensionless', 'identifier', 'clock_time', 'percentage',
-                    'probability', 'date'}
 
 
 def cross_dimension_chain_failure(quantities, source_text: str) -> list:
-    """v22.1: an explicit add/subtract request over two KNOWN different
-    dimensions (hours + km, kg + liters, USD + items, ...) is refused.
-    Untyped (dimensionless) numbers never trigger this guard."""
-    if not source_text or not CHAIN_LANGUAGE.search(source_text):
-        return []
-    known = {q.dimension for q in quantities if q.dimension not in _CHAIN_SAFE_DIMS}
-    if len(known) < 2:
-        return []
-    # rate-style contexts (per hour/day) legitimately mix time with counts or
-    # money; every other known-dimension pair inside one add/subtract request
-    # is refused (hours+km, kg+liters, USD+items, ...).
-    if known <= {'time', 'count'} or known <= {'time', 'currency'}:
+    """v22.4: operation-aware replacement for the v22.3 blanket exemptions.
+
+    Every explicit add/subtract request is validated PAIRWISE with
+    validate_binary_operation — there is no globally whitelisted dimension
+    pair any more. 'هر روز 5 کالا اضافه می شود؛ بعد از 3 روز' stays legal
+    because the 3 روز is a temporal qualifier, not an addition operand;
+    '2 hours + 5 USD' is now refused (spec §5).
+
+    Returns a list of check names (backward compatible); the structured
+    DimensionFailure objects are available through
+    cross_dimension_chain_failure_structured.
+    """
+    failures = cross_dimension_chain_failure_v4(source_text or '', quantities)
+    if not failures:
         return []
     return ['source_operation_dimension_consistency']
+
+
+def cross_dimension_chain_failure_structured(quantities, source_text: str) -> list[DimensionFailure]:
+    """Structured variant used by the verifier to attach exact metadata."""
+    return cross_dimension_chain_failure_v4(source_text or '', quantities)
 
 
 class UniversalVerifierV2(UniversalVerifier):
@@ -100,6 +126,27 @@ class UniversalVerifierV2(UniversalVerifier):
 
     # ------------------------------------------------------------------
     def verify(self, ir, candidate):
+        # v22.4: numeric answer invariants — NaN/Infinity never verify (§50).
+        if candidate is not None and not isinstance(candidate, (list, tuple, dict)):
+            guard = numeric_guard(candidate)
+            if guard:
+                verdict = Verdict(False, [guard],
+                                  'The computed answer is not a finite number; it cannot be verified.',
+                                  'abstain', ['numeric_answer_guard'])
+                return self._finalize(verdict)
+            if isinstance(candidate, float) or isinstance(candidate, int):
+                # probability-typed answers must stay in [0,1]
+                try:
+                    ir_answer_type = getattr(ir, 'answer_type', '')
+                except Exception:
+                    ir_answer_type = ''
+                if ir_answer_type == 'probability':
+                    pguard = probability_guard(candidate)
+                    if pguard:
+                        return self._finalize(Verdict(
+                            False, [pguard],
+                            'Probability answers must remain within [0,1].',
+                            'abstain', ['probability_invariant']))
         verdict = super().verify(ir, candidate)
         try:
             self._typed_audit(ir, verdict)
@@ -113,6 +160,10 @@ class UniversalVerifierV2(UniversalVerifier):
             verdict.repair_hint = (
                 REPAIR_HINTS['typed_audit_internal_error']
                 + f' ({type(exc).__name__})')
+        return self._finalize(verdict)
+
+    # ------------------------------------------------------------------
+    def _finalize(self, verdict: Verdict) -> Verdict:
         if verdict.failed_checks:
             verdict.failed_checks = list(dict.fromkeys(verdict.failed_checks))
             verdict.checks = list(dict.fromkeys(verdict.checks))
@@ -140,11 +191,17 @@ class UniversalVerifierV2(UniversalVerifier):
         for name in dv['failed_checks']:
             verdict.failed_checks.append(name)
 
-        # -- 1b. cross-dimension addition guard (v22.1) ---------------------
-        # '2 ساعت و 120 کیلومتر را جمع کن' must never compute: an explicit
-        # add/subtract request over two KNOWN different dimensions fails.
+        # -- 1b. operation-aware cross-dimension addition guard (v22.4) ----
+        # '2 ساعت و 120 کیلومتر را جمع کن' must never compute; '2 hours +
+        # 5 USD' is refused too; temporal qualifiers ('بعد از 3 روز') are
+        # correctly excluded instead of whitelisting dimension pairs.
+        structured = cross_dimension_chain_failure_structured(quantities, source_text)
         for name in cross_dimension_chain_failure(quantities, source_text):
             verdict.failed_checks.append(name)
+        if structured:
+            failure = structured[0]
+            LAST_DIMENSION_FAILURE.set(failure)
+            verdict.checks.append('structured_dimension_failure')
 
         # -- 2. operation-chain dimension audit ----------------------------
         slots = getattr(ir, 'slots', None) or {}
@@ -243,18 +300,52 @@ class UniversalVerifierV2(UniversalVerifier):
                 mm = cm.group(2) or 0
                 start = f"{int(hh):02d}:{int(mm):02d}"
             durations = []
+            consumed: list[tuple[int, int]] = []
             for dm in re.finditer(
                     r'(?:مدت(?:\s*کار)?|duration|دیرش)\D{0,12}?(\d+(?:\.\d+)?)\s*(ساعت|دقیقه|hours?|minutes?|hr|min)'
                     r'|\b(\d+(?:\.\d+)?)\s*(hours?|minutes?)\s*(?:of\s*work)?'
                     r'|\b(\d+(?:\.\d+)?)\s*(ساعت|دقیقه)\s*(?:طول|تمام|کشید)'
-                    r'|\b(?:lasts?)\s+(\d+(?:\.\d+)?)\s*(hours?|minutes?)', t, re.I):
-                value = dm.group(1) or dm.group(3) or dm.group(5) or dm.group(7)
-                unit = dm.group(2) or dm.group(4) or dm.group(6) or dm.group(8)
+                    r'|\b(?:lasts?|takes?)\s+(\d+(?:\.\d+)?)\s*(hours?|minutes?)'
+                    # v22.4: bare FA compound durations ('3 ساعت و 30 دقیقه')
+                    r'|\b(\d+(?:\.\d+)?)\s*(ساعت|دقیقه|ثانیه)\b', t, re.I):
+                value = dm.group(1) or dm.group(3) or dm.group(5) or dm.group(7) \
+                    or dm.group(9)
+                unit = dm.group(2) or dm.group(4) or dm.group(6) or dm.group(8) \
+                    or dm.group(10)
+                # a span may only be counted once (the cued alternative wins)
+                if any(dm.start() < e and s < dm.end() for s, e in consumed):
+                    continue
+                consumed.append((dm.start(), dm.end()))
                 unit = str(unit).lower()
                 if unit.startswith(('ساعت', 'hour', 'hr', 'h')):
                     durations.append((float(value), 'hour'))
+                elif unit.startswith(('ثانیه', 'sec')):
+                    durations.append((float(value) / 3600.0, 'hour'))
                 else:
                     durations.append((float(value), 'minute'))
+            # v22.4 (spec §37): an END frame ('ends at 22:00. It lasted 2h.')
+            # computes the START: expected = end − Σdurations.
+            end_frame = bool(re.search(
+                r'(?:ends?|finishes?)\s*(?:ساعت|at)?\s*\d'
+                r'|تمام\s*می[\s\u200c]*شود|به\s*پایان\s*می[\s\u200c]*رسد', t, re.I))
+            if end_frame:
+                em = re.search(r'(?:ends?|finishes?)\s*(?:ساعت|at)?\s*(\d{1,2})(?::(\d{2}))?'
+                               r'|تمام\s*می[\s\u200c]*شود\s*(?:ساعت)?\s*(\d{1,2})(?::(\d{2}))?', t, re.I)
+                if em:
+                    hh = em.group(1) or em.group(3)
+                    mm = em.group(2) or em.group(4) or 0
+                    end_clock = temporal_v22.parse_clock_time(f'{int(hh):02d}:{int(mm):02d}')
+                    expected = temporal_v22.subtract_duration(
+                        end_clock, *[temporal_v22.Duration.of(v, u) for v, u in durations])
+                    observed = clock_result if isinstance(clock_result, temporal_v22.ClockTime) \
+                        else temporal_v22.parse_clock_time(clock_result)
+                    passed = (expected.iso() == observed.iso()
+                              and expected.day_offset == observed.day_offset)
+                    return Verdict(passed,
+                                   [] if passed else ['temporal_calendar_wrap', 'temporal_consistency'],
+                                   '' if passed else 'End − duration must equal the start (calendar-aware).',
+                                   'none' if passed else 'response',
+                                   ['temporal_world_model', 'calendar_wrap', 'end_frame'])
             if start is None or not durations:
                 return Verdict(False, ['temporal_source_incomplete'],
                                'Start time or duration missing', 'none',

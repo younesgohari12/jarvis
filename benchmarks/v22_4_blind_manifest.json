@@ -1,0 +1,9 @@
+{
+  "benchmark": "v22_4_blind",
+  "total": 2075,
+  "hand_written": 635,
+  "template_generated": 1440,
+  "sha256": "063aef8f732c845e77a34c6916749d732e96489bbb74edfe12a3a8afc13f7be1",
+  "frozen": true,
+  "note": "frozen before first execution; ~hand-written share is independently authored, template cases are synthetic and labelled as such (spec §65)"
+}

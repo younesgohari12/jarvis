@@ -1,0 +1,17 @@
+{
+  "transforms": [
+    "spacing",
+    "half-space",
+    "punctuation",
+    "Persian digits",
+    "Arabic digits",
+    "ASCII digits",
+    "plural",
+    "singular",
+    "mixed FA/EN",
+    "capitalization"
+  ],
+  "garbage_runs": 300,
+  "pytest_tail": "5 passed in 1.54s",
+  "passed": true
+}

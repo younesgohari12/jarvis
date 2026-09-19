@@ -1,0 +1,14 @@
+{
+  "runner": "tests/test_v224_property_fuzz.py (hypothesis, 60 examples/property)",
+  "pytest_tail": "59 passed in 2.14s",
+  "properties": [
+    "incompatible dims + ADD -> never numeric",
+    "speed unit preserved",
+    "spans exact",
+    "age difference >= 0",
+    "clock always valid",
+    "transfer conserves funds",
+    "inventory order preserved"
+  ],
+  "passed": true
+}

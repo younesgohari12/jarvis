@@ -14,7 +14,8 @@ from jarvis.agent.quantity_v22 import _to_ascii, Quantity
 ROLES = [
     'initial_value', 'target_value',
     'workers_initial', 'workers_target', 'hours_initial', 'hours_target',
-    'output_initial', 'price', 'cost', 'revenue', 'discount', 'tax',
+    'output_initial', 'price', 'price_delta', 'discount', 'discount_percentage',
+    'cost', 'revenue', 'tax',
     'inventory_initial', 'inventory_add', 'inventory_remove',
     'ratio_a', 'ratio_b', 'total', 'n', 'k', 'p', 'sample_size',
     'sequence_term', 'start', 'duration', 'distance', 'speed_value',
@@ -122,6 +123,19 @@ def _role_for(left: str, right: str, value: float, full: str) -> tuple[str, floa
                 or re.search(r'(?:دقیقاً?|exactly)\s*$', left, re.I):
             return 'k', 0.85
 
+    # --- v22.4 price DELTA (spec §41): a change in the price is NOT the
+    #     price. Delta verbs ('was reduced by', 'کاهش یافت', ...) bind the
+    #     number to price_delta BEFORE any price anchor/bridge applies —
+    #     this closes the v22.3 misclassification ('reduced by 20' → price).
+    if re.search(r'(?:reduced|reduces|increased|increases|decreased|decreases|'
+                 r'rose|dropped|fell|raised|lowered)\s*(?:by)?\s*$'
+                 r'|کاهش[\s\u200c]*(?:یافت|داد|پیدا کرد)|افزایش[\s\u200c]*(?:یافت|داد)'
+                 r'|کم[\s\u200c]*شد|بیشتر[\s\u200c]*شد', left, re.I) \
+            or re.search(r'(?:reduced|increased|decreased|lowered|dropped|rose|fell)\s+by\b'
+                         r'|کاهش[\s\u200c]*یافت|افزایش[\s\u200c]*یافت|کم[\s\u200c]*شد'
+                         r'|بیشتر[\s\u200c]*شد', right[:40], re.I):
+        return 'price_delta', 0.9
+
     # --- price vs discount: the price is anchored by a price cue on its
     #     LEFT; only the number glued to the discount token is a discount ---
     #     v22.2: a linking verb ("price is 200") still anchors the price, and
@@ -146,7 +160,7 @@ def _role_for(left: str, right: str, value: float, full: str) -> tuple[str, floa
             return 'price', 0.86
     if re.match(r'\s*(?:درصد|%|percent)', right, re.I) and \
             re.search(r'تخفیف|discount|کاهش|reduce', right[:40], re.I):
-        return 'discount', 0.9
+        return 'discount_percentage', 0.9
     if re.match(r'\s*(?:دلار|ریال|تومان|dollars?|euros?|tomans?)\s*'
                 r'(?:تخفیف|discount)\b', right, re.I):
         return 'discount', 0.88

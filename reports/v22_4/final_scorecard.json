@@ -1,0 +1,217 @@
+{
+  "release": "v0.11.0-intelligence-v22.4",
+  "label": "TRUE_ROOT_CAUSE_HARDENED",
+  "generated_from": "reports/v22_4/* live artifacts — never hand-typed",
+  "regression": {
+    "tests": 1215,
+    "subtests": 585,
+    "failures": 0,
+    "source": "raw pytest run of tests/ (never hand-typed)",
+    "v22_3_baseline": "1042 tests + 585 subtests"
+  },
+  "benchmarks": {
+    "broad_500": {
+      "correct": 406,
+      "total": 500,
+      "score": 81.2,
+      "by_category": {
+        "Adversarial": {
+          "total": 100,
+          "correct": 100
+        },
+        "Code": {
+          "total": 100,
+          "correct": 100
+        },
+        "English": {
+          "total": 50,
+          "correct": 0
+        },
+        "Persian": {
+          "total": 50,
+          "correct": 6
+        },
+        "Reasoning": {
+          "total": 100,
+          "correct": 100
+        },
+        "World Model": {
+          "total": 100,
+          "correct": 100
+        }
+      }
+    },
+    "legacy_fresh_1023_LABEL_FRESH_REGRESSION_LEGACY": {
+      "correct": 1006,
+      "total": 1023,
+      "score": 98.34,
+      "answerable_only": 98.19,
+      "ownership": {
+        "total": 60,
+        "correct": 60
+      },
+      "inventory": {
+        "total": 100,
+        "correct": 99
+      },
+      "age": {
+        "total": 70,
+        "correct": 70
+      },
+      "finance": {
+        "total": 200,
+        "correct": 200
+      },
+      "ratio": {
+        "total": 120,
+        "correct": 120
+      },
+      "scheduling": {
+        "total": 90,
+        "correct": 90
+      }
+    },
+    "new_blind_2075_frozen": {
+      "sha256": "063aef8f732c845e77a34c6916749d732e96489bbb74edfe12a3a8afc13f7be1",
+      "correct": 1891,
+      "total": 2075,
+      "score": 91.13,
+      "answerable_only": 89.65,
+      "hand_written": 635,
+      "template_generated": 1440,
+      "by_family": {
+        "age": {
+          "total": 163,
+          "correct": 139
+        },
+        "finance": {
+          "total": 150,
+          "correct": 124
+        },
+        "hard_negatives": {
+          "total": 243,
+          "correct": 241
+        },
+        "identifiers": {
+          "total": 86,
+          "correct": 82
+        },
+        "inventory": {
+          "total": 187,
+          "correct": 185
+        },
+        "mixed_language": {
+          "total": 120,
+          "correct": 120
+        },
+        "ood": {
+          "total": 81,
+          "correct": 81
+        },
+        "ownership": {
+          "total": 235,
+          "correct": 194
+        },
+        "probability": {
+          "total": 90,
+          "correct": 90
+        },
+        "rates": {
+          "total": 210,
+          "correct": 176
+        },
+        "ratio": {
+          "total": 110,
+          "correct": 100
+        },
+        "scheduling": {
+          "total": 156,
+          "correct": 154
+        },
+        "units": {
+          "total": 154,
+          "correct": 153
+        },
+        "work_rate": {
+          "total": 90,
+          "correct": 52
+        }
+      }
+    }
+  },
+  "hardening_evidence": {
+    "mutation_score": 1.0,
+    "mutation_killed": "7/7",
+    "span_integrity": {
+      "cases": 2400,
+      "spans": 7223,
+      "mismatches": 0
+    },
+    "concurrency": {
+      "contamination": 0,
+      "passed": true
+    },
+    "security_scan": {
+      "files": 1926,
+      "secrets": 0
+    },
+    "domain_reports": {
+      "dimension_algebra": "13/13",
+      "unit_mapping": "10/10",
+      "age_semantics": "12/12",
+      "ownership_semantics": "12/12",
+      "inventory_semantics": "4/4",
+      "temporal_semantics": "6/6",
+      "numeric_roles": "8/8"
+    }
+  },
+  "performance": {
+    "simple_math": {
+      "n": 60,
+      "mean_ms": 2.256,
+      "p50_ms": 2.35,
+      "p95_ms": 2.569,
+      "p99_ms": 12.275
+    },
+    "typed_semantic": {
+      "n": 60,
+      "mean_ms": 2.818,
+      "p50_ms": 3.353,
+      "p95_ms": 3.557,
+      "p99_ms": 5.337
+    },
+    "ownership": {
+      "n": 30,
+      "mean_ms": 7.652,
+      "p50_ms": 5.868,
+      "p95_ms": 6.299,
+      "p99_ms": 59.017
+    },
+    "inventory": {
+      "n": 30,
+      "mean_ms": 3.709,
+      "p50_ms": 3.668,
+      "p95_ms": 3.857,
+      "p99_ms": 4.852
+    },
+    "temporal": {
+      "n": 30,
+      "mean_ms": 2.051,
+      "p50_ms": 1.958,
+      "p95_ms": 2.176,
+      "p99_ms": 4.481
+    },
+    "age": {
+      "n": 30,
+      "mean_ms": 2.79,
+      "p50_ms": 2.718,
+      "p95_ms": 2.911,
+      "p99_ms": 4.664
+    }
+  },
+  "honest_gaps": [
+    "Persian broad language 6/50 and English broad 0/50 unchanged (v23 scope)",
+    "1 legacy inventory case abstains by design (intermediate negative stock)",
+    "legacy binomial 34/45 and combination 40/45 unchanged (v21 counting grammar)"
+  ]
+}

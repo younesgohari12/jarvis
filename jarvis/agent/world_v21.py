@@ -42,6 +42,9 @@ class GraphExecutorV21(GraphExecutor):
         if node['op']=='age' and s.get('query')=='base':return s['age']+s['years']
         if node['op']=='ratio' and s.get('query')=='simplify':
             g=math.gcd(int(s['ratio_a']),int(s['ratio_b']));return [s['ratio_a']/g,s['ratio_b']/g]
+        if node['op']=='ratio' and s.get('query') in ('first','second'):
+            total=s['ratio_a']+s['ratio_b']
+            return s['total']*(s['ratio_a'] if s['query']=='first' else s['ratio_b'])/total
         if node['op']=='work_rate' and s.get('query')=='combined_time':return 1/sum(1/v for v in s['durations'])
         if node['op']=='speed' and node.get('slots',{}).get('query')=='distance':
             return node['slots']['speed']*node['slots']['time']

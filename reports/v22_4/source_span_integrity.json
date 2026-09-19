@@ -1,0 +1,8 @@
+{
+  "generated_cases": 2400,
+  "spans_checked": 7223,
+  "invariant": "original[start:end] == span.text",
+  "mismatches": 0,
+  "passed": true,
+  "failure_samples": []
+}

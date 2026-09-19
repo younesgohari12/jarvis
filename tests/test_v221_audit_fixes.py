@@ -191,7 +191,20 @@ def test_roles_inventory():
 def test_roles_price_vs_discount():
     roles = classify_source_numbers_v2('قیمت 100 تومان است و 20 درصد تخفیف دارد')
     by_val = {f['value']: f['role'] for f in roles}
-    assert by_val[100.0] == 'price' and by_val[20.0] == 'discount'
+    # v22.4: a PERCENT discount is discount_percentage (spec §41 separates
+    # discount (amount) from discount_percentage (percent)).
+    assert by_val[100.0] == 'price' and by_val[20.0] == 'discount_percentage'
+
+
+def test_roles_price_delta_not_price():
+    # v22.4 (spec §41): 'reduced by 20' is a price DELTA, never the price.
+    for text, val in (('The price was reduced by 20 dollars.', 20.0),
+                      ('The price increased by 20 dollars.', 20.0),
+                      ('Cost decreased by 15 dollars.', 15.0),
+                      ('قیمت 20 دلار کاهش یافت.', 20.0)):
+        roles = classify_source_numbers_v2(text)
+        got = next((f['role'] for f in roles if f['value'] == val), None)
+        assert got == 'price_delta', (text, got)
 
 
 def test_roles_binomial():

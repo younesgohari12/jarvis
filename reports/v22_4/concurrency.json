@@ -1,0 +1,9 @@
+{
+  "workers": 8,
+  "iterations_per_worker": 40,
+  "contamination_events": [],
+  "contamination_count": 0,
+  "errors": [],
+  "passed": true,
+  "protocol": "token = ORIGINAL_SOURCE.set(x); try: ... finally: reset(token)"
+}

@@ -1,0 +1,15 @@
+{
+  "healthy_answer_105": {
+    "passed": true
+  },
+  "fail_closed_injection": {
+    "passed": true,
+    "failed_checks": [
+      "typed_audit_internal_error"
+    ],
+    "repair_stage": "abstain",
+    "never_pass_on_internal_error": true
+  },
+  "additive_only": "V2 only ADDS failures to the v21 verdict",
+  "immutable_source": "ORIGINAL_SOURCE ContextVar; normalized text never verified"
+}

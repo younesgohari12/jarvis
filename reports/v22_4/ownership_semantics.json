@@ -1,0 +1,88 @@
+{
+  "total": 12,
+  "passed": 12,
+  "cases": [
+    {
+      "input": "Ali has 704 dollars. Sara has 223 dollars. Ali transfers 15 dollars to Sara. Wha",
+      "expected": 238,
+      "got": 238.0,
+      "passed": true
+    },
+    {
+      "input": "Ali has 704 dollars. Sara has 223 dollars. Ali pays 15 dollars to Sara. What is ",
+      "expected": 238,
+      "got": 238.0,
+      "passed": true
+    },
+    {
+      "input": "Ali has 704 dollars. Sara has 223 dollars. Ali gives Sara 15 dollars. What is Sa",
+      "expected": 238,
+      "got": 238.0,
+      "passed": true
+    },
+    {
+      "input": "Ali has 704 dollars. Sara has 223 dollars. Sara receives 15 dollars from Ali. Wh",
+      "expected": 238,
+      "got": 238.0,
+      "passed": true
+    },
+    {
+      "input": "Ali has 704 dollars. Sara has 223 dollars. 15 dollars is sent from Ali to Sara. ",
+      "expected": 238,
+      "got": 238.0,
+      "passed": true
+    },
+    {
+      "input": "علی 704 دلار دارد. سارا 223 دلار دارد. علی 15 دلار به سارا می‌دهد. موجودی سارا چ",
+      "expected": 238,
+      "got": 238.0,
+      "passed": true
+    },
+    {
+      "input": "علی 704 دلار دارد. سارا 223 دلار دارد. علی 15 دلار برای سارا می‌فرستد. موجودی سا",
+      "expected": 238,
+      "got": 238.0,
+      "passed": true
+    },
+    {
+      "input": "علی 704 دلار دارد. سارا 223 دلار دارد. سارا 15 دلار از علی دریافت می‌کند. موجودی",
+      "expected": 238,
+      "got": 238.0,
+      "passed": true
+    },
+    {
+      "input": "Ali has 704 dollars. Sara has 223 dollars. Ali transfers 15 dollars to Sara. Wha",
+      "expected": 689,
+      "got": 689.0,
+      "passed": true
+    },
+    {
+      "input": "Ali has 100 dollars. Bob has 50 dollars. Ali transfers 20 dollars to Bob. What i",
+      "expected": 150,
+      "got": 150.0,
+      "passed": true
+    },
+    {
+      "input": "Ali has 100 dollars. Bob has 50 dollars. Ali transfers 20 dollars to Bob. What i",
+      "expected": 10,
+      "got": 10.0,
+      "passed": true
+    },
+    {
+      "input": "Ali has 100 dollars. Sara has 50 dollars. Reza has 20 dollars. Ali gives Sara 10",
+      "expected": 23,
+      "got": 23.0,
+      "passed": true
+    }
+  ],
+  "currency_safety": {
+    "conflict": true,
+    "expected": "ownership_unit_conflict"
+  },
+  "impossible_transfer_refused": true,
+  "funds_conservation": {
+    "total_before": 150.0,
+    "total_after": 150.0,
+    "passed": true
+  }
+}

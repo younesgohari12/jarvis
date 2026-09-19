@@ -98,12 +98,17 @@ def _paraphrase_rewrite(text: str) -> str:
 
 # ----------------------------------------------------------------------
 # v22.1 — age-difference detection (independent, span-based).
-# Reads ONLY the immutable user text: exactly two distinct named ages plus
-# difference language -> the entity-bound abs(a−b) operation may answer.
+# v22.4 ROOT-CAUSE FIX: detection is no longer regex-bound. The generalized
+# engine (semantics_v22_4.extract_age_facts) models entity -> attribute ->
+# value with relations, so 'aged 35', "Ali's age is 35", 'علی 35 سال دارد',
+# 'علی 35 ساله است' and future phrasings resolve through ONE architecture
+# instead of one regex per surface form (spec §16-§18).
 AGE_DIFFERENCE_LANGUAGE = re.compile(
-    r'اختلاف\s*سن|چند\s*سال\s*(?:بزرگ|کوچک)[\s\u200c]*تر'
-    r'|چند\s*سال[\s\u200c]*(?:متفاوت|فرق)'
-    r'|age\s+difference|how\s+many\s+years\s+(?:older|younger)'
+    r'اختلاف\s*سن|فاصله\s*سن'
+    r'|چند\s*سال[^؟?;؛.\n]{0,24}?(?:بزرگ|کوچک)[\s\u200c]*تر'
+    r'|چند\s*سال[\s\u200c]*(?:متفاوت|فرق|فاصله)'
+    r'|age\s+difference|how\s+many\s+years\s+(?:older|younger|apart)'
+    r'|how\s+much\s+(?:older|younger)'
     r'|what\s+is\s+the\s+age\s+difference', re.I)
 
 _AGE_FA_SALEH = re.compile(r'([\u0600-\u06FF]+)\s+(\d+)\s*ساله')
@@ -114,10 +119,20 @@ _AGE_EN_IS = re.compile(r'([A-Za-z\u0600-\u06FF]+)\s+is\s+(\d+)(?:\s+years?\s+ol
 def detect_age_difference(text: str):
     """Return ((name_a, age_a), (name_b, age_b)) when the immutable source
     asks an age-difference question about exactly two distinct named ages;
-    otherwise None. Never invents or reorders values."""
+    otherwise None. Never invents or reorders values.
+
+    v22.4: delegates to the generalized entity->attribute->value engine and
+    falls back to the legacy surface-form regexes only when the engine does
+    not bind both entities by name."""
+    from jarvis.agent import semantics_v22_4 as s4
     t = normalize_chars(text or '')
     if not AGE_DIFFERENCE_LANGUAGE.search(t):
         return None
+    solved = s4.solve_age_query(t)
+    if solved:
+        ages = solved['ages']
+        a, b = solved['query']['a'], solved['query']['b']
+        return ((a, ages[a]), (b, ages[b]))
     ages: list[tuple[str, float]] = []
     seen_names: set[str] = set()
     for pattern in (_AGE_FA_SALEH, _AGE_FA_SEN, _AGE_EN_IS):
@@ -142,7 +157,8 @@ def detect_age_difference(text: str):
 # witness (typed audit, temporal witness) keeps reading the original.
 _CLOCK_TOKEN = re.compile(r'(\d{1,2}):(\d{2})')
 _SCHED_LANGUAGE = re.compile(
-    r'شروع|پایان|تمام|مدت|کار|شیفت|duration|lasts?|shift|start|end|finish', re.I)
+    r'شروع|پایان|تمام|مدت|کار|شیفت|duration|lasts?|shift|start|end|finish'
+    r'|departs?|leaves?|opens?|begins?|trip|قطار|اتوبوس|پرواز|جلسه|راندگی|train|bus|flight|meeting', re.I)
 
 
 def normalize_clock_tokens(text: str) -> str:
@@ -152,7 +168,15 @@ def normalize_clock_tokens(text: str) -> str:
 
     def _repl(m: 're.Match') -> str:
         h, mm = int(m.group(1)), int(m.group(2))
-        left = t[max(0, m.start() - 14):m.start()]
+        # v22.4 ROOT-CAUSE FIX: the cue window was 14 characters, which missed
+        # real sentences like 'a train departs at 23:30' (the 'at' sat 18
+        # characters back). The cue must be found wherever it stands in the
+        # sentence, so the window is widened and anchored on word boundaries.
+        left = t[max(0, m.start() - 40):m.start()]
+        # v22.4: a clock bound to an END verb ('ends at 22:00') is the END
+        # instant, never a start — the scheduler must not read it as start.
+        if re.search(r'(?:ends?|finishes?|تمام|پایان|arrives?)[\s\u200c]*(?:ساعت|at|از)?\s*$', left, re.I):
+            return m.group(0)
         if h <= 23 and mm < 60 and re.search(r'(?:ساعت|at|از)\s*$', left, re.I):
             dec = h + mm / 60.0
             return f'{dec:.10g}'.rstrip('0').rstrip('.') if mm else str(h)
@@ -211,7 +235,12 @@ def _currency_word(qs: list, language: str) -> str:
 
 def render_word_problem(value, ir_dict: dict, language: str = 'fa', mode: str = 'concise') -> str:
     """Speak a verified numeric answer naturally. Falls back to '' when no
-    clean template applies (caller keeps the v21 canonical rendering then)."""
+    clean template applies (caller keeps the v21 canonical rendering then).
+
+    v22.4 FACT-LOCKED NLG (spec §53): the rendering may never name a unit
+    other than the verified one — a structured '10 M_PER_SECOND' answer can
+    never be spoken as km/h. The speed template now reads the actual unit
+    from the typed quantities; unknown units render unit-free."""
     task = ir_dict.get('task')
     qs = ir_dict.get('quantities') if 'quantities' in ir_dict else []
     v = fmt_number(value, language)
@@ -231,7 +260,10 @@ def render_word_problem(value, ir_dict: dict, language: str = 'fa', mode: str = 
                 return f'هر بخش می\u200cشود {fmt_number(value[0])} و {fmt_number(value[1])}.'
             return ''
         if task == 'speed':
-            return f'سرعت می\u200cشود {v} کیلومتر بر ساعت.'
+            unit_fa = _speed_word(qs, ir_dict, 'fa')
+            if unit_fa:
+                return f'سرعت می\u200cشود {v} {unit_fa}.'
+            return f'سرعت می\u200cشود {v}.'
         if task == 'age':
             return f'نتیجه می\u200cشود {v} سال.'
         if task == 'sequence':
@@ -253,12 +285,39 @@ def render_word_problem(value, ir_dict: dict, language: str = 'fa', mode: str = 
             return f'The parts are {fmt_number(value[0])} and {fmt_number(value[1])}.'
         return ''
     if task == 'speed':
-        return f'The speed is {v} km/h.'
+        unit_en = _speed_word(qs, ir_dict, 'en')
+        if unit_en:
+            return f'The speed is {v} {unit_en}.'
+        return f'The speed is {v}.'
     if task == 'age':
         return f'The result is {v} years.'
     if task == 'sequence':
         return f'The requested term is {v}.'
     return ''
+
+
+# v22.4 fact-locked speed unit names — the rendering MUST match the verified
+# unit; an unverified/unknown unit renders without a unit word.
+_SPEED_UNIT_WORDS = {
+    'fa': {'M_PER_SECOND': 'متر بر ثانیه', 'KM_PER_HOUR': 'کیلومتر بر ساعت',
+           'MILE_PER_HOUR': 'مایل بر ساعت'},
+    'en': {'M_PER_SECOND': 'm/s', 'KM_PER_HOUR': 'km/h', 'MILE_PER_HOUR': 'mph'},
+}
+
+
+def _speed_word(qs: list, ir_dict: dict, language: str) -> str:
+    """Fact-locked speed unit word taken from the typed audit layer."""
+    unit = ''
+    for q in qs or []:
+        if isinstance(q, dict) and q.get('dimension') == 'speed':
+            unit = q.get('normalized_unit') or q.get('unit') or ''
+            if unit and unit != 'UNKNOWN_UNIT':
+                break
+    if not unit or unit == 'UNKNOWN_UNIT':
+        # legacy units dict fallback (v21 speed tasks carry units={'speed': ...})
+        legacy = (ir_dict.get('units') or {}).get('speed', '')
+        unit = {'m/s': 'M_PER_SECOND', 'km/h': 'KM_PER_HOUR'}.get(legacy, '')
+    return _SPEED_UNIT_WORDS.get(language, {}).get(unit, '')
 
 
 # ----------------------------------------------------------------------
@@ -277,7 +336,65 @@ _CLARIFY = {
     },
 }
 
+# v22.4 structured dimension-failure messages (spec §24): every key is
+# derived from the ACTUAL dimension pair in the structured failure object,
+# never guessed. The renderer reads message_fa / message_en from the object
+# itself; these templates cover the documented pairs.
+_STRUCTURED_CLARIFY = {
+    'time_distance': {
+        'fa': 'زمان و مسافت را نمی‌توان مستقیماً جمع کرد.',
+        'en': 'Time and distance cannot be directly added.',
+    },
+    'mass_volume': {
+        'fa': 'جرم و حجم دو کمیت متفاوت هستند.',
+        'en': 'Mass and volume are different quantities.',
+    },
+    'currency_item': {
+        'fa': 'مبلغ پول و تعداد کالا را نمی‌توان مستقیماً جمع کرد.',
+        'en': 'Money and item counts cannot be directly added.',
+    },
+    'currency_mix': {
+        'fa': 'دو ارز متفاوت بدون نرخ تبدیل قابل جمع نیستند.',
+        'en': 'Two different currencies cannot be combined without an exchange rate.',
+    },
+    'time_currency': {
+        'fa': 'زمان و مبلغ پول را نمی‌توان مستقیماً جمع کرد.',
+        'en': 'Time and money cannot be directly added.',
+    },
+    'time_count': {
+        'fa': 'زمان و تعداد را نمی‌توان مستقیماً جمع کرد.',
+        'en': 'Time and counts cannot be directly added.',
+    },
+    'rate_mismatch': {
+        'fa': 'این دو نرخ کمیت متفاوتی را می‌سنجند و جمع‌پذیر نیستند.',
+        'en': 'These rates measure different quantities and cannot be combined.',
+    },
+}
+
 
 def clarification(language: str, reason: str) -> str:
-    key = reason if reason in _CLARIFY else 'dimension'
-    return _CLARIFY[key]['fa' if language == 'fa' else 'en']
+    # legacy keys keep their v22.1 wording (backward-compatible contract);
+    # structured keys resolve through the v22.4 templates.
+    if reason in _CLARIFY:
+        src = _CLARIFY[reason]
+    elif reason in _STRUCTURED_CLARIFY:
+        src = _STRUCTURED_CLARIFY[reason]
+    else:
+        src = _CLARIFY['dimension']
+    return src['fa' if language == 'fa' else 'en']
+
+
+def structured_clarification(language: str, failure) -> str:
+    """v22.4: speak the structured DimensionFailure — the message MUST be
+    derived from the actual fields (operator, left/right dimension + unit).
+    The structured templates take priority over the legacy wording."""
+    if failure is None:
+        return clarification(language, 'dimension')
+    # the failure's own messages are the single source of truth
+    msg = failure.message_fa if language == 'fa' else failure.message_en
+    if msg:
+        return msg
+    key = getattr(failure, 'key', 'dimension')
+    if key in _STRUCTURED_CLARIFY:
+        return _STRUCTURED_CLARIFY[key]['fa' if language == 'fa' else 'en']
+    return clarification(language, key)

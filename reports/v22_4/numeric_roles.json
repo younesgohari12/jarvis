@@ -1,0 +1,66 @@
+{
+  "total": 8,
+  "passed": 8,
+  "cases": [
+    {
+      "input": "The price was reduced by 20 dollars.",
+      "value": 20.0,
+      "expected": "price_delta",
+      "got": "price_delta",
+      "passed": true
+    },
+    {
+      "input": "The price increased by 20 dollars.",
+      "value": 20.0,
+      "expected": "price_delta",
+      "got": "price_delta",
+      "passed": true
+    },
+    {
+      "input": "Cost decreased by 15 dollars.",
+      "value": 15.0,
+      "expected": "price_delta",
+      "got": "price_delta",
+      "passed": true
+    },
+    {
+      "input": "قیمت 20 دلار کاهش یافت.",
+      "value": 20.0,
+      "expected": "price_delta",
+      "got": "price_delta",
+      "passed": true
+    },
+    {
+      "input": "قیمت کتاب 50 دلار است",
+      "value": 50.0,
+      "expected": "price",
+      "got": "price",
+      "passed": true
+    },
+    {
+      "input": "قیمت 100 تومان است و 20 درصد تخفیف دارد",
+      "value": 20.0,
+      "expected": "discount_percentage",
+      "got": "discount_percentage",
+      "passed": true
+    },
+    {
+      "input": "525 را با نسبت 4 به 3 تقسیم کن",
+      "value": 525.0,
+      "expected": "total",
+      "got": "total",
+      "passed": true
+    },
+    {
+      "input": "3 کارگر در 4 ساعت 84 واحد تولید می کنند؛ 8 کارگر در 6 ساعت چ",
+      "value": 3.0,
+      "expected": "workers_initial",
+      "got": "workers_initial",
+      "passed": true
+    }
+  ],
+  "roles_added_v22_4": [
+    "price_delta",
+    "discount_percentage"
+  ]
+}

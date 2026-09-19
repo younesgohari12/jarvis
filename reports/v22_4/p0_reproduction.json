@@ -1,0 +1,146 @@
+{
+  "bug1_time_currency_escape": {
+    "input": "2 hours + 5 dollars",
+    "dimensions": [
+      "time",
+      "currency"
+    ],
+    "cross_dimension_guard": [
+      "source_operation_dimension_consistency"
+    ],
+    "rejected": true,
+    "expected": "rejected (time + currency must not add)"
+  },
+  "bug2_speed_unit_wrong": {
+    "input": "10 m/s",
+    "unit": "M_PER_SECOND",
+    "expected_unit": "M_PER_SECOND",
+    "wrong": false
+  },
+  "bug2b_speed_unit_fa_wrong": {
+    "input": "سرعت 10 متر بر ثانیه",
+    "unit": "M_PER_SECOND",
+    "expected_unit": "M_PER_SECOND"
+  },
+  "bug3_source_span_truncated": {
+    "50 کالا": [
+      {
+        "span": "50 کالا",
+        "start": 0,
+        "end": 7,
+        "invariant_ok": true
+      }
+    ],
+    "3 workers": [
+      {
+        "span": "3 workers",
+        "start": 0,
+        "end": 9,
+        "invariant_ok": true
+      }
+    ],
+    "8 نفر": [
+      {
+        "span": "8 نفر",
+        "start": 0,
+        "end": 5,
+        "invariant_ok": true
+      }
+    ]
+  },
+  "bug4_age_regex_bound": {
+    "en_aged": {
+      "detection": "(('Ali', 35.0), ('Reza', 57.0))",
+      "detected": true
+    },
+    "en_possessive": {
+      "detection": "(('Ali', 35.0), ('Reza', 57.0))",
+      "detected": true
+    },
+    "fa_dare": {
+      "detection": "(('علی', 35.0), ('رضا', 57.0))",
+      "detected": true
+    },
+    "fa_sen_sal_est": {
+      "detection": "(('علی', 35.0), ('رضا', 57.0))",
+      "detected": true
+    }
+  },
+  "bug5_unstructured_failure": {
+    "input": "2 ساعت و 120 کیلومتر را جمع کن",
+    "answer": "زمان و مسافت را نمی‌توان مستقیماً جمع کرد. لطفاً بگویید دقیقاً چه محاسبه‌ای مد نظر است.",
+    "note": "message claims money/items although the true mismatch is time vs distance"
+  },
+  "bug6_ownership_narrow": {
+    "en_pays": {
+      "text": "Ali has 704 dollars. Sara has 223 dollars. Ali pays 15 dollars to Sara. What is Sara's balance?",
+      "answer": "Sara's balance is 238 dollars.",
+      "intent": "reasoned_answer",
+      "checks": [
+        "v24_ownership_model",
+        "ownership_event_model",
+        "funds_conservation",
+        "v24_query_binding"
+      ]
+    },
+    "en_receives": {
+      "text": "Ali has 704 dollars. Sara has 223 dollars. Sara receives 15 dollars from Ali. What is Sara's balance?",
+      "answer": "Sara's balance is 238 dollars.",
+      "intent": "reasoned_answer",
+      "checks": [
+        "v24_ownership_model",
+        "ownership_event_model",
+        "funds_conservation",
+        "v24_query_binding"
+      ]
+    },
+    "fa_miferestad": {
+      "text": "علی 704 دلار دارد. سارا 223 دلار دارد. علی 15 دلار برای سارا می‌فرستد. موجودی سارا چند است؟",
+      "answer": null,
+      "intent": null,
+      "checks": null
+    }
+  },
+  "bug7_scheduling_train": {
+    "text": "A train departs at 23:30. The trip takes 45 minutes. What time does it arrive?",
+    "answer": "00:15 next day.",
+    "intent": "reasoned_answer",
+    "checks": [
+      "v15_local_intelligence",
+      "v20_learned_ir",
+      "world_consumed",
+      "graph_executed",
+      "schedule_timeline",
+      "source_extraction_complete"
+    ]
+  },
+  "bug8_price_delta_role": {
+    "input": "The price was reduced by 20 dollars.",
+    "roles": [
+      [
+        20.0,
+        "price"
+      ]
+    ],
+    "expected": "20 -> price_delta"
+  },
+  "bug9_inventory_events": {
+    "text": "موجودی انبار 100 کالا است؛ 7 کالا فروخته شد و 3 کالا آسیب دید و 2 کالا مرجوع شد. موجودی چند است؟",
+    "answer": "نتیجه می‌شود 92 کالا.",
+    "intent": "word_problem_answer",
+    "checks": [
+      "v15_local_intelligence",
+      "v20_learned_ir",
+      "world_consumed",
+      "graph_executed",
+      "inventory_conservation",
+      "source_extraction_complete"
+    ]
+  },
+  "bug10_metadata_inconsistency": {
+    "RELEASE_V22.json metrics.regression": "1031 passed + 585 subtests",
+    "RELEASE_V22.json test_suites": "full tests/ regression (1042)",
+    "v22_2_addendum verification": "1037 tests + 585 subtests",
+    "actual_baseline_run": "1042 tests + 585 subtests, 0 failures"
+  }
+}

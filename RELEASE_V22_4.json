@@ -1,0 +1,53 @@
+{
+  "product": "JARVIS",
+  "version": "v0.11.0-intelligence-v22.4",
+  "codename": "TRUE_ROOT_CAUSE_HARDENING / SEMANTIC RELIABILITY UPGRADE",
+  "base_tag": "v0.11.0-intelligence-v22.3",
+  "date": "2026-09-19",
+  "generated_by": "benchmarks/v22_4_finalize.py — single source of truth",
+  "regression": {
+    "tests": 1215,
+    "subtests": 585,
+    "failures": 0,
+    "pytest_tail": "1215 passed, 585 subtests passed in 41.74s",
+    "baseline_required": "1042 + 585"
+  },
+  "p0_fixed": [
+    "operation-aware dimension algebra: time+currency, time+count, time+distance, mass+volume and rate-family mismatches all rejected with structured metadata; the v22.3 blanket {time,count}/{time,currency} exemptions are removed at the root",
+    "speed units preserved through a unit registry: m/s -> M_PER_SECOND, km/h -> KM_PER_HOUR, mph -> MILE_PER_HOUR, unknown -> UNKNOWN_UNIT (never silently substituted); extraction separate from explicit conversion with full provenance",
+    "SourceSpan exact provenance type: original[start:end] == text verified over 2400 generated cases / 7223 spans, 0 mismatches; stripped-substring offset reuse eliminated",
+    "age semantics: entity->attribute->value engine with generalized surface forms (aged/possessive/دارد/ساله/سن X), relations (older_than/younger_than), pronoun anaphora, named-entity query binding and sum-of-ages; difference invariant abs(a-b) >= 0",
+    "structured dimension failure objects (operator, left/right dimension+unit) with dimension-accurate FA/EN messages; the renderer can no longer claim money/items for a time+distance conflict"
+  ],
+  "p1_fixed": [
+    "ownership event model: balances + ordered transfers + query binding (sender/receiver/combined/difference) + pronoun anaphora + currency safety + conservation; legacy benchmark 19/60 -> 60/60",
+    "inventory typed events (event_id/type/direction/quantity/unit/source_span) + multi-product binding + damage/return/correction/arrive verbs; 67/100 -> 99/100",
+    "scheduling frame generalization: any start/duration/end phrasing incl. train/flight/shift/meeting, end-frames compute the start, compound FA durations; the 14-char clock-cue window root cause fixed; 90/90 kept",
+    "price_delta role separated from price (reduced/increased/کاهش یافت) + discount_percentage separated from discount",
+    "word-problem payload guard: remove/add inside a numeric word problem no longer routes to the destructive-command gate"
+  ],
+  "new_capability": [
+    "compound-dimension rate arithmetic: 5 USD/hour x 2 hours -> 10 USD, rate+rate addition within a family, structured rate-mismatch refusal, Persian inverted rate form (هر ساعت 5 دلار)"
+  ],
+  "benchmarks": {
+    "broad_500": "406/500 = 81.2",
+    "legacy_fresh_1023_FRESH_REGRESSION_LEGACY": "1006/1023 = 98.34 (answerable-only 98.19)",
+    "new_blind_frozen_2075": "1891/2075 = 91.13 (answerable-only 89.65) — sha256 063aef8f732c845e…, hand-written 635/2075",
+    "ownership_family": "60/60",
+    "inventory_family": "99/100",
+    "age_family": "70/70"
+  },
+  "hardening": {
+    "mutation_score": "7/7 = 1.0",
+    "span_integrity": "7223 spans / 0 mismatches",
+    "contextvar_concurrency": "0 contamination events",
+    "security_scan": "0 secrets in 1926 files"
+  },
+  "not_claimed": [
+    "no new model weights; no GPU training; no neural Language Brain (v23 scope)",
+    "Persian 6/50 and English 0/50 broad language generation unchanged",
+    "legacy binomial 34/45 and combination 40/45 unchanged (documented open gaps)",
+    "blind benchmark is synthetic+hand-written and honestly labelled"
+  ],
+  "acceptance_gate": "TRUE ROOT-CAUSE HARDENED — all critical P0 gates pass (see JARVIS_V22_4_TRUE_ROOT_CAUSE_AUDIT.md §15)"
+}

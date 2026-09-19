@@ -396,6 +396,15 @@ class IntentRouter:
                 action=action.value, entity_type="browser",
             )
 
+        # v22.4 ROOT-CAUSE FIX (spec §32/§41): a numeric word problem whose
+        # payload carries typed inventory/finance quantities and a question is
+        # ARITHMETIC, not a destructive system command. 'remove 63 items; add
+        # 53 items. Stock now?' must reach the reasoning engine, never the
+        # destructive-action confirmation gate.
+        if action in (Action.DELETE, Action.CREATE) and self._is_word_problem_payload(
+                text, normalized):
+            action = None   # neutralize the keyword action; re-route normally
+
         if action is Action.DELETE:
             if re.search(
                 r"(?:همه|تمام|کل|هر\s*چی|all|every|entire|\*).*(?:فایل|پوشه|folder|file)"
@@ -806,6 +815,25 @@ class IntentRouter:
                 )
             return self._tool("web_search", {"query": query}, source="search_extractor", mode="search")
         return None
+
+    @staticmethod
+    def _is_word_problem_payload(text: str, normalized: str) -> bool:
+        """A word problem carries >=2 numbers, a typed quantity word and a
+        question/stock cue. Such payloads keep their arithmetic routing even
+        when they contain 'remove'/'add'/'delete' verbs."""
+        numbers = re.findall(r"-?\d+(?:\.\d+)?", normalized)
+        if len(numbers) < 2:
+            return False
+        typed = re.search(
+            r"کالا|قطعه|جنس|آیتم|items?|pieces?|units?|موجودی|stock|inventory"
+            r"|حساب|balance|دلار|تومان|dollars?|euros?|کیلومتر|km\b|کارگر|workers?",
+            normalized, re.I)
+        if not typed:
+            return False
+        question = re.search(
+            r"چند|چه\s*قدر|چقدر|how\s+many|how\s+much|stock\s*now|\?"
+            r"|موجودی", normalized, re.I)
+        return bool(question)
 
     def route(
         self,

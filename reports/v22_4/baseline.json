@@ -1,0 +1,12 @@
+{
+  "tag": "v0.11.0-intelligence-v22.3",
+  "commit": "542424f",
+  "regression": "1042 tests + 585 subtests, 0 failures (re-run locally)",
+  "broad": "406/500 = 81.2",
+  "legacy_fresh_1023": "855/1023 = 83.58 (answerable-only 82.09)",
+  "ownership": "19/60 = 31.7",
+  "inventory": "67/100 = 67",
+  "persian_broad": "6/50",
+  "english_broad": "0/50",
+  "metadata_inconsistency": "1031 vs 1037 vs 1042 across release artifacts"
+}
