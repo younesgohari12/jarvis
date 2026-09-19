@@ -140,9 +140,13 @@ def main() -> int:
         checks['single_root'] = all(n == ZIP_NAME or
                                     n.startswith('Jarvis_v0.11.0/')
                                     for n in names)
-        checks['github_digest_check_pending_honest'] = (
-            integrity['post_upload_digest_verified'] is False
-            and integrity['post_upload_reason'] == 'not yet uploaded')
+        digest_bookkeeping_honest = (
+            (integrity['post_upload_digest_verified'] is False
+             and integrity['post_upload_reason'] == 'not yet uploaded')
+            or (integrity['post_upload_digest_verified'] is True
+                and integrity['zip_sha256'] in
+                integrity['post_upload_reason']))
+        checks['github_digest_bookkeeping_honest'] = digest_bookkeeping_honest
 
     checks['p0_smoke_agrees'] = (smoke['all_passed']
                                  == score['release_gates']['p0_smoke_all_passed'])

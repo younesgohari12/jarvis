@@ -86,8 +86,10 @@
     "no composite intelligence+quality score (§49)"
   ],
   "post_upload_digest": {
-    "verified": false,
-    "reason": "not yet uploaded (§43) — updated after the GitHub asset digest comparison"
+    "verified": true,
+    "reason": "GitHub asset digest == local zip_sha256 (match confirmed)",
+    "github_asset_digest": "sha256:dbc6f586288161de499224eee7270d6b2b0f183f12f40abe7658b0c30502c2be",
+    "release_url": "https://github.com/younesgohari12/jarvis/releases/tag/v0.11.0-intelligence-v22.4.1"
   },
   "release_gate": "FINAL CLEAN HARDENED — all release-integrity gates green (§60); see JARVIS_V22_4_1_RELEASE_INTEGRITY_AUDIT.md",
   "gates": {

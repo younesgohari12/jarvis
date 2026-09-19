@@ -24,7 +24,7 @@
     "in_zip_manifest_current": true,
     "integrity_passed": true,
     "single_root": true,
-    "github_digest_check_pending_honest": true,
+    "github_digest_bookkeeping_honest": true,
     "p0_smoke_agrees": true,
     "gates_green_agreement": true
   },

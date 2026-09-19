@@ -41,6 +41,7 @@
   "generated_from": "ZipFile(final_zip) — measured, never hand-typed (spec §44)",
   "generation_order": "source → tests → reports → cache cleanup → file list → SHA256SUMS → ZIP → verify ZIP → package_integrity (this file) — spec §9",
   "shipping_policy": "this report ships BESIDE the ZIP (external finalization artifact); a file inside a ZIP cannot contain that ZIP's final SHA256",
-  "post_upload_digest_verified": false,
-  "post_upload_reason": "not yet uploaded"
+  "post_upload_digest_verified": true,
+  "post_upload_reason": "GitHub release asset digest sha256:dbc6f586288161de499224eee7270d6b2b0f183f12f40abe7658b0c30502c2be compared with local SHA256 — match confirmed (§42/§43); release: https://github.com/younesgohari12/jarvis/releases/tag/v0.11.0-intelligence-v22.4.1",
+  "post_upload_verified_at": "2026-09-19"
 }
