@@ -1,73 +1,65 @@
 {
-  "release": "v0.11.0-intelligence-v22.4.2",
-  "generated_by": "benchmarks/v22_4_2_release_pipeline.py + benchmarks/v22_4_2_mutation.py + benchmarks/v22_4_2_security_scan.py (all measured, never hand-typed)",
-  "evidence_classes": {
-    "measured_now": "all numbers below",
-    "verified_from_source": "permission-chain audit (SECURITY_AUDIT_FA.md)",
-    "historical_release_claim": "v22.4: 1215 tests / v22.4.1: 1228 tests, frozen blind 1891/2075"
-  },
+  "release": "v0.12.0-intelligence-v23.0.0",
+  "generated_by": "pytest + benchmarks/run_v22_4_2_diagnostic.py + benchmarks/run_v23_blind.py + benchmarks/package_v23.py (all measured, never hand-typed)",
   "environment": {
     "python": "3.12.14",
-    "platform": "Linux x86_64 (CPython via uv) — project targets Windows/CPython 3.13; difference documented",
-    "cpu": "virtualized x86_64 host CPU",
-    "ram": "host-managed",
-    "gpu": "none"
+    "platform": "Linux x86_64 (container) — project targets Windows/CPython; difference documented",
+    "gpu": "none (Phase 1 is deterministic CPU)"
   },
   "baseline": {
-    "tests": 1227,
+    "release": "v0.11.0-intelligence-v22.4.2",
+    "tests": 1292,
     "subtests": 585,
     "failures": 0,
-    "note": "measured pre-fix in this environment on the extracted v22.4.1 release ZIP (SHA dbc6f586... verified); 1 additional environment-dependent test (release ZIP gate) skipped, giving 1227 passed + 1 skipped = 1228 collected, consistent with the published 1228"
+    "note": "measured on the extracted v22.4.2 release ZIP in this environment before any v23 change"
   },
   "final": {
-    "tests": 1292,
+    "tests": 1391,
     "subtests": 585,
     "failures": 0,
     "errors": 0,
     "skipped": 1,
-    "skipped_reason": "tests/test_v224_1_release_pipeline.py::release ZIP gate — the packaged ZIP is not present in the working tree during the test run (environment-dependent, runs on the release machine)",
-    "pytest_tail": "1292 passed, 1 skipped, 585 subtests passed"
+    "skipped_reason": "tests/test_v224_1_release_pipeline.py::release ZIP gate — the packaged ZIP is not present in the working tree during the test run (environment-dependent)",
+    "pytest_tail": "1391 passed, 1 skipped, 585 subtests passed",
+    "new_tests": {
+      "v23_services": 86,
+      "v23_mutation_guards": 7,
+      "v23_bugfixes": 6
+    }
   },
-  "security": {
-    "passed": 1,
-    "failed": 0,
-    "source_scan": {"files_scanned": 1783, "secret_count": 0, "patterns_checked": 16},
-    "package_scan": {"secret_count": 0, "passed": true}
-  },
-  "mutation": {
-    "valid_mutants": 11,
-    "killed": 11,
-    "survived": 0,
-    "invalid": 0,
-    "detail": {
-      "new_guards_M8_M11": "4/4 KILLED_BY_ASSERTION (reports/v22_4_2/mutation_tests.json)",
-      "original_M1_M7": "7/7 KILLED_BY_ASSERTION re-measured in this environment; published v22.4.1 mutation_tests.json byte-restored after measurement"
-    },
-    "kill_definition": "applied AND collected>=1 AND failed>=1 AND errors==0"
-  },
-  "diagnostic_v2242": {
+  "diagnostic_v2242_with_v23": {
     "cases": 107,
     "sha256": "8e4aac45df363facdb4cb64f65fc9515111665949941b3e170375f13599adaa2",
-    "run1_score_numeric": 31.78,
-    "run2_score_numeric": 32.71,
-    "run2_score_answerable_only": 25.77,
+    "baseline_score_numeric": 32.71,
+    "baseline_score_answerable_only": 25.77,
+    "v23_score_numeric": 73.83,
+    "v23_score_answerable_only": 71.13,
     "hard_negatives_abstain_correct": "10/10",
-    "note": "freshly authored generalization diagnostic; NOT the frozen benchmark; never averaged with it (spec 38)"
+    "detail": "reports/v23/diagnostic_v22_4_2_with_v23.json"
   },
-  "package": {
-    "integrity_passed": true,
-    "zip_name": "Jarvis_v0.11.0_Intelligence_v22.4.2_SECURITY_AUDITED_FIXED.zip",
-    "archive_file_count": 1784,
-    "manifest_entries": 1783,
-    "crc_ok": true,
-    "forbidden_cache_files": 0,
-    "reproducible_rebuild_byte_identical": true,
-    "sha256_recorded_in": "PACKAGE_INTEGRITY.json + reports/v22_4_2/package_integrity.json (external finalization artifact)"
+  "blind_v23": {
+    "cases": 1245,
+    "sha256_recorded_before_implementation": "reports/v23/blind_freeze.json",
+    "score_numeric": 79.6,
+    "score_answerable_only": 78.88,
+    "hard_negatives": "46/47",
+    "runs": "1 pre-fix (recorded, exposed BUG-004) + 1 final after the BUG-004 root-cause fix; the SET never changed",
+    "detail": "reports/v23/blind_eval.json"
+  },
+  "datasets": {
+    "train_core_rows": 12535,
+    "train_core_sha256": "43a738c23f675cb5b4b77bbbc39b11c3b38ad92e57f577e6f79d84fbfd52c60c",
+    "dev_paraphrase_rows": 1706,
+    "dev_paraphrase_sha256": "6c770056c0c76be87f5dd055c92ab361e7edda0b742ec4a45a08f6ab8e8144f5",
+    "contamination": "zero frozen-eval rows; 3-gram guard threshold 0.34 over 4279 frozen source rows",
+    "note": "bounded template space saturates at 12,535 unique rows (nominal ~15k documented honestly)"
   },
   "bugs": {
-    "BUG-001": {"status": "FIXED", "regression_tests": "TestRouteCommandPolicy + TestPermissionFloor", "mutation": "M8 KILLED_BY_ASSERTION"},
-    "BUG-002": {"status": "FIXED", "regression_tests": "TestSecretScanner (11 positive / 10 negative / metadata safety)", "mutation": "M9 + M10 KILLED_BY_ASSERTION"},
-    "BUG-003": {"status": "FIXED", "regression_tests": "TestMarkdownMetadataGate", "mutation": "M11 KILLED_BY_ASSERTION"},
-    "WEAK-W1": {"status": "FIXED (bounded, measured)", "regression_tests": "TestWorkRateAnswers + TestSourceSlotConsistency", "mutation": "covered by shared suite"}
+    "BUG-004": {
+      "status": "FIXED (root cause, two layers)",
+      "symptom": "150 dollars + 20 items verified as 170",
+      "fix": "chain adopts first typed operand when initial is dimensionless; audit runs for untyped initials; جمعش/مجموعش added to chain language",
+      "regression_tests": "tests/test_v23_bugfixes.py (6 tests)"
+    }
   }
 }

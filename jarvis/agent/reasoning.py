@@ -4,7 +4,7 @@ import re
 from dataclasses import dataclass
 
 from jarvis.agent.challenge_reasoner import ChallengeReasoner
-from jarvis.agent.local_intelligence_v22 import LocalIntelligenceV22
+from jarvis.agent.local_intelligence_v23 import LocalIntelligenceV23
 from jarvis.agent.deliberation import (
     DeliberationOutcome,
     EvidenceVerifier,
@@ -49,7 +49,7 @@ class ReasoningEngine:
         self.text_reasoner = TextReasoner()
         self.evidence_verifier = EvidenceVerifier()
         self.challenge_reasoner = ChallengeReasoner()
-        self.local_intelligence = LocalIntelligenceV22(output_style='canonical')
+        self.local_intelligence = LocalIntelligenceV23(output_style='canonical')
 
     @staticmethod
     def _language_answer(hit: KnowledgeHit, language: str) -> str:

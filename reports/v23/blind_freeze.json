@@ -1,0 +1,710 @@
+{
+ "set": "V23_BLIND_EVAL (frozen before first execution)",
+ "file": "benchmarks/v23_blind_set.jsonl",
+ "sha256": "a65ed2fd2737118732c60ca1cefa09f73b3db8dc1a7150d46fab9b0175b55a8b",
+ "rows": 1245,
+ "seed": 20260920,
+ "contam_threshold": 0.34,
+ "contam_dropped": [
+  {
+   "id": "v23-units-0081",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0083",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0085",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0087",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-units-0089",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0091",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0093",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0095",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0097",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-units-0099",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0101",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0103",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0105",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-units-0107",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-units-0108",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-units-0109",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-units-0110",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-units-0111",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-units-0112",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-units-0113",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-units-0114",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-work-0288",
+   "overlap": 0.423
+  },
+  {
+   "id": "v23-work-0310",
+   "overlap": 0.423
+  },
+  {
+   "id": "v23-work-0324",
+   "overlap": 0.407
+  },
+  {
+   "id": "v23-work-0326",
+   "overlap": 0.462
+  },
+  {
+   "id": "v23-work-0331",
+   "overlap": 0.357
+  },
+  {
+   "id": "v23-work-0332",
+   "overlap": 0.357
+  },
+  {
+   "id": "v23-work-0333",
+   "overlap": 0.357
+  },
+  {
+   "id": "v23-work-0337",
+   "overlap": 0.407
+  },
+  {
+   "id": "v23-work-0342",
+   "overlap": 0.357
+  },
+  {
+   "id": "v23-work-0347",
+   "overlap": 0.419
+  },
+  {
+   "id": "v23-work-0367",
+   "overlap": 0.419
+  },
+  {
+   "id": "v23-work-0483",
+   "overlap": 0.412
+  },
+  {
+   "id": "v23-work-0484",
+   "overlap": 0.412
+  },
+  {
+   "id": "v23-work-0489",
+   "overlap": 0.412
+  },
+  {
+   "id": "v23-work-0494",
+   "overlap": 0.412
+  },
+  {
+   "id": "v23-work-0573",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-work-0574",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-work-0575",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-work-0576",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-work-0577",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-work-0578",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0589",
+   "overlap": 0.455
+  },
+  {
+   "id": "v23-math-0592",
+   "overlap": 0.455
+  },
+  {
+   "id": "v23-math-0613",
+   "overlap": 0.455
+  },
+  {
+   "id": "v23-math-0618",
+   "overlap": 0.455
+  },
+  {
+   "id": "v23-math-0665",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0667",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0669",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0673",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0674",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0677",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0678",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0680",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0682",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0684",
+   "overlap": 0.562
+  },
+  {
+   "id": "v23-math-0689",
+   "overlap": 0.562
+  },
+  {
+   "id": "v23-math-0691",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0692",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0694",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0695",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0697",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0702",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0703",
+   "overlap": 0.389
+  },
+  {
+   "id": "v23-math-0706",
+   "overlap": 0.478
+  },
+  {
+   "id": "v23-math-0709",
+   "overlap": 0.7
+  },
+  {
+   "id": "v23-math-0711",
+   "overlap": 0.7
+  },
+  {
+   "id": "v23-math-0712",
+   "overlap": 0.478
+  },
+  {
+   "id": "v23-math-0713",
+   "overlap": 0.7
+  },
+  {
+   "id": "v23-math-0717",
+   "overlap": 0.478
+  },
+  {
+   "id": "v23-math-0720",
+   "overlap": 0.478
+  },
+  {
+   "id": "v23-math-0725",
+   "overlap": 0.478
+  },
+  {
+   "id": "v23-math-0726",
+   "overlap": 0.7
+  },
+  {
+   "id": "v23-math-0728",
+   "overlap": 0.7
+  },
+  {
+   "id": "v23-math-0733",
+   "overlap": 0.478
+  },
+  {
+   "id": "v23-math-0734",
+   "overlap": 0.478
+  },
+  {
+   "id": "v23-math-0736",
+   "overlap": 0.5
+  },
+  {
+   "id": "v23-math-0738",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0742",
+   "overlap": 0.5
+  },
+  {
+   "id": "v23-math-0746",
+   "overlap": 0.5
+  },
+  {
+   "id": "v23-math-0749",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0750",
+   "overlap": 0.5
+  },
+  {
+   "id": "v23-math-0753",
+   "overlap": 0.5
+  },
+  {
+   "id": "v23-math-0756",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0761",
+   "overlap": 0.5
+  },
+  {
+   "id": "v23-math-0765",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0767",
+   "overlap": 0.5
+  },
+  {
+   "id": "v23-math-0770",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0771",
+   "overlap": 0.5
+  },
+  {
+   "id": "v23-math-0773",
+   "overlap": 0.5
+  },
+  {
+   "id": "v23-math-0774",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0776",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0778",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0779",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0783",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0792",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0794",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0830",
+   "overlap": 0.35
+  },
+  {
+   "id": "v23-math-0834",
+   "overlap": 0.588
+  },
+  {
+   "id": "v23-math-0836",
+   "overlap": 0.35
+  },
+  {
+   "id": "v23-math-0844",
+   "overlap": 0.35
+  },
+  {
+   "id": "v23-math-0849",
+   "overlap": 0.421
+  },
+  {
+   "id": "v23-math-0876",
+   "overlap": 0.647
+  },
+  {
+   "id": "v23-math-0885",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0888",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0889",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0891",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0893",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0894",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0896",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0897",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0899",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0902",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0903",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0905",
+   "overlap": 0.4
+  },
+  {
+   "id": "v23-math-0911",
+   "overlap": 0.6
+  },
+  {
+   "id": "v23-math-0914",
+   "overlap": 0.6
+  },
+  {
+   "id": "v23-math-0916",
+   "overlap": 0.6
+  },
+  {
+   "id": "v23-math-0919",
+   "overlap": 0.6
+  },
+  {
+   "id": "v23-math-0923",
+   "overlap": 0.6
+  },
+  {
+   "id": "v23-math-0934",
+   "overlap": 0.455
+  },
+  {
+   "id": "v23-math-0939",
+   "overlap": 0.684
+  },
+  {
+   "id": "v23-math-0941",
+   "overlap": 0.455
+  },
+  {
+   "id": "v23-math-0945",
+   "overlap": 0.375
+  },
+  {
+   "id": "v23-math-0946",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0951",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0952",
+   "overlap": 0.375
+  },
+  {
+   "id": "v23-math-0953",
+   "overlap": 0.375
+  },
+  {
+   "id": "v23-math-0954",
+   "overlap": 0.692
+  },
+  {
+   "id": "v23-math-0955",
+   "overlap": 0.375
+  },
+  {
+   "id": "v23-math-0957",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0959",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0960",
+   "overlap": 0.375
+  },
+  {
+   "id": "v23-math-0963",
+   "overlap": 0.375
+  },
+  {
+   "id": "v23-math-0965",
+   "overlap": 0.692
+  },
+  {
+   "id": "v23-math-0966",
+   "overlap": 0.375
+  },
+  {
+   "id": "v23-math-0968",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0969",
+   "overlap": 0.571
+  },
+  {
+   "id": "v23-math-0970",
+   "overlap": 0.375
+  },
+  {
+   "id": "v23-math-0973",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0974",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0975",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0976",
+   "overlap": 0.368
+  },
+  {
+   "id": "v23-math-0977",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0978",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0979",
+   "overlap": 0.368
+  },
+  {
+   "id": "v23-math-0980",
+   "overlap": 0.368
+  },
+  {
+   "id": "v23-math-0981",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0982",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0983",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0984",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0985",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0986",
+   "overlap": 0.368
+  },
+  {
+   "id": "v23-math-0987",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0988",
+   "overlap": 0.368
+  },
+  {
+   "id": "v23-math-0989",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0990",
+   "overlap": 0.368
+  },
+  {
+   "id": "v23-math-0991",
+   "overlap": 0.625
+  },
+  {
+   "id": "v23-math-0992",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0993",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0994",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0995",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0996",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0997",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0998",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-0999",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-math-1000",
+   "overlap": 1.0
+  },
+  {
+   "id": "v23-fin-1106",
+   "overlap": 0.556
+  },
+  {
+   "id": "v23-fin-1121",
+   "overlap": 0.556
+  },
+  {
+   "id": "v23-fin-1145",
+   "overlap": 0.346
+  },
+  {
+   "id": "v23-fin-1156",
+   "overlap": 0.346
+  },
+  {
+   "id": "v23-age-1192",
+   "overlap": 0.478
+  }
+ ],
+ "frozen_sources": [
+  "benchmarks/v22_4_blind_1600.jsonl",
+  "benchmarks/v22_fresh_blind_1000.jsonl",
+  "benchmarks/v22_4_2_diagnostic_set.jsonl",
+  "benchmarks/broad_v21_500.jsonl",
+  "benchmarks/fresh_v20_clean.jsonl",
+  "benchmarks/diagnostic_v20_1_300.jsonl"
+ ],
+ "frozen_source_count": 4279,
+ "answerable": 1198,
+ "must_abstain": 47,
+ "note": "this set is NOT the published frozen benchmark and is never averaged with it (spec §38)"
+}

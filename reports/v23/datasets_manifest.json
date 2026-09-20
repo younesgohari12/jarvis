@@ -1,0 +1,19 @@
+{
+ "seed": 20260921,
+ "contam_threshold": 0.34,
+ "train_core": {
+  "file": "datasets/v23/train_core.jsonl",
+  "rows": 12535,
+  "sha256": "43a738c23f675cb5b4b77bbbc39b11c3b38ad92e57f577e6f79d84fbfd52c60c",
+  "contam_dropped": 86,
+  "frozen_sources": 4279
+ },
+ "dev_paraphrase": {
+  "file": "datasets/v23/dev_paraphrase.jsonl",
+  "rows": 1706,
+  "sha256": "6c770056c0c76be87f5dd055c92ab361e7edda0b742ec4a45a08f6ab8e8144f5",
+  "contam_dropped": 161,
+  "frozen_sources": 4279
+ },
+ "note": "no row from any frozen evaluation set is used for training (contamination = 0, spec §6)"
+}

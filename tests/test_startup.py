@@ -43,7 +43,7 @@ class StartupTests(unittest.TestCase):
 
     def test_startup_order_produces_complete_runtime(self) -> None:
         with TemporaryRuntime() as runtime:
-            self.assertEqual(runtime.config.version, "0.11.0")
+            self.assertEqual(runtime.config.version, "0.12.0")
             self.assertEqual(runtime.startup_warnings, ())
             self.assertIsNotNone(runtime.brain)
             self.assertIsNotNone(runtime.neural)

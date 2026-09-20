@@ -209,9 +209,15 @@ class UniversalVerifierV2(UniversalVerifier):
         initial = slots.get('initial')
         if initial is not None and operations:
             iq = self._quantity_for(quantities, initial, prefer=('currency', 'count'))
-            if iq is not None and iq.dimension in ('currency', 'count'):
+            # v23 ROOT-CAUSE FIX: an UNTYPED initial (e.g. a parsed 0) no
+            # longer skips the chain audit — the algebra adopts the first
+            # typed operand and keeps auditing ('150 دلار + 20 کالا' from a
+            # zero start is still a dimension violation).
+            if iq is None or iq.dimension in ('currency', 'count'):
                 verdict.checks.append('source_operation_dimension_consistency')
-                for name in validate_operation_chain(iq, operations, quantities):
+                from jarvis.agent.quantity_v22 import Quantity as _Q
+                chain_initial = iq if iq is not None else _Q(0.0, 'dimensionless', '')
+                for name in validate_operation_chain(chain_initial, operations, quantities):
                     verdict.failed_checks.append(name)
 
         # -- 3. expressive numeric-role audit ------------------------------

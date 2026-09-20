@@ -418,7 +418,12 @@ def validate_operation_chain(initial: Quantity, operations: list[dict],
     """Return failed typed-check names for an add/subtract chain over `initial`.
 
     v22.4: dimension compatibility is now validated per operation through the
-    operation-aware algebra; currencies must also agree on their unit."""
+    operation-aware algebra; currencies must also agree on their unit.
+    v23 ROOT-CAUSE FIX (fail-open hole): a dimensionless INITIAL no longer
+    disables the whole chain audit. The chain adopts the first TYPED operand's
+    dimension and every later typed operand must agree — '150 دلار + 20 کالا'
+    is a dimension violation even though the slot starts at 0. Bare
+    (dimensionless) operands never poison a typed chain (v21 semantics kept)."""
     from jarvis.agent.semantics_v22_4 import validate_binary_operation
     failed: list[str] = []
     cur = initial
@@ -430,7 +435,12 @@ def validate_operation_chain(initial: Quantity, operations: list[dict],
         vq = next((q for q in quantities if abs(float(q.value) - float(op.get('value', 0))) < 1e-12),
                   None)
         rhs = vq if vq is not None else Quantity(float(op.get('value', 0) or 0), vdim, '')
-        if vdim == 'dimensionless' or cur.dimension == 'dimensionless':
+        if vdim == 'dimensionless':
+            # a bare number never poisons the chain (v21 semantics)
+            continue
+        if cur.dimension == 'dimensionless':
+            # v23: adopt the first typed operand's dimension and KEEP auditing
+            cur = rhs
             continue
         failure = validate_binary_operation(op.get('op', 'add'), cur, rhs)
         if failure is not None:

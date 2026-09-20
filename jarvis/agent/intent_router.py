@@ -8,7 +8,10 @@ from typing import TYPE_CHECKING, Any
 
 from jarvis.agent.decision import DecisionEngine
 from jarvis.agent.challenge_reasoner import ChallengeReasoner
-from jarvis.agent.local_intelligence_v22 import LocalIntelligenceV22
+from jarvis.agent.local_intelligence_v23 import LocalIntelligenceV23
+from jarvis.agent import units_service_v23 as _v23_units_svc
+from jarvis.agent import work_rate_v23 as _v23_work_svc
+from jarvis.agent import narrative_math_v23 as _v23_narr_svc
 from jarvis.agent.semantic_router_v18 import SemanticIntentRouterV18
 from jarvis.agent.cognitive_model import CognitiveSkillModel
 from jarvis.brain.model import HybridNeuralBrain, IntentPrediction
@@ -109,6 +112,24 @@ class FactExtractor:
 
 
 class IntentRouter:
+    # ------------------------------------------------------------------
+    @staticmethod
+    def _v23_numeric_route(text: str) -> bool:
+        """True only when a v23 verified numeric service fully solves the
+        text right now (no guessing, no tuning — the same fail-closed
+        solvers the engine will run)."""
+        try:
+            if _v23_units_svc.solve_conversion(text, 'fa') is not None:
+                return True
+            if _v23_work_svc.solve_work_rate(text, 'fa') is not None:
+                return True
+            if _v23_narr_svc.solve_narrative(text, 'fa') is not None:
+                return True
+        except Exception:
+            return False
+        return False
+
+    # ------------------------------------------------------------------
     """v0.4 verb-first router with entity and reference resolution before neural fallback."""
 
     _MULTI = re.compile(r"\s+(?:بعد(?:ش)?|سپس|و\s+بعد|then|and\s+then)\s+", re.I)
@@ -990,6 +1011,19 @@ class IntentRouter:
         if guarded_route is not None and not app_name_collision:
             return guarded_route
 
+        # v23: verified numeric services (units / work-rate / narrative
+        # arithmetic) outrank action-word collisions ('بسته‌بندی' is packaging,
+        # not close-app) and learned word-problem labels that lack a verified
+        # engine behind them. The guard fires ONLY when a v23 service can
+        # fully solve the text now — otherwise routing is untouched.
+        if self._v23_numeric_route(text):
+            return IntentRoute(
+                "local_intelligence", "think", 0.995, 0.88,
+                arguments={"question": text.strip()},
+                source="local_intelligence_router_v23",
+                decision_mode="think",
+            )
+
         if early_action is not None and early_action.source != "dynamic_app_query" and early_action.intent in {
             "open_app", "open_url", "open_folder", "close_app", "focus_app",
             "restart_app", "is_app_running", "delete_file", "delete_folder",
@@ -1022,7 +1056,7 @@ class IntentRouter:
                 return learned_semantic_route
 
         # v15 high-precision local intelligence runs before generic language/web routing.
-        if LocalIntelligenceV22.matches(text):
+        if LocalIntelligenceV23.matches(text):
             return IntentRoute(
                 "local_intelligence", "think", 0.995, 0.88,
                 arguments={"question": text.strip()}, source="local_intelligence_router_v22",

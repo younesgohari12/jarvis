@@ -1,0 +1,40 @@
+{
+  "release": "v0.12.0-intelligence-v23.0.0",
+  "title": "JARVIS v0.12.0 — Intelligence v23.0.0 (LANGUAGE BRAIN PHASE 1 / VERIFIED NUMERIC SERVICES)",
+  "base_tag": "v0.11.0-intelligence-v22.4.2",
+  "date": "2026-09-20",
+  "engine_version": "6.0.0-v23.0",
+  "phase": "V23_LANGUAGE_BRAIN_PLAN.md مرحله 1 (deterministic; no retraining, no GPU)",
+  "gates": {
+    "regression": "1391 tests + 585 subtests, 0 failures (v22.4.2 baseline 1292+585 held)",
+    "diagnostic_improvement": "32.71% -> 73.83% numeric; answerable-only 25.77% -> 71.13%",
+    "hard_negatives": "10/10 diagnostic, 46/47 blind",
+    "contamination": "0 frozen-eval rows in any training/blind artifact",
+    "mutation": "7/7 new guards with valid-kill semantics",
+    "package": "deterministic, byte-identical rebuild, 0 secrets"
+  },
+  "new_modules": [
+    "jarvis/agent/units_service_v23.py",
+    "jarvis/agent/work_rate_v23.py",
+    "jarvis/agent/narrative_math_v23.py",
+    "jarvis/agent/local_intelligence_v23.py",
+    "benchmarks/build_v23_blind_set.py",
+    "benchmarks/build_v23_datasets.py",
+    "benchmarks/run_v23_blind.py",
+    "benchmarks/package_v23.py",
+    "datasets/v23/train_core.jsonl",
+    "datasets/v23/dev_paraphrase.jsonl",
+    "benchmarks/v23_blind_set.jsonl",
+    "tests/test_v23_numeric_services.py",
+    "tests/test_v23_mutation_guards.py",
+    "tests/test_v23_bugfixes.py"
+  ],
+  "frozen_eval": {
+    "blind_set": "benchmarks/v23_blind_set.jsonl",
+    "sha256": "a65ed2fd27371187 (full value in reports/v23/blind_freeze.json)",
+    "frozen_before_implementation": true,
+    "read_only": true
+  },
+  "zip_name": "Jarvis_v0.12.0_Intelligence_v23.0.0.zip",
+  "package_root": "Jarvis_v0.12.0"
+}

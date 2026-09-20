@@ -267,13 +267,16 @@ def test_fmt_number():
 # ======================================================================
 def test_reasoning_uses_v22_with_honest_label():
     from tests.helpers import TemporaryRuntime
+    from jarvis.agent.local_intelligence_v23 import LocalIntelligenceV23
     with TemporaryRuntime() as rt:
         li = rt.agent.reasoning.local_intelligence
-        assert isinstance(li, LocalIntelligenceV22)
-        assert isinstance(li, LocalIntelligenceV21)  # subclass keeps v21 isinstance
-        assert li.VERSION == '5.0.0-v22.4'
+        assert isinstance(li, LocalIntelligenceV23)   # v23 runs the wiring
+        assert isinstance(li, LocalIntelligenceV22)   # v22 preserved verbatim
+        assert isinstance(li, LocalIntelligenceV21)   # subclass keeps v21 isinstance
+        assert li.VERSION == '6.0.0-v23.0'
+        assert LocalIntelligenceV22.VERSION == '5.0.0-v22.4'  # v22 label intact
         from jarvis.agent.reasoning import _local_source_label
-        assert _local_source_label(li) == 'local_intelligence_5_0_0_v22_4'
+        assert _local_source_label(li) == 'local_intelligence_6_0_0_v23_0'
 
 
 def test_runtime_endpoint_keeps_canonical_contract():

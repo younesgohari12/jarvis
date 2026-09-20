@@ -530,7 +530,9 @@ def convert_unit(value: float, from_unit: str, to_unit: str) -> dict | None:
 # Chain language includes explicit operators '+'/'-' between numbers.
 _CHAIN_LANG = re.compile(
     r'جمع\s*کن|جمع(?=\s*\d)|جمع\s*می[\s\u200c]*شود|اضافه\s*کن|اضافه\s*می[\s\u200c]*شود|کم\s*کن|'
-    r'کم\s*می[\s\u200c]*شود|با\s*هم\s*جمع|جمع\s*زدن|\badd(?:s|ed)?\b|\bplus\b|'
+    r'کم\s*می[\s\u200c]*شود|با\s*هم\s*جمع|جمع\s*زدن|جمع[\s\u200c]*ش\b|'
+    r'مجموع[\s\u200c]*ش\b|'
+    r'\badd(?:s|ed)?\b|\bplus\b|'
     r'\bsubtract(?:s|ed)?\b|\bsum(?:s|med)?\b|\btotal\b|\bcombine[ds]?\b|'
     r'(?<=\s)\+(?=\s)|(?<=\d)\s*\+\s*(?=\d)', re.I)
 
