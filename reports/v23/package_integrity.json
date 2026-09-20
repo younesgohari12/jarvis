@@ -41,6 +41,8 @@
   "generated_from": "ZipFile(final_zip) — measured, never hand-typed (spec §44)",
   "generation_order": "source → tests → reports → cache cleanup → file list → SHA256SUMS → ZIP → verify ZIP → package_integrity (this file) — spec §9",
   "shipping_policy": "this report ships BESIDE the ZIP (external finalization artifact); a file inside a ZIP cannot contain that ZIP's final SHA256",
-  "post_upload_digest_verified": false,
-  "post_upload_reason": "not yet uploaded"
+  "post_upload_digest_verified": true,
+  "post_upload_reason": "GitHub asset digest == local zip_sha256 (match confirmed)",
+  "github_asset_digest": "sha256:44f890e8c46e00ec2fb27132b51ab1205bdb73f697441cfbe7765e001613b3c7",
+  "release_url": "https://github.com/younesgohari12/jarvis/releases/tag/v0.12.0-intelligence-v23.0.0"
 }
